@@ -38,6 +38,15 @@ for (const f of files) {
     });
   }
 }
+// 연도별·분야별 공개 상한: 한 분야(특히 TV·영화)가 한 해를 독차지하지 않게
+const CAT_CAP = { "TV·영화": 30, "음악": 30, "사건·생활상": 40, "놀이·문구": 15 };
+const kept = [], cnt = {};
+for (const it of items) {
+  const k = it.year + "|" + it.cat, cap = CAT_CAP[it.cat] ?? 30;
+  cnt[k] = (cnt[k] || 0) + 1;
+  if (cnt[k] <= cap) kept.push(it); else hidden++;
+}
+items.length = 0; items.push(...kept);
 items.sort((a, b) => a.year - b.year || (a.month ?? 99) - (b.month ?? 99));
 
 const out = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../src/items.json");
