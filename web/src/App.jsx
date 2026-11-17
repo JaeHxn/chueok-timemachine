@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import items from "./items.json";
 import itemPhotos from "./item-photos.json";
-import Flight from "./Flight.jsx";
 
 const YEARS = Array.from({ length: 77 }, (_, i) => 1950 + i); // 1950~2026
 const CATS = ["음악", "TV·영화", "먹거리", "패션", "놀이·문구", "가전·기술", "사건·생활상", "유행어·풍속"];
@@ -21,15 +20,9 @@ const eraOf = (y) => ERAS.find((e) => y <= e.to);
 const itemsOf = (y) => items.filter((i) => i.year === y);
 // 항목 사진: 제목이 파일 이름에 실제로 들어 있을 때만 붙인다(수집 스크립트에서 검증)
 const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
-const CENTER = { x: 50, y: 46 };
 
 // 연도 행성의 달(월) 배치: 12개가 원형 궤도를 돈다. 각도는 도(degree).
 const MOON_ANGLE = (m) => (m - 1) * 30 - 90;
-// 비행 경로 계산용 달 위치(%) — 화면 비율 기준의 대략 좌표
-function moonPos(m) {
-  const a = (MOON_ANGLE(m) * Math.PI) / 180;
-  return { x: 50 + Math.cos(a) * 38, y: 46 + Math.sin(a) * 38 };
-}
 const readReduce = () => {
   try {
     return localStorage.getItem("reduceMotion") === "1" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -41,10 +34,9 @@ export default function App() {
   const [year, setYear] = useState(null);
   const [month, setMonth] = useState(null);
   const [cat, setCat] = useState("전체");
-  const [flight, setFlight] = useState(null);
   const [reduceMotion, setReduceMotion] = useState(readReduce);
   const [share, setShare] = useState(null);
-  const skipRef = useRef(false);
+  const barRef = useRef(null);
 
   useEffect(() => {
     try { localStorage.setItem("reduceMotion", reduceMotion ? "1" : "0"); } catch {}
@@ -55,23 +47,29 @@ export default function App() {
     document.querySelector(".yearbar .sel")?.scrollIntoView({ inline: "center", block: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
   }, [year, reduceMotion]);
 
-  // 비행 연출 후 실행. 모션 줄이기면 즉시 실행.
-  function travel({ from, to, color }, next) {
-    if (reduceMotion) { next(); return; }
-    skipRef.current = false;
-    setFlight({ from, to, color, onDone: () => { setFlight(null); next(); } });
-  }
-
-  // 연도 이동은 연출 없이 바로 보여준다 (상단 바 스크롤만 움직임)
+  // 이동은 모두 즉시. 효과는 화면이 바뀐 뒤 CSS로만 겹쳐 나온다(기다림 없음).
   function goYear(y) {
-    if (y === year && view !== "home") return;
+    if (y < YEARS[0] || y > YEARS[YEARS.length - 1]) return;
     setYear(y); setMonth(null); setCat("전체"); setView("year");
   }
-  function goMonth(m) {
-    travel({ from: moonPos(m), to: CENTER, color: eraOf(year).color }, () => {
-      setMonth(m); setCat("전체"); setView("ground");
-    });
-  }
+  function goMonth(m) { setMonth(m); setCat("전체"); setView("ground"); }
+
+  // ←/→ 키로 연도 이동 (입력창에 있을 땐 무시)
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.target.closest?.("input,textarea") || !year) return;
+      if (e.key === "ArrowLeft") goYear(year - 1);
+      if (e.key === "ArrowRight") goYear(year + 1);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [year]);
+
+  // 마우스 휠(세로)을 연도 바의 가로 스크롤로
+  const onBarWheel = (e) => {
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) barRef.current.scrollLeft += e.deltaY;
+  };
+  const nudge = (dir) => barRef.current.scrollBy({ left: dir * 320, behavior: reduceMotion ? "auto" : "smooth" });
   function goHome() { setView("home"); setYear(null); setMonth(null); }
   function back() {
     if (view === "ground") { setMonth(null); setView("year"); }
@@ -103,29 +101,35 @@ export default function App() {
           <button className="ghost" onClick={() => setReduceMotion((v) => !v)}>
             {reduceMotion ? "🎞 연출 켜기" : "🌙 모션 줄이기"}
           </button>
-          {flight && <button className="ghost" onClick={() => { skipRef.current = true; }}>⏭ 건너뛰기</button>}
         </div>
       </header>
 
-      {/* 상단 연도 바: 좌우로 스크롤 */}
-      <nav className="yearbar" aria-label="연도 선택">
-        {YEARS.map((y) => {
-          const has = itemsOf(y).length > 0;
-          const sel = y === year;
-          return (
-            <button
-              key={y}
-              className={`yb ${sel ? "sel" : ""} ${has ? "has" : ""}`}
-              onClick={() => goYear(y)}
-              title={`${y}년 · ${eraOf(y).name}${has ? "" : " (준비 중)"}`}
-            >
-              {y}
-            </button>
-          );
-        })}
-      </nav>
-
-      {flight && <Flight from={flight.from} to={flight.to} color={flight.color} skipRef={skipRef} onDone={flight.onDone} />}
+      {/* 상단 시간 다이얼: 좌우 스크롤 · 휠 · ←/→ */}
+      <div className="dial">
+        <button className="dial-arrow" onClick={() => nudge(-1)} aria-label="이전 연도들">‹</button>
+        <nav className="yearbar" ref={barRef} onWheel={onBarWheel} aria-label="연도 선택">
+          {YEARS.map((y) => {
+            const has = itemsOf(y).length > 0;
+            const sel = y === year;
+            const decade = y % 10 === 0;
+            return (
+              <button
+                key={y}
+                className={`yb ${sel ? "sel" : ""} ${has ? "has" : ""} ${decade ? "decade" : ""}`}
+                style={{ "--c": eraOf(y).color }}
+                onClick={() => goYear(y)}
+                aria-current={sel ? "true" : undefined}
+                title={`${y}년 · ${eraOf(y).name}${has ? "" : " (준비 중)"}`}
+              >
+                <span className="yb-n">{decade || sel ? y : String(y).slice(2)}</span>
+                <span className="yb-tick" />
+              </button>
+            );
+          })}
+        </nav>
+        <button className="dial-arrow" onClick={() => nudge(1)} aria-label="다음 연도들">›</button>
+      </div>
+      {year && <div className="era-line" style={{ "--c": eraOf(year).color }}>{eraOf(year).name}</div>}
 
       {view === "home" && (
         <section className="home">
@@ -135,16 +139,16 @@ export default function App() {
       )}
 
       {view === "year" && year && (
-        <section className="orbit-view">
+        <section className="orbit-view" key={year}>
           <button className="back" onClick={back}>← 처음으로</button>
-          <h2>{year}년 · {eraOf(year).name}</h2>
+          <h2>{year}</h2>
           <div className={`orbit ${reduceMotion ? "still" : ""}`} style={{ "--c": eraOf(year).color }}>
             <div className="core"><span>{year}</span></div>
             <div className="ring">
               {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => {
                 const n = yearItems.filter((it) => it.month === m).length;
                 return (
-                  <div key={m} className="sat" style={{ "--a": `${MOON_ANGLE(m) + 90}deg` }}>
+                  <div key={m} className="sat" style={{ "--a": `${MOON_ANGLE(m) + 90}deg`, "--d": m }}>
                     <button className={`moon ${n ? "has" : ""}`} onClick={() => goMonth(m)} title={`${m}월 · ${n}개`}>
                       <span className="moon-label">{m}월</span>
                       {n > 0 && <span className="moon-n">{n}</span>}
@@ -168,7 +172,7 @@ export default function App() {
       )}
 
       {view === "ground" && year && (
-        <section className="ground">
+        <section className="ground" key={`${year}-${month}`}>
           <button className="back" onClick={back}>← {year}년 궤도로</button>
           <h2>{year}년 {month ? `${month}월` : "전체"}의 추억</h2>
           <div className="cats">
