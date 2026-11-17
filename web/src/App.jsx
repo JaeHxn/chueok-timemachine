@@ -22,7 +22,6 @@ const itemsOf = (y) => items.filter((i) => i.year === y);
 // 항목 사진: 제목이 파일 이름에 실제로 들어 있을 때만 붙인다(수집 스크립트에서 검증)
 const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
 const CENTER = { x: 50, y: 46 };
-const ENTRY = { x: -8, y: 46 }; // 우주선이 화면 왼쪽 밖에서 들어온다
 
 // 연도 행성의 달(월) 배치: 12개가 원형 궤도를 돈다. 각도는 도(degree).
 const MOON_ANGLE = (m) => (m - 1) * 30 - 90;
@@ -63,11 +62,10 @@ export default function App() {
     setFlight({ from, to, color, onDone: () => { setFlight(null); next(); } });
   }
 
+  // 연도 이동은 연출 없이 바로 보여준다 (상단 바 스크롤만 움직임)
   function goYear(y) {
     if (y === year && view !== "home") return;
-    travel({ from: ENTRY, to: CENTER, color: eraOf(y).color }, () => {
-      setYear(y); setMonth(null); setCat("전체"); setView("year");
-    });
+    setYear(y); setMonth(null); setCat("전체"); setView("year");
   }
   function goMonth(m) {
     travel({ from: moonPos(m), to: CENTER, color: eraOf(year).color }, () => {
