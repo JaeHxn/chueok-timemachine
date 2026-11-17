@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import items from "./items.json";
+import itemPhotos from "./item-photos.json";
 import Flight from "./Flight.jsx";
 
 const YEARS = Array.from({ length: 77 }, (_, i) => 1950 + i); // 1950~2026
@@ -18,6 +19,8 @@ const ERAS = [
 ];
 const eraOf = (y) => ERAS.find((e) => y <= e.to);
 const itemsOf = (y) => items.filter((i) => i.year === y);
+// 항목 사진: 제목이 파일 이름에 실제로 들어 있을 때만 붙인다(수집 스크립트에서 검증)
+const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
 const CENTER = { x: 50, y: 46 };
 const ENTRY = { x: -8, y: 46 }; // 우주선이 화면 왼쪽 밖에서 들어온다
 
@@ -179,8 +182,19 @@ export default function App() {
             {landingItems.length === 0 && <div className="empty">이 분류에는 아직 자료가 없습니다.</div>}
             {landingItems.map((it, idx) => {
               const ok = it.sources.length > 0 && it.confidence !== "low";
+              const ph = photoOf(it);
               return (
                 <article className="card" key={idx}>
+                  {ph ? (
+                    <figure className="item-photo">
+                      <img src={ph.thumb} alt={ph.title} loading="lazy" />
+                      <figcaption>
+                        사진: {ph.title} · 작가: {ph.artist} · {ph.license} · <a href={ph.page} target="_blank" rel="noopener">원본</a>
+                      </figcaption>
+                    </figure>
+                  ) : (
+                    <div className="item-photo none">📷 사진 준비 중</div>
+                  )}
                   <div className="meta">
                     <span className="tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
                     <span className="tag">{it.cat}</span>
