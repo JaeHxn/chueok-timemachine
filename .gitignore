@@ -31,3 +31,4 @@ desktop.ini
 .DS_Store
 .vscode/
 *.log
+web/e2e/*.png

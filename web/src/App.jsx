@@ -4,7 +4,6 @@ import itemPhotos from "./item-photos.json";
 
 const YEARS = Array.from({ length: 77 }, (_, i) => 1950 + i); // 1950~2026
 const CATS = ["음악", "TV·영화", "먹거리", "패션", "놀이·문구", "가전·기술", "사건·생활상", "유행어·풍속"];
-const TARGET = 20;
 const ERAS = [
   { to: 1959, name: "전후 잿더미와 희망", color: "#a08060" },
   { to: 1969, name: "흑백 재건과 근대화", color: "#8a8f99" },
@@ -17,94 +16,122 @@ const ERAS = [
   { to: 2026, name: "네오 숏폼 & 메타", color: "#8a5cf6" },
 ];
 const eraOf = (y) => ERAS.find((e) => y <= e.to);
-const itemsOf = (y) => items.filter((i) => i.year === y);
-// 항목 사진: 제목이 파일 이름에 실제로 들어 있을 때만 붙인다(수집 스크립트에서 검증)
+const BY_YEAR = items.reduce((m, it) => ((m[it.year] ||= []).push(it), m), {});
+const itemsOf = (y) => BY_YEAR[y] ?? [];
+const YEARS_WITH_DATA = YEARS.filter((y) => itemsOf(y).length);
 const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
+const MOON_ANGLE = (m) => (m - 1) * 30; // 1월이 12시 방향
 
-// 연도 행성의 달(월) 배치: 12개가 원형 궤도를 돈다. 각도는 도(degree).
-const MOON_ANGLE = (m) => (m - 1) * 30 - 90;
+// 주소(#/1974/3) ↔ 화면 상태. 뒤로가기·공유 링크가 그대로 동작한다.
+function parseHash() {
+  const [, y, m] = location.hash.match(/^#\/(\d{4})(?:\/(\d{1,2}))?/) ?? [];
+  const year = Number(y);
+  if (!YEARS.includes(year)) return { year: null, month: null };
+  const month = Number(m);
+  return { year, month: month >= 1 && month <= 12 ? month : null };
+}
+const hashOf = (y, m) => (y ? `#/${y}${m ? "/" + m : ""}` : "#/");
+const nearestWithData = (y) =>
+  YEARS_WITH_DATA.reduce((best, d) => (Math.abs(d - y) < Math.abs(best - y) ? d : best), YEARS_WITH_DATA[0]);
+
 const readReduce = () => {
-  try {
-    return localStorage.getItem("reduceMotion") === "1" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  } catch { return false; }
+  try { return localStorage.getItem("reduceMotion") === "1" || matchMedia("(prefers-reduced-motion: reduce)").matches; }
+  catch { return false; }
 };
 
 export default function App() {
-  const [view, setView] = useState("home"); // home | year | ground
-  const [year, setYear] = useState(null);
-  const [month, setMonth] = useState(null);
+  const [{ year, month }, setRoute] = useState(parseHash);
   const [cat, setCat] = useState("전체");
+  const [query, setQuery] = useState("");
   const [reduceMotion, setReduceMotion] = useState(readReduce);
   const [share, setShare] = useState(null);
+  const [toast, setToast] = useState("");
   const barRef = useRef(null);
 
+  // 주소가 바뀌면(뒤로가기 포함) 화면을 따라가게
   useEffect(() => {
-    try { localStorage.setItem("reduceMotion", reduceMotion ? "1" : "0"); } catch {}
-  }, [reduceMotion]);
+    const onHash = () => { setRoute(parseHash()); setCat("전체"); };
+    addEventListener("hashchange", onHash);
+    return () => removeEventListener("hashchange", onHash);
+  }, []);
+  const go = (y, m = null) => { location.hash = hashOf(y, m); };
 
-  // 상단 연도 바에서 선택한 연도가 가운데로 오도록 스크롤
+  useEffect(() => { try { localStorage.setItem("reduceMotion", reduceMotion ? "1" : "0"); } catch {} }, [reduceMotion]);
+
+  // 선택한 연도를 다이얼 가운데로
   useEffect(() => {
-    document.querySelector(".yearbar .sel")?.scrollIntoView({ inline: "center", block: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
+    barRef.current?.querySelector(".sel")?.scrollIntoView({ inline: "center", block: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
   }, [year, reduceMotion]);
 
-  // 이동은 모두 즉시. 효과는 화면이 바뀐 뒤 CSS로만 겹쳐 나온다(기다림 없음).
-  function goYear(y) {
-    if (y < YEARS[0] || y > YEARS[YEARS.length - 1]) return;
-    setYear(y); setMonth(null); setCat("전체"); setView("year");
-  }
-  function goMonth(m) { setMonth(m); setCat("전체"); setView("ground"); }
-
-  // ←/→ 키로 연도 이동 (입력창에 있을 땐 무시)
+  // ←/→ 키로 연도 이동 (입력 중엔 무시)
   useEffect(() => {
     const onKey = (e) => {
       if (e.target.closest?.("input,textarea") || !year) return;
-      if (e.key === "ArrowLeft") goYear(year - 1);
-      if (e.key === "ArrowRight") goYear(year + 1);
+      if (e.key === "ArrowLeft" && year > YEARS[0]) go(year - 1);
+      if (e.key === "ArrowRight" && year < YEARS.at(-1)) go(year + 1);
     };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    addEventListener("keydown", onKey);
+    return () => removeEventListener("keydown", onKey);
   }, [year]);
 
-  // 마우스 휠(세로)을 연도 바의 가로 스크롤로
-  const onBarWheel = (e) => {
-    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) barRef.current.scrollLeft += e.deltaY;
-  };
-  const nudge = (dir) => barRef.current.scrollBy({ left: dir * 320, behavior: reduceMotion ? "auto" : "smooth" });
-  function goHome() { setView("home"); setYear(null); setMonth(null); }
-  function back() {
-    if (view === "ground") { setMonth(null); setView("year"); }
-    else goHome();
-  }
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(""), 1800);
+    return () => clearTimeout(t);
+  }, [toast]);
 
-  const yearItems = useMemo(() => (year ? itemsOf(year) : []), [year]);
-  const landingItems = useMemo(() => {
-    if (!year) return [];
+  const onBarWheel = (e) => { if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) barRef.current.scrollLeft += e.deltaY; };
+  const nudge = (dir) => barRef.current.scrollBy({ left: dir * 320, behavior: reduceMotion ? "auto" : "smooth" });
+
+  const yearItems = year ? itemsOf(year) : [];
+  const monthCount = (m) => yearItems.filter((it) => it.month === m).length;
+  const shown = useMemo(() => {
     const list = month ? yearItems.filter((i) => i.month === month) : yearItems;
     return cat === "전체" ? list : list.filter((i) => i.cat === cat);
-  }, [year, month, cat, yearItems]);
+  }, [year, month, cat]);
 
-  function openShare(it) {
-    setShare({
-      title: `${it.title} (${it.year}${it.month ? "." + it.month : ""}) · 추억 타임머신`,
-      text: it.summary,
-      url: location.href,
-    });
+  const results = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (q.length < 1) return [];
+    return items.filter((i) => (i.title + " " + i.summary).toLowerCase().includes(q)).slice(0, 30);
+  }, [query]);
+
+  const shareUrl = (it) => `${location.origin}${location.pathname}${hashOf(it.year, it.month)}`;
+  async function copy(text, msg) {
+    try { await navigator.clipboard.writeText(text); setToast(msg); }
+    catch { setToast("복사하지 못했습니다. 주소창의 링크를 직접 복사해 주세요."); }
   }
-  async function nativeShare() { try { await navigator.share(share); } catch {} }
-  const copy = (t) => { navigator.clipboard?.writeText(t); alert("복사했습니다."); };
+  async function nativeShare() {
+    try { await navigator.share(share); setShare(null); } catch { /* 사용자가 취소 */ }
+  }
+
+  const birthRef = useRef(null);
+  function goBirth(e) {
+    e.preventDefault();
+    const y = Number(birthRef.current.value);
+    if (!YEARS.includes(y)) { setToast("1950~2026 사이 연도를 입력해 주세요."); return; }
+    go(y);
+  }
 
   return (
     <div className={`app ${reduceMotion ? "rm" : ""}`}>
       <header className="top">
-        <button className="brand" onClick={goHome}>🪐 추억 타임머신</button>
+        <a className="brand" href="#/">🪐 추억 타임머신</a>
         <div className="top-r">
-          <button className="ghost" onClick={() => setReduceMotion((v) => !v)}>
-            {reduceMotion ? "🎞 연출 켜기" : "🌙 모션 줄이기"}
+          <input
+            className="search"
+            type="search"
+            placeholder="추억 검색 (예: 라면, 통기타)"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            aria-label="추억 검색"
+          />
+          <button className="ghost" onClick={() => setReduceMotion((v) => !v)} aria-pressed={reduceMotion}>
+            {reduceMotion ? "효과 켜기" : "효과 줄이기"}
           </button>
         </div>
       </header>
 
-      {/* 상단 시간 다이얼: 좌우 스크롤 · 휠 · ←/→ */}
       <div className="dial">
         <button className="dial-arrow" onClick={() => nudge(-1)} aria-label="이전 연도들">‹</button>
         <nav className="yearbar" ref={barRef} onWheel={onBarWheel} aria-label="연도 선택">
@@ -113,125 +140,166 @@ export default function App() {
             const sel = y === year;
             const decade = y % 10 === 0;
             return (
-              <button
+              <a
                 key={y}
+                href={hashOf(y)}
                 className={`yb ${sel ? "sel" : ""} ${has ? "has" : ""} ${decade ? "decade" : ""}`}
                 style={{ "--c": eraOf(y).color }}
-                onClick={() => goYear(y)}
-                aria-current={sel ? "true" : undefined}
-                title={`${y}년 · ${eraOf(y).name}${has ? "" : " (준비 중)"}`}
+                aria-current={sel ? "page" : undefined}
+                aria-label={`${y}년${has ? ` · 자료 ${itemsOf(y).length}개` : " · 준비 중"}`}
               >
                 <span className="yb-n">{decade || sel ? y : String(y).slice(2)}</span>
                 <span className="yb-tick" />
-              </button>
+              </a>
             );
           })}
         </nav>
         <button className="dial-arrow" onClick={() => nudge(1)} aria-label="다음 연도들">›</button>
       </div>
-      {year && <div className="era-line" style={{ "--c": eraOf(year).color }}>{eraOf(year).name}</div>}
 
-      {view === "home" && (
-        <section className="home">
-          <p className="lead">위 연도 바를 옆으로 밀어 보고, 연도를 누르면 그 해의 달(월)이 인공위성처럼 돕니다.</p>
-          <p className="note">● 표시된 해는 수집 자료가 있는 해입니다(1950~1979). 나머지는 준비 중입니다.</p>
+      {query.trim() && (
+        <section className="results" aria-live="polite">
+          <h2 className="sec-h">“{query.trim()}” 검색 결과 {results.length}건</h2>
+          {results.length === 0 && <div className="empty">맞는 추억이 없습니다. 다른 낱말로 찾아보세요.</div>}
+          <ul className="result-list">
+            {results.map((it) => (
+              <li key={it.year + it.title}>
+                <a href={hashOf(it.year, it.month)} onClick={() => setQuery("")}>
+                  <span className="r-year">{it.year}{it.month ? `.${it.month}` : ""}</span>
+                  <span className="r-title">{it.title}</span>
+                  <span className="r-cat">{it.cat}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 
-      {view === "year" && year && (
-        <section className="orbit-view" key={year}>
-          <button className="back" onClick={back}>← 처음으로</button>
-          <h2>{year}</h2>
-          <div className={`orbit ${reduceMotion ? "still" : ""}`} style={{ "--c": eraOf(year).color }}>
-            <div className="core"><span>{year}</span></div>
-            <div className="ring">
-              {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => {
-                const n = yearItems.filter((it) => it.month === m).length;
-                return (
-                  <div key={m} className="sat" style={{ "--a": `${MOON_ANGLE(m) + 90}deg`, "--d": m }}>
-                    <button className={`moon ${n ? "has" : ""}`} onClick={() => goMonth(m)} title={`${m}월 · ${n}개`}>
-                      <span className="moon-label">{m}월</span>
-                      {n > 0 && <span className="moon-n">{n}</span>}
-                    </button>
-                  </div>
-                );
-              })}
-            </div>
+      {!query.trim() && !year && (
+        <section className="home">
+          <p className="lead">그 시절, 우리가 좋아했던 것들.</p>
+          <p className="note">연도를 고르면 그해 유행한 노래·먹거리·물건·사건을 볼 수 있어요.</p>
+          <form className="birth" onSubmit={goBirth}>
+            <label htmlFor="birth">태어난 해로 가기</label>
+            <input id="birth" ref={birthRef} type="number" inputMode="numeric" placeholder="예: 1965" />
+            <button className="primary" type="submit">이동</button>
+          </form>
+          <div className="quick">
+            {[1953, 1965, 1974, 1979, 1986, 1988, 1997].filter((y) => itemsOf(y).length).map((y) => (
+              <a key={y} className="chip" href={hashOf(y)}>{y}<small>{itemsOf(y).length}개</small></a>
+            ))}
           </div>
-          <p className="note">
-            {yearItems.length
-              ? `수집 ${yearItems.length}개 · 목표 ${TARGET}개 ${yearItems.length < TARGET ? "(목표 미달)" : "(목표 충족)"}`
-              : "이 해는 아직 준비 중입니다."}
-          </p>
-          {yearItems.length > 0 && (
-            <button className="primary" onClick={() => { setMonth(null); setCat("전체"); setView("ground"); }}>
-              {year}년 전체 보기 →
-            </button>
+          <p className="note small">지금은 1950~1999년 자료가 있습니다. 2000년 이후는 준비 중입니다.</p>
+        </section>
+      )}
+
+      {!query.trim() && year && (
+        <section className="year-view" key={year}>
+          <div className="year-head">
+            <h2>{year}</h2>
+            <p className="era" style={{ "--c": eraOf(year).color }}>{eraOf(year).name}</p>
+          </div>
+
+          {yearItems.length === 0 ? (
+            <div className="empty">
+              {year}년 자료는 준비 중입니다.
+              <a className="primary inline" href={hashOf(nearestWithData(year))}>가까운 {nearestWithData(year)}년 보기</a>
+            </div>
+          ) : (
+            <>
+              <div className={`orbit ${reduceMotion ? "still" : ""}`} style={{ "--c": eraOf(year).color }}>
+                <a className={`core ${month ? "" : "on"}`} href={hashOf(year)} aria-label={`${year}년 전체 보기`}>
+                  <span>{month ? "전체" : year}</span>
+                </a>
+                <div className="ring">
+                  {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => {
+                    const n = monthCount(m);
+                    return (
+                      <div key={m} className="sat" style={{ "--a": `${MOON_ANGLE(m)}deg`, "--d": m }}>
+                        {n ? (
+                          <a className={`moon has ${m === month ? "on" : ""}`} href={hashOf(year, m)} aria-label={`${m}월 · ${n}개`} aria-current={m === month ? "page" : undefined}>
+                            <span className="moon-label">{m}월</span>
+                            <span className="moon-n">{n}</span>
+                          </a>
+                        ) : (
+                          <span className="moon" aria-hidden="true"><span className="moon-label">{m}월</span></span>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+              <p className="note center">
+                {month ? `${month}월 추억 ${shown.length}개` : `${year}년 추억 ${yearItems.length}개`} · 빛나는 달을 누르면 그달만 볼 수 있어요
+              </p>
+
+              <div className="cats" role="tablist" aria-label="분류">
+                {["전체", ...CATS].map((c) => {
+                  const base = month ? yearItems.filter((i) => i.month === month) : yearItems;
+                  const n = c === "전체" ? base.length : base.filter((i) => i.cat === c).length;
+                  if (c !== "전체" && !n) return null;
+                  return (
+                    <button key={c} role="tab" aria-selected={c === cat} className={c === cat ? "on" : ""} onClick={() => setCat(c)}>
+                      {c} <small>{n}</small>
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div className="grid">
+                {shown.length === 0 && <div className="empty">이 분류에는 자료가 없습니다.</div>}
+                {shown.map((it) => {
+                  const ok = it.sources.length > 0 && it.confidence !== "low";
+                  const ph = photoOf(it);
+                  return (
+                    <article className="card" key={it.title}>
+                      {ph && (
+                        <figure className="item-photo">
+                          <img src={ph.thumb} alt={ph.title} loading="lazy" />
+                          <figcaption>사진: {ph.artist} · {ph.license} · <a href={ph.page} target="_blank" rel="noopener">원본</a></figcaption>
+                        </figure>
+                      )}
+                      <div className="meta">
+                        <span className="tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
+                        <span className="tag">{it.cat}</span>
+                        {!ok && <span className="tag warn">출처 확인 중</span>}
+                      </div>
+                      <h3>{it.title}</h3>
+                      <p>{it.summary}</p>
+                      {it.sources.length > 0 && (
+                        <div className="src">
+                          출처 {it.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}
+                        </div>
+                      )}
+                      <button className="share-btn" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
+                        공유
+                      </button>
+                    </article>
+                  );
+                })}
+              </div>
+            </>
           )}
         </section>
       )}
 
-      {view === "ground" && year && (
-        <section className="ground" key={`${year}-${month}`}>
-          <button className="back" onClick={back}>← {year}년 궤도로</button>
-          <h2>{year}년 {month ? `${month}월` : "전체"}의 추억</h2>
-          <div className="cats">
-            {["전체", ...CATS].map((c) => (
-              <button key={c} className={c === cat ? "on" : ""} onClick={() => setCat(c)}>{c}</button>
-            ))}
-          </div>
-          <div className="grid">
-            {landingItems.length === 0 && <div className="empty">이 분류에는 아직 자료가 없습니다.</div>}
-            {landingItems.map((it, idx) => {
-              const ok = it.sources.length > 0 && it.confidence !== "low";
-              const ph = photoOf(it);
-              return (
-                <article className="card" key={idx}>
-                  {ph ? (
-                    <figure className="item-photo">
-                      <img src={ph.thumb} alt={ph.title} loading="lazy" />
-                      <figcaption>
-                        사진: {ph.title} · 작가: {ph.artist} · {ph.license} · <a href={ph.page} target="_blank" rel="noopener">원본</a>
-                      </figcaption>
-                    </figure>
-                  ) : (
-                    <div className="item-photo none">📷 사진 준비 중</div>
-                  )}
-                  <div className="meta">
-                    <span className="tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
-                    <span className="tag">{it.cat}</span>
-                    <span className={`tag ${ok ? "ok" : "warn"}`}>{ok ? "출처 확인" : "검증 필요"}</span>
-                  </div>
-                  <h3>{it.title}</h3>
-                  <p>{it.summary}</p>
-                  <div className="src">
-                    출처: {it.sources.length
-                      ? it.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || s.url}</a>)
-                      : "확인된 출처 없음"}
-                  </div>
-                  <button className="share-btn" onClick={() => openShare(it)}>📤 공유</button>
-                </article>
-              );
-            })}
-          </div>
-        </section>
-      )}
-
       {share && (
-        <div className="sheet" onClick={(e) => e.target === e.currentTarget && setShare(null)}>
+        <div className="sheet" role="dialog" aria-modal="true" aria-label="공유" onClick={(e) => e.target === e.currentTarget && setShare(null)}
+          onKeyDown={(e) => e.key === "Escape" && setShare(null)}>
           <div className="box">
             <b>{share.title}</b>
-            <button onClick={nativeShare}>📤 기기 공유 (지원 기기)</button>
-            <button onClick={() => copy(share.url)}>🔗 링크 복사</button>
-            <button onClick={() => copy(`${share.title}\n${share.text}\n${share.url}`)}>🖼️ 공유 글 복사 (인스타·블로그용)</button>
-            <button disabled>💬 카카오톡 (JavaScript 키·도메인 등록 후 활성화)</button>
+            {typeof navigator.share === "function" && <button onClick={nativeShare} autoFocus>기기 공유 (카톡·인스타 등)</button>}
+            <button onClick={() => copy(share.url, "링크를 복사했어요")}>링크 복사</button>
+            <button onClick={() => copy(`${share.title}\n${share.text}\n${share.url}`, "공유 글을 복사했어요. 인스타·블로그에 붙여 넣으세요")}>공유 글 복사</button>
             <button onClick={() => setShare(null)}>닫기</button>
           </div>
         </div>
       )}
 
+      {toast && <div className="toast" role="status">{toast}</div>}
+
       <footer className="foot">
-        AI 재현 이미지는 배지를 붙입니다. 모든 자료는 검수 전 "검증 필요"로 표시됩니다.
+        자료는 위키백과·공공기관 등 공개 출처를 요약했습니다. 사진은 공개 라이선스 사진만 쓰고 작가·라이선스를 표시합니다.
       </footer>
     </div>
   );

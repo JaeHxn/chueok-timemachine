@@ -70,6 +70,38 @@
   },
   {
     "year": 1961,
+    "month": 12,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "KBS 텔레비전 방송 시작",
+    "summary": "KBS 텔레비전이 12월 31일 방송을 시작했다. 이후 텔레비전은 대중이 소식과 오락을 접하는 매체로 자리 잡아 갔다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0021719",
+        "name": "한국민족문화대백과사전, 방송",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": 12,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "서울 문화방송 라디오 개국",
+    "summary": "서울에서 문화방송 라디오가 정규방송을 시작했다. 상업 라디오 방송이 늘어나는 계기 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0019777",
+        "name": "한국민족문화대백과사전, 문화방송",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
     "month": null,
     "date_precision": "year",
     "category": "음악·라디오·영화·TV",
@@ -118,38 +150,6 @@
   },
   {
     "year": 1961,
-    "month": 12,
-    "date_precision": "month",
-    "category": "음악·라디오·영화·TV",
-    "title": "KBS 텔레비전 방송 시작",
-    "summary": "KBS 텔레비전이 12월 31일 방송을 시작했다. 이후 텔레비전은 대중이 소식과 오락을 접하는 매체로 자리 잡아 갔다.",
-    "sources": [
-      {
-        "url": "https://encykorea.aks.ac.kr/Article/E0021719",
-        "name": "한국민족문화대백과사전, 방송",
-        "license": "미확인"
-      }
-    ],
-    "confidence": "high"
-  },
-  {
-    "year": 1961,
-    "month": 12,
-    "date_precision": "month",
-    "category": "음악·라디오·영화·TV",
-    "title": "서울 문화방송 라디오 개국",
-    "summary": "서울에서 문화방송 라디오가 정규방송을 시작했다. 상업 라디오 방송이 늘어나는 계기 가운데 하나였다.",
-    "sources": [
-      {
-        "url": "https://encykorea.aks.ac.kr/Article/E0019777",
-        "name": "한국민족문화대백과사전, 문화방송",
-        "license": "미확인"
-      }
-    ],
-    "confidence": "high"
-  },
-  {
-    "year": 1961,
     "month": null,
     "date_precision": "year",
     "category": "먹거리·음료",
@@ -163,6 +163,22 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "연산군",
+    "summary": "신상옥 감독의 역사 영화로, 1961년 극장에서 관객의 지지를 받은 작품 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
+        "name": "한국영상자료원, 1961년 한국영화 개봉작 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1962,
@@ -214,22 +230,6 @@
   },
   {
     "year": 1963,
-    "month": 9,
-    "date_precision": "month",
-    "category": "먹거리·음료",
-    "title": "삼양라면 출시",
-    "summary": "삼양식품이 국내에서 삼양라면을 생산하기 시작했다. 라면은 이후 간편하게 먹는 음식으로 자리 잡았다.",
-    "sources": [
-      {
-        "url": "https://encykorea.aks.ac.kr/Article/E0026724",
-        "name": "한국민족문화대백과사전, 삼양라운드스퀘어",
-        "license": "미확인"
-      }
-    ],
-    "confidence": "high"
-  },
-  {
-    "year": 1963,
     "month": 3,
     "date_precision": "month",
     "category": "놀이·장난감·문구·학교",
@@ -262,6 +262,22 @@
   },
   {
     "year": 1963,
+    "month": 9,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "삼양라면 출시",
+    "summary": "삼양식품이 국내에서 삼양라면을 생산하기 시작했다. 라면은 이후 간편하게 먹는 음식으로 자리 잡았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0026724",
+        "name": "한국민족문화대백과사전, 삼양라운드스퀘어",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1963,
     "month": null,
     "date_precision": "year",
     "category": "음악·라디오·영화·TV",
@@ -277,16 +293,32 @@
     "confidence": "high"
   },
   {
-    "year": 1964,
+    "year": 1963,
     "month": null,
     "date_precision": "year",
-    "category": "음악·라디오·영화·TV",
-    "title": "맨발의 청춘",
-    "summary": "신성일과 엄앵란이 출연한 영화 '맨발의 청춘'이 흥행했다. 젊은 연인의 이야기가 당시 관객들의 관심을 모았다.",
+    "category": "음악",
+    "title": "밤안개",
+    "summary": "현미가 부른 노래로, 당시 대중에게 사랑받은 히트곡으로 꼽힌다.",
     "sources": [
       {
-        "url": "https://www.koreafilm.or.kr/museum/exhibition/EI_00042",
-        "name": "한국영상자료원, 신성일·엄앵란 관련 전시",
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 광복 70년 한국인 의식주 변천사: 유행가의 변천",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": 10,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "라디오 드라마 남과 북",
+    "summary": "한운사의 라디오 드라마 '남과 북'이 KBS에서 방송됐다. 이 작품은 이듬해 영화로도 만들어졌다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0074622",
+        "name": "한국민족문화대백과사전, 남과 북",
         "license": "미확인"
       }
     ],
@@ -310,15 +342,68 @@
   },
   {
     "year": 1964,
-    "month": 10,
-    "date_precision": "month",
+    "month": null,
+    "date_precision": "year",
     "category": "음악·라디오·영화·TV",
-    "title": "라디오 드라마 남과 북",
-    "summary": "한운사의 라디오 드라마 '남과 북'이 KBS에서 방송됐다. 이 작품은 이듬해 영화로도 만들어졌다.",
+    "title": "맨발의 청춘",
+    "summary": "신성일과 엄앵란이 출연한 영화 '맨발의 청춘'이 흥행했다. 젊은 연인의 이야기가 당시 관객들의 관심을 모았다.",
     "sources": [
       {
-        "url": "https://encykorea.aks.ac.kr/Article/E0074622",
-        "name": "한국민족문화대백과사전, 남과 북",
+        "url": "https://www.koreafilm.or.kr/museum/exhibition/EI_00042",
+        "name": "한국영상자료원, 신성일·엄앵란 관련 전시",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "동백아가씨",
+    "summary": "이미자가 부른 동명 영화의 주제가로, 1960년대를 대표하는 히트곡이 됐다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/news/policyFocusView.do?newsId=75082894&pkgId=5000006",
+        "name": "대한민국 정책브리핑, 한류의 뿌리 60~70년대 영화·가요",
+        "license": "미확인"
+      },
+      {
+        "url": "https://school.ybmsmartschool.com/ybm-prd-std/3rdParty/bluega/ybm2025/9788917302011/e-abr/book/content/contents/studyhelper/dataRoom/files/02_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF/02_4_%EA%B3%A0%EB%93%B1%20%EC%9D%8C%EA%B0%90%EB%B9%84_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF_4%EB%8B%A8%EC%9B%90.pdf",
+        "name": "YBM, 대중음악의 흐름",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "빨간 마후라",
+    "summary": "신상옥 감독의 영화로, 1960년대 초 그의 연이은 흥행작 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
+        "name": "한국영상자료원, 영화보다 영화 같은 삶: 영화감독 신상옥",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "국내 그룹사운드와 비틀즈 바람",
+    "summary": "비틀즈의 영향이 퍼지는 가운데 키보이스와 에드훠 등이 음반을 내며 국내 록 음악의 초기 흐름을 이뤘다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
       }
     ],
@@ -358,22 +443,6 @@
   },
   {
     "year": 1966,
-    "month": null,
-    "date_precision": "year",
-    "category": "음악·라디오·영화·TV",
-    "title": "하숙생",
-    "summary": "최희준이 부른 '하숙생'이 인기를 얻었다. 인생을 하숙에 빗댄 가사로 알려진 노래다.",
-    "sources": [
-      {
-        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
-        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
-        "license": "미확인"
-      }
-    ],
-    "confidence": "high"
-  },
-  {
-    "year": 1966,
     "month": 8,
     "date_precision": "month",
     "category": "가전·기술·교통",
@@ -383,6 +452,22 @@
       {
         "url": "https://encykorea.aks.ac.kr/Article/E0059151",
         "name": "한국민족문화대백과사전, 텔레비전",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1966,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "하숙생",
+    "summary": "최희준이 부른 '하숙생'이 인기를 얻었다. 인생을 하숙에 빗댄 가사로 알려진 노래다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
         "license": "미확인"
       }
     ],
@@ -469,16 +554,16 @@
     "confidence": "high"
   },
   {
-    "year": 1969,
+    "year": 1968,
     "month": null,
     "date_precision": "year",
-    "category": "음악·라디오·영화·TV",
-    "title": "사랑은 눈물의 씨앗",
-    "summary": "나훈아의 '사랑은 눈물의 씨앗'이 히트곡으로 사랑받았다. 사랑과 이별의 슬픔을 담은 노래다.",
+    "category": "TV·영화",
+    "title": "가요 반세기",
+    "summary": "한국 대중가요의 역사를 노래와 가수들의 모습으로 담은 기록영화로, 국도극장 개봉 당시 화제를 모았다.",
     "sources": [
       {
-        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
-        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "url": "https://www.koreafilm.or.kr/upload/webzine/1f34f3c5-16e7-4043-8e24-07b21f7603af.pdf",
+        "name": "한국영상자료원, 1968년작 가요 반세기 발굴",
         "license": "미확인"
       }
     ],
@@ -501,6 +586,51 @@
     "confidence": "high"
   },
   {
-    "note": "1960년부터 1969년까지 모든 연도가 목표인 20개에 미달했다. 연도별 유행 여부나 구체적인 시점을 확인하기 어려운 항목은 억지로 추가하지 않았으며, 일부 항목은 당시 유행 자체보다 출시·개국·생활상에 관한 기록이다. 1960년의 date_precision이 approx인 항목은 특정 연도가 아니라 1960년대 전반을 가리킨다."
+    "year": 1969,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "사랑은 눈물의 씨앗",
+    "summary": "나훈아의 '사랑은 눈물의 씨앗'이 히트곡으로 사랑받았다. 사랑과 이별의 슬픔을 담은 노래다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "커피 한 잔",
+    "summary": "펄 시스터스가 부른 신중현의 곡으로, 1968년 발표된 뒤 1969년에 크게 히트했다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0072891",
+        "name": "한국민족문화대백과사전, 커피 한 잔",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "님아",
+    "summary": "펄 시스터스가 부른 곡으로, 1968년 말 발표된 뒤 이듬해 커피 한 잔과 함께 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://www.opsc.kr/news/articleView.html?idxno=30037",
+        "name": "열린순창, 가요현대사: 1969년 대중가요와 한국사회",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
   }
 ]

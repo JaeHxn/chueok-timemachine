@@ -65,6 +65,22 @@
   },
   {
     "year": 1950,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "6·25 전쟁 발발",
+    "summary": "6월 25일 북한군의 남침으로 전쟁이 시작되면서 전국의 일상이 급격히 무너졌다.",
+    "sources": [
+      {
+        "url": "https://www.archives.go.kr/next/common/archivedata/render.do?filePath=2F757046696C652F70616C67616E2F313636393335313637303437375F372E706466",
+        "name": "국가기록원 문화영화 목록",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
     "month": 8,
     "date_precision": "month",
     "category": "사건·사회·생활상",
@@ -206,6 +222,22 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1952,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "전선야곡",
+    "summary": "전선에 있는 군인의 심정을 담은 노래로, 전쟁기 대중가요를 대표하는 곡 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
+        "name": "영어 위키백과 Trot",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1953,
@@ -384,6 +416,22 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "봄날은 간다",
+    "summary": "백설희가 부른 노래로, 전쟁을 겪은 시대의 애수를 담은 대중가요로 기억된다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
+        "name": "영어 위키백과 Trot",
+        "license": "CC BY-SA"
       }
     ],
     "confidence": "medium"
@@ -580,6 +628,22 @@
     "confidence": "low"
   },
   {
+    "year": 1954,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "이별의 부산정거장",
+    "summary": "피난지 부산을 떠나는 사람들의 기쁨과 이별의 설움을 담은 노래다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/popSong.do",
+        "name": "국가기록원 기록으로 만나는 대한민국: 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1955,
     "month": 2,
     "date_precision": "month",
@@ -718,6 +782,22 @@
     "confidence": "high"
   },
   {
+    "year": 1955,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "춘향전",
+    "summary": "이규환 감독의 영화는 큰 흥행을 거두며 전후 한국 영화 제작이 활기를 찾는 계기가 됐다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "영어 위키백과 Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1956,
     "month": 5,
     "date_precision": "month",
@@ -824,6 +904,38 @@
     "confidence": "high"
   },
   {
+    "year": 1956,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "자유부인",
+    "summary": "한형모 감독의 영화로, 전후의 변화하는 풍속과 여성의 삶을 그려 대중의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "영어 위키백과 Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1956,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "단장의 미아리고개",
+    "summary": "전쟁으로 헤어진 가족의 비통함을 담은 노래로, 이후에도 여러 가수가 다시 불렀다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
+        "name": "영어 위키백과 Trot",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1957,
     "month": null,
     "date_precision": "year",
@@ -838,6 +950,22 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1957,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악",
+    "title": "장소팔·고춘자의 만담",
+    "summary": "두 사람의 대화 만담은 1950년대 중반부터 라디오 등을 통해 널리 알려졌다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/movie/times.do?year=1960",
+        "name": "국가기록원 문화영화로 보는 대한민국",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1958,
@@ -925,6 +1053,38 @@
     "confidence": "high"
   },
   {
+    "year": 1958,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악",
+    "title": "서울야곡",
+    "summary": "현인의 노래로, 미국 대중음악의 춤곡 리듬을 적극적으로 받아들인 1950년대 후반 인기 가요 흐름에 속한다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전: 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1958,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악",
+    "title": "닐니리 맘보",
+    "summary": "김정애가 부른 노래로, 맘보 같은 춤곡 리듬이 대중가요에 스며든 당시의 흐름을 보여 준다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전: 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1959,
     "month": 2,
     "date_precision": "month",
@@ -984,6 +1144,22 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0015002",
         "name": "한국민족문화대백과사전, 대한민국",
         "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1959,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "고종황제와 의사 안중근",
+    "summary": "고종과 안중근을 다룬 전창근 감독의 역사영화로 관객의 주목을 받았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sageuk",
+        "name": "영어 위키백과 Sageuk",
+        "license": "CC BY-SA"
       }
     ],
     "confidence": "medium"

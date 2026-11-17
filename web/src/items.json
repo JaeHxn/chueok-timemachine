@@ -65,6 +65,22 @@
   },
   {
     "year": 1950,
+    "month": 6,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "6·25 전쟁 발발",
+    "summary": "6월 25일 북한군의 남침으로 전쟁이 시작되면서 전국의 일상이 급격히 무너졌다.",
+    "sources": [
+      {
+        "url": "https://www.archives.go.kr/next/common/archivedata/render.do?filePath=2F757046696C652F70616C67616E2F313636393335313637303437375F372E706466",
+        "name": "국가기록원 문화영화 목록",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
     "month": 8,
     "precision": "month",
     "cat": "사건·생활상",
@@ -206,6 +222,22 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1952,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "전선야곡",
+    "summary": "전선에 있는 군인의 심정을 담은 노래로, 전쟁기 대중가요를 대표하는 곡 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
+        "name": "영어 위키백과 Trot",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1953,
@@ -384,6 +416,22 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "봄날은 간다",
+    "summary": "백설희가 부른 노래로, 전쟁을 겪은 시대의 애수를 담은 대중가요로 기억된다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
+        "name": "영어 위키백과 Trot",
+        "license": "CC BY-SA"
       }
     ],
     "confidence": "medium"
@@ -580,6 +628,22 @@
     "confidence": "low"
   },
   {
+    "year": 1954,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이별의 부산정거장",
+    "summary": "피난지 부산을 떠나는 사람들의 기쁨과 이별의 설움을 담은 노래다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/popSong.do",
+        "name": "국가기록원 기록으로 만나는 대한민국: 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1955,
     "month": 2,
     "precision": "month",
@@ -718,6 +782,22 @@
     "confidence": "high"
   },
   {
+    "year": 1955,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "춘향전",
+    "summary": "이규환 감독의 영화는 큰 흥행을 거두며 전후 한국 영화 제작이 활기를 찾는 계기가 됐다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "영어 위키백과 Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1956,
     "month": 5,
     "precision": "month",
@@ -824,6 +904,38 @@
     "confidence": "high"
   },
   {
+    "year": 1956,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "자유부인",
+    "summary": "한형모 감독의 영화로, 전후의 변화하는 풍속과 여성의 삶을 그려 대중의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "영어 위키백과 Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1956,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "단장의 미아리고개",
+    "summary": "전쟁으로 헤어진 가족의 비통함을 담은 노래로, 이후에도 여러 가수가 다시 불렀다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
+        "name": "영어 위키백과 Trot",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1957,
     "month": null,
     "precision": "year",
@@ -838,6 +950,22 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1957,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "장소팔·고춘자의 만담",
+    "summary": "두 사람의 대화 만담은 1950년대 중반부터 라디오 등을 통해 널리 알려졌다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/movie/times.do?year=1960",
+        "name": "국가기록원 문화영화로 보는 대한민국",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1958,
@@ -925,6 +1053,38 @@
     "confidence": "high"
   },
   {
+    "year": 1958,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "서울야곡",
+    "summary": "현인의 노래로, 미국 대중음악의 춤곡 리듬을 적극적으로 받아들인 1950년대 후반 인기 가요 흐름에 속한다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전: 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1958,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "닐니리 맘보",
+    "summary": "김정애가 부른 노래로, 맘보 같은 춤곡 리듬이 대중가요에 스며든 당시의 흐름을 보여 준다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전: 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1959,
     "month": 2,
     "precision": "month",
@@ -984,6 +1144,22 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0015002",
         "name": "한국민족문화대백과사전, 대한민국",
         "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1959,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "고종황제와 의사 안중근",
+    "summary": "고종과 안중근을 다룬 전창근 감독의 역사영화로 관객의 주목을 받았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sageuk",
+        "name": "영어 위키백과 Sageuk",
+        "license": "CC BY-SA"
       }
     ],
     "confidence": "medium"
@@ -1154,6 +1330,22 @@
     "confidence": "medium"
   },
   {
+    "year": 1961,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "연산군",
+    "summary": "신상옥 감독의 역사 영화로, 1961년 극장에서 관객의 지지를 받은 작품 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
+        "name": "한국영상자료원, 1961년 한국영화 개봉작 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1962,
     "month": null,
     "precision": "year",
@@ -1266,6 +1458,22 @@
     "confidence": "high"
   },
   {
+    "year": 1963,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "밤안개",
+    "summary": "현미가 부른 노래로, 당시 대중에게 사랑받은 히트곡으로 꼽힌다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 광복 70년 한국인 의식주 변천사: 유행가의 변천",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1964,
     "month": 10,
     "precision": "month",
@@ -1308,6 +1516,59 @@
       {
         "url": "https://www.koreafilm.or.kr/museum/exhibition/EI_00042",
         "name": "한국영상자료원, 신성일·엄앵란 관련 전시",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "동백아가씨",
+    "summary": "이미자가 부른 동명 영화의 주제가로, 1960년대를 대표하는 히트곡이 됐다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/news/policyFocusView.do?newsId=75082894&pkgId=5000006",
+        "name": "대한민국 정책브리핑, 한류의 뿌리 60~70년대 영화·가요",
+        "license": "미확인"
+      },
+      {
+        "url": "https://school.ybmsmartschool.com/ybm-prd-std/3rdParty/bluega/ybm2025/9788917302011/e-abr/book/content/contents/studyhelper/dataRoom/files/02_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF/02_4_%EA%B3%A0%EB%93%B1%20%EC%9D%8C%EA%B0%90%EB%B9%84_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF_4%EB%8B%A8%EC%9B%90.pdf",
+        "name": "YBM, 대중음악의 흐름",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "빨간 마후라",
+    "summary": "신상옥 감독의 영화로, 1960년대 초 그의 연이은 흥행작 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
+        "name": "한국영상자료원, 영화보다 영화 같은 삶: 영화감독 신상옥",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "국내 그룹사운드와 비틀즈 바람",
+    "summary": "비틀즈의 영향이 퍼지는 가운데 키보이스와 에드훠 등이 음반을 내며 국내 록 음악의 초기 흐름을 이뤘다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
       }
     ],
@@ -1458,6 +1719,22 @@
     "confidence": "high"
   },
   {
+    "year": 1968,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "가요 반세기",
+    "summary": "한국 대중가요의 역사를 노래와 가수들의 모습으로 담은 기록영화로, 국도극장 개봉 당시 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/upload/webzine/1f34f3c5-16e7-4043-8e24-07b21f7603af.pdf",
+        "name": "한국영상자료원, 1968년작 가요 반세기 발굴",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1969,
     "month": 8,
     "precision": "month",
@@ -1484,6 +1761,38 @@
       {
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "커피 한 잔",
+    "summary": "펄 시스터스가 부른 신중현의 곡으로, 1968년 발표된 뒤 1969년에 크게 히트했다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0072891",
+        "name": "한국민족문화대백과사전, 커피 한 잔",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "님아",
+    "summary": "펄 시스터스가 부른 곡으로, 1968년 말 발표된 뒤 이듬해 커피 한 잔과 함께 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://www.opsc.kr/news/articleView.html?idxno=30037",
+        "name": "열린순창, 가요현대사: 1969년 대중가요와 한국사회",
         "license": "미확인"
       }
     ],
@@ -3688,6 +3997,758 @@
       {
         "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
         "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": 12,
+    "precision": "month",
+    "cat": "가전·기술",
+    "title": "컬러 텔레비전 방송",
+    "summary": "지상파 컬러 TV 본방송이 시작되면서 가정의 텔레비전 시청 문화가 달라지기 시작했다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "조용필 - 창밖의 여자",
+    "summary": "조용필의 '창밖의 여자'가 큰 인기를 얻으며 1980년대 조용필 전성기의 출발을 알렸다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/KBS_Song_Festival",
+        "name": "Wikipedia, KBS Song Festival",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "조용필 - 단발머리",
+    "summary": "조용필의 '단발머리'가 젊은 층을 포함해 폭넓게 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cho_Yong-pil",
+        "name": "Wikipedia, Cho Yong-pil",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 최후의 증인",
+    "summary": "이두용 감독의 영화 '최후의 증인'이 개봉해 한국전쟁의 상처를 다루었다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/List_of_South_Korean_films_of_1980",
+        "name": "Wikipedia, List of South Korean films of 1980",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "과외 금지 조치",
+    "summary": "정부의 과외 금지 조치가 시행되면서 학생과 학부모의 교육 생활에 영향을 주었다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "조용필 - 고추잠자리",
+    "summary": "조용필의 '고추잠자리'가 어린 시절을 떠올리게 하는 노랫말로 큰 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cho_Yong-pil",
+        "name": "Wikipedia, Cho Yong-pil",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "조용필 - 미워 미워 미워",
+    "summary": "조용필의 '미워 미워 미워'는 그의 1981년 음반에 실린 인기곡이다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cho_Yong-pil",
+        "name": "Wikipedia, Cho Yong-pil",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "서울 올림픽 유치 확정",
+    "summary": "서울이 1988년 하계 올림픽 개최 도시로 선정되며 전국적인 화제가 됐다.",
+    "sources": [
+      {
+        "url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200200000003&rc_ritem_no=000000000007&sitePage=0-0-0",
+        "name": "국가기록원, 1980년대의 우리 생활",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "approx",
+    "cat": "가전·기술",
+    "title": "컬러 텔레비전 보급",
+    "summary": "컬러 방송이 시작된 뒤 컬러 TV에 대한 관심과 보급이 늘어났다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "approx",
+    "cat": "가전·기술",
+    "title": "휴대용 카세트 플레이어",
+    "summary": "휴대용 카세트 기기로 이어폰을 끼고 음악을 듣는 문화가 퍼지기 시작했다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1982,
+    "month": 1,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "야간 통행금지 해제",
+    "summary": "오랫동안 시행된 야간 통행금지가 해제돼 밤 시간의 이동과 생활이 자유로워졌다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1982,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 꼬방동네 사람들",
+    "summary": "배창호 감독의 '꼬방동네 사람들'은 도시 빈민의 삶을 그려 주목받았다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
+        "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1982,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "교복 자율화 발표",
+    "summary": "정부가 중고교생의 교복 자율화 방침을 발표해 학생과 학부모 사이에서 화제가 됐다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "조선왕조 오백년",
+    "summary": "MBC 사극 시리즈 '조선왕조 오백년'이 방송을 시작해 조선 시대의 역사를 연속극으로 풀어냈다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "year",
+    "cat": "패션",
+    "title": "교복 자율화",
+    "summary": "중고교의 교복 자율화가 시행되면서 학생들이 사복을 입고 등교하기 시작했다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "year",
+    "cat": "패션",
+    "title": "학생 사복 차림",
+    "summary": "교복 자율화로 학생들의 등교 복장이 다양해졌다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "approx",
+    "cat": "가전·기술",
+    "title": "컬러 TV 시청",
+    "summary": "컬러 방송을 볼 수 있는 TV가 가정의 주요 가전제품으로 주목받았다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1984,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 고래사냥",
+    "summary": "배창호 감독의 '고래사냥'은 젊은이들의 방황과 우정을 그려 흥행했다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
+        "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1984,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 사랑과 진실",
+    "summary": "김수현 작가의 드라마 '사랑과 진실'이 방송돼 많은 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "들국화 - 행진",
+    "summary": "들국화의 '행진'은 거친 밴드 사운드와 자유로운 분위기로 젊은 음악 팬들의 주목을 받았다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
+        "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 깊고 푸른 밤",
+    "summary": "배창호 감독의 '깊고 푸른 밤'은 미국 이민자의 삶을 그려 화제가 됐다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
+        "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 조선왕조 오백년",
+    "summary": "조선왕조 오백년 시리즈가 역사 속 왕실과 인물들의 이야기를 이어갔다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "approx",
+    "cat": "가전·기술",
+    "title": "휴대용 카세트 플레이어",
+    "summary": "이어폰을 끼고 카세트테이프를 듣는 개인 음악 감상 방식이 확산됐다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "approx",
+    "cat": "유행어·풍속",
+    "title": "대학가 라이브 음악",
+    "summary": "대학가의 소규모 공연 공간은 밴드와 관객이 가까이 만나는 곳이었다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
+        "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1986,
+    "month": null,
+    "precision": "approx",
+    "cat": "가전·기술",
+    "title": "휴대용 카세트 플레이어",
+    "summary": "휴대용 카세트 기기는 이어폰으로 혼자 음악을 듣는 생활을 가능하게 했다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "유재하 - 사랑하기 때문에",
+    "summary": "유재하의 '사랑하기 때문에'가 발표돼 이후 한국 발라드의 중요한 작품으로 평가받았다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
+        "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 사랑과 야망",
+    "summary": "김수현 작가의 '사랑과 야망'이 가족과 사랑 이야기를 펼치며 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "금지곡 해제",
+    "summary": "가요 금지곡에 대한 재심의가 이뤄져 여러 노래가 다시 방송될 수 있게 됐다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1988,
+    "month": 9,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "서울 올림픽",
+    "summary": "서울에서 하계 올림픽이 열려 개회식과 경기 중계가 전국적인 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200200000003&rc_ritem_no=000000000007&sitePage=0-0-0",
+        "name": "국가기록원, 1980년대의 우리 생활",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이상은 - 담다디",
+    "summary": "이상은의 '담다디'가 강변가요제를 통해 알려지며 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://www.yna.co.kr/view/AKR20151116172300005",
+        "name": "연합뉴스, 음악의 타임슬립 효과",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 모래성",
+    "summary": "김수현 작가의 드라마 '모래성'이 방송돼 시청자들의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
+        "name": "동아일보, 응답하라 대중문화 그때 그 시절",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1989,
+    "month": 1,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "해외여행 자유화",
+    "summary": "해외여행 제한이 완화돼 일반 국민의 해외여행이 자유로워졌다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1989,
+    "month": 6,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "과외 제한 일부 완화",
+    "summary": "대학생의 비영리 과외와 중고교생의 방학 중 학원 수강이 허용됐다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
+        "name": "국가기록원, 금기와 자율: 1980년대",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "현철 - 봉선화 연정",
+    "summary": "현철의 '봉선화 연정'이 큰 인기를 얻으며 KBS 가요대상 대상곡으로 선정됐다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/KBS_Song_Festival",
+        "name": "Wikipedia, KBS Song Festival",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "approx",
+    "cat": "가전·기술",
+    "title": "휴대용 카세트 플레이어",
+    "summary": "휴대용 카세트 기기와 이어폰으로 좋아하는 음반을 혼자 듣는 문화가 이어졌다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "서태지와 아이들 〈난 알아요〉",
+    "summary": "랩과 춤을 결합한 무대가 큰 반향을 일으키며 청소년 대중문화의 변화를 이끌었다.",
+    "sources": [
+      {
+        "url": "https://www.kocca.kr/n_content/vol02/vol02_02.pdf",
+        "name": "한국콘텐츠진흥원, 1990년대 청춘들",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "더 블루 〈너만을 느끼며〉",
+    "summary": "손지창과 김민종이 결성한 듀오의 곡이 인기를 모았다.",
+    "sources": [
+      {
+        "url": "https://www.khan.co.kr/article/201312170600005",
+        "name": "경향신문, 2013년 대중문화 결산",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "서태지와 아이들 〈교실 이데아〉",
+    "summary": "입시 중심 교육을 비판한 가사로 청소년과 사회의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://www.kocca.kr/n_content/vol02/vol02_02.pdf",
+        "name": "한국콘텐츠진흥원, 1990년대 청춘들",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "H.O.T. 〈캔디〉",
+    "summary": "밝은 분위기의 노래와 무대 의상이 청소년 팬들에게 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Candy_%28H.O.T._song%29",
+        "name": "영어 위키백과, Candy (H.O.T. song)",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈은행나무 침대〉",
+    "summary": "전생과 현생을 오가는 사랑을 그린 한국 영화가 관객을 모았다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/years/kmovieost",
+        "name": "벅스, 연도별 국내 영화 OST",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "양파 〈애송이의 사랑〉",
+    "summary": "양파가 어린 나이에 선보인 발라드로 대중의 주목을 받았다.",
+    "sources": [
+      {
+        "url": "https://weekly.khan.co.kr/article/201208271735491",
+        "name": "주간경향, 2012년 복고 트렌드는 ‘1990년대 스타일’",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈별은 내 가슴에〉",
+    "summary": "안재욱과 최진실 등이 출연한 드라마가 인기를 끌었고 극 중 노래도 주목받았다.",
+    "sources": [
+      {
+        "url": "https://weekly.khan.co.kr/article/201208271735491",
+        "name": "주간경향, 2012년 복고 트렌드는 ‘1990년대 스타일’",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈8월의 크리스마스〉",
+    "summary": "사진사와 주차 단속원의 담담한 사랑을 그린 영화가 오래 기억되는 작품이 됐다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/cinematheque/programs/PI_00576",
+        "name": "한국영상자료원, 우리가 사랑한 90년대 후반 한국영화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈미술관 옆 동물원〉",
+    "summary": "뜻밖에 함께 지내게 된 남녀의 이야기를 그린 영화가 관객의 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/cinematheque/programs/PI_00576",
+        "name": "한국영상자료원, 우리가 사랑한 90년대 후반 한국영화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈쉬리〉",
+    "summary": "남북 첩보전을 소재로 한 한국 영화가 대규모 관객을 모았다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/years/kmovieost",
+        "name": "벅스, 연도별 국내 영화 OST",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈주유소 습격사건〉",
+    "summary": "주유소를 점거한 청년들의 이야기를 그린 코미디가 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/years/kmovieost",
+        "name": "벅스, 연도별 국내 영화 OST",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈인정사정 볼 것 없다〉",
+    "summary": "형사와 범인의 추격을 감각적인 영상으로 풀어낸 영화가 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/years/kmovieost",
+        "name": "벅스, 연도별 국내 영화 OST",
         "license": "미확인"
       }
     ],
