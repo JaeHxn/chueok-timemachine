@@ -1,55 +1,991 @@
 [
-{"year":1950,"month":5,"date_precision":"month","category":"먹거리·음료","title":"칠성사이다 출시","summary":"롯데칠성음료의 청량음료 칠성사이다가 1950년 5월 9일 처음 출시된 것으로 위키백과에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/칠성사이다","name":"위키백과 칠성사이다","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1950,"month":6,"date_precision":"month","category":"사건·사회·생활상","title":"한국전쟁 발발","summary":"1950년 6월 25일 북한군의 남침으로 전쟁이 시작되었고, 1953년 7월 27일 정전협정으로 전투가 멈췄다. 이후 피난, 배급, 구호물자가 일상이 되었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/6.25_전쟁","name":"위키백과 6.25 전쟁","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1950,"month":8,"date_precision":"month","category":"사건·사회·생활상","title":"한국은행 1차 화폐개혁","summary":"1950년 8월 28일 한국은행이 1차 화폐개혁을 단행한 것으로 연도 문서의 사건란에 올라 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1950년_대한민국","name":"위키백과 1950년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1950,"month":9,"date_precision":"month","category":"사건·사회·생활상","title":"국군 여군 창설","summary":"1950년 9월 6일 국군에 여군이 창설되었다고 연도 문서에 기록되어 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1950년_대한민국","name":"위키백과 1950년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1950,"month":10,"date_precision":"month","category":"음악·라디오·영화·연극","title":"주한미군방송 AFKN 라디오 서울 첫 전파","summary":"1950년 10월 4일 주한 미군방송(AFKN) 라디오가 서울에서 처음 전파를 쏘았다. 이후 미국 대중음악을 접하는 통로 가운데 하나가 된 것으로 알려져 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1950년_대한민국","name":"위키백과 1950년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1950,"month":4,"date_precision":"month","category":"음악·라디오·영화·연극","title":"현인, 은방울쇼 출연","summary":"가수 현인이 1950년 4월 1일 동아극장의 은방울악극단 '은방울쇼'에 당대 스타들과 함께 출연했다. 전쟁 중에는 군부대 위문 공연을 자주 다녔다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현인","name":"위키백과 현인","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1951,"month":4,"date_precision":"month","category":"음악·라디오·영화·연극","title":"현인과 그 악단 결성","summary":"피난 중이던 1951년 4월 가수 현인이 '현인과 그 악단'을 결성해 무대에 올랐다고 위키백과 현인 항목에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현인","name":"위키백과 현인","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1951,"month":8,"date_precision":"month","category":"가전·기술·교통","title":"서울-부산 간 전화 개통","summary":"1951년 8월 16일 서울과 부산 사이 전화가 개통되었다고 연도 문서에 올라 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1951년_대한민국","name":"위키백과 1951년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1951,"month":null,"date_precision":"year","category":"놀이·장난감·문구·학교 생활","title":"피난지 학교와 천막교실","summary":"문교부가 1951년 피난지 학교 재개를 명령해 부산·대구·대전 등지에 피난 학교가 세워졌고, 노천교실·천막교실에서 수업했다는 학교 신문 기사가 있다. 검색 결과 요약만 보고 기사 본문은 직접 열지 못했다.","sources":[{"url":"https://hangyo.com/mobile/article.html?no=104737","name":"한국교육신문 광복 80주년 특별기획 6.25 전쟁과 천막교실","license":"미확인"}],"confidence":"low"},
-{"year":1952,"month":8,"date_precision":"month","category":"사건·사회·생활상","title":"문화보호법 제정","summary":"1952년 8월 7일 학술원과 예술원 설치 등을 정한 문화보호법이 제정되었다고 연도 문서에 기록되어 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1952년_대한민국","name":"위키백과 1952년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1952,"month":3,"date_precision":"month","category":"사건·사회·생활상","title":"광무신문지법 폐기","summary":"1952년 3월 19일 대한제국 시기에 만든 광무신문지법이 폐기되었다고 연도 문서에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1952년_대한민국","name":"위키백과 1952년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1952,"month":null,"date_precision":"approx","category":"음악·라디오·영화·연극","title":"번안곡 장미빛 인생과 샹송 붐","summary":"현인이 부른 번안곡 '장미빛 인생'이 1952년경 샹송 붐을 일으켰다고 위키백과 현인 항목에 적혀 있다. 연도는 '경'으로 표기되어 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현인","name":"위키백과 현인","license":"CC BY-SA 4.0"}],"confidence":"low"},
-{"year":1953,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"굳세어라 금순아 발표","summary":"현인이 부른 '굳세어라 금순아'가 1953년 대구 오리엔트레코드사에서 발표되어 흥남부두, 1·4 후퇴, 국제시장 같은 피난 정서를 담아 국민가요 수준의 인기를 얻었다. 현인 항목은 1950년으로 적어 문서마다 연도가 엇갈린다.","sources":[{"url":"https://ko.wikipedia.org/wiki/굳세어라_금순아","name":"위키백과 굳세어라 금순아","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/박시춘","name":"위키백과 박시춘","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1953,"month":2,"date_precision":"month","category":"사건·사회·생활상","title":"화폐 단위 원에서 환으로 변경","summary":"1953년 2월 17일 화폐 단위가 원에서 환으로 바뀌었다고 연도 문서에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1953년_대한민국","name":"위키백과 1953년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1953,"month":4,"date_precision":"month","category":"유행어·풍속","title":"월간 사상계 창간","summary":"1953년 4월 장준하가 월간 종합 교양지 『사상계』를 창간했고 1970년 5월 205호까지 발행되었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/사상계","name":"위키백과 사상계","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1953,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"대한뉴스 상영 시작","summary":"1953년부터 1994년까지 매주 정부가 제작해 극장에서 상영한 영상 뉴스 '대한뉴스'가 시작되었고, 1994년 12월 31일 2040회로 끝났다.","sources":[{"url":"https://ko.wikipedia.org/wiki/대한뉴스","name":"위키백과 대한뉴스","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1953,"month":7,"date_precision":"month","category":"사건·사회·생활상","title":"한국전쟁 휴전","summary":"1953년 7월 27일 휴전이 이루어졌고, 8월 15일 부산에 있던 정부가 서울로 돌아왔다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1953년_대한민국","name":"위키백과 1953년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1953,"month":6,"date_precision":"month","category":"사건·사회·생활상","title":"코리아헤럴드 창간","summary":"1953년 6월 15일 영자 신문 코리아헤럴드가 창간되었다고 연도 문서에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1953년_대한민국","name":"위키백과 1953년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1953,"month":1,"date_precision":"month","category":"사건·사회·생활상","title":"여객선 창경호 침몰","summary":"1953년 1월 9일 다대포 앞바다에서 여객선 창경호가 침몰한 사고가 있었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1953년_대한민국","name":"위키백과 1953년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1953,"month":10,"date_precision":"month","category":"가전·기술·교통","title":"국내 자체 제작 항공기 부활호 완성","summary":"1953년 10월 11일 국내 최초로 자체 제작한 항공기 '부활호'가 완성되었다고 연도 문서에 올라 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1953년_대한민국","name":"위키백과 1953년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1953,"month":null,"date_precision":"approx","category":"사건·사회·생활상","title":"국제시장, 미군 물자 유통으로 확대","summary":"1945년 광복 이후 형성된 부산 국제시장이 한국전쟁 이후 미군 물자가 유통되면서 규모가 커졌다. 확대 시점은 전쟁 이후로만 적혀 있어 1953년으로 근사 처리했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/국제시장","name":"위키백과 국제시장","license":"CC BY-SA 4.0"}],"confidence":"low"},
-{"year":1953,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"영화 최후의 유혹 (1953)","summary":"1953년 대한민국 영화 목록 문서에는 이 작품 한 편만 올라 있다. 감독과 개봉일은 문서에 없고 문서 자체가 토막글이라 목록이 불완전하다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1953년_대한민국의_영화_목록","name":"위키백과 1953년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"low"},
-{"year":1954,"month":8,"date_precision":"month","category":"유행어·풍속","title":"전국 댄스홀 폐쇄령","summary":"1954년 8월 15일 전국 댄스홀에 폐쇄령이 내려졌다. 같은 해 연재된 소설 '자유부인'이 불러온 사교댄스 논란과 같은 시기의 풍속 단속이다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국","name":"위키백과 1954년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1954,"month":8,"date_precision":"month","category":"가전·기술·교통","title":"경부선 급행열차 통일호 개통","summary":"1954년 8월 15일 경부선 급행열차 통일호가 개통되었고 운행 시간은 9시간 30분이었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국","name":"위키백과 1954년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1954,"month":12,"date_precision":"month","category":"음악·라디오·영화·연극","title":"CBS 기독교방송 개국","summary":"1954년 12월 15일 한국 최초의 기독교 라디오 방송국 CBS가 개국했다. 연도 문서는 이를 최초의 민영 방송으로 적고 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국","name":"위키백과 1954년 대한민국","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/CBS_(대한민국의_방송사)","name":"위키백과 CBS (대한민국의 방송사)","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1954,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"이별의 부산정거장 발표","summary":"남인수가 부른 '이별의 부산정거장'(박시춘 작곡)이 1954년에 나와 피난민이 부산역에서 헤어지는 아픔을 담아 큰 인기를 끌었다. 정확한 월은 문서에 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/이별의_부산정거장","name":"위키백과 이별의 부산정거장","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/박시춘","name":"위키백과 박시춘","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1954,"month":1,"date_precision":"month","category":"유행어·풍속","title":"소설 자유부인 서울신문 연재 시작","summary":"정비석의 소설 '자유부인'이 1954년 1월부터 8월까지 서울신문에 연재되어 사교댄스에 빠진 교수 부인 이야기로 논쟁을 일으켰다. 연재 횟수와 종료일은 자료마다 다르다.","sources":[{"url":"https://en.wikipedia.org/wiki/Madame_Freedom","name":"Wikipedia Madame Freedom","license":"CC BY-SA 4.0"},{"url":"https://www.seoul.co.kr/news/1999/02/04/19990204015004","name":"서울신문 1999-02-04 기사 (검색 결과 요약만 확인)","license":"미확인"}],"confidence":"medium"},
-{"year":1954,"month":8,"date_precision":"month","category":"음악·라디오·영화·연극","title":"영화 이창 국내 개봉","summary":"히치콕 감독의 영화 '이창'이 1954년 8월 1일 개봉한 것으로 연도 문서에 올라 있다. 기록상 국내 개봉일인지는 문서에서 구분되지 않는다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국","name":"위키백과 1954년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"low"},
-{"year":1954,"month":3,"date_precision":"month","category":"사건·사회·생활상","title":"표준시 30분 되돌림","summary":"1954년 3월 21일 한국 표준시를 동경 127도 30분 기준으로 30분 되돌려 생활 시간 체계가 바뀌었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국","name":"위키백과 1954년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1954,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"김포국제공항 사용 허가","summary":"1954년에 김포국제공항 사용이 허가된 것으로 연도 문서에 적혀 있으며 월은 나와 있지 않다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국","name":"위키백과 1954년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1954,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"1954년 한국영화 5편","summary":"위키백과 1954년 대한민국의 영화 목록에는 '애원의 향토', '운명의 손', '창수만세', '출격 명령', '코리아' 5편이 올라 있다. 제목만 있고 개봉일은 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국의_영화_목록","name":"위키백과 1954년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1954,"month":9,"date_precision":"month","category":"사건·사회·생활상","title":"독도 우표 3종 발행","summary":"1954년 9월 15일 독도를 주제로 한 우표 3종이 발행되었다고 연도 문서에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1954년_대한민국","name":"위키백과 1954년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1954,"month":null,"date_precision":"approx","category":"먹거리·음료","title":"부대찌개의 뿌리, 미군부대 주변 음식","summary":"한국전쟁 이후 미군부대 주변에서 나온 햄·소시지 통조림을 고추장 등과 끓여 먹던 데서 부대찌개가 생겼다고 한다. 정보상자는 1954년을 적었으나 본문은 발상지와 시점을 확정하지 않고, 1960년 의정부 포장마차 사례를 전환점으로 설명한다.","sources":[{"url":"https://ko.wikipedia.org/wiki/부대찌개","name":"위키백과 부대찌개","license":"CC BY-SA 4.0"}],"confidence":"low"},
-{"year":1955,"month":2,"date_precision":"month","category":"유행어·풍속","title":"고바우 영감 동아일보 연재 시작","summary":"김성환의 시사만화 '고바우 영감'이 1955년 2월 1일 동아일보에서 연재를 시작해 2000년 9월 29일 1만 4139회로 끝났다.","sources":[{"url":"https://ko.wikipedia.org/wiki/고바우_영감","name":"위키백과 고바우 영감","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1955,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"영화 춘향전 (이규환 감독)","summary":"이규환 감독의 영화 '춘향전'이 1955년에 나왔다. 개봉 월은 문서에 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/춘향전_(1955년_영화)","name":"위키백과 춘향전 (1955년 영화)","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/1955년_대한민국의_영화_목록","name":"위키백과 1955년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1955,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"영화 피아골과 용공 논쟁","summary":"지리산 빨치산을 소재로 한 흑백 영화 '피아골'이 1955년 개봉했고, 영화가 용공이냐를 두고 지면 논쟁이 벌어졌다.","sources":[{"url":"https://ko.wikipedia.org/wiki/피아골_(영화)","name":"위키백과 피아골","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1955,"month":10,"date_precision":"month","category":"사건·사회·생활상","title":"홀트 부부, 전쟁고아 입양","summary":"1955년 10월 12일 미국인 홀트 부부가 전쟁고아 8명을 입양하고 4명은 미국 가정에 입양을 주선했다고 연도 문서에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1955년_대한민국","name":"위키백과 1955년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1955,"month":9,"date_precision":"month","category":"사건·사회·생활상","title":"사상 첫 전국 인구조사","summary":"1955년 9월 1일 대한민국 정부가 사상 처음으로 전국 인구조사를 실시했다고 연도 문서에 올라 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1955년_대한민국","name":"위키백과 1955년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1955,"month":4,"date_precision":"month","category":"음악·라디오·영화·연극","title":"안익태 문화훈장 수여","summary":"1955년 4월 18일 애국가 작곡가 안익태에게 문화훈장이 수여되었다고 연도 문서에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1955년_대한민국","name":"위키백과 1955년 대한민국","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1955,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"1955년 한국영화 12편","summary":"위키백과 목록에는 결혼진단, 구원의 애정, 망나니 비사, 미망인, 양산도, 열애, 자유전선, 젊은 그룹, 제2의 출발, 주검의 상자, 춘향전, 피아골 12편이 올라 있다. 제목만 있고 개봉일은 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1955년_대한민국의_영화_목록","name":"위키백과 1955년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1956,"month":5,"date_precision":"month","category":"가전·기술·교통","title":"한국 최초 텔레비전 방송 시작","summary":"1956년 5월 12일 한국 RCA가 운영하던 KORCAD-TV를 바탕으로 한국 최초의 텔레비전 방송국 대한방송이 설립되었다. 1959년 2월 2일 화재로 시설을 잃고 1961년 10월 15일 방송 권리가 KBS 1TV로 넘어갔다.","sources":[{"url":"https://ko.wikipedia.org/wiki/대한방송","name":"위키백과 대한방송","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1956,"month":6,"date_precision":"month","category":"음악·라디오·영화·연극","title":"영화 자유부인 개봉","summary":"한형모 감독의 영화 '자유부인'이 1956년 6월 9일 개봉했다. 대학교수 부인이 사교댄스에 빠지는 줄거리가 보수적인 사회에 큰 파장을 일으켰다.","sources":[{"url":"https://en.wikipedia.org/wiki/Madame_Freedom","name":"Wikipedia Madame Freedom (KMDb 인용)","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/1956년_대한민국의_영화_목록","name":"위키백과 1956년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1956,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"영화 시집가는 날","summary":"이병일 감독의 흑백 영화 '시집가는 날'(1956)은 제4회 아시아 영화제 특별희극상을 받았고 2007년 국가등록문화재 제348호로 지정되었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/시집가는_날","name":"위키백과 시집가는 날","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1956,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"단장의 미아리고개 발표","summary":"이해연이 부른 '단장의 미아리고개'(반야월 작사, 이재호 작곡)가 1956년 오아시스레코드사에서 나와 전쟁의 이별을 그려 오래 애창되었다. 1955년 발표설을 적은 기사도 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/단장의_미아리_고개","name":"위키백과 단장의 미아리고개","license":"CC BY-SA 4.0"},{"url":"https://m.seoul.co.kr/news/2022/06/06/20220606019007","name":"서울신문 2022-06-06 이호섭의 트로트 숨결 (검색 결과 요약만 확인)","license":"미확인"}],"confidence":"medium"},
-{"year":1956,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"1956년 한국영화 25편","summary":"위키백과 목록에는 자유부인, 시집가는 날(별도 문서), 단종애사, 봉선화, 청춘쌍곡선, 서울의 휴일, 심청전, 장화홍련전 등 25편이 올라 있다. 제목만 있고 개봉일은 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1956년_대한민국의_영화_목록","name":"위키백과 1956년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1957,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"1957년 한국영화 속 자유부인·청실홍실·전후파","summary":"1957년 목록에는 속 자유부인, 청실홍실(정일택), 전후파(조정호), 황혼열차(김기영), 시집가는 날 등 30여 편이 올라 있다. 제목·감독만 확인했고 개봉일은 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1957년_대한민국의_영화_목록","name":"위키백과 1957년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"low"},
-{"year":1958,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"금성사 설립","summary":"LG그룹 창업주 구인회가 1958년 전자 회사 금성사를 설립했다. 이후 국산 라디오 생산으로 이어졌다.","sources":[{"url":"https://ko.wikipedia.org/wiki/금성사","name":"위키백과 금성사","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1958,"month":12,"date_precision":"month","category":"음악·라디오·영화·연극","title":"영화 느티나무 있는 언덕 개봉","summary":"최훈 감독의 1958년 한국 드라마 영화 '느티나무 있는 언덕'이 12월 15일 개봉한 것으로 영화 목록 문서에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1958년_대한민국의_영화_목록","name":"위키백과 1958년 대한민국의 영화 목록","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/느티나무_있는_언덕","name":"위키백과 느티나무 있는 언덕","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1958,"month":null,"date_precision":"approx","category":"음악·라디오·영화·연극","title":"아리랑 맘보","summary":"현인이 작곡한 '아리랑 맘보'가 1958년 나온 것으로 위키백과 현인 항목에 적혀 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현인","name":"위키백과 현인","license":"CC BY-SA 4.0"}],"confidence":"low"},
-{"year":1958,"month":null,"date_precision":"approx","category":"음악·라디오·영화·연극","title":"음악감상실과 LP의 등장","summary":"1950년대 후반 서울·부산·대구 등에 음악감상실이 생겨 최신 유행음악이 대학가에 퍼졌고 LP가 새 매체로 등장했다는 학술 연구가 있다. 연구 논문 본문은 직접 열지 못하고 검색 결과 요약만 확인했다.","sources":[{"url":"https://www.accesson.kr/daejung/v.0/17/43/4554","name":"대중음악 학술 논문 (accesson, 검색 결과 요약만 확인)","license":"미확인"}],"confidence":"low"},
-{"year":1959,"month":2,"date_precision":"month","category":"가전·기술·교통","title":"대한방송 화재로 방송 시설 소실","summary":"한국 최초의 TV 방송국 대한방송이 1959년 2월 2일 화재로 방송 시설을 잃었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/대한방송","name":"위키백과 대한방송","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1959,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"1959년 한국영화 청춘극장·별은 창 넘어로 등","summary":"1959년 목록에는 청춘극장, 별은 창 넘어로, 태양의 거리, 대원군과 민비, 자나 깨나 등 28편이 올라 있다. 제목만 있고 개봉일은 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1959년_대한민국의_영화_목록","name":"위키백과 1959년 대한민국의 영화 목록","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1959,"month":null,"date_precision":"year","category":"음악·라디오·영화·연극","title":"현인의 봉봉쇼단 파산","summary":"현인이 꾸린 봉봉쇼단이 재정난으로 6개월 만에 파산한 것이 1959년 일로 위키백과 현인 항목에 적혀 있다. 1950년대 악극·쇼단 부침의 한 사례다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현인","name":"위키백과 현인","license":"CC BY-SA 4.0"}],"confidence":"low"}
+  {
+    "year": 1950,
+    "month": 4,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "현인, 은방울쇼 출연",
+    "summary": "가수 현인이 1950년 4월 1일 동아극장의 은방울악극단 '은방울쇼'에 당대 스타들과 함께 출연했다. 전쟁 중에는 군부대 위문 공연을 자주 다녔다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현인",
+        "name": "위키백과 현인",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1950,
+    "month": 5,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "칠성사이다 출시",
+    "summary": "롯데칠성음료의 청량음료 칠성사이다가 1950년 5월 9일 처음 출시된 것으로 위키백과에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/칠성사이다",
+        "name": "위키백과 칠성사이다",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "한국전쟁 발발",
+    "summary": "1950년 6월 25일 북한군의 남침으로 전쟁이 시작되었고, 1953년 7월 27일 정전협정으로 전투가 멈췄다. 이후 피난, 배급, 구호물자가 일상이 되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_전쟁",
+        "name": "위키백과 6.25 전쟁",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "6·25 전쟁",
+    "summary": "6월 25일 전쟁이 발발하면서 피란과 이산이 한국인의 일상을 크게 바꾸었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
+    "month": 8,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "한국은행 1차 화폐개혁",
+    "summary": "1950년 8월 28일 한국은행이 1차 화폐개혁을 단행한 것으로 연도 문서의 사건란에 올라 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1950년_대한민국",
+        "name": "위키백과 1950년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1950,
+    "month": 9,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "국군 여군 창설",
+    "summary": "1950년 9월 6일 국군에 여군이 창설되었다고 연도 문서에 기록되어 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1950년_대한민국",
+        "name": "위키백과 1950년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1950,
+    "month": 10,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "주한미군방송 AFKN 라디오 서울 첫 전파",
+    "summary": "1950년 10월 4일 주한 미군방송(AFKN) 라디오가 서울에서 처음 전파를 쏘았다. 이후 미국 대중음악을 접하는 통로 가운데 하나가 된 것으로 알려져 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1950년_대한민국",
+        "name": "위키백과 1950년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1951,
+    "month": 4,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "현인과 그 악단 결성",
+    "summary": "피난 중이던 1951년 4월 가수 현인이 '현인과 그 악단'을 결성해 무대에 올랐다고 위키백과 현인 항목에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현인",
+        "name": "위키백과 현인",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1951,
+    "month": 8,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "서울-부산 간 전화 개통",
+    "summary": "1951년 8월 16일 서울과 부산 사이 전화가 개통되었다고 연도 문서에 올라 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1951년_대한민국",
+        "name": "위키백과 1951년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1951,
+    "month": null,
+    "date_precision": "year",
+    "category": "놀이·장난감·문구·학교 생활",
+    "title": "피난지 학교와 천막교실",
+    "summary": "문교부가 1951년 피난지 학교 재개를 명령해 부산·대구·대전 등지에 피난 학교가 세워졌고, 노천교실·천막교실에서 수업했다는 학교 신문 기사가 있다. 검색 결과 요약만 보고 기사 본문은 직접 열지 못했다.",
+    "sources": [
+      {
+        "url": "https://hangyo.com/mobile/article.html?no=104737",
+        "name": "한국교육신문 광복 80주년 특별기획 6.25 전쟁과 천막교실",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1952,
+    "month": 3,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "광무신문지법 폐기",
+    "summary": "1952년 3월 19일 대한제국 시기에 만든 광무신문지법이 폐기되었다고 연도 문서에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1952년_대한민국",
+        "name": "위키백과 1952년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1952,
+    "month": 8,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "문화보호법 제정",
+    "summary": "1952년 8월 7일 학술원과 예술원 설치 등을 정한 문화보호법이 제정되었다고 연도 문서에 기록되어 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1952년_대한민국",
+        "name": "위키백과 1952년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1952,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·연극",
+    "title": "번안곡 장미빛 인생과 샹송 붐",
+    "summary": "현인이 부른 번안곡 '장미빛 인생'이 1952년경 샹송 붐을 일으켰다고 위키백과 현인 항목에 적혀 있다. 연도는 '경'으로 표기되어 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현인",
+        "name": "위키백과 현인",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1953,
+    "month": 1,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "여객선 창경호 침몰",
+    "summary": "1953년 1월 9일 다대포 앞바다에서 여객선 창경호가 침몰한 사고가 있었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
+        "name": "위키백과 1953년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1953,
+    "month": 2,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "화폐 단위 원에서 환으로 변경",
+    "summary": "1953년 2월 17일 화폐 단위가 원에서 환으로 바뀌었다고 연도 문서에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
+        "name": "위키백과 1953년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1953,
+    "month": 4,
+    "date_precision": "month",
+    "category": "유행어·풍속",
+    "title": "월간 사상계 창간",
+    "summary": "1953년 4월 장준하가 월간 종합 교양지 『사상계』를 창간했고 1970년 5월 205호까지 발행되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사상계",
+        "name": "위키백과 사상계",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1953,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "코리아헤럴드 창간",
+    "summary": "1953년 6월 15일 영자 신문 코리아헤럴드가 창간되었다고 연도 문서에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
+        "name": "위키백과 1953년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1953,
+    "month": 7,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "한국전쟁 휴전",
+    "summary": "1953년 7월 27일 휴전이 이루어졌고, 8월 15일 부산에 있던 정부가 서울로 돌아왔다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
+        "name": "위키백과 1953년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1953,
+    "month": 10,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "국내 자체 제작 항공기 부활호 완성",
+    "summary": "1953년 10월 11일 국내 최초로 자체 제작한 항공기 '부활호'가 완성되었다고 연도 문서에 올라 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
+        "name": "위키백과 1953년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "굳세어라 금순아 발표",
+    "summary": "현인이 부른 '굳세어라 금순아'가 1953년 대구 오리엔트레코드사에서 발표되어 흥남부두, 1·4 후퇴, 국제시장 같은 피난 정서를 담아 국민가요 수준의 인기를 얻었다. 현인 항목은 1950년으로 적어 문서마다 연도가 엇갈린다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/굳세어라_금순아",
+        "name": "위키백과 굳세어라 금순아",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/박시춘",
+        "name": "위키백과 박시춘",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "대한뉴스 상영 시작",
+    "summary": "1953년부터 1994년까지 매주 정부가 제작해 극장에서 상영한 영상 뉴스 '대한뉴스'가 시작되었고, 1994년 12월 31일 2040회로 끝났다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한뉴스",
+        "name": "위키백과 대한뉴스",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "date_precision": "approx",
+    "category": "사건·사회·생활상",
+    "title": "국제시장, 미군 물자 유통으로 확대",
+    "summary": "1945년 광복 이후 형성된 부산 국제시장이 한국전쟁 이후 미군 물자가 유통되면서 규모가 커졌다. 확대 시점은 전쟁 이후로만 적혀 있어 1953년으로 근사 처리했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/국제시장",
+        "name": "위키백과 국제시장",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "영화 최후의 유혹 (1953)",
+    "summary": "1953년 대한민국 영화 목록 문서에는 이 작품 한 편만 올라 있다. 감독과 개봉일은 문서에 없고 문서 자체가 토막글이라 목록이 불완전하다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1953년_대한민국의_영화_목록",
+        "name": "위키백과 1953년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·TV",
+    "title": "굳세어라 금순아",
+    "summary": "현인이 부른 이 노래는 전쟁과 피란, 이산의 경험을 담아 사랑받은 대중가요다. 표기 연도는 전후 활동 시기를 나타낸다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": 1,
+    "date_precision": "month",
+    "category": "유행어·풍속",
+    "title": "소설 자유부인 서울신문 연재 시작",
+    "summary": "정비석의 소설 '자유부인'이 1954년 1월부터 8월까지 서울신문에 연재되어 사교댄스에 빠진 교수 부인 이야기로 논쟁을 일으켰다. 연재 횟수와 종료일은 자료마다 다르다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Madame_Freedom",
+        "name": "Wikipedia Madame Freedom",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://www.seoul.co.kr/news/1999/02/04/19990204015004",
+        "name": "서울신문 1999-02-04 기사 (검색 결과 요약만 확인)",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": 3,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "표준시 30분 되돌림",
+    "summary": "1954년 3월 21일 한국 표준시를 동경 127도 30분 기준으로 30분 되돌려 생활 시간 체계가 바뀌었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국",
+        "name": "위키백과 1954년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": 8,
+    "date_precision": "month",
+    "category": "유행어·풍속",
+    "title": "전국 댄스홀 폐쇄령",
+    "summary": "1954년 8월 15일 전국 댄스홀에 폐쇄령이 내려졌다. 같은 해 연재된 소설 '자유부인'이 불러온 사교댄스 논란과 같은 시기의 풍속 단속이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국",
+        "name": "위키백과 1954년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": 8,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "경부선 급행열차 통일호 개통",
+    "summary": "1954년 8월 15일 경부선 급행열차 통일호가 개통되었고 운행 시간은 9시간 30분이었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국",
+        "name": "위키백과 1954년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": 8,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "영화 이창 국내 개봉",
+    "summary": "히치콕 감독의 영화 '이창'이 1954년 8월 1일 개봉한 것으로 연도 문서에 올라 있다. 기록상 국내 개봉일인지는 문서에서 구분되지 않는다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국",
+        "name": "위키백과 1954년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1954,
+    "month": 9,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "독도 우표 3종 발행",
+    "summary": "1954년 9월 15일 독도를 주제로 한 우표 3종이 발행되었다고 연도 문서에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국",
+        "name": "위키백과 1954년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": 12,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "CBS 기독교방송 개국",
+    "summary": "1954년 12월 15일 한국 최초의 기독교 라디오 방송국 CBS가 개국했다. 연도 문서는 이를 최초의 민영 방송으로 적고 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국",
+        "name": "위키백과 1954년 대한민국",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/CBS_(대한민국의_방송사)",
+        "name": "위키백과 CBS (대한민국의 방송사)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1954,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "이별의 부산정거장 발표",
+    "summary": "남인수가 부른 '이별의 부산정거장'(박시춘 작곡)이 1954년에 나와 피난민이 부산역에서 헤어지는 아픔을 담아 큰 인기를 끌었다. 정확한 월은 문서에 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/이별의_부산정거장",
+        "name": "위키백과 이별의 부산정거장",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/박시춘",
+        "name": "위키백과 박시춘",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1954,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "김포국제공항 사용 허가",
+    "summary": "1954년에 김포국제공항 사용이 허가된 것으로 연도 문서에 적혀 있으며 월은 나와 있지 않다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국",
+        "name": "위키백과 1954년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "1954년 한국영화 5편",
+    "summary": "위키백과 1954년 대한민국의 영화 목록에는 '애원의 향토', '운명의 손', '창수만세', '출격 명령', '코리아' 5편이 올라 있다. 제목만 있고 개봉일은 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1954년_대한민국의_영화_목록",
+        "name": "위키백과 1954년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1954,
+    "month": null,
+    "date_precision": "approx",
+    "category": "먹거리·음료",
+    "title": "부대찌개의 뿌리, 미군부대 주변 음식",
+    "summary": "한국전쟁 이후 미군부대 주변에서 나온 햄·소시지 통조림을 고추장 등과 끓여 먹던 데서 부대찌개가 생겼다고 한다. 정보상자는 1954년을 적었으나 본문은 발상지와 시점을 확정하지 않고, 1960년 의정부 포장마차 사례를 전환점으로 설명한다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/부대찌개",
+        "name": "위키백과 부대찌개",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1955,
+    "month": 2,
+    "date_precision": "month",
+    "category": "유행어·풍속",
+    "title": "고바우 영감 동아일보 연재 시작",
+    "summary": "김성환의 시사만화 '고바우 영감'이 1955년 2월 1일 동아일보에서 연재를 시작해 2000년 9월 29일 1만 4139회로 끝났다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/고바우_영감",
+        "name": "위키백과 고바우 영감",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1955,
+    "month": 4,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "안익태 문화훈장 수여",
+    "summary": "1955년 4월 18일 애국가 작곡가 안익태에게 문화훈장이 수여되었다고 연도 문서에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1955년_대한민국",
+        "name": "위키백과 1955년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1955,
+    "month": 9,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "사상 첫 전국 인구조사",
+    "summary": "1955년 9월 1일 대한민국 정부가 사상 처음으로 전국 인구조사를 실시했다고 연도 문서에 올라 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1955년_대한민국",
+        "name": "위키백과 1955년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1955,
+    "month": 10,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "홀트 부부, 전쟁고아 입양",
+    "summary": "1955년 10월 12일 미국인 홀트 부부가 전쟁고아 8명을 입양하고 4명은 미국 가정에 입양을 주선했다고 연도 문서에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1955년_대한민국",
+        "name": "위키백과 1955년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1955,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "영화 춘향전 (이규환 감독)",
+    "summary": "이규환 감독의 영화 '춘향전'이 1955년에 나왔다. 개봉 월은 문서에 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/춘향전_(1955년_영화)",
+        "name": "위키백과 춘향전 (1955년 영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1955년_대한민국의_영화_목록",
+        "name": "위키백과 1955년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1955,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "영화 피아골과 용공 논쟁",
+    "summary": "지리산 빨치산을 소재로 한 흑백 영화 '피아골'이 1955년 개봉했고, 영화가 용공이냐를 두고 지면 논쟁이 벌어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/피아골_(영화)",
+        "name": "위키백과 피아골",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1955,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "1955년 한국영화 12편",
+    "summary": "위키백과 목록에는 결혼진단, 구원의 애정, 망나니 비사, 미망인, 양산도, 열애, 자유전선, 젊은 그룹, 제2의 출발, 주검의 상자, 춘향전, 피아골 12편이 올라 있다. 제목만 있고 개봉일은 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1955년_대한민국의_영화_목록",
+        "name": "위키백과 1955년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1955,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "영화 춘향전",
+    "summary": "이규환 감독의 영화 「춘향전」이 흥행하며 전후 한국영화 중흥의 계기가 되었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0015002",
+        "name": "한국민족문화대백과사전, 대한민국",
+        "license": "미확인"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "Wikipedia, Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1956,
+    "month": 5,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "한국 최초 텔레비전 방송 시작",
+    "summary": "1956년 5월 12일 한국 RCA가 운영하던 KORCAD-TV를 바탕으로 한국 최초의 텔레비전 방송국 대한방송이 설립되었다. 1959년 2월 2일 화재로 시설을 잃고 1961년 10월 15일 방송 권리가 KBS 1TV로 넘어갔다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한방송",
+        "name": "위키백과 대한방송",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1956,
+    "month": 6,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "영화 자유부인 개봉",
+    "summary": "한형모 감독의 영화 '자유부인'이 1956년 6월 9일 개봉했다. 대학교수 부인이 사교댄스에 빠지는 줄거리가 보수적인 사회에 큰 파장을 일으켰다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Madame_Freedom",
+        "name": "Wikipedia Madame Freedom (KMDb 인용)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1956년_대한민국의_영화_목록",
+        "name": "위키백과 1956년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1956,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "영화 시집가는 날",
+    "summary": "이병일 감독의 흑백 영화 '시집가는 날'(1956)은 제4회 아시아 영화제 특별희극상을 받았고 2007년 국가등록문화재 제348호로 지정되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/시집가는_날",
+        "name": "위키백과 시집가는 날",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1956,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "단장의 미아리고개 발표",
+    "summary": "이해연이 부른 '단장의 미아리고개'(반야월 작사, 이재호 작곡)가 1956년 오아시스레코드사에서 나와 전쟁의 이별을 그려 오래 애창되었다. 1955년 발표설을 적은 기사도 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/단장의_미아리_고개",
+        "name": "위키백과 단장의 미아리고개",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://m.seoul.co.kr/news/2022/06/06/20220606019007",
+        "name": "서울신문 2022-06-06 이호섭의 트로트 숨결 (검색 결과 요약만 확인)",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1956,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "1956년 한국영화 25편",
+    "summary": "위키백과 목록에는 자유부인, 시집가는 날(별도 문서), 단종애사, 봉선화, 청춘쌍곡선, 서울의 휴일, 심청전, 장화홍련전 등 25편이 올라 있다. 제목만 있고 개봉일은 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1956년_대한민국의_영화_목록",
+        "name": "위키백과 1956년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1956,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "영화 자유부인",
+    "summary": "한형모 감독의 「자유부인」은 여성의 삶과 서구적 가치관을 소재로 다뤄 관객의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "Wikipedia, Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1957,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "1957년 한국영화 속 자유부인·청실홍실·전후파",
+    "summary": "1957년 목록에는 속 자유부인, 청실홍실(정일택), 전후파(조정호), 황혼열차(김기영), 시집가는 날 등 30여 편이 올라 있다. 제목·감독만 확인했고 개봉일은 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1957년_대한민국의_영화_목록",
+        "name": "위키백과 1957년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1958,
+    "month": 12,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·연극",
+    "title": "영화 느티나무 있는 언덕 개봉",
+    "summary": "최훈 감독의 1958년 한국 드라마 영화 '느티나무 있는 언덕'이 12월 15일 개봉한 것으로 영화 목록 문서에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1958년_대한민국의_영화_목록",
+        "name": "위키백과 1958년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/느티나무_있는_언덕",
+        "name": "위키백과 느티나무 있는 언덕",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1958,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "금성사 설립",
+    "summary": "LG그룹 창업주 구인회가 1958년 전자 회사 금성사를 설립했다. 이후 국산 라디오 생산으로 이어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/금성사",
+        "name": "위키백과 금성사",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1958,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·연극",
+    "title": "아리랑 맘보",
+    "summary": "현인이 작곡한 '아리랑 맘보'가 1958년 나온 것으로 위키백과 현인 항목에 적혀 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현인",
+        "name": "위키백과 현인",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1958,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·연극",
+    "title": "음악감상실과 LP의 등장",
+    "summary": "1950년대 후반 서울·부산·대구 등에 음악감상실이 생겨 최신 유행음악이 대학가에 퍼졌고 LP가 새 매체로 등장했다는 학술 연구가 있다. 연구 논문 본문은 직접 열지 못하고 검색 결과 요약만 확인했다.",
+    "sources": [
+      {
+        "url": "https://www.accesson.kr/daejung/v.0/17/43/4554",
+        "name": "대중음악 학술 논문 (accesson, 검색 결과 요약만 확인)",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1958,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "악극단의 쇠락",
+    "summary": "악극단은 영화에 밀리면서 1958년부터 쇠락하기 시작했다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1959,
+    "month": 2,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "대한방송 화재로 방송 시설 소실",
+    "summary": "한국 최초의 TV 방송국 대한방송이 1959년 2월 2일 화재로 방송 시설을 잃었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한방송",
+        "name": "위키백과 대한방송",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1959,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "1959년 한국영화 청춘극장·별은 창 넘어로 등",
+    "summary": "1959년 목록에는 청춘극장, 별은 창 넘어로, 태양의 거리, 대원군과 민비, 자나 깨나 등 28편이 올라 있다. 제목만 있고 개봉일은 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1959년_대한민국의_영화_목록",
+        "name": "위키백과 1959년 대한민국의 영화 목록",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1959,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·연극",
+    "title": "현인의 봉봉쇼단 파산",
+    "summary": "현인이 꾸린 봉봉쇼단이 재정난으로 6개월 만에 파산한 것이 1959년 일로 위키백과 현인 항목에 적혀 있다. 1950년대 악극·쇼단 부침의 한 사례다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현인",
+        "name": "위키백과 현인",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1959,
+    "month": null,
+    "date_precision": "approx",
+    "category": "패션·미용",
+    "title": "나일론 등 합성섬유 의류",
+    "summary": "1950년대 말부터 질기고 손질이 쉬운 합성섬유가 널리 보급되며 옷차림에 변화를 가져왔다. 1959년은 이러한 변화가 나타난 대략적인 시기다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0015002",
+        "name": "한국민족문화대백과사전, 대한민국",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  }
 ]

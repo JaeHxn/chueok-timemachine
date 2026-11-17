@@ -1,88 +1,2206 @@
 [
-{"year":1970,"month":4,"date_precision":"month","category":"사건·사회·생활상","title":"와우아파트 붕괴 사고","summary":"서울 마포구 창전동 와우지구의 시민아파트 한 동(5층)이 준공 4개월 만에 무너져 34명이 숨지고 40명이 다쳤다. 무허가 판자촌 정리를 위해 서둘러 짓던 시민아파트 정책의 부실을 드러낸 사고다.","sources":[{"url":"https://ko.wikipedia.org/wiki/와우아파트_붕괴_사고","name":"위키백과 와우아파트 붕괴 사고","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1970,"month":7,"date_precision":"month","category":"가전·기술·교통","title":"경부고속도로 완공","summary":"1968년 2월 착공한 서울~부산 경부고속도로가 1970년 7월 7일 완공됐다. 총연장 약 416km로 약 2년 5개월이 걸렸고, 당시 국토의 대동맥으로 불렸다.","sources":[{"url":"https://ko.wikipedia.org/wiki/경부고속도로","name":"위키백과 경부고속도로","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1970,"month":8,"date_precision":"month","category":"음악","title":"김민기 작곡 '아침이슬' 발표 (양희은)","summary":"김민기가 만든 '아침이슬'을 양희은이 불러 1970년 8월 28일 발표했고, 이듬해 김민기 1집 음반으로도 나왔다. 포크 음악과 통기타 문화를 상징하는 곡이 됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/아침이슬","name":"위키백과 아침이슬","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1970,"month":10,"date_precision":"month","category":"사건·사회·생활상","title":"온양동 건널목 열차 사고","summary":"1970년 10월 14일 충남 온양동의 철도 건널목에서 열차 사고가 나 공식 발표 기준 42명이 숨졌다. 영문판 위키백과는 당시 외신 보도와 수치가 다르다고 따로 밝혀 둔다.","sources":[{"url":"https://en.wikipedia.org/wiki/1970_in_South_Korea","name":"Wikipedia: 1970 in South Korea","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1970,"month":11,"date_precision":"month","category":"사건·사회·생활상","title":"전태일 분신, 청계피복노조 결성","summary":"평화시장 재단사 전태일이 1970년 11월 13일 근로기준법 준수를 외치며 분신해 숨졌다. 같은 달 27일 청계피복노동조합이 결성됐고, 이듬해 노동쟁의가 크게 늘었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/전태일","name":"위키백과 전태일","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1970,"month":11,"date_precision":"month","category":"가전·기술·교통","title":"삼성전자 흑백 텔레비전 생산 시작","summary":"삼성전자는 1970년 11월 흑백 텔레비전 생산을 시작했고, 1972년 11월에는 내수용 흑백 TV 생산에 들어갔다. 가정용 TV가 본격 보급되던 시기의 기록이다.","sources":[{"url":"https://ko.wikipedia.org/wiki/삼성전자","name":"위키백과 삼성전자","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1970,"month":12,"date_precision":"month","category":"사건·사회·생활상","title":"여객선 남영호 침몰","summary":"제주에서 부산으로 가던 여객선 남영호가 1970년 12월 중순 새벽 여수 앞바다에서 침몰해 326명이 숨졌다. 정원 초과와 화물 과적이 주원인으로 꼽혔고, 이후 여객선 운항관리제도가 도입됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/남영호_침몰_사고","name":"위키백과 남영호 침몰 사고","license":"CC BY-SA 4.0"},{"url":"https://en.wikipedia.org/wiki/1970_in_South_Korea","name":"Wikipedia: 1970 in South Korea","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1970,"month":null,"date_precision":"year","category":"사건·사회·생활상","title":"새마을운동 시작","summary":"근면·자조·협동을 내세운 새마을운동이 1970년 시작됐다. 위키백과는 정부가 1969년 이 이름을 붙였고 실질 시행을 1970년부터로 적고 있어 시작 시점 서술이 문서마다 조금 다르다.","sources":[{"url":"https://ko.wikipedia.org/wiki/새마을_운동","name":"위키백과 새마을 운동","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/1970년대","name":"위키백과 1970년대","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1970,"month":null,"date_precision":"year","category":"먹거리·음료","title":"수요일·토요일 '혼분식의 날'(무미일)","summary":"국가기록원은 1970년 농수산부가 매주 수·토요일 오전 11시~오후 5시 쌀로 만든 음식 판매를 금지하고 음식점은 보리쌀·면류를 25% 이상 섞게 했다고 설명한다. 곰탕·설렁탕에 국수를 넣는 관행이 이때 생겼다는 서술도 있다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do","name":"국가기록원 주제별 기록 '혼분식 장려'","license":"미확인"}],"confidence":"medium"},
-{"year":1970,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"포항제철 착공, 남산 송신탑 공사 시작","summary":"포항종합제철의 포항제철소는 1970년 착공했고 1973년 첫 일관제철소로 가동됐다. 같은 해 남산에서는 훗날 서울타워가 되는 송신탑 공사가 시작됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/포항종합제철","name":"위키백과 포항종합제철","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/N서울타워","name":"위키백과 N서울타워","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-
-{"year":1971,"month":3,"date_precision":"month","category":"영화·TV·라디오","title":"MBC 드라마 '수사반장' 첫 방송","summary":"MBC 수사반장이 1971년 3월 6일 처음 방송됐다. 실제 사건을 바탕으로 경찰 수사를 그렸고 1989년까지 이어진 장수 드라마다.","sources":[{"url":"https://ko.wikipedia.org/wiki/수사반장","name":"위키백과 수사반장","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1971,"month":8,"date_precision":"month","category":"사건·사회·생활상","title":"광주대단지 사건","summary":"서울 철거민을 경기도 광주군(현 성남)에 집단 이주시켰으나 기반시설과 일자리가 없고 땅값 부담까지 커지자 1971년 8월 10일 수만 명이 항의 시위를 벌였다. 사흘 만에 요구를 수용하며 진정됐고 이후 성남시 설치의 계기가 됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/광주_대단지_사건","name":"위키백과 광주 대단지 사건","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1971,"month":8,"date_precision":"month","category":"사건·사회·생활상","title":"실미도 사건","summary":"1971년 8월 23일 실미도의 684부대원 23명이 교관 등을 살해하고 탈출해 서울로 향하다 대방동에서 교전 끝에 자폭했다. 생존자 4명은 1972년 3월 10일 사형이 집행됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/실미도_사건","name":"위키백과 실미도 사건","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1971,"month":8,"date_precision":"month","category":"먹거리·음료","title":"분식 권장 전국 주부 궐기대회","summary":"국가기록원 서술에 따르면 1971년 8월 분식 권장을 위한 주부 궐기대회가 열려 밥에 잡곡 15% 이상 섞기, 주 3회 이상 분식을 결의했다. 같은 해 생산량이 약 30% 높은 통일벼가 개발됐다는 설명도 함께 나온다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do","name":"국가기록원 주제별 기록 '혼분식 장려'","license":"미확인"}],"confidence":"medium"},
-{"year":1971,"month":10,"date_precision":"month","category":"패션·미용","title":"신문, 장발족 단속 보도","summary":"국가기록원 정리에 따르면 1971년 10월 1일 신문 사회면이 장발족 단속을 보도했고, 1,164명의 머리를 강제로 깎아 훈방했다고 한다. 법제화 이전부터 장발 단속이 이뤄졌음을 보여 준다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do","name":"국가기록원 주제별 기록 '장기 기록'","license":"미확인"}],"confidence":"medium"},
-{"year":1971,"month":12,"date_precision":"month","category":"먹거리·음료","title":"농심 '새우깡' 출시","summary":"농심이 1971년 12월 한국 최초의 스낵으로 새우깡을 내놓았다. 구운 소금 열로 튀기는 방식으로 약 1년 연구해 만들었고, 출시 직후 공장 앞에 트럭이 줄을 설 만큼 팔렸다. 첫해 20만6천 박스, 이듬해 425만 박스를 생산했다.","sources":[{"url":"https://www.etoday.co.kr/news/view/1648877","name":"이투데이 '47년 최장수 스낵, 농심 새우깡'","license":"미확인"},{"url":"https://www.newsis.com/view/NISX20260224_0003524707","name":"뉴시스 '55살 과자업계 큰 형님 농심 새우깡'(2026-02-24)","license":"미확인"}],"confidence":"high"},
-{"year":1971,"month":null,"date_precision":"year","category":"사건·사회·생활상","title":"정부, '퇴폐풍조 정화' 지시","summary":"국가기록원 자료는 1971년 국무총리가 퇴폐풍조 정화 지시를 내려 비밀요정·무허가 유흥업소 등을 중점 단속하고 종업원의 장발 관련 휴업 단속도 포함시켰다고 정리한다. 슬로건은 '퇴폐풍조 몰아내고 밝은사회 이룩하자'가 예시로 나온다.","sources":[{"url":"https://theme.archives.go.kr/next/tabooAutonomy/kindOfTaboo03.do","name":"국가기록원 금지와 자율 '퇴폐풍조 단속'","license":"미확인"}],"confidence":"medium"},
-{"year":1971,"month":null,"date_precision":"year","category":"음악","title":"'아침이슬' 음반 수록과 건전가요 선정","summary":"김민기 1집에 '아침이슬'이 실린 것이 1971년이다. 위키백과는 같은 해 정부가 이 곡을 건전가요로 선정하기도 했다고 적는데, 1975년 금지곡이 된 것과 대비된다.","sources":[{"url":"https://ko.wikipedia.org/wiki/아침이슬","name":"위키백과 아침이슬","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1971,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"서울 지하철 1호선 공사 시작","summary":"위키백과에 따르면 서울 지하철 1호선 건설 공사는 1971년에 시작돼 약 3년간 진행됐다. 일본과의 기술 제휴로 건설하기로 했다는 배경도 서술돼 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/서울_지하철_1호선","name":"위키백과 서울 지하철 1호선","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-
-{"year":1972,"month":1,"date_precision":"month","category":"사건·사회·생활상","title":"새마을지도자 교육 출발","summary":"1972년 1월 31일 경기도 고양 농협대 부설 연수원에 140명이 입교하며 새마을지도자 교육이 시작됐다. 이후 교육 인원과 정부 지원금이 해마다 크게 늘었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/새마을_운동","name":"위키백과 새마을 운동","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1972,"month":3,"date_precision":"month","category":"사건·사회·생활상","title":"실미도 생존 부대원 사형 집행","summary":"1971년 실미도 사건에서 붙잡힌 부대원 4명은 군사재판을 거쳐 1972년 3월 10일 사형이 집행됐다. 정부 발표가 여러 차례 바뀐 사건으로 알려져 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/실미도_사건","name":"위키백과 실미도 사건","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1972,"month":4,"date_precision":"month","category":"영화·TV·라디오","title":"KBS 일일연속극 '여로' 방영","summary":"KBS 1TV 일일극 여로가 1972년 4월 3일부터 12월 29일까지 총 211부작으로 방영됐다. 가난 때문에 팔려 간 여성 분이의 일생을 그렸으며 태현실·장욱제가 주연이었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/여로_(드라마)","name":"위키백과 여로 (드라마)","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1972,"month":7,"date_precision":"month","category":"사건·사회·생활상","title":"7·4 남북 공동 성명","summary":"1972년 7월 4일 남북이 자주·평화·민족대단결의 통일 3대 원칙에 합의한 공동 성명을 발표했다. 분단 이후 처음으로 두 정부가 함께 낸 통일 합의였다.","sources":[{"url":"https://ko.wikipedia.org/wiki/7·4_남북_공동_성명","name":"위키백과 7·4 남북 공동 성명","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1972,"month":11,"date_precision":"month","category":"가전·기술·교통","title":"삼성전자 내수용 흑백 TV 생산","summary":"삼성전자는 1972년 11월 내수용 흑백 텔레비전 생산을 시작했다. 앞서 1970년 11월에는 흑백 TV 생산을 시작한 바 있다.","sources":[{"url":"https://ko.wikipedia.org/wiki/삼성전자","name":"위키백과 삼성전자","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1972,"month":null,"date_precision":"approx","category":"사건·사회·생활상","title":"유신헌법 제정","summary":"1972년 유신헌법이 제정되면서 박정희 대통령의 장기 집권 체제가 만들어졌다. 위키백과 1970년대 문서는 월을 적지 않는다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1970년대","name":"위키백과 1970년대","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1972,"month":null,"date_precision":"approx","category":"사건·사회·생활상","title":"서울 시민회관 화재로 소실","summary":"1961년 개관한 서울 시민회관이 1972년 말 화재로 불타 없어졌다. 이 자리에 훗날 세종문화회관이 들어섰다.","sources":[{"url":"https://ko.wikipedia.org/wiki/세종문화회관","name":"위키백과 세종문화회관","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1972,"month":null,"date_precision":"year","category":"음악","title":"조용필 '돌아와요 부산항에' 발표","summary":"위키백과는 조용필의 '돌아와요 부산항에'가 1972년 발표됐고 재일동포를 노래한 곡이며 1971년 '돌아와요 충무항에'가 원곡이라고 적는다. 발표 연도는 다른 자료와 대조가 필요하다.","sources":[{"url":"https://ko.wikipedia.org/wiki/돌아와요_부산항에","name":"위키백과 돌아와요 부산항에","license":"CC BY-SA 4.0"}],"confidence":"low"},
-
-{"year":1973,"month":1,"date_precision":"month","category":"사건·사회·생활상","title":"새마을 담당관실 설치","summary":"1973년 1월 16일 대통령령으로 내무부에 새마을 담당관실이 설치됐고, 같은 해 3월에는 대통령 비서실에도 담당관실이 생겼다. 5월에는 수원에 새마을지도자 연수원이 신설됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/새마을_운동","name":"위키백과 새마을 운동","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1973,"month":3,"date_precision":"month","category":"패션·미용","title":"경범죄 처벌법으로 장발 단속 법제화","summary":"국가기록원 정리에 따르면 1973년 3월 경범죄 처벌법이 발효되면서 장발 단속이 법제화됐고 그해 단속은 1만 2천여 건이었다. 공포(2월)와 발효(3월) 시점 표기가 자료마다 다를 수 있다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do","name":"국가기록원 주제별 기록 '장기 기록'","license":"미확인"}],"confidence":"medium"},
-{"year":1973,"month":7,"date_precision":"month","category":"가전·기술·교통","title":"포항제철 제1고로 준공","summary":"포항제철소가 1973년 6월 첫 쇳물을 뽑은 뒤 7월 3일 제1고로 준공식을 열고 국내 최초의 일관제철소로 가동됐다. 연산 규모는 조강 기준 103만 톤대였다.","sources":[{"url":"https://ko.wikipedia.org/wiki/포항종합제철","name":"위키백과 포항종합제철","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1973,"month":8,"date_precision":"month","category":"사건·사회·생활상","title":"김대중 납치 사건","summary":"야당 지도자 김대중이 1973년 8월 8일 일본 도쿄의 호텔에서 납치됐다가 8월 13일 서울 자택 근처에서 풀려났다. 한일 외교 문제로 번졌고 한국 정부는 11월 대사관 직원의 관여 혐의를 인정했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/김대중_납치_사건","name":"위키백과 김대중 납치 사건","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1973,"month":10,"date_precision":"month","category":"사건·사회·생활상","title":"제1차 석유 파동 시작","summary":"1973년 10월 제4차 중동전쟁 직후 아랍 산유국들이 석유 금수와 감산을 선언하며 석유 파동이 시작됐다. 위키백과 해당 문서에는 한국 영향이 서술돼 있지 않아 국내 영향은 다른 자료로 보강해야 한다.","sources":[{"url":"https://ko.wikipedia.org/wiki/제1차_석유_파동","name":"위키백과 제1차 석유 파동","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1973,"month":11,"date_precision":"month","category":"사건·사회·생활상","title":"제1차 새마을지도자대회","summary":"1973년 11월 21일 제1차 새마을 지도자 대회가 열려 범국민적 확산을 결의했다. 같은 해 관공서 앞에 새마을기를 게양하는 일도 시작됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/새마을_운동","name":"위키백과 새마을 운동","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1973,"month":null,"date_precision":"year","category":"먹거리·음료","title":"혼분식 특별요리강습·식생활개선 순회 강습","summary":"국가기록원 서술에 따르면 1973년 식생활 개선을 위한 혼분식 특별요리강습과 전국 순회 강습회가 열렸고 극장 뉴스와 신문으로 분식을 홍보했다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do","name":"국가기록원 주제별 기록 '혼분식 장려'","license":"미확인"}],"confidence":"medium"},
-{"year":1973,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"삼성전자 수원 이전, 가전 공장 준공","summary":"삼성전자는 1973년 8월 본사를 수원으로 옮기고 12월 가전제품 생산공장을 준공했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/삼성전자","name":"위키백과 삼성전자","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-
-{"year":1974,"month":1,"date_precision":"month","category":"사건·사회·생활상","title":"세종문화회관 착공","summary":"서울시가 대규모 종합 공연장을 짓기로 하고 1974년 1월 세종문화회관을 착공했다. 4년 뒤인 1978년 4월 개관했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/세종문화회관","name":"위키백과 세종문화회관","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1974,"month":3,"date_precision":"month","category":"가전·기술·교통","title":"삼성전자 냉장고 생산 시작","summary":"삼성전자는 1974년 3월 냉장고, 12월 세탁기 생산을 시작했다. 가정 필수 가전이 국산화되던 시기의 기록이다.","sources":[{"url":"https://ko.wikipedia.org/wiki/삼성전자","name":"위키백과 삼성전자","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1974,"month":4,"date_precision":"month","category":"먹거리·음료","title":"동양제과 '초코파이' 출시","summary":"동양제과(현 오리온)가 1974년 4월 초코파이를 처음 내놓았다. 당시 가격은 50원이었고, 이후 롯데(1978)·해태(1986)·크라운(1989)도 같은 이름의 제품을 만들었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/초코파이","name":"위키백과 초코파이","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1974,"month":6,"date_precision":"month","category":"패션·미용","title":"서울시경 무기한 장발 단속","summary":"국가기록원 정리에 따르면 1974년 6월 서울시경이 무기한 장발 단속을 시작해 일주일간 10,103명을 단속했고 머리 깎기를 거부한 262명은 즉결심판에 넘겼다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do","name":"국가기록원 주제별 기록 '장기 기록'","license":"미확인"}],"confidence":"medium"},
-{"year":1974,"month":8,"date_precision":"month","category":"가전·기술·교통","title":"서울 지하철 1호선 개통","summary":"1974년 8월 15일 서울역~청량리 7.8km 구간에서 서울 지하철 1호선이 개통해 국철 전철과 직결 운행을 시작했다. 같은 날 광복절 행사에서 육영수 여사가 피격되어 개통식은 침울한 분위기였다.","sources":[{"url":"https://ko.wikipedia.org/wiki/서울_지하철_1호선","name":"위키백과 서울 지하철 1호선","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1974,"month":8,"date_precision":"month","category":"사건·사회·생활상","title":"육영수 여사 피격","summary":"1974년 8월 15일 광복절 기념행사에서 영부인 육영수 여사가 피격됐다. 이 일로 서울시장이 사퇴하고 새 시장이 부임했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/서울_지하철_1호선","name":"위키백과 서울 지하철 1호선","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/1970년대","name":"위키백과 1970년대","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1974,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"현대 포니, 토리노 모터쇼 공개","summary":"포드와의 기술 이전이 무산된 뒤 독자 개발한 현대 포니가 1974년 토리노 모터쇼에서 공개됐다. 이탈리아 이탈디자인이 디자인을 맡았다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현대_포니","name":"위키백과 현대 포니","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1974,"month":null,"date_precision":"year","category":"놀이·학교생활","title":"고교 평준화 시행 시작(서울·부산)","summary":"고교 평준화가 1974년 서울 전 지역과 부산(도서 제외)에서 시작됐고 1975년에는 인천·대구·광주, 1979년에는 대전 등으로 넓어졌다. 학군제도 이때 도입됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/고교_평준화","name":"위키백과 고교 평준화","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1974,"month":null,"date_precision":"year","category":"사건·사회·생활상","title":"민청학련 사건","summary":"위키백과 1970년대 문서는 1974년 사건으로 민청학련 사건을 든다. 월과 세부 경과는 해당 문서에 없어 별도 확인이 필요하다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1970년대","name":"위키백과 1970년대","license":"CC BY-SA 4.0"}],"confidence":"low"},
-
-{"year":1975,"month":5,"date_precision":"month","category":"영화·TV·라디오","title":"영화 '바보들의 행진' 개봉","summary":"1975년 5월 개봉한 영화 바보들의 행진은 장발 단속, 막걸리 마시기 대회, 청바지와 포크송으로 대표되는 청년문화를 그린 1970년대 청년영화로 소개된다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do","name":"국가기록원 주제별 기록 '장기 기록'","license":"미확인"}],"confidence":"medium"},
-{"year":1975,"month":null,"date_precision":"approx","category":"음악","title":"연예인 대마초 파동","summary":"1975년 겨울 대마초 단속으로 연예인 50명 넘게 체포됐고 록 가수 신중현이 주모자로 몰려 투옥됐다고 위키백과는 전한다. 이듬해 대마초 관리법이 제정되며 많은 가수의 방송 활동이 막혔다.","sources":[{"url":"https://ko.wikipedia.org/wiki/대한민국의_대마초","name":"위키백과 대한민국의 대마초","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1975,"month":null,"date_precision":"year","category":"음악","title":"'아침이슬' 등 금지곡 지정","summary":"'아침이슬'이 1975년 다른 곡들과 함께 금지곡으로 지정돼 제5공화국 시기까지 이어졌다. 금지 중에도 대학생과 청년들 사이에서 널리 불렸다.","sources":[{"url":"https://ko.wikipedia.org/wiki/아침이슬","name":"위키백과 아침이슬","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1975,"month":null,"date_precision":"year","category":"먹거리·음료","title":"서울시 혼·분식 실천강화 협의회 조례","summary":"국가기록원은 1975년 서울특별시 혼·분식 실천강화 협의회 설치 조례가 제정됐다고 정리한다. 분식 장려로 밀가루 소비가 늘고 라면·빵·과자 같은 제품이 많이 생겼다는 설명도 있다.","sources":[{"url":"https://theme.archives.go.kr/next/education2010/food02.do","name":"국가기록원 주제별 기록 '식생활(혼분식)'","license":"미확인"}],"confidence":"medium"},
-{"year":1975,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"현대 포니 생산 시작","summary":"현대 포니는 1975년부터 1990년까지 생산된 한국 최초의 고유 모델 자동차로, 이로써 한국은 세계 16번째 고유 모델 생산국이 됐다는 평가를 받는다. 판매는 이듬해 시작됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현대_포니","name":"위키백과 현대 포니","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1975,"month":null,"date_precision":"year","category":"사건·사회·생활상","title":"새마을운동 도시·공장으로 확대, 퇴폐풍조 단속 강화","summary":"1975년 새마을운동이 도시와 공장으로 넓어졌고, 같은 해 정부는 행락풍조와 유흥업소 영업시간·미성년자 출입을 집중 단속했다. 퇴폐풍조 추방 계몽영화도 극장에서 상영됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/새마을_운동","name":"위키백과 새마을 운동","license":"CC BY-SA 4.0"},{"url":"https://theme.archives.go.kr/next/tabooAutonomy/kindOfTaboo03.do","name":"국가기록원 금지와 자율 '퇴폐풍조 단속'","license":"미확인"}],"confidence":"medium"},
-{"year":1975,"month":null,"date_precision":"year","category":"사건·사회·생활상","title":"인민혁명당 사건 관계자 사형 집행","summary":"위키백과 1970년대 문서는 1975년 인민혁명당 사건 관계자들의 사형이 집행됐다고 적는다. 월·세부 경과는 이 문서에 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1970년대","name":"위키백과 1970년대","license":"CC BY-SA 4.0"}],"confidence":"low"},
-
-{"year":1976,"month":1,"date_precision":"month","category":"가전·기술·교통","title":"현대 포니 판매 개시","summary":"포니는 1976년 1월 26일부터 팔리기 시작해 그해 10,726대가 팔리며 시장 점유율 43.5%를 기록했다. 에콰도르를 시작으로 해외에도 수출됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/현대_포니","name":"위키백과 현대 포니","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1976,"month":4,"date_precision":"month","category":"놀이·학교생활","title":"용인자연농원 개장","summary":"1976년 4월 17일 용인자연농원(현 에버랜드)이 테마파크로 개장했다. 개장 때부터 있던 제트 열차와 요술집이 초기 인기 시설이었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/에버랜드","name":"위키백과 에버랜드","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1976,"month":4,"date_precision":"month","category":"가전·기술·교통","title":"삼성전자 컬러 TV 자체 개발","summary":"삼성전자는 1976년 2월 절전형 하이콜드 냉장고 생산을 시작했고 4월에는 컬러 텔레비전을 자체 개발했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/삼성전자","name":"위키백과 삼성전자","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1976,"month":7,"date_precision":"month","category":"영화·TV·라디오","title":"만화영화 '로보트 태권V' 개봉","summary":"김청기 감독의 국산 로봇 만화영화 로보트 태권V가 1976년 7월 24일 개봉해 서울에서만 약 20만 명이 관람했다고 보도됐고 속편으로 이어졌다.","sources":[{"url":"https://ko.wikipedia.org/wiki/로보트_태권_V","name":"위키백과 로보트 태권 V","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1976,"month":8,"date_precision":"month","category":"사건·사회·생활상","title":"판문점 도끼 만행 사건","summary":"1976년 8월 18일 판문점 공동경비구역에서 미루나무 가지치기를 감독하던 미군 장교 2명이 북한군에게 살해됐다. 미국은 폴 버니언 작전으로 나무를 베었고 한국군 특전사도 북한 초소를 파괴했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/판문점_도끼_만행_사건","name":"위키백과 판문점 도끼 만행 사건","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1976,"month":null,"date_precision":"year","category":"사건·사회·생활상","title":"양정모, 한국 첫 올림픽 금메달","summary":"1976년 하계 올림픽에서 레슬링의 양정모가 대한민국 최초의 올림픽 금메달을 땄다. 해당 문서는 월을 적지 않았다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1970년대","name":"위키백과 1970년대","license":"CC BY-SA 4.0"},{"url":"https://ko.wikipedia.org/wiki/양정모","name":"위키백과 양정모(동음이의)","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1976,"month":null,"date_precision":"year","category":"음악","title":"대마초 관리법 제정","summary":"1976년 대마초 관리법으로 대마초가 어떤 형태로든 금지됐다. 이 법은 2000년 마약류 관리법에 통합됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/대한민국의_대마초","name":"위키백과 대한민국의 대마초","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1976,"month":null,"date_precision":"year","category":"패션·미용","title":"치안본부 장발 일제 추방령","summary":"국가기록원 정리는 1976년 치안본부장이 장발 일제 추방령을 발표하고 무기한 단속을 예고했다고 적는다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do","name":"국가기록원 주제별 기록 '장기 기록'","license":"미확인"}],"confidence":"medium"},
-
-{"year":1977,"month":9,"date_precision":"month","category":"음악","title":"제1회 MBC 대학가요제, '나 어떡해' 대상","summary":"1977년 9월 열린 제1회 MBC 대학가요제에서 서울대 샌드페블즈의 '나 어떡해'가 대상을 받았다. 위키백과 본문과 표의 개최일이 다르게 적혀 있어 정확한 날짜는 확인이 필요하다.","sources":[{"url":"https://ko.wikipedia.org/wiki/MBC_대학가요제","name":"위키백과 MBC 대학가요제","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1977,"month":11,"date_precision":"month","category":"사건·사회·생활상","title":"이리역 폭발 사고","summary":"1977년 11월 11일 밤 전북 이리역에서 다이너마이트 약 40톤을 실은 화물열차가 폭발해 59명이 숨지고 1,343명이 다쳤다. 위키백과는 이 문서에 출처 보강 경고가 붙어 있다고 표시한다.","sources":[{"url":"https://ko.wikipedia.org/wiki/이리역_폭발_사고","name":"위키백과 이리역 폭발 사고","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1977,"month":null,"date_precision":"year","category":"사건·사회·생활상","title":"홍수환 '4전5기' 세계 챔피언","summary":"권투 선수 홍수환이 1977년 파나마에서 WBA 슈퍼밴텀급 초대 챔피언이 됐다. 2회에 네 번 쓰러지고도 3회에 KO승을 거둬 '4전5기'라는 별명을 얻었다.","sources":[{"url":"https://ko.wikipedia.org/wiki/홍수환","name":"위키백과 홍수환","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1977,"month":null,"date_precision":"year","category":"먹거리·음료","title":"쌀 자급 달성, 혼분식 행정명령 해제","summary":"국가기록원 서술에 따르면 통일벼 보급으로 1977년 처음 쌀 자급을 이뤘고 혼분식 행정명령이 해제됐다. 1979년 1인당 연간 쌀 소비량은 135.6kg이었다.","sources":[{"url":"https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do","name":"국가기록원 주제별 기록 '혼분식 장려'","license":"미확인"},{"url":"https://theme.archives.go.kr/next/education2010/food02.do","name":"국가기록원 주제별 기록 '식생활(혼분식)'","license":"미확인"}],"confidence":"medium"},
-{"year":1977,"month":null,"date_precision":"year","category":"가전·기술·교통","title":"금성사 국산 컬러 TV 'CT-808' 생산","summary":"금성사가 1977년 최초의 국산 컬러 텔레비전 CT-808 생산에 성공했지만 전량 미국에 수출됐고 국내 판매는 1980년부터였다.","sources":[{"url":"https://ko.wikipedia.org/wiki/LG전자","name":"위키백과 LG전자","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-
-{"year":1978,"month":3,"date_precision":"month","category":"먹거리·음료","title":"롯데공업, 사명을 '농심'으로 변경","summary":"농심은 1978년 3월 롯데공업에서 농심으로 이름을 바꿨다. 1971년 새우깡 출시와 1976년 상장을 거친 뒤의 일이다.","sources":[{"url":"https://ko.wikipedia.org/wiki/농심","name":"위키백과 농심","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1978,"month":4,"date_precision":"month","category":"사건·사회·생활상","title":"세종문화회관 개관","summary":"세종문화회관이 1978년 4월 14일 준공과 함께 개관했다. 대극장·소극장을 갖춘 당시 최대 규모 공연 시설로 주목받았다.","sources":[{"url":"https://ko.wikipedia.org/wiki/세종문화회관","name":"위키백과 세종문화회관","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1978,"month":4,"date_precision":"month","category":"사건·사회·생활상","title":"대한항공 902편 피격 사건","summary":"파리발 서울행 대한항공 902편이 1978년 4월 20일 항법 이상으로 소련 영공에 들어가 전투기에 격추됐다. 109명 중 2명이 사망했고 비상 착륙했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/대한항공_902편_격추_사건","name":"위키백과 대한항공 902편 격추 사건","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1978,"month":9,"date_precision":"approx","category":"음악","title":"제2회 MBC 대학가요제, '밀려오는 파도 소리에' 대상","summary":"1978년 제2회 MBC 대학가요제에서 부산대 썰물의 '밀려오는 파도 소리에'가 대상을 받았고 배철수가 속한 활주로가 '탈춤'으로 은상을 받았다. 개최 월은 문서에서 확인하지 못했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/MBC_대학가요제","name":"위키백과 MBC 대학가요제","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1978,"month":12,"date_precision":"month","category":"가전·기술·교통","title":"포항제철 제3기 설비확장 준공","summary":"포항제철은 1978년 12월 제3기 설비 확장을 마쳐 조강 기준 연산 550만 톤 규모가 됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/포항종합제철","name":"위키백과 포항종합제철","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-
-{"year":1979,"month":6,"date_precision":"month","category":"가전·기술·교통","title":"삼성전자 전자레인지 생산 시작","summary":"삼성전자가 1979년 6월 전자레인지 생산을 시작했다.","sources":[{"url":"https://ko.wikipedia.org/wiki/삼성전자","name":"위키백과 삼성전자","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1979,"month":10,"date_precision":"month","category":"사건·사회·생활상","title":"부마 민주 항쟁","summary":"야당 총재 김영삼 제명에 반발해 1979년 10월 16일 부산대 학생 시위로 시작된 항쟁이 부산·마산으로 번졌다. 10월 18일 부산에 계엄령, 20일 마산에 위수령이 내려졌다.","sources":[{"url":"https://ko.wikipedia.org/wiki/부마_민주_항쟁","name":"위키백과 부마 민주 항쟁","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1979,"month":10,"date_precision":"month","category":"사건·사회·생활상","title":"10·26 사건, 박정희 대통령 사망","summary":"1979년 10월 26일 저녁 서울 궁정동 안가 연회 중 중앙정보부장 김재규가 박정희 대통령과 경호실장을 쏘았다. 사건 직후 계엄령이 내려지고 최규하 국무총리가 권한대행을 맡았다.","sources":[{"url":"https://ko.wikipedia.org/wiki/10·26_사건","name":"위키백과 10·26 사건","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1979,"month":12,"date_precision":"month","category":"사건·사회·생활상","title":"12·12 군사 반란","summary":"위키백과 1970년대 문서는 1979년 12·12 군사 반란을 전두환과 하나회 관련 정변으로 분류한다. 세부 경과는 해당 문서에 없다.","sources":[{"url":"https://ko.wikipedia.org/wiki/1970년대","name":"위키백과 1970년대","license":"CC BY-SA 4.0"}],"confidence":"medium"},
-{"year":1979,"month":null,"date_precision":"year","category":"음악","title":"MBC FM 강변축제(강변가요제) 시작","summary":"1979년 경기도 가평 청평유원지에서 처음 열렸고 제1회에서는 홍삼트리오의 '기도'가 금상(최고상)을 받았다. 1·2회는 'MBC FM 강변축제'였고 3회부터 강변가요제로 불렸다.","sources":[{"url":"https://ko.wikipedia.org/wiki/강변가요제","name":"위키백과 강변가요제","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1979,"month":null,"date_precision":"year","category":"음악","title":"제3회 MBC 대학가요제, 김학래·임철우 '내가' 대상","summary":"1979년 제3회 MBC 대학가요제에서 명지대 김학래·임철우가 '내가'로 대상을 받았다.","sources":[{"url":"https://ko.wikipedia.org/wiki/MBC_대학가요제","name":"위키백과 MBC 대학가요제","license":"CC BY-SA 4.0"}],"confidence":"high"},
-{"year":1979,"month":null,"date_precision":"year","category":"먹거리·음료","title":"서울 한정식집 표준식단제 재시행","summary":"서울시 사진 아카이브에 따르면 1979년 서울 시내 한정식점에 표준식단제를 다시 시행해 쌀에 10% 이상 혼식하고 반찬을 5가지로 제한했다. 소비 절약을 노린 조치였다.","sources":[{"url":"https://archives.seoul.go.kr/photo/collection/detail/82","name":"서울사진아카이브 '불량식품 단속과 혼분식 장려'","license":"미확인"}],"confidence":"medium"},
-{"year":1979,"month":null,"date_precision":"year","category":"놀이·학교생활","title":"고교 평준화, 대전 등으로 확대","summary":"1979년 대전 전 지역과 수원·전주·청주·제주·마산 등에서 고교 평준화가 시행됐다.","sources":[{"url":"https://ko.wikipedia.org/wiki/고교_평준화","name":"위키백과 고교 평준화","license":"CC BY-SA 4.0"}],"confidence":"high"}
+  {
+    "year": 1970,
+    "month": 3,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "드라마 아씨",
+    "summary": "TBC 연속극 《아씨》가 방송을 시작해 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://cine21.com/tv/info/?tv_id=566",
+        "name": "씨네21, 아씨 작품 정보",
+        "license": "미확인"
+      },
+      {
+        "url": "https://journal.kci.go.kr/djnar/archive/articlePdf?artiId=ART001670112",
+        "name": "한국학술지인용색인, 아씨 관련 연구",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1970,
+    "month": 4,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "와우아파트 붕괴 사고",
+    "summary": "서울 마포구 창전동 와우지구의 시민아파트 한 동(5층)이 준공 4개월 만에 무너져 34명이 숨지고 40명이 다쳤다. 무허가 판자촌 정리를 위해 서둘러 짓던 시민아파트 정책의 부실을 드러낸 사고다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/와우아파트_붕괴_사고",
+        "name": "위키백과 와우아파트 붕괴 사고",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1970,
+    "month": 7,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "경부고속도로 완공",
+    "summary": "1968년 2월 착공한 서울~부산 경부고속도로가 1970년 7월 7일 완공됐다. 총연장 약 416km로 약 2년 5개월이 걸렸고, 당시 국토의 대동맥으로 불렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/경부고속도로",
+        "name": "위키백과 경부고속도로",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1970,
+    "month": 8,
+    "date_precision": "month",
+    "category": "음악",
+    "title": "김민기 작곡 '아침이슬' 발표 (양희은)",
+    "summary": "김민기가 만든 '아침이슬'을 양희은이 불러 1970년 8월 28일 발표했고, 이듬해 김민기 1집 음반으로도 나왔다. 포크 음악과 통기타 문화를 상징하는 곡이 됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/아침이슬",
+        "name": "위키백과 아침이슬",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1970,
+    "month": 10,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "온양동 건널목 열차 사고",
+    "summary": "1970년 10월 14일 충남 온양동의 철도 건널목에서 열차 사고가 나 공식 발표 기준 42명이 숨졌다. 영문판 위키백과는 당시 외신 보도와 수치가 다르다고 따로 밝혀 둔다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/1970_in_South_Korea",
+        "name": "Wikipedia: 1970 in South Korea",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": 11,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "전태일 분신, 청계피복노조 결성",
+    "summary": "평화시장 재단사 전태일이 1970년 11월 13일 근로기준법 준수를 외치며 분신해 숨졌다. 같은 달 27일 청계피복노동조합이 결성됐고, 이듬해 노동쟁의가 크게 늘었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/전태일",
+        "name": "위키백과 전태일",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1970,
+    "month": 11,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "삼성전자 흑백 텔레비전 생산 시작",
+    "summary": "삼성전자는 1970년 11월 흑백 텔레비전 생산을 시작했고, 1972년 11월에는 내수용 흑백 TV 생산에 들어갔다. 가정용 TV가 본격 보급되던 시기의 기록이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼성전자",
+        "name": "위키백과 삼성전자",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": 12,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "여객선 남영호 침몰",
+    "summary": "제주에서 부산으로 가던 여객선 남영호가 1970년 12월 중순 새벽 여수 앞바다에서 침몰해 326명이 숨졌다. 정원 초과와 화물 과적이 주원인으로 꼽혔고, 이후 여객선 운항관리제도가 도입됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/남영호_침몰_사고",
+        "name": "위키백과 남영호 침몰 사고",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1970_in_South_Korea",
+        "name": "Wikipedia: 1970 in South Korea",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "새마을운동 시작",
+    "summary": "근면·자조·협동을 내세운 새마을운동이 1970년 시작됐다. 위키백과는 정부가 1969년 이 이름을 붙였고 실질 시행을 1970년부터로 적고 있어 시작 시점 서술이 문서마다 조금 다르다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새마을_운동",
+        "name": "위키백과 새마을 운동",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1970년대",
+        "name": "위키백과 1970년대",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "수요일·토요일 '혼분식의 날'(무미일)",
+    "summary": "국가기록원은 1970년 농수산부가 매주 수·토요일 오전 11시~오후 5시 쌀로 만든 음식 판매를 금지하고 음식점은 보리쌀·면류를 25% 이상 섞게 했다고 설명한다. 곰탕·설렁탕에 국수를 넣는 관행이 이때 생겼다는 서술도 있다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do",
+        "name": "국가기록원 주제별 기록 '혼분식 장려'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "포항제철 착공, 남산 송신탑 공사 시작",
+    "summary": "포항종합제철의 포항제철소는 1970년 착공했고 1973년 첫 일관제철소로 가동됐다. 같은 해 남산에서는 훗날 서울타워가 되는 송신탑 공사가 시작됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/포항종합제철",
+        "name": "위키백과 포항종합제철",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/N서울타워",
+        "name": "위키백과 N서울타워",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·TV",
+    "title": "키보이스의 해변으로 가요",
+    "summary": "키보이스의 ‘해변으로 가요’는 1970~1971년 무렵 음반과 텔레비전에서 히트한 노래 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·TV",
+    "title": "히식스의 초원의 빛",
+    "summary": "히식스의 ‘초원의 빛’은 1970~1971년 무렵 히트하며 그룹 사운드의 인기를 보여 주었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "부라보콘 출시",
+    "summary": "콘 아이스크림 부라보콘이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
+        "name": "월간조선, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": 3,
+    "date_precision": "month",
+    "category": "영화·TV·라디오",
+    "title": "MBC 드라마 '수사반장' 첫 방송",
+    "summary": "MBC 수사반장이 1971년 3월 6일 처음 방송됐다. 실제 사건을 바탕으로 경찰 수사를 그렸고 1989년까지 이어진 장수 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/수사반장",
+        "name": "위키백과 수사반장",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": 8,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "광주대단지 사건",
+    "summary": "서울 철거민을 경기도 광주군(현 성남)에 집단 이주시켰으나 기반시설과 일자리가 없고 땅값 부담까지 커지자 1971년 8월 10일 수만 명이 항의 시위를 벌였다. 사흘 만에 요구를 수용하며 진정됐고 이후 성남시 설치의 계기가 됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/광주_대단지_사건",
+        "name": "위키백과 광주 대단지 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": 8,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "실미도 사건",
+    "summary": "1971년 8월 23일 실미도의 684부대원 23명이 교관 등을 살해하고 탈출해 서울로 향하다 대방동에서 교전 끝에 자폭했다. 생존자 4명은 1972년 3월 10일 사형이 집행됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/실미도_사건",
+        "name": "위키백과 실미도 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": 8,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "분식 권장 전국 주부 궐기대회",
+    "summary": "국가기록원 서술에 따르면 1971년 8월 분식 권장을 위한 주부 궐기대회가 열려 밥에 잡곡 15% 이상 섞기, 주 3회 이상 분식을 결의했다. 같은 해 생산량이 약 30% 높은 통일벼가 개발됐다는 설명도 함께 나온다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do",
+        "name": "국가기록원 주제별 기록 '혼분식 장려'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": 10,
+    "date_precision": "month",
+    "category": "패션·미용",
+    "title": "신문, 장발족 단속 보도",
+    "summary": "국가기록원 정리에 따르면 1971년 10월 1일 신문 사회면이 장발족 단속을 보도했고, 1,164명의 머리를 강제로 깎아 훈방했다고 한다. 법제화 이전부터 장발 단속이 이뤄졌음을 보여 준다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
+        "name": "국가기록원 주제별 기록 '장기 기록'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": 12,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "농심 '새우깡' 출시",
+    "summary": "농심이 1971년 12월 한국 최초의 스낵으로 새우깡을 내놓았다. 구운 소금 열로 튀기는 방식으로 약 1년 연구해 만들었고, 출시 직후 공장 앞에 트럭이 줄을 설 만큼 팔렸다. 첫해 20만6천 박스, 이듬해 425만 박스를 생산했다.",
+    "sources": [
+      {
+        "url": "https://www.etoday.co.kr/news/view/1648877",
+        "name": "이투데이 '47년 최장수 스낵, 농심 새우깡'",
+        "license": "미확인"
+      },
+      {
+        "url": "https://www.newsis.com/view/NISX20260224_0003524707",
+        "name": "뉴시스 '55살 과자업계 큰 형님 농심 새우깡'(2026-02-24)",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": 12,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "새우깡 출시",
+    "summary": "농심이 새우깡을 출시했다.",
+    "sources": [
+      {
+        "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
+        "name": "농심, 2017 연차보고서 연혁",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "정부, '퇴폐풍조 정화' 지시",
+    "summary": "국가기록원 자료는 1971년 국무총리가 퇴폐풍조 정화 지시를 내려 비밀요정·무허가 유흥업소 등을 중점 단속하고 종업원의 장발 관련 휴업 단속도 포함시켰다고 정리한다. 슬로건은 '퇴폐풍조 몰아내고 밝은사회 이룩하자'가 예시로 나온다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/kindOfTaboo03.do",
+        "name": "국가기록원 금지와 자율 '퇴폐풍조 단속'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "'아침이슬' 음반 수록과 건전가요 선정",
+    "summary": "김민기 1집에 '아침이슬'이 실린 것이 1971년이다. 위키백과는 같은 해 정부가 이 곡을 건전가요로 선정하기도 했다고 적는데, 1975년 금지곡이 된 것과 대비된다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/아침이슬",
+        "name": "위키백과 아침이슬",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "서울 지하철 1호선 공사 시작",
+    "summary": "위키백과에 따르면 서울 지하철 1호선 건설 공사는 1971년에 시작돼 약 3년간 진행됐다. 일본과의 기술 제휴로 건설하기로 했다는 배경도 서술돼 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/서울_지하철_1호선",
+        "name": "위키백과 서울 지하철 1호선",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "은희의 꽃반지 끼고",
+    "summary": "은희의 ‘꽃반지 끼고’가 포크 음악의 인기와 함께 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://www.maniadb.com/album/100401",
+        "name": "마니아DB, 은희 음반 정보",
+        "license": "미확인"
+      },
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·TV",
+    "title": "라나에로스포의 사랑해",
+    "summary": "라나에로스포의 ‘사랑해’는 1970년대 초 포크 열풍을 이끈 히트곡이었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      },
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6814",
+        "name": "벅스, 1970년대 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "양희은의 아침이슬",
+    "summary": "양희은이 부른 ‘아침이슬’은 1970년대 초 인기를 얻은 포크곡이다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "삼립호빵 출시",
+    "summary": "겨울철 간식으로 알려진 삼립호빵이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
+        "name": "월간조선, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "야쿠르트 출시",
+    "summary": "발효유 야쿠르트가 국내에 출시되었다.",
+    "sources": [
+      {
+        "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
+        "name": "월간조선, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": 1,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "새마을지도자 교육 출발",
+    "summary": "1972년 1월 31일 경기도 고양 농협대 부설 연수원에 140명이 입교하며 새마을지도자 교육이 시작됐다. 이후 교육 인원과 정부 지원금이 해마다 크게 늘었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새마을_운동",
+        "name": "위키백과 새마을 운동",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 3,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "실미도 생존 부대원 사형 집행",
+    "summary": "1971년 실미도 사건에서 붙잡힌 부대원 4명은 군사재판을 거쳐 1972년 3월 10일 사형이 집행됐다. 정부 발표가 여러 차례 바뀐 사건으로 알려져 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/실미도_사건",
+        "name": "위키백과 실미도 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 4,
+    "date_precision": "month",
+    "category": "영화·TV·라디오",
+    "title": "KBS 일일연속극 '여로' 방영",
+    "summary": "KBS 1TV 일일극 여로가 1972년 4월 3일부터 12월 29일까지 총 211부작으로 방영됐다. 가난 때문에 팔려 간 여성 분이의 일생을 그렸으며 태현실·장욱제가 주연이었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/여로_(드라마)",
+        "name": "위키백과 여로 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 4,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "드라마 여로",
+    "summary": "KBS 연속극 《여로》가 방송을 시작했다. 높은 시청률을 기록하며 큰 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0036330",
+        "name": "한국민족문화대백과사전, 여로",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 7,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "7·4 남북 공동 성명",
+    "summary": "1972년 7월 4일 남북이 자주·평화·민족대단결의 통일 3대 원칙에 합의한 공동 성명을 발표했다. 분단 이후 처음으로 두 정부가 함께 낸 통일 합의였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/7·4_남북_공동_성명",
+        "name": "위키백과 7·4 남북 공동 성명",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 11,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "삼성전자 내수용 흑백 TV 생산",
+    "summary": "삼성전자는 1972년 11월 내수용 흑백 텔레비전 생산을 시작했다. 앞서 1970년 11월에는 흑백 TV 생산을 시작한 바 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼성전자",
+        "name": "위키백과 삼성전자",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "date_precision": "approx",
+    "category": "사건·사회·생활상",
+    "title": "유신헌법 제정",
+    "summary": "1972년 유신헌법이 제정되면서 박정희 대통령의 장기 집권 체제가 만들어졌다. 위키백과 1970년대 문서는 월을 적지 않는다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1970년대",
+        "name": "위키백과 1970년대",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "date_precision": "approx",
+    "category": "사건·사회·생활상",
+    "title": "서울 시민회관 화재로 소실",
+    "summary": "1961년 개관한 서울 시민회관이 1972년 말 화재로 불타 없어졌다. 이 자리에 훗날 세종문화회관이 들어섰다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/세종문화회관",
+        "name": "위키백과 세종문화회관",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "조용필 '돌아와요 부산항에' 발표",
+    "summary": "위키백과는 조용필의 '돌아와요 부산항에'가 1972년 발표됐고 재일동포를 노래한 곡이며 1971년 '돌아와요 충무항에'가 원곡이라고 적는다. 발표 연도는 다른 자료와 대조가 필요하다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/돌아와요_부산항에",
+        "name": "위키백과 돌아와요 부산항에",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·TV",
+    "title": "송창식의 창밖에는 비오고요",
+    "summary": "송창식의 ‘창밖에는 비오고요’는 1970년대 초 인기를 얻은 포크곡이다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악·라디오·영화·TV",
+    "title": "윤형주의 라라라",
+    "summary": "윤형주의 ‘라라라’는 1970년대 초 포크 음악이 인기를 얻던 시기에 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": 1,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "새마을 담당관실 설치",
+    "summary": "1973년 1월 16일 대통령령으로 내무부에 새마을 담당관실이 설치됐고, 같은 해 3월에는 대통령 비서실에도 담당관실이 생겼다. 5월에는 수원에 새마을지도자 연수원이 신설됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새마을_운동",
+        "name": "위키백과 새마을 운동",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1973,
+    "month": 3,
+    "date_precision": "month",
+    "category": "패션·미용",
+    "title": "경범죄 처벌법으로 장발 단속 법제화",
+    "summary": "국가기록원 정리에 따르면 1973년 3월 경범죄 처벌법이 발효되면서 장발 단속이 법제화됐고 그해 단속은 1만 2천여 건이었다. 공포(2월)와 발효(3월) 시점 표기가 자료마다 다를 수 있다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
+        "name": "국가기록원 주제별 기록 '장기 기록'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": 7,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "포항제철 제1고로 준공",
+    "summary": "포항제철소가 1973년 6월 첫 쇳물을 뽑은 뒤 7월 3일 제1고로 준공식을 열고 국내 최초의 일관제철소로 가동됐다. 연산 규모는 조강 기준 103만 톤대였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/포항종합제철",
+        "name": "위키백과 포항종합제철",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1973,
+    "month": 8,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "김대중 납치 사건",
+    "summary": "야당 지도자 김대중이 1973년 8월 8일 일본 도쿄의 호텔에서 납치됐다가 8월 13일 서울 자택 근처에서 풀려났다. 한일 외교 문제로 번졌고 한국 정부는 11월 대사관 직원의 관여 혐의를 인정했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/김대중_납치_사건",
+        "name": "위키백과 김대중 납치 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1973,
+    "month": 10,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "제1차 석유 파동 시작",
+    "summary": "1973년 10월 제4차 중동전쟁 직후 아랍 산유국들이 석유 금수와 감산을 선언하며 석유 파동이 시작됐다. 위키백과 해당 문서에는 한국 영향이 서술돼 있지 않아 국내 영향은 다른 자료로 보강해야 한다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/제1차_석유_파동",
+        "name": "위키백과 제1차 석유 파동",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": 11,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "제1차 새마을지도자대회",
+    "summary": "1973년 11월 21일 제1차 새마을 지도자 대회가 열려 범국민적 확산을 결의했다. 같은 해 관공서 앞에 새마을기를 게양하는 일도 시작됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새마을_운동",
+        "name": "위키백과 새마을 운동",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "혼분식 특별요리강습·식생활개선 순회 강습",
+    "summary": "국가기록원 서술에 따르면 1973년 식생활 개선을 위한 혼분식 특별요리강습과 전국 순회 강습회가 열렸고 극장 뉴스와 신문으로 분식을 홍보했다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do",
+        "name": "국가기록원 주제별 기록 '혼분식 장려'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "삼성전자 수원 이전, 가전 공장 준공",
+    "summary": "삼성전자는 1973년 8월 본사를 수원으로 옮기고 12월 가전제품 생산공장을 준공했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼성전자",
+        "name": "위키백과 삼성전자",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "이장희의 그건 너",
+    "summary": "이장희의 ‘그건 너’가 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "김세환의 토요일 밤에",
+    "summary": "김세환의 ‘토요일 밤에’가 포크 가요 팬들의 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      },
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "홍민의 고별",
+    "summary": "홍민의 ‘고별’은 1973년을 대표하는 가요 가운데 하나로 소개된다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "패티김의 이별",
+    "summary": "패티김의 ‘이별’은 1973년을 대표하는 가요 가운데 하나로 소개된다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "양파깡 출시",
+    "summary": "양파를 소재로 한 스낵 양파깡이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "고구마깡 출시",
+    "summary": "고구마를 소재로 한 스낵 고구마깡이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": 1,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "세종문화회관 착공",
+    "summary": "서울시가 대규모 종합 공연장을 짓기로 하고 1974년 1월 세종문화회관을 착공했다. 4년 뒤인 1978년 4월 개관했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/세종문화회관",
+        "name": "위키백과 세종문화회관",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": 3,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "삼성전자 냉장고 생산 시작",
+    "summary": "삼성전자는 1974년 3월 냉장고, 12월 세탁기 생산을 시작했다. 가정 필수 가전이 국산화되던 시기의 기록이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼성전자",
+        "name": "위키백과 삼성전자",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": 4,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "동양제과 '초코파이' 출시",
+    "summary": "동양제과(현 오리온)가 1974년 4월 초코파이를 처음 내놓았다. 당시 가격은 50원이었고, 이후 롯데(1978)·해태(1986)·크라운(1989)도 같은 이름의 제품을 만들었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/초코파이",
+        "name": "위키백과 초코파이",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": 6,
+    "date_precision": "month",
+    "category": "패션·미용",
+    "title": "서울시경 무기한 장발 단속",
+    "summary": "국가기록원 정리에 따르면 1974년 6월 서울시경이 무기한 장발 단속을 시작해 일주일간 10,103명을 단속했고 머리 깎기를 거부한 262명은 즉결심판에 넘겼다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
+        "name": "국가기록원 주제별 기록 '장기 기록'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": 8,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "서울 지하철 1호선 개통",
+    "summary": "1974년 8월 15일 서울역~청량리 7.8km 구간에서 서울 지하철 1호선이 개통해 국철 전철과 직결 운행을 시작했다. 같은 날 광복절 행사에서 육영수 여사가 피격되어 개통식은 침울한 분위기였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/서울_지하철_1호선",
+        "name": "위키백과 서울 지하철 1호선",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": 8,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "육영수 여사 피격",
+    "summary": "1974년 8월 15일 광복절 기념행사에서 영부인 육영수 여사가 피격됐다. 이 일로 서울시장이 사퇴하고 새 시장이 부임했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/서울_지하철_1호선",
+        "name": "위키백과 서울 지하철 1호선",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1970년대",
+        "name": "위키백과 1970년대",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "현대 포니, 토리노 모터쇼 공개",
+    "summary": "포드와의 기술 이전이 무산된 뒤 독자 개발한 현대 포니가 1974년 토리노 모터쇼에서 공개됐다. 이탈리아 이탈디자인이 디자인을 맡았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현대_포니",
+        "name": "위키백과 현대 포니",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "놀이·학교생활",
+    "title": "고교 평준화 시행 시작(서울·부산)",
+    "summary": "고교 평준화가 1974년 서울 전 지역과 부산(도서 제외)에서 시작됐고 1975년에는 인천·대구·광주, 1979년에는 대전 등으로 넓어졌다. 학군제도 이때 도입됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/고교_평준화",
+        "name": "위키백과 고교 평준화",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "민청학련 사건",
+    "summary": "위키백과 1970년대 문서는 1974년 사건으로 민청학련 사건을 든다. 월과 세부 경과는 해당 문서에 없어 별도 확인이 필요하다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1970년대",
+        "name": "위키백과 1970년대",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "신중현과 엽전들의 미인",
+    "summary": "신중현과 엽전들이 발표한 ‘미인’은 1970년대 청년문화의 기운을 보여 준 록 음악이다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "패션·미용",
+    "title": "청바지와 청년문화",
+    "summary": "청바지는 통기타와 생맥주와 함께 1970년대 청년문화의 상징으로 꼽혔다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0079870",
+        "name": "한국민족문화대백과사전, 청바지",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "approx",
+    "category": "패션·미용",
+    "title": "장발",
+    "summary": "긴 머리는 1970년대 청년문화의 대표적인 외형 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i502850",
+        "name": "국사편찬위원회 우리역사넷, 청년문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "approx",
+    "category": "패션·미용",
+    "title": "판탈롱",
+    "summary": "아랫부분이 나팔 모양으로 넓은 판탈롱 바지가 1970년대에 유행했다.",
+    "sources": [
+      {
+        "url": "https://love.seoul.go.kr/articles/5595",
+        "name": "서울사랑, 시대별 패션 이야기",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "approx",
+    "category": "유행어·풍속",
+    "title": "통·블·생",
+    "summary": "통기타·블루진·생맥주를 묶은 말로, 당시 청년문화를 상징했다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i502850",
+        "name": "국사편찬위원회 우리역사넷, 청년문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "approx",
+    "category": "유행어·풍속",
+    "title": "고고춤",
+    "summary": "고고춤은 장발과 포크송 등과 함께 당시 청년들의 새로운 문화적 취향으로 자리 잡았다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i502850",
+        "name": "국사편찬위원회 우리역사넷, 청년문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "오리온 초코파이 출시",
+    "summary": "초콜릿으로 덮은 과자 안에 마시멜로를 넣은 초코파이가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://www.khan.co.kr/article/200410041641441",
+        "name": "경향신문, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "바나나맛 우유 출시",
+    "summary": "빙그레의 바나나맛 우유가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0080075",
+        "name": "한국민족문화대백과사전, 빙그레",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "투게더 출시",
+    "summary": "빙그레의 아이스크림 투게더가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://www.khan.co.kr/article/200410041641441",
+        "name": "경향신문, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "에이스 출시",
+    "summary": "비스킷 에이스가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
+    "month": 5,
+    "date_precision": "month",
+    "category": "영화·TV·라디오",
+    "title": "영화 '바보들의 행진' 개봉",
+    "summary": "1975년 5월 개봉한 영화 바보들의 행진은 장발 단속, 막걸리 마시기 대회, 청바지와 포크송으로 대표되는 청년문화를 그린 1970년대 청년영화로 소개된다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
+        "name": "국가기록원 주제별 기록 '장기 기록'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
+    "month": 10,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "농심라면 출시",
+    "summary": "농심라면이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
+        "name": "농심, 2017 연차보고서 연혁",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": 12,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "인기 가요 방송 금지",
+    "summary": "‘왜 불러’와 ‘고래사냥’ 등 대중가요가 방송 금지 대상에 올랐다.",
+    "sources": [
+      {
+        "url": "https://archives.kdemo.or.kr/workoutlog/workoutlog/view/BRR_1975_12_09_n001",
+        "name": "민주화운동기념사업회, 대중가요 방송 금지 관련 기록",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "approx",
+    "category": "음악",
+    "title": "연예인 대마초 파동",
+    "summary": "1975년 겨울 대마초 단속으로 연예인 50명 넘게 체포됐고 록 가수 신중현이 주모자로 몰려 투옥됐다고 위키백과는 전한다. 이듬해 대마초 관리법이 제정되며 많은 가수의 방송 활동이 막혔다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한민국의_대마초",
+        "name": "위키백과 대한민국의 대마초",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "'아침이슬' 등 금지곡 지정",
+    "summary": "'아침이슬'이 1975년 다른 곡들과 함께 금지곡으로 지정돼 제5공화국 시기까지 이어졌다. 금지 중에도 대학생과 청년들 사이에서 널리 불렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/아침이슬",
+        "name": "위키백과 아침이슬",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "서울시 혼·분식 실천강화 협의회 조례",
+    "summary": "국가기록원은 1975년 서울특별시 혼·분식 실천강화 협의회 설치 조례가 제정됐다고 정리한다. 분식 장려로 밀가루 소비가 늘고 라면·빵·과자 같은 제품이 많이 생겼다는 설명도 있다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/education2010/food02.do",
+        "name": "국가기록원 주제별 기록 '식생활(혼분식)'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "현대 포니 생산 시작",
+    "summary": "현대 포니는 1975년부터 1990년까지 생산된 한국 최초의 고유 모델 자동차로, 이로써 한국은 세계 16번째 고유 모델 생산국이 됐다는 평가를 받는다. 판매는 이듬해 시작됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현대_포니",
+        "name": "위키백과 현대 포니",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "새마을운동 도시·공장으로 확대, 퇴폐풍조 단속 강화",
+    "summary": "1975년 새마을운동이 도시와 공장으로 넓어졌고, 같은 해 정부는 행락풍조와 유흥업소 영업시간·미성년자 출입을 집중 단속했다. 퇴폐풍조 추방 계몽영화도 극장에서 상영됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새마을_운동",
+        "name": "위키백과 새마을 운동",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://theme.archives.go.kr/next/tabooAutonomy/kindOfTaboo03.do",
+        "name": "국가기록원 금지와 자율 '퇴폐풍조 단속'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "인민혁명당 사건 관계자 사형 집행",
+    "summary": "위키백과 1970년대 문서는 1975년 인민혁명당 사건 관계자들의 사형이 집행됐다고 적는다. 월·세부 경과는 이 문서에 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1970년대",
+        "name": "위키백과 1970년대",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "low"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "영화 바보들의 행진",
+    "summary": "영화 《바보들의 행진》은 당시 청년들의 모습을 담아 주목받았다. 송창식이 부른 노래들도 영화와 함께 알려졌다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
+        "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "송창식의 고래사냥",
+    "summary": "송창식의 ‘고래사냥’은 영화 《바보들의 행진》과 함께 알려진 노래다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
+        "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "송창식의 왜 불러",
+    "summary": "송창식의 ‘왜 불러’는 인기를 얻었지만 같은 해 방송 금지 대상이 되었다.",
+    "sources": [
+      {
+        "url": "https://archives.kdemo.or.kr/workoutlog/workoutlog/view/BRR_1975_12_09_n001",
+        "name": "민주화운동기념사업회, 대중가요 방송 금지 관련 기록",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "맛동산 출시",
+    "summary": "땅콩이 묻은 과자 맛동산이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": 1,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "현대 포니 판매 개시",
+    "summary": "포니는 1976년 1월 26일부터 팔리기 시작해 그해 10,726대가 팔리며 시장 점유율 43.5%를 기록했다. 에콰도르를 시작으로 해외에도 수출됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/현대_포니",
+        "name": "위키백과 현대 포니",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": 4,
+    "date_precision": "month",
+    "category": "놀이·학교생활",
+    "title": "용인자연농원 개장",
+    "summary": "1976년 4월 17일 용인자연농원(현 에버랜드)이 테마파크로 개장했다. 개장 때부터 있던 제트 열차와 요술집이 초기 인기 시설이었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/에버랜드",
+        "name": "위키백과 에버랜드",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": 4,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "삼성전자 컬러 TV 자체 개발",
+    "summary": "삼성전자는 1976년 2월 절전형 하이콜드 냉장고 생산을 시작했고 4월에는 컬러 텔레비전을 자체 개발했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼성전자",
+        "name": "위키백과 삼성전자",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": 7,
+    "date_precision": "month",
+    "category": "영화·TV·라디오",
+    "title": "만화영화 '로보트 태권V' 개봉",
+    "summary": "김청기 감독의 국산 로봇 만화영화 로보트 태권V가 1976년 7월 24일 개봉해 서울에서만 약 20만 명이 관람했다고 보도됐고 속편으로 이어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/로보트_태권_V",
+        "name": "위키백과 로보트 태권 V",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": 8,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "판문점 도끼 만행 사건",
+    "summary": "1976년 8월 18일 판문점 공동경비구역에서 미루나무 가지치기를 감독하던 미군 장교 2명이 북한군에게 살해됐다. 미국은 폴 버니언 작전으로 나무를 베었고 한국군 특전사도 북한 초소를 파괴했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/판문점_도끼_만행_사건",
+        "name": "위키백과 판문점 도끼 만행 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "양정모, 한국 첫 올림픽 금메달",
+    "summary": "1976년 하계 올림픽에서 레슬링의 양정모가 대한민국 최초의 올림픽 금메달을 땄다. 해당 문서는 월을 적지 않았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1970년대",
+        "name": "위키백과 1970년대",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/양정모",
+        "name": "위키백과 양정모(동음이의)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "대마초 관리법 제정",
+    "summary": "1976년 대마초 관리법으로 대마초가 어떤 형태로든 금지됐다. 이 법은 2000년 마약류 관리법에 통합됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한민국의_대마초",
+        "name": "위키백과 대한민국의 대마초",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "패션·미용",
+    "title": "치안본부 장발 일제 추방령",
+    "summary": "국가기록원 정리는 1976년 치안본부장이 장발 일제 추방령을 발표하고 무기한 단속을 예고했다고 적는다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
+        "name": "국가기록원 주제별 기록 '장기 기록'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "송대관의 해뜰 날",
+    "summary": "송대관의 ‘해뜰 날’은 1976년의 대표적인 인기 가요로 꼽힌다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "금과 은의 처녀 뱃사공",
+    "summary": "금과 은의 ‘처녀 뱃사공’은 1976년 히트곡 가운데 하나로 소개된다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "조미미의 연락선",
+    "summary": "조미미의 ‘연락선’은 1976년 인기 가요 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "박상규의 친구야 친구",
+    "summary": "박상규의 ‘친구야 친구’는 1976년 히트곡 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "이은하의 아직도 그대는 내 사랑",
+    "summary": "이은하의 ‘아직도 그대는 내 사랑’은 1976년 인기 가요로 소개된다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "하수영의 아내에게 바치는 노래",
+    "summary": "하수영의 ‘아내에게 바치는 노래’는 1976년 히트곡 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "정종숙의 둘이 걸었네",
+    "summary": "정종숙의 ‘둘이 걸었네’는 1976년 인기 가요로 소개된다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "산이슬의 이사 가던 날",
+    "summary": "산이슬의 ‘이사 가던 날’은 1976년 히트곡 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "바밤바 출시",
+    "summary": "밤을 소재로 한 아이스크림 바밤바가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://eiec.kdi.re.kr/userdata/nara/200807/200807.pdf",
+        "name": "한국개발연구원 경제정보센터, 나라경제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "오징어땅콩 출시",
+    "summary": "땅콩을 과자로 감싼 오징어땅콩이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://www.mk.co.kr/news/business/10525041",
+        "name": "매일경제, 오징어땅콩 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": 9,
+    "date_precision": "month",
+    "category": "음악",
+    "title": "제1회 MBC 대학가요제, '나 어떡해' 대상",
+    "summary": "1977년 9월 열린 제1회 MBC 대학가요제에서 서울대 샌드페블즈의 '나 어떡해'가 대상을 받았다. 위키백과 본문과 표의 개최일이 다르게 적혀 있어 정확한 날짜는 확인이 필요하다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/MBC_대학가요제",
+        "name": "위키백과 MBC 대학가요제",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1977,
+    "month": 11,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "이리역 폭발 사고",
+    "summary": "1977년 11월 11일 밤 전북 이리역에서 다이너마이트 약 40톤을 실은 화물열차가 폭발해 59명이 숨지고 1,343명이 다쳤다. 위키백과는 이 문서에 출처 보강 경고가 붙어 있다고 표시한다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/이리역_폭발_사고",
+        "name": "위키백과 이리역 폭발 사고",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "홍수환 '4전5기' 세계 챔피언",
+    "summary": "권투 선수 홍수환이 1977년 파나마에서 WBA 슈퍼밴텀급 초대 챔피언이 됐다. 2회에 네 번 쓰러지고도 3회에 KO승을 거둬 '4전5기'라는 별명을 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/홍수환",
+        "name": "위키백과 홍수환",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "쌀 자급 달성, 혼분식 행정명령 해제",
+    "summary": "국가기록원 서술에 따르면 통일벼 보급으로 1977년 처음 쌀 자급을 이뤘고 혼분식 행정명령이 해제됐다. 1979년 1인당 연간 쌀 소비량은 135.6kg이었다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/EncourageSoul.do",
+        "name": "국가기록원 주제별 기록 '혼분식 장려'",
+        "license": "미확인"
+      },
+      {
+        "url": "https://theme.archives.go.kr/next/education2010/food02.do",
+        "name": "국가기록원 주제별 기록 '식생활(혼분식)'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "금성사 국산 컬러 TV 'CT-808' 생산",
+    "summary": "금성사가 1977년 최초의 국산 컬러 텔레비전 CT-808 생산에 성공했지만 전량 미국에 수출됐고 국내 판매는 1980년부터였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/LG전자",
+        "name": "위키백과 LG전자",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "제1회 MBC 대학가요제",
+    "summary": "제1회 대학가요제가 열렸다. 샌드페블스의 ‘나 어떡해’가 대상을 받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "혜은이의 진짜 진짜 좋아해",
+    "summary": "혜은이의 ‘진짜 진짜 좋아해’가 히트하며 가수의 인기에 힘을 보탰다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
+        "name": "벅스, 1976년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "혜은이의 당신만을 사랑해",
+    "summary": "혜은이의 ‘당신만을 사랑해’가 히트했다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
+        "name": "벅스, 1976년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "롯데샌드 출시",
+    "summary": "크림을 넣은 샌드형 비스킷 롯데샌드가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
+        "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1978,
+    "month": 3,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "롯데공업, 사명을 '농심'으로 변경",
+    "summary": "농심은 1978년 3월 롯데공업에서 농심으로 이름을 바꿨다. 1971년 새우깡 출시와 1976년 상장을 거친 뒤의 일이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/농심",
+        "name": "위키백과 농심",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
+    "month": 4,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "세종문화회관 개관",
+    "summary": "세종문화회관이 1978년 4월 14일 준공과 함께 개관했다. 대극장·소극장을 갖춘 당시 최대 규모 공연 시설로 주목받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/세종문화회관",
+        "name": "위키백과 세종문화회관",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
+    "month": 4,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "대한항공 902편 피격 사건",
+    "summary": "파리발 서울행 대한항공 902편이 1978년 4월 20일 항법 이상으로 소련 영공에 들어가 전투기에 격추됐다. 109명 중 2명이 사망했고 비상 착륙했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한항공_902편_격추_사건",
+        "name": "위키백과 대한항공 902편 격추 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
+    "month": 5,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "바나나킥 출시",
+    "summary": "바나나 맛 스낵 바나나킥이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
+        "name": "농심, 2017 연차보고서 연혁",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
+    "month": 9,
+    "date_precision": "approx",
+    "category": "음악",
+    "title": "제2회 MBC 대학가요제, '밀려오는 파도 소리에' 대상",
+    "summary": "1978년 제2회 MBC 대학가요제에서 부산대 썰물의 '밀려오는 파도 소리에'가 대상을 받았고 배철수가 속한 활주로가 '탈춤'으로 은상을 받았다. 개최 월은 문서에서 확인하지 못했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/MBC_대학가요제",
+        "name": "위키백과 MBC 대학가요제",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1978,
+    "month": 12,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "포항제철 제3기 설비확장 준공",
+    "summary": "포항제철은 1978년 12월 제3기 설비 확장을 마쳐 조강 기준 연산 550만 톤 규모가 됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/포항종합제철",
+        "name": "위키백과 포항종합제철",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1978,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "썰물의 밀려오는 파도소리에",
+    "summary": "썰물의 ‘밀려오는 파도소리에’가 대학가요제 대상을 받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "심수봉의 그때 그 사람",
+    "summary": "심수봉은 대학가요제에서 ‘그때 그 사람’을 불렀다. 입상하지는 못했지만 노래는 대학 밖에서도 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": 6,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "삼성전자 전자레인지 생산 시작",
+    "summary": "삼성전자가 1979년 6월 전자레인지 생산을 시작했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼성전자",
+        "name": "위키백과 삼성전자",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1979,
+    "month": 10,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "부마 민주 항쟁",
+    "summary": "야당 총재 김영삼 제명에 반발해 1979년 10월 16일 부산대 학생 시위로 시작된 항쟁이 부산·마산으로 번졌다. 10월 18일 부산에 계엄령, 20일 마산에 위수령이 내려졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/부마_민주_항쟁",
+        "name": "위키백과 부마 민주 항쟁",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": 10,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "10·26 사건, 박정희 대통령 사망",
+    "summary": "1979년 10월 26일 저녁 서울 궁정동 안가 연회 중 중앙정보부장 김재규가 박정희 대통령과 경호실장을 쏘았다. 사건 직후 계엄령이 내려지고 최규하 국무총리가 권한대행을 맡았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/10·26_사건",
+        "name": "위키백과 10·26 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": 12,
+    "date_precision": "month",
+    "category": "사건·사회·생활상",
+    "title": "12·12 군사 반란",
+    "summary": "위키백과 1970년대 문서는 1979년 12·12 군사 반란을 전두환과 하나회 관련 정변으로 분류한다. 세부 경과는 해당 문서에 없다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1970년대",
+        "name": "위키백과 1970년대",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "MBC FM 강변축제(강변가요제) 시작",
+    "summary": "1979년 경기도 가평 청평유원지에서 처음 열렸고 제1회에서는 홍삼트리오의 '기도'가 금상(최고상)을 받았다. 1·2회는 'MBC FM 강변축제'였고 3회부터 강변가요제로 불렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/강변가요제",
+        "name": "위키백과 강변가요제",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "제3회 MBC 대학가요제, 김학래·임철우 '내가' 대상",
+    "summary": "1979년 제3회 MBC 대학가요제에서 명지대 김학래·임철우가 '내가'로 대상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/MBC_대학가요제",
+        "name": "위키백과 MBC 대학가요제",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "서울 한정식집 표준식단제 재시행",
+    "summary": "서울시 사진 아카이브에 따르면 1979년 서울 시내 한정식점에 표준식단제를 다시 시행해 쌀에 10% 이상 혼식하고 반찬을 5가지로 제한했다. 소비 절약을 노린 조치였다.",
+    "sources": [
+      {
+        "url": "https://archives.seoul.go.kr/photo/collection/detail/82",
+        "name": "서울사진아카이브 '불량식품 단속과 혼분식 장려'",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "놀이·학교생활",
+    "title": "고교 평준화, 대전 등으로 확대",
+    "summary": "1979년 대전 전 지역과 수원·전주·청주·제주·마산 등에서 고교 평준화가 시행됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/고교_평준화",
+        "name": "위키백과 고교 평준화",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "김학래·임철우의 내가",
+    "summary": "김학래와 임철우의 ‘내가’가 대학가요제 대상을 받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "윤시내의 열애",
+    "summary": "윤시내의 ‘열애’가 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=75086911",
+        "name": "대한민국 정책브리핑, 한국인의 삶을 바꾼 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "혜은이의 제3한강교",
+    "summary": "혜은이의 ‘제3한강교’는 1979년 방송가요상 관련 기록에 등장하는 인기곡이다.",
+    "sources": [
+      {
+        "url": "https://radio.ytn.co.kr/program/?f=2&id=23211&page=20&s_hcd=01&s_mcd=0300",
+        "name": "YTN 라디오, 음악여행 쉼표 방송 내용",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "빠다코코낫 출시",
+    "summary": "코코넛 맛 비스킷 빠다코코낫이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
+        "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "해태 크림웨하스 출시",
+    "summary": "크림을 넣은 과자 해태 크림웨하스가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
+        "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  }
 ]

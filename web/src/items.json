@@ -49,6 +49,22 @@
   },
   {
     "year": 1950,
+    "month": 6,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "6·25 전쟁",
+    "summary": "6월 25일 전쟁이 발발하면서 피란과 이산이 한국인의 일상을 크게 바꾸었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
     "month": 8,
     "precision": "month",
     "cat": "사건·생활상",
@@ -355,6 +371,22 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "굳세어라 금순아",
+    "summary": "현인이 부른 이 노래는 전쟁과 피란, 이산의 경험을 담아 사랑받은 대중가요다. 표기 연도는 전후 활동 시기를 나타낸다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1954,
@@ -665,6 +697,27 @@
     "confidence": "medium"
   },
   {
+    "year": 1955,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "영화 춘향전",
+    "summary": "이규환 감독의 영화 「춘향전」이 흥행하며 전후 한국영화 중흥의 계기가 되었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0015002",
+        "name": "한국민족문화대백과사전, 대한민국",
+        "license": "미확인"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "Wikipedia, Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1956,
     "month": 5,
     "precision": "month",
@@ -755,6 +808,22 @@
     "confidence": "medium"
   },
   {
+    "year": 1956,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "영화 자유부인",
+    "summary": "한형모 감독의 「자유부인」은 여성의 삶과 서구적 가치관을 소재로 다뤄 관객의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
+        "name": "Wikipedia, Cinema of South Korea",
+        "license": "CC BY-SA"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1957,
     "month": null,
     "precision": "year",
@@ -840,6 +909,22 @@
     "confidence": "low"
   },
   {
+    "year": 1958,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "악극단의 쇠락",
+    "summary": "악극단은 영화에 밀리면서 1958년부터 쇠락하기 시작했다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1959,
     "month": 2,
     "precision": "month",
@@ -886,6 +971,22 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1959,
+    "month": null,
+    "precision": "approx",
+    "cat": "패션",
+    "title": "나일론 등 합성섬유 의류",
+    "summary": "1950년대 말부터 질기고 손질이 쉬운 합성섬유가 널리 보급되며 옷차림에 변화를 가져왔다. 1959년은 이러한 변화가 나타난 대략적인 시기다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0015002",
+        "name": "한국민족문화대백과사전, 대한민국",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1960,
@@ -1390,6 +1491,27 @@
   },
   {
     "year": 1970,
+    "month": 3,
+    "precision": "month",
+    "cat": "음악",
+    "title": "드라마 아씨",
+    "summary": "TBC 연속극 《아씨》가 방송을 시작해 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://cine21.com/tv/info/?tv_id=566",
+        "name": "씨네21, 아씨 작품 정보",
+        "license": "미확인"
+      },
+      {
+        "url": "https://journal.kci.go.kr/djnar/archive/articlePdf?artiId=ART001670112",
+        "name": "한국학술지인용색인, 아씨 관련 연구",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1970,
     "month": 4,
     "precision": "month",
     "cat": "사건·생활상",
@@ -1564,6 +1686,54 @@
     "confidence": "medium"
   },
   {
+    "year": 1970,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "키보이스의 해변으로 가요",
+    "summary": "키보이스의 ‘해변으로 가요’는 1970~1971년 무렵 음반과 텔레비전에서 히트한 노래 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "히식스의 초원의 빛",
+    "summary": "히식스의 ‘초원의 빛’은 1970~1971년 무렵 히트하며 그룹 사운드의 인기를 보여 주었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "부라보콘 출시",
+    "summary": "콘 아이스크림 부라보콘이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
+        "name": "월간조선, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1971,
     "month": 3,
     "precision": "month",
@@ -1666,6 +1836,22 @@
   },
   {
     "year": 1971,
+    "month": 12,
+    "precision": "month",
+    "cat": "먹거리",
+    "title": "새우깡 출시",
+    "summary": "농심이 새우깡을 출시했다.",
+    "sources": [
+      {
+        "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
+        "name": "농심, 2017 연차보고서 연혁",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
     "month": null,
     "precision": "year",
     "cat": "사건·생활상",
@@ -1708,6 +1894,96 @@
         "url": "https://ko.wikipedia.org/wiki/서울_지하철_1호선",
         "name": "위키백과 서울 지하철 1호선",
         "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "은희의 꽃반지 끼고",
+    "summary": "은희의 ‘꽃반지 끼고’가 포크 음악의 인기와 함께 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://www.maniadb.com/album/100401",
+        "name": "마니아DB, 은희 음반 정보",
+        "license": "미확인"
+      },
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "라나에로스포의 사랑해",
+    "summary": "라나에로스포의 ‘사랑해’는 1970년대 초 포크 열풍을 이끈 히트곡이었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      },
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6814",
+        "name": "벅스, 1970년대 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "양희은의 아침이슬",
+    "summary": "양희은이 부른 ‘아침이슬’은 1970년대 초 인기를 얻은 포크곡이다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "삼립호빵 출시",
+    "summary": "겨울철 간식으로 알려진 삼립호빵이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
+        "name": "월간조선, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "야쿠르트 출시",
+    "summary": "발효유 야쿠르트가 국내에 출시되었다.",
+    "sources": [
+      {
+        "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
+        "name": "월간조선, 장수 식품 관련 기사",
+        "license": "미확인"
       }
     ],
     "confidence": "medium"
@@ -1756,6 +2032,22 @@
         "url": "https://ko.wikipedia.org/wiki/여로_(드라마)",
         "name": "위키백과 여로 (드라마)",
         "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 4,
+    "precision": "month",
+    "cat": "음악",
+    "title": "드라마 여로",
+    "summary": "KBS 연속극 《여로》가 방송을 시작했다. 높은 시청률을 기록하며 큰 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0036330",
+        "name": "한국민족문화대백과사전, 여로",
+        "license": "미확인"
       }
     ],
     "confidence": "high"
@@ -1839,6 +2131,38 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "송창식의 창밖에는 비오고요",
+    "summary": "송창식의 ‘창밖에는 비오고요’는 1970년대 초 인기를 얻은 포크곡이다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "precision": "approx",
+    "cat": "음악",
+    "title": "윤형주의 라라라",
+    "summary": "윤형주의 ‘라라라’는 1970년대 초 포크 음악이 인기를 얻던 시기에 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1973,
@@ -1964,6 +2288,107 @@
         "url": "https://ko.wikipedia.org/wiki/삼성전자",
         "name": "위키백과 삼성전자",
         "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이장희의 그건 너",
+    "summary": "이장희의 ‘그건 너’가 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "김세환의 토요일 밤에",
+    "summary": "김세환의 ‘토요일 밤에’가 포크 가요 팬들의 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      },
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "홍민의 고별",
+    "summary": "홍민의 ‘고별’은 1973년을 대표하는 가요 가운데 하나로 소개된다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "패티김의 이별",
+    "summary": "패티김의 ‘이별’은 1973년을 대표하는 가요 가운데 하나로 소개된다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6818",
+        "name": "벅스, 1973년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "양파깡 출시",
+    "summary": "양파를 소재로 한 스낵 양파깡이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "고구마깡 출시",
+    "summary": "고구마를 소재로 한 스낵 고구마깡이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
       }
     ],
     "confidence": "medium"
@@ -2118,6 +2543,166 @@
     "confidence": "low"
   },
   {
+    "year": 1974,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "신중현과 엽전들의 미인",
+    "summary": "신중현과 엽전들이 발표한 ‘미인’은 1970년대 청년문화의 기운을 보여 준 록 음악이다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "year",
+    "cat": "패션",
+    "title": "청바지와 청년문화",
+    "summary": "청바지는 통기타와 생맥주와 함께 1970년대 청년문화의 상징으로 꼽혔다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0079870",
+        "name": "한국민족문화대백과사전, 청바지",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "approx",
+    "cat": "패션",
+    "title": "장발",
+    "summary": "긴 머리는 1970년대 청년문화의 대표적인 외형 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i502850",
+        "name": "국사편찬위원회 우리역사넷, 청년문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "approx",
+    "cat": "패션",
+    "title": "판탈롱",
+    "summary": "아랫부분이 나팔 모양으로 넓은 판탈롱 바지가 1970년대에 유행했다.",
+    "sources": [
+      {
+        "url": "https://love.seoul.go.kr/articles/5595",
+        "name": "서울사랑, 시대별 패션 이야기",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "approx",
+    "cat": "유행어·풍속",
+    "title": "통·블·생",
+    "summary": "통기타·블루진·생맥주를 묶은 말로, 당시 청년문화를 상징했다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i502850",
+        "name": "국사편찬위원회 우리역사넷, 청년문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "approx",
+    "cat": "유행어·풍속",
+    "title": "고고춤",
+    "summary": "고고춤은 장발과 포크송 등과 함께 당시 청년들의 새로운 문화적 취향으로 자리 잡았다.",
+    "sources": [
+      {
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i502850",
+        "name": "국사편찬위원회 우리역사넷, 청년문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "오리온 초코파이 출시",
+    "summary": "초콜릿으로 덮은 과자 안에 마시멜로를 넣은 초코파이가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://www.khan.co.kr/article/200410041641441",
+        "name": "경향신문, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "바나나맛 우유 출시",
+    "summary": "빙그레의 바나나맛 우유가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0080075",
+        "name": "한국민족문화대백과사전, 빙그레",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "투게더 출시",
+    "summary": "빙그레의 아이스크림 투게더가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://www.khan.co.kr/article/200410041641441",
+        "name": "경향신문, 장수 식품 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "에이스 출시",
+    "summary": "비스킷 에이스가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1975,
     "month": 5,
     "precision": "month",
@@ -2132,6 +2717,38 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1975,
+    "month": 10,
+    "precision": "month",
+    "cat": "먹거리",
+    "title": "농심라면 출시",
+    "summary": "농심라면이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
+        "name": "농심, 2017 연차보고서 연혁",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": 12,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "인기 가요 방송 금지",
+    "summary": "‘왜 불러’와 ‘고래사냥’ 등 대중가요가 방송 금지 대상에 올랐다.",
+    "sources": [
+      {
+        "url": "https://archives.kdemo.or.kr/workoutlog/workoutlog/view/BRR_1975_12_09_n001",
+        "name": "민주화운동기념사업회, 대중가요 방송 금지 관련 기록",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1975,
@@ -2233,6 +2850,70 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "영화 바보들의 행진",
+    "summary": "영화 《바보들의 행진》은 당시 청년들의 모습을 담아 주목받았다. 송창식이 부른 노래들도 영화와 함께 알려졌다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
+        "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "송창식의 고래사냥",
+    "summary": "송창식의 ‘고래사냥’은 영화 《바보들의 행진》과 함께 알려진 노래다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
+        "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "송창식의 왜 불러",
+    "summary": "송창식의 ‘왜 불러’는 인기를 얻었지만 같은 해 방송 금지 대상이 되었다.",
+    "sources": [
+      {
+        "url": "https://archives.kdemo.or.kr/workoutlog/workoutlog/view/BRR_1975_12_09_n001",
+        "name": "민주화운동기념사업회, 대중가요 방송 금지 관련 기록",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1975,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "맛동산 출시",
+    "summary": "땅콩이 묻은 과자 맛동산이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "한국농수산식품유통공사, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1976,
@@ -2368,6 +3049,166 @@
     "confidence": "medium"
   },
   {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "송대관의 해뜰 날",
+    "summary": "송대관의 ‘해뜰 날’은 1976년의 대표적인 인기 가요로 꼽힌다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "금과 은의 처녀 뱃사공",
+    "summary": "금과 은의 ‘처녀 뱃사공’은 1976년 히트곡 가운데 하나로 소개된다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "조미미의 연락선",
+    "summary": "조미미의 ‘연락선’은 1976년 인기 가요 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "박상규의 친구야 친구",
+    "summary": "박상규의 ‘친구야 친구’는 1976년 히트곡 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이은하의 아직도 그대는 내 사랑",
+    "summary": "이은하의 ‘아직도 그대는 내 사랑’은 1976년 인기 가요로 소개된다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "하수영의 아내에게 바치는 노래",
+    "summary": "하수영의 ‘아내에게 바치는 노래’는 1976년 히트곡 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "정종숙의 둘이 걸었네",
+    "summary": "정종숙의 ‘둘이 걸었네’는 1976년 인기 가요로 소개된다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "산이슬의 이사 가던 날",
+    "summary": "산이슬의 ‘이사 가던 날’은 1976년 히트곡 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://www.weiv.co.kr/archives/10632",
+        "name": "weiv, 1976~1978년 대중음악 회고",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "바밤바 출시",
+    "summary": "밤을 소재로 한 아이스크림 바밤바가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://eiec.kdi.re.kr/userdata/nara/200807/200807.pdf",
+        "name": "한국개발연구원 경제정보센터, 나라경제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "오징어땅콩 출시",
+    "summary": "땅콩을 과자로 감싼 오징어땅콩이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://www.mk.co.kr/news/business/10525041",
+        "name": "매일경제, 오징어땅콩 관련 기사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1977,
     "month": 9,
     "precision": "month",
@@ -2453,6 +3294,70 @@
     "confidence": "medium"
   },
   {
+    "year": 1977,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "제1회 MBC 대학가요제",
+    "summary": "제1회 대학가요제가 열렸다. 샌드페블스의 ‘나 어떡해’가 대상을 받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "혜은이의 진짜 진짜 좋아해",
+    "summary": "혜은이의 ‘진짜 진짜 좋아해’가 히트하며 가수의 인기에 힘을 보탰다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
+        "name": "벅스, 1976년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "혜은이의 당신만을 사랑해",
+    "summary": "혜은이의 ‘당신만을 사랑해’가 히트했다.",
+    "sources": [
+      {
+        "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
+        "name": "벅스, 1976년 베스트 가요 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "롯데샌드 출시",
+    "summary": "크림을 넣은 샌드형 비스킷 롯데샌드가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
+        "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1978,
     "month": 3,
     "precision": "month",
@@ -2502,6 +3407,22 @@
   },
   {
     "year": 1978,
+    "month": 5,
+    "precision": "month",
+    "cat": "먹거리",
+    "title": "바나나킥 출시",
+    "summary": "바나나 맛 스낵 바나나킥이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
+        "name": "농심, 2017 연차보고서 연혁",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
     "month": 9,
     "precision": "approx",
     "cat": "음악",
@@ -2531,6 +3452,38 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1978,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "썰물의 밀려오는 파도소리에",
+    "summary": "썰물의 ‘밀려오는 파도소리에’가 대학가요제 대상을 받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "심수봉의 그때 그 사람",
+    "summary": "심수봉은 대학가요제에서 ‘그때 그 사람’을 불렀다. 입상하지는 못했지만 노래는 대학 밖에서도 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1979,
@@ -2659,5 +3612,85 @@
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "김학래·임철우의 내가",
+    "summary": "김학래와 임철우의 ‘내가’가 대학가요제 대상을 받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014887",
+        "name": "한국민족문화대백과사전, 대학가요제",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "윤시내의 열애",
+    "summary": "윤시내의 ‘열애’가 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=75086911",
+        "name": "대한민국 정책브리핑, 한국인의 삶을 바꾼 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "혜은이의 제3한강교",
+    "summary": "혜은이의 ‘제3한강교’는 1979년 방송가요상 관련 기록에 등장하는 인기곡이다.",
+    "sources": [
+      {
+        "url": "https://radio.ytn.co.kr/program/?f=2&id=23211&page=20&s_hcd=01&s_mcd=0300",
+        "name": "YTN 라디오, 음악여행 쉼표 방송 내용",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "빠다코코낫 출시",
+    "summary": "코코넛 맛 비스킷 빠다코코낫이 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
+        "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1979,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "해태 크림웨하스 출시",
+    "summary": "크림을 넣은 과자 해태 크림웨하스가 출시되었다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
+        "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
   }
 ]
