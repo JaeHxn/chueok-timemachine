@@ -46,6 +46,23 @@
     "wiki_checked": true
   },
   {
+    "year": 2012,
+    "month": 8,
+    "date_precision": "month",
+    "category": "놀이·문구",
+    "title": "애니팡 열풍",
+    "summary": "친구들과 하트를 주고받으며 즐기는 모바일 퍼즐 게임 애니팡이 인기 순위에 올랐다.",
+    "sources": [
+      {
+        "url": "https://www.kakaocorp.com/page/detail/9345",
+        "name": "카카오, 카카오 게임하기의 역사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
     "year": 2017,
     "month": 3,
     "date_precision": "month",
@@ -63,23 +80,6 @@
         "name": "위키백과: 꼬북칩",
         "license": "CC BY-SA 4.0",
         "source_auto": true
-      }
-    ],
-    "confidence": "high",
-    "wiki_checked": true
-  },
-  {
-    "year": 2012,
-    "month": 8,
-    "date_precision": "month",
-    "category": "놀이·문구",
-    "title": "애니팡 열풍",
-    "summary": "친구들과 하트를 주고받으며 즐기는 모바일 퍼즐 게임 애니팡이 인기 순위에 올랐다.",
-    "sources": [
-      {
-        "url": "https://www.kakaocorp.com/page/detail/9345",
-        "name": "카카오, 카카오 게임하기의 역사",
-        "license": "미확인"
       }
     ],
     "confidence": "high",

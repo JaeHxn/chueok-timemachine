@@ -32,3 +32,6 @@ desktop.ini
 .vscode/
 *.log
 web/e2e/*.png
+
+# 관리자 키 (절대 커밋 금지)
+관리자키.txt

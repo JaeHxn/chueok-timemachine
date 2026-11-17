@@ -213,3 +213,18 @@ span.moon{opacity:.35;cursor:default;background:rgba(40,46,62,.45)}
 /* 터치 대상 44px 확보 (E2E 지적) */
 .cats button,.share-btn{min-height:44px;padding-left:16px;padding-right:16px}
 .chip{min-height:44px;align-items:center}
+/* 응원 한마디 */
+.cheer-btn{color:var(--ink)}
+.cheer-form textarea,.cheer-form input{width:100%;border:0;border-radius:14px;padding:12px 14px;background:rgba(255,255,255,.08);color:var(--ink);font:inherit;font-size:.9375rem;resize:vertical}
+.cheer-form textarea:focus,.cheer-form input:focus{outline:2px solid var(--accent)}
+.cheer-form .note{margin:0 6px 4px}
+.cheer-row{display:flex;align-items:center;gap:10px}
+.cheer-row input{flex:1}
+.cheer-row small{color:var(--ink-3);font-variant-numeric:tabular-nums}
+.cheer-form .primary{text-align:center;margin-top:4px;min-height:44px}
+.cheer-form .primary:disabled{opacity:.6}
+.admin{padding-top:12px}
+.cheer-item{padding:14px 16px;border-radius:14px;background:var(--space-2);box-shadow:0 0 0 1px var(--hair)}
+.cheer-item p{margin:6px 0;white-space:pre-wrap;line-height:1.6}
+.link{background:none;border:0;color:var(--accent);padding:0;font-size:.8125rem;min-height:auto}
+@media (max-width:640px){.cheer-btn{order:3}}

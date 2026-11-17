@@ -46,11 +46,13 @@ export default function App() {
   const [reduceMotion, setReduceMotion] = useState(readReduce);
   const [share, setShare] = useState(null);
   const [toast, setToast] = useState("");
+  const [cheerOpen, setCheerOpen] = useState(false);
+  const [adminView, setAdminView] = useState(location.hash.startsWith("#/admin"));
   const barRef = useRef(null);
 
   // 주소가 바뀌면(뒤로가기 포함) 화면을 따라가게
   useEffect(() => {
-    const onHash = () => { setRoute(parseHash()); setCat("전체"); };
+    const onHash = () => { setRoute(parseHash()); setCat("전체"); setAdminView(location.hash.startsWith("#/admin")); };
     addEventListener("hashchange", onHash);
     return () => removeEventListener("hashchange", onHash);
   }, []);
@@ -118,6 +120,7 @@ export default function App() {
       <header className="top">
         <a className="brand" href="#/">🪐 추억 타임머신</a>
         <div className="top-r">
+          <button className="ghost cheer-btn" onClick={() => setCheerOpen(true)}>💌 응원 한마디</button>
           <input
             className="search"
             type="search"
@@ -157,7 +160,9 @@ export default function App() {
         <button className="dial-arrow" onClick={() => nudge(1)} aria-label="다음 연도들">›</button>
       </div>
 
-      {query.trim() && (
+      {adminView && <AdminCheers onToast={setToast} />}
+
+      {!adminView && query.trim() && (
         <section className="results" aria-live="polite">
           <h2 className="sec-h">“{query.trim()}” 검색 결과 {results.length}건</h2>
           {results.length === 0 && <div className="empty">맞는 추억이 없습니다. 다른 낱말로 찾아보세요.</div>}
@@ -175,7 +180,7 @@ export default function App() {
         </section>
       )}
 
-      {!query.trim() && !year && (
+      {!adminView && !query.trim() && !year && (
         <section className="home">
           <p className="lead">그 시절, 우리가 좋아했던 것들.</p>
           <p className="note">연도를 고르면 그해 유행한 노래·먹거리·물건·사건을 볼 수 있어요.</p>
@@ -193,7 +198,7 @@ export default function App() {
         </section>
       )}
 
-      {!query.trim() && year && (
+      {!adminView && !query.trim() && year && (
         <section className="year-view" key={year}>
           <div className="year-head">
             <h2>{year}</h2>
@@ -296,11 +301,92 @@ export default function App() {
         </div>
       )}
 
+      {cheerOpen && <CheerSheet onClose={() => setCheerOpen(false)} onToast={setToast} />}
+
       {toast && <div className="toast" role="status">{toast}</div>}
 
       <footer className="foot">
         자료는 위키백과·공공기관 등 공개 출처를 요약했습니다. 사진은 공개 라이선스 사진만 쓰고 작가·라이선스를 표시합니다.
       </footer>
     </div>
+  );
+}
+
+// 응원 한마디 작성 창: 누구나 쓸 수 있고, 읽기는 관리자만
+function CheerSheet({ onClose, onToast }) {
+  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [sending, setSending] = useState(false);
+  async function submit(e) {
+    e.preventDefault();
+    if (!message.trim()) { onToast("응원 내용을 적어 주세요."); return; }
+    setSending(true);
+    try {
+      const r = await fetch("/api/cheer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ message, name }) });
+      const d = await r.json().catch(() => ({}));
+      if (!r.ok || !d.ok) throw new Error(d.error || "보내지 못했습니다. 잠시 후 다시 시도해 주세요.");
+      onToast("응원을 보냈어요. 고맙습니다!");
+      onClose();
+    } catch (err) { onToast(err.message); }
+    finally { setSending(false); }
+  }
+  return (
+    <div className="sheet" role="dialog" aria-modal="true" aria-label="개발자에게 응원 한마디" onClick={(e) => e.target === e.currentTarget && onClose()}>
+      <form className="box cheer-form" onSubmit={submit}>
+        <b>개발자에게 응원 한마디</b>
+        <p className="note">남긴 글은 개발자만 볼 수 있어요.</p>
+        <textarea value={message} onChange={(e) => setMessage(e.target.value)} maxLength={500} rows={5} placeholder="예: 1974년 보다가 울컥했어요. 고마워요!" aria-label="응원 내용" autoFocus />
+        <div className="cheer-row">
+          <input value={name} onChange={(e) => setName(e.target.value)} maxLength={20} placeholder="이름(선택)" aria-label="이름" />
+          <small>{message.length}/500</small>
+        </div>
+        <button className="primary" type="submit" disabled={sending}>{sending ? "보내는 중…" : "보내기"}</button>
+        <button type="button" onClick={onClose}>닫기</button>
+      </form>
+    </div>
+  );
+}
+
+// 관리자 전용: #/admin 에서 키를 넣어야 목록이 보인다(키는 이 탭에만 기억)
+function AdminCheers({ onToast }) {
+  const [key, setKey] = useState(() => { try { return sessionStorage.getItem("adminKey") || ""; } catch { return ""; } });
+  const [rows, setRows] = useState(null);
+  async function load(k = key) {
+    const r = await fetch("/api/cheer", { headers: { "x-admin-key": k } });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || !d.ok) { setRows(null); onToast(d.error || "불러오지 못했습니다."); return; }
+    try { sessionStorage.setItem("adminKey", k); } catch {}
+    setRows(d.rows);
+  }
+  async function remove(id) {
+    if (!confirm("이 응원 글을 지울까요?")) return;
+    const r = await fetch("/api/cheer?id=" + encodeURIComponent(id), { method: "DELETE", headers: { "x-admin-key": key } });
+    if (r.ok) { setRows((v) => v.filter((x) => x.id !== id)); onToast("지웠습니다."); } else onToast("지우지 못했습니다.");
+  }
+  useEffect(() => { if (key) load(key); }, []);
+  return (
+    <section className="admin">
+      <h2 className="sec-h">응원 한마디 (관리자)</h2>
+      {!rows ? (
+        <form className="birth" onSubmit={(e) => { e.preventDefault(); load(); }}>
+          <input type="password" value={key} onChange={(e) => setKey(e.target.value)} placeholder="관리자 키" aria-label="관리자 키" style={{ width: 260 }} />
+          <button className="primary" type="submit">열기</button>
+        </form>
+      ) : (
+        <>
+          <p className="note">모두 {rows.length}개 · <button className="link" onClick={() => load()}>새로고침</button></p>
+          {rows.length === 0 && <div className="empty">아직 응원 글이 없습니다.</div>}
+          <ul className="result-list">
+            {rows.map((r) => (
+              <li key={r.id} className="cheer-item">
+                <div><b>{r.name || "익명"}</b> <span className="r-cat">{new Date(r.at).toLocaleString("ko-KR")}</span></div>
+                <p>{r.message}</p>
+                <button className="link" onClick={() => remove(r.id)}>삭제</button>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+    </section>
   );
 }
