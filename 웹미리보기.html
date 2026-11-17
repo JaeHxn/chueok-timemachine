@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>추억 타임머신 미리보기</title>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+:root{--bg:#0d1b2a;--ink:#f3eee4;--dim:#9aa6b8;--gold:#ffd27a;--pink:#e94560;--line:#24364d}
+*{box-sizing:border-box;margin:0}
+body{background:#070d16;color:var(--ink);font-family:Pretendard,sans-serif;padding:32px 16px 80px}
+.wrap{max-width:1040px;margin:0 auto}
+h1{font-size:30px;font-weight:800;margin-bottom:6px}
+.lead{color:var(--dim);margin-bottom:40px}
+.step{display:flex;align-items:center;gap:12px;margin:44px 0 14px}
+.num{width:34px;height:34px;border-radius:50%;background:var(--gold);color:#111;font-weight:800;display:grid;place-items:center;flex:none}
+.step b{font-size:20px}.step span{color:var(--dim);font-size:15px}
+.screen{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg);box-shadow:0 20px 60px #0008}
+.bar{display:flex;gap:6px;padding:10px 14px;background:#0a1420;border-bottom:1px solid var(--line);align-items:center}
+.bar i{width:10px;height:10px;border-radius:50%;background:#33445a}
+.bar em{margin-left:12px;font-style:normal;font-size:12px;color:var(--dim);background:#111d2c;padding:3px 10px;border-radius:6px}
+.view{position:relative;min-height:380px;padding:20px;overflow:hidden;
+ background:radial-gradient(ellipse at 50% 40%,#1b2d4a 0%,#0d1b2a 60%,#060c15 100%)}
+.stars{position:absolute;inset:0;background-image:radial-gradient(1px 1px at 10% 20%,#fff8 50%,transparent),radial-gradient(1px 1px at 30% 70%,#fff6 50%,transparent),radial-gradient(1.5px 1.5px at 70% 30%,#fff9 50%,transparent),radial-gradient(1px 1px at 85% 80%,#fff5 50%,transparent),radial-gradient(1px 1px at 55% 10%,#fff7 50%,transparent),radial-gradient(1px 1px at 20% 90%,#fff6 50%,transparent);opacity:.9}
+.hud{position:relative;display:flex;justify-content:space-between;font-size:13px;color:var(--dim)}
+.hud .btn{border:1px solid var(--line);padding:5px 10px;border-radius:20px;color:var(--ink)}
+.years{position:absolute;left:0;right:0;bottom:0;display:flex;gap:4px;padding:12px;background:#060c15cc;border-top:1px solid var(--line);font-size:12px;overflow:hidden;white-space:nowrap}
+.years span{padding:4px 7px;color:var(--dim)}
+.years .on{color:#111;background:var(--gold);border-radius:6px;font-weight:700}
+.planet{position:absolute;border-radius:50%}
+.lbl{position:absolute;font-size:11px;color:var(--dim);transform:translateX(-50%)}
+.center{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);text-align:center}
+.big{width:190px;height:190px;border-radius:50%;margin:0 auto;background:radial-gradient(circle at 35% 30%,#ff8fd0,#b0206e 55%,#3d0a2a);box-shadow:0 0 70px #e9456088}
+.orbit{position:absolute;left:50%;top:46%;width:340px;height:340px;border:1px dashed #ffffff22;border-radius:50%;transform:translate(-50%,-50%)}
+.moon{position:absolute;width:30px;height:30px;border-radius:50%;background:#2a3d58;font-size:11px;display:grid;place-items:center;color:var(--ink)}
+.moon.on{background:var(--gold);color:#111;font-weight:800;box-shadow:0 0 18px var(--gold)}
+.ground{background:linear-gradient(#1a0d2a 0%,#3a1240 55%,#120818 100%)}
+.cards{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.card{background:#0e1828ee;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.pic{height:90px;display:grid;place-items:center;font-size:38px}
+.card p{padding:8px 10px 2px;font-weight:700;font-size:14px}
+.card small{display:block;padding:0 10px 10px;color:var(--dim);font-size:11px}
+.badge{display:inline-block;font-size:10px;padding:2px 6px;border-radius:4px;background:#2a3d58;color:var(--ink);margin-left:4px}
+.badge.ai{background:#6b3fd1}
+.posts{position:relative;margin-top:14px;background:#0e1828ee;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13px}
+.posts div{padding:7px 0;border-bottom:1px solid var(--line)}.posts div:last-child{border:0}
+.posts span{color:var(--dim);font-size:11px;margin-left:6px}
+.tabs{position:relative;display:flex;gap:6px;font-size:12px;margin-top:10px}
+.tabs span{padding:4px 10px;border-radius:20px;border:1px solid var(--line);color:var(--dim)}
+.tabs .on{background:var(--ink);color:#111}
+.flat{background:#0d1b2a;min-height:auto}
+.two{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+.ph{height:200px;border-radius:10px;background:linear-gradient(135deg,#7a5a2e,#2e2014);display:grid;place-items:center;font-size:70px}
+.src{font-size:12px;color:var(--dim);margin-top:8px;line-height:1.6}
+.cta{display:inline-block;margin-top:12px;background:var(--pink);padding:8px 14px;border-radius:8px;font-weight:700;font-size:14px}
+.mob{display:flex;gap:16px;flex-wrap:wrap}
+.phone{width:240px;border:8px solid #1c2738;border-radius:28px;overflow:hidden;background:var(--bg)}
+.phone .view{min-height:420px;padding:14px}
+.note{color:var(--dim);font-size:14px;margin-top:10px}
+.ad{position:relative;margin-top:12px;border:1px dashed #ffffff33;border-radius:8px;padding:10px;text-align:center;font-size:12px;color:var(--dim)}
+@media(max-width:700px){.cards{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.orbit{width:260px;height:260px}.big{width:140px;height:140px}}
+</style>
+</head>
+<body><div class="wrap">
+
+<h1>🪐 추억 타임머신 — 이렇게 보일 예정</h1>
+<p class="lead">실제 화면이 아니라 설계서를 보고 만든 예상도예요. 위에서부터 순서대로 따라가면 돼요.</p>
+
+<!-- 1 -->
+<div class="step"><div class="num">1</div><b>첫 화면 · 은하</b><span>연도마다 행성이 하나씩 떠 있어요</span></div>
+<div class="screen"><div class="bar"><i></i><i></i><i></i><em>chueok-timemachine.kr</em></div>
+<div class="view"><div class="stars"></div>
+ <div class="hud"><span>🚀 추억 타임머신</span><span class="btn">🔍 검색 · 내 출생연도로 가기</span></div>
+ <div class="planet" style="left:8%;top:52%;width:36px;height:36px;background:#a08060"></div><div class="lbl" style="left:11%;top:68%">1950s</div>
+ <div class="planet" style="left:20%;top:30%;width:42px;height:42px;background:#8a8f99"></div><div class="lbl" style="left:24%;top:45%">1960s</div>
+ <div class="planet" style="left:33%;top:55%;width:48px;height:48px;background:#3e4f9a"></div><div class="lbl" style="left:37%;top:72%">1970s</div>
+ <div class="planet" style="left:46%;top:24%;width:56px;height:56px;background:#d4a62a;box-shadow:0 0 30px #d4a62a88"></div><div class="lbl" style="left:50%;top:42%">1980s</div>
+ <div class="planet" style="left:59%;top:50%;width:62px;height:62px;background:#c96a2a"></div><div class="lbl" style="left:63%;top:70%">1990s 초</div>
+ <div class="planet" style="left:71%;top:22%;width:66px;height:66px;background:#d02a8a;box-shadow:0 0 30px #d02a8a88"></div><div class="lbl" style="left:76%;top:42%">1990s 말</div>
+ <div class="planet" style="left:84%;top:48%;width:58px;height:58px;background:#c0c4cc"></div><div class="lbl" style="left:88%;top:67%">2000s~</div>
+ <div class="years"><span>◀</span><span>1950</span><span>…</span><span>1988</span><span>…</span><span>1995</span><span>1996</span><span class="on">1997</span><span>1998</span><span>…</span><span>2002</span><span>…</span><span>2026</span><span>▶</span></div>
+</div></div>
+<p class="note">👆 아래 연도 바에서 1997을 누르면 → 우주선이 슈우웅 날아가요 (연출 건너뛰기 버튼도 있어요)</p>
+
+<!-- 2 -->
+<div class="step"><div class="num">2</div><b>1997년 행성 도착</b><span>12개의 달(월)이 주위를 돌아요</span></div>
+<div class="screen"><div class="bar"><i></i><i></i><i></i><em>/1997</em></div>
+<div class="view"><div class="stars"></div>
+ <div class="hud"><span>🪐 1997 · 사이버 펑크 행성</span><span class="btn">⏭ 연출 끄기</span></div>
+ <div class="orbit"></div>
+ <div class="center"><div class="big"></div></div>
+ <div class="moon" style="left:50%;top:6%">1</div><div class="moon" style="left:68%;top:12%">2</div><div class="moon" style="left:79%;top:28%">3</div>
+ <div class="moon" style="left:82%;top:47%">4</div><div class="moon" style="left:78%;top:65%">5</div><div class="moon" style="left:66%;top:79%">6</div>
+ <div class="moon" style="left:48%;top:84%">7</div><div class="moon" style="left:31%;top:78%">8</div><div class="moon" style="left:20%;top:63%">9</div>
+ <div class="moon" style="left:16%;top:45%">10</div><div class="moon on" style="left:20%;top:27%">11</div><div class="moon" style="left:32%;top:12%">12</div>
+</div></div>
+<p class="note">👆 11월을 누르면 → 대기권으로 쑥 내려가 착륙해요</p>
+
+<!-- 3 -->
+<div class="step"><div class="num">3</div><b>1997년 11월 착륙</b><span>그 달의 유행 + 사람들 이야기</span></div>
+<div class="screen"><div class="bar"><i></i><i></i><i></i><em>/1997/11</em></div>
+<div class="view ground"><div class="stars"></div>
+ <div class="hud"><span>📍 1997년 11월</span><span class="btn">🚀 우주로 돌아가기</span></div>
+ <div class="tabs"><span class="on">전체</span><span>🎵 음악</span><span>📺 TV</span><span>🍬 먹거리</span><span>🎮 놀이</span><span>📰 사건</span></div>
+ <div class="cards">
+  <div class="card"><div class="pic" style="background:#2c4a3a">🥚</div><p>다마고치</p><small>🎮 놀이 <span class="badge">출처 ✓</span></small></div>
+  <div class="card"><div class="pic" style="background:#2b3550">📟</div><p>삐삐 음성사서함</p><small>📱 기술 <span class="badge">출처 ✓</span></small></div>
+  <div class="card"><div class="pic" style="background:#4a2b2b">📰</div><p>IMF 구제금융 신청</p><small>📰 사건 <span class="badge">출처 ✓</span></small></div>
+ </div>
+ <div class="posts">
+  <div>💬 "그때 아빠가 회사 그만두셨던 게 기억나요…" <span>❤️ 42 · 😢 18 · 댓글 7</span></div>
+  <div>💬 다마고치 학교에 몰래 가져갔다 압수당함 ㅋㅋ <span>❤️ 88 · 8282 · 댓글 15</span></div>
+  <div style="color:var(--gold)">✏️ 나도 이 달의 추억 남기기</div>
+ </div>
+ <div class="ad">광고 자리 (애드센스) · ☕ 후원하기</div>
+</div></div>
+
+<!-- 4 -->
+<div class="step"><div class="num">4</div><b>아이템 자세히 보기</b><span>진짜 자료인지 AI 그림인지 꼭 표시해요</span></div>
+<div class="screen"><div class="bar"><i></i><i></i><i></i><em>/item/1953-tent-school</em></div>
+<div class="view flat"><div class="two">
+ <div><div class="ph">⛺</div></div>
+ <div>
+  <p style="font-size:22px;font-weight:800">1953 · 천막 학교 <span class="badge ai">🤖 AI 사료 복원</span></p>
+  <p class="src">사진이 남아 있지 않아 옛 기록을 보고 AI로 다시 그린 그림이에요.<br>📚 참고: 국가기록원 기록, 당시 신문 기사<br>❓ 확인 안 된 부분: 천막 색, 책상 모양</p>
+  <span class="cta">🙋 나도 기억나!</span>
+  <p class="src" style="margin-top:14px">틀린 곳이 있나요? → 수정 제보 (관리자가 확인 후 반영)</p>
+ </div>
+</div></div></div>
+
+<!-- 5 -->
+<div class="step"><div class="num">5</div><b>휴대폰에서는</b><span>한 손으로도 편하게</span></div>
+<div class="mob">
+ <div class="phone"><div class="view"><div class="stars"></div>
+  <div class="hud"><span>🪐 2002</span><span>⏭</span></div>
+  <div class="center"><div class="big" style="width:120px;height:120px;background:radial-gradient(circle at 35% 30%,#fff,#c0141f 55%,#3a0508)"></div><p style="margin-top:10px;font-weight:700">밀레니엄 붉은 함성</p></div>
+  <div class="years" style="font-size:11px"><span>2000</span><span>2001</span><span class="on">2002</span><span>2003</span></div>
+ </div></div>
+ <div class="phone"><div class="view ground"><div class="hud"><span>📍 2002년 6월</span></div>
+  <div class="cards" style="grid-template-columns:1fr">
+   <div class="card"><div class="pic" style="background:#5a1010">⚽</div><p>붉은 악마 거리 응원</p><small>📰 사건 <span class="badge">출처 ✓</span></small></div>
+  </div>
+  <div class="posts"><div>💬 시청 앞에서 밤새 응원함 <span>❤️ 120</span></div></div>
+ </div></div>
+ <div class="phone"><div class="view flat">
+  <div class="hud"><span>📋 전체 피드</span></div>
+  <div class="tabs" style="flex-wrap:wrap"><span class="on">최신</span><span>인기</span><span>90년대</span></div>
+  <div class="posts"><div>1997.11 · 다마고치 압수 썰</div><div>1988.09 · 굴렁쇠 소년 봤어요</div><div>2002.06 · 시청 앞 응원</div><div>1965 · 삼양라면 10원</div></div>
+  <p class="note" style="font-size:12px">모든 달의 글이 여기에도 모여요</p>
+ </div></div>
+</div>
+
+<p class="note" style="margin-top:40px">한 줄 요약 → 🌌 은하에서 연도 고르고 → 🪐 달 고르고 → 📍 착륙해서 구경하고 이야기 나누기</p>
+</div></body></html>

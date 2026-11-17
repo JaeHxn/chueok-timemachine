@@ -1,0 +1,108 @@
+:root{--bg:#070d16;--panel:#0d1b2a;--card:#14243a;--ink:#f3eee4;--dim:#9aa6b8;--gold:#ffd27a;--pink:#e94560;--line:#24364d}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo",sans-serif}
+button{font:inherit;cursor:pointer}
+.app{min-height:100vh;position:relative;padding:0 16px 80px;overflow:hidden;
+  background:radial-gradient(ellipse at 50% 30%,#1b2d4a 0%,#0d1b2a 55%,#060c15 100%)}
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:12px 0;background:linear-gradient(#070d16ee,#070d1600)}
+.brand{background:none;border:0;color:var(--ink);font-size:18px;font-weight:800}
+.top-r{display:flex;gap:6px}
+.ghost{background:none;border:1px solid var(--line);color:var(--dim);padding:6px 10px;border-radius:999px;font-size:12px}
+.primary{background:var(--pink);border:0;color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;margin-top:10px}
+.back{background:none;border:0;color:var(--gold);padding:6px 0;font-size:14px}
+.lead{color:var(--dim);font-size:14px}
+.note{color:var(--dim);font-size:12px;line-height:1.6}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:30px;text-align:center;color:var(--dim);grid-column:1/-1}
+
+/* 워프 캔버스 */
+.warp{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;transition:opacity .3s;z-index:9}
+.warp.on{opacity:1}
+
+/* 은하 */
+.galaxy{position:relative;height:72vh;min-height:520px}
+.planets{position:absolute;inset:0}
+.planet{position:absolute;transform:translate(-50%,-50%);background:none;border:0;color:var(--dim);display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px}
+.planet .dot{width:22px;height:22px;border-radius:50%;background:var(--c);opacity:.45;box-shadow:0 0 0 rgba(0,0,0,0)}
+.planet.has .dot{opacity:1;box-shadow:0 0 18px var(--c)}
+.planet:hover .dot{transform:scale(1.25)}
+.planet .pl{white-space:nowrap}
+.planet.has .pl{color:var(--ink);font-weight:700}
+@keyframes drift{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,-53%)}}
+.planet{animation:drift 6s ease-in-out infinite}
+.rm .planet{animation:none}
+
+/* 연도 궤도 */
+.orbit-view{text-align:center}
+.orbit-view h2{font-size:22px;margin:10px 0}
+.orbit{position:relative;width:min(88vw,420px);aspect-ratio:1;margin:12px auto;border:1px dashed #ffffff26;border-radius:50%}
+.core{position:absolute;left:50%;top:50%;width:38%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#fff3,var(--c) 60%,#0008);box-shadow:0 0 60px var(--c);display:grid;place-items:center;font-size:22px;font-weight:800}
+.moon{position:absolute;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;border:1px solid var(--line);background:#14243a;color:var(--dim);font-size:12px}
+.moon.has{color:var(--ink);border-color:var(--gold)}
+.moon:hover{transform:translate(-50%,-50%) scale(1.1)}
+.rm .moon:hover{transform:translate(-50%,-50%)}
+
+/* 착륙 */
+.ground h2{margin:6px 0 10px;font-size:20px}
+.cats{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.cats button{border:1px solid var(--line);background:none;color:var(--dim);padding:6px 10px;border-radius:8px;font-size:12px}
+.cats button.on{background:var(--ink);color:#111}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.card h3{margin:2px 0;font-size:16px}
+.card p{margin:0;font-size:14px;line-height:1.6;color:#d8dee8}
+.meta{display:flex;gap:6px;flex-wrap:wrap;font-size:11px}
+.tag{background:#22364f;border-radius:6px;padding:2px 6px}
+.tag.ok{background:#2b4a3a}.tag.warn{background:#4a2b2b}
+.src{font-size:12px;color:var(--dim);line-height:1.6}
+.src a{color:var(--gold);margin-right:6px}
+.share-btn{margin-top:auto;align-self:flex-start;background:var(--pink);border:0;color:#fff;padding:7px 12px;border-radius:8px;font-weight:700;font-size:12px}
+
+/* 상단 연도 바 (좌우 스크롤) */
+.yearbar{position:sticky;top:50px;z-index:4;display:flex;gap:6px;overflow-x:auto;padding:8px 2px;margin:0 -16px;padding-left:16px;padding-right:16px;
+  background:#070d16e6;border-bottom:1px solid var(--line);scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.yearbar::-webkit-scrollbar{height:6px}.yearbar::-webkit-scrollbar-thumb{background:#33445a;border-radius:3px}
+.yb{flex:none;scroll-snap-align:center;border:1px solid var(--line);background:none;color:var(--dim);padding:7px 12px;border-radius:999px;font-size:13px;position:relative}
+.yb.has{color:var(--ink)}
+.yb.has::after{content:"";position:absolute;top:3px;right:4px;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.yb.sel{background:var(--gold);border-color:var(--gold);color:#111;font-weight:800}
+.yb.sel::after{background:#111}
+
+/* 연도 궤도: 가운데 행성, 둘레를 도는 달(인공위성) */
+.home{text-align:center;padding-top:60px}
+.orbit{position:relative;width:min(86vw,360px);height:min(86vw,360px);margin:24px auto 8px}
+.ring{position:absolute;inset:0;animation:spin 60s linear infinite}
+.orbit.still .ring{animation:none}
+.rm .ring{animation:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+.sat{position:absolute;left:50%;top:50%;width:0;height:0;transform:rotate(var(--a))}
+.moon{position:absolute;left:0;top:0;transform:translate(-50%,-50%) translateY(calc(-1 * (min(86vw,360px) / 2 - 34px)));
+  width:58px;height:58px;margin:0;border-radius:50%;border:1px solid var(--line);background:#14243a;color:var(--dim);font-size:12px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
+.moon.has{color:var(--ink);border-color:var(--gold);box-shadow:0 0 12px #ffd27a55}
+.moon-label{display:inline-block;animation:spin 60s linear infinite reverse}
+.orbit.still .moon-label,.rm .moon-label{animation:none}
+.moon-n{font-size:10px;color:var(--gold)}
+.core{position:absolute;left:50%;top:50%;width:40%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#fff3,var(--c) 60%,#0008);box-shadow:0 0 60px var(--c);display:grid;place-items:center;font-size:22px;font-weight:800}
+.orbit-view{text-align:center}
+.orbit-view h2{font-size:22px;margin:10px 0}
+
+/* 비행 연출 */
+.flight{position:fixed;inset:0;z-index:9;pointer-events:none}
+.flight .warp{opacity:1}
+.ship{position:absolute;font-size:30px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 10px var(--c))}
+.rm .ship{display:none}
+
+/* 공유 시트 */
+.sheet{position:fixed;inset:0;background:#000a;display:flex;align-items:flex-end;justify-content:center;z-index:10}
+.sheet .box{background:var(--card);width:100%;max-width:520px;border-radius:16px 16px 0 0;padding:16px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.sheet button{padding:12px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--ink);font-size:14px;text-align:left}
+.sheet button:disabled{opacity:.45}
+
+.foot{margin-top:40px;font-size:12px;color:var(--dim);border-top:1px solid var(--line);padding-top:12px}
+
+@media (max-width:640px){
+  .galaxy{height:80vh}
+  .planet .pl{font-size:10px}
+}

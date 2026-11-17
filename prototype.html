@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>추억 타임머신 3D — 1950~2026 무한 궤도 항해 & AI 역사 복원</title>
+
+<!-- Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Pretendard:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Three.js + GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<style>
+/* ========================================================
+   CSS RESET & CINEMATIC THEME
+======================================================== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --neon-cyan: #00f0ff;
+  --neon-magenta: #ff007f;
+  --neon-gold: #ffb703;
+  --neon-lime: #39ff14;
+  --neon-ai: #a855f7; /* AI 복원 배지 퍼플 */
+  --bg-deep: #020308;
+  --glass-bg: rgba(6, 10, 26, 0.82);
+  --glass-border: rgba(0, 240, 255, 0.25);
+  --font-hud: 'Orbitron', monospace;
+  --font-body: 'Pretendard', sans-serif;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-deep);
+  color: #fff;
+  font-family: var(--font-body);
+  user-select: none;
+}
+
+/* 100% FULLSCREEN 3D WEBGL VIEWPORT */
+#viewport-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  display: block;
+}
+
+/* CINEMATIC LETTERBOX */
+.letterbox-top, .letterbox-bottom {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 24px;
+  background: #000;
+  z-index: 90;
+  pointer-events: none;
+}
+.letterbox-top { top: 0; }
+.letterbox-bottom { bottom: 0; }
+
+.vignette-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, transparent 40%, rgba(1, 2, 6, 0.9) 95%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ========================================================
+   TOP CINEMATIC HUD (MINIMAL & SLEEK)
+======================================================== */
+.top-hud {
+  position: fixed;
+  top: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 40px;
+  padding: 10px 24px;
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.2);
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-hud);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.brand-badge span { color: var(--neon-cyan); }
+
+.status-pill {
+  font-family: var(--font-hud);
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  letter-spacing: 1px;
+}
+
+/* PULL-OUT (ZOOM OUT) BUTTON */
+.zoom-out-btn {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--neon-magenta), #7928ca);
+  border: 1px solid #ff79c6;
+  color: #fff;
+  font-family: var(--font-hud);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.zoom-out-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 0, 127, 0.8);
+}
+
+/* CRUISE FLIGHT INDICATOR (연속 궤도 항해 중일 때 뜸) */
+.cruise-indicator {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 45;
+  font-family: var(--font-hud);
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: var(--neon-gold);
+  background: rgba(0,0,0,0.7);
+  padding: 8px 24px;
+  border-radius: 20px;
+  border: 1px solid var(--neon-gold);
+  box-shadow: 0 0 20px rgba(255, 183, 3, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+.cruise-indicator.active { opacity: 1; }
+
+/* INSTRUCTION OVERLAY */
+.guide-tip {
+  position: fixed;
+  bottom: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 40;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0,240,255,0.6);
+  background: rgba(0,0,0,0.65);
+  backdrop-filter: blur(8px);
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+/* ========================================================
+   BOTTOM CINEMATIC TIME DOCK (1950 ~ 2026 RANGE)
+======================================================== */
+.dock-nav-container {
+  position: fixed;
+  bottom: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 95%;
+  max-width: 1200px;
+  transition: opacity 0.4s;
+}
+
+/* ERA DECADE FILTER TABS */
+.decade-bar {
+  display: flex;
+  gap: 8px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.decade-tab {
+  background: transparent;
+  border: none;
+  color: #888;
+  font-family: var(--font-hud);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.decade-tab:hover { color: #fff; }
+.decade-tab.active { background: rgba(0, 240, 255, 0.2); color: var(--neon-cyan); }
+
+/* YEAR BUTTONS (HORIZONTAL SCROLL) */
+.year-dock {
+  display: flex;
+  gap: 10px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(25px);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  padding: 8px 16px;
+  overflow-x: auto;
+  max-width: 100%;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.8);
+}
+.year-dock::-webkit-scrollbar { height: 4px; }
+.year-dock::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 2px; }
+
+.year-node {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #aaa;
+  font-family: var(--font-hud);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  white-space: nowrap;
+}
+.year-node:hover {
+  background: rgba(0, 240, 255, 0.2);
+  border-color: var(--neon-cyan);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.year-node.active {
+  background: linear-gradient(135deg, var(--neon-magenta), var(--neon-cyan));
+  border-color: #fff;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.6);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* MONTH CHIPS */
+.month-dock {
+  display: none;
+  gap: 6px;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 183, 3, 0.35);
+  border-radius: 20px;
+  padding: 6px 14px;
+  animation: fadeIn 0.3s ease;
+}
+.month-dock.visible { display: flex; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.month-chip {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #bbb;
+  font-family: var(--font-hud);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.month-chip:hover { background: rgba(255, 183, 3, 0.3); color: #fff; border-color: var(--neon-gold); }
+.month-chip.active { background: var(--neon-gold); color: #000; font-weight: 800; border-color: #fff; }
+
+/* ========================================================
+   SURFACE OVERLAY (착륙 후 3D 지표면 HUD)
+======================================================== */
+.surface-hud-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 85px 40px 130px;
+}
+.surface-hud-overlay.active { opacity: 1; pointer-events: auto; }
+
+.surface-title-card {
+  max-width: 620px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 24px 30px;
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.25);
+}
+.surface-badge {
+  font-family: var(--font-hud);
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: var(--neon-magenta);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.surface-h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #fff, var(--neon-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.surface-desc { font-size: 14px; color: #ccc; line-height: 1.6; }
+
+/* RIGHT ARTIFACTS PANEL (FLOATING RELICS) */
+.surface-right-panel {
+  position: fixed;
+  top: 90px;
+  right: 40px;
+  width: 380px;
+  max-height: calc(100vh - 220px);
+  overflow-y: auto;
+  z-index: 35;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  pointer-events: auto;
+}
+.surface-right-panel::-webkit-scrollbar { width: 4px; }
+.surface-right-panel::-webkit-scrollbar-thumb { background: var(--glass-border); border-radius: 2px; }
+
+.relic-glass-card {
+  background: rgba(10, 15, 35, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 16px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+}
+.relic-glass-card:hover {
+  transform: translateX(-6px);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+}
+.relic-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.relic-icon {
+  font-size: 24px;
+  background: rgba(255,255,255,0.06);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relic-name { font-size: 15px; font-weight: 700; color: #fff; }
+
+/* AI RECONSTRUCTION BADGE (1950~1980s) */
+.badge-ai-recon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-hud);
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(168, 85, 247, 0.2);
+  border: 1px solid var(--neon-ai);
+  color: #d8b4fe;
+  padding: 2px 6px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+.badge-real-archive {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-hud);
+  font-size: 10px;
+  font-weight: 700;
+  background: rgba(0, 240, 255, 0.15);
+  border: 1px solid var(--neon-cyan);
+  color: var(--neon-cyan);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.relic-p { font-size: 13px; color: #aaa; line-height: 1.5; }
+
+/* GRAFFITI TRIGGER */
+.graffiti-trigger-btn {
+  background: linear-gradient(135deg, var(--neon-cyan), var(--neon-magenta));
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+  transition: all 0.2s;
+  pointer-events: auto;
+}
+.graffiti-trigger-btn:hover { transform: scale(1.04); box-shadow: 0 0 30px rgba(255, 0, 127, 0.6); }
+
+/* MODAL */
+.modal-backdrop {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  background: rgba(2, 4, 12, 0.85);
+  backdrop-filter: blur(15px);
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal-backdrop.active { display: flex; }
+.modal-window {
+  background: var(--glass-bg);
+  border: 1px solid var(--neon-cyan);
+  border-radius: 24px;
+  width: 90%;
+  max-width: 500px;
+  padding: 30px;
+}
+.modal-close-btn { float: right; background: transparent; border: none; color: #888; font-size: 20px; cursor: pointer; }
+.modal-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 10px 14px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  margin-top: 10px;
+  outline: none;
+}
+textarea.modal-input { height: 90px; resize: none; }
+.modal-submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--neon-magenta), var(--neon-cyan));
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="letterbox-top"></div>
+<div class="letterbox-bottom"></div>
+<div class="vignette-overlay"></div>
+
+<!-- 100% 3D WEBGL VIEWPORT -->
+<canvas id="viewport-canvas"></canvas>
+
+<!-- TOP HUD -->
+<header class="top-hud">
+  <div class="brand-badge">
+    <span>🪐</span> MEMORY HORIZON 3D
+  </div>
+  <div class="status-pill" id="view-mode-pill">1950~2026 은하 뷰</div>
+  <button class="zoom-out-btn" id="zoom-out-btn" onclick="executeZoomOut()">
+    🚀 우주 밖으로 탈출 (ZOOM OUT)
+  </button>
+</header>
+
+<!-- CRUISE FLIGHT INDICATOR (행성 간 연속 비행 중 표시) -->
+<div class="cruise-indicator" id="cruise-indicator">
+  🚀 행성 간 연속 궤도 항해 중... (CRUISE WARP)
+</div>
+
+<!-- GUIDE TIP -->
+<div class="guide-tip" id="guide-tip">
+  ✨ 하단에서 1950~2026년 행성을 선택하세요. (행성 간 연속 비행 지원)
+</div>
+
+<!-- BOTTOM TIME DOCK (1950 ~ 2026) -->
+<div class="dock-nav-container" id="dock-container">
+  <!-- DECADE QUICK SELECT -->
+  <div class="decade-bar">
+    <button class="decade-tab active" onclick="filterDecade('ALL', this)">ALL (77년)</button>
+    <button class="decade-tab" onclick="filterDecade('50s', this)">1950s</button>
+    <button class="decade-tab" onclick="filterDecade('60s', this)">1960s</button>
+    <button class="decade-tab" onclick="filterDecade('70s', this)">1970s</button>
+    <button class="decade-tab" onclick="filterDecade('80s', this)">1980s</button>
+    <button class="decade-tab" onclick="filterDecade('90s', this)">1990s</button>
+    <button class="decade-tab" onclick="filterDecade('00s', this)">2000s</button>
+    <button class="decade-tab" onclick="filterDecade('10s', this)">2010s~</button>
+  </div>
+
+  <!-- YEAR NODES TRACK -->
+  <div class="year-dock" id="year-dock"></div>
+
+  <!-- 1~12 MONTH CHIPS -->
+  <div class="month-dock" id="month-dock"></div>
+</div>
+
+<!-- SURFACE HUD OVERLAY -->
+<div class="surface-hud-overlay" id="surface-overlay">
+  <div class="surface-title-card">
+    <div class="surface-badge" id="surface-badge">🛸 SECTOR CO-ORDINATES</div>
+    <h1 class="surface-h1" id="surface-h1">지표면 착륙</h1>
+    <p class="surface-desc" id="surface-desc"></p>
+    <div style="margin-top: 18px;">
+      <button class="graffiti-trigger-btn" onclick="openGraffitiModal()">
+        <span>✍️</span> 이 시대 지표면에 내 추억 새기기
+      </button>
+    </div>
+  </div>
+
+  <!-- RIGHT ARTIFACTS PANEL -->
+  <div class="surface-right-panel" id="relics-panel"></div>
+</div>
+
+<!-- GRAFFITI MODAL -->
+<div class="modal-backdrop" id="graffiti-modal">
+  <div class="modal-window">
+    <button class="modal-close-btn" onclick="closeGraffitiModal()">✕</button>
+    <div style="font-family: var(--font-hud); font-size: 12px; color: var(--neon-magenta); margin-bottom: 4px;">SURFACE INSCRIPTION</div>
+    <h3 style="font-size: 18px; font-weight: 700; color: #fff;" id="modal-era-title">지표면에 기록 남기기</h3>
+    <p style="font-size: 12px; color: #aaa; margin-top: 4px;">
+      오직 이 연도, 이 달의 행성 지표면 3D 좌표에 영구 각인됩니다.
+    </p>
+    <input type="text" class="modal-input" id="graffiti-author" placeholder="닉네임 (예: 50년대 학도병/97학번)">
+    <textarea class="modal-input" id="graffiti-text" placeholder="이 달, 당신 혹은 우리 가족에게는 어떤 추억이 있었나요?"></textarea>
+    <button class="modal-submit-btn" onclick="submitGraffiti()">🌟 지표면에 영구 박제</button>
+  </div>
+</div>
+
+<!-- ========================================================
+   THREE.JS 3D ENGINE SCRIPT
+======================================================== -->
+<script>
+/* ========================================================
+   1. 77개 연도 (1950 ~ 2026) 아카이브 & AI 가상 복원 DB
+======================================================== */
+const ALL_ERAS = [
+  // 1950s (전후 복구 & AI 사료 복원)
+  { year: 1950, decade: '50s', name: '전쟁과 피난길', color: 0x8b5a2b, isAI: true, desc: '1950년 6월 전쟁의 포화 속 피난 열차와 라디오 비상 방송. 삐라와 피난민 판자촌의 아픈 기억.' },
+  { year: 1953, decade: '50s', name: '천막 학교와 휴전', color: 0xa0522d, isAI: true, desc: '1953년 7월 휴전협정. 부산 피난민 천막 교실에서 미군 C-레이션 깡통에 밥 비벼 먹던 희망의 날들.' },
+  { year: 1958, decade: '50s', name: '라디오 청실홍실', color: 0xcd853f, isAI: true, desc: '국산 최초 진공관 라디오 드라마에 온 동네 사람들이 사랑방에 모여 숨죽여 귀를 기울이던 시대.' },
+
+  // 1960s (경제개발 & 흑백 아카이브)
+  { year: 1962, decade: '60s', name: '제1차 경제개발', color: 0x708090, isAI: true, desc: '울산공업단지 착공과 재건 국민운동. 땀 흘려 가난을 벗어나고자 했던 우리 부모님들의 청춘.' },
+  { year: 1965, decade: '60s', name: '삼양라면 10원의 행복', color: 0xd2691e, isAI: true, desc: '주황색 포장지 10원짜리 삼양라면의 탄생! 배고픈 국민들의 허기를 달래준 최초의 인스턴트 라면.' },
+  { year: 1969, decade: '60s', name: '달 착륙과 대한극장', color: 0x4682b4, isAI: true, desc: '아폴로 11호 달 착륙을 금성 흑백TV로 지켜보고, 신성일·엄앵란 영화에 울고 웃던 충무로 르네상스.' },
+
+  // 1970s (청년문화 & 포니 자동차)
+  { year: 1971, decade: '70s', name: '경부고속도로와 분식의 날', color: 0x556b2f, isAI: true, desc: '매주 수·토요일 혼분식의 날(쌀밥 금지). 고속도로 개통으로 전국 1일 생활권이 열린 시기.' },
+  { year: 1975, decade: '70s', name: '포니 1호 & 통기타', color: 0x2e8b57, isAI: true, desc: '대한민국 최초 국산 고유 모델 현대 포니 자동차 출시! 쎄시봉 다방 통기타와 장발 단속의 추억.' },
+
+  // 1980s (컬러TV & 88올림픽 호돌이)
+  { year: 1982, decade: '80s', name: '프로야구 개막 & 컬러TV', color: 0x4169e1, isAI: false, desc: '컬러TV 본방송과 프로야구 6개 구단 창단! OB 베어스, 해태 타이거즈의 야구 열풍.' },
+  { year: 1988, decade: '80s', name: '88서울올림픽 호돌이', color: 0xffd700, isAI: false, desc: '굴렁쇠 소년과 "손에 손잡고". 세계로 뻗어나간 대한민국의 황금빛 축제.' },
+
+  // 1990s (서태지, PC통신, IMF)
+  { year: 1993, decade: '90s', name: '대전엑스포 꿈돌이', color: 0xff8c00, isAI: false, desc: '1993년 대전 엑스포 꿈돌이와 자기부상열차, 서태지와 아이들 2집 "하여가" 태평소 열풍.' },
+  { year: 1997, decade: '90s', name: '다마고치와 IMF', color: 0xff007f, isAI: false, desc: '허리춤의 삐삐, 가방 속 다마고치, 그리고 1997년 11월 온 나라를 뒤흔든 외환위기 뉴스 속보.' },
+  { year: 1999, decade: '90s', name: '세기말 Y2K & DDR', color: 0x9900ef, isAI: false, desc: '오락실 DDR 펌프 발판 밟던 시절, 2000년이 되면 전기가 꺼진다는 Y2K 소문에 비축한 촛불.' },
+
+  // 2000s (싸이월드, 붉은 악마)
+  { year: 2002, decade: '00s', name: '월드컵 붉은 악마 4강', color: 0xff2200, isAI: false, desc: '시청 앞 광장 붉은 물결! 안정환 골든골과 온 국민이 얼싸안고 환호하던 2002년 6월.' },
+  { year: 2007, decade: '00s', name: '싸이월드 도토리 & 텔미', color: 0x00f0ff, isAI: false, desc: '도토리 사서 미니홈피 BGM 맞추고, 학교마다 원더걸스 Tell Me 춤추던 UCC 르네상스.' },
+
+  // 2010s~2020s
+  { year: 2012, decade: '10s', name: '카톡 하트 & 강남스타일', color: 0xffee00, isAI: false, desc: '자정마다 애니팡 하트 주고받고, 전 세계 유튜브를 흔든 싸이 강남스타일 말춤.' },
+  { year: 2022, decade: '10s', name: '포켓몬빵 오픈런', color: 0x7928ca, isAI: false, desc: '새벽 편의점 앞에 줄 서서 띠부씰 모으고, 달고나 커피 400번 저어 마시던 팬데믹 추억.' },
+  { year: 2026, decade: '10s', name: '현재의 우리', color: 0x39ff14, isAI: false, desc: 'AI와 함께 시공간을 항해하며 과거의 소중한 기억을 되살리는 2026년 오늘.' }
+];
+
+// ARTIFACTS DB (INCLUDES AI RECONSTRUCTED BADGES FOR 1950~1980)
+const ARTIFACTS_DB = {
+  '1953-07': [
+    { name: '부산 피난민 천막 교실', emoji: '🎪', isAI: true, cat: '사료 고증', desc: '휴전 직전, 흙바닥에 가마니를 깔고 입김을 불며 공부하던 판자촌 임시 학교 풍경.' },
+    { name: '미군 C-레이션 비상식량 캔', emoji: '🥫', isAI: true, cat: '전후 생활', desc: '미군 구호물자로 들어와 부대찌개의 시초가 된 전설의 통조림 깡통.' },
+    { name: '1953년 7월 27일 휴전협정 호외', emoji: '📜', isAI: false, cat: '역사 사료', desc: '3년 1개월간의 동족상잔이 멈춘 날 뿌려진 감격과 한숨의 신문 호외.' }
+  ],
+  '1965-09': [
+    { name: '원조 삼양라면 (주황색 포장 10원)', emoji: '🍜', isAI: true, cat: '식문화 복원', desc: '1965년 가난했던 시절, 꿀꿀이죽 대신 한 끼 식사가 되어준 최초의 라면.' },
+    { name: '금성 19인치 진공관 흑백TV', emoji: '📺', isAI: true, cat: '가전 사료', desc: '동네 만화방이나 이장님 댁에만 있어 온 동네 사람들이 마당에 모여 보던 보물 1호.' }
+  ],
+  '1975-05': [
+    { name: '현대 포니 1호 (최초 국산차)', emoji: '🚗', isAI: true, cat: '산업 사료', desc: '이탈리아 조르제토 주지아로 디자인, 마이카 시대를 연 대한민국 최초 국산 고유 모델.' },
+    { name: '쎄시봉 다방 통기타와 청바지', emoji: '🎸', isAI: false, cat: '청년 문화', desc: '통기타, 생맥주, 나팔바지, 그리고 야간 통행금지와 장발 단속 사이의 자유.' }
+  ],
+  '1988-09': [
+    { name: '88서울올림픽 굴렁쇠 소년', emoji: '⭕', isAI: false, cat: '올림픽 아카이브', desc: '잠실 주경기장의 침묵을 가르며 홀로 굴렁쇠를 굴리던 평화의 상징 소년.' },
+    { name: '호돌이 공식 마스코트 인형', emoji: '🐯', isAI: false, cat: '올림픽 굿즈', desc: '상모를 쓰고 온 국민의 집에 하나씩 장식장에 놓여 있던 호돌이.' }
+  ],
+  '1993-08': [
+    { name: '대전 엑스포 93 꿈돌이', emoji: '🛸', isAI: false, cat: '축제 문화', desc: '미래 과학 한국을 꿈꾸며 전 국민이 대전으로 몰려갔던 엑스포 마스코트.' },
+    { name: '서태지와 아이들 2집 (하여가)', emoji: '📼', isAI: false, cat: '대중가요', desc: '헤비메탈 기타와 국악 태평소의 결합! 가요계 판도를 완전히 뒤바꾼 앨범.' }
+  ],
+  '1997-11': [
+    { name: '모토로라 삐삐 (012/015)', emoji: '📟', isAI: false, cat: '통신 기기', desc: '허리춤에 차고 진동 오면 공중전화로 달려가던 90년대 청춘의 상징.' },
+    { name: '원조 다마고치 알', emoji: '🥚', isAI: false, cat: '장난감', desc: '수업 시간에 똥 치워줘야 해서 몰래 밥 주던 사이버 애완동물.' },
+    { name: 'IMF 외환위기 속보 신문', emoji: '📰', isAI: false, cat: '역사 문화', desc: '1997년 11월 21일 전 국민을 충격에 빠뜨렸던 역사의 분기점.' }
+  ],
+  '2002-06': [
+    { name: 'Be the Reds 붉은 악마 티셔츠', emoji: '👕', isAI: false, cat: '패션 응원', desc: '온 국민이 하나 되어 입었던 전설의 붉은 악마 티셔츠.' },
+    { name: '피버노바 (Fevernova) 공인구', emoji: '⚽', isAI: false, cat: '스포츠', desc: '금빛 불꽃 무늬가 선명했던 2002 한일 월드컵 공식 축구공.' }
+  ]
+};
+
+// GRAFFITI DB
+const GRAFFITI_DB = {
+  '1953-07': [
+    { author: '피난민어르신', text: '그때 부산 영도다리 밑에서 헤어진 동생 찾으려고 매일 벽보 보던 기억이 아직도 눈에 밟힙니다. 벌써 70년이 지났네요.' }
+  ],
+  '1975-05': [
+    { author: '75학번청춘', text: '명동 생맥주 집에서 송창식 고래사냥 떼창하고, 경찰관 피해 나팔바지 입고 골목으로 도망치던 시절 ㅋㅋㅋ 낭만이 있었습니다.' }
+  ],
+  '1997-11': [
+    { author: '종로97', text: '1997년 11월 21일 TV 속보 보며 거실에 흐르던 적막. 다음 날 친구들과 종로에서 만나 우리 취업 어쩌냐고 소주 한잔 마셨던 날.' }
+  ],
+  '2002-06': [
+    { author: '광화문붉은악마', text: '안정환 골든골 들어간 순간! 시청 앞 광장에서 50만 명이 동시에 뛰어올라 진짜 땅이 흔들렸음 ㅋㅋㅋ 모르는 아저씨와 얼싸안고 울었습니다.' }
+  ]
+};
+
+/* ========================================================
+   2. THREE.JS 3D SCENE & PLANET MESHES
+======================================================== */
+let scene, camera, renderer;
+let starField;
+let planets = [];
+let currentPlanet = null;
+let currentEra = null;
+let currentMonth = 11;
+let viewMode = 'GALAXY'; // 'GALAXY' -> 'ORBIT' -> 'SURFACE'
+let surfaceGroup = null;
+
+function init3DWorld() {
+  const canvas = document.getElementById('viewport-canvas');
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+  scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x020308, 0.007);
+
+  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1500);
+  camera.position.set(0, 20, 85);
+  camera.lookAt(0, 0, 0);
+
+  // LIGHTING
+  scene.add(new THREE.AmbientLight(0x223355, 1.6));
+  const sunLight = new THREE.PointLight(0xffffff, 2.8, 400);
+  sunLight.position.set(0, 50, 30);
+  scene.add(sunLight);
+
+  // 1) 3,000 3D STARS
+  buildStarfield();
+
+  // 2) 77 YEARS PLANETS GALAXY
+  buildPlanetsGalaxy();
+
+  // 3) ANIMATION LOOP
+  animate();
+
+  window.addEventListener('resize', onWindowResize);
+}
+
+function buildStarfield() {
+  const count = 3000;
+  const geom = new THREE.BufferGeometry();
+  const pos = new Float32Array(count * 3);
+  for (let i = 0; i < count * 3; i += 3) {
+    pos[i] = (Math.random() - 0.5) * 800;
+    pos[i + 1] = (Math.random() - 0.5) * 500;
+    pos[i + 2] = (Math.random() - 0.5) * 800;
+  }
+  geom.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+  const mat = new THREE.PointsMaterial({ size: 1.1, color: 0xffffff, transparent: true, opacity: 0.8 });
+  starField = new THREE.Points(geom, mat);
+  scene.add(starField);
+}
+
+function buildPlanetsGalaxy() {
+  const radius = 38;
+
+  ALL_ERAS.forEach((era, idx) => {
+    const angle = (idx / ALL_ERAS.length) * Math.PI * 2;
+    const x = Math.cos(angle) * radius;
+    const z = Math.sin(angle) * radius;
+
+    const group = new THREE.Group();
+    group.position.set(x, (Math.sin(idx) * 3), z);
+
+    // Planet Sphere
+    const geom = new THREE.SphereGeometry(2.6, 32, 32);
+    const mat = new THREE.MeshStandardMaterial({
+      color: era.color,
+      roughness: 0.5,
+      metalness: 0.3
+    });
+    const mesh = new THREE.Mesh(geom, mat);
+    group.add(mesh);
+
+    // Ring
+    const ringGeom = new THREE.RingGeometry(3.1, 3.8, 32);
+    const ringMat = new THREE.MeshBasicMaterial({ color: era.color, side: THREE.DoubleSide, transparent: true, opacity: 0.4 });
+    const ring = new THREE.Mesh(ringGeom, ringMat);
+    ring.rotation.x = Math.PI / 2.2;
+    group.add(ring);
+
+    // 12 Moons
+    const moons = [];
+    for (let m = 1; m <= 12; m++) {
+      const mAngle = (m / 12) * Math.PI * 2;
+      const mGeom = new THREE.SphereGeometry(0.28, 12, 12);
+      const moon = new THREE.Mesh(mGeom, new THREE.MeshBasicMaterial({ color: 0xffffff }));
+      moon.position.set(Math.cos(mAngle) * 4.6, 0, Math.sin(mAngle) * 4.6);
+      group.add(moon);
+      moons.push(moon);
+    }
+
+    group.userData = { era: era, mesh: mesh, ring: ring, moons: moons };
+    scene.add(group);
+    planets.push(group);
+  });
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+
+  planets.forEach(p => {
+    p.userData.mesh.rotation.y += 0.004;
+    p.userData.ring.rotation.z += 0.002;
+    p.userData.moons.forEach((m, idx) => {
+      const a = (idx / 12) * Math.PI * 2 + Date.now() * 0.0006;
+      m.position.x = Math.cos(a) * 4.6;
+      m.position.z = Math.sin(a) * 4.6;
+    });
+  });
+
+  starField.rotation.y += 0.00015;
+
+  if (surfaceGroup) {
+    surfaceGroup.children.forEach((c, i) => {
+      if (c.userData.isFloating) {
+        c.position.y = c.userData.baseY + Math.sin(Date.now() * 0.002 + i) * 0.25;
+        c.rotation.y += 0.008;
+      }
+    });
+  }
+
+  renderer.render(scene, camera);
+}
+
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+/* ========================================================
+   3. [핵심] 행성 간 연속 궤도 항해 (PLANET-TO-PLANET CRUISE)
+======================================================== */
+function navigateToPlanet(year) {
+  const targetPlanet = planets.find(p => p.userData.era.year === year);
+  if (!targetPlanet) return;
+
+  const prevPlanet = currentPlanet;
+  currentPlanet = targetPlanet;
+  currentEra = targetPlanet.userData.era;
+
+  const targetPos = targetPlanet.position;
+  const cameraTarget = {
+    x: targetPos.x + 6,
+    y: targetPos.y + 3,
+    z: targetPos.z + 11
+  };
+
+  // Case 1: 이미 다른 행성 궤도에 있었던 경우 -> 행성 간 연속 궤도 비행(CRUISE WARP)!
+  if (prevPlanet && prevPlanet !== targetPlanet && viewMode === 'ORBIT') {
+    showCruiseIndicator(`${prevPlanet.userData.era.year}년 ➔ ${year}년 행성으로 연속 궤도 비행 중...`);
+
+    // Spline Arc Warp
+    const midPoint = {
+      x: (camera.position.x + cameraTarget.x) / 2,
+      y: Math.max(camera.position.y, cameraTarget.y) + 12,
+      z: (camera.position.z + cameraTarget.z) / 2 + 10
+    };
+
+    gsap.timeline()
+      .to(camera.position, {
+        x: midPoint.x,
+        y: midPoint.y,
+        z: midPoint.z,
+        duration: 1.0,
+        ease: "power2.in",
+        onUpdate: () => camera.lookAt(targetPos.x, targetPos.y, targetPos.z)
+      })
+      .to(camera.position, {
+        x: cameraTarget.x,
+        y: cameraTarget.y,
+        z: cameraTarget.z,
+        duration: 1.2,
+        ease: "power2.out",
+        onUpdate: () => camera.lookAt(targetPos.x, targetPos.y, targetPos.z),
+        onComplete: () => {
+          hideCruiseIndicator();
+          onPlanetArrived(year);
+        }
+      });
+
+  } else {
+    // Case 2: 은하 뷰에서 처음 행성으로 날아가는 경우
+    viewMode = 'ORBIT';
+    document.getElementById('view-mode-pill').textContent = `${year}년 궤도 진입`;
+    document.getElementById('zoom-out-btn').style.display = 'flex';
+
+    gsap.to(camera.position, {
+      x: cameraTarget.x,
+      y: cameraTarget.y,
+      z: cameraTarget.z,
+      duration: 2.0,
+      ease: "power3.inOut",
+      onUpdate: () => camera.lookAt(targetPos.x, targetPos.y, targetPos.z),
+      onComplete: () => onPlanetArrived(year)
+    });
+  }
+}
+
+function onPlanetArrived(year) {
+  viewMode = 'ORBIT';
+  document.getElementById('view-mode-pill').textContent = `${year}년 궤도 도착`;
+  document.getElementById('guide-tip').textContent = `🪐 ${year}년 행성입니다! 하단에서 '월(Month)'을 눌러 지표면으로 다이빙하세요.`;
+  document.getElementById('month-dock').classList.add('visible');
+  renderMonthDock(year);
+}
+
+function showCruiseIndicator(text) {
+  const el = document.getElementById('cruise-indicator');
+  el.textContent = text;
+  el.classList.add('active');
+}
+function hideCruiseIndicator() {
+  document.getElementById('cruise-indicator').classList.remove('active');
+}
+
+/* ========================================================
+   4. 대기권 돌파 줌인 (DIVE-IN) & 줌아웃 (PULL-OUT)
+======================================================== */
+function diveInToSurface(month) {
+  currentMonth = month;
+  viewMode = 'SURFACE';
+
+  document.getElementById('view-mode-pill').textContent = `${currentEra.year}년 ${month}월 착륙 완료`;
+  document.getElementById('guide-tip').style.opacity = '0';
+  document.getElementById('dock-container').style.opacity = '0';
+  document.getElementById('dock-container').style.pointerEvents = 'none';
+
+  const planetPos = currentPlanet.position;
+
+  // Zoom-in Dive into Planet Center
+  gsap.to(camera.position, {
+    x: planetPos.x,
+    y: planetPos.y,
+    z: planetPos.z + 0.1,
+    duration: 1.6,
+    ease: "power4.in",
+    onComplete: () => {
+      buildSurfaceWorld(currentEra.year, currentMonth);
+      camera.position.set(0, 3, 10);
+      camera.lookAt(0, 2, 0);
+      document.getElementById('surface-overlay').classList.add('active');
+    }
+  });
+}
+
+function executeZoomOut() {
+  if (viewMode === 'SURFACE') {
+    document.getElementById('surface-overlay').classList.remove('active');
+    destroySurfaceWorld();
+
+    const planetPos = currentPlanet.position;
+    camera.position.set(planetPos.x, planetPos.y + 25, planetPos.z);
+
+    gsap.to(camera.position, {
+      x: 0,
+      y: 20,
+      z: 85,
+      duration: 2.0,
+      ease: "power3.out",
+      onUpdate: () => camera.lookAt(0, 0, 0),
+      onComplete: () => resetToGalaxyView()
+    });
+  } else if (viewMode === 'ORBIT') {
+    gsap.to(camera.position, {
+      x: 0,
+      y: 20,
+      z: 85,
+      duration: 1.8,
+      ease: "power2.inOut",
+      onUpdate: () => camera.lookAt(0, 0, 0),
+      onComplete: () => resetToGalaxyView()
+    });
+  }
+}
+
+function resetToGalaxyView() {
+  viewMode = 'GALAXY';
+  currentPlanet = null;
+  document.getElementById('view-mode-pill').textContent = '1950~2026 은하 뷰';
+  document.getElementById('guide-tip').textContent = '✨ 하단에서 1950~2026년 행성을 선택하세요. (행성 간 연속 비행 지원)';
+  document.getElementById('guide-tip').style.opacity = '1';
+  document.getElementById('zoom-out-btn').style.display = 'none';
+  document.getElementById('month-dock').classList.remove('visible');
+  document.getElementById('dock-container').style.opacity = '1';
+  document.getElementById('dock-container').style.pointerEvents = 'auto';
+  document.querySelectorAll('.year-node').forEach(n => n.classList.remove('active'));
+}
+
+/* ========================================================
+   5. 3D 지표면 & AI 사료 복원 카드 렌더링
+======================================================== */
+function buildSurfaceWorld(year, month) {
+  destroySurfaceWorld();
+  surfaceGroup = new THREE.Group();
+  scene.add(surfaceGroup);
+
+  // Surface Cyber Grid
+  const grid = new THREE.GridHelper(50, 40, currentEra.color, 0x112244);
+  surfaceGroup.add(grid);
+
+  // Floating Artifact Boxes
+  const key = `${year}-${String(month).padStart(2, '0')}`;
+  const artifacts = ARTIFACTS_DB[key] || [
+    {
+      name: `${year}년 ${month}월의 역사 파편`,
+      emoji: '📜',
+      isAI: year < 1990,
+      cat: year < 1990 ? 'AI 역사 고증 복원' : '디지털 아카이브',
+      desc: year < 1990 ? '신문 사료 텍스트를 바탕으로 AI 시네마틱 렌더링으로 가상 복원된 시각 데이터입니다.' : '당시 실물 사진 및 대중문화 기록입니다.'
+    }
+  ];
+
+  artifacts.forEach((art, idx) => {
+    const xPos = (idx - (artifacts.length - 1) / 2) * 5;
+    const boxGeom = new THREE.BoxGeometry(2.2, 2.8, 0.4);
+    const boxMesh = new THREE.Mesh(boxGeom, new THREE.MeshStandardMaterial({ color: 0x060c22, metalness: 0.8, roughness: 0.2 }));
+    boxMesh.position.set(xPos, 3, -4);
+    boxMesh.userData = { isFloating: true, baseY: 3 };
+
+    const wire = new THREE.LineSegments(new THREE.EdgesGeometry(boxGeom), new THREE.LineBasicMaterial({ color: art.isAI ? 0xa855f7 : currentEra.color }));
+    boxMesh.add(wire);
+    surfaceGroup.add(boxMesh);
+  });
+
+  // 3D Graffiti Pillars
+  const graffitis = GRAFFITI_DB[key] || [];
+  graffitis.forEach((g, idx) => {
+    const p = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 2.5, 12), new THREE.MeshBasicMaterial({ color: 0x00f0ff }));
+    p.position.set((idx - 0.5) * 4, 1.25, -2);
+    surfaceGroup.add(p);
+  });
+
+  updateSurfaceUI(year, month, artifacts, graffitis);
+}
+
+function destroySurfaceWorld() {
+  if (surfaceGroup) {
+    scene.remove(surfaceGroup);
+    surfaceGroup = null;
+  }
+}
+
+function updateSurfaceUI(year, month, artifacts, graffitis) {
+  document.getElementById('surface-badge').textContent = `🛸 PLANET-${year} · SECTOR ${year}-${String(month).padStart(2, '0')}`;
+  document.getElementById('surface-h1').textContent = `${year}년 ${month}월 지표면 착륙`;
+  document.getElementById('surface-desc').textContent = `${year}년 ${month}월 행성입니다. ${currentEra.desc}`;
+
+  const panel = document.getElementById('relics-panel');
+  panel.innerHTML = `
+    <div style="font-family: var(--font-hud); font-size: 13px; color: var(--neon-cyan); margin-bottom: 6px;">
+      📦 TIME ARTIFACTS (${artifacts.length})
+    </div>
+  ` + artifacts.map(a => `
+    <div class="relic-glass-card" onclick="alert('${a.name}\\n\\n${a.desc}')">
+      <div class="relic-header">
+        <div class="relic-icon">${a.emoji}</div>
+        <div>
+          <div class="relic-name">${a.name}</div>
+          <div style="margin-top: 2px;">
+            ${a.isAI ? '<span class="badge-ai-recon">🤖 AI 사료 복원</span>' : '<span class="badge-real-archive">📸 실물 아카이브</span>'}
+            <span style="font-size: 11px; color: #888; margin-left: 4px;">${a.cat}</span>
+          </div>
+        </div>
+      </div>
+      <p class="relic-p">${a.desc}</p>
+    </div>
+  `).join('') + `
+    <div style="font-family: var(--font-hud); font-size: 13px; color: var(--neon-magenta); margin-top: 14px; margin-bottom: 6px;">
+      💬 SURFACE GRAFFITI (${graffitis.length})
+    </div>
+  ` + graffitis.map(g => `
+    <div class="relic-glass-card" style="border-color: rgba(255, 0, 127, 0.4);">
+      <div style="font-size: 12px; font-weight: 700; color: var(--neon-magenta); margin-bottom: 4px;">${g.author}</div>
+      <p class="relic-p" style="color: #fff;">"${g.text}"</p>
+    </div>
+  `).join('');
+}
+
+/* ========================================================
+   6. UI CONTROLS & DOCK
+======================================================== */
+let activeFilter = 'ALL';
+
+function renderYearDock(filter = 'ALL') {
+  activeFilter = filter;
+  const dock = document.getElementById('year-dock');
+  dock.innerHTML = '';
+
+  const list = (filter === 'ALL') ? ALL_ERAS : ALL_ERAS.filter(e => e.decade === filter);
+
+  list.forEach(era => {
+    const btn = document.createElement('button');
+    btn.className = `year-node ${currentEra && currentEra.year === era.year ? 'active' : ''}`;
+    btn.innerHTML = `${era.isAI ? '🤖 ' : '🪐 '}${era.year}`;
+    btn.onclick = () => {
+      document.querySelectorAll('.year-node').forEach(n => n.classList.remove('active'));
+      btn.classList.add('active');
+      navigateToPlanet(era.year);
+    };
+    dock.appendChild(btn);
+  });
+}
+
+function filterDecade(decade, el) {
+  document.querySelectorAll('.decade-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  renderYearDock(decade);
+}
+
+function renderMonthDock(year) {
+  const mDock = document.getElementById('month-dock');
+  mDock.innerHTML = '';
+
+  for (let m = 1; m <= 12; m++) {
+    const chip = document.createElement('button');
+    chip.className = `month-chip ${m === currentMonth ? 'active' : ''}`;
+    chip.textContent = `${m}월`;
+    chip.onclick = () => {
+      document.querySelectorAll('.month-chip').forEach(c => c.classList.remove('active'));
+      chip.classList.add('active');
+      diveInToSurface(m);
+    };
+    mDock.appendChild(chip);
+  }
+}
+
+// GRAFFITI MODAL
+function openGraffitiModal() {
+  document.getElementById('modal-era-title').textContent = `${currentEra.year}년 ${currentMonth}월 지표면에 기록 남기기`;
+  document.getElementById('graffiti-modal').classList.add('active');
+}
+function closeGraffitiModal() {
+  document.getElementById('graffiti-modal').classList.remove('active');
+}
+function submitGraffiti() {
+  const author = document.getElementById('graffiti-author').value.trim() || '익명의 탐험가';
+  const text = document.getElementById('graffiti-text').value.trim();
+  if (!text) { alert('추억을 작성해주세요!'); return; }
+
+  const key = `${currentEra.year}-${String(currentMonth).padStart(2, '0')}`;
+  if (!GRAFFITI_DB[key]) GRAFFITI_DB[key] = [];
+  GRAFFITI_DB[key].unshift({ author, text });
+
+  document.getElementById('graffiti-author').value = '';
+  document.getElementById('graffiti-text').value = '';
+  closeGraffitiModal();
+  alert(`✨ ${currentEra.year}년 ${currentMonth}월 지표면 3D 좌표에 성공적으로 영구 각인되었습니다!`);
+  updateSurfaceUI(currentEra.year, currentMonth, ARTIFACTS_DB[key] || [], GRAFFITI_DB[key]);
+}
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') executeZoomOut();
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  init3DWorld();
+  renderYearDock('ALL');
+});
+</script>
+</body>
+</html>

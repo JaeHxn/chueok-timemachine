@@ -1,0 +1,506 @@
+[
+  {
+    "year": 1960,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "로맨스 빠빠",
+    "summary": "신상옥 감독의 영화 '로맨스 빠빠'가 관객들의 인기를 얻었다. 가족의 일상을 그린 작품이다.",
+    "sources": [
+      {
+        "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
+        "name": "한국영상자료원, 한국영화 흥행사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1960,
+    "month": null,
+    "date_precision": "approx",
+    "category": "먹거리·음료",
+    "title": "건빵과 옛 과자",
+    "summary": "1960~1970년대에는 건빵과 뻬빼이, 라면땅 같은 과자를 먹었다. 특정 제품이 어느 해에 가장 유행했는지는 확인되지 않았다.",
+    "sources": [
+      {
+        "url": "https://www.archives.go.kr/archivesdata/upFile/palgan/1396486481883.pdf",
+        "name": "국가기록원, 기록물 전시 소개",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1960,
+    "month": null,
+    "date_precision": "approx",
+    "category": "놀이·장난감·문구·학교",
+    "title": "과밀한 국민학교 교실",
+    "summary": "1960년대 국민학교에서는 규모가 큰 학교와 학생이 많은 과밀학급이 운영됐다. 초등 취학이 확대됐지만 교육 여건에는 어려움이 남아 있었다.",
+    "sources": [
+      {
+        "url": "https://archives.go.kr/next/common/archivedata/render.do?filePath=2F757046696C652F70616C67616E2F32303137313232315F313030362E706466",
+        "name": "국가기록원, 주요 정책기록 해설집 교육 편",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1960,
+    "month": null,
+    "date_precision": "approx",
+    "category": "가전·기술·교통",
+    "title": "유선방송 스피커와 라디오",
+    "summary": "라디오가 귀하던 시절에는 가정에 유선으로 연결한 스피커를 통해 방송을 듣기도 했다. 국산 트랜지스터 라디오도 차츰 보급됐다.",
+    "sources": [
+      {
+        "url": "https://www.archives.go.kr/archivesdata/upFile/palgan/1396486481883.pdf",
+        "name": "국가기록원, 기록물 전시 소개",
+        "license": "미확인"
+      },
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/appliances.do",
+        "name": "국가기록원, 기록으로 만나는 대한민국: 가전제품",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "노란 샤쓰의 사나이",
+    "summary": "한명숙이 부른 '노란 샤쓰의 사나이'가 크게 유행했다. 경쾌한 리듬과 서구적인 분위기로 주목받은 대중가요다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014802",
+        "name": "한국민족문화대백과사전, 대중가요",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "성춘향",
+    "summary": "신상옥 감독의 영화 '성춘향'이 많은 관객을 모았다. 춘향전을 영화로 옮긴 작품이다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
+        "name": "한국영상자료원, 1961년 한국영화 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "사랑방 손님과 어머니",
+    "summary": "신상옥 감독의 영화 '사랑방 손님과 어머니'가 개봉했다. 어린 옥희의 시선으로 어머니와 사랑방 손님의 이야기를 그린다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
+        "name": "한국영상자료원, 1961년 한국영화 컬렉션",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": 12,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "KBS 텔레비전 방송 시작",
+    "summary": "KBS 텔레비전이 12월 31일 방송을 시작했다. 이후 텔레비전은 대중이 소식과 오락을 접하는 매체로 자리 잡아 갔다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0021719",
+        "name": "한국민족문화대백과사전, 방송",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": 12,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "서울 문화방송 라디오 개국",
+    "summary": "서울에서 문화방송 라디오가 정규방송을 시작했다. 상업 라디오 방송이 늘어나는 계기 가운데 하나였다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0019777",
+        "name": "한국민족문화대백과사전, 문화방송",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리·음료",
+    "title": "크라운산도",
+    "summary": "크림을 비스킷 사이에 넣은 크라운산도가 출시됐다. 이후 오래 판매된 과자다.",
+    "sources": [
+      {
+        "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
+        "name": "식품산업통계정보, 과자류 시장 보고서",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1962,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "밤안개",
+    "summary": "현미가 부른 '밤안개'가 발표됐다. 이후 대중에게 널리 알려진 노래다.",
+    "sources": [
+      {
+        "url": "https://imnews.imbc.com/replay/2020/nwtoday/article/5941472_32532.html",
+        "name": "MBC 뉴스, 현미와 밤안개 관련 보도",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1962,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "열녀문",
+    "summary": "신상옥 감독의 영화 '열녀문'이 개봉해 관객들의 관심을 받았다. 조선시대를 배경으로 한 여성의 삶을 다룬다.",
+    "sources": [
+      {
+        "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
+        "name": "한국영상자료원, 한국영화 흥행사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1962,
+    "month": null,
+    "date_precision": "year",
+    "category": "가전·기술·교통",
+    "title": "라디오 모집 운동",
+    "summary": "라디오 보급을 늘리기 위한 운동이 진행됐다. 라디오는 이후 더 많은 사람의 일상으로 퍼져 갔다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/appliances.do",
+        "name": "국가기록원, 기록으로 만나는 대한민국: 가전제품",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1963,
+    "month": 9,
+    "date_precision": "month",
+    "category": "먹거리·음료",
+    "title": "삼양라면 출시",
+    "summary": "삼양식품이 국내에서 삼양라면을 생산하기 시작했다. 라면은 이후 간편하게 먹는 음식으로 자리 잡았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0026724",
+        "name": "한국민족문화대백과사전, 삼양라운드스퀘어",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1963,
+    "month": 3,
+    "date_precision": "month",
+    "category": "놀이·장난감·문구·학교",
+    "title": "라디오 학교방송",
+    "summary": "KBS가 국민학교 학생을 위한 라디오 학교방송을 시작했다. 국어·사회·자연·음악 등의 교육 내용을 전국에 내보냈다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/koreaOfRecord/EduBroadcasting.do",
+        "name": "국가기록원, 기록으로 만나는 대한민국: 교육방송",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1963,
+    "month": 4,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "동아방송 개국",
+    "summary": "동아방송이 라디오 방송을 시작했다. 이 시기 상업 라디오 방송이 늘면서 청취자들이 접할 수 있는 방송도 다양해졌다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0015002",
+        "name": "한국민족문화대백과사전, 대한민국",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1963,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "청춘교실",
+    "summary": "영화 '청춘교실'이 흥행에 성공했다. 젊은 세대의 이야기를 내세운 청춘영화 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/movie/PM_000749",
+        "name": "한국영상자료원, 청춘교실",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "맨발의 청춘",
+    "summary": "신성일과 엄앵란이 출연한 영화 '맨발의 청춘'이 흥행했다. 젊은 연인의 이야기가 당시 관객들의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://www.koreafilm.or.kr/museum/exhibition/EI_00042",
+        "name": "한국영상자료원, 신성일·엄앵란 관련 전시",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": 12,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "동양방송 텔레비전 개국",
+    "summary": "동양방송이 서울에서 민영 텔레비전 방송을 시작했다. 개국 기념 쇼와 방송극 등도 방영했다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0016659",
+        "name": "한국민족문화대백과사전, 동양방송",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": 10,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "라디오 드라마 남과 북",
+    "summary": "한운사의 라디오 드라마 '남과 북'이 KBS에서 방송됐다. 이 작품은 이듬해 영화로도 만들어졌다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0074622",
+        "name": "한국민족문화대백과사전, 남과 북",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1965,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "남과 북의 영화화",
+    "summary": "인기를 얻은 라디오극 '남과 북'이 김기덕 감독의 영화로 제작됐다. 영화는 여러 영화제에서 상을 받았다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0074622",
+        "name": "한국민족문화대백과사전, 남과 북",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1965,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "빨간 구두 아가씨",
+    "summary": "남일해가 부른 '빨간 구두 아가씨'가 인기를 모은 노래로 소개됐다. 경쾌한 가락과 제목 속 빨간 구두가 인상적인 대중가요다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1966,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "하숙생",
+    "summary": "최희준이 부른 '하숙생'이 인기를 얻었다. 인생을 하숙에 빗댄 가사로 알려진 노래다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1966,
+    "month": 8,
+    "date_precision": "month",
+    "category": "가전·기술·교통",
+    "title": "금성사 국산 텔레비전 수상기",
+    "summary": "금성사가 국내에서 제작한 텔레비전 수상기 VD-191을 내놓았다. 텔레비전 방송 확대와 함께 수상기 수요도 늘어났다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0059151",
+        "name": "한국민족문화대백과사전, 텔레비전",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1967,
+    "month": null,
+    "date_precision": "year",
+    "category": "패션·미용",
+    "title": "미니스커트",
+    "summary": "짧은 길이의 미니스커트가 젊은 여성들 사이에서 유행했다. 당시 변화하는 여성 패션을 보여 주는 옷차림이었다.",
+    "sources": [
+      {
+        "url": "https://theme.archives.go.kr/next/education2010/wear03.do",
+        "name": "국가기록원, 옷차림의 변화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1967,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "가슴 아프게",
+    "summary": "남진의 '가슴 아프게'가 히트곡으로 사랑받았다. 애절한 이별의 감정을 노래한 대중가요다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1967,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "안개",
+    "summary": "정훈희가 부른 '안개'가 대중에게 알려졌다. 영화음악으로도 쓰인 노래다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1967,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "돌아가는 삼각지",
+    "summary": "배호의 '돌아가는 삼각지'가 인기를 얻었다. 서울 삼각지를 배경으로 쓸쓸한 정서를 노래한다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1968,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·사회·생활상",
+    "title": "선데이서울 창간",
+    "summary": "대중 주간지 '선데이서울'이 창간됐다. 연예와 사회 소식 등을 다루는 대중 잡지 시대를 보여 주는 사례다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0014804",
+        "name": "한국민족문화대백과사전, 대중문화",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악·라디오·영화·TV",
+    "title": "사랑은 눈물의 씨앗",
+    "summary": "나훈아의 '사랑은 눈물의 씨앗'이 히트곡으로 사랑받았다. 사랑과 이별의 슬픔을 담은 노래다.",
+    "sources": [
+      {
+        "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
+        "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1969,
+    "month": 8,
+    "date_precision": "month",
+    "category": "음악·라디오·영화·TV",
+    "title": "MBC 텔레비전 방송 시작",
+    "summary": "문화방송이 텔레비전 방송을 시작했다. 기존 KBS와 TBC에 이어 텔레비전 방송 선택지가 늘어났다.",
+    "sources": [
+      {
+        "url": "https://encykorea.aks.ac.kr/Article/E0019777",
+        "name": "한국민족문화대백과사전, 문화방송",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "note": "1960년부터 1969년까지 모든 연도가 목표인 20개에 미달했다. 연도별 유행 여부나 구체적인 시점을 확인하기 어려운 항목은 억지로 추가하지 않았으며, 일부 항목은 당시 유행 자체보다 출시·개국·생활상에 관한 기록이다. 1960년의 date_precision이 approx인 항목은 특정 연도가 아니라 1960년대 전반을 가리킨다."
+  }
+]
