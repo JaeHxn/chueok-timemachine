@@ -13,7 +13,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1950,
@@ -27,9 +28,16 @@
         "url": "https://ko.wikipedia.org/wiki/칠성사이다",
         "name": "위키백과 칠성사이다",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%84%B1%EC%82%AC%EC%9D%B4%EB%8B%A4",
+        "name": "위키백과: 칠성사이다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1950,
@@ -45,7 +53,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1950,
@@ -59,9 +68,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+        "name": "위키백과: 6.25 전쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1950,
@@ -75,9 +91,62 @@
         "url": "https://www.archives.go.kr/next/common/archivedata/render.do?filePath=2F757046696C652F70616C67616E2F313636393335313637303437375F372E706466",
         "name": "국가기록원 문화영화 목록",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+        "name": "위키백과: 6.25 전쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "한강인도교 폭파",
+    "summary": "한국 전쟁 초기인 6월 28일 한강 인도교가 폭파되었다. 다리를 건너던 민간인들이 희생되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/한강_인도교_폭파",
+        "name": "위키백과: 한강인도교 폭파",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B0%95%EC%9D%B8%EB%8F%84%EA%B5%90_%ED%8F%AD%ED%8C%8C",
+        "name": "위키백과: 한강인도교 폭파",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
+    "month": 7,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "노근리 양민 학살 사건",
+    "summary": "한국 전쟁 중 충청북도 영동군 노근리에서 피란민들이 미군의 공격으로 희생되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/노근리_양민_학살_사건",
+        "name": "위키백과: 노근리 양민 학살 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%85%B8%EA%B7%BC%EB%A6%AC_%EC%96%91%EB%AF%BC_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 노근리 양민 학살 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1950,
@@ -93,7 +162,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1950,
@@ -107,9 +177,39 @@
         "url": "https://ko.wikipedia.org/wiki/1950년_대한민국",
         "name": "위키백과 1950년 대한민국",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EA%B5%B0",
+        "name": "위키백과: 여군",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
+    "month": 9,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "인천 상륙 작전",
+    "summary": "유엔군이 인천에 상륙해 서울 수복으로 이어진 군사 작전이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/인천_상륙_작전",
+        "name": "위키백과: 인천 상륙 작전",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EC%B2%9C_%EC%83%81%EB%A5%99_%EC%9E%91%EC%A0%84",
+        "name": "위키백과: 인천 상륙 작전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1950,
@@ -125,7 +225,77 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "보도연맹 학살 사건",
+    "summary": "한국 전쟁 발발 후 국민보도연맹원 등을 대상으로 여러 지역에서 집단 학살이 벌어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/보도연맹_학살_사건",
+        "name": "위키백과: 보도연맹 학살 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%8F%84%EC%97%B0%EB%A7%B9_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 보도연맹 학살 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1951,
+    "month": 1,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1·4 후퇴",
+    "summary": "중국군과 북한군의 공세로 국군과 유엔군이 서울에서 후퇴했고, 많은 시민이 남쪽으로 피란했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1·4_후퇴",
+        "name": "위키백과: 1·4 후퇴",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1%C2%B74_%ED%9B%84%ED%87%B4",
+        "name": "위키백과: 1·4 후퇴",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1951,
+    "month": 2,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "거창 양민 학살 사건",
+    "summary": "경상남도 거창에서 국군에 의해 주민들이 집단 희생된 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/거창_양민_학살_사건",
+        "name": "위키백과: 거창 양민 학살 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%B0%BD_%EC%96%91%EB%AF%BC_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 거창 양민 학살 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1951,
@@ -141,7 +311,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1951,
@@ -157,7 +328,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1951,
@@ -173,7 +345,31 @@
         "license": "미확인"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1951,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "국민방위군 사건",
+    "summary": "국민방위군 지휘부의 부패와 보급 부실로 동원된 장정들이 굶주림과 추위 속에서 대거 희생되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/국민방위군_사건",
+        "name": "위키백과: 국민방위군 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%AD%EB%AF%BC%EB%B0%A9%EC%9C%84%EA%B5%B0_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 국민방위군 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1952,
@@ -189,7 +385,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1952,
@@ -205,7 +402,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1952,
@@ -221,7 +419,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1952,
@@ -235,9 +434,16 @@
         "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
         "name": "영어 위키백과 Trot",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%84%A0%EC%95%BC%EA%B3%A1",
+        "name": "위키백과: 전선야곡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -253,7 +459,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -269,7 +476,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -283,9 +491,16 @@
         "url": "https://ko.wikipedia.org/wiki/사상계",
         "name": "위키백과 사상계",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%83%81%EA%B3%84",
+        "name": "위키백과: 사상계",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -299,9 +514,16 @@
         "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
         "name": "위키백과 1953년 대한민국",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%A6%AC%EC%95%84%ED%97%A4%EB%9F%B4%EB%93%9C",
+        "name": "위키백과: 코리아헤럴드",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -315,9 +537,16 @@
         "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
         "name": "위키백과 1953년 대한민국",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%9C%B4%EC%A0%84",
+        "name": "위키백과: 휴전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -333,7 +562,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -352,9 +582,16 @@
         "url": "https://ko.wikipedia.org/wiki/박시춘",
         "name": "위키백과 박시춘",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%B3%EC%84%B8%EC%96%B4%EB%9D%BC_%EA%B8%88%EC%88%9C%EC%95%84",
+        "name": "위키백과: 굳세어라 금순아",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -368,9 +605,16 @@
         "url": "https://ko.wikipedia.org/wiki/대한뉴스",
         "name": "위키백과 대한뉴스",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%89%B4%EC%8A%A4",
+        "name": "위키백과: 대한뉴스",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -386,7 +630,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -400,9 +645,16 @@
         "url": "https://ko.wikipedia.org/wiki/1953년_대한민국의_영화_목록",
         "name": "위키백과 1953년 대한민국의 영화 목록",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B5%9C%ED%9B%84%EC%9D%98_%EC%9C%A0%ED%98%B9",
+        "name": "위키백과: 최후의 유혹",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "low"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -416,9 +668,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%B3%EC%84%B8%EC%96%B4%EB%9D%BC_%EA%B8%88%EC%88%9C%EC%95%84",
+        "name": "위키백과: 굳세어라 금순아",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1953,
@@ -434,7 +693,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -455,7 +715,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -471,7 +732,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -487,7 +749,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -503,7 +766,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -519,7 +783,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -535,7 +800,31 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1954,
+    "month": 11,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "사사오입 개헌",
+    "summary": "초대 대통령의 중임 제한을 없애는 개헌안이 정족수 계산에 사사오입을 적용해 통과되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사사오입_개헌",
+        "name": "위키백과: 사사오입 개헌",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%82%AC%EC%98%A4%EC%9E%85_%EA%B0%9C%ED%97%8C",
+        "name": "위키백과: 사사오입 개헌",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -554,9 +843,16 @@
         "url": "https://ko.wikipedia.org/wiki/CBS_(대한민국의_방송사)",
         "name": "위키백과 CBS (대한민국의 방송사)",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/CBS_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%B0%A9%EC%86%A1%EC%82%AC)",
+        "name": "위키백과: CBS (대한민국의 방송사)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -575,9 +871,16 @@
         "url": "https://ko.wikipedia.org/wiki/박시춘",
         "name": "위키백과 박시춘",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%84%EC%9D%98_%EB%B6%80%EC%82%B0%EC%A0%95%EA%B1%B0%EC%9E%A5",
+        "name": "위키백과: 이별의 부산정거장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -593,7 +896,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -609,7 +913,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -625,7 +930,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1954,
@@ -639,9 +945,16 @@
         "url": "https://theme.archives.go.kr/next/koreaOfRecord/popSong.do",
         "name": "국가기록원 기록으로 만나는 대한민국: 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%84%EC%9D%98_%EB%B6%80%EC%82%B0%EC%A0%95%EA%B1%B0%EC%9E%A5",
+        "name": "위키백과: 이별의 부산정거장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -657,7 +970,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -673,7 +987,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -689,7 +1004,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -705,7 +1021,31 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1955,
+    "month": 11,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "젊은 그들 (영화)",
+    "summary": "신상옥 감독이 김동인의 작품을 원작으로 만든 영화로, 1955년 11월 30일 공개됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/젊은_그들_(영화)",
+        "name": "위키백과: 젊은 그들 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%8A%EC%9D%80_%EA%B7%B8%EB%93%A4",
+        "name": "위키백과: 젊은 그들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -726,7 +1066,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -740,9 +1081,16 @@
         "url": "https://ko.wikipedia.org/wiki/피아골_(영화)",
         "name": "위키백과 피아골",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%94%BC%EC%95%84%EA%B3%A8_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 피아골 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -758,7 +1106,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -779,7 +1128,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1955,
@@ -795,7 +1145,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -811,7 +1162,31 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1956,
+    "month": 5,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "포화 속의 십자가",
+    "summary": "이용민 감독이 연출하고 김진규 등이 출연한 영화로, 1956년 5월 15일 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/포화_속의_십자가",
+        "name": "위키백과: 포화 속의 십자가",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%99%94_%EC%86%8D%EC%9D%98_%EC%8B%AD%EC%9E%90%EA%B0%80",
+        "name": "위키백과: 포화 속의 십자가",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -830,9 +1205,16 @@
         "url": "https://ko.wikipedia.org/wiki/1956년_대한민국의_영화_목록",
         "name": "위키백과 1956년 대한민국의 영화 목록",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 자유부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -846,9 +1228,16 @@
         "url": "https://ko.wikipedia.org/wiki/시집가는_날",
         "name": "위키백과 시집가는 날",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EC%A7%91%EA%B0%80%EB%8A%94_%EB%82%A0_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 시집가는 날 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -867,9 +1256,16 @@
         "url": "https://m.seoul.co.kr/news/2022/06/06/20220606019007",
         "name": "서울신문 2022-06-06 이호섭의 트로트 숨결 (검색 결과 요약만 확인)",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9E%A5%EC%9D%98_%EB%AF%B8%EC%95%84%EB%A6%AC%EA%B3%A0%EA%B0%9C",
+        "name": "위키백과: 단장의 미아리고개",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -885,7 +1281,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -899,9 +1296,16 @@
         "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
         "name": "Wikipedia, Cinema of South Korea",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 자유부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -915,9 +1319,16 @@
         "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
         "name": "영어 위키백과 Cinema of South Korea",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 자유부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1956,
@@ -931,9 +1342,16 @@
         "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
         "name": "영어 위키백과 Trot",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9E%A5%EC%9D%98_%EB%AF%B8%EC%95%84%EB%A6%AC%EA%B3%A0%EA%B0%9C",
+        "name": "위키백과: 단장의 미아리고개",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1957,
@@ -949,7 +1367,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1957,
@@ -965,7 +1384,31 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1958,
+    "month": 7,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "어느 여대생의 고백 (1958년 영화)",
+    "summary": "신상옥 감독이 연출하고 최은희가 출연한 영화로, 1958년 7월 12일 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/어느_여대생의_고백_(1958년_영화)",
+        "name": "위키백과: 어느 여대생의 고백 (1958년 영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%8A%90_%EC%97%AC%EB%8C%80%EC%83%9D%EC%9D%98_%EA%B3%A0%EB%B0%B1",
+        "name": "위키백과: 어느 여대생의 고백",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1958,
@@ -984,9 +1427,16 @@
         "url": "https://ko.wikipedia.org/wiki/느티나무_있는_언덕",
         "name": "위키백과 느티나무 있는 언덕",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4_%EC%9E%88%EB%8A%94_%EC%96%B8%EB%8D%95",
+        "name": "위키백과: 느티나무 있는 언덕",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1958,
@@ -1000,9 +1450,16 @@
         "url": "https://ko.wikipedia.org/wiki/금성사",
         "name": "위키백과 금성사",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B8%88%EC%84%B1%EC%82%AC",
+        "name": "위키백과: 금성사",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1958,
@@ -1018,7 +1475,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1958,
@@ -1034,7 +1492,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1958,
@@ -1050,7 +1509,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1958,
@@ -1066,7 +1526,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1958,
@@ -1082,7 +1543,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1959,
@@ -1098,7 +1560,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1959,
@@ -1114,7 +1577,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1959,
@@ -1130,7 +1594,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1959,
@@ -1146,7 +1611,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1959,
@@ -1160,8 +1626,15 @@
         "url": "https://en.wikipedia.org/wiki/Sageuk",
         "name": "영어 위키백과 Sageuk",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EC%A2%85_%ED%99%A9%EC%A0%9C%EC%99%80_%EC%9D%98%EC%82%AC_%EC%95%88%EC%A4%91%EA%B7%BC",
+        "name": "위키백과: 고종 황제와 의사 안중근",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   }
 ]

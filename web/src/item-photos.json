@@ -22,5 +22,701 @@
     "artist": "새한필름",
     "license": "Public domain",
     "query": "가슴 아프게"
+  },
+  "1950|칠성사이다 출시": {
+    "title": "Korea_Chilsung_Cider_01_(15891088219)",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Korea_Chilsung_Cider_01_%2815891088219%29.jpg/960px-Korea_Chilsung_Cider_01_%2815891088219%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Korea_Chilsung_Cider_01_(15891088219).jpg",
+    "artist": "Republic of Korea from Seoul, Republic of Korea",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%84%B1%EC%82%AC%EC%9D%B4%EB%8B%A4"
+  },
+  "1950|6·25 전쟁": {
+    "title": "Chosin",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/960px-Chosin.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chosin.jpg",
+    "artist": "Photo by Corporal Peter McDonald, USMC",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81"
+  },
+  "1950|6·25 전쟁 발발": {
+    "title": "Chosin",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/960px-Chosin.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chosin.jpg",
+    "artist": "Photo by Corporal Peter McDonald, USMC",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81"
+  },
+  "1950|국군 여군 창설": {
+    "title": "Women_in_military_-_Obligation_2024",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Women_in_military_-_Obligation_2024.svg/960px-Women_in_military_-_Obligation_2024.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Women_in_military_-_Obligation_2024.svg",
+    "artist": "Enyavar",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%97%AC%EA%B5%B0"
+  },
+  "1953|월간 사상계 창간": {
+    "title": "장준하",
+    "thumb": "https://upload.wikimedia.org/wikipedia/ko/3/36/%EC%9E%A5%EC%A4%80%ED%95%98.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%9E%A5%EC%A4%80%ED%95%98.jpg",
+    "artist": "장준하 기념사업회",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%83%81%EA%B3%84"
+  },
+  "1953|한국전쟁 휴전": {
+    "title": "Korea_Armistice",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Korea_Armistice.JPG/960px-Korea_Armistice.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Korea_Armistice.JPG",
+    "artist": "Kristoferb (talk)",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%9C%B4%EC%A0%84"
+  },
+  "1954|CBS 기독교방송 개국": {
+    "title": "Christian_Broadcasting_System_logo",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Christian_Broadcasting_System_logo.svg/960px-Christian_Broadcasting_System_logo.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Christian_Broadcasting_System_logo.svg",
+    "artist": "CBS 기독교방송",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/CBS_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%B0%A9%EC%86%A1%EC%82%AC)"
+  },
+  "1963|삼양라면 출시": {
+    "title": "Samyang_Ramen_20210730_002",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Samyang_Ramen_20210730_002.jpg/960px-Samyang_Ramen_20210730_002.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Samyang_Ramen_20210730_002.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%96%91%EB%9D%BC%EB%A9%B4"
+  },
+  "1964|동양방송 텔레비전 개국": {
+    "title": "Kbs-annex",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Kbs-annex.jpg/960px-Kbs-annex.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Kbs-annex.jpg",
+    "artist": "achanhk",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%96%91%EB%B0%A9%EC%86%A1"
+  },
+  "1970|경부고속도로 완공": {
+    "title": "KE-1-SP",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/KE-1-SP.jpg/960px-KE-1-SP.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:KE-1-SP.jpg",
+    "artist": "Dittwjfsdgkvkdjg",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B6%80%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C"
+  },
+  "1971|MBC 드라마 '수사반장' 첫 방송": {
+    "title": "Detective_Inspector_logo_old_1985~1988",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Detective_Inspector_logo_old_1985~1988.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Detective_Inspector_logo_old_1985~1988.png",
+    "artist": "Cramk777",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%82%AC%EB%B0%98%EC%9E%A5"
+  },
+  "1971|농심 '새우깡' 출시": {
+    "title": "새우깡_사진",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/76/%EC%83%88%EC%9A%B0%EA%B9%A1_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%83%88%EC%9A%B0%EA%B9%A1_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "앤디",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%9A%B0%EA%B9%A1"
+  },
+  "1971|실미도 사건": {
+    "title": "실미도바다건너기_44997529",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%EC%8B%A4%EB%AF%B8%EB%8F%84%EB%B0%94%EB%8B%A4%EA%B1%B4%EB%84%88%EA%B8%B0_44997529.jpg/960px-%EC%8B%A4%EB%AF%B8%EB%8F%84%EB%B0%94%EB%8B%A4%EA%B1%B4%EB%84%88%EA%B8%B0_44997529.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%8B%A4%EB%AF%B8%EB%8F%84%EB%B0%94%EB%8B%A4%EA%B1%B4%EB%84%88%EA%B8%B0_44997529.jpg",
+    "artist": "Solvaram",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%8B%A4%EB%AF%B8%EB%8F%84"
+  },
+  "1971|새우깡 출시": {
+    "title": "새우깡_사진",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/76/%EC%83%88%EC%9A%B0%EA%B9%A1_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%83%88%EC%9A%B0%EA%B9%A1_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "앤디",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%9A%B0%EA%B9%A1"
+  },
+  "1971|삼립호빵 출시": {
+    "title": "Hoppang_machine",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Hoppang_machine.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Hoppang_machine.jpg",
+    "artist": "TFurban",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%B9%B5"
+  },
+  "1972|송창식의 창밖에는 비오고요": {
+    "title": "Song_Chang-Sik",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Song_Chang-Sik.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Song_Chang-Sik.jpg",
+    "artist": "여니수니",
+    "license": "CC BY 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%86%A1%EC%B0%BD%EC%8B%9D_(%EA%B0%80%EC%88%98)"
+  },
+  "1974|세종문화회관 착공": {
+    "title": "Sejong_Center_for_the_Performing_Arts(20240413)",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Sejong_Center_for_the_Performing_Arts%2820240413%29.jpg/960px-Sejong_Center_for_the_Performing_Arts%2820240413%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sejong_Center_for_the_Performing_Arts(20240413).jpg",
+    "artist": "YellowTurtle9",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80"
+  },
+  "1974|동양제과 '초코파이' 출시": {
+    "title": "Chocolate_Pie",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Chocolate_Pie.jpg/960px-Chocolate_Pie.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chocolate_Pie.jpg",
+    "artist": "Tomomarusan",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4"
+  },
+  "1974|현대 포니, 토리노 모터쇼 공개": {
+    "title": "Hyundai_Pony_4_door_first_generation",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hyundai_Pony_4_door_first_generation.jpg/960px-Hyundai_Pony_4_door_first_generation.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Pony_4_door_first_generation.jpg",
+    "artist": "Charles01",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88"
+  },
+  "1974|오리온 초코파이 출시": {
+    "title": "Chocolate_Pie",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Chocolate_Pie.jpg/960px-Chocolate_Pie.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chocolate_Pie.jpg",
+    "artist": "Tomomarusan",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4"
+  },
+  "1974|바나나맛 우유 출시": {
+    "title": "Bananamilk",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Bananamilk.jpg/960px-Bananamilk.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Bananamilk.jpg",
+    "artist": "Jocelyndurrey",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B9%99%EA%B7%B8%EB%A0%88_%EB%B0%94%EB%82%98%EB%82%98%EB%A7%9B_%EC%9A%B0%EC%9C%A0"
+  },
+  "1975|현대 포니 생산 시작": {
+    "title": "Hyundai_Pony_4_door_first_generation",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hyundai_Pony_4_door_first_generation.jpg/960px-Hyundai_Pony_4_door_first_generation.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Pony_4_door_first_generation.jpg",
+    "artist": "Charles01",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88"
+  },
+  "1975|송창식의 왜 불러": {
+    "title": "Song_Chang-Sik",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Song_Chang-Sik.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Song_Chang-Sik.jpg",
+    "artist": "여니수니",
+    "license": "CC BY 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%86%A1%EC%B0%BD%EC%8B%9D_(%EA%B0%80%EC%88%98)"
+  },
+  "1976|현대 포니 판매 개시": {
+    "title": "Hyundai_Pony_4_door_first_generation",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hyundai_Pony_4_door_first_generation.jpg/960px-Hyundai_Pony_4_door_first_generation.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Pony_4_door_first_generation.jpg",
+    "artist": "Charles01",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88"
+  },
+  "1975|맛동산 출시": {
+    "title": "맛동산_사진",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/%EB%A7%9B%EB%8F%99%EC%82%B0_%EC%82%AC%EC%A7%84.jpg/960px-%EB%A7%9B%EB%8F%99%EC%82%B0_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%A7%9B%EB%8F%99%EC%82%B0_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "박찹쌀",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A7%9B%EB%8F%99%EC%82%B0"
+  },
+  "1976|판문점 도끼 만행 사건": {
+    "title": "DMZ_incident_tree",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/DMZ_incident_tree.jpg/960px-DMZ_incident_tree.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:DMZ_incident_tree.jpg",
+    "artist": "Service Depicted: ArmyCamera Operator: SPC 4 LONG",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%ED%8C%90%EB%AC%B8%EC%A0%90_%EB%8F%84%EB%81%BC_%EB%A7%8C%ED%96%89_%EC%82%AC%EA%B1%B4"
+  },
+  "1976|송대관의 해뜰 날": {
+    "title": "Song_Dae-Kwan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Song_Dae-Kwan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Song_Dae-Kwan.jpg",
+    "artist": "wasabcon",
+    "license": "CC BY 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%86%A1%EB%8C%80%EA%B4%80"
+  },
+  "1977|롯데샌드 출시": {
+    "title": "롯데샌드_사진",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/98/%EB%A1%AF%EB%8D%B0%EC%83%8C%EB%93%9C_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%A1%AF%EB%8D%B0%EC%83%8C%EB%93%9C_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "레츠겟잇:Let`s get eat",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0%EC%83%8C%EB%93%9C"
+  },
+  "1978|세종문화회관 개관": {
+    "title": "Sejong_Center_for_the_Performing_Arts(20240413)",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Sejong_Center_for_the_Performing_Arts%2820240413%29.jpg/960px-Sejong_Center_for_the_Performing_Arts%2820240413%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sejong_Center_for_the_Performing_Arts(20240413).jpg",
+    "artist": "YellowTurtle9",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80"
+  },
+  "1978|바나나킥 출시": {
+    "title": "바나나킥_민트초코맛",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e8/%EB%B0%94%EB%82%98%EB%82%98%ED%82%A5_%EB%AF%BC%ED%8A%B8%EC%B4%88%EC%BD%94%EB%A7%9B.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%B0%94%EB%82%98%EB%82%98%ED%82%A5_%EB%AF%BC%ED%8A%B8%EC%B4%88%EC%BD%94%EB%A7%9B.jpg",
+    "artist": "제리",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%82%98%EB%82%98%ED%82%A5_(%EA%B3%BC%EC%9E%90)"
+  },
+  "1978|심수봉의 그때 그 사람": {
+    "title": "Shim_Soo-Bong",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/57/Shim_Soo-Bong.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Shim_Soo-Bong.jpg",
+    "artist": "여니수니",
+    "license": "CC BY 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%8B%AC%EC%88%98%EB%B4%89"
+  },
+  "1979|부마 민주 항쟁": {
+    "title": "Koreas_Masan1979-10-20",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/63/Koreas_Masan1979-10-20.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Koreas_Masan1979-10-20.jpg",
+    "artist": "가매인",
+    "license": "CC0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B6%80%EB%A7%88_%EB%AF%BC%EC%A3%BC_%ED%95%AD%EC%9F%81"
+  },
+  "1979|빠다코코낫 출시": {
+    "title": "빠다코코낫_사진",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/ee/%EB%B9%A0%EB%8B%A4%EC%BD%94%EC%BD%94%EB%82%AB_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%B9%A0%EB%8B%A4%EC%BD%94%EC%BD%94%EB%82%AB_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "zziny",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B9%A0%EB%8B%A4_%EC%BD%94%EC%BD%94%EB%82%AB"
+  },
+  "1980|컬러 텔레비전 방송": {
+    "title": "RCA_Victor_Color_TV_ad_featuring_milliner_Lilly_Daché,_1959",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/cb/RCA_Victor_Color_TV_ad_featuring_milliner_Lilly_Dach%C3%A9%2C_1959.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:RCA_Victor_Color_TV_ad_featuring_milliner_Lilly_Dach%C3%A9,_1959.jpg",
+    "artist": "RCA Victor / Photographer not credited",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EC%BB%AC%EB%9F%AC_%ED%85%94%EB%A0%88%EB%B9%84%EC%A0%84"
+  },
+  "1980|김수철과 작은거인": {
+    "title": "Kim_Sucheol",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/43/Kim_Sucheol.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Kim_Sucheol.jpg",
+    "artist": "SBS Radio",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%88%98%EC%B2%A0_(%EA%B0%80%EC%88%98)"
+  },
+  "1980|카세트테이프": {
+    "title": "CassetteTypes1",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/CassetteTypes1.jpg/960px-CassetteTypes1.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:CassetteTypes1.jpg",
+    "artist": "작가 미상",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%84%B8%ED%8A%B8_%ED%85%8C%EC%9D%B4%ED%94%84"
+  },
+  "1982|컵라면": {
+    "title": "Cup-Noodles-2",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Cup-Noodles-2.jpg/960px-Cup-Noodles-2.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cup-Noodles-2.jpg",
+    "artist": "Rainer Zenz",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%BB%B5%EB%9D%BC%EB%A9%B4"
+  },
+  "1983|정수라 - 아! 대한민국": {
+    "title": "정수라_MBC충북_더_트로트",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e5/%EC%A0%95%EC%88%98%EB%9D%BC_MBC%EC%B6%A9%EB%B6%81_%EB%8D%94_%ED%8A%B8%EB%A1%9C%ED%8A%B8.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%A0%95%EC%88%98%EB%9D%BC_MBC%EC%B6%A9%EB%B6%81_%EB%8D%94_%ED%8A%B8%EB%A1%9C%ED%8A%B8.jpg",
+    "artist": "안녕!MBC충북",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%A0%95%EC%88%98%EB%9D%BC"
+  },
+  "1983|이문세 - 나는 행복한 사람": {
+    "title": "Lee_Moon-se_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/90/Lee_Moon-se_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lee_Moon-se_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8"
+  },
+  "1984|이선희 - J에게": {
+    "title": "Lee_Sun-Hee",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/6/66/Lee_Sun-Hee.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lee_Sun-Hee.jpg",
+    "artist": "여니수니",
+    "license": "CC BY 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%84%A0%ED%9D%AC"
+  },
+  "1985|이문세 - 난 아직 모르잖아요": {
+    "title": "Lee_Moon-se_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/90/Lee_Moon-se_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lee_Moon-se_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8"
+  },
+  "1985|쇼 프로그램 토요일 토요일은 즐거워": {
+    "title": "Saturday_is_fun_logo_old",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/14/Saturday_is_fun_logo_old.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Saturday_is_fun_logo_old.png",
+    "artist": "Cramk777",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%86%A0%EC%9A%94%EC%9D%BC!_%ED%86%A0%EC%9A%94%EC%9D%BC%EC%9D%80_%EC%A6%90%EA%B1%B0%EC%9B%8C"
+  },
+  "1986|김완선 - 오늘 밤": {
+    "title": "Kim_Wan-sun_in_June_2025",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Kim_Wan-sun_in_June_2025.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Kim_Wan-sun_in_June_2025.png",
+    "artist": "SBS Radio",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%99%84%EC%84%A0"
+  },
+  "1986|신라면": {
+    "title": "Ramyun_cooking_image",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Ramyun_cooking_image.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Ramyun_cooking_image.png",
+    "artist": "Beboldtlsfkaus",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EB%9D%BC%EB%A9%B4"
+  },
+  "1987|이문세 - 깊은 밤을 날아서": {
+    "title": "Lee_Moon-se_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/90/Lee_Moon-se_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lee_Moon-se_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8"
+  },
+  "1987|제13대 대통령 선거": {
+    "title": "1987_Republic_of_Korea_Presidential_Election,_Provincial-level_divisions",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/1987_Republic_of_Korea_Presidential_Election%2C_Provincial-level_divisions.svg/960px-1987_Republic_of_Korea_Presidential_Election%2C_Provincial-level_divisions.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:1987_Republic_of_Korea_Presidential_Election,_Provincial-level_divisions.svg",
+    "artist": "沁水湾",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C13%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0"
+  },
+  "1988|이상은 - 담다디": {
+    "title": "Leesangeun140928",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/a/af/Leesangeun140928.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Leesangeun140928.jpg",
+    "artist": "Ltfan070624",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%83%81%EC%9D%80_(%EA%B0%80%EC%88%98)"
+  },
+  "1988|애니메이션 달려라 하니": {
+    "title": "Logo_series_manga_ko",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Logo_series_manga_ko.svg/960px-Logo_series_manga_ko.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Logo_series_manga_ko.svg",
+    "artist": "Original: 고솜 Vector: ReneeWrites",
+    "license": "CC BY 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8B%AC%EB%A0%A4%EB%9D%BC_%ED%95%98%EB%8B%88"
+  },
+  "1988|변진섭 - 홀로 된다는 것": {
+    "title": "Byun_Jin-sub_May_2017",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Byun_Jin-sub_May_2017.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Byun_Jin-sub_May_2017.png",
+    "artist": "K-POPIT 케이팝잇",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD"
+  },
+  "1989|변진섭 - 너에게로 또다시": {
+    "title": "Byun_Jin-sub_May_2017",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Byun_Jin-sub_May_2017.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Byun_Jin-sub_May_2017.png",
+    "artist": "K-POPIT 케이팝잇",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD"
+  },
+  "1989|변진섭 - 희망사항": {
+    "title": "Byun_Jin-sub_May_2017",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Byun_Jin-sub_May_2017.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Byun_Jin-sub_May_2017.png",
+    "artist": "K-POPIT 케이팝잇",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD"
+  },
+  "1989|롯데월드 어드벤처 개장": {
+    "title": "Khitai7",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Khitai7.jpg/960px-Khitai7.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Khitai7.jpg",
+    "artist": "Khitai (a flickr user)",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C"
+  },
+  "1990|이승철 〈마지막 콘서트〉": {
+    "title": "Lee_Seung-cheol_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Lee_Seung-cheol_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lee_Seung-cheol_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8A%B9%EC%B2%A0"
+  },
+  "1990|강수지 〈보랏빛 향기〉": {
+    "title": "Kang_Susie_in_April_2025",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Kang_Susie_in_April_2025.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Kang_Susie_in_April_2025.png",
+    "artist": "coffee",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%88%98%EC%A7%80"
+  },
+  "1990|베이징 아시안게임": {
+    "title": "Asian_Games_logo",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Asian_Games_logo.svg/960px-Asian_Games_logo.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Asian_Games_logo.svg",
+    "artist": "Olympic Council of Asia",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%8B%9C%EC%95%88_%EA%B2%8C%EC%9E%84"
+  },
+  "1991|세계탁구선수권대회 남북 단일팀": {
+    "title": "Unification_flag_of_Korea",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Unification_flag_of_Korea.svg/960px-Unification_flag_of_Korea.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Unification_flag_of_Korea.svg",
+    "artist": "File:Unification flag of Korea (pre 2006).svg: Various derivative work: Valentim",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%82%A8%EB%B6%81_%EB%8B%A8%EC%9D%BC%ED%8C%80"
+  },
+  "1991|SBS 개국": {
+    "title": "목동_SBS_방송센터",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/%EB%AA%A9%EB%8F%99_SBS_%EB%B0%A9%EC%86%A1%EC%84%BC%ED%84%B0.png/960px-%EB%AA%A9%EB%8F%99_SBS_%EB%B0%A9%EC%86%A1%EC%84%BC%ED%84%B0.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%AA%A9%EB%8F%99_SBS_%EB%B0%A9%EC%86%A1%EC%84%BC%ED%84%B0.png",
+    "artist": "Teddy66",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/SBS"
+  },
+  "1994|성수대교 붕괴": {
+    "title": "2000년대_초반_서울소방_소방공무원(소방관)_활동_사진_1994년_성수대교붕괴",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90%28%EC%86%8C%EB%B0%A9%EA%B4%80%29_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_1994%EB%85%84_%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90%EB%B6%95%EA%B4%B4.JPG/960px-2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90%28%EC%86%8C%EB%B0%A9%EA%B4%80%29_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_1994%EB%85%84_%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90%EB%B6%95%EA%B4%B4.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90(%EC%86%8C%EB%B0%A9%EA%B4%80)_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_1994%EB%85%84_%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90%EB%B6%95%EA%B4%B4.JPG",
+    "artist": "서울특별시 소방재난본부",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90_%EB%B6%95%EA%B4%B4_%EC%82%AC%EA%B3%A0"
+  },
+  "1995|터보 〈나 어릴 적 꿈〉": {
+    "title": "20160730-P1000510_(28591534890)",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/20160730-P1000510_%2828591534890%29.jpg/960px-20160730-P1000510_%2828591534890%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:20160730-P1000510_(28591534890).jpg",
+    "artist": "mduangdara from Midlothian, VA, United States",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%84%B0%EB%B3%B4_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)"
+  },
+  "1995|DJ DOC 〈머피의 법칙〉": {
+    "title": "DJ_DOC_@_Cyworld_Dream_Music_Festival_싸이월드_드림_뮤직_페스티벌_42",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/DJ_DOC_%40_Cyworld_Dream_Music_Festival_%EC%8B%B8%EC%9D%B4%EC%9B%94%EB%93%9C_%EB%93%9C%EB%A6%BC_%EB%AE%A4%EC%A7%81_%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_42.jpg/960px-DJ_DOC_%40_Cyworld_Dream_Music_Festival_%EC%8B%B8%EC%9D%B4%EC%9B%94%EB%93%9C_%EB%93%9C%EB%A6%BC_%EB%AE%A4%EC%A7%81_%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_42.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:DJ_DOC_@_Cyworld_Dream_Music_Festival_%EC%8B%B8%EC%9D%B4%EC%9B%94%EB%93%9C_%EB%93%9C%EB%A6%BC_%EB%AE%A4%EC%A7%81_%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_42.jpg",
+    "artist": "Jinho Jung from Seoul, South Korea",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/DJ_DOC"
+  },
+  "1995|삼풍백화점 붕괴": {
+    "title": "2000년대_초반_서울소방_소방공무원(소방관)_활동_사진_삼풍003",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90%28%EC%86%8C%EB%B0%A9%EA%B4%80%29_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_%EC%82%BC%ED%92%8D003.jpg/960px-2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90%28%EC%86%8C%EB%B0%A9%EA%B4%80%29_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_%EC%82%BC%ED%92%8D003.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2000%EB%85%84%EB%8C%80_%EC%B4%88%EB%B0%98_%EC%84%9C%EC%9A%B8%EC%86%8C%EB%B0%A9_%EC%86%8C%EB%B0%A9%EA%B3%B5%EB%AC%B4%EC%9B%90(%EC%86%8C%EB%B0%A9%EA%B4%80)_%ED%99%9C%EB%8F%99_%EC%82%AC%EC%A7%84_%EC%82%BC%ED%92%8D003.jpg",
+    "artist": "서울특별시 소방재난본부",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%82%BC%ED%92%8D%EB%B0%B1%ED%99%94%EC%A0%90_%EB%B6%95%EA%B4%B4_%EC%82%AC%EA%B3%A0"
+  },
+  "1996|박진영 〈그녀는 예뻤다〉": {
+    "title": "Park_Jin-young_(Founder_of_JYP_Entertainment)_in_February_2011_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/75/Park_Jin-young_%28Founder_of_JYP_Entertainment%29_in_February_2011_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Park_Jin-young_(Founder_of_JYP_Entertainment)_in_February_2011_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%A7%84%EC%98%81"
+  },
+  "1996|서지원 〈내 눈물 모아〉": {
+    "title": "서지원_서명",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/%EC%84%9C%EC%A7%80%EC%9B%90_%EC%84%9C%EB%AA%85.png/960px-%EC%84%9C%EC%A7%80%EC%9B%90_%EC%84%9C%EB%AA%85.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%84%9C%EC%A7%80%EC%9B%90_%EC%84%9C%EB%AA%85.png",
+    "artist": "서지원",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%A7%80%EC%9B%90"
+  },
+  "1996|이문세 〈조조할인〉": {
+    "title": "Lee_Moon-se_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/90/Lee_Moon-se_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lee_Moon-se_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8"
+  },
+  "1997|DJ DOC 〈DOC와 춤을〉": {
+    "title": "DJ_DOC_@_Cyworld_Dream_Music_Festival_싸이월드_드림_뮤직_페스티벌_42",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/DJ_DOC_%40_Cyworld_Dream_Music_Festival_%EC%8B%B8%EC%9D%B4%EC%9B%94%EB%93%9C_%EB%93%9C%EB%A6%BC_%EB%AE%A4%EC%A7%81_%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_42.jpg/960px-DJ_DOC_%40_Cyworld_Dream_Music_Festival_%EC%8B%B8%EC%9D%B4%EC%9B%94%EB%93%9C_%EB%93%9C%EB%A6%BC_%EB%AE%A4%EC%A7%81_%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_42.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:DJ_DOC_@_Cyworld_Dream_Music_Festival_%EC%8B%B8%EC%9D%B4%EC%9B%94%EB%93%9C_%EB%93%9C%EB%A6%BC_%EB%AE%A4%EC%A7%81_%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C_42.jpg",
+    "artist": "Jinho Jung from Seoul, South Korea",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/DJ_DOC"
+  },
+  "1997|제15대 대통령 선거": {
+    "title": "1997_Republic_of_Korea_Presidential_Election,_Provincial-level_divisions",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/1997_Republic_of_Korea_Presidential_Election%2C_Provincial-level_divisions.svg/960px-1997_Republic_of_Korea_Presidential_Election%2C_Provincial-level_divisions.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:1997_Republic_of_Korea_Presidential_Election,_Provincial-level_divisions.svg",
+    "artist": "沁水湾",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C15%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0"
+  },
+  "1998|신화 〈해결사〉": {
+    "title": "신화_20주년_기념_팬파티",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b5/%EC%8B%A0%ED%99%94_20%EC%A3%BC%EB%85%84_%EA%B8%B0%EB%85%90_%ED%8C%AC%ED%8C%8C%ED%8B%B0.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%8B%A0%ED%99%94_20%EC%A3%BC%EB%85%84_%EA%B8%B0%EB%85%90_%ED%8C%AC%ED%8C%8C%ED%8B%B0.jpg",
+    "artist": "뉴스인스타",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%99%94_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)"
+  },
+  "1998|조성모 〈To Heaven〉": {
+    "title": "Jo_Sungmo_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jo_Sungmo_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Jo_Sungmo_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%B1%EB%AA%A8"
+  },
+  "1999|조성모 〈슬픈 영혼식〉": {
+    "title": "Jo_Sungmo_from_acrofan",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/e/e5/Jo_Sungmo_from_acrofan.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Jo_Sungmo_from_acrofan.jpg",
+    "artist": "acrofan.com",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%B1%EB%AA%A8"
+  },
+  "1999|god 〈어머님께〉": {
+    "title": "G.o.d._@_Seoul_Spring_Festa,_30_April_2025_09",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/G.o.d._%40_Seoul_Spring_Festa%2C_30_April_2025_09.png/960px-G.o.d._%40_Seoul_Spring_Festa%2C_30_April_2025_09.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:G.o.d._@_Seoul_Spring_Festa,_30_April_2025_09.png",
+    "artist": "K-POPIT 케이팝잇 TV10",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/God_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)"
+  },
+  "1950|한강인도교 폭파": {
+    "title": "Airview_of_bombs_dropped_by_U.S._Air_Force,_exploding_on_three_parallel_railroad_bridges_across_Han_River,_southwest_of_Seoul,_former_capitol_of_Republic_of_Korea_HD-SN-50-00935",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Airview_of_bombs_dropped_by_U.S._Air_Force%2C_exploding_on_three_parallel_railroad_bridges_across_Han_River%2C_southwest_of_Seoul%2C_former_capitol_of_Republic_of_Korea_HD-SN-50-00935.jpg/960px-thumbnail.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Airview_of_bombs_dropped_by_U.S._Air_Force,_exploding_on_three_parallel_railroad_bridges_across_Han_River,_southwest_of_Seoul,_former_capitol_of_Republic_of_Korea_HD-SN-50-00935.jpg",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B0%95%EC%9D%B8%EB%8F%84%EA%B5%90_%ED%8F%AD%ED%8C%8C"
+  },
+  "1950|인천 상륙 작전": {
+    "title": "Battle_of_Inchon",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Battle_of_Inchon.png/960px-Battle_of_Inchon.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Battle_of_Inchon.png",
+    "artist": "US Navy",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EC%B2%9C_%EC%83%81%EB%A5%99_%EC%9E%91%EC%A0%84"
+  },
+  "1950|보도연맹 학살 사건": {
+    "title": "Bodo_League_massacre_mass_grave_US_ARMY_1950",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Bodo_League_massacre_mass_grave_US_ARMY_1950.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Bodo_League_massacre_mass_grave_US_ARMY_1950.jpg",
+    "artist": "US Army",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%8F%84%EC%97%B0%EB%A7%B9_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4"
+  },
+  "1950|노근리 양민 학살 사건": {
+    "title": "No_Gun_Ri_bridge-1960",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/No_Gun_Ri_bridge-1960.jpg/960px-No_Gun_Ri_bridge-1960.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:No_Gun_Ri_bridge-1960.jpg",
+    "artist": "No Gun Ri International Peace Foundation",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%85%B8%EA%B7%BC%EB%A6%AC_%EC%96%91%EB%AF%BC_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4"
+  },
+  "1951|거창 양민 학살 사건": {
+    "title": "Geochang_massacre",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/85/Geochang_massacre.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Geochang_massacre.jpg",
+    "artist": "South Korean Government",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%B0%BD_%EC%96%91%EB%AF%BC_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4"
+  },
+  "1951|국민방위군 사건": {
+    "title": "국민방위군_징집자들",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/da/%EA%B5%AD%EB%AF%BC%EB%B0%A9%EC%9C%84%EA%B5%B0_%EC%A7%95%EC%A7%91%EC%9E%90%EB%93%A4.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EA%B5%AD%EB%AF%BC%EB%B0%A9%EC%9C%84%EA%B5%B0_%EC%A7%95%EC%A7%91%EC%9E%90%EB%93%A4.jpg",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B5%AD%EB%AF%BC%EB%B0%A9%EC%9C%84%EA%B5%B0_%EC%82%AC%EA%B1%B4"
+  },
+  "1954|사사오입 개헌": {
+    "title": "이철승,_최순주",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/%EC%9D%B4%EC%B2%A0%EC%8A%B9%2C_%EC%B5%9C%EC%88%9C%EC%A3%BC.jpg/960px-%EC%9D%B4%EC%B2%A0%EC%8A%B9%2C_%EC%B5%9C%EC%88%9C%EC%A3%BC.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%9D%B4%EC%B2%A0%EC%8A%B9,_%EC%B5%9C%EC%88%9C%EC%A3%BC.jpg",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%82%AC%EC%98%A4%EC%9E%85_%EA%B0%9C%ED%97%8C"
+  },
+  "1951|1·4 후퇴": {
+    "title": "ChineseKoreanWarPoster",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/16/ChineseKoreanWarPoster.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:ChineseKoreanWarPoster.jpg",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/1%C2%B74_%ED%9B%84%ED%87%B4"
+  },
+  "1961|5·16 군사정변": {
+    "title": "5.16_Coup_Park_Chung-hee",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/5.16_Coup_Park_Chung-hee.jpg/960px-5.16_Coup_Park_Chung-hee.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:5.16_Coup_Park_Chung-hee.jpg",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/5%C2%B716_%EA%B5%B0%EC%82%AC%EC%A0%95%EB%B3%80"
+  },
+  "1960|4·19 혁명": {
+    "title": "4.19_혁명",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8a/4.19_%ED%98%81%EB%AA%85.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:4.19_%ED%98%81%EB%AA%85.jpg",
+    "artist": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/4%C2%B719_%ED%98%81%EB%AA%85"
+  },
+  "1963|돌아오지 않는 해병": {
+    "title": "20240927_애기봉_포토워크_Real_rism_18",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/20240927_%EC%95%A0%EA%B8%B0%EB%B4%89_%ED%8F%AC%ED%86%A0%EC%9B%8C%ED%81%AC_Real_rism_18.jpg/960px-20240927_%EC%95%A0%EA%B8%B0%EB%B4%89_%ED%8F%AC%ED%86%A0%EC%9B%8C%ED%81%AC_Real_rism_18.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:20240927_%EC%95%A0%EA%B8%B0%EB%B4%89_%ED%8F%AC%ED%86%A0%EC%9B%8C%ED%81%AC_Real_rism_18.jpg",
+    "artist": "Real rism",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8F%8C%EC%95%84%EC%98%A4%EC%A7%80_%EC%95%8A%EB%8A%94_%ED%95%B4%EB%B3%91"
+  },
+  "1968|1·21 사태": {
+    "title": "Bukaksan_pine_tree_with_bulletholes_marked",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bukaksan_pine_tree_with_bulletholes_marked.jpg/960px-Bukaksan_pine_tree_with_bulletholes_marked.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Bukaksan_pine_tree_with_bulletholes_marked.jpg",
+    "artist": "Mztourist",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/1%C2%B721_%EC%82%AC%ED%83%9C"
+  },
+  "1968|울진·삼척 무장공비 침투 사건": {
+    "title": "UljinSamcheok8",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/UljinSamcheok8.png/960px-UljinSamcheok8.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:UljinSamcheok8.png",
+    "artist": "Bureau of Public Information (공보처 홍보국 사진담당관)",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9A%B8%EC%A7%84%C2%B7%EC%82%BC%EC%B2%99_%EB%AC%B4%EC%9E%A5%EA%B3%B5%EB%B9%84_%EC%B9%A8%ED%88%AC_%EC%82%AC%EA%B1%B4"
+  },
+  "1969|대한항공 YS-11기 납북 사건": {
+    "title": "Korean_Airlines_YS-11A_Cargo_type_大韓航空",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Korean_Airlines_YS-11A_Cargo_type_%E5%A4%A7%E9%9F%93%E8%88%AA%E7%A9%BA.jpg/960px-Korean_Airlines_YS-11A_Cargo_type_%E5%A4%A7%E9%9F%93%E8%88%AA%E7%A9%BA.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Korean_Airlines_YS-11A_Cargo_type_%E5%A4%A7%E9%9F%93%E8%88%AA%E7%A9%BA.jpg",
+    "artist": "Japangyro",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5_YS-11%EA%B8%B0_%EB%82%A9%EB%B6%81_%EC%82%AC%EA%B1%B4"
+  },
+  "1987|박종철 고문치사 사건": {
+    "title": "Park_Jong_Cheol_Memorial_Room_in_Namyeongdong_Daegong_Bunsil",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Park_Jong_Cheol_Memorial_Room_in_Namyeongdong_Daegong_Bunsil.jpg/960px-Park_Jong_Cheol_Memorial_Room_in_Namyeongdong_Daegong_Bunsil.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Park_Jong_Cheol_Memorial_Room_in_Namyeongdong_Daegong_Bunsil.jpg",
+    "artist": "Jjw",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%A2%85%EC%B2%A0_%EA%B3%A0%EB%AC%B8%EC%B9%98%EC%82%AC_%EC%82%AC%EA%B1%B4"
+  },
+  "1987|대한항공 858편 폭파 사건": {
+    "title": "Korean_Air_HL7406_Boeing_707-3B5C_at_Nagoya_Airport,_October_1987",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Korean_Air_HL7406_Boeing_707-3B5C_at_Nagoya_Airport%2C_October_1987.jpg/960px-Korean_Air_HL7406_Boeing_707-3B5C_at_Nagoya_Airport%2C_October_1987.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Korean_Air_HL7406_Boeing_707-3B5C_at_Nagoya_Airport,_October_1987.jpg",
+    "artist": "ハミングバードさん",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5_858%ED%8E%B8_%ED%8F%AD%ED%8C%8C_%EC%82%AC%EA%B1%B4"
+  },
+  "2017|꼬북칩 출시": {
+    "title": "Kkobuk_Chip_20201126_004",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Kkobuk_Chip_20201126_004.jpg/960px-Kkobuk_Chip_20201126_004.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Kkobuk_Chip_20201126_004.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EA%BC%AC%EB%B6%81%EC%B9%A9"
   }
 }

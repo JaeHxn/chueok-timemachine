@@ -16,9 +16,16 @@
         "url": "https://journal.kci.go.kr/djnar/archive/articlePdf?artiId=ART001670112",
         "name": "한국학술지인용색인, 아씨 관련 연구",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%94%A8_(1997%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 아씨 (1997년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -34,7 +41,31 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1970,
+    "month": 6,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "사랑과 슬픔의 강",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사랑과_슬픔의_강",
+        "name": "위키백과: 사랑과 슬픔의 강",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EA%B3%BC_%EC%8A%AC%ED%94%94%EC%9D%98_%EA%B0%95",
+        "name": "위키백과: 사랑과 슬픔의 강",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -48,9 +79,16 @@
         "url": "https://ko.wikipedia.org/wiki/경부고속도로",
         "name": "위키백과 경부고속도로",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B6%80%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C",
+        "name": "위키백과: 경부고속도로",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -64,9 +102,56 @@
         "url": "https://ko.wikipedia.org/wiki/아침이슬",
         "name": "위키백과 아침이슬",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1970,
+    "month": 8,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "어명",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/어명",
+        "name": "위키백과: 어명",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%AA%85",
+        "name": "위키백과: 어명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1970,
+    "month": 9,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "물레방아 (드라마)",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/물레방아_(드라마)",
+        "name": "위키백과: 물레방아 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -82,7 +167,25 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1970,
+    "month": 10,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "길 (1970년 드라마)",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/길_(1970년_드라마)",
+        "name": "위키백과: 길 (1970년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -96,9 +199,16 @@
         "url": "https://ko.wikipedia.org/wiki/전태일",
         "name": "위키백과 전태일",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%ED%83%9C%EC%9D%BC",
+        "name": "위키백과: 전태일",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -114,7 +224,31 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1970,
+    "month": 11,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "동춘 (영화)",
+    "summary": "정진우 감독의 영화로, 김희라·문희·최무룡이 출연했다. 이듬해 백상예술대상과 부일영화상에서 작품상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/동춘_(영화)",
+        "name": "위키백과: 동춘 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%B6%98",
+        "name": "위키백과: 동춘",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -135,7 +269,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -156,7 +291,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -172,7 +308,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -193,7 +330,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -209,7 +347,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -225,7 +364,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1970,
@@ -241,7 +381,59 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1970,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "무영탑 (1970년 영화)",
+    "summary": "현진건의 소설을 원작으로 김수용이 연출한 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/무영탑_(1970년_영화)",
+        "name": "위키백과: 무영탑 (1970년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1971,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "꽃님이",
+    "summary": "1971년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/꽃님이",
+        "name": "위키백과: 꽃님이",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1971,
+    "month": 2,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "쌍무지개 뜨는 언덕",
+    "summary": "1971년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/쌍무지개_뜨는_언덕",
+        "name": "위키백과: 쌍무지개 뜨는 언덕",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -255,9 +447,33 @@
         "url": "https://ko.wikipedia.org/wiki/수사반장",
         "name": "위키백과 수사반장",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%82%AC%EB%B0%98%EC%9E%A5",
+        "name": "위키백과: 수사반장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1971,
+    "month": 7,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "장희빈 (1971년 드라마)",
+    "summary": "1971년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/장희빈_(1971년_드라마)",
+        "name": "위키백과: 장희빈 (1971년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -271,9 +487,16 @@
         "url": "https://ko.wikipedia.org/wiki/광주_대단지_사건",
         "name": "위키백과 광주 대단지 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B4%91%EC%A3%BC%EB%8C%80%EB%8B%A8%EC%A7%80_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 광주대단지 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -287,9 +510,16 @@
         "url": "https://ko.wikipedia.org/wiki/실미도_사건",
         "name": "위키백과 실미도 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%A4%EB%AF%B8%EB%8F%84",
+        "name": "위키백과: 실미도",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -305,7 +535,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -321,7 +552,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -340,9 +572,16 @@
         "url": "https://www.newsis.com/view/NISX20260224_0003524707",
         "name": "뉴시스 '55살 과자업계 큰 형님 농심 새우깡'(2026-02-24)",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%9A%B0%EA%B9%A1",
+        "name": "위키백과: 새우깡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -356,9 +595,16 @@
         "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
         "name": "농심, 2017 연차보고서 연혁",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%9A%B0%EA%B9%A1",
+        "name": "위키백과: 새우깡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -374,7 +620,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -388,9 +635,16 @@
         "url": "https://ko.wikipedia.org/wiki/아침이슬",
         "name": "위키백과 아침이슬",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -406,7 +660,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -425,9 +680,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%80%ED%9D%AC_(1951%EB%85%84)",
+        "name": "위키백과: 은희 (1951년)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -448,7 +710,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -462,9 +725,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -478,9 +748,16 @@
         "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
         "name": "월간조선, 장수 식품 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%B9%B5",
+        "name": "위키백과: 호빵",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1971,
@@ -496,7 +773,42 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "분례기",
+    "summary": "1971년에 개봉한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/분례기",
+        "name": "위키백과: 분례기",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "성웅 이순신",
+    "summary": "이순신을 소재로 한 1971년 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/성웅_이순신",
+        "name": "위키백과: 성웅 이순신",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -512,7 +824,25 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1972,
+    "month": 2,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "대원군 (1972년 드라마)",
+    "summary": "1972년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대원군_(1972년_드라마)",
+        "name": "위키백과: 대원군 (1972년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -528,7 +858,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -542,9 +873,16 @@
         "url": "https://ko.wikipedia.org/wiki/여로_(드라마)",
         "name": "위키백과 여로 (드라마)",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EB%A1%9C",
+        "name": "위키백과: 여로",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -558,9 +896,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0036330",
         "name": "한국민족문화대백과사전, 여로",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EB%A1%9C_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 여로 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -574,9 +919,62 @@
         "url": "https://ko.wikipedia.org/wiki/7·4_남북_공동_성명",
         "name": "위키백과 7·4 남북 공동 성명",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/7%C2%B74_%EB%82%A8%EB%B6%81_%EA%B3%B5%EB%8F%99_%EC%84%B1%EB%AA%85",
+        "name": "위키백과: 7·4 남북 공동 성명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1972,
+    "month": 8,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "새엄마 (1972년 드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새엄마_(1972년_드라마)",
+        "name": "위키백과: 새엄마 (1972년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%97%84%EB%A7%88_(1972%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 새엄마 (1972년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1972,
+    "month": 10,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "충녀",
+    "summary": "김기영이 감독과 각본을 맡은 영화로, 1972년 10월 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/충녀",
+        "name": "위키백과: 충녀",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B6%A9%EB%85%80",
+        "name": "위키백과: 충녀",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -592,7 +990,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -608,7 +1007,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -624,7 +1024,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -638,9 +1039,16 @@
         "url": "https://ko.wikipedia.org/wiki/돌아와요_부산항에",
         "name": "위키백과 돌아와요 부산항에",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%8C%EC%95%84%EC%99%80%EC%9A%94_%EB%B6%80%EC%82%B0%ED%95%AD%EC%97%90",
+        "name": "위키백과: 돌아와요 부산항에",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "low"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -654,9 +1062,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EC%B0%BD%EC%8B%9D_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 송창식 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1972,
@@ -672,7 +1087,42 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "무녀도 (1972년 영화)",
+    "summary": "1972년에 개봉한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/무녀도_(1972년_영화)",
+        "name": "위키백과: 무녀도 (1972년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "궁녀 (1972년 영화)",
+    "summary": "1972년에 개봉한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/궁녀_(1972년_영화)",
+        "name": "위키백과: 궁녀 (1972년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -688,7 +1138,48 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1973,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "파도 (1973년 드라마)",
+    "summary": "1973년에 방송된 KBS 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/파도_(1973년_드라마)",
+        "name": "위키백과: 파도 (1973년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1973,
+    "month": 2,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "한백년",
+    "summary": "1973년에 방송된 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/한백년",
+        "name": "위키백과: 한백년",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EB%B0%B1%EB%85%84",
+        "name": "위키백과: 한백년",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -704,7 +1195,31 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1973,
+    "month": 4,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "민비 (드라마)",
+    "summary": "김영애가 주연한 MBC 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/민비_(드라마)",
+        "name": "위키백과: 민비 (드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AF%BC%EB%B9%84",
+        "name": "위키백과: 민비",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -720,7 +1235,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -734,9 +1250,16 @@
         "url": "https://ko.wikipedia.org/wiki/김대중_납치_사건",
         "name": "위키백과 김대중 납치 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EB%8C%80%EC%A4%91_%EB%82%A9%EC%B9%98_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 김대중 납치 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -752,7 +1275,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -768,7 +1292,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -784,7 +1309,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -800,7 +1326,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -816,7 +1343,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -837,7 +1365,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -853,7 +1382,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -869,7 +1399,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -885,7 +1416,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1973,
@@ -901,7 +1433,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -915,9 +1448,39 @@
         "url": "https://ko.wikipedia.org/wiki/세종문화회관",
         "name": "위키백과 세종문화회관",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80",
+        "name": "위키백과: 세종문화회관",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1974,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "강남가족",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/강남가족",
+        "name": "위키백과: 강남가족",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%82%A8%EA%B0%80%EC%A1%B1",
+        "name": "위키백과: 강남가족",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -933,7 +1496,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -947,9 +1511,39 @@
         "url": "https://ko.wikipedia.org/wiki/초코파이",
         "name": "위키백과 초코파이",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4",
+        "name": "위키백과: 초코파이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1974,
+    "month": 4,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "별들의 고향 (영화)",
+    "summary": "최인호의 베스트셀러를 이장호 감독이 영화화했다. 당시 46만 5천 명의 관객을 동원하며 흥행했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/별들의_고향_(영화)",
+        "name": "위키백과: 별들의 고향 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%84%EB%93%A4%EC%9D%98_%EA%B3%A0%ED%96%A5",
+        "name": "위키백과: 별들의 고향",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -965,7 +1559,25 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1974,
+    "month": 6,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "수선화 (드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/수선화_(드라마)",
+        "name": "위키백과: 수선화 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -981,7 +1593,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1002,7 +1615,25 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1974,
+    "month": 10,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "갈대 (드라마)",
+    "summary": "시청자 의견을 반영하는 시도로도 알려진 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/갈대_(드라마)",
+        "name": "위키백과: 갈대 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1016,9 +1647,16 @@
         "url": "https://ko.wikipedia.org/wiki/현대_포니",
         "name": "위키백과 현대 포니",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88",
+        "name": "위키백과: 현대 포니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1034,7 +1672,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1048,9 +1687,16 @@
         "url": "https://ko.wikipedia.org/wiki/1970년대",
         "name": "위키백과 1970년대",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AF%BC%EC%B2%AD%ED%95%99%EB%A0%A8_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 민청학련 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "low"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1066,7 +1712,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1082,7 +1729,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1098,7 +1746,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1114,7 +1763,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1130,7 +1780,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1146,7 +1797,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1160,9 +1812,16 @@
         "url": "https://www.khan.co.kr/article/200410041641441",
         "name": "경향신문, 장수 식품 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4",
+        "name": "위키백과: 초코파이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1176,9 +1835,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0080075",
         "name": "한국민족문화대백과사전, 빙그레",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B9%99%EA%B7%B8%EB%A0%88_%EB%B0%94%EB%82%98%EB%82%98%EB%A7%9B_%EC%9A%B0%EC%9C%A0",
+        "name": "위키백과: 빙그레 바나나맛 우유",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1194,7 +1860,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1974,
@@ -1210,7 +1877,48 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1975,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "어제 내린 비",
+    "summary": "이장호 감독이 연출한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/어제_내린_비",
+        "name": "위키백과: 어제 내린 비",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EC%A0%9C_%EB%82%B4%EB%A6%B0_%EB%B9%84",
+        "name": "위키백과: 어제 내린 비",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1975,
+    "month": 2,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "안녕 (드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/안녕_(드라마)",
+        "name": "위키백과: 안녕 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1226,7 +1934,31 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1975,
+    "month": 6,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "전우 (1975년 드라마)",
+    "summary": "한국 전쟁을 소재로 한 KBS 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/전우_(1975년_드라마)",
+        "name": "위키백과: 전우 (1975년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9A%B0",
+        "name": "위키백과: 전우",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1240,9 +1972,16 @@
         "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
         "name": "농심, 2017 연차보고서 연혁",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%86%8D%EC%8B%AC",
+        "name": "위키백과: 농심",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1258,7 +1997,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1274,7 +2014,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1288,9 +2029,16 @@
         "url": "https://ko.wikipedia.org/wiki/아침이슬",
         "name": "위키백과 아침이슬",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1306,7 +2054,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1320,9 +2069,16 @@
         "url": "https://ko.wikipedia.org/wiki/현대_포니",
         "name": "위키백과 현대 포니",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88",
+        "name": "위키백과: 현대 포니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1343,7 +2099,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1359,7 +2116,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1373,9 +2131,16 @@
         "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
         "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%B3%B4%EB%93%A4%EC%9D%98_%ED%96%89%EC%A7%84_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 바보들의 행진 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1389,9 +2154,16 @@
         "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
         "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%9E%98%EC%82%AC%EB%83%A5_(%EB%85%B8%EB%9E%98)",
+        "name": "위키백과: 고래사냥 (노래)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1405,9 +2177,16 @@
         "url": "https://archives.kdemo.or.kr/workoutlog/workoutlog/view/BRR_1975_12_09_n001",
         "name": "민주화운동기념사업회, 대중가요 방송 금지 관련 기록",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EC%B0%BD%EC%8B%9D_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 송창식 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1975,
@@ -1421,9 +2200,16 @@
         "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
         "name": "한국농수산식품유통공사, 과자류 시장 보고서",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%9B%EB%8F%99%EC%82%B0",
+        "name": "위키백과: 맛동산",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1437,9 +2223,39 @@
         "url": "https://ko.wikipedia.org/wiki/현대_포니",
         "name": "위키백과 현대 포니",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88",
+        "name": "위키백과: 현대 포니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1976,
+    "month": 3,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "윤진사댁 며느리",
+    "summary": "1976년에 방송된 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/윤진사댁_며느리",
+        "name": "위키백과: 윤진사댁 며느리",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9C%A4%EC%A7%84%EC%82%AC%EB%8C%81_%EB%A9%B0%EB%8A%90%EB%A6%AC",
+        "name": "위키백과: 윤진사댁 며느리",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1455,7 +2271,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1471,7 +2288,54 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1976,
+    "month": 5,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "여고 동창생 (1976년 드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/여고_동창생_(1976년_드라마)",
+        "name": "위키백과: 여고 동창생 (1976년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EA%B3%A0_%EB%8F%99%EC%B0%BD%EC%83%9D_(1976%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 여고 동창생 (1976년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1976,
+    "month": 5,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "철이의 모험",
+    "summary": "톰 소여 이야기를 원작으로 한 어린이 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/철이의_모험",
+        "name": "위키백과: 철이의 모험",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%A0%EC%9D%B4%EC%9D%98_%EB%AA%A8%ED%97%98",
+        "name": "위키백과: 철이의 모험",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1487,7 +2351,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1501,9 +2366,39 @@
         "url": "https://ko.wikipedia.org/wiki/판문점_도끼_만행_사건",
         "name": "위키백과 판문점 도끼 만행 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8C%90%EB%AC%B8%EC%A0%90_%EB%8F%84%EB%81%BC_%EB%A7%8C%ED%96%89_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 판문점 도끼 만행 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1976,
+    "month": 10,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "황금부처의 비밀",
+    "summary": "1976년에 방송된 어린이 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/황금부처의_비밀",
+        "name": "위키백과: 황금부처의 비밀",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%99%A9%EA%B8%88%EB%B6%80%EC%B2%98%EC%9D%98_%EB%B9%84%EB%B0%80",
+        "name": "위키백과: 황금부처의 비밀",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1524,7 +2419,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1540,7 +2436,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1556,7 +2453,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1570,9 +2468,16 @@
         "url": "https://www.weiv.co.kr/archives/10632",
         "name": "weiv, 1976~1978년 대중음악 회고",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EB%8C%80%EA%B4%80",
+        "name": "위키백과: 송대관",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1588,7 +2493,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1604,7 +2510,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1620,7 +2527,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1634,9 +2542,16 @@
         "url": "https://www.weiv.co.kr/archives/10632",
         "name": "weiv, 1976~1978년 대중음악 회고",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%9D%80%ED%95%98",
+        "name": "위키백과: 이은하",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1652,7 +2567,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1668,7 +2584,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1684,7 +2601,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1698,9 +2616,16 @@
         "url": "https://eiec.kdi.re.kr/userdata/nara/200807/200807.pdf",
         "name": "한국개발연구원 경제정보센터, 나라경제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%B0%A4%EB%B0%94",
+        "name": "위키백과: 바밤바",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1976,
@@ -1716,7 +2641,71 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1977,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "고교얄개",
+    "summary": "석래명 감독의 청춘 영화로, 개봉 보름도 되지 않아 관객 10만 명을 돌파했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/고교얄개",
+        "name": "위키백과: 고교얄개",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EA%B5%90%EC%96%84%EA%B0%9C",
+        "name": "위키백과: 고교얄개",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1977,
+    "month": 5,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "당신 (1977년 드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/당신_(1977년_드라마)",
+        "name": "위키백과: 당신 (1977년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1977,
+    "month": 6,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "특파원 001",
+    "summary": "1977년에 방송된 MBC 어린이 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/특파원_001",
+        "name": "위키백과: 특파원 001",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8A%B9%ED%8C%8C%EC%9B%90_001",
+        "name": "위키백과: 특파원 001",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1730,9 +2719,39 @@
         "url": "https://ko.wikipedia.org/wiki/MBC_대학가요제",
         "name": "위키백과 MBC 대학가요제",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%98_%EC%96%B4%EB%96%A1%ED%95%B4",
+        "name": "위키백과: 나 어떡해",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1977,
+    "month": 10,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "전설의 고향",
+    "summary": "민간 설화를 바탕으로 만든 드라마 시리즈로 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/전설의_고향",
+        "name": "위키백과: 전설의 고향",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%84%A4%EC%9D%98_%EA%B3%A0%ED%96%A5",
+        "name": "위키백과: 전설의 고향",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1746,9 +2765,39 @@
         "url": "https://ko.wikipedia.org/wiki/이리역_폭발_사고",
         "name": "위키백과 이리역 폭발 사고",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%A6%AC%EC%97%AD_%ED%8F%AD%EB%B0%9C_%EC%82%AC%EA%B3%A0",
+        "name": "위키백과: 이리역 폭발 사고",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1977,
+    "month": 11,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "후회합니다",
+    "summary": "1977년에 방송된 MBC 주말 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/후회합니다",
+        "name": "위키백과: 후회합니다",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%9B%84%ED%9A%8C%ED%95%A9%EB%8B%88%EB%8B%A4",
+        "name": "위키백과: 후회합니다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1764,7 +2813,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1785,7 +2835,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1801,7 +2852,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1815,9 +2867,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014887",
         "name": "한국민족문화대백과사전, 대학가요제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/MBC_%EB%8C%80%ED%95%99%EA%B0%80%EC%9A%94%EC%A0%9C",
+        "name": "위키백과: MBC 대학가요제",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1831,9 +2890,16 @@
         "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
         "name": "벅스, 1976년 베스트 가요 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A7%84%EC%A7%9C_%EC%A7%84%EC%A7%9C_%EC%A2%8B%EC%95%84%ED%95%B4",
+        "name": "위키백과: 진짜 진짜 좋아해",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1847,9 +2913,16 @@
         "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
         "name": "벅스, 1976년 베스트 가요 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%9C%EC%9D%80%EC%9D%B4",
+        "name": "위키백과: 혜은이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1977,
@@ -1863,9 +2936,16 @@
         "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
         "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0%EC%83%8C%EB%93%9C",
+        "name": "위키백과: 롯데샌드",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1879,9 +2959,16 @@
         "url": "https://ko.wikipedia.org/wiki/농심",
         "name": "위키백과 농심",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%86%8D%EC%8B%AC",
+        "name": "위키백과: 농심",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1895,9 +2982,16 @@
         "url": "https://ko.wikipedia.org/wiki/세종문화회관",
         "name": "위키백과 세종문화회관",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80",
+        "name": "위키백과: 세종문화회관",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1913,7 +3007,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1927,9 +3022,39 @@
         "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
         "name": "농심, 2017 연차보고서 연혁",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%82%98%EB%82%98%ED%82%A5_(%EA%B3%BC%EC%9E%90)",
+        "name": "위키백과: 바나나킥 (과자)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1978,
+    "month": 8,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "청춘의 덫 (1978년 드라마)",
+    "summary": "김수현 극본의 MBC 주말 드라마로 높은 시청률을 기록했다. 방영 중 내용에 대한 논란도 있었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/청춘의_덫_(1978년_드라마)",
+        "name": "위키백과: 청춘의 덫 (1978년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EC%B6%98%EC%9D%98_%EB%8D%AB_(1999%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 청춘의 덫 (1999년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1945,7 +3070,31 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1978,
+    "month": 10,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "행복을 팝니다",
+    "summary": "최불암과 김혜자 등이 출연한 MBC 일일 드라마다. 출연 배우들이 이 작품으로 백상예술대상 TV부문에서 공동 수상했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/행복을_팝니다",
+        "name": "위키백과: 행복을 팝니다",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%B3%B5%EC%9D%84_%ED%8C%9D%EB%8B%88%EB%8B%A4",
+        "name": "위키백과: 행복을 팝니다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1961,7 +3110,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1977,7 +3127,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1978,
@@ -1991,9 +3142,39 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014887",
         "name": "한국민족문화대백과사전, 대학가요제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%AC%EC%88%98%EB%B4%89",
+        "name": "위키백과: 심수봉",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1979,
+    "month": 5,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "내가 버린 남자",
+    "summary": "정소영이 연출하고 김수현과 이문웅이 각본을 쓴 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/내가_버린_남자",
+        "name": "위키백과: 내가 버린 남자",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%B4%EA%B0%80_%EB%B2%84%EB%A6%B0_%EB%82%A8%EC%9E%90",
+        "name": "위키백과: 내가 버린 남자",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2009,7 +3190,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2023,9 +3205,16 @@
         "url": "https://ko.wikipedia.org/wiki/부마_민주_항쟁",
         "name": "위키백과 부마 민주 항쟁",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B6%80%EB%A7%88_%EB%AF%BC%EC%A3%BC_%ED%95%AD%EC%9F%81",
+        "name": "위키백과: 부마 민주 항쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2039,9 +3228,16 @@
         "url": "https://ko.wikipedia.org/wiki/10·26_사건",
         "name": "위키백과 10·26 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/10%C2%B726_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 10·26 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2055,9 +3251,16 @@
         "url": "https://ko.wikipedia.org/wiki/1970년대",
         "name": "위키백과 1970년대",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/12%C2%B712_%EA%B5%B0%EC%82%AC_%EB%B0%98%EB%9E%80",
+        "name": "위키백과: 12·12 군사 반란",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2073,7 +3276,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2089,7 +3293,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2105,7 +3310,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2121,7 +3327,8 @@
         "license": "CC BY-SA 4.0"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2135,9 +3342,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014887",
         "name": "한국민족문화대백과사전, 대학가요제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%ED%95%99%EB%9E%98_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 김학래 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2151,9 +3365,16 @@
         "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=75086911",
         "name": "대한민국 정책브리핑, 한국인의 삶을 바꾼 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9C%A4%EC%8B%9C%EB%82%B4",
+        "name": "위키백과: 윤시내",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2169,7 +3390,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2183,9 +3405,16 @@
         "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
         "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B9%A0%EB%8B%A4_%EC%BD%94%EC%BD%94%EB%82%AB",
+        "name": "위키백과: 빠다 코코낫",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1979,
@@ -2201,6 +3430,7 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   }
 ]

@@ -1,0 +1,88 @@
+[
+  {
+    "year": 2010,
+    "month": 3,
+    "date_precision": "month",
+    "category": "가전·기술",
+    "title": "카카오톡 출시",
+    "summary": "아이폰용 카카오톡이 출시되어 모바일 메신저를 통한 대화가 시작됐다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.kakaocorp.com/page/detail/10810",
+        "name": "카카오, 카카오톡"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1",
+        "name": "위키백과: 카카오톡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 2010,
+    "month": 12,
+    "date_precision": "month",
+    "category": "가전·기술",
+    "title": "카카오톡 선물하기",
+    "summary": "카카오톡에서 지인에게 선물을 보낼 수 있는 선물하기 서비스가 시작됐다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.kakaocorp.com/page/detail/5217",
+        "name": "카카오, 선물하기의 시작"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1",
+        "name": "위키백과: 카카오톡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 2017,
+    "month": 3,
+    "date_precision": "month",
+    "category": "먹거리",
+    "title": "꼬북칩 출시",
+    "summary": "오리온이 네 겹으로 만든 과자 꼬북칩을 국내에 출시했다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.orionworld.com/theme/102114/kr/assets/upload/ORION_2023_brochure_kor.pdf",
+        "name": "오리온 2023 브로슈어"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%BC%AC%EB%B6%81%EC%B9%A9",
+        "name": "위키백과: 꼬북칩",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 2012,
+    "month": 8,
+    "date_precision": "month",
+    "category": "놀이·문구",
+    "title": "애니팡 열풍",
+    "summary": "친구들과 하트를 주고받으며 즐기는 모바일 퍼즐 게임 애니팡이 인기 순위에 올랐다.",
+    "sources": [
+      {
+        "url": "https://www.kakaocorp.com/page/detail/9345",
+        "name": "카카오, 카카오 게임하기의 역사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  }
+]

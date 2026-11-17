@@ -1,0 +1,19 @@
+[
+  {
+    "year": 2008,
+    "month": null,
+    "date_precision": "year",
+    "category": "먹거리",
+    "title": "마켓오 리얼브라우니",
+    "summary": "오리온이 포장된 브라우니 제품을 선보였다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.orionworld.com/board/view/87?boardno=370",
+        "name": "오리온, 마켓오 리얼브라우니 보도자료 (2013)"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  }
+]

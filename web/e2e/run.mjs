@@ -78,7 +78,7 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
   });
 
   await test(P + "자료 없는 해 → 안내 + 가까운 해 버튼", async () => {
-    await nav("#/2010");
+    await nav(js(`return document.querySelector(".yb:not(.has)").getAttribute("href")`));
     const r = js(`const a=document.querySelector('.empty a');return {text:document.querySelector('.empty')?.textContent,href:a?.getAttribute('href')}`);
     assert(r.text?.includes("준비 중") && r.href, JSON.stringify(r));
     return `→ ${r.href}`;

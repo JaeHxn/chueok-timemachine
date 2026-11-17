@@ -1,6 +1,29 @@
 [
   {
     "year": 1960,
+    "month": 4,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "4·19 혁명",
+    "summary": "부정선거에 반대하는 학생과 시민들의 시위가 이승만 대통령의 하야로 이어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/4·19_혁명",
+        "name": "위키백과: 4·19 혁명",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/4%C2%B719_%ED%98%81%EB%AA%85",
+        "name": "위키백과: 4·19 혁명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1960,
     "month": null,
     "date_precision": "year",
     "category": "음악·라디오·영화·TV",
@@ -11,9 +34,16 @@
         "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
         "name": "한국영상자료원, 한국영화 흥행사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A7%A8%EC%8A%A4_%EB%B9%A0%EB%B9%A0",
+        "name": "위키백과: 로맨스 빠빠",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1960,
@@ -29,7 +59,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1960,
@@ -45,7 +76,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1960,
@@ -66,7 +98,48 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1960,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "하녀 (1960년 영화)",
+    "summary": "김기영 감독의 영화로, 한 가정에 들어온 하녀를 둘러싸고 벌어지는 사건을 그렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/하녀_(1960년_영화)",
+        "name": "위키백과: 하녀 (1960년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1961,
+    "month": 5,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "5·16 군사정변",
+    "summary": "박정희 등을 중심으로 한 군인들이 정권을 장악한 군사정변이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/5·16_군사정변",
+        "name": "위키백과: 5·16 군사정변",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/5%C2%B716_%EA%B5%B0%EC%82%AC%EC%A0%95%EB%B3%80",
+        "name": "위키백과: 5·16 군사정변",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1961,
@@ -82,7 +155,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1961,
@@ -96,9 +170,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0019777",
         "name": "한국민족문화대백과사전, 문화방송",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AC%B8%ED%99%94%EB%B0%A9%EC%86%A1",
+        "name": "위키백과: 문화방송",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1961,
@@ -114,7 +195,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1961,
@@ -128,9 +210,16 @@
         "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
         "name": "한국영상자료원, 1961년 한국영화 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B1%EC%B6%98%ED%96%A5",
+        "name": "위키백과: 성춘향",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1961,
@@ -144,9 +233,16 @@
         "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
         "name": "한국영상자료원, 1961년 한국영화 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EB%B0%A9_%EC%86%90%EB%8B%98%EA%B3%BC_%EC%96%B4%EB%A8%B8%EB%8B%88_(1961%EB%85%84_%EC%98%81%ED%99%94)",
+        "name": "위키백과: 사랑방 손님과 어머니 (1961년 영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1961,
@@ -162,7 +258,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1961,
@@ -178,7 +275,42 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "오발탄 (영화)",
+    "summary": "유현목 감독이 이범선의 동명 소설을 영화화한 작품이다. 1960년 완성됐으나 상영이 보류되어 1961년 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/오발탄_(영화)",
+        "name": "위키백과: 오발탄 (영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "마부 (영화)",
+    "summary": "강대진 감독의 흑백영화로, 마부와 그의 가족이 살아가는 이야기를 다뤘다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/마부_(영화)",
+        "name": "위키백과: 마부 (영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1962,
@@ -194,7 +326,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1962,
@@ -208,9 +341,16 @@
         "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
         "name": "한국영상자료원, 한국영화 흥행사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%B4%EB%85%80%EB%AC%B8",
+        "name": "위키백과: 열녀문",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1962,
@@ -226,7 +366,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1963,
@@ -242,7 +383,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1963,
@@ -256,9 +398,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0015002",
         "name": "한국민족문화대백과사전, 대한민국",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%95%84%EB%B0%A9%EC%86%A1",
+        "name": "위키백과: 동아방송",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1963,
@@ -272,9 +421,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0026724",
         "name": "한국민족문화대백과사전, 삼양라운드스퀘어",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%96%91%EB%9D%BC%EB%A9%B4",
+        "name": "위키백과: 삼양라면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1963,
@@ -288,9 +444,16 @@
         "url": "https://www.koreafilm.or.kr/movie/PM_000749",
         "name": "한국영상자료원, 청춘교실",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EC%B6%98_%EA%B5%90%EC%8B%A4",
+        "name": "위키백과: 청춘 교실",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1963,
@@ -306,7 +469,54 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1963,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "돌아오지 않는 해병",
+    "summary": "이만희가 감독한 한국 전쟁 영화다. 청룡영화상에서 감독상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/돌아오지_않는_해병",
+        "name": "위키백과: 돌아오지 않는 해병",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%8C%EC%95%84%EC%98%A4%EC%A7%80_%EC%95%8A%EB%8A%94_%ED%95%B4%EB%B3%91",
+        "name": "위키백과: 돌아오지 않는 해병",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1964,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "6·3 항쟁",
+    "summary": "한일회담에 반대하는 학생과 시민들의 시위가 벌어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6·3_항쟁",
+        "name": "위키백과: 6·3 항쟁",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/6%C2%B73_%ED%95%AD%EC%9F%81",
+        "name": "위키백과: 6·3 항쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1964,
@@ -322,7 +532,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1964,
@@ -336,9 +547,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0016659",
         "name": "한국민족문화대백과사전, 동양방송",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%96%91%EB%B0%A9%EC%86%A1",
+        "name": "위키백과: 동양방송",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1964,
@@ -352,9 +570,16 @@
         "url": "https://www.koreafilm.or.kr/museum/exhibition/EI_00042",
         "name": "한국영상자료원, 신성일·엄앵란 관련 전시",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%A8%EB%B0%9C%EC%9D%98_%EC%B2%AD%EC%B6%98",
+        "name": "위키백과: 맨발의 청춘",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1964,
@@ -373,9 +598,16 @@
         "url": "https://school.ybmsmartschool.com/ybm-prd-std/3rdParty/bluega/ybm2025/9788917302011/e-abr/book/content/contents/studyhelper/dataRoom/files/02_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF/02_4_%EA%B3%A0%EB%93%B1%20%EC%9D%8C%EA%B0%90%EB%B9%84_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF_4%EB%8B%A8%EC%9B%90.pdf",
         "name": "YBM, 대중음악의 흐름",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EB%B0%B1%EC%95%84%EA%B0%80%EC%94%A8",
+        "name": "위키백과: 동백아가씨",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1964,
@@ -389,9 +621,16 @@
         "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
         "name": "한국영상자료원, 영화보다 영화 같은 삶: 영화감독 신상옥",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B9%A8%EA%B0%84_%EB%A7%88%ED%9B%84%EB%9D%BC",
+        "name": "위키백과: 빨간 마후라",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1964,
@@ -407,7 +646,31 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "벙어리 삼룡 (1964년 영화)",
+    "summary": "신상옥이 나도향의 소설을 영화화한 흑백영화다. 김진규와 최은희 등이 출연했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/벙어리_삼룡_(1964년_영화)",
+        "name": "위키백과: 벙어리 삼룡 (1964년 영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B2%99%EC%96%B4%EB%A6%AC_%EC%82%BC%EB%A3%A1_(1964%EB%85%84_%EC%98%81%ED%99%94)",
+        "name": "위키백과: 벙어리 삼룡 (1964년 영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1965,
@@ -423,7 +686,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1965,
@@ -439,7 +703,48 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1965,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "갯마을 (1965년 영화)",
+    "summary": "김수용이 오영수의 소설을 영화화했다. 당시 유행한 문예영화의 대표작 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/갯마을_(1965년_영화)",
+        "name": "위키백과: 갯마을 (1965년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1965,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "저 하늘에도 슬픔이 (1965년 영화)",
+    "summary": "이윤복의 수기를 바탕으로 김수용이 감독한 흑백영화다. 이후 필름이 발견되어 디지털로 복원됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/저_하늘에도_슬픔이_(1965년_영화)",
+        "name": "위키백과: 저 하늘에도 슬픔이 (1965년 영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%80_%ED%95%98%EB%8A%98%EC%97%90%EB%8F%84_%EC%8A%AC%ED%94%94%EC%9D%B4",
+        "name": "위키백과: 저 하늘에도 슬픔이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1966,
@@ -455,7 +760,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1966,
@@ -469,9 +775,33 @@
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%98%EC%88%99%EC%83%9D",
+        "name": "위키백과: 하숙생",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1966,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "시장 (영화)",
+    "summary": "이만희가 감독하고 신영균과 문정숙 등이 출연한 영화다. 1966년 청룡영화상에서 작품상과 감독상 등을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/시장_(영화)",
+        "name": "위키백과: 시장 (영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1967,
@@ -487,7 +817,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1967,
@@ -501,9 +832,16 @@
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%8A%B4_%EC%95%84%ED%94%84%EA%B2%8C",
+        "name": "위키백과: 가슴 아프게",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1967,
@@ -519,7 +857,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1967,
@@ -535,7 +874,94 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1967,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "산불 (1967년 영화)",
+    "summary": "차범석의 작품을 원작으로 김수용이 감독한 영화다. 1967년 공개됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/산불_(1967년_영화)",
+        "name": "위키백과: 산불 (1967년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1967,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "사격장의 아이들",
+    "summary": "김수용이 감독한 1967년 한국 영화다. 이듬해 한국연극영화상에서 작품상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사격장의_아이들",
+        "name": "위키백과: 사격장의 아이들",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EA%B2%A9%EC%9E%A5%EC%9D%98_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 사격장의 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1968,
+    "month": 1,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1·21 사태",
+    "summary": "북한 무장대원들이 청와대를 습격할 목적으로 서울에 침투한 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1·21_사태",
+        "name": "위키백과: 1·21 사태",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1%C2%B721_%EC%82%AC%ED%83%9C",
+        "name": "위키백과: 1·21 사태",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1968,
+    "month": 10,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "울진·삼척 무장공비 침투 사건",
+    "summary": "북한 무장대원들이 울진과 삼척 해안에 침투하면서 군과 경찰의 토벌 작전이 벌어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/울진·삼척_무장공비_침투_사건",
+        "name": "위키백과: 울진·삼척 무장공비 침투 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9A%B8%EC%A7%84%C2%B7%EC%82%BC%EC%B2%99_%EB%AC%B4%EC%9E%A5%EA%B3%B5%EB%B9%84_%EC%B9%A8%ED%88%AC_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 울진·삼척 무장공비 침투 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1968,
@@ -549,9 +975,16 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014804",
         "name": "한국민족문화대백과사전, 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%A0%EB%8D%B0%EC%9D%B4_%EC%84%9C%EC%9A%B8",
+        "name": "위키백과: 선데이 서울",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1968,
@@ -567,7 +1000,54 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1968,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "장군의 수염",
+    "summary": "이성구가 감독한 영화다. 1968년 대종상에서 시나리오상과 제작상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/장군의_수염",
+        "name": "위키백과: 장군의 수염",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EA%B5%B0%EC%9D%98_%EC%88%98%EC%97%BC",
+        "name": "위키백과: 장군의 수염",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1968,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "카인의 후예 (영화)",
+    "summary": "유현목이 감독한 영화다. 1968년 대종상에서 우수반공영화상과 연기상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/카인의_후예_(영화)",
+        "name": "위키백과: 카인의 후예 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%9D%B8%EC%9D%98_%ED%9B%84%EC%98%88_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 카인의 후예 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1969,
@@ -583,7 +1063,31 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1969,
+    "month": 12,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "대한항공 YS-11기 납북 사건",
+    "summary": "강릉에서 서울로 향하던 대한항공 여객기가 납치되어 북한으로 향한 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한항공_YS-11기_납북_사건",
+        "name": "위키백과: 대한항공 YS-11기 납북 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5_YS-11%EA%B8%B0_%EB%82%A9%EB%B6%81_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 대한항공 YS-11기 납북 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1969,
@@ -597,9 +1101,16 @@
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EC%9D%80_%EB%88%88%EB%AC%BC%EC%9D%98_%EC%94%A8%EC%95%97",
+        "name": "위키백과: 사랑은 눈물의 씨앗",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1969,
@@ -615,7 +1126,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1969,
@@ -631,6 +1143,30 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "삼선 개헌",
+    "summary": "대통령의 세 번째 연임을 허용하기 위한 헌법 개정이 추진되어 국민투표를 거쳤다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼선_개헌",
+        "name": "위키백과: 삼선 개헌",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%A0_%EA%B0%9C%ED%97%8C",
+        "name": "위키백과: 삼선 개헌",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   }
 ]

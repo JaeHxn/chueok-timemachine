@@ -6,8 +6,16 @@
     "category": "사건·생활상",
     "title": "5·18 민주화운동",
     "summary": "광주에서 시민과 학생들이 계엄 확대에 맞서 민주화를 요구했다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/5.18%EB%AF%BC%EC%A3%BC%ED%99%94%EC%9A%B4%EB%8F%99_%EB%93%B1%EC%97%90_%EA%B4%80%ED%95%9C_%ED%8A%B9%EB%B3%84%EB%B2%95",
+        "name": "위키백과: 5.18민주화운동 등에 관한 특별법",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -21,9 +29,16 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%BB%AC%EB%9F%AC_%ED%85%94%EB%A0%88%EB%B9%84%EC%A0%84",
+        "name": "위키백과: 컬러 텔레비전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -39,7 +54,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -55,7 +71,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -64,8 +81,16 @@
     "category": "음악",
     "title": "조용필 - 돌아와요 부산항에",
     "summary": "조용필의 대표곡 '돌아와요 부산항에'는 1980년에도 그의 인기 무대와 함께 널리 불렸다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%8C%EC%95%84%EC%99%80%EC%9A%94_%EB%B6%80%EC%82%B0%ED%95%AD%EC%97%90",
+        "name": "위키백과: 돌아와요 부산항에",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -75,7 +100,8 @@
     "title": "혜은이 - 제3한강교",
     "summary": "혜은이의 '제3한강교'는 1980년대 초에도 널리 알려진 대중가요였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -84,8 +110,16 @@
     "category": "음악",
     "title": "전영록 - 종이학",
     "summary": "전영록의 '종이학'은 1980년대 초 청춘 가요로 사랑받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%98%81%EB%A1%9D",
+        "name": "위키백과: 전영록",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -94,8 +128,16 @@
     "category": "음악",
     "title": "김수철과 작은거인",
     "summary": "작은거인은 대학가요제를 계기로 주목받으며 젊은 세대의 록 음악 흐름을 보여주었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%88%98%EC%B2%A0_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 김수철 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -105,7 +147,8 @@
     "title": "드라마 달동네",
     "summary": "서민들의 삶을 그린 드라마 '달동네'가 방송되며 많은 시청자의 관심을 모았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -114,8 +157,16 @@
     "category": "TV·영화",
     "title": "드라마 전원일기",
     "summary": "농촌 가족과 이웃의 이야기를 그린 '전원일기'가 방송을 시작했다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9B%90%EC%9D%BC%EA%B8%B0",
+        "name": "위키백과: 전원일기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -124,8 +175,16 @@
     "category": "TV·영화",
     "title": "영화 바람 불어 좋은 날",
     "summary": "이장호 감독의 '바람 불어 좋은 날'은 도시로 올라온 젊은이들의 삶을 담아 주목받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%9E%8C_%EB%B6%88%EC%96%B4_%EC%A2%8B%EC%9D%80_%EB%82%A0_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 바람 불어 좋은 날 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -139,9 +198,16 @@
         "url": "https://en.wikipedia.org/wiki/List_of_South_Korean_films_of_1980",
         "name": "Wikipedia, List of South Korean films of 1980",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B5%9C%ED%9B%84%EC%9D%98_%EC%A6%9D%EC%9D%B8_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 최후의 증인 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -150,8 +216,16 @@
     "category": "가전·기술",
     "title": "흑백 텔레비전",
     "summary": "컬러 방송이 시작되기 전후에도 많은 가정에서 흑백 텔레비전으로 방송을 시청했다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%9D%91%EB%B0%B1_%ED%85%94%EB%A0%88%EB%B9%84%EC%A0%84",
+        "name": "위키백과: 흑백 텔레비전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -160,8 +234,16 @@
     "category": "가전·기술",
     "title": "카세트테이프",
     "summary": "카세트테이프는 대중가요를 듣고 녹음하는 데 널리 쓰였다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%84%B8%ED%8A%B8_%ED%85%8C%EC%9D%B4%ED%94%84",
+        "name": "위키백과: 카세트 테이프",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -171,7 +253,8 @@
     "title": "딱지치기",
     "summary": "아이들이 종이로 접은 딱지를 바닥에 놓고 뒤집으며 놀았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -181,7 +264,8 @@
     "title": "구슬치기",
     "summary": "유리구슬을 이용한 구슬치기는 골목에서 즐기던 어린이 놀이였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -191,7 +275,8 @@
     "title": "고무줄놀이",
     "summary": "아이들이 고무줄을 걸어 놓고 노래에 맞춰 뛰어넘으며 놀았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -201,7 +286,8 @@
     "title": "학교 앞 떡볶이",
     "summary": "떡볶이는 학교 앞 분식집에서 학생들이 즐겨 먹던 간식이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -211,7 +297,8 @@
     "title": "달고나",
     "summary": "설탕을 녹여 만든 달고나는 어린이들이 즐겨 찾던 거리 간식이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1980,
@@ -227,7 +314,94 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "토지 (1979년 드라마)",
+    "summary": "박경리의 소설을 바탕으로 제작된 KBS 드라마로, 1980년에도 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/토지_(1979년_드라마)",
+        "name": "위키백과: 토지 (1979년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1981,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "대명 (드라마)",
+    "summary": "1981년 1월 방송을 시작한 KBS 대하드라마다. 조선 인조와 효종 시기의 역사를 다뤘다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대명_(드라마)",
+        "name": "위키백과: 대명 (드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%EB%AA%85",
+        "name": "위키백과: 대명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1981,
+    "month": 10,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "난장이가 쏘아올린 작은 공 (영화)",
+    "summary": "조세희의 작품을 원작으로 한 이원세 감독의 영화로, 1981년 10월 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/난장이가_쏘아올린_작은_공_(영화)",
+        "name": "위키백과: 난장이가 쏘아올린 작은 공 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%9C%EC%9E%A5%EC%9D%B4%EA%B0%80_%EC%8F%98%EC%95%84%EC%98%AC%EB%A6%B0_%EC%9E%91%EC%9D%80_%EA%B3%B5",
+        "name": "위키백과: 난장이가 쏘아올린 작은 공",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1981,
+    "month": 12,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "이심의 비련기",
+    "summary": "1981년 MBC에서 방송한 특집 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/이심의_비련기",
+        "name": "위키백과: 이심의 비련기",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8B%AC%EC%9D%98_%EB%B9%84%EB%A0%A8%EA%B8%B0",
+        "name": "위키백과: 이심의 비련기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -243,7 +417,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -259,7 +434,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -269,7 +445,8 @@
     "title": "조용필 - 일편단심 민들레야",
     "summary": "조용필의 '일편단심 민들레야'는 1980년대 초 그의 대표적인 노래 가운데 하나로 알려졌다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -279,7 +456,8 @@
     "title": "이정희 - 그대여",
     "summary": "이정희의 '그대여'가 경쾌한 멜로디로 인기를 끌었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -289,7 +467,8 @@
     "title": "임병수 - 약속",
     "summary": "임병수의 노래 '약속'은 대중에게 알려진 발라드다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -299,7 +478,8 @@
     "title": "드라마 여인열전",
     "summary": "역사 속 여성들의 이야기를 다룬 드라마 시리즈 '여인열전'이 방송됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -308,8 +488,16 @@
     "category": "TV·영화",
     "title": "영화 만다라",
     "summary": "임권택 감독의 '만다라'가 개봉해 수행과 인간의 번뇌를 스크린에 담았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%8C%EB%8B%A4%EB%9D%BC_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 만다라 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -318,8 +506,16 @@
     "category": "TV·영화",
     "title": "TV 음악 순위 프로그램 가요톱10",
     "summary": "KBS의 가요 순위 프로그램 '가요톱10'이 시작돼 인기 가요를 소개했다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%9A%94%ED%86%B110",
+        "name": "위키백과: 가요톱10",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -328,8 +524,16 @@
     "category": "TV·영화",
     "title": "드라마 전원일기",
     "summary": "농촌 가족과 마을 사람들의 일상을 그린 '전원일기'가 시청자들과 만났다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9B%90%EC%9D%BC%EA%B8%B0",
+        "name": "위키백과: 전원일기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -339,7 +543,8 @@
     "title": "드라마 수사반장",
     "summary": "수사극 '수사반장'은 형사들의 사건 해결을 그리며 안방극장에서 인기를 이어갔다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -355,7 +560,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -364,8 +570,16 @@
     "category": "사건·생활상",
     "title": "국풍81",
     "summary": "서울에서 열린 대규모 문화 행사 국풍81이 공연과 전시 등을 선보였다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%AD%ED%92%8D%E2%80%9981",
+        "name": "위키백과: 국풍’81",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -381,7 +595,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -397,7 +612,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -407,7 +623,8 @@
     "title": "라면",
     "summary": "라면은 가정에서 간편하게 끓여 먹는 음식으로 자리 잡았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -417,7 +634,8 @@
     "title": "분식집 김밥",
     "summary": "김밥은 떡볶이와 함께 분식집에서 쉽게 사 먹는 음식이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -427,7 +645,8 @@
     "title": "오락실 전자오락",
     "summary": "오락실의 전자게임은 어린이와 청소년이 즐기는 놀이 가운데 하나였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -437,7 +656,8 @@
     "title": "종이인형 놀이",
     "summary": "종이로 된 인형에 옷을 갈아입히며 노는 종이인형이 어린이들에게 친숙했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -447,7 +667,8 @@
     "title": "청바지",
     "summary": "청바지는 젊은 세대의 편한 옷차림을 대표하는 아이템으로 자리 잡았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1981,
@@ -457,7 +678,25 @@
     "title": "다방에서 음악 듣기",
     "summary": "다방은 차를 마시고 음악을 들으며 사람을 만나는 공간으로 이용됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "제1공화국 (드라마)",
+    "summary": "대한민국 제1공화국 시기의 정치사를 다룬 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/제1공화국_(드라마)",
+        "name": "위키백과: 제1공화국 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -473,7 +712,48 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1982,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "풍운 (1982년 드라마)",
+    "summary": "흥선대원군을 중심으로 조선 후기의 정세를 그린 KBS 대하드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/풍운_(1982년_드라마)",
+        "name": "위키백과: 풍운 (1982년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%92%8D%EC%9A%B4",
+        "name": "위키백과: 풍운",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1982,
+    "month": 2,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "만추 (1982년 영화)",
+    "summary": "김수용 감독의 대한민국 영화로 1982년 2월 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/만추_(1982년_영화)",
+        "name": "위키백과: 만추 (1982년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -483,7 +763,8 @@
     "title": "한국 프로야구 출범",
     "summary": "프로야구가 출범하면서 구장 관람과 중계를 즐기는 야구팬이 늘었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -492,8 +773,16 @@
     "category": "음악",
     "title": "이용 - 잊혀진 계절",
     "summary": "이용의 '잊혀진 계절'이 인기를 얻었고 가을을 떠올리게 하는 노래로 자리 잡았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%8A%ED%98%80%EC%A7%84_%EA%B3%84%EC%A0%88_(%EB%85%B8%EB%9E%98)",
+        "name": "위키백과: 잊혀진 계절 (노래)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -502,8 +791,16 @@
     "category": "음악",
     "title": "송골매 - 어쩌다 마주친 그대",
     "summary": "송골매의 '어쩌다 마주친 그대'가 경쾌한 밴드 음악으로 큰 인기를 얻었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EC%A9%8C%EB%8B%A4_%EB%A7%88%EC%A3%BC%EC%B9%9C_%EA%B7%B8%EB%8C%80",
+        "name": "위키백과: 어쩌다 마주친 그대",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -513,7 +810,8 @@
     "title": "조용필 - 못찾겠다 꾀꼬리",
     "summary": "조용필의 '못찾겠다 꾀꼬리'가 방송 가요 순위에서 큰 인기를 끌었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -523,7 +821,8 @@
     "title": "조용필 - 비련",
     "summary": "조용필의 '비련'은 애절한 분위기로 사랑받은 노래다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -533,7 +832,8 @@
     "title": "김수철 - 젊은 그대",
     "summary": "김수철의 '젊은 그대'는 젊은 세대의 에너지를 담은 노래로 알려졌다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -542,8 +842,16 @@
     "category": "TV·영화",
     "title": "영화 애마부인",
     "summary": "영화 '애마부인'이 개봉해 성인 관객 사이에서 화제를 모았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%A0%EB%A7%88%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 애마부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -557,9 +865,16 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%BC%AC%EB%B0%A9%EB%8F%99%EB%84%A4_%EC%82%AC%EB%9E%8C%EB%93%A4",
+        "name": "위키백과: 꼬방동네 사람들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -568,8 +883,16 @@
     "category": "TV·영화",
     "title": "드라마 보통 사람들",
     "summary": "평범한 사람들의 삶을 다룬 드라마 '보통 사람들'이 방송됐다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%B4%ED%86%B5_%EC%82%AC%EB%9E%8C%EB%93%A4_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 보통 사람들 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -579,7 +902,8 @@
     "title": "드라마 거부실록",
     "summary": "기업인의 삶을 소재로 한 드라마 '거부실록'이 방송을 시작했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -589,7 +913,8 @@
     "title": "가요톱10",
     "summary": "가요 순위를 소개하는 '가요톱10'에서 인기 가수와 노래를 만날 수 있었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -599,7 +924,8 @@
     "title": "프로야구 응원",
     "summary": "프로야구 출범과 함께 지역 연고 구단을 응원하는 문화가 생겨났다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -613,9 +939,16 @@
         "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
         "name": "국가기록원, 금기와 자율: 1980년대",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%90%EB%B3%B5_%EC%9E%90%EC%9C%A8%ED%99%94",
+        "name": "위키백과: 교복 자율화",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -625,7 +958,8 @@
     "title": "롤러스케이트장",
     "summary": "롤러스케이트장은 청소년들이 음악을 들으며 어울리는 놀이 공간이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -634,8 +968,16 @@
     "category": "먹거리",
     "title": "컵라면",
     "summary": "용기에 뜨거운 물을 부어 먹는 컵라면은 간편한 식품으로 알려졌다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%BB%B5%EB%9D%BC%EB%A9%B4",
+        "name": "위키백과: 컵라면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -645,7 +987,8 @@
     "title": "분식집 떡볶이와 튀김",
     "summary": "떡볶이와 튀김은 학생들이 학교를 마친 뒤 즐겨 먹는 분식이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -655,7 +998,8 @@
     "title": "카세트 녹음기",
     "summary": "카세트 녹음기는 음악을 듣거나 라디오 방송을 녹음하는 데 쓰였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -665,7 +1009,8 @@
     "title": "청재킷",
     "summary": "청재킷은 청바지와 함께 젊은 층의 캐주얼한 옷차림에 쓰였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1982,
@@ -675,7 +1020,25 @@
     "title": "동네 만화방",
     "summary": "만화방은 어린이와 청소년이 만화책을 빌려 읽으며 시간을 보내는 곳이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1983,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "개국 (드라마)",
+    "summary": "고려 말부터 조선 건국에 이르는 과정을 다룬 KBS 대하드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/개국_(드라마)",
+        "name": "위키백과: 개국 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -685,7 +1048,8 @@
     "title": "조용필 - 친구여",
     "summary": "조용필의 '친구여'가 우정과 그리움을 노래하며 인기를 얻었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -694,8 +1058,16 @@
     "category": "음악",
     "title": "정수라 - 아! 대한민국",
     "summary": "정수라의 '아! 대한민국'이 밝고 힘찬 분위기로 널리 불렸다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%95%EC%88%98%EB%9D%BC",
+        "name": "위키백과: 정수라",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -704,8 +1076,16 @@
     "category": "음악",
     "title": "송골매 - 모두 다 사랑하리",
     "summary": "송골매의 '모두 다 사랑하리'가 밴드 사운드와 함께 사랑받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EA%B3%A8%EB%A7%A4_(%EB%B0%B4%EB%93%9C)",
+        "name": "위키백과: 송골매 (밴드)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -715,7 +1095,8 @@
     "title": "김수철 - 못다 핀 꽃 한 송이",
     "summary": "김수철의 '못다 핀 꽃 한 송이'는 감성적인 노랫말과 선율로 주목받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -724,8 +1105,16 @@
     "category": "음악",
     "title": "이문세 - 나는 행복한 사람",
     "summary": "이문세의 '나는 행복한 사람'은 그의 초기 대표곡으로 알려졌다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8",
+        "name": "위키백과: 이문세",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -739,9 +1128,16 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0%EC%99%95%EC%A1%B0_%EC%98%A4%EB%B0%B1%EB%85%84",
+        "name": "위키백과: 조선왕조 오백년",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -750,8 +1146,16 @@
     "category": "TV·영화",
     "title": "드라마 간난이",
     "summary": "어린아이 간난이를 중심으로 한 드라마가 시청자의 관심을 모았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%84%EB%82%9C%EC%9D%B4",
+        "name": "위키백과: 간난이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -761,7 +1165,8 @@
     "title": "드라마 보통 사람들",
     "summary": "서민 가족의 일상을 그린 드라마 '보통 사람들'이 방송됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -771,7 +1176,8 @@
     "title": "유머 1번지",
     "summary": "KBS 코미디 프로그램 '유머 1번지'가 시작돼 다양한 공개 코미디를 선보였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -781,7 +1187,8 @@
     "title": "가요톱10",
     "summary": "가요톱10은 인기곡 순위와 가수들의 무대를 소개하며 음악 팬들의 관심을 모았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -795,9 +1202,16 @@
         "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
         "name": "국가기록원, 금기와 자율: 1980년대",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%90%EB%B3%B5_%EC%9E%90%EC%9C%A8%ED%99%94",
+        "name": "위키백과: 교복 자율화",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -813,7 +1227,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -822,8 +1237,16 @@
     "category": "사건·생활상",
     "title": "이산가족을 찾습니다",
     "summary": "KBS의 이산가족 찾기 특별 생방송이 이어지며 헤어진 가족들의 사연이 전국에 전해졌다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%82%B0%EA%B0%80%EC%A1%B1%EC%9D%84_%EC%B0%BE%EC%8A%B5%EB%8B%88%EB%8B%A4",
+        "name": "위키백과: 이산가족을 찾습니다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -833,7 +1256,8 @@
     "title": "아웅산 묘소 폭탄 테러",
     "summary": "미얀마 양곤에서 한국 정부 사절단을 겨냥한 폭탄 테러가 발생해 큰 충격을 주었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -843,7 +1267,8 @@
     "title": "프로야구 관람",
     "summary": "프로야구는 지역 구단을 응원하며 즐기는 대중 스포츠로 자리를 잡아갔다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -853,7 +1278,8 @@
     "title": "롤러스케이트",
     "summary": "젊은이들이 롤러스케이트장에서 음악에 맞춰 스케이트를 탔다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -863,7 +1289,8 @@
     "title": "분식집 라볶이",
     "summary": "떡볶이에 라면 사리를 더한 라볶이는 분식집에서 즐기는 메뉴였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -873,7 +1300,8 @@
     "title": "짜장면 배달",
     "summary": "짜장면은 가족이 함께 주문해 먹는 외식과 배달 음식으로 친숙했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -889,7 +1317,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1983,
@@ -899,7 +1328,25 @@
     "title": "프로야구 응원 문화",
     "summary": "가족과 친구들이 경기장을 찾거나 TV 중계로 응원팀의 경기를 즐겼다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1984,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "독립문 (드라마)",
+    "summary": "구한말을 배경으로 한 KBS 대하드라마로, 1984년에 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/독립문_(드라마)",
+        "name": "위키백과: 독립문 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -908,8 +1355,16 @@
     "category": "음악",
     "title": "이선희 - J에게",
     "summary": "이선희가 강변가요제에서 부른 'J에게'가 큰 인기를 끌며 신인 가수의 등장을 알렸다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%84%A0%ED%9D%AC",
+        "name": "위키백과: 이선희",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -919,7 +1374,8 @@
     "title": "조용필 - 그대여",
     "summary": "조용필의 '그대여'가 경쾌한 리듬과 함께 대중의 사랑을 받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -929,7 +1385,8 @@
     "title": "조용필 - 눈물의 파티",
     "summary": "조용필의 '눈물의 파티'는 1984년 발표된 그의 인기곡이다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -938,8 +1395,16 @@
     "category": "음악",
     "title": "나미 - 빙글빙글",
     "summary": "나미의 '빙글빙글'은 신나는 리듬으로 주목받은 댄스곡이다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%98%EB%AF%B8",
+        "name": "위키백과: 나미",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -949,7 +1414,8 @@
     "title": "김완선 이전의 댄스 가요 무대",
     "summary": "1980년대 중반에는 가수의 노래와 춤을 함께 즐기는 방송 무대가 인기를 얻었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -963,9 +1429,16 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%9E%98%EC%82%AC%EB%83%A5_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 고래사냥 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -979,9 +1452,16 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EA%B3%BC_%EC%A7%84%EC%8B%A4",
+        "name": "위키백과: 사랑과 진실",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -990,8 +1470,16 @@
     "category": "TV·영화",
     "title": "드라마 설중매",
     "summary": "조선왕조 오백년 시리즈의 '설중매'가 역사 속 인물을 다루며 방송됐다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%A4%91%EB%A7%A4_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 설중매 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1001,7 +1489,8 @@
     "title": "만화영화 달려라 하니 원작 연재",
     "summary": "이진주의 만화 '달려라 하니'가 연재되며 달리기를 좋아하는 소녀 하니의 이야기를 알렸다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1011,7 +1500,8 @@
     "title": "유머 1번지",
     "summary": "공개 코미디 '유머 1번지'는 여러 코너를 통해 시청자에게 웃음을 선사했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1021,7 +1511,8 @@
     "title": "LA 올림픽 중계",
     "summary": "로스앤젤레스 올림픽에서 한국 선수들의 경기가 중계되며 국민적 관심을 모았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1031,7 +1522,8 @@
     "title": "프로야구 한국시리즈",
     "summary": "프로야구 구단들이 우승을 겨루는 한국시리즈에 야구팬들의 관심이 쏠렸다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1041,7 +1533,8 @@
     "title": "오락실 게임",
     "summary": "청소년들이 동전을 넣고 즐기는 전자오락이 오락실에서 인기를 이어갔다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1051,7 +1544,8 @@
     "title": "롤러스케이트장",
     "summary": "롤러스케이트장은 음악을 들으며 친구들과 어울리는 공간이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1061,7 +1555,8 @@
     "title": "학교 앞 떡볶이",
     "summary": "떡볶이는 학생들이 하교 후 친구들과 나누어 먹던 대표적인 분식이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1071,7 +1566,8 @@
     "title": "아이스크림 바",
     "summary": "낱개로 파는 막대 아이스크림은 어린이들이 즐겨 사 먹는 간식이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1081,7 +1577,8 @@
     "title": "카세트테이프 음악 감상",
     "summary": "카세트테이프는 가요 음반을 듣거나 좋아하는 노래를 녹음하는 데 쓰였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1091,7 +1588,8 @@
     "title": "청바지와 운동화",
     "summary": "청바지에 운동화를 신는 편한 차림이 젊은 층의 일상복으로 자리 잡았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1101,7 +1599,8 @@
     "title": "음악다방",
     "summary": "음악다방은 신청곡을 듣거나 친구를 만나 이야기를 나누는 공간이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1984,
@@ -1111,7 +1610,25 @@
     "title": "가요제 시청",
     "summary": "대학가요제와 강변가요제는 신인 가수와 새로운 노래를 만나는 방송 행사였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1985,
+    "month": 2,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "새벽 (드라마)",
+    "summary": "광복 40주년을 맞아 방송된 KBS 대하드라마로, 광복 전후의 역사를 다뤘다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새벽_(드라마)",
+        "name": "위키백과: 새벽 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1125,9 +1642,16 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EC%A7%84_(%EC%9D%8C%EB%B0%98)",
+        "name": "위키백과: 행진 (음반)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1136,8 +1660,16 @@
     "category": "음악",
     "title": "들국화 - 그것만이 내 세상",
     "summary": "들국화의 '그것만이 내 세상'은 청춘의 고민과 희망을 담은 곡으로 사랑받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%93%A4%EA%B5%AD%ED%99%94_(%EB%B0%B4%EB%93%9C)",
+        "name": "위키백과: 들국화 (밴드)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1146,8 +1678,16 @@
     "category": "음악",
     "title": "이문세 - 난 아직 모르잖아요",
     "summary": "이문세의 '난 아직 모르잖아요'는 서정적인 발라드로 인기를 얻었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8",
+        "name": "위키백과: 이문세",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1156,8 +1696,16 @@
     "category": "음악",
     "title": "이선희 - 아! 옛날이여",
     "summary": "이선희의 '아! 옛날이여'가 힘 있는 가창과 함께 대중의 사랑을 받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84!_%EC%98%9B%EB%82%A0%EC%9D%B4%EC%97%AC",
+        "name": "위키백과: 아! 옛날이여",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1167,7 +1715,8 @@
     "title": "전영록 - 불티",
     "summary": "전영록의 '불티'는 경쾌한 리듬으로 인기를 끌었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1183,7 +1732,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1199,7 +1749,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1208,8 +1759,16 @@
     "category": "TV·영화",
     "title": "쇼 프로그램 토요일 토요일은 즐거워",
     "summary": "음악과 오락을 결합한 MBC의 '토요일 토요일은 즐거워'가 방송을 시작했다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%86%A0%EC%9A%94%EC%9D%BC!_%ED%86%A0%EC%9A%94%EC%9D%BC%EC%9D%80_%EC%A6%90%EA%B1%B0%EC%9B%8C",
+        "name": "위키백과: 토요일! 토요일은 즐거워",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1219,7 +1778,8 @@
     "title": "코미디 쇼 비디오 자키",
     "summary": "KBS 코미디 프로그램 '쇼 비디오 자키'가 다양한 코너를 선보였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1229,7 +1789,8 @@
     "title": "가요톱10",
     "summary": "방송 가요 순위와 인기 가수의 무대가 음악 팬들에게 관심을 모았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1238,8 +1799,16 @@
     "category": "사건·생활상",
     "title": "프로야구 통합 우승 삼성 라이온즈",
     "summary": "삼성 라이온즈가 전기와 후기 리그를 모두 우승해 한국시리즈 없이 시즌 정상에 올랐다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%B1_%EB%9D%BC%EC%9D%B4%EC%98%A8%EC%A6%88",
+        "name": "위키백과: 삼성 라이온즈",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1249,7 +1818,8 @@
     "title": "만화방",
     "summary": "동네 만화방은 친구들과 함께 만화책을 읽으며 시간을 보내는 공간이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1259,7 +1829,8 @@
     "title": "오락실",
     "summary": "동전을 넣어 즐기는 아케이드 게임은 청소년들에게 인기 있는 오락이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1269,7 +1840,8 @@
     "title": "치킨 배달",
     "summary": "튀긴 닭을 가족과 함께 먹는 문화가 점차 확산됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1279,7 +1851,8 @@
     "title": "분식집 순대",
     "summary": "순대는 떡볶이, 튀김과 함께 분식집에서 즐겨 먹는 메뉴였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1289,7 +1862,8 @@
     "title": "청바지",
     "summary": "청바지는 젊은이들의 일상적인 옷차림에 널리 쓰였다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1299,7 +1873,8 @@
     "title": "운동복 차림",
     "summary": "운동복과 운동화는 운동할 때뿐 아니라 편한 일상복으로도 입었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1315,7 +1890,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1331,7 +1907,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1985,
@@ -1341,7 +1918,31 @@
     "title": "가요제 신인 가수",
     "summary": "방송 가요제를 통해 등장한 신인 가수와 노래가 대중의 관심을 받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1986,
+    "month": 1,
+    "date_precision": "month",
+    "category": "TV·영화",
+    "title": "이별 그리고 사랑",
+    "summary": "1986년 KBS에서 방송한 수목드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/이별_그리고_사랑",
+        "name": "위키백과: 이별 그리고 사랑",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%84_%EA%B7%B8%EB%A6%AC%EA%B3%A0_%EC%82%AC%EB%9E%91",
+        "name": "위키백과: 이별 그리고 사랑",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1351,7 +1952,8 @@
     "title": "서울 아시안게임",
     "summary": "서울에서 아시안게임이 열려 한국 선수들의 활약과 국제 스포츠 행사가 큰 관심을 모았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1360,8 +1962,16 @@
     "category": "음악",
     "title": "김완선 - 오늘 밤",
     "summary": "김완선의 '오늘 밤'은 노래와 춤을 결합한 무대로 주목받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%99%84%EC%84%A0",
+        "name": "위키백과: 김완선",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1371,7 +1981,8 @@
     "title": "이문세 - 소녀",
     "summary": "이문세의 '소녀'는 서정적인 선율로 많은 사랑을 받은 발라드다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1381,7 +1992,8 @@
     "title": "이문세 - 빗속에서",
     "summary": "이문세의 '빗속에서'는 비 오는 날의 쓸쓸한 정서를 담아 인기를 얻었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1391,7 +2003,8 @@
     "title": "전영록 - 사랑은 연필로 쓰세요",
     "summary": "전영록의 '사랑은 연필로 쓰세요'는 경쾌한 분위기로 사랑받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1401,7 +2014,8 @@
     "title": "조용필 - 허공",
     "summary": "조용필의 '허공'이 애절한 가창으로 많은 인기를 얻었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1411,7 +2025,8 @@
     "title": "영화 외인구단",
     "summary": "이현세의 인기 만화를 원작으로 한 영화 '외인구단'이 야구와 청춘의 이야기를 담았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1420,8 +2035,16 @@
     "category": "TV·영화",
     "title": "영화 깜보",
     "summary": "이창호 감독의 영화 '깜보'가 개봉해 장애인의 삶과 우정을 그렸다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%9C%EB%B3%B4",
+        "name": "위키백과: 깜보",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1431,7 +2054,8 @@
     "title": "드라마 한지붕 세가족",
     "summary": "한 지붕 아래 사는 여러 가족의 일상을 그린 드라마가 방송을 시작했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1441,7 +2065,8 @@
     "title": "토요일 토요일은 즐거워",
     "summary": "가수들의 노래와 춤을 볼 수 있는 주말 오락 프로그램이 인기를 이어갔다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1451,7 +2076,8 @@
     "title": "유머 1번지",
     "summary": "공개 코미디 프로그램의 여러 코너와 출연진이 안방극장에 웃음을 전했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1461,7 +2087,8 @@
     "title": "1986 멕시코 월드컵",
     "summary": "한국 축구 대표팀이 월드컵 본선에 출전하면서 중계와 대표팀 경기가 화제가 됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1471,7 +2098,8 @@
     "title": "아기공룡 둘리 만화",
     "summary": "아기 공룡 둘리와 친구들이 벌이는 이야기가 어린이와 가족에게 사랑받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1480,8 +2108,16 @@
     "category": "먹거리",
     "title": "신라면",
     "summary": "매운맛을 강조한 신라면이 출시돼 이후 한국의 대표적인 라면 브랜드로 자리 잡았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EB%9D%BC%EB%A9%B4",
+        "name": "위키백과: 신라면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1491,7 +2127,8 @@
     "title": "분식집 떡볶이와 순대",
     "summary": "떡볶이와 순대는 학교 앞 분식집에서 학생들이 즐겨 찾던 음식이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1501,7 +2138,8 @@
     "title": "에어로빅 복장",
     "summary": "운동과 함께 에어로빅용 레오타드와 다리 워머 등이 눈길을 끌었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1511,7 +2149,8 @@
     "title": "청바지와 운동화",
     "summary": "청바지와 운동화를 조합한 편한 차림이 젊은 층에서 널리 입혔다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1527,7 +2166,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1537,7 +2177,8 @@
     "title": "오락실 전자게임",
     "summary": "오락실에서 동전을 넣고 게임을 즐기는 문화가 청소년들 사이에서 이어졌다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1986,
@@ -1547,7 +2188,31 @@
     "title": "아시안게임 거리 응원",
     "summary": "아시안게임 경기와 선수들의 성적이 일상적인 대화와 응원의 소재가 됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1987,
+    "month": 1,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "박종철 고문치사 사건",
+    "summary": "서울대 학생 박종철이 경찰의 물고문으로 숨진 사건이다. 사건이 알려지면서 민주화 요구가 커졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/박종철_고문치사_사건",
+        "name": "위키백과: 박종철 고문치사 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%A2%85%EC%B2%A0_%EA%B3%A0%EB%AC%B8%EC%B9%98%EC%82%AC_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 박종철 고문치사 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1556,8 +2221,16 @@
     "category": "사건·생활상",
     "title": "6월 민주항쟁",
     "summary": "대통령 직선제와 민주화를 요구하는 시민들의 시위가 전국으로 확산됐다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6%EC%9B%94_%EB%AF%BC%EC%A3%BC_%ED%95%AD%EC%9F%81",
+        "name": "위키백과: 6월 민주 항쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1567,7 +2240,31 @@
     "title": "6·29 민주화 선언",
     "summary": "대통령 직선제 개헌 등을 약속한 6·29 선언이 발표돼 사회적 전환점이 됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1987,
+    "month": 11,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "대한항공 858편 폭파 사건",
+    "summary": "1987년 11월 대한항공 여객기가 비행 중 폭파된 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한항공_858편_폭파_사건",
+        "name": "위키백과: 대한항공 858편 폭파 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5_858%ED%8E%B8_%ED%8F%AD%ED%8C%8C_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 대한항공 858편 폭파 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1581,9 +2278,16 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%ED%95%98%EA%B8%B0_%EB%95%8C%EB%AC%B8%EC%97%90_(%EC%9D%8C%EB%B0%98)",
+        "name": "위키백과: 사랑하기 때문에 (음반)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1592,8 +2296,16 @@
     "category": "음악",
     "title": "이문세 - 사랑이 지나가면",
     "summary": "이문세의 '사랑이 지나가면'이 잔잔한 감성과 함께 큰 사랑을 받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EC%9D%B4_%EC%A7%80%EB%82%98%EA%B0%80%EB%A9%B4",
+        "name": "위키백과: 사랑이 지나가면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1602,8 +2314,16 @@
     "category": "음악",
     "title": "이문세 - 깊은 밤을 날아서",
     "summary": "이문세의 '깊은 밤을 날아서'가 경쾌한 선율로 인기를 얻었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8",
+        "name": "위키백과: 이문세",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1613,7 +2333,8 @@
     "title": "이문세 - 가로수 그늘 아래 서면",
     "summary": "이문세의 '가로수 그늘 아래 서면'은 서정적인 노랫말로 널리 사랑받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1623,7 +2344,8 @@
     "title": "김수희 - 남행열차",
     "summary": "김수희의 '남행열차'는 기차 여행을 떠올리게 하는 대중가요로 사랑받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1637,9 +2359,16 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EA%B3%BC_%EC%95%BC%EB%A7%9D_(2006%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 사랑과 야망 (2006년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1649,7 +2378,8 @@
     "title": "아기공룡 둘리 TV 애니메이션",
     "summary": "둘리와 친구들의 모험을 그린 TV 애니메이션이 어린이들에게 사랑받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1658,8 +2388,16 @@
     "category": "TV·영화",
     "title": "영화 영웅본색",
     "summary": "홍콩 영화 '영웅본색'과 배우 주윤발은 한국 관객에게도 큰 인기를 끌었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%98%81%EC%9B%85%EB%B3%B8%EC%83%89",
+        "name": "위키백과: 영웅본색",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1668,8 +2406,16 @@
     "category": "TV·영화",
     "title": "영화 씨받이",
     "summary": "임권택 감독의 '씨받이'와 배우 강수연의 연기가 국내외에서 주목받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%94%A8%EB%B0%9B%EC%9D%B4_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 씨받이 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1679,7 +2425,8 @@
     "title": "드라마 한지붕 세가족",
     "summary": "여러 가족이 함께 사는 집을 배경으로 이웃들의 이야기가 방송됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1689,7 +2436,8 @@
     "title": "대통령 직선제 개헌",
     "summary": "대통령을 국민이 직접 뽑는 제도로 헌법이 개정됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1698,8 +2446,16 @@
     "category": "사건·생활상",
     "title": "제13대 대통령 선거",
     "summary": "개헌 뒤 대통령 직선제가 실시돼 유권자들이 직접 대통령을 뽑았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C13%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0",
+        "name": "위키백과: 대한민국 제13대 대통령 선거",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1715,7 +2471,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1725,7 +2482,8 @@
     "title": "주윤발식 긴 코트",
     "summary": "홍콩 누아르 영화의 인기에 힘입어 긴 코트 차림이 영화 팬들의 눈길을 끌었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1735,7 +2493,8 @@
     "title": "오락실 격투·액션 게임",
     "summary": "청소년들이 오락실에서 동전을 넣고 액션 게임을 즐겼다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1745,7 +2504,8 @@
     "title": "라면",
     "summary": "봉지 라면은 집에서 손쉽게 조리해 먹는 음식으로 인기를 이어갔다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1755,7 +2515,8 @@
     "title": "비디오 대여와 VTR",
     "summary": "비디오테이프를 빌려 집에서 영화를 보는 문화가 확산됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1987,
@@ -1765,7 +2526,48 @@
     "title": "프로야구 응원",
     "summary": "지역 연고 구단의 경기를 응원하며 야구장과 TV 중계를 즐겼다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "애정의 조건 (1987년 드라마)",
+    "summary": "1987년 KBS에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/애정의_조건_(1987년_드라마)",
+        "name": "위키백과: 애정의 조건 (1987년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%A0%EC%A0%95%EC%9D%98_%EC%A1%B0%EA%B1%B4",
+        "name": "위키백과: 애정의 조건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "유혹 (1987년 드라마)",
+    "summary": "1987년 MBC에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/유혹_(1987년_드라마)",
+        "name": "위키백과: 유혹 (1987년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1779,9 +2581,16 @@
         "url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200200000003&rc_ritem_no=000000000007&sitePage=0-0-0",
         "name": "국가기록원, 1980년대의 우리 생활",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%EC%98%AC%EB%A6%BC%ED%94%BD%EC%A3%BC%EA%B2%BD%EA%B8%B0%EC%9E%A5",
+        "name": "위키백과: 서울올림픽주경기장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1790,8 +2599,16 @@
     "category": "음악",
     "title": "코리아나 - 손에 손잡고",
     "summary": "서울 올림픽 공식 주제가 '손에 손잡고'가 대회 분위기와 함께 널리 울려 퍼졌다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%90%EC%97%90_%EC%86%90_%EC%9E%A1%EA%B3%A0",
+        "name": "위키백과: 손에 손 잡고",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1805,9 +2622,16 @@
         "url": "https://www.yna.co.kr/view/AKR20151116172300005",
         "name": "연합뉴스, 음악의 타임슬립 효과",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%83%81%EC%9D%80_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 이상은 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1816,8 +2640,16 @@
     "category": "음악",
     "title": "무한궤도 - 그대에게",
     "summary": "무한궤도의 '그대에게'가 대학가요제를 통해 주목받으며 힘찬 응원가로 사랑받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AC%B4%ED%95%9C%EA%B6%A4%EB%8F%84_(%EB%B0%B4%EB%93%9C)",
+        "name": "위키백과: 무한궤도 (밴드)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1826,8 +2658,16 @@
     "category": "음악",
     "title": "변진섭 - 홀로 된다는 것",
     "summary": "변진섭의 '홀로 된다는 것'은 발라드 열풍 속에서 인기를 얻었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD",
+        "name": "위키백과: 변진섭",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1836,8 +2676,16 @@
     "category": "음악",
     "title": "이문세 - 붉은 노을",
     "summary": "이문세의 '붉은 노을'이 경쾌한 선율과 함께 널리 사랑받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B6%89%EC%9D%80_%EB%85%B8%EC%9D%84",
+        "name": "위키백과: 붉은 노을",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1851,9 +2699,16 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%9E%98%EC%84%B1_(1988%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 모래성 (1988년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1862,8 +2717,16 @@
     "category": "TV·영화",
     "title": "애니메이션 달려라 하니",
     "summary": "육상 소녀 하니의 성장 이야기가 TV 애니메이션으로 방송돼 사랑받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8B%AC%EB%A0%A4%EB%9D%BC_%ED%95%98%EB%8B%88",
+        "name": "위키백과: 달려라 하니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1873,7 +2736,8 @@
     "title": "애니메이션 떠돌이 까치",
     "summary": "이현세 만화를 원작으로 한 '떠돌이 까치'가 TV 애니메이션으로 방송됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1882,8 +2746,16 @@
     "category": "TV·영화",
     "title": "영화 칠수와 만수",
     "summary": "박광수 감독의 '칠수와 만수'는 두 젊은 노동자의 삶을 그려 주목받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%88%98%EC%99%80_%EB%A7%8C%EC%88%98",
+        "name": "위키백과: 칠수와 만수",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1893,7 +2765,8 @@
     "title": "드라마 서울의 달빛",
     "summary": "서울 올림픽을 전후한 시기에도 가족과 이웃의 이야기를 담은 드라마가 안방극장에서 방송됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1902,8 +2775,16 @@
     "category": "놀이·문구",
     "title": "올림픽 마스코트 호돌이",
     "summary": "호랑이를 형상화한 호돌이가 서울 올림픽을 상징하며 각종 기념품에 등장했다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%8F%8C%EC%9D%B4",
+        "name": "위키백과: 호돌이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1913,7 +2794,8 @@
     "title": "서울 올림픽 기념 우표",
     "summary": "서울 올림픽을 기념하는 우표가 발행돼 수집가와 대중의 관심을 끌었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1923,7 +2805,8 @@
     "title": "서울 올림픽 기념품",
     "summary": "호돌이와 올림픽 상징을 활용한 다양한 기념품이 눈길을 끌었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1933,7 +2816,8 @@
     "title": "서울 패럴림픽",
     "summary": "서울에서 장애인올림픽이 열려 세계 각국 선수들이 참가했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1943,7 +2827,8 @@
     "title": "올림픽 운동복",
     "summary": "국제 스포츠 행사 분위기 속에서 운동복과 운동화가 친숙한 일상 차림으로 활용됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1953,7 +2838,8 @@
     "title": "햄버거",
     "summary": "햄버거 전문점이 등장하며 햄버거를 간편하게 사 먹는 문화가 확산됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1963,7 +2849,8 @@
     "title": "치킨 배달",
     "summary": "가족이나 친구들과 배달 치킨을 나눠 먹는 풍경이 친숙해졌다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1973,7 +2860,8 @@
     "title": "비디오테이프 대여",
     "summary": "비디오 가게에서 테이프를 빌려 가정용 비디오 기기로 영화를 즐겼다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1988,
@@ -1983,7 +2871,25 @@
     "title": "올림픽 경기 단체 시청",
     "summary": "가족과 이웃이 TV 앞에 모여 올림픽 경기를 보며 선수들을 응원했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "인현왕후 (드라마)",
+    "summary": "조선 숙종 시대의 인현왕후를 다룬 MBC 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/인현왕후_(드라마)",
+        "name": "위키백과: 인현왕후 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -1999,7 +2905,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2015,7 +2922,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2024,8 +2932,16 @@
     "category": "음악",
     "title": "변진섭 - 너에게로 또다시",
     "summary": "변진섭의 '너에게로 또다시'가 발라드 열풍 속에서 폭넓은 사랑을 받았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD",
+        "name": "위키백과: 변진섭",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2034,8 +2950,16 @@
     "category": "음악",
     "title": "변진섭 - 희망사항",
     "summary": "변진섭의 '희망사항'은 바라는 연인의 모습을 재치 있게 노래해 인기를 얻었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD",
+        "name": "위키백과: 변진섭",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2051,7 +2975,8 @@
         "license": "CC BY-SA"
       }
     ],
-    "confidence": "high"
+    "confidence": "high",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2061,7 +2986,8 @@
     "title": "이선희 - 나의 거리",
     "summary": "이선희의 '나의 거리'는 감성적인 노래로 사랑받았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2071,7 +2997,8 @@
     "title": "해바라기 - 사랑으로",
     "summary": "해바라기의 '사랑으로'는 따뜻한 메시지로 널리 불렸다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2080,8 +3007,16 @@
     "category": "TV·영화",
     "title": "드라마 제2공화국",
     "summary": "현대 정치사를 다룬 드라마 '제2공화국'이 방송됐다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%9C2%EA%B3%B5%ED%99%94%EA%B5%AD_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 제2공화국 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2091,7 +3026,8 @@
     "title": "드라마 천사의 선택",
     "summary": "가족과 인간관계를 그린 드라마 '천사의 선택'이 방송됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2100,8 +3036,16 @@
     "category": "TV·영화",
     "title": "영화 행복은 성적순이 아니잖아요",
     "summary": "입시 경쟁 속 청소년들의 고민을 다룬 영화가 개봉해 화제를 모았다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%B3%B5%EC%9D%80_%EC%84%B1%EC%A0%81%EC%88%9C%EC%9D%B4_%EC%95%84%EB%8B%88%EC%9E%96%EC%95%84%EC%9A%94",
+        "name": "위키백과: 행복은 성적순이 아니잖아요",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2111,7 +3055,8 @@
     "title": "영화 비 오는 날의 수채화",
     "summary": "젊은이들의 사랑과 우정을 그린 영화 '비 오는 날의 수채화'가 개봉했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2121,7 +3066,8 @@
     "title": "토요일 토요일은 즐거워",
     "summary": "주말 오락 프로그램에서 인기 가수들의 무대와 코미디를 즐겼다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2130,8 +3076,16 @@
     "category": "놀이·문구",
     "title": "롯데월드 어드벤처 개장",
     "summary": "서울 잠실의 실내 테마파크 롯데월드 어드벤처가 문을 열었다.",
-    "sources": [],
-    "confidence": "low"
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C",
+        "name": "위키백과: 롯데월드",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2141,7 +3095,8 @@
     "title": "프로야구 한국시리즈",
     "summary": "해태 타이거즈와 빙그레 이글스가 한국시리즈에서 맞붙어 야구팬들의 관심을 모았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2151,7 +3106,8 @@
     "title": "가정용 비디오게임",
     "summary": "가정에서 TV에 게임기를 연결해 게임을 즐기는 문화가 확산됐다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2161,7 +3117,8 @@
     "title": "햄버거 전문점",
     "summary": "햄버거와 감자튀김을 함께 먹는 패스트푸드 매장이 도시의 새로운 외식 공간으로 자리 잡았다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2171,7 +3128,8 @@
     "title": "치킨과 콜라",
     "summary": "치킨과 콜라를 가족이나 친구들과 함께 먹는 모습이 친숙해졌다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2181,7 +3139,8 @@
     "title": "청바지와 운동화",
     "summary": "청바지와 운동화는 청소년과 젊은 층이 즐겨 입는 편한 차림이었다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2197,7 +3156,8 @@
         "license": "미확인"
       }
     ],
-    "confidence": "medium"
+    "confidence": "medium",
+    "wiki_checked": true
   },
   {
     "year": 1989,
@@ -2207,6 +3167,70 @@
     "title": "비디오 가게",
     "summary": "동네 비디오 가게에서 영화 테이프를 빌려 집에서 감상했다.",
     "sources": [],
-    "confidence": "low"
+    "confidence": "low",
+    "wiki_checked": true
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "백범일지 (드라마)",
+    "summary": "김구의 삶을 다룬 MBC 드라마로 1989년에 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/백범일지_(드라마)",
+        "name": "위키백과: 백범일지 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "사랑의 굴레",
+    "summary": "1989년 KBS에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사랑의_굴레",
+        "name": "위키백과: 사랑의 굴레",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EC%9D%98_%EA%B5%B4%EB%A0%88",
+        "name": "위키백과: 사랑의 굴레",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "date_precision": "year",
+    "category": "TV·영화",
+    "title": "행복한 여자 (1989년 드라마)",
+    "summary": "1989년 MBC에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/행복한_여자_(1989년_드라마)",
+        "name": "위키백과: 행복한 여자 (1989년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%B3%B5%ED%95%9C_%EC%97%AC%EC%9E%90",
+        "name": "위키백과: 행복한 여자",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high",
+    "wiki_checked": true
   }
 ]

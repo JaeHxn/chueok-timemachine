@@ -27,6 +27,12 @@
         "url": "https://ko.wikipedia.org/wiki/칠성사이다",
         "name": "위키백과 칠성사이다",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%84%B1%EC%82%AC%EC%9D%B4%EB%8B%A4",
+        "name": "위키백과: 칠성사이다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -59,6 +65,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+        "name": "위키백과: 6.25 전쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -75,6 +87,56 @@
         "url": "https://www.archives.go.kr/next/common/archivedata/render.do?filePath=2F757046696C652F70616C67616E2F313636393335313637303437375F372E706466",
         "name": "국가기록원 문화영화 목록",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+        "name": "위키백과: 6.25 전쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
+    "month": 6,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "한강인도교 폭파",
+    "summary": "한국 전쟁 초기인 6월 28일 한강 인도교가 폭파되었다. 다리를 건너던 민간인들이 희생되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/한강_인도교_폭파",
+        "name": "위키백과: 한강인도교 폭파",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B0%95%EC%9D%B8%EB%8F%84%EA%B5%90_%ED%8F%AD%ED%8C%8C",
+        "name": "위키백과: 한강인도교 폭파",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1950,
+    "month": 7,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "노근리 양민 학살 사건",
+    "summary": "한국 전쟁 중 충청북도 영동군 노근리에서 피란민들이 미군의 공격으로 희생되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/노근리_양민_학살_사건",
+        "name": "위키백과: 노근리 양민 학살 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%85%B8%EA%B7%BC%EB%A6%AC_%EC%96%91%EB%AF%BC_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 노근리 양민 학살 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -107,9 +169,37 @@
         "url": "https://ko.wikipedia.org/wiki/1950년_대한민국",
         "name": "위키백과 1950년 대한민국",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EA%B5%B0",
+        "name": "위키백과: 여군",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1950,
+    "month": 9,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "인천 상륙 작전",
+    "summary": "유엔군이 인천에 상륙해 서울 수복으로 이어진 군사 작전이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/인천_상륙_작전",
+        "name": "위키백과: 인천 상륙 작전",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EC%B2%9C_%EC%83%81%EB%A5%99_%EC%9E%91%EC%A0%84",
+        "name": "위키백과: 인천 상륙 작전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1950,
@@ -126,6 +216,72 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1950,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "보도연맹 학살 사건",
+    "summary": "한국 전쟁 발발 후 국민보도연맹원 등을 대상으로 여러 지역에서 집단 학살이 벌어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/보도연맹_학살_사건",
+        "name": "위키백과: 보도연맹 학살 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%B4%EB%8F%84%EC%97%B0%EB%A7%B9_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 보도연맹 학살 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1951,
+    "month": 1,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "1·4 후퇴",
+    "summary": "중국군과 북한군의 공세로 국군과 유엔군이 서울에서 후퇴했고, 많은 시민이 남쪽으로 피란했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1·4_후퇴",
+        "name": "위키백과: 1·4 후퇴",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1%C2%B74_%ED%9B%84%ED%87%B4",
+        "name": "위키백과: 1·4 후퇴",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1951,
+    "month": 2,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "거창 양민 학살 사건",
+    "summary": "경상남도 거창에서 국군에 의해 주민들이 집단 희생된 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/거창_양민_학살_사건",
+        "name": "위키백과: 거창 양민 학살 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%B0%BD_%EC%96%91%EB%AF%BC_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 거창 양민 학살 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1951,
@@ -174,6 +330,28 @@
       }
     ],
     "confidence": "low"
+  },
+  {
+    "year": 1951,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "국민방위군 사건",
+    "summary": "국민방위군 지휘부의 부패와 보급 부실로 동원된 장정들이 굶주림과 추위 속에서 대거 희생되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/국민방위군_사건",
+        "name": "위키백과: 국민방위군 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%AD%EB%AF%BC%EB%B0%A9%EC%9C%84%EA%B5%B0_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 국민방위군 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1952,
@@ -235,6 +413,12 @@
         "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
         "name": "영어 위키백과 Trot",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%84%A0%EC%95%BC%EA%B3%A1",
+        "name": "위키백과: 전선야곡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -283,6 +467,12 @@
         "url": "https://ko.wikipedia.org/wiki/사상계",
         "name": "위키백과 사상계",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%83%81%EA%B3%84",
+        "name": "위키백과: 사상계",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -299,6 +489,12 @@
         "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
         "name": "위키백과 1953년 대한민국",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%A6%AC%EC%95%84%ED%97%A4%EB%9F%B4%EB%93%9C",
+        "name": "위키백과: 코리아헤럴드",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -315,6 +511,12 @@
         "url": "https://ko.wikipedia.org/wiki/1953년_대한민국",
         "name": "위키백과 1953년 대한민국",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%9C%B4%EC%A0%84",
+        "name": "위키백과: 휴전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -352,6 +554,12 @@
         "url": "https://ko.wikipedia.org/wiki/박시춘",
         "name": "위키백과 박시춘",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%B3%EC%84%B8%EC%96%B4%EB%9D%BC_%EA%B8%88%EC%88%9C%EC%95%84",
+        "name": "위키백과: 굳세어라 금순아",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -368,6 +576,12 @@
         "url": "https://ko.wikipedia.org/wiki/대한뉴스",
         "name": "위키백과 대한뉴스",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%89%B4%EC%8A%A4",
+        "name": "위키백과: 대한뉴스",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -400,9 +614,15 @@
         "url": "https://ko.wikipedia.org/wiki/1953년_대한민국의_영화_목록",
         "name": "위키백과 1953년 대한민국의 영화 목록",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B5%9C%ED%9B%84%EC%9D%98_%EC%9C%A0%ED%98%B9",
+        "name": "위키백과: 최후의 유혹",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "low"
+    "confidence": "medium"
   },
   {
     "year": 1953,
@@ -416,6 +636,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%B3%EC%84%B8%EC%96%B4%EB%9D%BC_%EA%B8%88%EC%88%9C%EC%95%84",
+        "name": "위키백과: 굳세어라 금순아",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -539,6 +765,28 @@
   },
   {
     "year": 1954,
+    "month": 11,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "사사오입 개헌",
+    "summary": "초대 대통령의 중임 제한을 없애는 개헌안이 정족수 계산에 사사오입을 적용해 통과되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사사오입_개헌",
+        "name": "위키백과: 사사오입 개헌",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EC%82%AC%EC%98%A4%EC%9E%85_%EA%B0%9C%ED%97%8C",
+        "name": "위키백과: 사사오입 개헌",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1954,
     "month": 12,
     "precision": "month",
     "cat": "음악",
@@ -554,6 +802,12 @@
         "url": "https://ko.wikipedia.org/wiki/CBS_(대한민국의_방송사)",
         "name": "위키백과 CBS (대한민국의 방송사)",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/CBS_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EB%B0%A9%EC%86%A1%EC%82%AC)",
+        "name": "위키백과: CBS (대한민국의 방송사)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -575,6 +829,12 @@
         "url": "https://ko.wikipedia.org/wiki/박시춘",
         "name": "위키백과 박시춘",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%84%EC%9D%98_%EB%B6%80%EC%82%B0%EC%A0%95%EA%B1%B0%EC%9E%A5",
+        "name": "위키백과: 이별의 부산정거장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -639,6 +899,12 @@
         "url": "https://theme.archives.go.kr/next/koreaOfRecord/popSong.do",
         "name": "국가기록원 기록으로 만나는 대한민국: 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%84%EC%9D%98_%EB%B6%80%EC%82%B0%EC%A0%95%EA%B1%B0%EC%9E%A5",
+        "name": "위키백과: 이별의 부산정거장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -709,6 +975,28 @@
   },
   {
     "year": 1955,
+    "month": 11,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "젊은 그들 (영화)",
+    "summary": "신상옥 감독이 김동인의 작품을 원작으로 만든 영화로, 1955년 11월 30일 공개됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/젊은_그들_(영화)",
+        "name": "위키백과: 젊은 그들 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%8A%EC%9D%80_%EA%B7%B8%EB%93%A4",
+        "name": "위키백과: 젊은 그들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1955,
     "month": null,
     "precision": "year",
     "cat": "음악",
@@ -740,6 +1028,12 @@
         "url": "https://ko.wikipedia.org/wiki/피아골_(영화)",
         "name": "위키백과 피아골",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%94%BC%EC%95%84%EA%B3%A8_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 피아골 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -815,6 +1109,28 @@
   },
   {
     "year": 1956,
+    "month": 5,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "포화 속의 십자가",
+    "summary": "이용민 감독이 연출하고 김진규 등이 출연한 영화로, 1956년 5월 15일 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/포화_속의_십자가",
+        "name": "위키백과: 포화 속의 십자가",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8F%AC%ED%99%94_%EC%86%8D%EC%9D%98_%EC%8B%AD%EC%9E%90%EA%B0%80",
+        "name": "위키백과: 포화 속의 십자가",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1956,
     "month": 6,
     "precision": "month",
     "cat": "음악",
@@ -830,6 +1146,12 @@
         "url": "https://ko.wikipedia.org/wiki/1956년_대한민국의_영화_목록",
         "name": "위키백과 1956년 대한민국의 영화 목록",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 자유부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -846,6 +1168,12 @@
         "url": "https://ko.wikipedia.org/wiki/시집가는_날",
         "name": "위키백과 시집가는 날",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%9C%EC%A7%91%EA%B0%80%EB%8A%94_%EB%82%A0_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 시집가는 날 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -867,6 +1195,12 @@
         "url": "https://m.seoul.co.kr/news/2022/06/06/20220606019007",
         "name": "서울신문 2022-06-06 이호섭의 트로트 숨결 (검색 결과 요약만 확인)",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9E%A5%EC%9D%98_%EB%AF%B8%EC%95%84%EB%A6%AC%EA%B3%A0%EA%B0%9C",
+        "name": "위키백과: 단장의 미아리고개",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -899,6 +1233,12 @@
         "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
         "name": "Wikipedia, Cinema of South Korea",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 자유부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -915,6 +1255,12 @@
         "url": "https://en.wikipedia.org/wiki/Cinema_of_South_Korea",
         "name": "영어 위키백과 Cinema of South Korea",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%90%EC%9C%A0%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 자유부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -931,6 +1277,12 @@
         "url": "https://en.wikipedia.org/wiki/Trot_%28music%29",
         "name": "영어 위키백과 Trot",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8B%A8%EC%9E%A5%EC%9D%98_%EB%AF%B8%EC%95%84%EB%A6%AC%EA%B3%A0%EA%B0%9C",
+        "name": "위키백과: 단장의 미아리고개",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -969,6 +1321,28 @@
   },
   {
     "year": 1958,
+    "month": 7,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "어느 여대생의 고백 (1958년 영화)",
+    "summary": "신상옥 감독이 연출하고 최은희가 출연한 영화로, 1958년 7월 12일 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/어느_여대생의_고백_(1958년_영화)",
+        "name": "위키백과: 어느 여대생의 고백 (1958년 영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%8A%90_%EC%97%AC%EB%8C%80%EC%83%9D%EC%9D%98_%EA%B3%A0%EB%B0%B1",
+        "name": "위키백과: 어느 여대생의 고백",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1958,
     "month": 12,
     "precision": "month",
     "cat": "음악",
@@ -984,6 +1358,12 @@
         "url": "https://ko.wikipedia.org/wiki/느티나무_있는_언덕",
         "name": "위키백과 느티나무 있는 언덕",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8A%90%ED%8B%B0%EB%82%98%EB%AC%B4_%EC%9E%88%EB%8A%94_%EC%96%B8%EB%8D%95",
+        "name": "위키백과: 느티나무 있는 언덕",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -1000,6 +1380,12 @@
         "url": "https://ko.wikipedia.org/wiki/금성사",
         "name": "위키백과 금성사",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B8%88%EC%84%B1%EC%82%AC",
+        "name": "위키백과: 금성사",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -1160,9 +1546,37 @@
         "url": "https://en.wikipedia.org/wiki/Sageuk",
         "name": "영어 위키백과 Sageuk",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EC%A2%85_%ED%99%A9%EC%A0%9C%EC%99%80_%EC%9D%98%EC%82%AC_%EC%95%88%EC%A4%91%EA%B7%BC",
+        "name": "위키백과: 고종 황제와 의사 안중근",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1960,
+    "month": 4,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "4·19 혁명",
+    "summary": "부정선거에 반대하는 학생과 시민들의 시위가 이승만 대통령의 하야로 이어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/4·19_혁명",
+        "name": "위키백과: 4·19 혁명",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/4%C2%B719_%ED%98%81%EB%AA%85",
+        "name": "위키백과: 4·19 혁명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1960,
@@ -1176,6 +1590,12 @@
         "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
         "name": "한국영상자료원, 한국영화 흥행사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A7%A8%EC%8A%A4_%EB%B9%A0%EB%B9%A0",
+        "name": "위키백과: 로맨스 빠빠",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1234,6 +1654,44 @@
     "confidence": "medium"
   },
   {
+    "year": 1960,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "하녀 (1960년 영화)",
+    "summary": "김기영 감독의 영화로, 한 가정에 들어온 하녀를 둘러싸고 벌어지는 사건을 그렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/하녀_(1960년_영화)",
+        "name": "위키백과: 하녀 (1960년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": 5,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "5·16 군사정변",
+    "summary": "박정희 등을 중심으로 한 군인들이 정권을 장악한 군사정변이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/5·16_군사정변",
+        "name": "위키백과: 5·16 군사정변",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/5%C2%B716_%EA%B5%B0%EC%82%AC%EC%A0%95%EB%B3%80",
+        "name": "위키백과: 5·16 군사정변",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1961,
     "month": 12,
     "precision": "month",
@@ -1261,6 +1719,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0019777",
         "name": "한국민족문화대백과사전, 문화방송",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AC%B8%ED%99%94%EB%B0%A9%EC%86%A1",
+        "name": "위키백과: 문화방송",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1293,6 +1757,12 @@
         "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
         "name": "한국영상자료원, 1961년 한국영화 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B1%EC%B6%98%ED%96%A5",
+        "name": "위키백과: 성춘향",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1309,6 +1779,12 @@
         "url": "https://www.koreafilm.or.kr/collection/CI_00000014",
         "name": "한국영상자료원, 1961년 한국영화 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EB%B0%A9_%EC%86%90%EB%8B%98%EA%B3%BC_%EC%96%B4%EB%A8%B8%EB%8B%88_(1961%EB%85%84_%EC%98%81%ED%99%94)",
+        "name": "위키백과: 사랑방 손님과 어머니 (1961년 영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1346,6 +1822,38 @@
     "confidence": "high"
   },
   {
+    "year": 1961,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "오발탄 (영화)",
+    "summary": "유현목 감독이 이범선의 동명 소설을 영화화한 작품이다. 1960년 완성됐으나 상영이 보류되어 1961년 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/오발탄_(영화)",
+        "name": "위키백과: 오발탄 (영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1961,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "마부 (영화)",
+    "summary": "강대진 감독의 흑백영화로, 마부와 그의 가족이 살아가는 이야기를 다뤘다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/마부_(영화)",
+        "name": "위키백과: 마부 (영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1962,
     "month": null,
     "precision": "year",
@@ -1373,6 +1881,12 @@
         "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
         "name": "한국영상자료원, 한국영화 흥행사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%B4%EB%85%80%EB%AC%B8",
+        "name": "위키백과: 열녀문",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1421,6 +1935,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0015002",
         "name": "한국민족문화대백과사전, 대한민국",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%95%84%EB%B0%A9%EC%86%A1",
+        "name": "위키백과: 동아방송",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1437,6 +1957,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0026724",
         "name": "한국민족문화대백과사전, 삼양라운드스퀘어",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%96%91%EB%9D%BC%EB%A9%B4",
+        "name": "위키백과: 삼양라면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1453,6 +1979,12 @@
         "url": "https://www.koreafilm.or.kr/movie/PM_000749",
         "name": "한국영상자료원, 청춘교실",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EC%B6%98_%EA%B5%90%EC%8B%A4",
+        "name": "위키백과: 청춘 교실",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1469,6 +2001,50 @@
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 광복 70년 한국인 의식주 변천사: 유행가의 변천",
         "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1963,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "돌아오지 않는 해병",
+    "summary": "이만희가 감독한 한국 전쟁 영화다. 청룡영화상에서 감독상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/돌아오지_않는_해병",
+        "name": "위키백과: 돌아오지 않는 해병",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%8C%EC%95%84%EC%98%A4%EC%A7%80_%EC%95%8A%EB%8A%94_%ED%95%B4%EB%B3%91",
+        "name": "위키백과: 돌아오지 않는 해병",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": 6,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "6·3 항쟁",
+    "summary": "한일회담에 반대하는 학생과 시민들의 시위가 벌어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6·3_항쟁",
+        "name": "위키백과: 6·3 항쟁",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/6%C2%B73_%ED%95%AD%EC%9F%81",
+        "name": "위키백과: 6·3 항쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1501,6 +2077,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0016659",
         "name": "한국민족문화대백과사전, 동양방송",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%96%91%EB%B0%A9%EC%86%A1",
+        "name": "위키백과: 동양방송",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1517,6 +2099,12 @@
         "url": "https://www.koreafilm.or.kr/museum/exhibition/EI_00042",
         "name": "한국영상자료원, 신성일·엄앵란 관련 전시",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%A8%EB%B0%9C%EC%9D%98_%EC%B2%AD%EC%B6%98",
+        "name": "위키백과: 맨발의 청춘",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1538,6 +2126,12 @@
         "url": "https://school.ybmsmartschool.com/ybm-prd-std/3rdParty/bluega/ybm2025/9788917302011/e-abr/book/content/contents/studyhelper/dataRoom/files/02_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF/02_4_%EA%B3%A0%EB%93%B1%20%EC%9D%8C%EA%B0%90%EB%B9%84_%EC%A7%80%EB%8F%84%EC%84%9C%20PDF_4%EB%8B%A8%EC%9B%90.pdf",
         "name": "YBM, 대중음악의 흐름",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EB%B0%B1%EC%95%84%EA%B0%80%EC%94%A8",
+        "name": "위키백과: 동백아가씨",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1554,6 +2148,12 @@
         "url": "https://artsandculture.google.com/story/HwUxg6trdAUA8A?hl=ko",
         "name": "한국영상자료원, 영화보다 영화 같은 삶: 영화감독 신상옥",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B9%A8%EA%B0%84_%EB%A7%88%ED%9B%84%EB%9D%BC",
+        "name": "위키백과: 빨간 마후라",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1570,6 +2170,28 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1964,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "벙어리 삼룡 (1964년 영화)",
+    "summary": "신상옥이 나도향의 소설을 영화화한 흑백영화다. 김진규와 최은희 등이 출연했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/벙어리_삼룡_(1964년_영화)",
+        "name": "위키백과: 벙어리 삼룡 (1964년 영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B2%99%EC%96%B4%EB%A6%AC_%EC%82%BC%EB%A3%A1_(1964%EB%85%84_%EC%98%81%ED%99%94)",
+        "name": "위키백과: 벙어리 삼룡 (1964년 영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1607,6 +2229,44 @@
     "confidence": "medium"
   },
   {
+    "year": 1965,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "갯마을 (1965년 영화)",
+    "summary": "김수용이 오영수의 소설을 영화화했다. 당시 유행한 문예영화의 대표작 가운데 하나다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/갯마을_(1965년_영화)",
+        "name": "위키백과: 갯마을 (1965년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1965,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "저 하늘에도 슬픔이 (1965년 영화)",
+    "summary": "이윤복의 수기를 바탕으로 김수용이 감독한 흑백영화다. 이후 필름이 발견되어 디지털로 복원됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/저_하늘에도_슬픔이_(1965년_영화)",
+        "name": "위키백과: 저 하늘에도 슬픔이 (1965년 영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%80_%ED%95%98%EB%8A%98%EC%97%90%EB%8F%84_%EC%8A%AC%ED%94%94%EC%9D%B4",
+        "name": "위키백과: 저 하늘에도 슬픔이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1966,
     "month": 8,
     "precision": "month",
@@ -1634,6 +2294,28 @@
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%98%EC%88%99%EC%83%9D",
+        "name": "위키백과: 하숙생",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1966,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "시장 (영화)",
+    "summary": "이만희가 감독하고 신영균과 문정숙 등이 출연한 영화다. 1966년 청룡영화상에서 작품상과 감독상 등을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/시장_(영화)",
+        "name": "위키백과: 시장 (영화)",
+        "license": "CC BY-SA 4.0"
       }
     ],
     "confidence": "high"
@@ -1666,6 +2348,12 @@
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%8A%B4_%EC%95%84%ED%94%84%EA%B2%8C",
+        "name": "위키백과: 가슴 아프게",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1703,6 +2391,88 @@
     "confidence": "high"
   },
   {
+    "year": 1967,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "산불 (1967년 영화)",
+    "summary": "차범석의 작품을 원작으로 김수용이 감독한 영화다. 1967년 공개됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/산불_(1967년_영화)",
+        "name": "위키백과: 산불 (1967년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1967,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "사격장의 아이들",
+    "summary": "김수용이 감독한 1967년 한국 영화다. 이듬해 한국연극영화상에서 작품상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사격장의_아이들",
+        "name": "위키백과: 사격장의 아이들",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EA%B2%A9%EC%9E%A5%EC%9D%98_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 사격장의 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1968,
+    "month": 1,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "1·21 사태",
+    "summary": "북한 무장대원들이 청와대를 습격할 목적으로 서울에 침투한 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1·21_사태",
+        "name": "위키백과: 1·21 사태",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/1%C2%B721_%EC%82%AC%ED%83%9C",
+        "name": "위키백과: 1·21 사태",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1968,
+    "month": 10,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "울진·삼척 무장공비 침투 사건",
+    "summary": "북한 무장대원들이 울진과 삼척 해안에 침투하면서 군과 경찰의 토벌 작전이 벌어졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/울진·삼척_무장공비_침투_사건",
+        "name": "위키백과: 울진·삼척 무장공비 침투 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9A%B8%EC%A7%84%C2%B7%EC%82%BC%EC%B2%99_%EB%AC%B4%EC%9E%A5%EA%B3%B5%EB%B9%84_%EC%B9%A8%ED%88%AC_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 울진·삼척 무장공비 침투 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1968,
     "month": null,
     "precision": "year",
@@ -1714,6 +2484,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014804",
         "name": "한국민족문화대백과사전, 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%A0%EB%8D%B0%EC%9D%B4_%EC%84%9C%EC%9A%B8",
+        "name": "위키백과: 선데이 서울",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1730,6 +2506,50 @@
         "url": "https://www.koreafilm.or.kr/upload/webzine/1f34f3c5-16e7-4043-8e24-07b21f7603af.pdf",
         "name": "한국영상자료원, 1968년작 가요 반세기 발굴",
         "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1968,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "장군의 수염",
+    "summary": "이성구가 감독한 영화다. 1968년 대종상에서 시나리오상과 제작상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/장군의_수염",
+        "name": "위키백과: 장군의 수염",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EA%B5%B0%EC%9D%98_%EC%88%98%EC%97%BC",
+        "name": "위키백과: 장군의 수염",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1968,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "카인의 후예 (영화)",
+    "summary": "유현목이 감독한 영화다. 1968년 대종상에서 우수반공영화상과 연기상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/카인의_후예_(영화)",
+        "name": "위키백과: 카인의 후예 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%9D%B8%EC%9D%98_%ED%9B%84%EC%98%88_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 카인의 후예 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1752,6 +2572,28 @@
   },
   {
     "year": 1969,
+    "month": 12,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "대한항공 YS-11기 납북 사건",
+    "summary": "강릉에서 서울로 향하던 대한항공 여객기가 납치되어 북한으로 향한 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한항공_YS-11기_납북_사건",
+        "name": "위키백과: 대한항공 YS-11기 납북 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5_YS-11%EA%B8%B0_%EB%82%A9%EB%B6%81_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 대한항공 YS-11기 납북 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1969,
     "month": null,
     "precision": "year",
     "cat": "음악",
@@ -1762,6 +2604,12 @@
         "url": "https://www.korea.kr/goNewsRes/attaches/2019.05/23/162_20151127_01IbpKEakDGJM000.pdf",
         "name": "대한민국 정책브리핑, 연도별 대중가요 자료",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EC%9D%80_%EB%88%88%EB%AC%BC%EC%9D%98_%EC%94%A8%EC%95%97",
+        "name": "위키백과: 사랑은 눈물의 씨앗",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1799,6 +2647,28 @@
     "confidence": "high"
   },
   {
+    "year": 1969,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "삼선 개헌",
+    "summary": "대통령의 세 번째 연임을 허용하기 위한 헌법 개정이 추진되어 국민투표를 거쳤다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼선_개헌",
+        "name": "위키백과: 삼선 개헌",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%A0_%EA%B0%9C%ED%97%8C",
+        "name": "위키백과: 삼선 개헌",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1970,
     "month": 3,
     "precision": "month",
@@ -1815,6 +2685,12 @@
         "url": "https://journal.kci.go.kr/djnar/archive/articlePdf?artiId=ART001670112",
         "name": "한국학술지인용색인, 아씨 관련 연구",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%94%A8_(1997%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 아씨 (1997년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1837,6 +2713,28 @@
   },
   {
     "year": 1970,
+    "month": 6,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "사랑과 슬픔의 강",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사랑과_슬픔의_강",
+        "name": "위키백과: 사랑과 슬픔의 강",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EA%B3%BC_%EC%8A%AC%ED%94%94%EC%9D%98_%EA%B0%95",
+        "name": "위키백과: 사랑과 슬픔의 강",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
     "month": 7,
     "precision": "month",
     "cat": "가전·기술",
@@ -1847,6 +2745,12 @@
         "url": "https://ko.wikipedia.org/wiki/경부고속도로",
         "name": "위키백과 경부고속도로",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B6%80%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C",
+        "name": "위키백과: 경부고속도로",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1863,9 +2767,53 @@
         "url": "https://ko.wikipedia.org/wiki/아침이슬",
         "name": "위키백과 아침이슬",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1970,
+    "month": 8,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "어명",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/어명",
+        "name": "위키백과: 어명",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%AA%85",
+        "name": "위키백과: 어명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": 9,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "물레방아 (드라마)",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/물레방아_(드라마)",
+        "name": "위키백과: 물레방아 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1970,
@@ -1885,6 +2833,22 @@
   },
   {
     "year": 1970,
+    "month": 10,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "길 (1970년 드라마)",
+    "summary": "1970년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/길_(1970년_드라마)",
+        "name": "위키백과: 길 (1970년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1970,
     "month": 11,
     "precision": "month",
     "cat": "사건·생활상",
@@ -1895,6 +2859,12 @@
         "url": "https://ko.wikipedia.org/wiki/전태일",
         "name": "위키백과 전태일",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%ED%83%9C%EC%9D%BC",
+        "name": "위키백과: 전태일",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -1914,6 +2884,28 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1970,
+    "month": 11,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "동춘 (영화)",
+    "summary": "정진우 감독의 영화로, 김희라·문희·최무룡이 출연했다. 이듬해 백상예술대상과 부일영화상에서 작품상을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/동춘_(영화)",
+        "name": "위키백과: 동춘 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%99%EC%B6%98",
+        "name": "위키백과: 동춘",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1970,
@@ -2043,6 +3035,54 @@
     "confidence": "medium"
   },
   {
+    "year": 1970,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "무영탑 (1970년 영화)",
+    "summary": "현진건의 소설을 원작으로 김수용이 연출한 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/무영탑_(1970년_영화)",
+        "name": "위키백과: 무영탑 (1970년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "꽃님이",
+    "summary": "1971년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/꽃님이",
+        "name": "위키백과: 꽃님이",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": 2,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "쌍무지개 뜨는 언덕",
+    "summary": "1971년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/쌍무지개_뜨는_언덕",
+        "name": "위키백과: 쌍무지개 뜨는 언덕",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1971,
     "month": 3,
     "precision": "month",
@@ -2054,9 +3094,31 @@
         "url": "https://ko.wikipedia.org/wiki/수사반장",
         "name": "위키백과 수사반장",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%88%98%EC%82%AC%EB%B0%98%EC%9E%A5",
+        "name": "위키백과: 수사반장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1971,
+    "month": 7,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "장희빈 (1971년 드라마)",
+    "summary": "1971년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/장희빈_(1971년_드라마)",
+        "name": "위키백과: 장희빈 (1971년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1971,
@@ -2070,6 +3132,12 @@
         "url": "https://ko.wikipedia.org/wiki/광주_대단지_사건",
         "name": "위키백과 광주 대단지 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B4%91%EC%A3%BC%EB%8C%80%EB%8B%A8%EC%A7%80_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 광주대단지 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2086,6 +3154,12 @@
         "url": "https://ko.wikipedia.org/wiki/실미도_사건",
         "name": "위키백과 실미도 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%A4%EB%AF%B8%EB%8F%84",
+        "name": "위키백과: 실미도",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2139,6 +3213,12 @@
         "url": "https://www.newsis.com/view/NISX20260224_0003524707",
         "name": "뉴시스 '55살 과자업계 큰 형님 농심 새우깡'(2026-02-24)",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%9A%B0%EA%B9%A1",
+        "name": "위키백과: 새우깡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2155,6 +3235,12 @@
         "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
         "name": "농심, 2017 연차보고서 연혁",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%9A%B0%EA%B9%A1",
+        "name": "위키백과: 새우깡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2187,6 +3273,12 @@
         "url": "https://ko.wikipedia.org/wiki/아침이슬",
         "name": "위키백과 아침이슬",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -2224,6 +3316,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%80%ED%9D%AC_(1951%EB%85%84)",
+        "name": "위키백과: 은희 (1951년)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2261,6 +3359,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -2277,6 +3381,12 @@
         "url": "https://monthly.chosun.com/news/articleView.html?idxno=22943",
         "name": "월간조선, 장수 식품 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%B9%B5",
+        "name": "위키백과: 호빵",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -2298,6 +3408,38 @@
     "confidence": "medium"
   },
   {
+    "year": 1971,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "분례기",
+    "summary": "1971년에 개봉한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/분례기",
+        "name": "위키백과: 분례기",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1971,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "성웅 이순신",
+    "summary": "이순신을 소재로 한 1971년 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/성웅_이순신",
+        "name": "위키백과: 성웅 이순신",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1972,
     "month": 1,
     "precision": "month",
@@ -2312,6 +3454,22 @@
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 2,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "대원군 (1972년 드라마)",
+    "summary": "1972년에 방송된 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대원군_(1972년_드라마)",
+        "name": "위키백과: 대원군 (1972년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1972,
@@ -2341,6 +3499,12 @@
         "url": "https://ko.wikipedia.org/wiki/여로_(드라마)",
         "name": "위키백과 여로 (드라마)",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EB%A1%9C",
+        "name": "위키백과: 여로",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2357,6 +3521,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0036330",
         "name": "한국민족문화대백과사전, 여로",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EB%A1%9C_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 여로 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2373,6 +3543,56 @@
         "url": "https://ko.wikipedia.org/wiki/7·4_남북_공동_성명",
         "name": "위키백과 7·4 남북 공동 성명",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/7%C2%B74_%EB%82%A8%EB%B6%81_%EA%B3%B5%EB%8F%99_%EC%84%B1%EB%AA%85",
+        "name": "위키백과: 7·4 남북 공동 성명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1972,
+    "month": 8,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "새엄마 (1972년 드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새엄마_(1972년_드라마)",
+        "name": "위키백과: 새엄마 (1972년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%97%84%EB%A7%88_(1972%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 새엄마 (1972년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": 10,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "충녀",
+    "summary": "김기영이 감독과 각본을 맡은 영화로, 1972년 10월 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/충녀",
+        "name": "위키백과: 충녀",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B6%A9%EB%85%80",
+        "name": "위키백과: 충녀",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2437,9 +3657,15 @@
         "url": "https://ko.wikipedia.org/wiki/돌아와요_부산항에",
         "name": "위키백과 돌아와요 부산항에",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%8C%EC%95%84%EC%99%80%EC%9A%94_%EB%B6%80%EC%82%B0%ED%95%AD%EC%97%90",
+        "name": "위키백과: 돌아와요 부산항에",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "low"
+    "confidence": "medium"
   },
   {
     "year": 1972,
@@ -2453,6 +3679,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EC%B0%BD%EC%8B%9D_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 송창식 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -2469,6 +3701,38 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014802",
         "name": "한국민족문화대백과사전, 대중가요",
         "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "무녀도 (1972년 영화)",
+    "summary": "1972년에 개봉한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/무녀도_(1972년_영화)",
+        "name": "위키백과: 무녀도 (1972년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1972,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "궁녀 (1972년 영화)",
+    "summary": "1972년에 개봉한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/궁녀_(1972년_영화)",
+        "name": "위키백과: 궁녀 (1972년 영화)",
+        "license": "CC BY-SA 4.0"
       }
     ],
     "confidence": "medium"
@@ -2491,6 +3755,44 @@
   },
   {
     "year": 1973,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "파도 (1973년 드라마)",
+    "summary": "1973년에 방송된 KBS 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/파도_(1973년_드라마)",
+        "name": "위키백과: 파도 (1973년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": 2,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "한백년",
+    "summary": "1973년에 방송된 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/한백년",
+        "name": "위키백과: 한백년",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EB%B0%B1%EB%85%84",
+        "name": "위키백과: 한백년",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
     "month": 3,
     "precision": "month",
     "cat": "패션",
@@ -2501,6 +3803,28 @@
         "url": "https://theme.archives.go.kr/next/koreaOfRecord/Long-term.do",
         "name": "국가기록원 주제별 기록 '장기 기록'",
         "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1973,
+    "month": 4,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "민비 (드라마)",
+    "summary": "김영애가 주연한 MBC 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/민비_(드라마)",
+        "name": "위키백과: 민비 (드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AF%BC%EB%B9%84",
+        "name": "위키백과: 민비",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -2533,6 +3857,12 @@
         "url": "https://ko.wikipedia.org/wiki/김대중_납치_사건",
         "name": "위키백과 김대중 납치 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EB%8C%80%EC%A4%91_%EB%82%A9%EC%B9%98_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 김대중 납치 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2714,9 +4044,37 @@
         "url": "https://ko.wikipedia.org/wiki/세종문화회관",
         "name": "위키백과 세종문화회관",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80",
+        "name": "위키백과: 세종문화회관",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "강남가족",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/강남가족",
+        "name": "위키백과: 강남가족",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%95%EB%82%A8%EA%B0%80%EC%A1%B1",
+        "name": "위키백과: 강남가족",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1974,
@@ -2746,6 +4104,34 @@
         "url": "https://ko.wikipedia.org/wiki/초코파이",
         "name": "위키백과 초코파이",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4",
+        "name": "위키백과: 초코파이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
+    "month": 4,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "별들의 고향 (영화)",
+    "summary": "최인호의 베스트셀러를 이장호 감독이 영화화했다. 당시 46만 5천 명의 관객을 동원하며 흥행했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/별들의_고향_(영화)",
+        "name": "위키백과: 별들의 고향 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%84%EB%93%A4%EC%9D%98_%EA%B3%A0%ED%96%A5",
+        "name": "위키백과: 별들의 고향",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2765,6 +4151,22 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1974,
+    "month": 6,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "수선화 (드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/수선화_(드라마)",
+        "name": "위키백과: 수선화 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1974,
@@ -2805,6 +4207,22 @@
   },
   {
     "year": 1974,
+    "month": 10,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "갈대 (드라마)",
+    "summary": "시청자 의견을 반영하는 시도로도 알려진 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/갈대_(드라마)",
+        "name": "위키백과: 갈대 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1974,
     "month": null,
     "precision": "year",
     "cat": "가전·기술",
@@ -2815,6 +4233,12 @@
         "url": "https://ko.wikipedia.org/wiki/현대_포니",
         "name": "위키백과 현대 포니",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88",
+        "name": "위키백과: 현대 포니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -2847,9 +4271,15 @@
         "url": "https://ko.wikipedia.org/wiki/1970년대",
         "name": "위키백과 1970년대",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AF%BC%EC%B2%AD%ED%95%99%EB%A0%A8_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 민청학련 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
-    "confidence": "low"
+    "confidence": "medium"
   },
   {
     "year": 1974,
@@ -2959,6 +4389,12 @@
         "url": "https://www.khan.co.kr/article/200410041641441",
         "name": "경향신문, 장수 식품 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4",
+        "name": "위키백과: 초코파이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -2975,6 +4411,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0080075",
         "name": "한국민족문화대백과사전, 빙그레",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B9%99%EA%B7%B8%EB%A0%88_%EB%B0%94%EB%82%98%EB%82%98%EB%A7%9B_%EC%9A%B0%EC%9C%A0",
+        "name": "위키백과: 빙그레 바나나맛 우유",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3013,6 +4455,44 @@
   },
   {
     "year": 1975,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "어제 내린 비",
+    "summary": "이장호 감독이 연출한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/어제_내린_비",
+        "name": "위키백과: 어제 내린 비",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EC%A0%9C_%EB%82%B4%EB%A6%B0_%EB%B9%84",
+        "name": "위키백과: 어제 내린 비",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
+    "month": 2,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "안녕 (드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/안녕_(드라마)",
+        "name": "위키백과: 안녕 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
     "month": 5,
     "precision": "month",
     "cat": "음악",
@@ -3029,6 +4509,28 @@
   },
   {
     "year": 1975,
+    "month": 6,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "전우 (1975년 드라마)",
+    "summary": "한국 전쟁을 소재로 한 KBS 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/전우_(1975년_드라마)",
+        "name": "위키백과: 전우 (1975년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9A%B0",
+        "name": "위키백과: 전우",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1975,
     "month": 10,
     "precision": "month",
     "cat": "먹거리",
@@ -3039,6 +4541,12 @@
         "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
         "name": "농심, 2017 연차보고서 연혁",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%86%8D%EC%8B%AC",
+        "name": "위키백과: 농심",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3087,6 +4595,12 @@
         "url": "https://ko.wikipedia.org/wiki/아침이슬",
         "name": "위키백과 아침이슬",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%B9%A8_%EC%9D%B4%EC%8A%AC",
+        "name": "위키백과: 아침 이슬",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3119,6 +4633,12 @@
         "url": "https://ko.wikipedia.org/wiki/현대_포니",
         "name": "위키백과 현대 포니",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88",
+        "name": "위키백과: 현대 포니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3172,6 +4692,12 @@
         "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
         "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%B3%B4%EB%93%A4%EC%9D%98_%ED%96%89%EC%A7%84_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 바보들의 행진 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3188,6 +4714,12 @@
         "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148904226",
         "name": "대한민국 정책브리핑, 바보들의 행진 관련 기사",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%9E%98%EC%82%AC%EB%83%A5_(%EB%85%B8%EB%9E%98)",
+        "name": "위키백과: 고래사냥 (노래)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3204,6 +4736,12 @@
         "url": "https://archives.kdemo.or.kr/workoutlog/workoutlog/view/BRR_1975_12_09_n001",
         "name": "민주화운동기념사업회, 대중가요 방송 금지 관련 기록",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EC%B0%BD%EC%8B%9D_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 송창식 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3220,6 +4758,12 @@
         "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20170314%2F2435%2F72015452B8D149E58F044BE82AAB9BB0.pdf",
         "name": "한국농수산식품유통공사, 과자류 시장 보고서",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%9B%EB%8F%99%EC%82%B0",
+        "name": "위키백과: 맛동산",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3236,9 +4780,37 @@
         "url": "https://ko.wikipedia.org/wiki/현대_포니",
         "name": "위키백과 현대 포니",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88",
+        "name": "위키백과: 현대 포니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": 3,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "윤진사댁 며느리",
+    "summary": "1976년에 방송된 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/윤진사댁_며느리",
+        "name": "위키백과: 윤진사댁 며느리",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9C%A4%EC%A7%84%EC%82%AC%EB%8C%81_%EB%A9%B0%EB%8A%90%EB%A6%AC",
+        "name": "위키백과: 윤진사댁 며느리",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1976,
@@ -3274,6 +4846,50 @@
   },
   {
     "year": 1976,
+    "month": 5,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "여고 동창생 (1976년 드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/여고_동창생_(1976년_드라마)",
+        "name": "위키백과: 여고 동창생 (1976년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EA%B3%A0_%EB%8F%99%EC%B0%BD%EC%83%9D_(1976%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 여고 동창생 (1976년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
+    "month": 5,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "철이의 모험",
+    "summary": "톰 소여 이야기를 원작으로 한 어린이 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/철이의_모험",
+        "name": "위키백과: 철이의 모험",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%A0%EC%9D%B4%EC%9D%98_%EB%AA%A8%ED%97%98",
+        "name": "위키백과: 철이의 모험",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1976,
     "month": 7,
     "precision": "month",
     "cat": "음악",
@@ -3300,9 +4916,37 @@
         "url": "https://ko.wikipedia.org/wiki/판문점_도끼_만행_사건",
         "name": "위키백과 판문점 도끼 만행 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8C%90%EB%AC%B8%EC%A0%90_%EB%8F%84%EB%81%BC_%EB%A7%8C%ED%96%89_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 판문점 도끼 만행 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1976,
+    "month": 10,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "황금부처의 비밀",
+    "summary": "1976년에 방송된 어린이 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/황금부처의_비밀",
+        "name": "위키백과: 황금부처의 비밀",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%99%A9%EA%B8%88%EB%B6%80%EC%B2%98%EC%9D%98_%EB%B9%84%EB%B0%80",
+        "name": "위키백과: 황금부처의 비밀",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1976,
@@ -3369,6 +5013,12 @@
         "url": "https://www.weiv.co.kr/archives/10632",
         "name": "weiv, 1976~1978년 대중음악 회고",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EB%8C%80%EA%B4%80",
+        "name": "위키백과: 송대관",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3433,6 +5083,12 @@
         "url": "https://www.weiv.co.kr/archives/10632",
         "name": "weiv, 1976~1978년 대중음악 회고",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%9D%80%ED%95%98",
+        "name": "위키백과: 이은하",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3497,6 +5153,12 @@
         "url": "https://eiec.kdi.re.kr/userdata/nara/200807/200807.pdf",
         "name": "한국개발연구원 경제정보센터, 나라경제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%B0%A4%EB%B0%94",
+        "name": "위키백과: 바밤바",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3519,6 +5181,66 @@
   },
   {
     "year": 1977,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "고교얄개",
+    "summary": "석래명 감독의 청춘 영화로, 개봉 보름도 되지 않아 관객 10만 명을 돌파했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/고교얄개",
+        "name": "위키백과: 고교얄개",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EA%B5%90%EC%96%84%EA%B0%9C",
+        "name": "위키백과: 고교얄개",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1977,
+    "month": 5,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "당신 (1977년 드라마)",
+    "summary": "김수현이 극본을 쓴 MBC 일일 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/당신_(1977년_드라마)",
+        "name": "위키백과: 당신 (1977년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": 6,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "특파원 001",
+    "summary": "1977년에 방송된 MBC 어린이 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/특파원_001",
+        "name": "위키백과: 특파원 001",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8A%B9%ED%8C%8C%EC%9B%90_001",
+        "name": "위키백과: 특파원 001",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
     "month": 9,
     "precision": "month",
     "cat": "음악",
@@ -3529,6 +5251,34 @@
         "url": "https://ko.wikipedia.org/wiki/MBC_대학가요제",
         "name": "위키백과 MBC 대학가요제",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%98_%EC%96%B4%EB%96%A1%ED%95%B4",
+        "name": "위키백과: 나 어떡해",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1977,
+    "month": 10,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "전설의 고향",
+    "summary": "민간 설화를 바탕으로 만든 드라마 시리즈로 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/전설의_고향",
+        "name": "위키백과: 전설의 고향",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%84%A4%EC%9D%98_%EA%B3%A0%ED%96%A5",
+        "name": "위키백과: 전설의 고향",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3545,6 +5295,34 @@
         "url": "https://ko.wikipedia.org/wiki/이리역_폭발_사고",
         "name": "위키백과 이리역 폭발 사고",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%A6%AC%EC%97%AD_%ED%8F%AD%EB%B0%9C_%EC%82%AC%EA%B3%A0",
+        "name": "위키백과: 이리역 폭발 사고",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1977,
+    "month": 11,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "후회합니다",
+    "summary": "1977년에 방송된 MBC 주말 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/후회합니다",
+        "name": "위키백과: 후회합니다",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%9B%84%ED%9A%8C%ED%95%A9%EB%8B%88%EB%8B%A4",
+        "name": "위키백과: 후회합니다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3614,6 +5392,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014887",
         "name": "한국민족문화대백과사전, 대학가요제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/MBC_%EB%8C%80%ED%95%99%EA%B0%80%EC%9A%94%EC%A0%9C",
+        "name": "위키백과: MBC 대학가요제",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3630,6 +5414,12 @@
         "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
         "name": "벅스, 1976년 베스트 가요 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A7%84%EC%A7%9C_%EC%A7%84%EC%A7%9C_%EC%A2%8B%EC%95%84%ED%95%B4",
+        "name": "위키백과: 진짜 진짜 좋아해",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3646,6 +5436,12 @@
         "url": "https://music.bugs.co.kr/musicpd/albumview/6821",
         "name": "벅스, 1976년 베스트 가요 컬렉션",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%9C%EC%9D%80%EC%9D%B4",
+        "name": "위키백과: 혜은이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3662,6 +5458,12 @@
         "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
         "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0%EC%83%8C%EB%93%9C",
+        "name": "위키백과: 롯데샌드",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3678,6 +5480,12 @@
         "url": "https://ko.wikipedia.org/wiki/농심",
         "name": "위키백과 농심",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%86%8D%EC%8B%AC",
+        "name": "위키백과: 농심",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3694,6 +5502,12 @@
         "url": "https://ko.wikipedia.org/wiki/세종문화회관",
         "name": "위키백과 세종문화회관",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B8%EC%A2%85%EB%AC%B8%ED%99%94%ED%9A%8C%EA%B4%80",
+        "name": "위키백과: 세종문화회관",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3726,6 +5540,34 @@
         "url": "https://image.nongshim.com/non/cir/Nongshim_2017AR_Korean.pdf",
         "name": "농심, 2017 연차보고서 연혁",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%82%98%EB%82%98%ED%82%A5_(%EA%B3%BC%EC%9E%90)",
+        "name": "위키백과: 바나나킥 (과자)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1978,
+    "month": 8,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "청춘의 덫 (1978년 드라마)",
+    "summary": "김수현 극본의 MBC 주말 드라마로 높은 시청률을 기록했다. 방영 중 내용에 대한 논란도 있었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/청춘의_덫_(1978년_드라마)",
+        "name": "위키백과: 청춘의 덫 (1978년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EC%B6%98%EC%9D%98_%EB%8D%AB_(1999%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 청춘의 덫 (1999년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3745,6 +5587,28 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1978,
+    "month": 10,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "행복을 팝니다",
+    "summary": "최불암과 김혜자 등이 출연한 MBC 일일 드라마다. 출연 배우들이 이 작품으로 백상예술대상 TV부문에서 공동 수상했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/행복을_팝니다",
+        "name": "위키백과: 행복을 팝니다",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%B3%B5%EC%9D%84_%ED%8C%9D%EB%8B%88%EB%8B%A4",
+        "name": "위키백과: 행복을 팝니다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1978,
@@ -3790,9 +5654,37 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014887",
         "name": "한국민족문화대백과사전, 대학가요제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%AC%EC%88%98%EB%B4%89",
+        "name": "위키백과: 심수봉",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1979,
+    "month": 5,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "내가 버린 남자",
+    "summary": "정소영이 연출하고 김수현과 이문웅이 각본을 쓴 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/내가_버린_남자",
+        "name": "위키백과: 내가 버린 남자",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%B4%EA%B0%80_%EB%B2%84%EB%A6%B0_%EB%82%A8%EC%9E%90",
+        "name": "위키백과: 내가 버린 남자",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1979,
@@ -3822,6 +5714,12 @@
         "url": "https://ko.wikipedia.org/wiki/부마_민주_항쟁",
         "name": "위키백과 부마 민주 항쟁",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B6%80%EB%A7%88_%EB%AF%BC%EC%A3%BC_%ED%95%AD%EC%9F%81",
+        "name": "위키백과: 부마 민주 항쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3838,6 +5736,12 @@
         "url": "https://ko.wikipedia.org/wiki/10·26_사건",
         "name": "위키백과 10·26 사건",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/10%C2%B726_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 10·26 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3854,6 +5758,12 @@
         "url": "https://ko.wikipedia.org/wiki/1970년대",
         "name": "위키백과 1970년대",
         "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/12%C2%B712_%EA%B5%B0%EC%82%AC_%EB%B0%98%EB%9E%80",
+        "name": "위키백과: 12·12 군사 반란",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -3934,6 +5844,12 @@
         "url": "https://encykorea.aks.ac.kr/Article/E0014887",
         "name": "한국민족문화대백과사전, 대학가요제",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%ED%95%99%EB%9E%98_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 김학래 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3950,6 +5866,12 @@
         "url": "https://www.korea.kr/briefing/policyBriefingView.do?newsId=75086911",
         "name": "대한민국 정책브리핑, 한국인의 삶을 바꾼 대중가요",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9C%A4%EC%8B%9C%EB%82%B4",
+        "name": "위키백과: 윤시내",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -3982,6 +5904,12 @@
         "url": "https://atfis.or.kr/home/pdf/file.do?file=%2Fupload_old%2FARTICLE%2F20130712%2F629%2F8721B2F3AFE44D199C824207E2D6D409.pdf",
         "name": "한국농수산식품유통공사, 비스킷 시장 보고서",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B9%A0%EB%8B%A4_%EC%BD%94%EC%BD%94%EB%82%AB",
+        "name": "위키백과: 빠다 코코낫",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4004,6 +5932,23 @@
   },
   {
     "year": 1980,
+    "month": 5,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "5·18 민주화운동",
+    "summary": "광주에서 시민과 학생들이 계엄 확대에 맞서 민주화를 요구했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/5.18%EB%AF%BC%EC%A3%BC%ED%99%94%EC%9A%B4%EB%8F%99_%EB%93%B1%EC%97%90_%EA%B4%80%ED%95%9C_%ED%8A%B9%EB%B3%84%EB%B2%95",
+        "name": "위키백과: 5.18민주화운동 등에 관한 특별법",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
     "month": 12,
     "precision": "month",
     "cat": "가전·기술",
@@ -4014,6 +5959,12 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%BB%AC%EB%9F%AC_%ED%85%94%EB%A0%88%EB%B9%84%EC%A0%84",
+        "name": "위키백과: 컬러 텔레비전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -4054,6 +6005,91 @@
     "year": 1980,
     "month": null,
     "precision": "year",
+    "cat": "음악",
+    "title": "조용필 - 돌아와요 부산항에",
+    "summary": "조용필의 대표곡 '돌아와요 부산항에'는 1980년에도 그의 인기 무대와 함께 널리 불렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8F%8C%EC%95%84%EC%99%80%EC%9A%94_%EB%B6%80%EC%82%B0%ED%95%AD%EC%97%90",
+        "name": "위키백과: 돌아와요 부산항에",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "전영록 - 종이학",
+    "summary": "전영록의 '종이학'은 1980년대 초 청춘 가요로 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%98%81%EB%A1%9D",
+        "name": "위키백과: 전영록",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "김수철과 작은거인",
+    "summary": "작은거인은 대학가요제를 계기로 주목받으며 젊은 세대의 록 음악 흐름을 보여주었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%88%98%EC%B2%A0_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 김수철 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 전원일기",
+    "summary": "농촌 가족과 이웃의 이야기를 그린 '전원일기'가 방송을 시작했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9B%90%EC%9D%BC%EA%B8%B0",
+        "name": "위키백과: 전원일기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 바람 불어 좋은 날",
+    "summary": "이장호 감독의 '바람 불어 좋은 날'은 도시로 올라온 젊은이들의 삶을 담아 주목받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%9E%8C_%EB%B6%88%EC%96%B4_%EC%A2%8B%EC%9D%80_%EB%82%A0_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 바람 불어 좋은 날 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
     "cat": "TV·영화",
     "title": "영화 최후의 증인",
     "summary": "이두용 감독의 영화 '최후의 증인'이 개봉해 한국전쟁의 상처를 다루었다.",
@@ -4062,6 +6098,46 @@
         "url": "https://en.wikipedia.org/wiki/List_of_South_Korean_films_of_1980",
         "name": "Wikipedia, List of South Korean films of 1980",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B5%9C%ED%9B%84%EC%9D%98_%EC%A6%9D%EC%9D%B8_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 최후의 증인 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "가전·기술",
+    "title": "흑백 텔레비전",
+    "summary": "컬러 방송이 시작되기 전후에도 많은 가정에서 흑백 텔레비전으로 방송을 시청했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%9D%91%EB%B0%B1_%ED%85%94%EB%A0%88%EB%B9%84%EC%A0%84",
+        "name": "위키백과: 흑백 텔레비전",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "가전·기술",
+    "title": "카세트테이프",
+    "summary": "카세트테이프는 대중가요를 듣고 녹음하는 데 널리 쓰였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%84%B8%ED%8A%B8_%ED%85%8C%EC%9D%B4%ED%94%84",
+        "name": "위키백과: 카세트 테이프",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4081,6 +6157,88 @@
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1980,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "토지 (1979년 드라마)",
+    "summary": "박경리의 소설을 바탕으로 제작된 KBS 드라마로, 1980년에도 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/토지_(1979년_드라마)",
+        "name": "위키백과: 토지 (1979년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1981,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "대명 (드라마)",
+    "summary": "1981년 1월 방송을 시작한 KBS 대하드라마다. 조선 인조와 효종 시기의 역사를 다뤘다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대명_(드라마)",
+        "name": "위키백과: 대명 (드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%EB%AA%85",
+        "name": "위키백과: 대명",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1981,
+    "month": 10,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "난장이가 쏘아올린 작은 공 (영화)",
+    "summary": "조세희의 작품을 원작으로 한 이원세 감독의 영화로, 1981년 10월 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/난장이가_쏘아올린_작은_공_(영화)",
+        "name": "위키백과: 난장이가 쏘아올린 작은 공 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%9C%EC%9E%A5%EC%9D%B4%EA%B0%80_%EC%8F%98%EC%95%84%EC%98%AC%EB%A6%B0_%EC%9E%91%EC%9D%80_%EA%B3%B5",
+        "name": "위키백과: 난장이가 쏘아올린 작은 공",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1981,
+    "month": 12,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "이심의 비련기",
+    "summary": "1981년 MBC에서 방송한 특집 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/이심의_비련기",
+        "name": "위키백과: 이심의 비련기",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8B%AC%EC%9D%98_%EB%B9%84%EB%A0%A8%EA%B8%B0",
+        "name": "위키백과: 이심의 비련기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1981,
@@ -4118,6 +6276,57 @@
     "year": 1981,
     "month": null,
     "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 만다라",
+    "summary": "임권택 감독의 '만다라'가 개봉해 수행과 인간의 번뇌를 스크린에 담았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%8C%EB%8B%A4%EB%9D%BC_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 만다라 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "TV 음악 순위 프로그램 가요톱10",
+    "summary": "KBS의 가요 순위 프로그램 '가요톱10'이 시작돼 인기 가요를 소개했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%80%EC%9A%94%ED%86%B110",
+        "name": "위키백과: 가요톱10",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 전원일기",
+    "summary": "농촌 가족과 마을 사람들의 일상을 그린 '전원일기'가 시청자들과 만났다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%84%EC%9B%90%EC%9D%BC%EA%B8%B0",
+        "name": "위키백과: 전원일기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
     "cat": "사건·생활상",
     "title": "서울 올림픽 유치 확정",
     "summary": "서울이 1988년 하계 올림픽 개최 도시로 선정되며 전국적인 화제가 됐다.",
@@ -4129,6 +6338,23 @@
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "국풍81",
+    "summary": "서울에서 열린 대규모 문화 행사 국풍81이 공연과 전시 등을 선보였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%AD%ED%92%8D%E2%80%9981",
+        "name": "위키백과: 국풍’81",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1981,
@@ -4163,6 +6389,22 @@
     "confidence": "low"
   },
   {
+    "year": 1981,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "제1공화국 (드라마)",
+    "summary": "대한민국 제1공화국 시기의 정치사를 다룬 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/제1공화국_(드라마)",
+        "name": "위키백과: 제1공화국 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1982,
     "month": 1,
     "precision": "month",
@@ -4180,6 +6422,95 @@
   },
   {
     "year": 1982,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "풍운 (1982년 드라마)",
+    "summary": "흥선대원군을 중심으로 조선 후기의 정세를 그린 KBS 대하드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/풍운_(1982년_드라마)",
+        "name": "위키백과: 풍운 (1982년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%92%8D%EC%9A%B4",
+        "name": "위키백과: 풍운",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1982,
+    "month": 2,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "만추 (1982년 영화)",
+    "summary": "김수용 감독의 대한민국 영화로 1982년 2월 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/만추_(1982년_영화)",
+        "name": "위키백과: 만추 (1982년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1982,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이용 - 잊혀진 계절",
+    "summary": "이용의 '잊혀진 계절'이 인기를 얻었고 가을을 떠올리게 하는 노래로 자리 잡았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%8A%ED%98%80%EC%A7%84_%EA%B3%84%EC%A0%88_(%EB%85%B8%EB%9E%98)",
+        "name": "위키백과: 잊혀진 계절 (노래)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1982,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "송골매 - 어쩌다 마주친 그대",
+    "summary": "송골매의 '어쩌다 마주친 그대'가 경쾌한 밴드 음악으로 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%96%B4%EC%A9%8C%EB%8B%A4_%EB%A7%88%EC%A3%BC%EC%B9%9C_%EA%B7%B8%EB%8C%80",
+        "name": "위키백과: 어쩌다 마주친 그대",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1982,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 애마부인",
+    "summary": "영화 '애마부인'이 개봉해 성인 관객 사이에서 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%A0%EB%A7%88%EB%B6%80%EC%9D%B8",
+        "name": "위키백과: 애마부인",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1982,
     "month": null,
     "precision": "year",
     "cat": "TV·영화",
@@ -4190,6 +6521,29 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%BC%AC%EB%B0%A9%EB%8F%99%EB%84%A4_%EC%82%AC%EB%9E%8C%EB%93%A4",
+        "name": "위키백과: 꼬방동네 사람들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1982,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 보통 사람들",
+    "summary": "평범한 사람들의 삶을 다룬 드라마 '보통 사람들'이 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%B4%ED%86%B5_%EC%82%AC%EB%9E%8C%EB%93%A4_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 보통 사람들 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4206,6 +6560,96 @@
         "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
         "name": "국가기록원, 금기와 자율: 1980년대",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%90%EB%B3%B5_%EC%9E%90%EC%9C%A8%ED%99%94",
+        "name": "위키백과: 교복 자율화",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1982,
+    "month": null,
+    "precision": "approx",
+    "cat": "먹거리",
+    "title": "컵라면",
+    "summary": "용기에 뜨거운 물을 부어 먹는 컵라면은 간편한 식품으로 알려졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%BB%B5%EB%9D%BC%EB%A9%B4",
+        "name": "위키백과: 컵라면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1983,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "개국 (드라마)",
+    "summary": "고려 말부터 조선 건국에 이르는 과정을 다룬 KBS 대하드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/개국_(드라마)",
+        "name": "위키백과: 개국 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "정수라 - 아! 대한민국",
+    "summary": "정수라의 '아! 대한민국'이 밝고 힘찬 분위기로 널리 불렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%95%EC%88%98%EB%9D%BC",
+        "name": "위키백과: 정수라",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "송골매 - 모두 다 사랑하리",
+    "summary": "송골매의 '모두 다 사랑하리'가 밴드 사운드와 함께 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%A1%EA%B3%A8%EB%A7%A4_(%EB%B0%B4%EB%93%9C)",
+        "name": "위키백과: 송골매 (밴드)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이문세 - 나는 행복한 사람",
+    "summary": "이문세의 '나는 행복한 사람'은 그의 초기 대표곡으로 알려졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8",
+        "name": "위키백과: 이문세",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4222,9 +6666,32 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0%EC%99%95%EC%A1%B0_%EC%98%A4%EB%B0%B1%EB%85%84",
+        "name": "위키백과: 조선왕조 오백년",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1983,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 간난이",
+    "summary": "어린아이 간난이를 중심으로 한 드라마가 시청자의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%84%EB%82%9C%EC%9D%B4",
+        "name": "위키백과: 간난이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1983,
@@ -4238,6 +6705,12 @@
         "url": "https://theme.archives.go.kr/next/tabooAutonomy/taboo1980.do",
         "name": "국가기록원, 금기와 자율: 1980년대",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%90%EB%B3%B5_%EC%9E%90%EC%9C%A8%ED%99%94",
+        "name": "위키백과: 교복 자율화",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -4261,6 +6734,23 @@
   {
     "year": 1983,
     "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "이산가족을 찾습니다",
+    "summary": "KBS의 이산가족 찾기 특별 생방송이 이어지며 헤어진 가족들의 사연이 전국에 전해졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%82%B0%EA%B0%80%EC%A1%B1%EC%9D%84_%EC%B0%BE%EC%8A%B5%EB%8B%88%EB%8B%A4",
+        "name": "위키백과: 이산가족을 찾습니다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1983,
+    "month": null,
     "precision": "approx",
     "cat": "가전·기술",
     "title": "컬러 TV 시청",
@@ -4276,6 +6766,56 @@
   },
   {
     "year": 1984,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "독립문 (드라마)",
+    "summary": "구한말을 배경으로 한 KBS 대하드라마로, 1984년에 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/독립문_(드라마)",
+        "name": "위키백과: 독립문 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1984,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이선희 - J에게",
+    "summary": "이선희가 강변가요제에서 부른 'J에게'가 큰 인기를 끌며 신인 가수의 등장을 알렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%84%A0%ED%9D%AC",
+        "name": "위키백과: 이선희",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1984,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "나미 - 빙글빙글",
+    "summary": "나미의 '빙글빙글'은 신나는 리듬으로 주목받은 댄스곡이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%98%EB%AF%B8",
+        "name": "위키백과: 나미",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1984,
     "month": null,
     "precision": "year",
     "cat": "TV·영화",
@@ -4286,6 +6826,12 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EB%9E%98%EC%82%AC%EB%83%A5_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 고래사냥 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -4302,6 +6848,45 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EA%B3%BC_%EC%A7%84%EC%8B%A4",
+        "name": "위키백과: 사랑과 진실",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1984,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 설중매",
+    "summary": "조선왕조 오백년 시리즈의 '설중매'가 역사 속 인물을 다루며 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%A4%EC%A4%91%EB%A7%A4_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 설중매 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": 2,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "새벽 (드라마)",
+    "summary": "광복 40주년을 맞아 방송된 KBS 대하드라마로, 광복 전후의 역사를 다뤘다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/새벽_(드라마)",
+        "name": "위키백과: 새벽 (드라마)",
+        "license": "CC BY-SA 4.0"
       }
     ],
     "confidence": "high"
@@ -4318,6 +6903,63 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EC%A7%84_(%EC%9D%8C%EB%B0%98)",
+        "name": "위키백과: 행진 (음반)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "들국화 - 그것만이 내 세상",
+    "summary": "들국화의 '그것만이 내 세상'은 청춘의 고민과 희망을 담은 곡으로 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%93%A4%EA%B5%AD%ED%99%94_(%EB%B0%B4%EB%93%9C)",
+        "name": "위키백과: 들국화 (밴드)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이문세 - 난 아직 모르잖아요",
+    "summary": "이문세의 '난 아직 모르잖아요'는 서정적인 발라드로 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8",
+        "name": "위키백과: 이문세",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이선희 - 아! 옛날이여",
+    "summary": "이선희의 '아! 옛날이여'가 힘 있는 가창과 함께 대중의 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84!_%EC%98%9B%EB%82%A0%EC%9D%B4%EC%97%AC",
+        "name": "위키백과: 아! 옛날이여",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4357,6 +6999,40 @@
   {
     "year": 1985,
     "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "쇼 프로그램 토요일 토요일은 즐거워",
+    "summary": "음악과 오락을 결합한 MBC의 '토요일 토요일은 즐거워'가 방송을 시작했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%86%A0%EC%9A%94%EC%9D%BC!_%ED%86%A0%EC%9A%94%EC%9D%BC%EC%9D%80_%EC%A6%90%EA%B1%B0%EC%9B%8C",
+        "name": "위키백과: 토요일! 토요일은 즐거워",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "프로야구 통합 우승 삼성 라이온즈",
+    "summary": "삼성 라이온즈가 전기와 후기 리그를 모두 우승해 한국시리즈 없이 시즌 정상에 올랐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%84%B1_%EB%9D%BC%EC%9D%B4%EC%98%A8%EC%A6%88",
+        "name": "위키백과: 삼성 라이온즈",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1985,
+    "month": null,
     "precision": "approx",
     "cat": "가전·기술",
     "title": "휴대용 카세트 플레이어",
@@ -4388,6 +7064,79 @@
   },
   {
     "year": 1986,
+    "month": 1,
+    "precision": "month",
+    "cat": "TV·영화",
+    "title": "이별 그리고 사랑",
+    "summary": "1986년 KBS에서 방송한 수목드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/이별_그리고_사랑",
+        "name": "위키백과: 이별 그리고 사랑",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%B3%84_%EA%B7%B8%EB%A6%AC%EA%B3%A0_%EC%82%AC%EB%9E%91",
+        "name": "위키백과: 이별 그리고 사랑",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1986,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "김완선 - 오늘 밤",
+    "summary": "김완선의 '오늘 밤'은 노래와 춤을 결합한 무대로 주목받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%99%84%EC%84%A0",
+        "name": "위키백과: 김완선",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1986,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 깜보",
+    "summary": "이창호 감독의 영화 '깜보'가 개봉해 장애인의 삶과 우정을 그렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%9C%EB%B3%B4",
+        "name": "위키백과: 깜보",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1986,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "신라면",
+    "summary": "매운맛을 강조한 신라면이 출시돼 이후 한국의 대표적인 라면 브랜드로 자리 잡았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EB%9D%BC%EB%A9%B4",
+        "name": "위키백과: 신라면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1986,
     "month": null,
     "precision": "approx",
     "cat": "가전·기술",
@@ -4404,6 +7153,67 @@
   },
   {
     "year": 1987,
+    "month": 1,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "박종철 고문치사 사건",
+    "summary": "서울대 학생 박종철이 경찰의 물고문으로 숨진 사건이다. 사건이 알려지면서 민주화 요구가 커졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/박종철_고문치사_사건",
+        "name": "위키백과: 박종철 고문치사 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%A2%85%EC%B2%A0_%EA%B3%A0%EB%AC%B8%EC%B9%98%EC%82%AC_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 박종철 고문치사 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1987,
+    "month": 6,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "6월 민주항쟁",
+    "summary": "대통령 직선제와 민주화를 요구하는 시민들의 시위가 전국으로 확산됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6%EC%9B%94_%EB%AF%BC%EC%A3%BC_%ED%95%AD%EC%9F%81",
+        "name": "위키백과: 6월 민주 항쟁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1987,
+    "month": 11,
+    "precision": "month",
+    "cat": "사건·생활상",
+    "title": "대한항공 858편 폭파 사건",
+    "summary": "1987년 11월 대한항공 여객기가 비행 중 폭파된 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/대한항공_858편_폭파_사건",
+        "name": "위키백과: 대한항공 858편 폭파 사건",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5_858%ED%8E%B8_%ED%8F%AD%ED%8C%8C_%EC%82%AC%EA%B1%B4",
+        "name": "위키백과: 대한항공 858편 폭파 사건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1987,
     "month": null,
     "precision": "year",
     "cat": "음악",
@@ -4414,6 +7224,46 @@
         "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_50&levelId=kc_i500410",
         "name": "국사편찬위원회 우리역사넷, 1980년대 대중문화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%ED%95%98%EA%B8%B0_%EB%95%8C%EB%AC%B8%EC%97%90_(%EC%9D%8C%EB%B0%98)",
+        "name": "위키백과: 사랑하기 때문에 (음반)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이문세 - 사랑이 지나가면",
+    "summary": "이문세의 '사랑이 지나가면'이 잔잔한 감성과 함께 큰 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EC%9D%B4_%EC%A7%80%EB%82%98%EA%B0%80%EB%A9%B4",
+        "name": "위키백과: 사랑이 지나가면",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이문세 - 깊은 밤을 날아서",
+    "summary": "이문세의 '깊은 밤을 날아서'가 경쾌한 선율로 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8",
+        "name": "위키백과: 이문세",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4430,9 +7280,66 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EA%B3%BC_%EC%95%BC%EB%A7%9D_(2006%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 사랑과 야망 (2006년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 영웅본색",
+    "summary": "홍콩 영화 '영웅본색'과 배우 주윤발은 한국 관객에게도 큰 인기를 끌었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%98%81%EC%9B%85%EB%B3%B8%EC%83%89",
+        "name": "위키백과: 영웅본색",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 씨받이",
+    "summary": "임권택 감독의 '씨받이'와 배우 강수연의 연기가 국내외에서 주목받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%94%A8%EB%B0%9B%EC%9D%B4_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 씨받이 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "제13대 대통령 선거",
+    "summary": "개헌 뒤 대통령 직선제가 실시돼 유권자들이 직접 대통령을 뽑았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C13%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0",
+        "name": "위키백과: 대한민국 제13대 대통령 선거",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1987,
@@ -4451,6 +7358,44 @@
     "confidence": "high"
   },
   {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "애정의 조건 (1987년 드라마)",
+    "summary": "1987년 KBS에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/애정의_조건_(1987년_드라마)",
+        "name": "위키백과: 애정의 조건 (1987년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%A0%EC%A0%95%EC%9D%98_%EC%A1%B0%EA%B1%B4",
+        "name": "위키백과: 애정의 조건",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1987,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "유혹 (1987년 드라마)",
+    "summary": "1987년 MBC에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/유혹_(1987년_드라마)",
+        "name": "위키백과: 유혹 (1987년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
     "year": 1988,
     "month": 9,
     "precision": "month",
@@ -4462,6 +7407,29 @@
         "url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200200000003&rc_ritem_no=000000000007&sitePage=0-0-0",
         "name": "국가기록원, 1980년대의 우리 생활",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%EC%98%AC%EB%A6%BC%ED%94%BD%EC%A3%BC%EA%B2%BD%EA%B8%B0%EC%9E%A5",
+        "name": "위키백과: 서울올림픽주경기장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "코리아나 - 손에 손잡고",
+    "summary": "서울 올림픽 공식 주제가 '손에 손잡고'가 대회 분위기와 함께 널리 울려 퍼졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%86%90%EC%97%90_%EC%86%90_%EC%9E%A1%EA%B3%A0",
+        "name": "위키백과: 손에 손 잡고",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4478,6 +7446,63 @@
         "url": "https://www.yna.co.kr/view/AKR20151116172300005",
         "name": "연합뉴스, 음악의 타임슬립 효과",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%83%81%EC%9D%80_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 이상은 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "무한궤도 - 그대에게",
+    "summary": "무한궤도의 '그대에게'가 대학가요제를 통해 주목받으며 힘찬 응원가로 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AC%B4%ED%95%9C%EA%B6%A4%EB%8F%84_(%EB%B0%B4%EB%93%9C)",
+        "name": "위키백과: 무한궤도 (밴드)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "변진섭 - 홀로 된다는 것",
+    "summary": "변진섭의 '홀로 된다는 것'은 발라드 열풍 속에서 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD",
+        "name": "위키백과: 변진섭",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이문세 - 붉은 노을",
+    "summary": "이문세의 '붉은 노을'이 경쾌한 선율과 함께 널리 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B6%89%EC%9D%80_%EB%85%B8%EC%9D%84",
+        "name": "위키백과: 붉은 노을",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4494,6 +7519,79 @@
         "url": "https://www.donga.com/news/Culture/article/all/20150815/73057015/1",
         "name": "동아일보, 응답하라 대중문화 그때 그 시절",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%9E%98%EC%84%B1_(1988%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 모래성 (1988년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "애니메이션 달려라 하니",
+    "summary": "육상 소녀 하니의 성장 이야기가 TV 애니메이션으로 방송돼 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8B%AC%EB%A0%A4%EB%9D%BC_%ED%95%98%EB%8B%88",
+        "name": "위키백과: 달려라 하니",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 칠수와 만수",
+    "summary": "박광수 감독의 '칠수와 만수'는 두 젊은 노동자의 삶을 그려 주목받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%88%98%EC%99%80_%EB%A7%8C%EC%88%98",
+        "name": "위키백과: 칠수와 만수",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "놀이·문구",
+    "title": "올림픽 마스코트 호돌이",
+    "summary": "호랑이를 형상화한 호돌이가 서울 올림픽을 상징하며 각종 기념품에 등장했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%98%B8%EB%8F%8C%EC%9D%B4",
+        "name": "위키백과: 호돌이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1988,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "인현왕후 (드라마)",
+    "summary": "조선 숙종 시대의 인현왕후를 다룬 MBC 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/인현왕후_(드라마)",
+        "name": "위키백과: 인현왕후 (드라마)",
+        "license": "CC BY-SA 4.0"
       }
     ],
     "confidence": "high"
@@ -4535,6 +7633,40 @@
     "month": null,
     "precision": "year",
     "cat": "음악",
+    "title": "변진섭 - 너에게로 또다시",
+    "summary": "변진섭의 '너에게로 또다시'가 발라드 열풍 속에서 폭넓은 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD",
+        "name": "위키백과: 변진섭",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "변진섭 - 희망사항",
+    "summary": "변진섭의 '희망사항'은 바라는 연인의 모습을 재치 있게 노래해 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%80%EC%A7%84%EC%84%AD",
+        "name": "위키백과: 변진섭",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
     "title": "현철 - 봉선화 연정",
     "summary": "현철의 '봉선화 연정'이 큰 인기를 얻으며 KBS 가요대상 대상곡으로 선정됐다.",
     "sources": [
@@ -4545,6 +7677,57 @@
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 제2공화국",
+    "summary": "현대 정치사를 다룬 드라마 '제2공화국'이 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%9C2%EA%B3%B5%ED%99%94%EA%B5%AD_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 제2공화국 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 행복은 성적순이 아니잖아요",
+    "summary": "입시 경쟁 속 청소년들의 고민을 다룬 영화가 개봉해 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%B3%B5%EC%9D%80_%EC%84%B1%EC%A0%81%EC%88%9C%EC%9D%B4_%EC%95%84%EB%8B%88%EC%9E%96%EC%95%84%EC%9A%94",
+        "name": "위키백과: 행복은 성적순이 아니잖아요",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "놀이·문구",
+    "title": "롯데월드 어드벤처 개장",
+    "summary": "서울 잠실의 실내 테마파크 롯데월드 어드벤처가 문을 열었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C",
+        "name": "위키백과: 롯데월드",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1989,
@@ -4563,6 +7746,395 @@
     "confidence": "medium"
   },
   {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "백범일지 (드라마)",
+    "summary": "김구의 삶을 다룬 MBC 드라마로 1989년에 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/백범일지_(드라마)",
+        "name": "위키백과: 백범일지 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "사랑의 굴레",
+    "summary": "1989년 KBS에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/사랑의_굴레",
+        "name": "위키백과: 사랑의 굴레",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%EC%9D%98_%EA%B5%B4%EB%A0%88",
+        "name": "위키백과: 사랑의 굴레",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1989,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "행복한 여자 (1989년 드라마)",
+    "summary": "1989년 MBC에서 방송한 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/행복한_여자_(1989년_드라마)",
+        "name": "위키백과: 행복한 여자 (1989년 드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%96%89%EB%B3%B5%ED%95%9C_%EC%97%AC%EC%9E%90",
+        "name": "위키백과: 행복한 여자",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "김민우 〈사랑일 뿐야〉",
+    "summary": "김민우의 발라드가 큰 사랑을 받으며 가요계에 이름을 알렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EB%AF%BC%EC%9A%B0_(%EA%B0%80%EC%88%98)",
+        "name": "위키백과: 김민우 (가수)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "강수지 〈보랏빛 향기〉",
+    "summary": "강수지가 데뷔곡으로 주목받으며 청순한 이미지와 함께 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B0%95%EC%88%98%EC%A7%80",
+        "name": "위키백과: 강수지",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이승철 〈마지막 콘서트〉",
+    "summary": "이승철의 감성적인 발라드가 널리 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%8A%B9%EC%B2%A0",
+        "name": "위키백과: 이승철",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "김완선 〈삐에로는 우릴 보고 웃지〉",
+    "summary": "김완선의 노래와 무대가 화제를 모으며 댄스 가수로서의 인기를 이어갔다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%90%EC%97%90%EB%A1%9C%EB%8A%94_%EC%9A%B0%EB%A6%B4_%EB%B3%B4%EA%B3%A0_%EC%9B%83%EC%A7%80",
+        "name": "위키백과: 삐에로는 우릴 보고 웃지",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈여명의 눈동자〉 제작 발표",
+    "summary": "일제강점기부터 한국전쟁에 이르는 시대를 다룰 대작 드라마의 제작이 진행됐다. 본방송은 1991년에 시작됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EB%AA%85%EC%9D%98_%EB%88%88%EB%8F%99%EC%9E%90",
+        "name": "위키백과: 여명의 눈동자",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈서울뚝배기〉",
+    "summary": "서울의 뚝배기집을 배경으로 서민들의 삶을 그린 일일드라마가 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%EB%9A%9D%EB%B0%B0%EA%B8%B0",
+        "name": "위키백과: 서울뚝배기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈장군의 아들〉",
+    "summary": "김두한을 주인공으로 한 임권택 감독의 영화가 관객을 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EA%B5%B0%EC%9D%98_%EC%95%84%EB%93%A4",
+        "name": "위키백과: 장군의 아들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈야망의 세월〉",
+    "summary": "가족과 사회의 변화를 그린 주말드라마가 시청자의 관심을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%BC%EB%A7%9D%EC%9D%98_%EC%84%B8%EC%9B%94",
+        "name": "위키백과: 야망의 세월",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "베이징 아시안게임",
+    "summary": "한국 선수단이 참가한 아시안게임이 국내에서도 큰 관심을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%8B%9C%EC%95%88_%EA%B2%8C%EC%9E%84",
+        "name": "위키백과: 아시안 게임",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "3당 합당",
+    "summary": "여당과 야당 일부가 합쳐 민주자유당을 만들면서 정치권에 큰 변화가 일어났다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/3%EB%8B%B9_%ED%95%A9%EB%8B%B9",
+        "name": "위키백과: 3당 합당",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "우리들의 천국",
+    "summary": "대학생들의 사랑과 우정을 다룬 MBC 청춘 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/우리들의_천국",
+        "name": "위키백과: 우리들의 천국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "남부군 (영화)",
+    "summary": "한국 전쟁 당시 빨치산의 이야기를 다룬 영화다. 1990년에 개봉했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/남부군_(영화)",
+        "name": "위키백과: 남부군 (영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1990,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "파천무 (1990년 드라마)",
+    "summary": "조선 단종과 수양대군을 둘러싼 권력 다툼을 그린 KBS 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/파천무_(1990년_드라마)",
+        "name": "위키백과: 파천무 (1990년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1991,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈여명의 눈동자〉",
+    "summary": "격동의 현대사를 배경으로 한 드라마가 대규모 제작과 이야기로 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EB%AA%85%EC%9D%98_%EB%88%88%EB%8F%99%EC%9E%90",
+        "name": "위키백과: 여명의 눈동자",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1991,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "SBS 개국",
+    "summary": "새 민영방송 SBS가 방송을 시작하며 지상파 방송 환경에 변화가 생겼다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/SBS",
+        "name": "위키백과: SBS",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1991,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "세계탁구선수권대회 남북 단일팀",
+    "summary": "남북 선수들이 단일팀을 이뤄 여자 단체전에서 우승하며 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%A8%EB%B6%81_%EB%8B%A8%EC%9D%BC%ED%8C%80",
+        "name": "위키백과: 남북 단일팀",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1991,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "수잔 브링크의 아리랑",
+    "summary": "해외 입양된 한국인 여성의 삶을 다룬 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/수잔_브링크의_아리랑",
+        "name": "위키백과: 수잔 브링크의 아리랑",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1991,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "MBC 베스트극장",
+    "summary": "MBC에서 방송한 단막극 시리즈다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/MBC_베스트극장",
+        "name": "위키백과: MBC 베스트극장",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/MBC_%EB%B2%A0%EC%8A%A4%ED%8A%B8%EA%B7%B9%EC%9E%A5",
+        "name": "위키백과: MBC 베스트극장",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1991,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "여자의 시간",
+    "summary": "1991년 KBS에서 방송한 주말 연속극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/여자의_시간",
+        "name": "위키백과: 여자의 시간",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%AC%EC%9E%90%EC%9D%98_%EC%8B%9C%EA%B0%84",
+        "name": "위키백과: 여자의 시간",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1992,
     "month": null,
     "precision": "year",
@@ -4574,6 +8146,12 @@
         "url": "https://www.kocca.kr/n_content/vol02/vol02_02.pdf",
         "name": "한국콘텐츠진흥원, 1990년대 청춘들",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 서태지와 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
@@ -4595,6 +8173,363 @@
     "confidence": "high"
   },
   {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "서태지와 아이들 〈환상 속의 그대〉",
+    "summary": "서태지와 아이들의 데뷔 음반에 수록된 곡이 주목받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 서태지와 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈질투〉",
+    "summary": "젊은 남녀의 사랑과 우정을 다룬 드라마가 트렌디 드라마 열풍을 이끌었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A7%88%ED%88%AC_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 질투 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈아들과 딸〉",
+    "summary": "딸이라는 이유로 차별받는 주인공의 이야기가 가족과 성차별 문제를 화제에 올렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EB%93%A4%EA%B3%BC_%EB%94%B8",
+        "name": "위키백과: 아들과 딸",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "제14대 대통령 선거",
+    "summary": "김영삼이 대통령에 당선돼 문민정부 출범을 앞두게 됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C14%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0",
+        "name": "위키백과: 대한민국 제14대 대통령 선거",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "내일은 사랑",
+    "summary": "대학생들의 생활과 사랑을 그린 KBS 청춘 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/내일은_사랑",
+        "name": "위키백과: 내일은 사랑",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%B4%EC%9D%BC%EC%9D%80_%EC%82%AC%EB%9E%91",
+        "name": "위키백과: 내일은 사랑",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "우리들의 일그러진 영웅 (영화)",
+    "summary": "교실 안의 권력과 갈등을 다룬 이문열의 소설을 영화화했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/우리들의_일그러진_영웅_(영화)",
+        "name": "위키백과: 우리들의 일그러진 영웅 (영화)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9A%B0%EB%A6%AC%EB%93%A4%EC%9D%98_%EC%9D%BC%EA%B7%B8%EB%9F%AC%EC%A7%84_%EC%98%81%EC%9B%85",
+        "name": "위키백과: 우리들의 일그러진 영웅",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "미스터 맘마",
+    "summary": "최진실과 김승우가 출연한 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/미스터_맘마",
+        "name": "위키백과: 미스터 맘마",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AF%B8%EC%8A%A4%ED%84%B0_%EB%A7%98%EB%A7%88",
+        "name": "위키백과: 미스터 맘마",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1992,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "삼국기",
+    "summary": "삼국 시대를 배경으로 신라의 삼국 통일 과정을 다룬 KBS 사극이다. 1992년부터 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/삼국기",
+        "name": "위키백과: 삼국기",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EA%B5%AD%EA%B8%B0",
+        "name": "위키백과: 삼국기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "서태지와 아이들 〈하여가〉",
+    "summary": "국악기의 음색을 접목한 노래와 무대가 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 서태지와 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "노이즈 〈너에게 원한 건〉",
+    "summary": "댄스 그룹 노이즈의 곡이 청소년층을 중심으로 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%85%B8%EC%9D%B4%EC%A6%88_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)",
+        "name": "위키백과: 노이즈 (음악 그룹)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈파일럿〉",
+    "summary": "항공사 조종사들의 이야기를 그린 드라마가 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC%EB%9F%BF_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 파일럿 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈엄마의 바다〉",
+    "summary": "가족의 삶과 갈등을 그린 주말드라마가 시청자의 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%97%84%EB%A7%88%EC%9D%98_%EB%B0%94%EB%8B%A4",
+        "name": "위키백과: 엄마의 바다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈서편제〉",
+    "summary": "판소리와 가족의 이야기를 그린 임권택 감독의 영화가 큰 흥행을 기록했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%ED%8E%B8%EC%A0%9C_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 서편제 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈투캅스〉",
+    "summary": "성격이 다른 두 형사를 앞세운 코미디 영화가 관객을 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%88%AC%EC%BA%85%EC%8A%A4",
+        "name": "위키백과: 투캅스",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "금융실명제",
+    "summary": "금융거래에서 실제 이름을 사용하도록 하는 제도가 전격 시행됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B8%88%EC%9C%B5%EC%8B%A4%EB%AA%85%EC%A0%9C",
+        "name": "위키백과: 금융실명제",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "폭풍의 계절",
+    "summary": "최진실 등이 출연한 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/폭풍의_계절",
+        "name": "위키백과: 폭풍의 계절",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8F%AD%ED%92%8D%EC%9D%98_%EA%B3%84%EC%A0%88",
+        "name": "위키백과: 폭풍의 계절",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "제3공화국 (드라마)",
+    "summary": "대한민국 제3공화국 시기의 정치사를 다룬 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/제3공화국_(드라마)",
+        "name": "위키백과: 제3공화국 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "걸어서 하늘까지 (드라마)",
+    "summary": "동명의 소설을 바탕으로 제작된 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/걸어서_하늘까지_(드라마)",
+        "name": "위키백과: 걸어서 하늘까지 (드라마)",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B1%B8%EC%96%B4%EC%84%9C_%ED%95%98%EB%8A%98%EA%B9%8C%EC%A7%80_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 걸어서 하늘까지 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1993,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "산다는 것은",
+    "summary": "김수현이 극본을 쓴 SBS 주말 드라마다. 1993년에 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/산다는_것은",
+        "name": "위키백과: 산다는 것은",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%B0%EB%8B%A4%EB%8A%94_%EA%B2%83%EC%9D%80",
+        "name": "위키백과: 산다는 것은",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
     "year": 1994,
     "month": null,
     "precision": "year",
@@ -4606,9 +8541,401 @@
         "url": "https://www.kocca.kr/n_content/vol02/vol02_02.pdf",
         "name": "한국콘텐츠진흥원, 1990년대 청춘들",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 서태지와 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "서태지와 아이들 〈발해를 꿈꾸며〉",
+    "summary": "분단과 통일을 소재로 한 노래가 큰 관심을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 서태지와 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "마로니에 〈칵테일 사랑〉",
+    "summary": "산뜻한 멜로디의 노래가 널리 불렸다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%88%EB%A1%9C%EB%8B%88%EC%97%90_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)",
+        "name": "위키백과: 마로니에 (음악 그룹)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈마지막 승부〉",
+    "summary": "농구를 소재로 한 청춘 드라마가 농구 열기와 맞물려 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%88%EC%A7%80%EB%A7%89_%EC%8A%B9%EB%B6%80",
+        "name": "위키백과: 마지막 승부",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈서울의 달〉",
+    "summary": "서울 달동네 사람들의 삶을 그린 드라마가 인기를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%EC%9D%98_%EB%8B%AC",
+        "name": "위키백과: 서울의 달",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "성수대교 붕괴",
+    "summary": "서울 성수대교가 무너져 많은 희생자가 발생했고 시설 안전 문제가 크게 부각됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%B1%EC%88%98%EB%8C%80%EA%B5%90_%EB%B6%95%EA%B4%B4_%EC%82%AC%EA%B3%A0",
+        "name": "위키백과: 성수대교 붕괴 사고",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "1994년 폭염",
+    "summary": "긴 폭염으로 전국에서 더위와 생활상의 불편이 큰 화제가 됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1994%EB%85%84",
+        "name": "위키백과: 1994년",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "한명회 (드라마)",
+    "summary": "조선 시대 정치가 한명회의 삶을 중심으로 그린 KBS 사극이다. 1994년에 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/한명회_(드라마)",
+        "name": "위키백과: 한명회 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1994,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "마누라 죽이기",
+    "summary": "최진실과 박중훈이 출연한 1994년 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/마누라_죽이기",
+        "name": "위키백과: 마누라 죽이기",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%A7%88%EB%88%84%EB%9D%BC_%EC%A3%BD%EC%9D%B4%EA%B8%B0",
+        "name": "위키백과: 마누라 죽이기",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "서태지와 아이들 〈컴백홈〉",
+    "summary": "가출 청소년의 귀가를 호소하는 메시지와 음악이 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80_%EC%95%84%EC%9D%B4%EB%93%A4",
+        "name": "위키백과: 서태지와 아이들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "김건모 〈잘못된 만남〉",
+    "summary": "빠른 리듬과 랩이 섞인 곡이 큰 인기를 이어갔다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%98%EB%AA%BB%EB%90%9C_%EB%A7%8C%EB%82%A8",
+        "name": "위키백과: 잘못된 만남",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "터보 〈나 어릴 적 꿈〉",
+    "summary": "터보가 데뷔곡으로 이름을 알리며 댄스 음악 팬들의 관심을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%84%B0%EB%B3%B4_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%98_%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)",
+        "name": "위키백과: 터보 (대한민국의 음악 그룹)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "DJ DOC 〈머피의 법칙〉",
+    "summary": "일이 뜻대로 풀리지 않는 상황을 유쾌하게 풀어낸 노래가 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/DJ_DOC",
+        "name": "위키백과: DJ DOC",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "R.ef 〈고요 속의 외침〉",
+    "summary": "댄스 그룹 R.ef의 데뷔곡이 젊은 층에서 인기를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/R.ef",
+        "name": "위키백과: R.ef",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈모래시계〉",
+    "summary": "현대사의 격변 속 인물들을 그린 드라마가 높은 시청률과 큰 화제를 기록했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%9E%98%EC%8B%9C%EA%B3%84_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 모래시계 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈젊은이의 양지〉",
+    "summary": "청년들의 사랑과 갈등을 그린 드라마가 인기를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%8A%EC%9D%80%EC%9D%B4%EC%9D%98_%EC%96%91%EC%A7%80_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 젊은이의 양지 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈목욕탕집 남자들〉",
+    "summary": "한 가족의 일상을 그린 주말드라마가 방송을 시작해 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AA%A9%EC%9A%95%ED%83%95%EC%A7%91_%EB%82%A8%EC%9E%90%EB%93%A4",
+        "name": "위키백과: 목욕탕집 남자들",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "삼풍백화점 붕괴",
+    "summary": "서울의 백화점이 무너져 대규모 인명 피해가 발생했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%ED%92%8D%EB%B0%B1%ED%99%94%EC%A0%90_%EB%B6%95%EA%B4%B4_%EC%82%AC%EA%B3%A0",
+        "name": "위키백과: 삼풍백화점 붕괴 사고",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "쓰레기 종량제 전국 시행",
+    "summary": "전용 봉투를 이용해 배출량에 따라 쓰레기 처리 비용을 부담하는 제도가 전국으로 확대됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%93%B0%EB%A0%88%EA%B8%B0_%EC%A2%85%EB%9F%89%EC%A0%9C",
+        "name": "위키백과: 쓰레기 종량제",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "아스팔트 사나이",
+    "summary": "자동차 산업과 레이싱을 소재로 한 SBS 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/아스팔트_사나이",
+        "name": "위키백과: 아스팔트 사나이",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%8A%A4%ED%8C%94%ED%8A%B8_%EC%82%AC%EB%82%98%EC%9D%B4",
+        "name": "위키백과: 아스팔트 사나이",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "서궁",
+    "summary": "조선 광해군 시대의 궁중을 배경으로 한 KBS 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/서궁",
+        "name": "위키백과: 서궁",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EA%B6%81",
+        "name": "위키백과: 서궁",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "장녹수 (드라마)",
+    "summary": "조선 연산군 시대의 장녹수를 중심으로 한 KBS 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/장녹수_(드라마)",
+        "name": "위키백과: 장녹수 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1995,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "제4공화국 (드라마)",
+    "summary": "대한민국 제4공화국 시기의 정치사를 다룬 MBC 드라마다. 1995년에 방송됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/제4공화국_(드라마)",
+        "name": "위키백과: 제4공화국 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
   },
   {
     "year": 1996,
@@ -4622,9 +8949,134 @@
         "url": "https://en.wikipedia.org/wiki/Candy_%28H.O.T._song%29",
         "name": "영어 위키백과, Candy (H.O.T. song)",
         "license": "CC BY-SA"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/H.O.T.",
+        "name": "위키백과: H.O.T.",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "high"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "클론 〈꿍따리 샤바라〉",
+    "summary": "흥겨운 후렴구와 춤으로 널리 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%81%B4%EB%A1%A0_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)",
+        "name": "위키백과: 클론 (음악 그룹)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "박진영 〈그녀는 예뻤다〉",
+    "summary": "복고풍 춤과 무대 의상이 노래와 함께 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B0%95%EC%A7%84%EC%98%81",
+        "name": "위키백과: 박진영",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "서지원 〈내 눈물 모아〉",
+    "summary": "서지원의 목소리로 남은 발라드가 많은 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%A7%80%EC%9B%90",
+        "name": "위키백과: 서지원",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "영턱스클럽 〈정〉",
+    "summary": "독특한 안무와 후렴구가 돋보이는 데뷔곡이 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%98%81%ED%84%B1%EC%8A%A4%ED%81%B4%EB%9F%BD",
+        "name": "위키백과: 영턱스클럽",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "이문세 〈조조할인〉",
+    "summary": "이적이 함께한 경쾌한 노래가 라디오와 방송에서 사랑받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B4%EB%AC%B8%EC%84%B8",
+        "name": "위키백과: 이문세",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈첫사랑〉",
+    "summary": "가족과 형제의 이야기를 다룬 주말드라마가 높은 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%AB%EC%82%AC%EB%9E%91_(1996%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 첫사랑 (1996년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈신고합니다〉",
+    "summary": "군 생활을 소재로 한 드라마가 시청자의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%A0%EA%B3%A0%ED%95%A9%EB%8B%88%EB%8B%A4",
+        "name": "위키백과: 신고합니다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
   },
   {
     "year": 1996,
@@ -4638,6 +9090,118 @@
         "url": "https://music.bugs.co.kr/years/kmovieost",
         "name": "벅스, 연도별 국내 영화 OST",
         "license": "미확인"
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "시트콤 〈남자 셋 여자 셋〉",
+    "summary": "대학생들의 공동생활을 그린 청춘 시트콤이 방송을 시작했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%A8%EC%9E%90_%EC%85%8B_%EC%97%AC%EC%9E%90_%EC%85%8B",
+        "name": "위키백과: 남자 셋 여자 셋",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "용의 눈물",
+    "summary": "조선 건국과 왕자의 난 등을 다룬 KBS 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/용의_눈물",
+        "name": "위키백과: 용의 눈물",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9A%A9%EC%9D%98_%EB%88%88%EB%AC%BC",
+        "name": "위키백과: 용의 눈물",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1996,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "고스트 맘마",
+    "summary": "최진실과 김승우가 출연한 1996년 한국 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/고스트_맘마",
+        "name": "위키백과: 고스트 맘마",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B3%A0%EC%8A%A4%ED%8A%B8_%EB%A7%98%EB%A7%88",
+        "name": "위키백과: 고스트 맘마",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "H.O.T. 〈행복〉",
+    "summary": "밝은 노래와 춤이 청소년 팬들에게 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/H.O.T.",
+        "name": "위키백과: H.O.T.",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "젝스키스 〈학원별곡〉",
+    "summary": "젝스키스가 데뷔곡으로 청소년 팬들의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%99%EC%9B%90%EB%B3%84%EA%B3%A1",
+        "name": "위키백과: 학원별곡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "S.E.S. 〈I'm Your Girl〉",
+    "summary": "여성 아이돌 그룹 S.E.S.가 데뷔곡으로 큰 주목을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/I%27m_Your_Girl",
+        "name": "위키백과: I'm Your Girl",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4662,6 +9226,23 @@
     "year": 1997,
     "month": null,
     "precision": "year",
+    "cat": "음악",
+    "title": "DJ DOC 〈DOC와 춤을〉",
+    "summary": "신나는 리듬과 자유로운 춤을 내세운 노래가 인기를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/DJ_DOC",
+        "name": "위키백과: DJ DOC",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
     "cat": "TV·영화",
     "title": "드라마 〈별은 내 가슴에〉",
     "summary": "안재욱과 최진실 등이 출연한 드라마가 인기를 끌었고 극 중 노래도 주목받았다.",
@@ -4670,6 +9251,247 @@
         "url": "https://weekly.khan.co.kr/article/201208271735491",
         "name": "주간경향, 2012년 복고 트렌드는 ‘1990년대 스타일’",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%84%EC%9D%80_%EB%82%B4_%EA%B0%80%EC%8A%B4%EC%97%90",
+        "name": "위키백과: 별은 내 가슴에",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "영화 〈접속〉",
+    "summary": "PC통신을 매개로 만나는 남녀의 이야기가 관객의 공감을 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A0%91%EC%86%8D_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 접속 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "제15대 대통령 선거",
+    "summary": "김대중이 대통령에 당선돼 정권교체가 이뤄졌다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD_%EC%A0%9C15%EB%8C%80_%EB%8C%80%ED%86%B5%EB%A0%B9_%EC%84%A0%EA%B1%B0",
+        "name": "위키백과: 대한민국 제15대 대통령 선거",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "그대 그리고 나",
+    "summary": "가족들의 삶을 그린 MBC 주말 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/그대_그리고_나",
+        "name": "위키백과: 그대 그리고 나",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%8C%80_%EA%B7%B8%EB%A6%AC%EA%B3%A0_%EB%82%98",
+        "name": "위키백과: 그대 그리고 나",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "의가형제",
+    "summary": "의사 형제를 중심으로 병원 안의 갈등을 다룬 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/의가형제",
+        "name": "위키백과: 의가형제",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%98%EA%B0%80%ED%98%95%EC%A0%9C",
+        "name": "위키백과: 의가형제",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "편지 (1997년 영화)",
+    "summary": "최진실과 박신양이 출연한 멜로 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/편지_(1997년_영화)",
+        "name": "위키백과: 편지 (1997년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1997,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "넘버 3",
+    "summary": "1997년에 개봉한 한국 범죄 코미디 영화다. 한석규와 최민식 등이 출연했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/넘버_3",
+        "name": "위키백과: 넘버 3",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%84%98%EB%B2%84_3",
+        "name": "위키백과: 넘버 3",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "S.E.S. 〈Dreams Come True〉",
+    "summary": "신비로운 분위기의 노래와 무대가 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/Dreams_Come_True_(S.E.S.%EC%9D%98_%EB%85%B8%EB%9E%98)",
+        "name": "위키백과: Dreams Come True (S.E.S.의 노래)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "핑클 〈내 남자친구에게〉",
+    "summary": "핑클의 밝은 노래와 안무가 큰 사랑을 받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%82%B4_%EB%82%A8%EC%9E%90%EC%B9%9C%EA%B5%AC%EC%97%90%EA%B2%8C",
+        "name": "위키백과: 내 남자친구에게",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "엄정화 〈포이즌〉",
+    "summary": "강렬한 춤과 무대 의상으로 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%8F%AC%EC%9D%B4%EC%A6%8C",
+        "name": "위키백과: 포이즌",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "신화 〈해결사〉",
+    "summary": "신화가 강렬한 춤을 앞세운 데뷔곡으로 활동을 시작했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8B%A0%ED%99%94_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)",
+        "name": "위키백과: 신화 (음악 그룹)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "조성모 〈To Heaven〉",
+    "summary": "조성모의 데뷔 발라드와 드라마 형식의 뮤직비디오가 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%B1%EB%AA%A8",
+        "name": "위키백과: 조성모",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "시트콤 〈순풍산부인과〉",
+    "summary": "산부인과와 가족을 배경으로 한 시트콤이 다양한 유행 장면을 남겼다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%88%9C%ED%92%8D%EC%82%B0%EB%B6%80%EC%9D%B8%EA%B3%BC",
+        "name": "위키백과: 순풍산부인과",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈보고 또 보고〉",
+    "summary": "두 자매와 두 형제의 관계를 다룬 일일드라마가 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%B3%B4%EA%B3%A0_%EB%98%90_%EB%B3%B4%EA%B3%A0",
+        "name": "위키백과: 보고 또 보고",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4686,6 +9508,12 @@
         "url": "https://www.koreafilm.or.kr/cinematheque/programs/PI_00576",
         "name": "한국영상자료원, 우리가 사랑한 90년대 후반 한국영화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/8%EC%9B%94%EC%9D%98_%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4_(1998%EB%85%84_%EC%98%81%ED%99%94)",
+        "name": "위키백과: 8월의 크리스마스 (1998년 영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4702,6 +9530,196 @@
         "url": "https://www.koreafilm.or.kr/cinematheque/programs/PI_00576",
         "name": "한국영상자료원, 우리가 사랑한 90년대 후반 한국영화",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%AF%B8%EC%88%A0%EA%B4%80_%EC%98%86_%EB%8F%99%EB%AC%BC%EC%9B%90",
+        "name": "위키백과: 미술관 옆 동물원",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "놀이·문구",
+    "title": "스타크래프트",
+    "summary": "실시간 전략 게임이 PC방을 중심으로 빠르게 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8",
+        "name": "위키백과: 스타크래프트",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "금 모으기 운동",
+    "summary": "외환위기 극복을 돕기 위해 시민들이 금붙이를 모으는 운동에 참여했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B8%88%EB%AA%A8%EC%9C%BC%EA%B8%B0_%EC%9A%B4%EB%8F%99",
+        "name": "위키백과: 금모으기 운동",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "프랑스 월드컵",
+    "summary": "한국 축구 대표팀의 경기와 감독 교체 등이 국내에서 큰 화제가 됐다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%9E%91%EC%8A%A4_%EC%9B%94%EB%93%9C%EC%BB%B5",
+        "name": "위키백과: 프랑스 월드컵",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "육남매",
+    "summary": "어려운 시대를 살아가는 여섯 남매와 가족의 이야기를 다룬 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/육남매",
+        "name": "위키백과: 육남매",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9C%A1%EB%82%A8%EB%A7%A4",
+        "name": "위키백과: 육남매",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "왕과 비",
+    "summary": "조선 초기 왕실의 권력 다툼을 다룬 KBS 사극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/왕과_비",
+        "name": "위키백과: 왕과 비",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%99%95%EA%B3%BC_%EB%B9%84",
+        "name": "위키백과: 왕과 비",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "조용한 가족",
+    "summary": "산장을 운영하는 가족에게 벌어지는 사건을 그린 김지운 감독의 영화다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/조용한_가족",
+        "name": "위키백과: 조용한 가족",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%9A%A9%ED%95%9C_%EA%B0%80%EC%A1%B1",
+        "name": "위키백과: 조용한 가족",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1998,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "해바라기 (1998년 드라마)",
+    "summary": "병원을 배경으로 의사들의 이야기를 그린 MBC 드라마다. 1998년에 방송을 시작했다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/해바라기_(1998년_드라마)",
+        "name": "위키백과: 해바라기 (1998년 드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "god 〈어머님께〉",
+    "summary": "어머니에 대한 이야기를 담은 데뷔곡이 대중의 관심을 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/God_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)",
+        "name": "위키백과: God (음악 그룹)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "핑클 〈영원한 사랑〉",
+    "summary": "핑클의 밝은 노래와 무대가 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%95%91%ED%81%B4",
+        "name": "위키백과: 핑클",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "음악",
+    "title": "조성모 〈슬픈 영혼식〉",
+    "summary": "발라드와 드라마 형식의 뮤직비디오가 함께 주목받았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%B1%EB%AA%A8",
+        "name": "위키백과: 조성모",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4718,6 +9736,12 @@
         "url": "https://music.bugs.co.kr/years/kmovieost",
         "name": "벅스, 연도별 국내 영화 OST",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%89%AC%EB%A6%AC_(%EC%98%81%ED%99%94)",
+        "name": "위키백과: 쉬리 (영화)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
@@ -4750,8 +9774,240 @@
         "url": "https://music.bugs.co.kr/years/kmovieost",
         "name": "벅스, 연도별 국내 영화 OST",
         "license": "미확인"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EC%A0%95%EC%82%AC%EC%A0%95_%EB%B3%BC_%EA%B2%83_%EC%97%86%EB%8B%A4",
+        "name": "위키백과: 인정사정 볼 것 없다",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
       }
     ],
     "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈허준〉",
+    "summary": "조선시대 의사 허준의 삶을 그린 사극이 방송을 시작해 큰 인기를 얻었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%97%88%EC%A4%80_(%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 허준 (드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "드라마 〈청춘의 덫〉",
+    "summary": "배신당한 주인공의 복수를 그린 드라마가 화제를 모았다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EC%B6%98%EC%9D%98_%EB%8D%AB_(1999%EB%85%84_%EB%93%9C%EB%9D%BC%EB%A7%88)",
+        "name": "위키백과: 청춘의 덫 (1999년 드라마)",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "놀이·문구",
+    "title": "PC방과 스타크래프트",
+    "summary": "초고속 인터넷과 PC방 확산 속에서 스타크래프트 대전이 인기를 이어갔다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%80%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8",
+        "name": "위키백과: 스타크래프트",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "사건·생활상",
+    "title": "씨랜드 청소년수련원 화재",
+    "summary": "수련원 화재로 어린이 등 많은 희생자가 발생해 사회적 충격을 줬다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%94%A8%EB%9E%9C%EB%93%9C_%EC%B2%AD%EC%86%8C%EB%85%84%EC%88%98%EB%A0%A8%EC%9B%90_%ED%99%94%EC%9E%AC",
+        "name": "위키백과: 씨랜드 청소년수련원 화재",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "medium"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "장미와 콩나물",
+    "summary": "가족과 부부의 관계를 다룬 MBC 주말 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/장미와_콩나물",
+        "name": "위키백과: 장미와 콩나물",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%9E%A5%EB%AF%B8%EC%99%80_%EC%BD%A9%EB%82%98%EB%AC%BC",
+        "name": "위키백과: 장미와 콩나물",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "국희",
+    "summary": "과자 사업가의 삶을 그린 MBC 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/국희",
+        "name": "위키백과: 국희",
+        "license": "CC BY-SA 4.0"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B5%AD%ED%9D%AC",
+        "name": "위키백과: 국희",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 1999,
+    "month": null,
+    "precision": "year",
+    "cat": "TV·영화",
+    "title": "토마토 (드라마)",
+    "summary": "구두 디자이너를 꿈꾸는 인물들의 사랑과 경쟁을 그린 SBS 드라마다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/토마토_(드라마)",
+        "name": "위키백과: 토마토 (드라마)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 2008,
+    "month": null,
+    "precision": "year",
+    "cat": "먹거리",
+    "title": "마켓오 리얼브라우니",
+    "summary": "오리온이 포장된 브라우니 제품을 선보였다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.orionworld.com/board/view/87?boardno=370",
+        "name": "오리온, 마켓오 리얼브라우니 보도자료 (2013)"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 2010,
+    "month": 3,
+    "precision": "month",
+    "cat": "가전·기술",
+    "title": "카카오톡 출시",
+    "summary": "아이폰용 카카오톡이 출시되어 모바일 메신저를 통한 대화가 시작됐다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.kakaocorp.com/page/detail/10810",
+        "name": "카카오, 카카오톡"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1",
+        "name": "위키백과: 카카오톡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 2010,
+    "month": 12,
+    "precision": "month",
+    "cat": "가전·기술",
+    "title": "카카오톡 선물하기",
+    "summary": "카카오톡에서 지인에게 선물을 보낼 수 있는 선물하기 서비스가 시작됐다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.kakaocorp.com/page/detail/5217",
+        "name": "카카오, 선물하기의 시작"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%86%A1",
+        "name": "위키백과: 카카오톡",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 2012,
+    "month": 8,
+    "precision": "month",
+    "cat": "놀이·문구",
+    "title": "애니팡 열풍",
+    "summary": "친구들과 하트를 주고받으며 즐기는 모바일 퍼즐 게임 애니팡이 인기 순위에 올랐다.",
+    "sources": [
+      {
+        "url": "https://www.kakaocorp.com/page/detail/9345",
+        "name": "카카오, 카카오 게임하기의 역사",
+        "license": "미확인"
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "year": 2017,
+    "month": 3,
+    "precision": "month",
+    "cat": "먹거리",
+    "title": "꼬북칩 출시",
+    "summary": "오리온이 네 겹으로 만든 과자 꼬북칩을 국내에 출시했다.",
+    "sources": [
+      {
+        "license": "미확인",
+        "url": "https://www.orionworld.com/theme/102114/kr/assets/upload/ORION_2023_brochure_kor.pdf",
+        "name": "오리온 2023 브로슈어"
+      },
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%BC%AC%EB%B6%81%EC%B9%A9",
+        "name": "위키백과: 꼬북칩",
+        "license": "CC BY-SA 4.0",
+        "source_auto": true
+      }
+    ],
+    "confidence": "high"
   }
 ]
