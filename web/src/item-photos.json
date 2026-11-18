@@ -806,5 +806,733 @@
     "artist": "mike hoffmann",
     "license": "CC0",
     "via": "https://ko.wikipedia.org/wiki/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5_007%ED%8E%B8_%EA%B2%A9%EC%B6%94_%EC%82%AC%EA%B1%B4"
+  },
+  "1970|바니걸스": {
+    "title": "바니걸즈",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%EB%B0%94%EB%8B%88%EA%B1%B8%EC%A6%88.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%B0%94%EB%8B%88%EA%B1%B8%EC%A6%88.jpg",
+    "artist": "조선일보",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B0%94%EB%8B%88%EA%B1%B8%EC%8A%A4"
+  },
+  "1970|릴리 시스터즈": {
+    "title": "릴리시스터즈",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%EB%A6%B4%EB%A6%AC%EC%8B%9C%EC%8A%A4%ED%84%B0%EC%A6%88.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%A6%B4%EB%A6%AC%EC%8B%9C%EC%8A%A4%ED%84%B0%EC%A6%88.jpg",
+    "artist": "조선일보",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A6%B4%EB%A6%AC_%EC%8B%9C%EC%8A%A4%ED%84%B0%EC%A6%88"
+  },
+  "1985|부활 (밴드)": {
+    "title": "Soonchang2015-2",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Soonchang2015-2.jpg/960px-Soonchang2015-2.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Soonchang2015-2.jpg",
+    "artist": "Mewikigo",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B6%80%ED%99%9C_(%EB%B0%B4%EB%93%9C)"
+  },
+  "1989|카로스 타악기 앙상블": {
+    "title": "Karos-0001",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Karos-0001.jpg/960px-Karos-0001.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Karos-0001.jpg",
+    "artist": "Douglas SD Kim",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B9%B4%EB%A1%9C%EC%8A%A4_%ED%83%80%EC%95%85%EA%B8%B0_%EC%95%99%EC%83%81%EB%B8%94"
+  },
+  "1990|파업전야": {
+    "title": "Paup",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Paup.jpg/960px-Paup.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Paup.jpg",
+    "artist": "PARKJAEHWAN4wiki",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%97%85%EC%A0%84%EC%95%BC"
+  },
+  "1994|컬투": {
+    "title": "Cultwo",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cultwo.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Cultwo.jpg",
+    "artist": "wasabcon",
+    "license": "CC BY 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%BB%AC%ED%88%AC"
+  },
+  "1994|비행기 (밴드)": {
+    "title": "SNHS-logo",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/20/SNHS-logo.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:SNHS-logo.JPG",
+    "artist": "Spark109",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B9%84%ED%96%89%EA%B8%B0_(%EB%B0%B4%EB%93%9C)"
+  },
+  "1996|1996년 영월 지진": {
+    "title": "Gangwonearthquake",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Gangwonearthquake.jpg/960px-Gangwonearthquake.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Gangwonearthquake.jpg",
+    "artist": "Dittwjfsdgkvkdjg",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/1996%EB%85%84_%EC%98%81%EC%9B%94_%EC%A7%80%EC%A7%84"
+  },
+  "1996|럭스 (밴드)": {
+    "title": "Rux",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Rux.jpg/960px-Rux.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Rux.jpg",
+    "artist": "애콜라이트",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%9F%AD%EC%8A%A4_(%EB%B0%B4%EB%93%9C)"
+  },
+  "1997|베이비복스": {
+    "title": "베이비복스",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/90/%EB%B2%A0%EC%9D%B4%EB%B9%84%EB%B3%B5%EC%8A%A4.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%B2%A0%EC%9D%B4%EB%B9%84%EB%B3%B5%EC%8A%A4.jpg",
+    "artist": "자작",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B2%A0%EC%9D%B4%EB%B9%84%EB%B3%B5%EC%8A%A4"
+  },
+  "1997|젝스키스": {
+    "title": "Sechskies20200203",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/5/51/Sechskies20200203.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Sechskies20200203.png",
+    "artist": "SBS Radio 에라오",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%A0%9D%EC%8A%A4%ED%82%A4%EC%8A%A4"
+  },
+  "1951|6.25 전쟁": {
+    "title": "Chosin",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/960px-Chosin.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chosin.jpg",
+    "artist": "Photo by Corporal Peter McDonald, USMC",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81"
+  },
+  "1952|6.25 전쟁": {
+    "title": "Chosin",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/960px-Chosin.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chosin.jpg",
+    "artist": "Photo by Corporal Peter McDonald, USMC",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81"
+  },
+  "1953|6.25 전쟁": {
+    "title": "Chosin",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/960px-Chosin.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chosin.jpg",
+    "artist": "Photo by Corporal Peter McDonald, USMC",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81"
+  },
+  "1999|부부클리닉 사랑과 전쟁": {
+    "title": "CAM00782",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/CAM00782.jpg/960px-CAM00782.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:CAM00782.jpg",
+    "artist": "심현주",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B6%80%EB%B6%80%ED%81%B4%EB%A6%AC%EB%8B%89_%EC%82%AC%EB%9E%91%EA%B3%BC_%EC%A0%84%EC%9F%81"
+  },
+  "1999|45RPM": {
+    "title": "45RPM",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/45RPM.jpg/960px-45RPM.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:45RPM.jpg",
+    "artist": "Jinho Jung",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/45RPM"
+  },
+  "2000|트랜스픽션": {
+    "title": "TransFixion",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/TransFixion.JPG/960px-TransFixion.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:TransFixion.JPG",
+    "artist": "애콜라이트",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%8A%B8%EB%9E%9C%EC%8A%A4%ED%94%BD%EC%85%98"
+  },
+  "2000|리베라 메": {
+    "title": "리베라메02",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/%EB%A6%AC%EB%B2%A0%EB%9D%BC%EB%A9%9402.jpg/960px-%EB%A6%AC%EB%B2%A0%EB%9D%BC%EB%A9%9402.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%A6%AC%EB%B2%A0%EB%9D%BC%EB%A9%9402.jpg",
+    "artist": "최광모",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A6%AC%EB%B2%A0%EB%9D%BC_%EB%A9%94"
+  },
+  "2000|황보령=SmackSoft": {
+    "title": "Smacksoft",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Smacksoft.jpg/960px-Smacksoft.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Smacksoft.jpg",
+    "artist": "Bonnielou2013",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%99%A9%EB%B3%B4%EB%A0%B9%3DSmackSoft"
+  },
+  "2001|슈가 도넛": {
+    "title": "Sugardonut",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Sugardonut.JPG/960px-Sugardonut.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sugardonut.JPG",
+    "artist": "애콜라이트",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%8A%88%EA%B0%80_%EB%8F%84%EB%84%9B"
+  },
+  "2002|리쌍": {
+    "title": "Leessang",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Leessang.jpg/960px-Leessang.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Leessang.jpg",
+    "artist": "Jinho Jung",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A6%AC%EC%8C%8D"
+  },
+  "2003|국카스텐": {
+    "title": "국카스텐",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/%EA%B5%AD%EC%B9%B4%EC%8A%A4%ED%85%90.jpg/960px-%EA%B5%AD%EC%B9%B4%EC%8A%A4%ED%85%90.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EA%B5%AD%EC%B9%B4%EC%8A%A4%ED%85%90.jpg",
+    "artist": "The original uploader was Sangrila at Korean Wikipedia.",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B5%AD%EC%B9%B4%EC%8A%A4%ED%85%90"
+  },
+  "2004|메틴2": {
+    "title": "Metin2logo",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Metin2logo.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Metin2logo.png",
+    "artist": "Ytachi1000",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A9%94%ED%8B%B42"
+  },
+  "2004|로열 파이럿츠": {
+    "title": "Royalpiratess",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/73/Royalpiratess.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Royalpiratess.jpg",
+    "artist": "Unbearablefact",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A1%9C%EC%97%B4_%ED%8C%8C%EC%9D%B4%EB%9F%BF%EC%B8%A0"
+  },
+  "2004|레모니 스니켓의 위험한 대결": {
+    "title": "Lemony-snickets-a-series-of-unfortunate-events-movie-logo",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Lemony-snickets-a-series-of-unfortunate-events-movie-logo.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Lemony-snickets-a-series-of-unfortunate-events-movie-logo.png",
+    "artist": "Paramount Pictures / Nickelodeon Movies / DreamWorks",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A0%88%EB%AA%A8%EB%8B%88_%EC%8A%A4%EB%8B%88%EC%BC%93%EC%9D%98_%EC%9C%84%ED%97%98%ED%95%9C_%EB%8C%80%EA%B2%B0"
+  },
+  "2006|평택 미군기지 이전 문제": {
+    "title": "Daechuri-Protests-Mural",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/76/Daechuri-Protests-Mural.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Daechuri-Protests-Mural.jpg",
+    "artist": "플리커 hgreen",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%ED%8F%89%ED%83%9D_%EB%AF%B8%EA%B5%B0%EA%B8%B0%EC%A7%80_%EC%9D%B4%EC%A0%84_%EB%AC%B8%EC%A0%9C"
+  },
+  "2007|오대산 지진": {
+    "title": "Gangwonearthquake",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Gangwonearthquake.jpg/960px-Gangwonearthquake.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Gangwonearthquake.jpg",
+    "artist": "Dittwjfsdgkvkdjg",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%98%A4%EB%8C%80%EC%82%B0_%EC%A7%80%EC%A7%84"
+  },
+  "2008|숭례문 방화 사건": {
+    "title": "남대문화재편집24",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%EB%82%A8%EB%8C%80%EB%AC%B8%ED%99%94%EC%9E%AC%ED%8E%B8%EC%A7%9124.jpg/960px-%EB%82%A8%EB%8C%80%EB%AC%B8%ED%99%94%EC%9E%AC%ED%8E%B8%EC%A7%9124.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%82%A8%EB%8C%80%EB%AC%B8%ED%99%94%EC%9E%AC%ED%8E%B8%EC%A7%9124.jpg",
+    "artist": "Kwangmo",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%88%AD%EB%A1%80%EB%AC%B8_%EB%B0%A9%ED%99%94_%EC%82%AC%EA%B1%B4"
+  },
+  "2008|금강산 관광객 피격 사망 사건": {
+    "title": "Kumgangsan-beach",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Kumgangsan-beach.jpg/960px-Kumgangsan-beach.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Kumgangsan-beach.jpg",
+    "artist": "のりまき",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B8%88%EA%B0%95%EC%82%B0_%EA%B4%80%EA%B4%91%EA%B0%9D_%ED%94%BC%EA%B2%A9_%EC%82%AC%EB%A7%9D_%EC%82%AC%EA%B1%B4"
+  },
+  "2009|쌍용차 사태": {
+    "title": "SsangyongInchdent",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/SsangyongInchdent.jpg/960px-SsangyongInchdent.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:SsangyongInchdent.jpg",
+    "artist": "Dittwjfsdgkvkdjg",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%8C%8D%EC%9A%A9%EC%B0%A8_%EC%82%AC%ED%83%9C"
+  },
+  "2010|레드애플": {
+    "title": "Ledapple-logo",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/2/20/Ledapple-logo.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Ledapple-logo.jpg",
+    "artist": "Starkim Entertainment",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A0%88%EB%93%9C%EC%95%A0%ED%94%8C"
+  },
+  "2011|2011년 세계 육상 선수권 대회": {
+    "title": "2011dongdaegust",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/2011dongdaegust.jpg/960px-2011dongdaegust.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:2011dongdaegust.jpg",
+    "artist": "Kimhs5400",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/2011%EB%85%84_%EC%84%B8%EA%B3%84_%EC%9C%A1%EC%83%81_%EC%84%A0%EC%88%98%EA%B6%8C_%EB%8C%80%ED%9A%8C"
+  },
+  "2012|2012년 세계 박람회": {
+    "title": "Big-O",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Big-O.JPG/960px-Big-O.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Big-O.JPG",
+    "artist": "hyolee2",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/2012%EB%85%84_%EC%84%B8%EA%B3%84_%EB%B0%95%EB%9E%8C%ED%9A%8C"
+  },
+  "2014|2014년 신안군 염전 섬노예 사건": {
+    "title": "FleurDeSel",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8a/FleurDeSel.JPG?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:FleurDeSel.JPG",
+    "artist": "Fleur de Sel sea salt. Ile de Re 2005, personal photograph.",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/2014%EB%85%84_%EC%8B%A0%EC%95%88%EA%B5%B0_%EC%97%BC%EC%A0%84_%EC%84%AC%EB%85%B8%EC%98%88_%EC%82%AC%EA%B1%B4"
+  },
+  "2015|씽씽": {
+    "title": "SsingSsing",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/SsingSsing.jpg/960px-SsingSsing.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:SsingSsing.jpg",
+    "artist": "Casaini",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%94%BD%EC%94%BD"
+  },
+  "2016|SS301": {
+    "title": "SS301",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/SS301.jpg/960px-SS301.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:SS301.jpg",
+    "artist": "tenasia10",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/SS301"
+  },
+  "2016|NCT (음악 그룹)": {
+    "title": "NCT-logo",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/NCT-logo.jpg/960px-NCT-logo.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:NCT-logo.jpg",
+    "artist": "NCT",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/NCT_(%EC%9D%8C%EC%95%85_%EA%B7%B8%EB%A3%B9)"
+  },
+  "2016|EX'ACT": {
+    "title": "Ex'act",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Ex%27act.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Ex%27act.png",
+    "artist": "S.M. Entertainment",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/EX%27ACT"
+  },
+  "2018|BLUE;S": {
+    "title": "BLUE;S",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d3/BLUE%3BS.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:BLUE;S.jpg",
+    "artist": "레인보우 브릿지 에이전시(RBW)",
+    "license": "CC BY 4.0",
+    "via": "https://ko.wikipedia.org/wiki/BLUE;S"
+  },
+  "2019|청공소년": {
+    "title": "청공소년C프로필",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/%EC%B2%AD%EA%B3%B5%EC%86%8C%EB%85%84C%ED%94%84%EB%A1%9C%ED%95%84.jpg/960px-%EC%B2%AD%EA%B3%B5%EC%86%8C%EB%85%84C%ED%94%84%EB%A1%9C%ED%95%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%B2%AD%EA%B3%B5%EC%86%8C%EB%85%84C%ED%94%84%EB%A1%9C%ED%95%84.jpg",
+    "artist": "Bz boys",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EA%B3%B5%EC%86%8C%EB%85%84"
+  },
+  "2019|희나피아": {
+    "title": "희나피아",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/%ED%9D%AC%EB%82%98%ED%94%BC%EC%95%84.jpg/960px-%ED%9D%AC%EB%82%98%ED%94%BC%EC%95%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%ED%9D%AC%EB%82%98%ED%94%BC%EC%95%84.jpg",
+    "artist": "HINAPIA",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%9D%AC%EB%82%98%ED%94%BC%EC%95%84"
+  },
+  "2021|이터니티 (가상 아이돌)": {
+    "title": "이터니티그룹사진",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/%EC%9D%B4%ED%84%B0%EB%8B%88%ED%8B%B0%EA%B7%B8%EB%A3%B9%EC%82%AC%EC%A7%84.jpg/960px-%EC%9D%B4%ED%84%B0%EB%8B%88%ED%8B%B0%EA%B7%B8%EB%A3%B9%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%9D%B4%ED%84%B0%EB%8B%88%ED%8B%B0%EA%B7%B8%EB%A3%B9%EC%82%AC%EC%A7%84.jpg",
+    "artist": "펄스나인",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%9D%B4%ED%84%B0%EB%8B%88%ED%8B%B0_(%EA%B0%80%EC%83%81_%EC%95%84%EC%9D%B4%EB%8F%8C)"
+  },
+  "2022|NMIXX": {
+    "title": "Nmixxlogo",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Nmixxlogo.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Nmixxlogo.jpg",
+    "artist": "JYP Entertainment",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/NMIXX"
+  },
+  "2022|라필루스": {
+    "title": "Defaut",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Defaut.svg/960px-Defaut.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Defaut.svg",
+    "artist": "User Solensean on fr.wikipedia",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%9D%BC%ED%95%84%EB%A3%A8%EC%8A%A4"
+  },
+  "2023|NCT WISH": {
+    "title": "NCTWish-240316",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/NCTWish-240316.jpg/960px-NCTWish-240316.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:NCTWish-240316.jpg",
+    "artist": "아이도루러브 (blog.naver.com/idollove89)",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/NCT_WISH"
+  },
+  "2024|2024년 한국시리즈": {
+    "title": "이니셜로고",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%EC%9D%B4%EB%8B%88%EC%85%9C%EB%A1%9C%EA%B3%A0.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%9D%B4%EB%8B%88%EC%85%9C%EB%A1%9C%EA%B3%A0.jpg",
+    "artist": "기아타이거즈",
+    "license": "CC BY 4.0",
+    "via": "https://ko.wikipedia.org/wiki/2024%EB%85%84_%ED%95%9C%EA%B5%AD%EC%8B%9C%EB%A6%AC%EC%A6%88"
+  },
+  "2025|2025년 의성-안동 산불": {
+    "title": "YDK-Malmisan-S",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/YDK-Malmisan-S.jpg/960px-YDK-Malmisan-S.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:YDK-Malmisan-S.jpg",
+    "artist": "Dittwjfsdgkvkdjg",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/2025%EB%85%84_%EC%9D%98%EC%84%B1-%EC%95%88%EB%8F%99_%EC%82%B0%EB%B6%88"
+  },
+  "2025|2025년 SK텔레콤 유심 해킹 사건": {
+    "title": "Sktusimincident2025",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Sktusimincident2025.jpg/960px-Sktusimincident2025.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Sktusimincident2025.jpg",
+    "artist": "Kimhs5400(누리위키)",
+    "license": "CC BY 4.0",
+    "via": "https://ko.wikipedia.org/wiki/2025%EB%85%84_SK%ED%85%94%EB%A0%88%EC%BD%A4_%EC%9C%A0%EC%8B%AC_%ED%95%B4%ED%82%B9_%EC%82%AC%EA%B1%B4"
+  },
+  "2026|WAYF BOYS": {
+    "title": "Wayfboys",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Wayfboys.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Wayfboys.jpg",
+    "artist": "Bebephin",
+    "license": "CC BY 4.0",
+    "via": "https://ko.wikipedia.org/wiki/WAYF_BOYS"
+  },
+  "1950|칠성사이다": {
+    "title": "Korea_Chilsung_Cider_01_(15891088219)",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Korea_Chilsung_Cider_01_%2815891088219%29.jpg/960px-Korea_Chilsung_Cider_01_%2815891088219%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Korea_Chilsung_Cider_01_(15891088219).jpg",
+    "artist": "Republic of Korea from Seoul, Republic of Korea",
+    "license": "CC BY-SA 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%84%B1%EC%82%AC%EC%9D%B4%EB%8B%A4"
+  },
+  "1963|삼양라면": {
+    "title": "Samyang_Ramen_20210730_002",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Samyang_Ramen_20210730_002.jpg/960px-Samyang_Ramen_20210730_002.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Samyang_Ramen_20210730_002.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%96%91%EB%9D%BC%EB%A9%B4"
+  },
+  "1968|경부고속도로": {
+    "title": "KE-1-SP",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/KE-1-SP.jpg/960px-KE-1-SP.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:KE-1-SP.jpg",
+    "artist": "Dittwjfsdgkvkdjg",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B6%80%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C"
+  },
+  "1971|새우깡": {
+    "title": "새우깡_사진",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/7/76/%EC%83%88%EC%9A%B0%EA%B9%A1_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%83%88%EC%9A%B0%EA%B9%A1_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "앤디",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EC%83%88%EC%9A%B0%EA%B9%A1"
+  },
+  "1972|죠리퐁": {
+    "title": "죠리퐁",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/%EC%A3%A0%EB%A6%AC%ED%90%81.jpg/960px-%EC%A3%A0%EB%A6%AC%ED%90%81.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EC%A3%A0%EB%A6%AC%ED%90%81.jpg",
+    "artist": "Jocelyndurrey",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%A3%A0%EB%A6%AC%ED%90%81"
+  },
+  "1974|오리온 초코파이": {
+    "title": "Chocolate_Pie",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Chocolate_Pie.jpg/960px-Chocolate_Pie.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Chocolate_Pie.jpg",
+    "artist": "Tomomarusan",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%94%ED%8C%8C%EC%9D%B4"
+  },
+  "1975|맛동산": {
+    "title": "맛동산_사진",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/%EB%A7%9B%EB%8F%99%EC%82%B0_%EC%82%AC%EC%A7%84.jpg/960px-%EB%A7%9B%EB%8F%99%EC%82%B0_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%A7%9B%EB%8F%99%EC%82%B0_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "박찹쌀",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A7%9B%EB%8F%99%EC%82%B0"
+  },
+  "1975|현대 포니": {
+    "title": "Hyundai_Pony_4_door_first_generation",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hyundai_Pony_4_door_first_generation.jpg/960px-Hyundai_Pony_4_door_first_generation.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Hyundai_Pony_4_door_first_generation.jpg",
+    "artist": "Charles01",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%98%84%EB%8C%80_%ED%8F%AC%EB%8B%88"
+  },
+  "1981|홈런볼": {
+    "title": "홈런볼_사진",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/%ED%99%88%EB%9F%B0%EB%B3%BC_%EC%82%AC%EC%A7%84.jpg/960px-%ED%99%88%EB%9F%B0%EB%B3%BC_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%ED%99%88%EB%9F%B0%EB%B3%BC_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "짱짱인절미",
+    "license": "CC BY-SA 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%ED%99%88%EB%9F%B0%EB%B3%BC"
+  },
+  "1982|너구리 (라면)": {
+    "title": "Nongshim_Neoguri_20201112_003",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Nongshim_Neoguri_20201112_003.jpg/960px-Nongshim_Neoguri_20201112_003.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nongshim_Neoguri_20201112_003.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%84%88%EA%B5%AC%EB%A6%AC_(%EB%9D%BC%EB%A9%B4)"
+  },
+  "1982|맥콜": {
+    "title": "McCOL",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/1d/McCOL.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:McCOL.jpg",
+    "artist": "작가 미상",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A7%A5%EC%BD%9C"
+  },
+  "1983|돼지바": {
+    "title": "돼지바",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/%EB%8F%BC%EC%A7%80%EB%B0%94.jpg/960px-%EB%8F%BC%EC%A7%80%EB%B0%94.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:%EB%8F%BC%EC%A7%80%EB%B0%94.jpg",
+    "artist": "LR0725",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8F%BC%EC%A7%80%EB%B0%94"
+  },
+  "1983|안성탕면": {
+    "title": "Nongshim_Ansungtangmyun_20201120_002",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Nongshim_Ansungtangmyun_20201120_002.jpg/960px-Nongshim_Ansungtangmyun_20201120_002.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nongshim_Ansungtangmyun_20201120_002.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%95%88%EC%84%B1%ED%83%95%EB%A9%B4"
+  },
+  "1983|빼빼로": {
+    "title": "Pepero-Almond-Sticks",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Pepero-Almond-Sticks.jpg/960px-Pepero-Almond-Sticks.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Pepero-Almond-Sticks.jpg",
+    "artist": "Evan-Amos",
+    "license": "CC0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B9%BC%EB%B9%BC%EB%A1%9C"
+  },
+  "1983|양파링": {
+    "title": "Panko_Onion_Rings_with_Banana_Sauce_(4396579752)",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Panko_Onion_Rings_with_Banana_Sauce_%284396579752%29.jpg/960px-Panko_Onion_Rings_with_Banana_Sauce_%284396579752%29.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Panko_Onion_Rings_with_Banana_Sauce_(4396579752).jpg",
+    "artist": "Vegan Feast Catering",
+    "license": "CC BY 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%96%B4%EB%8B%88%EC%96%B8_%EB%A7%81"
+  },
+  "1984|짜파게티": {
+    "title": "Nongshim_Chapagetti_20201120_003",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Nongshim_Chapagetti_20201120_003.jpg/960px-Nongshim_Chapagetti_20201120_003.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nongshim_Chapagetti_20201120_003.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%A7%9C%ED%8C%8C%EA%B2%8C%ED%8B%B0"
+  },
+  "1984|팔도 비빔면": {
+    "title": "Paldo_Bibim_men_20201123_004",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Paldo_Bibim_men_20201123_004.jpg/960px-Paldo_Bibim_men_20201123_004.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Paldo_Bibim_men_20201123_004.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%8C%94%EB%8F%84_%EB%B9%84%EB%B9%94%EB%A9%B4"
+  },
+  "1986|도시락 (라면)": {
+    "title": "Paldo_Dosirac_noodles_20210605_002",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Paldo_Dosirac_noodles_20210605_002.jpg/960px-Paldo_Dosirac_noodles_20210605_002.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Paldo_Dosirac_noodles_20210605_002.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8F%84%EC%8B%9C%EB%9D%BD_(%EB%9D%BC%EB%A9%B4)"
+  },
+  "1988|포카칩": {
+    "title": "포카칩_사진",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/b/bc/%ED%8F%AC%EC%B9%B4%EC%B9%A9_%EC%82%AC%EC%A7%84.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%ED%8F%AC%EC%B9%B4%EC%B9%A9_%EC%82%AC%EC%A7%84.jpg",
+    "artist": "박둘리",
+    "license": "CC BY 2.0 kr",
+    "via": "https://ko.wikipedia.org/wiki/%ED%8F%AC%EC%B9%B4%EC%B9%A9"
+  },
+  "1991|붕어싸만코": {
+    "title": "Outlook_of_Bung-er_Samanco,_Carp_Ice_Waffle",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Outlook_of_Bung-er_Samanco%2C_Carp_Ice_Waffle.png/960px-Outlook_of_Bung-er_Samanco%2C_Carp_Ice_Waffle.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Outlook_of_Bung-er_Samanco,_Carp_Ice_Waffle.png",
+    "artist": "호로조",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B0%B8%EB%B6%95%EC%96%B4%EC%8B%B8%EB%A7%8C%EC%BD%94"
+  },
+  "1992|메로나": {
+    "title": "Melona",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Melona.jpg/330px-Melona.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Melona.jpg",
+    "artist": "Hyeon-Jeong Suk",
+    "license": "CC BY 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A9%94%EB%A1%9C%EB%82%98"
+  },
+  "1993|무선호출기 (삐삐)": {
+    "title": "GSL_28R",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/91/GSL_28R.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:GSL_28R.png",
+    "artist": "Galizant",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%AC%B4%EC%84%A0%ED%98%B8%EC%B6%9C%EA%B8%B0"
+  },
+  "1995|솔의눈": {
+    "title": "Beers_and_others",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Beers_and_others.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Beers_and_others.jpg",
+    "artist": "Sung Sook",
+    "license": "CC BY 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%86%94%EC%9D%98_%EB%88%88"
+  },
+  "1996|모토로라 스타택": {
+    "title": "StarTAC-8500",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/StarTAC-8500.jpg/960px-StarTAC-8500.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:StarTAC-8500.jpg",
+    "artist": "80sCompaqPC",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%AA%A8%ED%86%A0%EB%A1%9C%EB%9D%BC_%EC%8A%A4%ED%83%80%ED%83%9D"
+  },
+  "1996|더플 코트 (떡볶이 코트)": {
+    "title": "Duflle_coat_statue",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Duflle_coat_statue.jpg/960px-Duflle_coat_statue.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Duflle_coat_statue.jpg",
+    "artist": "Ouwejokke",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8D%94%ED%94%8C_%EC%BD%94%ED%8A%B8"
+  },
+  "1997|다마고치": {
+    "title": "Tamagotchi_0124_ubt",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Tamagotchi_0124_ubt.jpeg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Tamagotchi_0124_ubt.jpeg",
+    "artist": "Tomasz Sienicki [user: tsca, mail: tomasz.sienicki at gmail.com]",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8B%A4%EB%A7%88%EA%B3%A0%EC%B9%98"
+  },
+  "1999|펌프 잇 업": {
+    "title": "Pump_it_up_cosplay_1",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Pump_it_up_cosplay_1.jpg/960px-Pump_it_up_cosplay_1.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Pump_it_up_cosplay_1.jpg",
+    "artist": "Javier Mediavilla Ezquibela",
+    "license": "CC BY-SA 2.5",
+    "via": "https://ko.wikipedia.org/wiki/%ED%8E%8C%ED%94%84_%EC%9E%87_%EC%97%85"
+  },
+  "2001|싸이월드 미니홈피": {
+    "title": "Cyworld",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Cyworld.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Cyworld.jpg",
+    "artist": "Yeahoo7",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EC%8B%B8%EC%9D%B4%EC%9B%94%EB%93%9C"
+  },
+  "2005|모토로라 레이저": {
+    "title": "Motorola_RAZR_XT910",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Motorola_RAZR_XT910.jpg/960px-Motorola_RAZR_XT910.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Motorola_RAZR_XT910.jpg",
+    "artist": "Conrad Longmore",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%AA%A8%ED%86%A0%EB%A1%9C%EB%9D%BC_%EB%A0%88%EC%9D%B4%EC%A0%80"
+  },
+  "2007|닌텐도 DS Lite": {
+    "title": "Nintendo-DS-Lite-Black-Open",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Nintendo-DS-Lite-Black-Open.png/960px-Nintendo-DS-Lite-Black-Open.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nintendo-DS-Lite-Black-Open.png",
+    "artist": "Evan-Amos",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8B%8C%ED%85%90%EB%8F%84_DS_%EB%9D%BC%EC%9D%B4%ED%8A%B8"
+  },
+  "2009|아이폰 3GS 국내 출시": {
+    "title": "IPhone_3G_and_3G_S_backs",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/IPhone_3G_and_3G_S_backs.jpg/960px-IPhone_3G_and_3G_S_backs.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:IPhone_3G_and_3G_S_backs.jpg",
+    "artist": "gillyberlin",
+    "license": "CC BY 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%95%84%EC%9D%B4%ED%8F%B0_3GS"
+  },
+  "2011|리그 오브 레전드": {
+    "title": "League_of_Legends_2019_vector",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/League_of_Legends_2019_vector.svg/960px-League_of_Legends_2019_vector.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:League_of_Legends_2019_vector.svg",
+    "artist": "Riot Games",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A6%AC%EA%B7%B8_%EC%98%A4%EB%B8%8C_%EB%A0%88%EC%A0%84%EB%93%9C"
+  },
+  "2012|불닭볶음면": {
+    "title": "Buldak_Ramen_20210114_004",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Buldak_Ramen_20210114_004.jpg/960px-Buldak_Ramen_20210114_004.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Buldak_Ramen_20210114_004.jpg",
+    "artist": "Mobius6",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B6%88%EB%8B%AD%EB%B3%B6%EC%9D%8C%EB%A9%B4"
+  },
+  "2014|허니버터칩": {
+    "title": "허니버터칩_로고",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/8/80/%ED%97%88%EB%8B%88%EB%B2%84%ED%84%B0%EC%B9%A9_%EB%A1%9C%EA%B3%A0.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:%ED%97%88%EB%8B%88%EB%B2%84%ED%84%B0%EC%B9%A9_%EB%A1%9C%EA%B3%A0.jpg",
+    "artist": "Haitai Calbee",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%ED%97%88%EB%8B%88%EB%B2%84%ED%84%B0%EC%B9%A9"
+  },
+  "2016|넷플릭스 한국 런칭": {
+    "title": "100_Winchester_Circle",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/100_Winchester_Circle.jpg/960px-100_Winchester_Circle.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:100_Winchester_Circle.jpg",
+    "artist": "Coolcaesar",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%84%B7%ED%94%8C%EB%A6%AD%EC%8A%A4"
+  },
+  "2017|평창 롱패딩 열풍": {
+    "title": "Pyeongchang_2018_Logo",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Pyeongchang_2018_Logo.svg/960px-Pyeongchang_2018_Logo.svg.png?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Pyeongchang_2018_Logo.svg",
+    "artist": "The original uploader was AxG at English Wikipedia.",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/2018%EB%85%84_%EB%8F%99%EA%B3%84_%EC%98%AC%EB%A6%BC%ED%94%BD"
+  },
+  "2017|닌텐도 스위치": {
+    "title": "Nintendo-Switch-Console-Docked-wJoyConRB",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Switch-Console-Docked-wJoyConRB.jpg/960px-Nintendo-Switch-Console-Docked-wJoyConRB.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Nintendo-Switch-Console-Docked-wJoyConRB.jpg",
+    "artist": "Evan-Amos",
+    "license": "Public domain",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8B%8C%ED%85%90%EB%8F%84_%EC%8A%A4%EC%9C%84%EC%B9%98"
+  },
+  "2019|흑당 버블티 열풍": {
+    "title": "Classic_bubble_tea",
+    "thumb": "https://upload.wikimedia.org/wikipedia/commons/1/18/Classic_bubble_tea.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Classic_bubble_tea.jpg",
+    "artist": "Oqmilteashop",
+    "license": "CC BY-SA 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%B2%84%EB%B8%94%ED%8B%B0"
+  },
+  "2019|마라탕 열풍": {
+    "title": "Malatang_from_South_Korea",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Malatang_from_South_Korea.jpg/960px-Malatang_from_South_Korea.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Malatang_from_South_Korea.jpg",
+    "artist": "오모군",
+    "license": "CC BY 3.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%A7%88%EB%9D%BC%ED%83%95"
+  },
+  "2020|달고나 커피": {
+    "title": "Homemade_Dalgona_Coffee",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Homemade_Dalgona_Coffee.jpg/960px-Homemade_Dalgona_Coffee.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Homemade_Dalgona_Coffee.jpg",
+    "artist": "Wikieditkid",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%EB%8B%AC%EA%B3%A0%EB%82%98_%EC%BB%A4%ED%94%BC"
+  },
+  "2023|탕후루 열풍": {
+    "title": "Glazed_Tomatoes_and_Berries",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Glazed_Tomatoes_and_Berries.jpg/960px-Glazed_Tomatoes_and_Berries.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Glazed_Tomatoes_and_Berries.jpg",
+    "artist": "Andrewhaimerl",
+    "license": "CC BY-SA 4.0",
+    "via": "https://ko.wikipedia.org/wiki/%ED%83%95%ED%9B%84%EB%A3%A8"
+  },
+  "2024|두바이 초콜릿": {
+    "title": "Cocoa_Powder_and_Chocolate_on_Marble_Background",
+    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Cocoa_Powder_and_Chocolate_on_Marble_Background.jpg/960px-Cocoa_Powder_and_Chocolate_on_Marble_Background.jpg?utm_source=ko.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cocoa_Powder_and_Chocolate_on_Marble_Background.jpg",
+    "artist": "formulatehealth",
+    "license": "CC BY 2.0",
+    "via": "https://ko.wikipedia.org/wiki/%EC%B4%88%EC%BD%9C%EB%A6%BF"
   }
 }

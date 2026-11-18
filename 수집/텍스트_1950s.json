@@ -41,6 +41,24 @@
   },
   {
     "year": 1950,
+    "month": 5,
+    "date_precision": "month",
+    "category": "먹거리",
+    "title": "칠성사이다",
+    "summary": "칠성사이다(七星 cider)는 1950년 5월 9일에 출시된 롯데칠성음료의 청량 음료다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B9%A0%EC%84%B1%EC%82%AC%EC%9D%B4%EB%8B%A4",
+        "name": "위키백과: 칠성사이다",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "curated-culture",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
     "month": 6,
     "date_precision": "month",
     "category": "사건·사회·생활상",
@@ -401,6 +419,60 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EB%82%A8%EC%96%91%EC%A3%BC_%EB%AF%BC%EA%B0%84%EC%9D%B8_%ED%95%99%EC%82%B4_%EC%82%AC%EA%B1%B4",
         "name": "위키백과: 남양주 민간인 학살 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
+    "month": 11,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "대서울계획",
+    "summary": "대서울계획(大서울計劃)은 6.25 전쟁 중이던 1950년부터 1951년까지 서울특별시가 전쟁으로 파괴된 서울을 다시 세우고 한강 이남까지 도시를 넓히려고 내놓은 일련의 도시계획 구상이다. 서울시는 1950년 11월 '대서울계획안'을 발표한 뒤 1951년 '수도재건과 신설 도시계획안'과 같은 해 11월 '서울도시계획개요…",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%EC%84%9C%EC%9A%B8%EA%B3%84%ED%9A%8D",
+        "name": "위키백과: 대서울계획",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
+    "month": 12,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "흥남 철수 작전",
+    "summary": "흥남 철수 작전(興南撤收作戰, 영어: Hungnam evacuation) 또는 흥남 재배치(興南再配置, 영어: Heungnam redeployment)는 일명 \"크리스마스의 기적\"( - 奇蹟, 영어: Miracle of Chirstmas)으로도 알려져 있으며 6.25 전쟁 중 1950년 12월 15일부터 24일까지 함…",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%9D%A5%EB%82%A8_%EC%B2%A0%EC%88%98_%EC%9E%91%EC%A0%84",
+        "name": "위키백과: 흥남 철수 작전",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1950,
+    "month": 12,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "Flight of Refugees Across Wrecked Bridge in Korea",
+    "summary": "Flight of Refugees Across Wrecked Bridge in Korea는 AP 통신의 기자 맥스 데스퍼가 1950년 12월 4일에 찍은 사진으로, 1951년도 퓰리처상 사진 부문에서 수상하였다. 6.25 전쟁에서 사람들이 짐을 짊어진 채 피난을 위해 파괴된 대동강 다리를 건너는 모습이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/Flight_of_Refugees_Across_Wrecked_Bridge_in_Korea",
+        "name": "위키백과: Flight of Refugees Across Wrecked Bridge in Korea",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -930,6 +1002,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1951,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "6.25 전쟁",
+    "summary": "6.25 전쟁(六二五戰爭) 또는 한국 전쟁(문화어: 조선 전쟁, 조국해방전쟁, 영어: Korean War, 중국어 정체: 韓國戰爭/朝鮮戰爭, 중국어 간체: 韩国战争/朝鲜战争, 러시아어: Корейская война)은 1950년 6월 25일에 조선인민군이 '폭풍 작전' 계획에 따라 삼팔선 전역에 걸쳐 기습적으로 대한민…",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+        "name": "위키백과: 6.25 전쟁",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1952,
     "month": 1,
     "date_precision": "month",
@@ -962,6 +1052,24 @@
       }
     ],
     "confidence": "medium",
+    "wiki_checked": true
+  },
+  {
+    "year": 1952,
+    "month": 3,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "대서울계획",
+    "summary": "대서울계획(大서울計劃)은 6.25 전쟁 중이던 1950년부터 1951년까지 서울특별시가 전쟁으로 파괴된 서울을 다시 세우고 한강 이남까지 도시를 넓히려고 내놓은 일련의 도시계획 구상이다. 서울시는 1950년 11월 '대서울계획안'을 발표한 뒤 1951년 '수도재건과 신설 도시계획안'과 같은 해 11월 '서울도시계획개요…",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%EC%84%9C%EC%9A%B8%EA%B3%84%ED%9A%8D",
+        "name": "위키백과: 대서울계획",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
     "wiki_checked": true
   },
   {
@@ -1346,6 +1454,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1952,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "6.25 전쟁",
+    "summary": "6.25 전쟁(六二五戰爭) 또는 한국 전쟁(문화어: 조선 전쟁, 조국해방전쟁, 영어: Korean War, 중국어 정체: 韓國戰爭/朝鮮戰爭, 중국어 간체: 韩国战争/朝鲜战争, 러시아어: Корейская война)은 1950년 6월 25일에 조선인민군이 '폭풍 작전' 계획에 따라 삼팔선 전역에 걸쳐 기습적으로 대한민…",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+        "name": "위키백과: 6.25 전쟁",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1953,
     "month": 1,
     "date_precision": "month",
@@ -1464,6 +1590,24 @@
       }
     ],
     "confidence": "high",
+    "wiki_checked": true
+  },
+  {
+    "year": 1953,
+    "month": 7,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "6.25 전쟁",
+    "summary": "6.25 전쟁(六二五戰爭) 또는 한국 전쟁(문화어: 조선 전쟁, 조국해방전쟁, 영어: Korean War, 중국어 정체: 韓國戰爭/朝鮮戰爭, 중국어 간체: 韩国战争/朝鲜战争, 러시아어: Корейская война)은 1950년 6월 25일에 조선인민군이 '폭풍 작전' 계획에 따라 삼팔선 전역에 걸쳐 기습적으로 대한민…",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/6.25_%EC%A0%84%EC%9F%81",
+        "name": "위키백과: 6.25 전쟁",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
     "wiki_checked": true
   },
   {
@@ -1751,6 +1895,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EC%95%A0%EC%A0%95%EC%82%B0%EB%A7%A5",
         "name": "위키백과: 애정산맥",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1953,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "김시스터즈",
+    "summary": "김시스터즈(The Kim Sisters)는 이난영과 김해송의 세 자매가 어린 시절인 1953년에 결성한 대한민국의 여성 보컬그룹이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B9%80%EC%8B%9C%EC%8A%A4%ED%84%B0%EC%A6%88",
+        "name": "위키백과: 김시스터즈",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -2504,6 +2666,24 @@
   },
   {
     "year": 1955,
+    "month": 6,
+    "date_precision": "month",
+    "category": "음악",
+    "title": "금강산가극단",
+    "summary": "금강산가극단(金剛山歌劇団)은 재일본조선인총연합회 산하의 음악무용공연단체이다. 1955년 6월에 재일조선중앙예술단이라는 이름으로 창단된 뒤, 1974년 8월 29일에 개편되었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B8%88%EA%B0%95%EC%82%B0%EA%B0%80%EA%B7%B9%EB%8B%A8",
+        "name": "위키백과: 금강산가극단",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1955,
     "month": 9,
     "date_precision": "month",
     "category": "사건·사회·생활상",
@@ -3122,6 +3302,24 @@
     ],
     "confidence": "high",
     "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1956,
+    "month": 11,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "청실홍실",
+    "summary": "청실홍실은 다음을 가리킨다. 《청실홍실》은 한국에서 제작된 정일택 감독의 1957년 영화이다. 《청실홍실》은 1956년 10월 7일부터 1957년 4월 28일까지 KBS에서 방송된 30부작 라디오 일요연속극이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%B2%AD%EC%8B%A4%ED%99%8D%EC%8B%A4",
+        "name": "위키백과: 청실홍실",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "curated-culture",
     "wiki_checked": true
   },
   {
@@ -3848,6 +4046,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EC%88%99%EC%98%81%EB%82%AD%EC%9E%90%EC%A0%84_(1956%EB%85%84_%EC%98%81%ED%99%94)",
         "name": "위키백과: 숙영낭자전 (1956년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1956,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "KBS교향악단",
+    "summary": "KBS교향악단(KBS交響樂團, KBS Symphony Orchestra)은 한국방송공사 산하의 교향악단이다. 대한민국의 대표적인 관현악단으로, 1956년에 창단하였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/KBS%EA%B5%90%ED%96%A5%EC%95%85%EB%8B%A8",
+        "name": "위키백과: KBS교향악단",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -4607,6 +4823,24 @@
     ],
     "confidence": "high",
     "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1958,
+    "month": 2,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "아리랑 (담배)",
+    "summary": "1958년 발매된 대한민국의 최초 필터 담배.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%95%84%EB%A6%AC%EB%9E%91_(%EB%8B%B4%EB%B0%B0)",
+        "name": "위키백과: 아리랑 (담배)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "curated-culture",
     "wiki_checked": true
   },
   {
@@ -7678,6 +7912,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/1959%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
         "name": "위키백과: 1959년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1959,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "키보이스",
+    "summary": "키 보이스(Key Boys)는 대한민국의 록 음악 밴드로, 1959년에 결성되어 이후 1965년경부터 1967년에 해체될때까지 윤항기와 차중락이 주축을 이루었다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%ED%82%A4%EB%B3%B4%EC%9D%B4%EC%8A%A4",
+        "name": "위키백과: 키보이스",
         "license": "CC BY-SA 4.0"
       }
     ],

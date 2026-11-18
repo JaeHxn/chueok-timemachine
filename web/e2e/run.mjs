@@ -1,7 +1,10 @@
 // E2E: 실제 Chrome(agent-browser)으로 사용자 흐름을 재현한다.
 // 사용: node e2e/run.mjs [URL]   (기본 http://localhost:4173/)
 import { execFileSync } from "node:child_process";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 
+const here = path.dirname(fileURLToPath(import.meta.url));
 const BASE = process.argv[2] || "http://localhost:4173/";
 const ab = (...args) => execFileSync("agent-browser", args, { encoding: "utf8", shell: true }).trim();
 const js = (code) => {
@@ -77,11 +80,10 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     assert(r.h2 === "1953" && r.cur?.startsWith("7월"), JSON.stringify(r));
   });
 
-  await test(P + "자료 없는 해 → 안내 + 가까운 해 버튼", async () => {
-    await nav(js(`return document.querySelector(".yb:not(.has)").getAttribute("href")`));
-    const r = js(`const a=document.querySelector('.empty a');return {text:document.querySelector('.empty')?.textContent,href:a?.getAttribute('href')}`);
-    assert(r.text?.includes("준비 중") && r.href, JSON.stringify(r));
-    return `→ ${r.href}`;
+  await test(P + "자료 상태 점검: 77개 전 연도 자료 100% 확보", async () => {
+    const emptyCount = js('return document.querySelectorAll(".yb:not(.has)").length');
+    assert(emptyCount === 0, `자료 없는 연도가 ${emptyCount}개 남아있음`);
+    return "1950~2026년 77개 전 연도 자료 보유 확인";
   });
 
   await test(P + "검색 '라면' → 결과 → 클릭 이동", async () => {
@@ -121,6 +123,13 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     return t;
   });
 
+  await test(P + "커뮤니티: 공감 반응 칩 & 인스타 카드 버튼 표시", async () => {
+    await nav("#/1974");
+    const r = js('return {reacts:document.querySelectorAll(".react-chip").length,instaBtn:!!document.querySelector(".insta-badge-btn"),writeBtn:!!document.querySelector(".write-post-btn")}');
+    assert(r.reacts >= 5 && r.instaBtn && r.writeBtn, JSON.stringify(r));
+    return `리액션 ${r.reacts}개, 인스타/사연 버튼 정상`;
+  });
+
   await test(P + "가로 넘침 없음", () => {
     const r = js(`return {sw:document.documentElement.scrollWidth,iw:innerWidth}`);
     assert(r.sw <= r.iw + 1, JSON.stringify(r));
@@ -132,7 +141,7 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     assert(r.length === 0, "작은 대상: " + kinds.slice(0, 6).join(", "));
   });
 
-  ab("screenshot", `e2e/shot-${vp.w}.png`);
+  ab("screenshot", path.join(here, `shot-${vp.w}.png`));
 }
 
 ab("close");

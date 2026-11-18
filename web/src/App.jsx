@@ -1,6 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import items from "./items.json";
 import itemPhotos from "./item-photos.json";
+import InstagramCardModal from "./InstagramCardModal.jsx";
+import WritePostModal from "./WritePostModal.jsx";
+import CardCommunity from "./CardCommunity.jsx";
 
 const YEARS = Array.from({ length: 77 }, (_, i) => 1950 + i); // 1950~2026
 const CATS = ["음악", "TV·영화", "먹거리", "패션", "놀이·문구", "가전·기술", "사건·생활상", "유행어·풍속"];
@@ -48,7 +51,21 @@ export default function App() {
   const [toast, setToast] = useState("");
   const [cheerOpen, setCheerOpen] = useState(false);
   const [adminView, setAdminView] = useState(location.hash.startsWith("#/admin"));
+  const [instaModalItem, setInstaModalItem] = useState(null);
+  const [writePostOpen, setWritePostOpen] = useState(false);
+  const [customPosts, setCustomPosts] = useState([]);
   const barRef = useRef(null);
+
+  // 연도별 사용자 사연 불러오기
+  useEffect(() => {
+    if (!year) return;
+    fetch(`/api/posts?year=${year}`)
+      .then((r) => r.json())
+      .then((d) => {
+        if (d?.ok && Array.isArray(d?.posts)) setCustomPosts(d.posts);
+      })
+      .catch(() => {});
+  }, [year]);
 
   // 주소가 바뀌면(뒤로가기 포함) 화면을 따라가게
   useEffect(() => {
@@ -120,6 +137,7 @@ export default function App() {
       <header className="top">
         <a className="brand" href="#/">🪐 추억 타임머신</a>
         <div className="top-r">
+          <button className="write-post-btn" onClick={() => setWritePostOpen(true)}>✏️ 내 추억 사연 남기기</button>
           <button className="ghost cheer-btn" onClick={() => setCheerOpen(true)}>💌 응원 한마디</button>
           <input
             className="search"
@@ -190,11 +208,11 @@ export default function App() {
             <button className="primary" type="submit">이동</button>
           </form>
           <div className="quick">
-            {[1953, 1965, 1974, 1979, 1986, 1988, 1997].filter((y) => itemsOf(y).length).map((y) => (
+            {[1953, 1965, 1974, 1979, 1988, 1997, 2002, 2010, 2020].filter((y) => itemsOf(y).length).map((y) => (
               <a key={y} className="chip" href={hashOf(y)}>{y}<small>{itemsOf(y).length}개</small></a>
             ))}
           </div>
-          <p className="note small">지금은 1950~1999년 자료가 있습니다. 2000년 이후는 준비 중입니다.</p>
+          <p className="note small">1950년부터 2026년까지 77개년 5,600여 개 추억이 수록되어 있습니다.</p>
         </section>
       )}
 
@@ -252,7 +270,43 @@ export default function App() {
               </div>
 
               <div className="grid">
-                {shown.length === 0 && <div className="empty">이 분류에는 자료가 없습니다.</div>}
+                {/* 이용자가 직접 남긴 추억 사연 카드 */}
+                {customPosts
+                  .filter((p) => !month || p.month === month)
+                  .filter((p) => cat === "전체" || p.category === cat)
+                  .map((p) => (
+                    <article className="card user-post-card" key={p.id}>
+                      <div className="meta">
+                        <span className="tag" style={{ background: "rgba(255, 215, 0, 0.2)", color: "#ffd700", fontWeight: 700 }}>
+                          ✍️ 이용자 추억 사연
+                        </span>
+                        <span className="tag">{p.month ? `${p.year}년 ${p.month}월` : `${p.year}년`}</span>
+                        <span className="tag">{p.category}</span>
+                      </div>
+                      <h3>{p.title}</h3>
+                      <p style={{ whiteSpace: "pre-wrap" }}>{p.content}</p>
+                      <div className="src" style={{ marginTop: "6px" }}>
+                        글쓴이: <b>{p.author || "익명의 시간여행자"}</b> · {new Date(p.at).toLocaleDateString("ko-KR")}
+                      </div>
+                      <div className="card-actions">
+                        <button
+                          className="insta-badge-btn"
+                          onClick={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })}
+                        >
+                          📸 인스타 카드
+                        </button>
+                        <button
+                          className="share-btn"
+                          onClick={() => setShare({ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) })}
+                        >
+                          공유
+                        </button>
+                      </div>
+                      <CardCommunity item={{ year: p.year, title: p.title }} onToast={setToast} />
+                    </article>
+                  ))}
+
+                {shown.length === 0 && customPosts.length === 0 && <div className="empty">이 분류에는 자료가 없습니다.</div>}
                 {shown.map((it) => {
                   const ok = it.sources.length > 0 && it.confidence !== "low";
                   const ph = photoOf(it);
@@ -276,9 +330,15 @@ export default function App() {
                           출처 {it.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}
                         </div>
                       )}
-                      <button className="share-btn" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
-                        공유
-                      </button>
+                      <div className="card-actions">
+                        <button className="insta-badge-btn" onClick={() => setInstaModalItem({ item: it, photo: ph })}>
+                          📸 인스타 카드
+                        </button>
+                        <button className="share-btn" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
+                          공유
+                        </button>
+                      </div>
+                      <CardCommunity item={it} onToast={setToast} />
                     </article>
                   );
                 })}
@@ -302,6 +362,24 @@ export default function App() {
       )}
 
       {cheerOpen && <CheerSheet onClose={() => setCheerOpen(false)} onToast={setToast} />}
+
+      {instaModalItem && (
+        <InstagramCardModal
+          item={instaModalItem.item}
+          photo={instaModalItem.photo}
+          onClose={() => setInstaModalItem(null)}
+          onToast={setToast}
+        />
+      )}
+
+      {writePostOpen && (
+        <WritePostModal
+          defaultYear={year || 1997}
+          onClose={() => setWritePostOpen(false)}
+          onToast={setToast}
+          onPostCreated={(newPost) => setCustomPosts((prev) => [newPost, ...prev])}
+        />
+      )}
 
       {toast && <div className="toast" role="status">{toast}</div>}
 

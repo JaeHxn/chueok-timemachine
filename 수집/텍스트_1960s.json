@@ -5086,6 +5086,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1962,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "코리아나",
+    "summary": "코리아나(Koreana)는 1962년 결성된 대한민국의 음악 그룹이다. 1977년에서부터 1980년까지는 '아리랑 싱어즈'라는 이름을 사용하였다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%BD%94%EB%A6%AC%EC%95%84%EB%82%98",
+        "name": "위키백과: 코리아나",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1963,
     "month": 1,
     "date_precision": "month",
@@ -5236,6 +5254,24 @@
     ],
     "confidence": "high",
     "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1963,
+    "month": 9,
+    "date_precision": "month",
+    "category": "먹거리",
+    "title": "삼양라면",
+    "summary": "삼양라면(三養라면)은 대한민국의 식료품 회사인 삼양식품에서 제조 중인 라면이다. 1963년 9월부터 생산·판매 중이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%82%BC%EC%96%91%EB%9D%BC%EB%A9%B4",
+        "name": "위키백과: 삼양라면",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "curated-culture",
     "wiki_checked": true
   },
   {
@@ -7364,6 +7400,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EC%B5%9C%EB%A7%90%EC%9E%90_%EC%82%AC%EA%B1%B4",
         "name": "위키백과: 최말자 사건",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1964,
+    "month": 5,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1964년 미스코리아",
+    "summary": "1964년 미스코리아는 1964년 5월 28일에 서울특별시 종로구의 경복궁에서 열린 여덞번째 미스코리아 선발대회이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1964%EB%85%84_%EB%AF%B8%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84",
+        "name": "위키백과: 1964년 미스코리아",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -9565,6 +9619,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1964,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "1964년 대한민국",
+    "summary": "이 문서는 1964년 대한민국에서 일어난 사건을 다룬다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1964%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+        "name": "위키백과: 1964년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1965,
     "month": 1,
     "date_precision": "month",
@@ -9683,6 +9755,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%ED%95%9C%EC%9D%BC%ED%9A%8C%EB%8B%B4",
         "name": "위키백과: 한일회담",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1965,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1965년 미스코리아",
+    "summary": "1965년 미스코리아는 1965년 6월 18일에 서울특별시 종로구의 경복궁에서 열린 아홉번째 미스코리아 선발대회이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1965%EB%85%84_%EB%AF%B8%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84",
+        "name": "위키백과: 1965년 미스코리아",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -11745,6 +11835,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1965,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "1965년 대한민국",
+    "summary": "이 문서는 1965년 대한민국에서 일어난 사건을 다룬다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1965%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+        "name": "위키백과: 1965년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1966,
     "month": 3,
     "date_precision": "month",
@@ -11773,6 +11881,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/1966%EB%85%84_%EC%84%9C%EC%9A%B8%EC%8B%9C%EB%82%B4%EB%B2%84%EC%8A%A4_%EB%85%B8%EC%84%A0%EB%B2%88%ED%98%B8_%EA%B0%9C%ED%8E%B8",
         "name": "위키백과: 1966년 서울시내버스 노선번호 개편",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1966,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1966년 미스코리아",
+    "summary": "1966년 미스코리아는 1966년 6월 15일에 서울특별시 종로구의 경복궁에서 열린 열번째 미스코리아 선발대회이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1966%EB%85%84_%EB%AF%B8%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84",
+        "name": "위키백과: 1966년 미스코리아",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -13944,6 +14070,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1966,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "1966년 대한민국",
+    "summary": "이 문서는 1966년 대한민국에서 일어난 사건을 다룬다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1966%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+        "name": "위키백과: 1966년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1967,
     "month": 1,
     "date_precision": "month",
@@ -13990,6 +14134,42 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EC%A7%9C%EB%B9%88%EB%8F%99_%EC%A0%84%ED%88%AC",
         "name": "위키백과: 짜빈동 전투",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1967,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "대구 청구대 붕괴 사고",
+    "summary": "대구 청구대 붕괴 사고(大邱青丘大崩壞事故)는 1967년 6월 15일 신축 공사가 진행 중이던 청구대학 구내의 5층 건물 일부가 붕괴하면서 7명이 사망하고 20여 명이 중경상을 입은 사건이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EB%8C%80%EA%B5%AC_%EC%B2%AD%EA%B5%AC%EB%8C%80_%EB%B6%95%EA%B4%B4_%EC%82%AC%EA%B3%A0",
+        "name": "위키백과: 대구 청구대 붕괴 사고",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1967,
+    "month": 6,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1967년 미스코리아",
+    "summary": "1967년 미스코리아는 1967년 6월 13일에 서울특별시 종로구의 서울시민회관에서 열린 열한번째 미스코리아 선발대회이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1967%EB%85%84_%EB%AF%B8%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84",
+        "name": "위키백과: 1967년 미스코리아",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -16146,6 +16326,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1967,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "1967년 대한민국",
+    "summary": "이 문서는 1967년 대한민국에서 일어난 사건을 다룬다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1967%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+        "name": "위키백과: 1967년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1968,
     "month": 1,
     "date_precision": "month",
@@ -16197,6 +16395,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%A1%B0%ED%98%B8_%EC%B9%A8%EB%AA%B0_%EC%82%AC%EA%B3%A0",
         "name": "위키백과: 서조호 침몰 사고",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1968,
+    "month": 5,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1968년 미스코리아",
+    "summary": "1968년 미스코리아는 1968년 5월 29일에 서울특별시 중구의 장충체육관에서 열린 열두 번째 미스코리아 선발대회이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1968%EB%85%84_%EB%AF%B8%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84",
+        "name": "위키백과: 1968년 미스코리아",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -16315,6 +16531,24 @@
     ],
     "confidence": "high",
     "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1968,
+    "month": 12,
+    "date_precision": "month",
+    "category": "가전·기술",
+    "title": "경부고속도로",
+    "summary": "경부고속도로(京釜高速道路, 고속국도 제1호선)는 부산과 서울을 연결하는 대한민국의 고속도로이다. 또한 대한민국 최장거리의 고속도로이기도 하며 거의 모든 구간이 아시안 하이웨이 1호선의 일부를 이루고 있다. 흔히 경부고속국도라고 부르는 경우도 있다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EA%B2%BD%EB%B6%80%EA%B3%A0%EC%86%8D%EB%8F%84%EB%A1%9C",
+        "name": "위키백과: 경부고속도로",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "curated-culture",
     "wiki_checked": true
   },
   {
@@ -18366,6 +18600,24 @@
     "wiki_checked": true
   },
   {
+    "year": 1968,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "1968년 대한민국",
+    "summary": "이 문서는 1968년 대한민국에서 일어난 사건을 다룬다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1968%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+        "name": "위키백과: 1968년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
     "year": 1969,
     "month": 1,
     "date_precision": "month",
@@ -18394,6 +18646,24 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EC%B6%98%EC%9B%90_%EC%9D%B4%EA%B4%91%EC%88%98_(1969%EB%85%84_%EC%98%81%ED%99%94)",
         "name": "위키백과: 춘원 이광수 (1969년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1969,
+    "month": 5,
+    "date_precision": "month",
+    "category": "사건·생활상",
+    "title": "1969년 미스코리아",
+    "summary": "1969년 미스코리아는 1969년 5월 1일에 서울특별시 중구의 장충체육관에서 열린 열세 번째 미스코리아 선발대회이다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1969%EB%85%84_%EB%AF%B8%EC%8A%A4%EC%BD%94%EB%A6%AC%EC%95%84",
+        "name": "위키백과: 1969년 미스코리아",
         "license": "CC BY-SA 4.0"
       }
     ],
@@ -20602,6 +20872,42 @@
       {
         "url": "https://ko.wikipedia.org/wiki/%EC%95%94%EC%82%B4%EC%9E%90_(1969%EB%85%84_%EC%98%81%ED%99%94)",
         "name": "위키백과: 암살자 (1969년 영화)",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "date_precision": "year",
+    "category": "사건·생활상",
+    "title": "1969년 대한민국",
+    "summary": "이 문서는 1969년 대한민국에서 일어난 사건을 다룬다.",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/1969%EB%85%84_%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD",
+        "name": "위키백과: 1969년 대한민국",
+        "license": "CC BY-SA 4.0"
+      }
+    ],
+    "confidence": "high",
+    "collected_by": "wiki-category",
+    "wiki_checked": true
+  },
+  {
+    "year": 1969,
+    "month": null,
+    "date_precision": "year",
+    "category": "음악",
+    "title": "서울의 찬가",
+    "summary": "서울의 찬가(서울의 讚歌)는 서울특별시를 상징하는 노래이다. 1969년 패티 김이 발표한 앨범 \"하얀집\" 6번 트랙으로 수록되었다.!",
+    "sources": [
+      {
+        "url": "https://ko.wikipedia.org/wiki/%EC%84%9C%EC%9A%B8%EC%9D%98_%EC%B0%AC%EA%B0%80",
+        "name": "위키백과: 서울의 찬가",
         "license": "CC BY-SA 4.0"
       }
     ],
