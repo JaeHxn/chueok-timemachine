@@ -34,6 +34,14 @@ CREATE TABLE IF NOT EXISTS cheers (
   created_at TEXT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS cheer_limits (
+  key TEXT PRIMARY KEY,
+  window_start INTEGER NOT NULL,
+  count INTEGER NOT NULL
+);
+
 CREATE INDEX IF NOT EXISTS idx_posts_year ON posts(year);
 CREATE INDEX IF NOT EXISTS idx_comments_year ON comments(year);
 CREATE INDEX IF NOT EXISTS idx_reactions_year ON reactions(year);
+CREATE INDEX IF NOT EXISTS idx_cheers_created_at ON cheers(created_at DESC);
+CREATE INDEX IF NOT EXISTS idx_cheer_limits_window_start ON cheer_limits(window_start);
