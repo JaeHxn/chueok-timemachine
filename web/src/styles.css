@@ -170,7 +170,260 @@ a:hover{text-decoration:underline}
   transition:transform 100ms ease-out,background 150ms}
 .share-btn:hover{background:var(--share-hover)}
 
-/* ── 시안 A: 인스타/핀터레스트형 폴라로이드 포토 카드 ── */
+/* ── 시안 A: 인스타/핀터레스트형 폴라로이드 포토 카드 & 3대 구역 레이아웃 ── */
+.section-head-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 14px 0 16px;
+}
+.photo-filter-count {
+  display: inline-block;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.12);
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-left: 4px;
+}
+.gallery-section, .stories-section, .archive-section {
+  margin-top: 36px;
+}
+.gallery-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--hair);
+}
+.gallery-badge-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-badge {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: #7c4a27;
+  color: #fff;
+  text-transform: uppercase;
+}
+.section-badge.photo-badge { background: #b45309; }
+.section-badge.blue { background: #2563eb; }
+.section-badge.yellow { background: #d97706; }
+.section-title {
+  font-size: clamp(1.25rem, 3.5vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0;
+  color: var(--ink);
+}
+.section-title small {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-3);
+  margin-left: 4px;
+}
+.gallery-sub {
+  font-size: 0.8125rem;
+  color: var(--ink-3);
+}
+
+/* ── 📸 1. 폴라로이드 갤러리 그리드 & 카드 ── */
+.polaroid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 26px 22px;
+}
+.card.has-photo.polaroid-card {
+  position: relative;
+  background: #fffdf9;
+  border: 1px solid rgba(210, 195, 175, 0.55);
+  border-radius: 12px;
+  padding: 20px 18px 24px;
+  box-shadow: 0 14px 34px rgba(45, 35, 25, 0.08), 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: transform 280ms var(--ease), box-shadow 280ms var(--ease);
+}
+.card.has-photo.polaroid-card:hover {
+  transform: translateY(-8px) rotate(-0.5deg) scale(1.015);
+  box-shadow: 0 22px 46px rgba(45, 35, 25, 0.14), 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+@media (prefers-color-scheme: dark) {
+  .card.has-photo.polaroid-card {
+    background: #151a28;
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4);
+  }
+}
+/* 마스킹 테이프 장식 */
+.polaroid-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 90px;
+  height: 22px;
+  background: rgba(245, 222, 179, 0.75);
+  border-left: 2px dashed rgba(210, 180, 140, 0.5);
+  border-right: 2px dashed rgba(210, 180, 140, 0.5);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  pointer-events: none;
+}
+.card.has-photo .item-photo.polaroid-frame {
+  margin: 0 0 14px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--photo-bg);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.card.has-photo .item-photo.polaroid-frame img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: transform 350ms var(--ease);
+}
+.card.has-photo:hover .item-photo.polaroid-frame img {
+  transform: scale(1.03);
+}
+.photo-tag {
+  background: rgba(245, 158, 11, 0.15) !important;
+  color: #b45309 !important;
+  font-weight: 700 !important;
+}
+
+/* ── ✍️ 2. 싸이월드 다이어리 / 포스트잇 사연 카드 ── */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 20px;
+}
+.card.user-post-card.diary-card {
+  position: relative;
+  background: #fefce8;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 24px rgba(217, 119, 6, 0.07);
+}
+@media (prefers-color-scheme: dark) {
+  .card.user-post-card.diary-card {
+    background: #231e13;
+    border-color: rgba(245, 158, 11, 0.25);
+  }
+}
+.diary-pin {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 1.25rem;
+}
+.write-post-inline-btn {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #b45309;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 6px 14px;
+  border-radius: 999px;
+  min-height: 38px;
+}
+
+/* ── 📻 3. 사진 없는 텍스트 아카이브 티켓 카드 ── */
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 16px;
+}
+.card.no-photo.archive-ticket-card {
+  position: relative;
+  background: var(--space-2);
+  border: 1px solid var(--hair);
+  border-left: 5px solid #2563eb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 200ms var(--ease), box-shadow 200ms var(--ease);
+}
+.card.no-photo.archive-ticket-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-left-color: #f59e0b;
+}
+.card.no-photo.archive-ticket-card h3 {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin: 2px 0 0;
+}
+.card.no-photo.archive-ticket-card .card-excerpt {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+
+/* ── 월 선택 시 사진 추천 카드 ── */
+.month-photo-fallback {
+  margin: 24px 0 32px;
+  padding: 20px 22px;
+  background: var(--space-2);
+  border: 1px dashed rgba(180, 150, 120, 0.4);
+  border-radius: 18px;
+}
+.fallback-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.fallback-icon { font-size: 1.8rem; }
+.fallback-banner strong { font-size: 0.95rem; color: var(--ink); }
+.fallback-banner p { margin: 2px 0 0; font-size: 0.8125rem; color: var(--ink-3); }
+.recommend-cards-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+.recommend-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: var(--control);
+  cursor: pointer;
+  transition: background 150ms ease, transform 150ms ease;
+}
+.recommend-card:hover {
+  background: var(--control-hover);
+  transform: translateY(-2px);
+}
+.recommend-card img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex: none;
+}
+.recommend-card-info h4 {
+  margin: 4px 0 0;
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+
+/* ── 기본 카드 스타일 및 공통 ── */
 .card.has-photo {
   background: var(--space-2);
   border: 1px solid rgba(220, 205, 185, 0.45);

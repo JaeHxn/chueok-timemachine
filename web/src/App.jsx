@@ -169,6 +169,9 @@ export default function App() {
   }, [year, month, cat]);
   const shownPosts = customPosts.filter((p) => (!month || (month === "unknown" ? !p.month : p.month === month)) && (cat === "전체" || p.category === cat));
 
+  const photoItems = useMemo(() => shown.filter((it) => photoOf(it)), [shown]);
+  const textItems = useMemo(() => shown.filter((it) => !photoOf(it)), [shown]);
+
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (q.length < 1) return [];
@@ -333,88 +336,198 @@ export default function App() {
                 })}
               </div>
 
-              <button type="button" className="photo-filter" aria-pressed={photoOnly} onClick={() => setPhotoOnly((value) => !value)}>
-                사진 있는 추억만 보기
-              </button>
-              <div className="grid" key={`${year}-${month}-${cat}-${photoOnly}`}>
-                {/* 이용자가 직접 남긴 추억 사연 카드 */}
-                {!photoOnly && shownPosts.map((p) => (
-                    <article className="card user-post-card" key={p.id} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null}); }}>
-                      <div className="meta">
-                        <span className="tag" style={{ background: "rgba(255, 215, 0, 0.2)", color: "#ffd700", fontWeight: 700 }}>
-                          ✍️ 이용자 추억 사연
-                        </span>
-                        <span className="tag">{p.month ? `${p.year}년 ${p.month}월` : `${p.year}년`}</span>
-                        <span className="tag">{p.category}</span>
-                      </div>
-                      <h3>{p.title}</h3>
-                      <p className="card-excerpt" style={{ whiteSpace: "pre-wrap" }}>{p.content}</p>
-                      <div className="src" style={{ marginTop: "6px" }}>
-                        글쓴이: <b>{p.author || "익명의 시간여행자"}</b> · {new Date(p.at).toLocaleDateString("ko-KR")}
-                      </div>
-                      <div className="card-actions">
-                        <button className="detail-open" onClick={() => setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null})}>자세히 보기</button>
-                        <button
-                          className="share-btn share-icon" aria-label="공유하기" title="공유하기"
-                          onClick={() => setShare({ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) })}
-                        >
-                          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
-                        </button>
-                        <ShareButtons share={{ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) }} onInstagram={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })} onToast={setToast} />
-                      </div>
-                      <CardCommunity
-                        item={{ year: p.year, title: p.title }}
-                        initialReactions={yearDataCache[p.year]?.reactions?.[`${p.year}_${p.title}`]}
-                        initialComments={yearDataCache[p.year]?.comments?.[`${p.year}_${p.title}`]}
-                        onCommunityUpdate={(update) => updateCommunity(p, update)}
-                        onToast={setToast}
-                      />
-                    </article>
-                  ))}
-
-                {(photoOnly ? !shown.some((it) => photoOf(it)) : shown.length === 0 && shownPosts.length === 0) && <div className="empty">{photoOnly ? "이 조건에 맞는 사진이 아직 없어요." : "이 분류에는 자료가 없습니다."}</div>}
-                {shown.filter((it) => !photoOnly || photoOf(it)).map((it) => {
-                  const ok = it.sources.length > 0 && it.confidence !== "low";
-                  const ph = photoOf(it);
-                  return (
-                    <article className={`card ${ph ? "has-photo" : "no-photo"}`} key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: ph}); }}>
-                      {ph && (
-                        <figure className="item-photo">
-                          <img src={ph.thumb} alt={ph.title} loading="lazy" />
-                          <figcaption>사진: {ph.artist} · {ph.license} · <a href={ph.page} target="_blank" rel="noopener">원본</a></figcaption>
-                        </figure>
-                      )}
-                      {!ph && <div className="memory-placeholder" aria-label="사진 자료 없음"><span className="memory-placeholder-year">{it.year}</span><span className="memory-placeholder-label">사진 자료 없음 · {it.cat}</span></div>}
-                      <div className="meta">
-                        <span className="tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
-                        <span className="tag">{it.cat}</span>
-                        {!ok && <span className="tag warn">출처 확인 중</span>}
-                      </div>
-                      <h3>{it.title}</h3>
-                      <p className="card-excerpt">{it.summary}</p>
-                      {it.sources.length > 0 && (
-                        <div className="src">
-                          출처 {it.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}
-                        </div>
-                      )}
-                      <div className="card-actions">
-                        <button className="detail-open" onClick={() => setDetail({item: it, photo: ph})}>자세히 보기</button>
-                        <button className="share-btn share-icon" aria-label="공유하기" title="공유하기" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
-                          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
-                        </button>
-                        <ShareButtons share={{ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) }} onInstagram={() => setInstaModalItem({ item: it, photo: ph })} onToast={setToast} />
-                      </div>
-                      <CardCommunity
-                        item={it}
-                        initialReactions={yearDataCache[it.year]?.reactions?.[`${it.year}_${it.title}`]}
-                        initialComments={yearDataCache[it.year]?.comments?.[`${it.year}_${it.title}`]}
-                        onCommunityUpdate={(update) => updateCommunity(it, update)}
-                        onToast={setToast}
-                      />
-                    </article>
-                  );
-                })}
+              <div className="section-head-bar">
+                <button type="button" className="photo-filter" aria-pressed={photoOnly} onClick={() => setPhotoOnly((value) => !value)}>
+                  <span>📷 사진 있는 추억만 보기</span>
+                  <span className="photo-filter-count">{yearItems.filter((it) => photoOf(it)).length}</span>
+                </button>
               </div>
+
+              {/* 📸 [구역 1] 그 시절 대표 사진 갤러리 피드 (Polaroid Photo Gallery) */}
+              {photoItems.length > 0 && (
+                <section className="gallery-section" aria-label={`${year}년 사진 갤러리`}>
+                  <div className="gallery-section-header">
+                    <div className="gallery-badge-title">
+                      <span className="section-badge photo-badge">📸 PHOTO GALLERY</span>
+                      <h3 className="section-title">그 시절 대표 사진 추억 <small>({photoItems.length}장)</small></h3>
+                    </div>
+                    <span className="gallery-sub">인화지 질감의 레트로 폴라로이드 갤러리입니다.</span>
+                  </div>
+                  <div className="grid polaroid-grid" key={`photo-${year}-${month}-${cat}`}>
+                    {photoItems.map((it) => {
+                      const ok = it.sources.length > 0 && it.confidence !== "low";
+                      const ph = photoOf(it);
+                      return (
+                        <article className="card has-photo polaroid-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: ph}); }}>
+                          <div className="polaroid-tape" aria-hidden="true" />
+                          <figure className="item-photo polaroid-frame">
+                            <img src={ph.thumb} alt={ph.title} loading="lazy" />
+                            <figcaption>사진: {ph.artist} · {ph.license} · <a href={ph.page} target="_blank" rel="noopener">원본</a></figcaption>
+                          </figure>
+                          <div className="meta">
+                            <span className="tag date-tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
+                            <span className="tag cat-tag">{it.cat}</span>
+                            <span className="tag photo-tag">📸 대표 사진</span>
+                            {!ok && <span className="tag warn">출처 확인 중</span>}
+                          </div>
+                          <h3 className="polaroid-title">{it.title}</h3>
+                          <p className="card-excerpt polaroid-caption">{it.summary}</p>
+                          {it.sources.length > 0 && (
+                            <div className="src">
+                              출처 {it.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}
+                            </div>
+                          )}
+                          <div className="card-actions">
+                            <button className="detail-open" onClick={() => setDetail({item: it, photo: ph})}>자세히 보기</button>
+                            <button className="share-btn share-icon" aria-label="공유하기" title="공유하기" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
+                              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                            </button>
+                            <ShareButtons share={{ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) }} onInstagram={() => setInstaModalItem({ item: it, photo: ph })} onToast={setToast} />
+                          </div>
+                          <CardCommunity
+                            item={it}
+                            initialReactions={yearDataCache[it.year]?.reactions?.[`${it.year}_${it.title}`]}
+                            initialComments={yearDataCache[it.year]?.comments?.[`${it.year}_${it.title}`]}
+                            onCommunityUpdate={(update) => updateCommunity(it, update)}
+                            onToast={setToast}
+                          />
+                        </article>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
+
+              {/* 월 선택 시 사진이 없는 경우: 해당 연도 다른 달의 사진을 추천 안내 */}
+              {month && photoItems.length === 0 && (
+                <div className="month-photo-fallback">
+                  <div className="fallback-banner">
+                    <span className="fallback-icon">📷</span>
+                    <div>
+                      <strong>{month === "unknown" ? "월 미확인" : `${month}월`}에는 등록된 사진이 아직 없지만,</strong>
+                      <p>{year}년의 다른 달에 멋진 사진 추억들이 기다리고 있어요!</p>
+                    </div>
+                  </div>
+                  <div className="recommend-cards-row">
+                    {yearItems.filter((it) => photoOf(it)).slice(0, 3).map((it) => {
+                      const ph = photoOf(it);
+                      return (
+                        <div key={`rec-${it.title}`} className="recommend-card" onClick={() => setDetail({ item: it, photo: ph })}>
+                          <img src={ph.thumb} alt={ph.title} loading="lazy" />
+                          <div className="recommend-card-info">
+                            <span className="tag">{it.month ? `${it.month}월` : `${it.year}년`}</span>
+                            <h4>{it.title}</h4>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+
+              {/* ✍️ [구역 2] 이용자가 직접 남긴 추억 사연 (싸이월드 다이어리 감성) */}
+              {!photoOnly && shownPosts.length > 0 && (
+                <section className="stories-section" aria-label="이용자 추억 사연">
+                  <div className="gallery-section-header">
+                    <div className="gallery-badge-title">
+                      <span className="section-badge yellow">✍️ DIARY & STORIES</span>
+                      <h3 className="section-title">그 시절 우리들의 사연 <small>({shownPosts.length}편)</small></h3>
+                    </div>
+                    <button className="ghost write-post-inline-btn" onClick={() => setWritePostOpen(true)}>
+                      ✏️ 나도 사연 남기기
+                    </button>
+                  </div>
+                  <div className="grid stories-grid" key={`stories-${year}-${month}-${cat}`}>
+                    {shownPosts.map((p) => (
+                      <article className="card user-post-card diary-card" key={p.id} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null}); }}>
+                        <div className="diary-pin" aria-hidden="true">📌</div>
+                        <div className="meta">
+                          <span className="tag date-tag">{p.month ? `${p.year}년 ${p.month}월` : `${p.year}년`}</span>
+                          <span className="tag cat-tag">{p.category}</span>
+                          <span className="tag" style={{ background: "rgba(255, 215, 0, 0.2)", color: "#b45309", fontWeight: 700 }}>✍️ 시민 사연</span>
+                        </div>
+                        <h3>{p.title}</h3>
+                        <p className="card-excerpt diary-excerpt" style={{ whiteSpace: "pre-wrap" }}>{p.content}</p>
+                        <div className="src" style={{ marginTop: "6px" }}>
+                          글쓴이: <b>{p.author || "익명의 시간여행자"}</b> · {new Date(p.at).toLocaleDateString("ko-KR")}
+                        </div>
+                        <div className="card-actions">
+                          <button className="detail-open" onClick={() => setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null})}>자세히 보기</button>
+                          <button
+                            className="share-btn share-icon" aria-label="공유하기" title="공유하기"
+                            onClick={() => setShare({ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) })}
+                          >
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                          </button>
+                          <ShareButtons share={{ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) }} onInstagram={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })} onToast={setToast} />
+                        </div>
+                        <CardCommunity
+                          item={{ year: p.year, title: p.title }}
+                          initialReactions={yearDataCache[p.year]?.reactions?.[`${p.year}_${p.title}`]}
+                          initialComments={yearDataCache[p.year]?.comments?.[`${p.year}_${p.title}`]}
+                          onCommunityUpdate={(update) => updateCommunity(p, update)}
+                          onToast={setToast}
+                        />
+                      </article>
+                    ))}
+                  </div>
+                </section>
+              )}
+
+              {/* 📻 [구역 3] 그 시절 한 줄 뉴스 & 타임라인 아카이브 (Compact Archive) */}
+              {!photoOnly && textItems.length > 0 && (
+                <section className="archive-section" aria-label="그 시절 한 줄 아카이브">
+                  <div className="gallery-section-header">
+                    <div className="gallery-badge-title">
+                      <span className="section-badge blue">📻 RETRO ARCHIVE</span>
+                      <h3 className="section-title">그 시절 한 줄 뉴스 & 타임라인 <small>({textItems.length}건)</small></h3>
+                    </div>
+                    <span className="gallery-sub">사진은 없지만 생생히 기록된 그 시절의 사건·노래·문화 이야기입니다.</span>
+                  </div>
+                  <div className="grid archive-grid" key={`archive-${year}-${month}-${cat}`}>
+                    {textItems.map((it) => {
+                      const ok = it.sources.length > 0 && it.confidence !== "low";
+                      return (
+                        <article className="card no-photo archive-ticket-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: null}); }}>
+                          <div className="meta">
+                            <span className="tag date-tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
+                            <span className="tag cat-tag">{it.cat}</span>
+                            {!ok && <span className="tag warn">출처 확인 중</span>}
+                          </div>
+                          <h3>{it.title}</h3>
+                          <p className="card-excerpt">{it.summary}</p>
+                          {it.sources.length > 0 && (
+                            <div className="src">
+                              출처 {it.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}
+                            </div>
+                          )}
+                          <div className="card-actions">
+                            <button className="detail-open" onClick={() => setDetail({item: it, photo: null})}>자세히 보기</button>
+                            <button className="share-btn share-icon" aria-label="공유하기" title="공유하기" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
+                              <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
+                            </button>
+                            <ShareButtons share={{ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) }} onInstagram={() => setInstaModalItem({ item: it, photo: null })} onToast={setToast} />
+                          </div>
+                          <CardCommunity
+                            item={it}
+                            initialReactions={yearDataCache[it.year]?.reactions?.[`${it.year}_${it.title}`]}
+                            initialComments={yearDataCache[it.year]?.comments?.[`${it.year}_${it.title}`]}
+                            onCommunityUpdate={(update) => updateCommunity(it, update)}
+                            onToast={setToast}
+                          />
+                        </article>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
+
+              {/* 빈 상태 메시지 */}
+              {(photoOnly ? photoItems.length === 0 : shown.length === 0 && shownPosts.length === 0) && (
+                <div className="empty">
+                  {photoOnly ? "이 조건에 맞는 사진이 아직 없어요." : "이 분류에는 자료가 없습니다."}
+                </div>
+              )}
 
               {/* 하단 📻 그 시절 한 줄 헤드라인 & 유행어 전광판 티커 바 */}
               {yearItems.length > 0 && (
