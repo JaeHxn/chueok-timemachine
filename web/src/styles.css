@@ -98,9 +98,11 @@ a:hover{text-decoration:underline}
   box-shadow:0 0 80px -10px var(--c),inset -18px -22px 40px rgba(0,0,0,.55);display:grid;place-items:center;
   animation:arrive 600ms var(--ease) both}
 .core span{font-size:1.5rem;font-weight:700;letter-spacing:-.02em;text-shadow:0 1px 8px rgba(0,0,0,.5)}
-.ring{position:absolute;inset:0}
+.ring{position:absolute;inset:0;animation:spin 90s linear infinite}
 .orbit.still .ring,.rm .ring{animation:none}
 @keyframes spin{to{transform:rotate(360deg)}}
+@keyframes counter-spin{to{transform:rotate(-360deg)}}
+.ring:hover,.ring:focus-within,.ring:hover .moon-label,.ring:hover .moon-n,.ring:focus-within .moon-label,.ring:focus-within .moon-n{animation-play-state:paused}
 .sat{position:absolute;left:50%;top:50%;width:0;height:0;transform:rotate(var(--a))}
 .moon{position:absolute;left:0;top:0;width:56px;height:56px;margin:0;border-radius:50%;border:0;
   transform:translate(-50%,-50%) translateY(calc(-1 * (min(86vw,400px) / 2 - 34px))) rotate(calc(-1 * var(--a)));
@@ -111,7 +113,8 @@ a:hover{text-decoration:underline}
 .moon:hover{background:var(--control-hover);color:var(--ink)}
 .moon:active{transform:translate(-50%,-50%) translateY(calc(-1 * (min(86vw,400px) / 2 - 34px))) rotate(calc(-1 * var(--a))) scale(.97)}
 .moon-label{font-weight:600}
-.orbit.still .moon-label,.rm .moon-label{animation:none}
+.moon-label,.moon-n{animation:counter-spin 90s linear infinite}
+.orbit.still .moon-label,.rm .moon-label,.orbit.still .moon-n,.rm .moon-n{animation:none}
 .moon-n{font-size:.625rem;color:var(--accent-text);font-weight:600}
 .primary{margin-top:12px;background:var(--accent);border:0;color:var(--on-accent);padding:12px 22px;border-radius:999px;font-size:.9375rem;font-weight:600;
   transition:transform 100ms ease-out,filter 150ms}
@@ -169,10 +172,8 @@ a:hover{text-decoration:underline}
 @keyframes sheet-up{from{transform:translateY(105%)}}
 @keyframes fade{from{opacity:0}}
 
-/* OS 모션 감소 설정은 애니메이션을 끄고, 수동 설정은 짧게 페이드한다. */
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-}
+/* 초기 설정은 OS를 따르고, 이후에는 사용자가 선택한 설정을 따른다. */
+.rm *,.rm *::before,.rm *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 .rm .orbit-view,.rm .ground,.rm .core,.rm .moon,.rm .sheet .box{animation:fade 150ms ease-out both}
 @media (prefers-reduced-transparency:reduce){
   .top,.dial,.sheet .box,.moon,.moon.has,.toast{background:var(--solid-glass);backdrop-filter:none;-webkit-backdrop-filter:none}

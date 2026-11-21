@@ -38,7 +38,7 @@ const nearestWithData = (y) =>
   YEARS_WITH_DATA.reduce((best, d) => (Math.abs(d - y) < Math.abs(best - y) ? d : best), YEARS_WITH_DATA[0]);
 
 const readReduce = () => {
-  try { return localStorage.getItem("reduceMotion") === "1" || matchMedia("(prefers-reduced-motion: reduce)").matches; }
+  try { const saved = localStorage.getItem("reduceMotion"); return saved === null ? matchMedia("(prefers-reduced-motion: reduce)").matches : saved === "1"; }
   catch { return false; }
 };
 
