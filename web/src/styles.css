@@ -143,12 +143,13 @@ a:hover{text-decoration:underline}
 /* ── 월 화면 ── */
 .ground{animation:rise 400ms var(--ease) both}
 .ground h2{font-size:clamp(2rem,6vw,3.5rem);line-height:1.05;letter-spacing:-.03em;font-weight:700;margin:4px 0 20px}
-.cats{position:sticky;top:132px;z-index:10;display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin;scrollbar-color:var(--ink-3) transparent;padding:8px 0 14px;margin-bottom:6px}
-.cats::-webkit-scrollbar{height:4px}
-.cats::-webkit-scrollbar-thumb{background:var(--ink-3);border-radius:999px}
-.cats button{flex:none;border:0;background:var(--control);color:var(--ink-2);padding:8px 14px;border-radius:999px;font-size:.8125rem;
+.cats{position:sticky;top:130px;z-index:18;display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;
+  margin:0 calc(-1 * clamp(16px,4vw,40px)) 14px;padding:10px clamp(16px,4vw,40px);
+  background:var(--space);border-bottom:1px solid var(--hair);box-shadow:0 4px 16px rgba(0,0,0,.04)}
+.cats::-webkit-scrollbar{display:none}
+.cats button{flex:none;border:0;background:var(--control);color:var(--ink-2);padding:8px 16px;border-radius:999px;font-size:.8125rem;
   transition:transform 100ms ease-out,background 150ms,color 150ms}
-.cats button:hover{background:var(--control-hover)}
+.cats button:hover{background:var(--control-hover);color:var(--ink)}
 .cats button.on{background:var(--accent);color:var(--on-accent);font-weight:600}
 .photo-filter{min-height:44px;border:0;border-radius:999px;padding:8px 16px;background:#ead8bf;color:#55402d;font-size:.8125rem;font-weight:600}
 .photo-filter[aria-pressed="true"]{background:#76533a;color:#fff}
@@ -342,7 +343,7 @@ a:hover{text-decoration:underline}
 .rm *,.rm *::before,.rm *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 .rm .orbit-view,.rm .ground,.rm .core,.rm .moon,.rm .sheet .box{animation:fade 150ms ease-out both}
 @media (prefers-reduced-transparency:reduce){
-  .top,.dial,.sheet .box,.moon,.moon.has,.toast{background:var(--solid-glass);backdrop-filter:none;-webkit-backdrop-filter:none}
+  .top,.dial,.cats,.sheet .box,.moon,.moon.has,.toast{background:var(--solid-glass);backdrop-filter:none;-webkit-backdrop-filter:none}
   .moon.has{background:var(--accent-solid)}
   .moon.on{background:var(--accent)}
 }
