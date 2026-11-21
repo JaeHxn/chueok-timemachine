@@ -8,7 +8,7 @@ const REACTION_CONFIG = [
   { key: "b8282", label: "8282", emoji: "🚀" },
 ];
 
-export default function CardCommunity({ item, onToast, initialReactions, initialComments }) {
+export default function CardCommunity({ item, onToast, initialReactions, initialComments, onCommunityUpdate }) {
   const targetId = `${item.year}_${item.title}`;
   const [openComments, setOpenComments] = useState(false);
   const [openReactions, setOpenReactions] = useState(false);
@@ -24,6 +24,7 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
     }
   });
   const [submitting, setSubmitting] = useState(false);
+  const [reacting, setReacting] = useState(false);
 
   // 로컬 스토리지 키
   const reactLocalKey = `react_user_${targetId}`;
@@ -54,7 +55,8 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
   }, [targetId, initialReactions, initialComments]);
 
   // 공감 반응 토글 (로컬 즉시 반영 + D1 비동기 동기화)
-  const toggleReaction = (type) => {
+  const toggleReaction = async (type) => {
+    if (reacting) return;
     const isCurrentlyActive = userActiveReactions.has(type);
     const newActive = new Set(userActiveReactions);
     const delta = isCurrentlyActive ? -1 : 1;
@@ -68,24 +70,35 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
       ...reactions,
       [type]: Math.max(0, (reactions[type] || 0) + delta),
     };
+    let previous;
     try {
+      previous = localStorage.getItem(reactStateKey);
       localStorage.setItem(reactStateKey, JSON.stringify({ active: Array.from(newActive), counts: nextCounts }));
-      setUserActiveReactions(newActive);
-      setReactions(nextCounts);
     } catch {
       onToast("반응을 저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.");
+      return;
     }
-
-    // D1 데이터베이스로 백그라운드 비동기 저장
-    fetch("/api/reactions", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ targetId, year: item.year, type, delta }),
-    }).catch(() => {});
+    setReacting(true);
+    try {
+      const response = await fetch("/api/reactions", {
+        method: "POST", headers: { "content-type": "application/json" },
+        body: JSON.stringify({ targetId, year: item.year, type, delta }),
+      });
+      const result = await response.json();
+      if (!response.ok || !result.ok) throw new Error();
+      const counts = { ...nextCounts, ...result.counts };
+      setUserActiveReactions(newActive);
+      setReactions(counts);
+      onCommunityUpdate?.({ reactions: counts });
+      try { localStorage.setItem(reactStateKey, JSON.stringify({ active: Array.from(newActive), counts })); } catch {}
+    } catch {
+      try { if (previous === null) localStorage.removeItem(reactStateKey); else localStorage.setItem(reactStateKey, previous); } catch {}
+      onToast("반응을 저장하지 못했어요. 다시 시도해 주세요.");
+    } finally { setReacting(false); }
   };
 
   // 댓글 등록 (로컬 즉시 반영 + D1 비동기 저장)
-  const submitComment = (e) => {
+  const submitComment = async (e) => {
     e.preventDefault();
     const content = newComment.trim();
     if (!content) return;
@@ -96,42 +109,20 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
       localStorage.setItem("chueok_nickname", finalAuthor);
     } catch {}
 
-    const newObj = {
-      id: `cmt_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
-      targetId,
-      year: item.year,
-      author: finalAuthor,
-      content,
-      at: new Date().toISOString(),
-    };
-
-    let nextCmts;
     try {
-      const savedComments = JSON.parse(localStorage.getItem(cmtLocalKey) || "[]");
-      nextCmts = [newObj, ...(Array.isArray(savedComments) ? savedComments : [])];
-      localStorage.setItem(cmtLocalKey, JSON.stringify(nextCmts));
+      const response = await fetch("/api/comments", {
+        method: "POST", headers: { "content-type": "application/json" },
+        body: JSON.stringify({ targetId, year: item.year, content, author: finalAuthor }),
+      });
+      const result = await response.json();
+      if (!response.ok || !result.ok || !result.comment?.id) throw new Error();
+      setComments((prev) => [result.comment, ...prev.filter((c) => c.id !== result.comment.id)]);
+      onCommunityUpdate?.({ comment: result.comment });
+      setNewComment("");
+      onToast("추억 이야기를 남겼어요!");
     } catch {
-      nextCmts = [newObj, ...comments];
-    }
-    setComments(nextCmts);
-    setNewComment("");
-
-    // D1 데이터베이스로 비동기 저장
-    fetch("/api/comments", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ targetId, year: item.year, content, author: finalAuthor }),
-    })
-      .then((r) => r.json())
-      .then((d) => {
-        if (d?.ok && d?.comment) {
-          setComments((prev) => prev.map((c) => (c.id === newObj.id ? d.comment : c)));
-        }
-      })
-      .catch(() => {});
-
-    onToast("추억 이야기를 남겼어요!");
-    setSubmitting(false);
+      onToast("이야기를 저장하지 못했어요. 다시 시도해 주세요.");
+    } finally { setSubmitting(false); }
   };
 
   return (

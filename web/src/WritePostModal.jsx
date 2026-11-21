@@ -35,36 +35,30 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
     } catch {}
 
     const payload = {
-      id: `post_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
       year: Number(year),
       month: month ? Number(month) : null,
       category,
       title: title.trim(),
       content: content.trim(),
       author: finalAuthor,
-      at: new Date().toISOString(),
     };
 
     try {
-      const saved = JSON.parse(localStorage.getItem("chueok_user_posts") || "[]");
-      localStorage.setItem("chueok_user_posts", JSON.stringify([payload, ...saved]));
+      const response = await fetch("/api/posts", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json();
+      if (!response.ok || !result.ok || !result.post?.id) throw new Error();
+      onPostCreated?.(result.post);
+      onToast("소중한 추억 사연을 남겨주셔서 고맙습니다!");
+      onClose();
     } catch {
-      onToast("사연을 저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.");
+      onToast("사연을 저장하지 못했어요. 잠시 후 다시 시도해 주세요.");
+    } finally {
       setSubmitting(false);
-      return;
     }
-
-    // D1 데이터베이스로 백그라운드 전송
-    fetch("/api/posts", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(payload),
-    }).catch(() => {});
-
-    onPostCreated?.(payload);
-    onToast("소중한 추억 사연을 남겨주셔서 고맙습니다!");
-    setSubmitting(false);
-    onClose();
   };
 
   return (

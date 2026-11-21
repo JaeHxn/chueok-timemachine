@@ -32,6 +32,14 @@ jobs:
       # 수집 JSON(../수집)을 읽어 items.json을 만든 뒤 빌드한다
       - run: npm run build
 
+      - name: Prepare D1 tables
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: d1 execute chueok-cheers --remote --file=schema.sql
+          workingDirectory: web
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:

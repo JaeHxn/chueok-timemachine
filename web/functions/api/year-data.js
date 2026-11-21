@@ -14,10 +14,10 @@ const json = (data, status = 200) =>
 export async function onRequestGet({ request, env }) {
   const url = new URL(request.url);
   const year = Number(url.searchParams.get("year"));
-  if (!year || isNaN(year)) return json({ ok: false, error: "year 파라미터가 필요합니다." }, 400);
+  if (!Number.isInteger(year) || year < 1950 || year > 2026) return json({ ok: false, error: "올바른 연도가 필요합니다." }, 400);
 
   if (!env?.DB) {
-    return json({ ok: true, posts: [], comments: {}, reactions: {} });
+    return json({ ok: false, error: "저장소를 사용할 수 없습니다." }, 503);
   }
 
   try {
@@ -28,7 +28,7 @@ export async function onRequestGet({ request, env }) {
       env.DB.prepare("SELECT target_id, type, count FROM reactions WHERE year = ?").bind(year),
     ]);
 
-    const posts = postsRes?.results || [];
+    const posts = (postsRes?.results || []).map(({ created_at, ...post }) => ({ ...post, at: created_at }));
     
     // 댓글을 target_id별로 그룹화
     const commentsMap = {};
@@ -60,6 +60,6 @@ export async function onRequestGet({ request, env }) {
       reactions: reactionsMap,
     });
   } catch (err) {
-    return json({ ok: false, error: err.message }, 500);
+    return json({ ok: false, error: "자료를 불러오지 못했습니다." }, 503);
   }
 }

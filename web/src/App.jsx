@@ -63,9 +63,22 @@ export default function App() {
 
   // 연도별 D1 데이터 (사연, 댓글, 반응) 온디맨드 1회 묶음 조회
   const [yearDataCache, setYearDataCache] = useState({});
+  const updateCommunity = (item, update) => {
+    const target = `${item.year}_${item.title}`;
+    setYearDataCache((prev) => {
+      const data = prev[item.year];
+      if (!data) return prev;
+      return { ...prev, [item.year]: {
+        ...data,
+        reactions: update.reactions ? { ...data.reactions, [target]: update.reactions } : data.reactions,
+        comments: update.comment ? { ...data.comments, [target]: [update.comment, ...(data.comments?.[target] || []).filter((c) => c.id !== update.comment.id)] } : data.comments,
+      } };
+    });
+  };
 
   useEffect(() => {
     if (!year) { setCustomPosts([]); return; }
+    let active = true;
 
     // 1. 로컬 저장소 사연 우선 로드
     let localPosts = [];
@@ -73,6 +86,7 @@ export default function App() {
       const saved = JSON.parse(localStorage.getItem("chueok_user_posts") || "[]");
       localPosts = saved.filter((p) => Number(p.year) === year);
     } catch {}
+    setCustomPosts(localPosts);
 
     // 2. 해당 연도 데이터 D1 서버에서 '딱 1번' 묶음 호출
     if (!yearDataCache[year]) {
@@ -80,22 +94,23 @@ export default function App() {
         .then((r) => r.json())
         .then((d) => {
           if (d?.ok) {
-            setYearDataCache((prev) => ({ ...prev, [year]: d }));
+            setYearDataCache((prev) => ({ ...prev, [year]: { ...d, posts: [...new Map([...(d.posts || []), ...(prev[year]?.posts || [])].map((p) => [p.id, p])).values()] } }));
             const serverPosts = d.posts || [];
             const map = new Map();
             [...localPosts, ...serverPosts].forEach((p) => map.set(p.id, p));
-            setCustomPosts(Array.from(map.values()));
+            if (active) setCustomPosts((current) => Array.from(new Map([...map.values(), ...current.filter((p) => Number(p.year) === year)].map((p) => [p.id, p])).values()));
           } else {
-            setCustomPosts(localPosts);
+            if (active) setCustomPosts(localPosts);
           }
         })
-        .catch(() => setCustomPosts(localPosts));
+        .catch(() => { if (active) setCustomPosts(localPosts); });
     } else {
       const serverPosts = yearDataCache[year]?.posts || [];
       const map = new Map();
       [...localPosts, ...serverPosts].forEach((p) => map.set(p.id, p));
       setCustomPosts(Array.from(map.values()));
     }
+    return () => { active = false; };
   }, [year]);
 
   // 주소가 바뀌면(뒤로가기 포함) 화면을 따라가게
@@ -351,6 +366,7 @@ export default function App() {
                         item={{ year: p.year, title: p.title }}
                         initialReactions={yearDataCache[p.year]?.reactions?.[`${p.year}_${p.title}`]}
                         initialComments={yearDataCache[p.year]?.comments?.[`${p.year}_${p.title}`]}
+                        onCommunityUpdate={(update) => updateCommunity(p, update)}
                         onToast={setToast}
                       />
                     </article>
@@ -392,12 +408,65 @@ export default function App() {
                         item={it}
                         initialReactions={yearDataCache[it.year]?.reactions?.[`${it.year}_${it.title}`]}
                         initialComments={yearDataCache[it.year]?.comments?.[`${it.year}_${it.title}`]}
+                        onCommunityUpdate={(update) => updateCommunity(it, update)}
                         onToast={setToast}
                       />
                     </article>
                   );
                 })}
               </div>
+
+              {/* 하단 📻 그 시절 한 줄 헤드라인 & 유행어 전광판 티커 바 */}
+              {yearItems.length > 0 && (
+                <section className="retro-ticker-section" aria-label={`${year}년 그 시절 한 줄 뉴스 & 유행어`}>
+                  <div className="retro-ticker-head">
+                    <span>📻 {year}년 그 시절 한 줄 헤드라인 & 유행어</span>
+                    <small>클릭하면 자세히 볼 수 있어요</small>
+                  </div>
+                  <div className="retro-ticker-scroll">
+                    {yearItems
+                      .filter((it) => it.cat === "유행어·풍속" || it.cat === "사건·생활상" || !photoOf(it))
+                      .slice(0, 24)
+                      .map((it) => (
+                        <button
+                          key={`ticker-${it.title}`}
+                          type="button"
+                          className="ticker-btn"
+                          onClick={() => setDetail({ item: it, photo: photoOf(it) })}
+                        >
+                          <span className="ticker-badge">{it.cat}</span>
+                          <span>{it.title}</span>
+                        </button>
+                      ))}
+                  </div>
+                </section>
+              )}
+
+              {/* 특정 월 선택 시 연계되는 해당 연도 대표 추억 스마트 연계 섹션 */}
+              {month && month !== "unknown" && shown.length < 5 && (
+                <section className="month-fallback-section" aria-label={`${year}년 연중 대표 추억`}>
+                  <h3 className="fallback-title">🌟 {year}년 대표 추억도 함께 둘러보세요</h3>
+                  <div className="fallback-grid">
+                    {yearItems.filter((it) => !it.month || it.month !== month).slice(0, 4).map((it) => {
+                      const ph = photoOf(it);
+                      return (
+                        <div
+                          key={`fb-${it.title}`}
+                          className="fallback-card"
+                          onClick={() => setDetail({ item: it, photo: ph })}
+                        >
+                          <div className="meta">
+                            <span className="tag">{it.cat}</span>
+                            {ph && <span className="tag ok">사진 있음</span>}
+                          </div>
+                          <h4 style={{ margin: "4px 0 2px", fontSize: "1rem" }}>{it.title}</h4>
+                          <p style={{ margin: 0, fontSize: "0.85rem", color: "var(--ink-3)", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>{it.summary}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </section>
+              )}
             </>
           )}
         </section>
@@ -440,7 +509,10 @@ export default function App() {
           defaultYear={year || 1997}
           onClose={() => setWritePostOpen(false)}
           onToast={setToast}
-          onPostCreated={(newPost) => setCustomPosts((prev) => [newPost, ...prev])}
+          onPostCreated={(newPost) => {
+            setYearDataCache((prev) => prev[newPost.year] ? { ...prev, [newPost.year]: { ...prev[newPost.year], posts: [newPost, ...(prev[newPost.year].posts || [])] } } : prev);
+            if (newPost.year === year) setCustomPosts((prev) => [newPost, ...prev]);
+          }}
         />
       )}
 

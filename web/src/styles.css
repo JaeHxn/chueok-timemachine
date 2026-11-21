@@ -153,12 +153,12 @@ a:hover{text-decoration:underline}
 .photo-filter{min-height:44px;border:0;border-radius:999px;padding:8px 16px;background:#ead8bf;color:#55402d;font-size:.8125rem;font-weight:600}
 .photo-filter[aria-pressed="true"]{background:#76533a;color:#fff}
 @media (prefers-color-scheme:dark){.photo-filter{background:#504133;color:#f4e5d3}.photo-filter[aria-pressed="true"]{background:#c89b70;color:#24180f}}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));align-items:start;gap:24px}
-.card{background:var(--space-2);border-radius:var(--r-l);padding:22px;display:flex;flex-direction:column;gap:10px;
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));align-items:start;gap:20px}
+.card{background:var(--space-2);border-radius:var(--r-m);padding:18px;display:flex;flex-direction:column;gap:8px;
   box-shadow:var(--card-shadow),0 0 0 1px var(--hair)}
-.card h3{margin:2px 0 0;font-size:1.3rem;line-height:1.4;letter-spacing:-.025em;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
-.card p{margin:0;font-size:.96rem;line-height:1.75;color:var(--ink-2);word-break:keep-all;overflow-wrap:anywhere}
-.card .card-excerpt{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card h3{margin:2px 0 0;font-size:1.2rem;line-height:1.35;letter-spacing:-.025em;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.card p{margin:0;font-size:.92rem;line-height:1.65;color:var(--ink-2);word-break:keep-all;overflow-wrap:anywhere}
+.card .card-excerpt{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .meta{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:.75rem;color:var(--ink-2);background:var(--control);border-radius:6px;padding:3px 8px}
 .tag.ok{color:var(--tag-ok);background:var(--tag-ok-bg)}
@@ -169,15 +169,152 @@ a:hover{text-decoration:underline}
   transition:transform 100ms ease-out,background 150ms}
 .share-btn:hover{background:var(--share-hover)}
 
-/* 항목 사진 */
-.item-photo{margin:-22px -22px 4px;border-radius:var(--r-l) var(--r-l) 0 0;overflow:hidden;background:var(--photo-bg)}
-.item-photo img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
-.item-photo figcaption{font-size:.8125rem;color:var(--ink-2);padding:10px 22px 0;line-height:1.5}
-.item-photo.none{display:none}
-.memory-placeholder{margin:-22px -22px 4px;min-height:150px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;border-radius:var(--r-l) var(--r-l) 0 0;background:linear-gradient(135deg,#eadbc8,#f5ede1);color:#695341}
-.memory-placeholder-year{font-family:Georgia,serif;font-size:clamp(2.4rem,5vw,3.5rem);font-weight:700;line-height:1;letter-spacing:-.04em;opacity:.8}
-.memory-placeholder-label{font-size:.8rem;font-weight:600;letter-spacing:.02em}
-@media (prefers-color-scheme:dark){.memory-placeholder{background:linear-gradient(135deg,#493d32,#2e2824);color:#eadac7}}
+/* ── 시안 A: 인스타/핀터레스트형 폴라로이드 포토 카드 ── */
+.card.has-photo {
+  background: var(--space-2);
+  border: 1px solid rgba(220, 205, 185, 0.45);
+  border-radius: 20px;
+  padding: 14px 14px 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: transform 250ms var(--ease), box-shadow 250ms var(--ease);
+}
+.card.has-photo:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.09), 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+.item-photo {
+  margin: -14px -14px 8px;
+  border-radius: 18px 18px 0 0;
+  overflow: hidden;
+  background: var(--photo-bg);
+}
+.item-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  transition: transform 350ms var(--ease);
+}
+.card.has-photo:hover .item-photo img {
+  transform: scale(1.025);
+}
+.item-photo figcaption {
+  font-size: .75rem;
+  color: var(--ink-3);
+  padding: 8px 14px 0;
+  line-height: 1.4;
+}
+.item-photo.none { display: none; }
+
+/* ── 사진 없는 추억 카드: 콤팩트 레트로 티켓/메모지 스타일 ── */
+.card.no-photo {
+  background: var(--space-2);
+  border-left: 4px solid var(--accent);
+  padding: 16px 18px;
+  border-radius: 14px;
+}
+.card.no-photo .memory-placeholder {
+  display: none; /* 지루했던 거대 회색 박스 완전 제거 */
+}
+
+/* ── 하단 그 시절 한 줄 헤드라인 & 유행어 티커 ── */
+.retro-ticker-section {
+  margin-top: 36px;
+  padding: 18px 20px;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.5) 0%, rgba(254, 215, 170, 0.35) 100%);
+  border: 1px dashed rgba(245, 158, 11, 0.45);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+}
+.retro-ticker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #92400e;
+}
+.retro-ticker-head small {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #b45309;
+}
+@media (prefers-color-scheme: dark) {
+  .retro-ticker-section {
+    background: linear-gradient(135deg, rgba(45, 35, 25, 0.55) 0%, rgba(35, 25, 18, 0.45) 100%);
+    border-color: rgba(245, 158, 11, 0.3);
+  }
+  .retro-ticker-head { color: #fcd34d; }
+  .retro-ticker-head small { color: #fde68a; }
+}
+.retro-ticker-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 6px 2px 10px;
+  scrollbar-width: thin;
+}
+.ticker-btn {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--space-2);
+  border: 1px solid var(--hair);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: transform 150ms ease, background 150ms;
+}
+.ticker-btn:hover {
+  background: var(--control-hover);
+  transform: translateY(-2px);
+}
+.ticker-btn .ticker-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(245, 158, 11, 0.15);
+  color: #b45309;
+}
+
+/* ── 특정 월 선택 시 연계 대표 추억 섹션 ── */
+.month-fallback-section {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px dashed var(--hair);
+}
+.fallback-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink-2);
+  margin-bottom: 14px;
+}
+.fallback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 14px;
+}
+.fallback-card {
+  background: var(--space-2);
+  border: 1px solid var(--hair);
+  border-radius: 14px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  min-height: 44px;
+}
+.fallback-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
 
 /* ── 공유 시트: 아래에서 올라오고 같은 길로 내려간다 ── */
 .sheet{position:fixed;inset:0;z-index:40;display:flex;align-items:flex-end;justify-content:center;

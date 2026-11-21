@@ -7,9 +7,3 @@ binding = "DB"
 database_name = "chueok-cheers"
 database_id = "cff1312b-59ac-476d-aa22-38f7731cb66a"
 
-
-[[d1_databases]]
-binding = "DB"
-database_name = "chueok-cheers"
-database_id = "cff1312b-59ac-476d-aa22-38f7731cb66a"
-
