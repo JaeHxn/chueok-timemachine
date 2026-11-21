@@ -422,13 +422,13 @@ function CheerSheet({ onClose, onToast }) {
     if (!message.trim()) { onToast("응원 내용을 적어 주세요."); return; }
     setSending(true);
     try {
-      const saved = JSON.parse(localStorage.getItem("chueok_cheers") || "[]");
-      const item = { id: `cheer_${Date.now()}`, message: message.trim(), name: name.trim() || "익명", at: new Date().toISOString() };
-      localStorage.setItem("chueok_cheers", JSON.stringify([item, ...saved]));
+      const response = await fetch("/api/cheer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ message: message.trim(), name: name.trim() }) });
+      const result = await response.json();
+      if (!response.ok || !result.ok) throw new Error(result.error || "응원을 보내지 못했습니다. 다시 시도해 주세요.");
       onToast("응원을 보냈어요. 고맙습니다!");
       onClose();
-    } catch {
-      onToast("응원을 저장하지 못했습니다.");
+    } catch (error) {
+      onToast(error.message || "응원을 보내지 못했습니다. 다시 시도해 주세요.");
     } finally {
       setSending(false);
     }
