@@ -205,6 +205,21 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
     onToast("인스타용 카드뉴스를 저장했어요!");
   };
 
+  const shareImage = async () => {
+    if (!dataUrl) return;
+    const bytes = Uint8Array.from(atob(dataUrl.split(",")[1]), (char) => char.charCodeAt(0));
+    const file = new File([bytes], "추억타임머신.png", { type: "image/png" });
+    if (!navigator.canShare?.({ files: [file] })) {
+      onToast("이 기기에서는 사진을 저장한 뒤 인스타그램에 올려 주세요.");
+      return;
+    }
+    try {
+      await navigator.share({ files: [file], title: item.title });
+    } catch (error) {
+      if (error.name !== "AbortError") onToast("공유하지 못했어요. 사진 저장을 이용해 주세요.");
+    }
+  };
+
   const copyInstaText = async () => {
     const text = `🪐 [추억 타임머신] ${item.year}년 ${item.month ? item.month + "월" : ""}의 기억\n\n📌 ${item.title}\n${item.summary}\n\n당신도 이 시절 기억나시나요? 💬\n함께 이야기 나눠요 👉 https://chueok-timemachine.pages.dev/#/${item.year}${item.month ? "/" + item.month : ""}\n\n#추억타임머신 #${item.year}년 #${item.cat} #그때그시절 #레트로`;
     try {
@@ -228,6 +243,10 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
         </div>
 
         <div className="insta-btn-row">
+          <button className="primary" onClick={shareImage} disabled={rendering}>
+            📸 인스타그램에 사진 공유
+          </button>
+          <p className="note">공유 목록에서 인스타그램을 선택해 주세요. 지원하지 않는 기기는 사진을 저장할 수 있어요.</p>
           <button className="primary" onClick={downloadImage} disabled={rendering}>
             📥 인스타용 사진 저장 (PNG)
           </button>

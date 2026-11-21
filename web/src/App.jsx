@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import items from "./items.json";
 import itemPhotos from "./item-photos.json";
 import InstagramCardModal from "./InstagramCardModal.jsx";
+import ShareButtons from "./ShareButtons.jsx";
 import WritePostModal from "./WritePostModal.jsx";
 import CardCommunity from "./CardCommunity.jsx";
 
@@ -239,7 +240,7 @@ export default function App() {
       {!adminView && !query.trim() && year && (
         <section className="year-view" key={year}>
           <div className="year-head">
-            <h2>{year}</h2>
+            <h2 key={year}>{year}</h2>
             <p className="era" style={{ "--c": eraOf(year).color }}>{eraOf(year).name}</p>
           </div>
 
@@ -293,10 +294,10 @@ export default function App() {
                 })}
               </div>
 
-              <div className="grid">
+              <div className="grid" key={`${year}-${month}-${cat}`}>
                 {/* 이용자가 직접 남긴 추억 사연 카드 */}
                 {shownPosts.map((p) => (
-                    <article className="card user-post-card" key={p.id}>
+                    <article className="card user-post-card" key={p.id} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null}); }}>
                       <div className="meta">
                         <span className="tag" style={{ background: "rgba(255, 215, 0, 0.2)", color: "#ffd700", fontWeight: 700 }}>
                           ✍️ 이용자 추억 사연
@@ -333,7 +334,7 @@ export default function App() {
                   const ok = it.sources.length > 0 && it.confidence !== "low";
                   const ph = photoOf(it);
                   return (
-                    <article className="card" key={it.title}>
+                    <article className="card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: ph}); }}>
                       {ph && (
                         <figure className="item-photo">
                           <img src={ph.thumb} alt={ph.title} loading="lazy" />
@@ -354,12 +355,10 @@ export default function App() {
                       )}
                       <div className="card-actions">
                         <button className="detail-open" onClick={() => setDetail({item: it, photo: ph})}>자세히 보기</button>
-                        <button className="insta-badge-btn" onClick={() => setInstaModalItem({ item: it, photo: ph })}>
-                          📸 인스타 카드
-                        </button>
                         <button className="share-btn" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
                           공유
                         </button>
+                        <ShareButtons share={{ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) }} onInstagram={() => setInstaModalItem({ item: it, photo: ph })} onToast={setToast} />
                       </div>
                       <CardCommunity item={it} onToast={setToast} />
                     </article>

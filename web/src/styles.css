@@ -554,3 +554,20 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
 @keyframes detail-in{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
 .rm .detail-dialog{animation:none}
 
+
+/* 시간 이동과 추억 카드의 입체적인 전환 */
+.yb{transition:transform 300ms var(--ease),color 300ms,opacity 300ms}
+.yb.sel{transform:translateY(-4px) scale(1.12)}
+.year-head h2{animation:year-arrive 500ms var(--ease) both}
+.orbit .moon.has{transition:transform 300ms var(--ease),background 200ms,box-shadow 300ms}
+.grid .card{cursor:pointer;animation:card-arrive 520ms var(--ease) backwards;transition:transform 250ms var(--ease),box-shadow 250ms}
+.grid .card:nth-child(4n + 2){animation-delay:45ms}
+.grid .card:nth-child(4n + 3){animation-delay:90ms}
+.grid .card:nth-child(4n + 4){animation-delay:135ms}
+.grid .card:hover{transform:translateY(-5px) scale(1.015);box-shadow:var(--card-shadow),0 14px 35px rgba(0,0,0,.15),0 0 0 1px var(--hair)}
+.grid .card:active{transform:scale(.985)}
+.detail-dialog{animation:detail-expand 360ms var(--ease) both;transform-origin:center}
+@keyframes year-arrive{from{opacity:0;transform:translateY(12px) scale(.85)}to{opacity:1;transform:none}}
+@keyframes card-arrive{from{opacity:0;transform:translateY(24px) scale(.88)}to{opacity:1;transform:none}}
+@keyframes detail-expand{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:none}}
+.rm .grid .card:hover,.rm .grid .card:active{transform:none}
