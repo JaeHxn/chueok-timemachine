@@ -28,14 +28,16 @@ export default function CardCommunity({ item, onToast }) {
   // 로컬 스토리지 키
   const reactLocalKey = `react_user_${targetId}`;
   const reactCountsKey = `react_counts_${targetId}`;
+  const reactStateKey = `react_state_${targetId}`;
   const cmtLocalKey = `cmt_local_${targetId}`;
 
   // 반응 및 댓글 불러오기 (순수 클라이언트 로컬 스토리지 — KV/서버 호출 0)
   useEffect(() => {
     try {
-      const savedUserReactions = JSON.parse(localStorage.getItem(reactLocalKey) || "[]");
+      const savedState = JSON.parse(localStorage.getItem(reactStateKey) || "null");
+      const savedUserReactions = savedState?.active ?? JSON.parse(localStorage.getItem(reactLocalKey) || "[]");
       setUserActiveReactions(new Set(savedUserReactions));
-      const savedCounts = JSON.parse(localStorage.getItem(reactCountsKey) || '{"ah":0,"kkk":0,"weep":0,"b486":0,"b8282":0,"like":0}');
+      const savedCounts = savedState?.counts ?? JSON.parse(localStorage.getItem(reactCountsKey) || '{"ah":0,"kkk":0,"weep":0,"b486":0,"b8282":0,"like":0}');
       setReactions(savedCounts);
       const savedComments = JSON.parse(localStorage.getItem(cmtLocalKey) || "[]");
       setComments(savedComments);
@@ -53,18 +55,17 @@ export default function CardCommunity({ item, onToast }) {
     } else {
       newActive.add(type);
     }
-    setUserActiveReactions(newActive);
-
     const nextCounts = {
       ...reactions,
       [type]: Math.max(0, (reactions[type] || 0) + delta),
     };
-    setReactions(nextCounts);
-
     try {
-      localStorage.setItem(reactLocalKey, JSON.stringify(Array.from(newActive)));
-      localStorage.setItem(reactCountsKey, JSON.stringify(nextCounts));
-    } catch {}
+      localStorage.setItem(reactStateKey, JSON.stringify({ active: Array.from(newActive), counts: nextCounts }));
+      setUserActiveReactions(newActive);
+      setReactions(nextCounts);
+    } catch {
+      onToast("반응을 저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.");
+    }
   };
 
   // 댓글 등록 (로컬 즉시 저장)
@@ -87,12 +88,19 @@ export default function CardCommunity({ item, onToast }) {
       at: new Date().toISOString(),
     };
 
-    const nextCmts = [newObj, ...comments];
+    let nextCmts;
+    try {
+      const savedComments = JSON.parse(localStorage.getItem(cmtLocalKey) || "[]");
+      if (!Array.isArray(savedComments)) throw new Error("Invalid saved comments");
+      nextCmts = [newObj, ...savedComments];
+      localStorage.setItem(cmtLocalKey, JSON.stringify(nextCmts));
+    } catch {
+      onToast("이야기를 저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.");
+      setSubmitting(false);
+      return;
+    }
     setComments(nextCmts);
     setNewComment("");
-    try {
-      localStorage.setItem(cmtLocalKey, JSON.stringify(nextCmts));
-    } catch {}
 
     onToast("추억 이야기를 남겼어요!");
     setSubmitting(false);

@@ -48,7 +48,11 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
     try {
       const saved = JSON.parse(localStorage.getItem("chueok_user_posts") || "[]");
       localStorage.setItem("chueok_user_posts", JSON.stringify([payload, ...saved]));
-    } catch {}
+    } catch {
+      onToast("사연을 저장하지 못했어요. 브라우저 저장 공간을 확인해 주세요.");
+      setSubmitting(false);
+      return;
+    }
 
     onPostCreated?.(payload);
     onToast("소중한 추억 사연을 남겨주셔서 고맙습니다!");
