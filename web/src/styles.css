@@ -61,7 +61,7 @@ a:hover{text-decoration:underline}
 .dial-arrow{flex:none;width:36px;height:36px;border-radius:50%;border:0;background:var(--control);font-size:1.25rem;line-height:1;
   transition:transform 100ms ease-out,background 150ms}
 .dial-arrow:hover{background:var(--control-hover)}
-.yearbar{flex:1;display:flex;align-items:flex-end;gap:2px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;
+.yearbar{position:relative;flex:1;display:flex;align-items:flex-end;gap:2px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;
   padding:6px 4px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
 .yearbar::-webkit-scrollbar{display:none}
 .yb{flex:none;scroll-snap-align:center;border:0;background:none;min-width:44px;height:52px;padding:0 6px;
@@ -116,6 +116,26 @@ a:hover{text-decoration:underline}
 .moon-label,.moon-n{animation:counter-spin 90s linear infinite}
 .orbit.still .moon-label,.rm .moon-label,.orbit.still .moon-n,.rm .moon-n{animation:none}
 .moon-n{font-size:.625rem;color:var(--accent-text);font-weight:600}
+
+/* 연도 아래의 가로 위성 목록: 콘텐츠가 첫 화면에 바로 보인다. */
+.year-view .year-head{display:flex;align-items:baseline;gap:12px;text-align:left;padding-top:14px}
+.year-view .year-head h2{font-size:clamp(1.5rem,4vw,2rem)}
+.year-head .era{margin:0}
+.orbit{display:flex;align-items:center;width:100%;height:auto;margin:10px 0 0;gap:10px}
+.orbit::before{display:none}
+.orbit .core{position:static;flex:none;width:54px;height:54px;transform:none;animation:arrive-small 450ms var(--ease) both}
+.orbit .core span{font-size:.8rem}
+.orbit .ring{position:relative;display:flex;align-items:center;gap:8px;flex:1;min-width:0;overflow-x:auto;padding:10px 4px;scrollbar-width:thin;animation:none;scroll-snap-type:x proximity}
+.orbit .sat{position:static;flex:none;width:auto;height:auto;transform:none;scroll-snap-align:center;animation:satellite-in 400ms var(--ease) both, satellite-float 3s ease-in-out infinite alternate;animation-delay:calc(var(--d) * 25ms),calc(var(--d) * -180ms)}
+.orbit .ring:hover .sat,.orbit .ring:focus-within .sat{animation-play-state:paused}
+.orbit .moon,.orbit .moon:active{position:static;width:50px;height:50px;transform:none;animation:none;transition:transform 250ms var(--ease),background 150ms,color 150ms}
+.orbit .moon:hover{transform:scale(1.06)}
+.orbit .moon.on{transform:scale(1.16)}
+.orbit .moon-label,.orbit .moon-n{animation:none}
+.year-view > .note.center{text-align:left;margin:2px 0 8px}
+@keyframes satellite-in{from{opacity:0;transform:translateX(-18px) scale(.75)}to{opacity:1;transform:none}}
+@keyframes satellite-float{to{transform:translateY(-3px)}}
+@keyframes arrive-small{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:none}}
 .primary{margin-top:12px;background:var(--accent);border:0;color:var(--on-accent);padding:12px 22px;border-radius:999px;font-size:.9375rem;font-weight:600;
   transition:transform 100ms ease-out,filter 150ms}
 .primary:hover{filter:brightness(1.1)}
@@ -228,11 +248,12 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   background:var(--toast-glass);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);font-size:.875rem;box-shadow:0 10px 30px rgba(0,0,0,.16);animation:rise 250ms var(--ease) both}
 .rm .year-view,.rm .results{animation:fade 150ms ease-out both}
 @media (max-width:640px){
-  .top{flex-wrap:wrap;gap:8px}
-  .top-r{width:100%}
-  .search{flex:1;width:auto}
-  .dial{top:96px}
-  .cats{top:168px}
+  .top{position:relative;flex-wrap:wrap;gap:8px}
+  .top-r{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+  .top-r .search{grid-column:1/-1;order:-1;width:100%;min-width:0}
+  .top-r button{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.75rem;padding:8px 5px}
+  .dial{top:0}
+  .cats{top:74px}
 }
 /* 터치 대상 44px 확보 (E2E 지적) */
 .cats button,.share-btn{min-height:44px;padding-left:16px;padding-right:16px}
@@ -517,4 +538,19 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   background: rgba(212, 166, 42, 0.28);
   transform: translateY(-1px);
 }
+
+.unknown-month,.detail-open{display:inline-flex;align-items:center;min-height:44px;padding:8px 15px;border:0;border-radius:999px;background:var(--control);color:var(--ink-2);font:inherit;font-size:.8125rem;font-weight:600}
+.unknown-month.on{background:var(--accent);color:var(--on-accent)}
+.detail-open:hover,.unknown-month:hover{background:var(--control-hover);color:var(--ink)}
+.detail-dialog{width:min(92vw,620px);max-height:85vh;overflow:auto;border:1px solid var(--hair);border-radius:var(--r-l);padding:clamp(22px,5vw,36px);background:var(--space-2);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.3);animation:detail-in 250ms var(--ease) both}
+.detail-dialog::backdrop{background:var(--modal)}
+.detail-dialog h2{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.2;margin:8px 0 16px}
+.detail-close{float:right;width:44px;height:44px;border:0;border-radius:50%;background:var(--control);font-size:1.1rem}
+.detail-meta{color:var(--ink-3);font-size:.875rem}
+.detail-summary{color:var(--ink-2);line-height:1.8;white-space:pre-wrap}
+.detail-photo{margin:0 0 18px;clear:both}
+.detail-photo img{display:block;max-width:100%;max-height:45vh;margin:auto;border-radius:var(--r-m);object-fit:contain}
+.detail-photo figcaption{font-size:.75rem;color:var(--ink-3);margin-top:6px}
+@keyframes detail-in{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+.rm .detail-dialog{animation:none}
 

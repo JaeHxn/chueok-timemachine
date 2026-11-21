@@ -23,15 +23,14 @@ const BY_YEAR = items.reduce((m, it) => ((m[it.year] ||= []).push(it), m), {});
 const itemsOf = (y) => BY_YEAR[y] ?? [];
 const YEARS_WITH_DATA = YEARS.filter((y) => itemsOf(y).length);
 const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
-const MOON_ANGLE = (m) => (m - 1) * 30; // 1월이 12시 방향
 
 // 주소(#/1974/3) ↔ 화면 상태. 뒤로가기·공유 링크가 그대로 동작한다.
 function parseHash() {
-  const [, y, m] = location.hash.match(/^#\/(\d{4})(?:\/(\d{1,2}))?/) ?? [];
+  const [, y, m] = location.hash.match(/^#\/(\d{4})(?:\/(unknown|\d{1,2}))?/) ?? [];
   const year = Number(y);
   if (!YEARS.includes(year)) return { year: null, month: null };
   const month = Number(m);
-  return { year, month: month >= 1 && month <= 12 ? month : null };
+  return { year, month: m === "unknown" ? "unknown" : month >= 1 && month <= 12 ? month : null };
 }
 const hashOf = (y, m) => (y ? `#/${y}${m ? "/" + m : ""}` : "#/");
 const nearestWithData = (y) =>
@@ -54,17 +53,24 @@ export default function App() {
   const [instaModalItem, setInstaModalItem] = useState(null);
   const [writePostOpen, setWritePostOpen] = useState(false);
   const [customPosts, setCustomPosts] = useState([]);
+  const [detail, setDetail] = useState(null);
+  const detailRef = useRef(null);
   const barRef = useRef(null);
+  const monthBarRef = useRef(null);
+  useEffect(() => { if (detail) detailRef.current?.showModal(); }, [detail]);
 
   // 연도별 사용자 사연 불러오기
   useEffect(() => {
+    setCustomPosts([]);
     if (!year) return;
-    fetch(`/api/posts?year=${year}`)
+    const controller = new AbortController();
+    fetch(`/api/posts?year=${year}`, { signal: controller.signal })
       .then((r) => r.json())
       .then((d) => {
         if (d?.ok && Array.isArray(d?.posts)) setCustomPosts(d.posts);
       })
       .catch(() => {});
+    return () => controller.abort();
   }, [year]);
 
   // 주소가 바뀌면(뒤로가기 포함) 화면을 따라가게
@@ -79,13 +85,26 @@ export default function App() {
 
   // 선택한 연도를 다이얼 가운데로
   useEffect(() => {
-    barRef.current?.querySelector(".sel")?.scrollIntoView({ inline: "center", block: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
+    const bar = barRef.current;
+    const center = () => {
+      const selected = bar?.querySelector(".sel");
+      if (selected) bar.scrollTo({ left: selected.offsetLeft - bar.clientWidth / 2 + selected.offsetWidth / 2, behavior: reduceMotion ? "auto" : "smooth" });
+    };
+    center();
+    addEventListener("resize", center);
+    return () => removeEventListener("resize", center);
   }, [year, reduceMotion]);
+
+  useEffect(() => {
+    const bar = monthBarRef.current;
+    const selected = bar?.querySelector('[aria-current="page"]');
+    if (selected) bar.scrollTo({ left: selected.offsetLeft - bar.clientWidth / 2 + selected.offsetWidth / 2, behavior: reduceMotion ? "auto" : "smooth" });
+  }, [year, month, reduceMotion]);
 
   // ←/→ 키로 연도 이동 (입력 중엔 무시)
   useEffect(() => {
     const onKey = (e) => {
-      if (e.target.closest?.("input,textarea") || !year) return;
+      if (e.target.closest?.("input,textarea,select,button,a,[contenteditable=true]") || !year) return;
       if (e.key === "ArrowLeft" && year > YEARS[0]) go(year - 1);
       if (e.key === "ArrowRight" && year < YEARS.at(-1)) go(year + 1);
     };
@@ -103,11 +122,12 @@ export default function App() {
   const nudge = (dir) => barRef.current.scrollBy({ left: dir * 320, behavior: reduceMotion ? "auto" : "smooth" });
 
   const yearItems = year ? itemsOf(year) : [];
-  const monthCount = (m) => yearItems.filter((it) => it.month === m).length;
+  const monthCount = (m) => yearItems.filter((it) => it.month === m).length + customPosts.filter((p) => p.month === m).length;
   const shown = useMemo(() => {
-    const list = month ? yearItems.filter((i) => i.month === month) : yearItems;
+    const list = month ? yearItems.filter((i) => month === "unknown" ? !i.month : i.month === month) : yearItems;
     return cat === "전체" ? list : list.filter((i) => i.cat === cat);
   }, [year, month, cat]);
+  const shownPosts = customPosts.filter((p) => (!month || (month === "unknown" ? !p.month : p.month === month)) && (cat === "전체" || p.category === cat));
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -230,15 +250,15 @@ export default function App() {
             </div>
           ) : (
             <>
-              <div className={`orbit ${reduceMotion ? "still" : ""}`} style={{ "--c": eraOf(year).color }}>
+              <nav className="orbit" style={{ "--c": eraOf(year).color }} aria-label={`${year}년 월 선택`}>
                 <a className={`core ${month ? "" : "on"}`} href={hashOf(year)} aria-label={`${year}년 전체 보기`}>
-                  <span>{month ? "전체" : year}</span>
+                  <span>전체</span>
                 </a>
-                <div className="ring">
+                <div className="ring" ref={monthBarRef}>
                   {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => {
                     const n = monthCount(m);
                     return (
-                      <div key={m} className="sat" style={{ "--a": `${MOON_ANGLE(m)}deg`, "--d": m }}>
+                      <div key={m} className="sat" style={{ "--d": m }}>
                         {n ? (
                           <a className={`moon has ${m === month ? "on" : ""}`} href={hashOf(year, m)} aria-label={`${m}월 · ${n}개`} aria-current={m === month ? "page" : undefined}>
                             <span className="moon-label">{m}월</span>
@@ -251,15 +271,19 @@ export default function App() {
                     );
                   })}
                 </div>
-              </div>
+              </nav>
+              <a className={`unknown-month ${month === "unknown" ? "on" : ""}`} href={hashOf(year, "unknown")} aria-current={month === "unknown" ? "page" : undefined}>
+                월 미확인 {yearItems.filter((i) => !i.month).length + customPosts.filter((p) => !p.month).length}개
+              </a>
               <p className="note center">
-                {month ? `${month}월 추억 ${shown.length}개` : `${year}년 추억 ${yearItems.length}개`} · 빛나는 달을 누르면 그달만 볼 수 있어요
+                {month ? `${month === "unknown" ? "월 미확인" : `${month}월`} 추억 ${shown.length + shownPosts.length}개` : `${year}년 추억 ${yearItems.length + customPosts.length}개`} · 달을 누르면 그달만 볼 수 있어요
               </p>
 
               <div className="cats" role="tablist" aria-label="분류">
                 {["전체", ...CATS].map((c) => {
-                  const base = month ? yearItems.filter((i) => i.month === month) : yearItems;
-                  const n = c === "전체" ? base.length : base.filter((i) => i.cat === c).length;
+                  const base = month ? yearItems.filter((i) => month === "unknown" ? !i.month : i.month === month) : yearItems;
+                  const posts = month ? customPosts.filter((p) => month === "unknown" ? !p.month : p.month === month) : customPosts;
+                  const n = c === "전체" ? base.length + posts.length : base.filter((i) => i.cat === c).length + posts.filter((p) => p.category === c).length;
                   if (c !== "전체" && !n) return null;
                   return (
                     <button key={c} role="tab" aria-selected={c === cat} className={c === cat ? "on" : ""} onClick={() => setCat(c)}>
@@ -271,10 +295,7 @@ export default function App() {
 
               <div className="grid">
                 {/* 이용자가 직접 남긴 추억 사연 카드 */}
-                {customPosts
-                  .filter((p) => !month || p.month === month)
-                  .filter((p) => cat === "전체" || p.category === cat)
-                  .map((p) => (
+                {shownPosts.map((p) => (
                     <article className="card user-post-card" key={p.id}>
                       <div className="meta">
                         <span className="tag" style={{ background: "rgba(255, 215, 0, 0.2)", color: "#ffd700", fontWeight: 700 }}>
@@ -289,6 +310,7 @@ export default function App() {
                         글쓴이: <b>{p.author || "익명의 시간여행자"}</b> · {new Date(p.at).toLocaleDateString("ko-KR")}
                       </div>
                       <div className="card-actions">
+                        <button className="detail-open" onClick={() => setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null})}>자세히 보기</button>
                         <button
                           className="insta-badge-btn"
                           onClick={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })}
@@ -306,7 +328,7 @@ export default function App() {
                     </article>
                   ))}
 
-                {shown.length === 0 && customPosts.length === 0 && <div className="empty">이 분류에는 자료가 없습니다.</div>}
+                {shown.length === 0 && shownPosts.length === 0 && <div className="empty">이 분류에는 자료가 없습니다.</div>}
                 {shown.map((it) => {
                   const ok = it.sources.length > 0 && it.confidence !== "low";
                   const ph = photoOf(it);
@@ -331,6 +353,7 @@ export default function App() {
                         </div>
                       )}
                       <div className="card-actions">
+                        <button className="detail-open" onClick={() => setDetail({item: it, photo: ph})}>자세히 보기</button>
                         <button className="insta-badge-btn" onClick={() => setInstaModalItem({ item: it, photo: ph })}>
                           📸 인스타 카드
                         </button>
@@ -348,6 +371,14 @@ export default function App() {
         </section>
       )}
 
+      {detail && <dialog className="detail-dialog" ref={detailRef} aria-labelledby="detail-title" onClose={() => setDetail(null)}>
+        <button className="detail-close" onClick={() => detailRef.current.close()} aria-label="상세 닫기">✕</button>
+        {detail.photo && <figure className="detail-photo"><img src={detail.photo.thumb} alt={detail.photo.title} /><figcaption>사진: {detail.photo.artist} · {detail.photo.license} · <a href={detail.photo.page} target="_blank" rel="noopener">원본</a></figcaption></figure>}
+        <p className="detail-meta">{detail.item.year}년 {detail.item.month ? `${detail.item.month}월` : "· 월 미확인"} · {detail.item.cat}</p>
+        <h2 id="detail-title">{detail.item.title}</h2>
+        <p className="detail-summary">{detail.item.summary}</p>
+        {detail.item.sources?.length > 0 && <p className="src">출처 {detail.item.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}</p>}
+      </dialog>}
       {share && (
         <div className="sheet" role="dialog" aria-modal="true" aria-label="공유" onClick={(e) => e.target === e.currentTarget && setShare(null)}
           onKeyDown={(e) => e.key === "Escape" && setShare(null)}>

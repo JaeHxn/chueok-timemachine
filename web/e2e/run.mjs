@@ -55,6 +55,24 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     return `비활성 달 ${r.dead}개`;
   });
 
+  await test(P + "월 미확인 자료 필터와 직접 링크", async () => {
+    await nav("#/2002/unknown");
+    const r = js(`return {hash:location.hash,current:document.querySelector('.unknown-month')?.getAttribute('aria-current'),tags:[...document.querySelectorAll('.card .meta .tag:first-child')].map(e=>e.textContent)}`);
+    assert(r.hash === "#/2002/unknown" && r.current === "page" && r.tags.length > 0 && r.tags.every(t => !t.includes("월")), JSON.stringify(r));
+    return `${r.tags.length}개`;
+  });
+
+  await test(P + "상세 카드 열기와 Escape 닫기", async () => {
+    js(`document.querySelector('.detail-open').click();return 1`); await wait(200);
+    const r = js(`return {open:document.querySelector('.detail-dialog')?.open,title:document.querySelector('#detail-title')?.textContent}`);
+    assert(r.open && r.title, JSON.stringify(r));
+    ab("press", "Escape"); await wait(200);
+    assert(!js(`return !!document.querySelector('.detail-dialog')`), "상세가 닫히지 않음");
+  });
+
+  await nav("#/1974");
+  await nav("#/1974/1");
+
   await test(P + "브라우저 뒤로가기 → 직전 화면", async () => {
     js(`history.back();return 1`); await wait(400);
     const h = js(`return location.hash`);
