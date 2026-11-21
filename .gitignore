@@ -35,3 +35,7 @@ web/e2e/*.png
 
 # 관리자 키 (절대 커밋 금지)
 관리자키.txt
+
+# 백업 코드
+web/_backup_functions/
+*_backup_*/

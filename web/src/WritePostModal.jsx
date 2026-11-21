@@ -35,6 +35,7 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
     } catch {}
 
     const payload = {
+      id: `post_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
       year: Number(year),
       month: month ? Number(month) : null,
       category,
@@ -45,29 +46,14 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
     };
 
     try {
-      const res = await fetch("/api/posts", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const data = await res.json().catch(() => ({}));
-      if (data?.ok && data?.post) {
-        onPostCreated?.(data.post);
-      } else {
-        // 로컬 보관
-        payload.id = `local_post_${Date.now()}`;
-        onPostCreated?.(payload);
-      }
-      onToast("소중한 추억 사연을 남겨주셔서 고맙습니다!");
-      onClose();
-    } catch {
-      payload.id = `local_post_${Date.now()}`;
-      onPostCreated?.(payload);
-      onToast("추억 사연이 등록되었습니다.");
-      onClose();
-    } finally {
-      setSubmitting(false);
-    }
+      const saved = JSON.parse(localStorage.getItem("chueok_user_posts") || "[]");
+      localStorage.setItem("chueok_user_posts", JSON.stringify([payload, ...saved]));
+    } catch {}
+
+    onPostCreated?.(payload);
+    onToast("소중한 추억 사연을 남겨주셔서 고맙습니다!");
+    setSubmitting(false);
+    onClose();
   };
 
   return (

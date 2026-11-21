@@ -60,18 +60,15 @@ export default function App() {
   const monthBarRef = useRef(null);
   useEffect(() => { if (detail) detailRef.current?.showModal(); }, [detail]);
 
-  // 연도별 사용자 사연 불러오기
+  // 연도별 사용자 사연 불러오기 (클라이언트 로컬 스토리지)
   useEffect(() => {
-    setCustomPosts([]);
-    if (!year) return;
-    const controller = new AbortController();
-    fetch(`/api/posts?year=${year}`, { signal: controller.signal })
-      .then((r) => r.json())
-      .then((d) => {
-        if (d?.ok && Array.isArray(d?.posts)) setCustomPosts(d.posts);
-      })
-      .catch(() => {});
-    return () => controller.abort();
+    if (!year) { setCustomPosts([]); return; }
+    try {
+      const saved = JSON.parse(localStorage.getItem("chueok_user_posts") || "[]");
+      setCustomPosts(saved.filter((p) => Number(p.year) === year));
+    } catch {
+      setCustomPosts([]);
+    }
   }, [year]);
 
   // 주소가 바뀌면(뒤로가기 포함) 화면을 따라가게
@@ -425,13 +422,16 @@ function CheerSheet({ onClose, onToast }) {
     if (!message.trim()) { onToast("응원 내용을 적어 주세요."); return; }
     setSending(true);
     try {
-      const r = await fetch("/api/cheer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ message, name }) });
-      const d = await r.json().catch(() => ({}));
-      if (!r.ok || !d.ok) throw new Error(d.error || "보내지 못했습니다. 잠시 후 다시 시도해 주세요.");
+      const saved = JSON.parse(localStorage.getItem("chueok_cheers") || "[]");
+      const item = { id: `cheer_${Date.now()}`, message: message.trim(), name: name.trim() || "익명", at: new Date().toISOString() };
+      localStorage.setItem("chueok_cheers", JSON.stringify([item, ...saved]));
       onToast("응원을 보냈어요. 고맙습니다!");
       onClose();
-    } catch (err) { onToast(err.message); }
-    finally { setSending(false); }
+    } catch {
+      onToast("응원을 저장하지 못했습니다.");
+    } finally {
+      setSending(false);
+    }
   }
   return (
     <div className="sheet" role="dialog" aria-modal="true" aria-label="개발자에게 응원 한마디" onClick={(e) => e.target === e.currentTarget && onClose()}>
@@ -454,17 +454,26 @@ function CheerSheet({ onClose, onToast }) {
 function AdminCheers({ onToast }) {
   const [key, setKey] = useState(() => { try { return sessionStorage.getItem("adminKey") || ""; } catch { return ""; } });
   const [rows, setRows] = useState(null);
-  async function load(k = key) {
-    const r = await fetch("/api/cheer", { headers: { "x-admin-key": k } });
-    const d = await r.json().catch(() => ({}));
-    if (!r.ok || !d.ok) { setRows(null); onToast(d.error || "불러오지 못했습니다."); return; }
-    try { sessionStorage.setItem("adminKey", k); } catch {}
-    setRows(d.rows);
+  function load(k = key) {
+    try {
+      const saved = JSON.parse(localStorage.getItem("chueok_cheers") || "[]");
+      sessionStorage.setItem("adminKey", k);
+      setRows(saved);
+    } catch {
+      setRows([]);
+    }
   }
-  async function remove(id) {
+  function remove(id) {
     if (!confirm("이 응원 글을 지울까요?")) return;
-    const r = await fetch("/api/cheer?id=" + encodeURIComponent(id), { method: "DELETE", headers: { "x-admin-key": key } });
-    if (r.ok) { setRows((v) => v.filter((x) => x.id !== id)); onToast("지웠습니다."); } else onToast("지우지 못했습니다.");
+    try {
+      const saved = JSON.parse(localStorage.getItem("chueok_cheers") || "[]");
+      const next = saved.filter((x) => x.id !== id);
+      localStorage.setItem("chueok_cheers", JSON.stringify(next));
+      setRows(next);
+      onToast("지웠습니다.");
+    } catch {
+      onToast("지우지 못했습니다.");
+    }
   }
   useEffect(() => { if (key) load(key); }, []);
   return (

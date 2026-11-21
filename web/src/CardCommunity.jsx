@@ -27,46 +27,23 @@ export default function CardCommunity({ item, onToast }) {
 
   // 로컬 스토리지 키
   const reactLocalKey = `react_user_${targetId}`;
+  const reactCountsKey = `react_counts_${targetId}`;
   const cmtLocalKey = `cmt_local_${targetId}`;
 
-  // 반응 및 댓글 불러오기
+  // 반응 및 댓글 불러오기 (순수 클라이언트 로컬 스토리지 — KV/서버 호출 0)
   useEffect(() => {
-    // 1. 유저 로컬 활성 반응 복원
     try {
       const savedUserReactions = JSON.parse(localStorage.getItem(reactLocalKey) || "[]");
       setUserActiveReactions(new Set(savedUserReactions));
+      const savedCounts = JSON.parse(localStorage.getItem(reactCountsKey) || '{"ah":0,"kkk":0,"weep":0,"b486":0,"b8282":0,"like":0}');
+      setReactions(savedCounts);
+      const savedComments = JSON.parse(localStorage.getItem(cmtLocalKey) || "[]");
+      setComments(savedComments);
     } catch {}
-
-    // 2. 반응 API 호출 (실패 시 로컬 집계)
-    fetch(`/api/reactions?targetId=${encodeURIComponent(targetId)}`)
-      .then((r) => r.json())
-      .then((d) => {
-        if (d?.ok && d?.counts) setReactions(d.counts);
-      })
-      .catch(() => {
-        setReactions({ ah: 0, kkk: 0, weep: 0, b486: 0, b8282: 0 });
-      });
-
-    // 3. 댓글 API 호출
-    fetch(`/api/comments?targetId=${encodeURIComponent(targetId)}`)
-      .then((r) => r.json())
-      .then((d) => {
-        if (d?.ok && Array.isArray(d?.comments)) {
-          // 로컬에 추가된 댓글과 병합
-          const localCmts = JSON.parse(localStorage.getItem(cmtLocalKey) || "[]");
-          const map = new Map();
-          [...localCmts, ...d.comments].forEach((c) => map.set(c.id, c));
-          setComments(Array.from(map.values()));
-        }
-      })
-      .catch(() => {
-        const localCmts = JSON.parse(localStorage.getItem(cmtLocalKey) || "[]");
-        setComments(localCmts);
-      });
   }, [targetId]);
 
-  // 공감 반응 토글
-  const toggleReaction = async (type) => {
+  // 공감 반응 토글 (로컬 즉시 저장)
+  const toggleReaction = (type) => {
     const isCurrentlyActive = userActiveReactions.has(type);
     const newActive = new Set(userActiveReactions);
     const delta = isCurrentlyActive ? -1 : 1;
@@ -77,27 +54,21 @@ export default function CardCommunity({ item, onToast }) {
       newActive.add(type);
     }
     setUserActiveReactions(newActive);
+
+    const nextCounts = {
+      ...reactions,
+      [type]: Math.max(0, (reactions[type] || 0) + delta),
+    };
+    setReactions(nextCounts);
+
     try {
       localStorage.setItem(reactLocalKey, JSON.stringify(Array.from(newActive)));
-    } catch {}
-
-    // 낙관적 UI 업데이트
-    setReactions((prev) => ({
-      ...prev,
-      [type]: Math.max(0, (prev[type] || 0) + delta),
-    }));
-
-    try {
-      await fetch("/api/reactions", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ targetId, type, delta }),
-      });
+      localStorage.setItem(reactCountsKey, JSON.stringify(nextCounts));
     } catch {}
   };
 
-  // 댓글 등록
-  const submitComment = async (e) => {
+  // 댓글 등록 (로컬 즉시 저장)
+  const submitComment = (e) => {
     e.preventDefault();
     const content = newComment.trim();
     if (!content) return;
@@ -109,33 +80,22 @@ export default function CardCommunity({ item, onToast }) {
     } catch {}
 
     const newObj = {
-      id: `local_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+      id: `cmt_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
       targetId,
       author: finalAuthor,
       content,
       at: new Date().toISOString(),
     };
 
-    // 낙관적 UI 추가 및 로컬 보관
-    setComments((prev) => [newObj, ...prev]);
+    const nextCmts = [newObj, ...comments];
+    setComments(nextCmts);
     setNewComment("");
     try {
-      const localCmts = JSON.parse(localStorage.getItem(cmtLocalKey) || "[]");
-      localStorage.setItem(cmtLocalKey, JSON.stringify([newObj, ...localCmts]));
+      localStorage.setItem(cmtLocalKey, JSON.stringify(nextCmts));
     } catch {}
 
-    try {
-      await fetch("/api/comments", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ targetId, content, author: finalAuthor }),
-      });
-      onToast("추억 이야기를 남겼어요!");
-    } catch {
-      onToast("댓글이 등록되었습니다.");
-    } finally {
-      setSubmitting(false);
-    }
+    onToast("추억 이야기를 남겼어요!");
+    setSubmitting(false);
   };
 
   return (

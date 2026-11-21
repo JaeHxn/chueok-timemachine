@@ -2,7 +2,3 @@ name = "chueok-timemachine"
 pages_build_output_dir = "dist"
 compatibility_date = "2026-11-01"
 
-# 응원 한마디 저장소 (관리자만 읽기)
-[[kv_namespaces]]
-binding = "CHEERS"
-id = "f51aa6f235144da490fe94346340a683"
