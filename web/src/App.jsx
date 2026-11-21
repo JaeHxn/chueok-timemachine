@@ -313,17 +313,12 @@ export default function App() {
                       <div className="card-actions">
                         <button className="detail-open" onClick={() => setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null})}>자세히 보기</button>
                         <button
-                          className="insta-badge-btn"
-                          onClick={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })}
-                        >
-                          📸 인스타 카드
-                        </button>
-                        <button
-                          className="share-btn"
+                          className="share-btn share-icon" aria-label="공유하기" title="공유하기"
                           onClick={() => setShare({ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) })}
                         >
-                          공유
+                          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
                         </button>
+                        <ShareButtons share={{ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) }} onInstagram={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })} onToast={setToast} />
                       </div>
                       <CardCommunity item={{ year: p.year, title: p.title }} onToast={setToast} />
                     </article>
@@ -355,8 +350,8 @@ export default function App() {
                       )}
                       <div className="card-actions">
                         <button className="detail-open" onClick={() => setDetail({item: it, photo: ph})}>자세히 보기</button>
-                        <button className="share-btn" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
-                          공유
+                        <button className="share-btn share-icon" aria-label="공유하기" title="공유하기" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
+                          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
                         </button>
                         <ShareButtons share={{ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) }} onInstagram={() => setInstaModalItem({ item: it, photo: ph })} onToast={setToast} />
                       </div>

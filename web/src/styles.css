@@ -456,6 +456,24 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   opacity: 0.92;
   transform: translateY(-1px);
 }
+.card-actions .share-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.share-icon svg { width: 21px; height: 21px; }
+.card-actions .share-icon--kakao { background: #fee500; color: #3c1e1e; }
+.card-actions .share-icon--kakao:hover { background: #f3da00; }
+.card-actions .share-icon--instagram { color: #fff; }
+.share-icon:focus-visible { outline: 3px solid var(--accent-text); outline-offset: 3px; }
 
 /* 인스타 모달 & 사연 작성 모달 */
 .insta-modal-box, .post-form-box {
