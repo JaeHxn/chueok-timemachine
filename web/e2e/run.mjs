@@ -141,11 +141,14 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     return t;
   });
 
-  await test(P + "커뮤니티: 공감 반응 칩 & 인스타 카드 버튼 표시", async () => {
+  await test(P + "커뮤니티: 이모지 선택과 댓글에서 상세가 열리지 않음", async () => {
     await nav("#/1974");
-    const r = js('return {reacts:document.querySelectorAll(".react-chip").length,instaBtn:!!document.querySelector(".insta-badge-btn"),writeBtn:!!document.querySelector(".write-post-btn")}');
-    assert(r.reacts >= 5 && r.instaBtn && r.writeBtn, JSON.stringify(r));
-    return `리액션 ${r.reacts}개, 인스타/사연 버튼 정상`;
+    js(`const c=document.querySelector('.card-community'); c.click(); c.querySelector('[aria-label="이모지 반응 추가"]').click(); return 1`); await wait(200);
+    const r = js(`const c=document.querySelector('.card-community'); return {picker:!!c.querySelector('[aria-label="이모지 반응 선택"]'), detail:!!document.querySelector('.detail-dialog'), like:!!c.querySelector('.like-button')}`);
+    assert(r.picker && r.like && !r.detail, JSON.stringify(r));
+    js(`const c=document.querySelector('.card-community'); c.querySelector('[aria-label="아 이거!"]').click(); c.querySelector('.comment-toggle-btn').click(); return 1`); await wait(200);
+    const selected = js(`const c=document.querySelector('.card-community'); c.querySelector('.comments-section').click(); return {comments:!!c.querySelector('.comments-section'), detail:!!document.querySelector('.detail-dialog')}`);
+    assert(selected.comments && !selected.detail, JSON.stringify(selected));
   });
 
   await test(P + "가로 넘침 없음", () => {

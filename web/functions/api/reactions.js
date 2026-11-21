@@ -1,6 +1,6 @@
 // 추억 공감 반응 API (Cloudflare Pages Functions + KV)
 // types: 'ah' (아 이거!), 'kkk' (ㅋㅋㅋ), 'weep' (울컥), 'b486' (486 사랑해), 'b8282' (8282 빨리빨리)
-const VALID_TYPES = new Set(["ah", "kkk", "weep", "b486", "b8282"]);
+const VALID_TYPES = new Set(["like", "ah", "kkk", "weep", "b486", "b8282"]);
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {

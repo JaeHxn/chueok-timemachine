@@ -286,6 +286,16 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   align-items: center;
   gap: 6px;
 }
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.reaction-picker-wrap{position:relative}
+.reaction-picker-toggle{min-width:44px;min-height:44px;border:1px solid var(--hair);border-radius:999px;background:var(--control);color:var(--ink-2);font:inherit;font-size:1.15rem;cursor:pointer}
+.reaction-picker-toggle:hover,.reaction-picker-toggle[aria-expanded="true"]{background:var(--control-hover);color:var(--ink)}
+.reaction-picker{position:absolute;z-index:5;bottom:calc(100% + 8px);left:0;display:flex;gap:2px;padding:6px;border:1px solid var(--hair);border-radius:16px;background:var(--space-2);box-shadow:0 8px 24px rgba(0,0,0,.16)}
+.reaction-picker button{width:44px;height:44px;border:0;border-radius:10px;background:transparent;font-size:1.4rem;cursor:pointer}
+.reaction-picker button:hover,.reaction-picker button.selected{background:var(--control-hover)}
+.reaction-picker button:focus-visible,.reaction-picker-toggle:focus-visible{outline:2px solid var(--accent-text);outline-offset:2px}
+.like-button{min-height:44px}
+.like-button > span:first-child{font-size:1.25rem;color:#df4161}
 .react-chip {
   display: inline-flex;
   align-items: center;
@@ -390,7 +400,7 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   align-self: flex-end;
   padding: 8px 14px;
   font-size: 0.8125rem;
-  min-height: 38px;
+  min-height: 44px;
   white-space: nowrap;
 }
 .comments-list {
