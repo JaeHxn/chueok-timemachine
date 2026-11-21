@@ -415,20 +415,19 @@ export default function App() {
 // 응원 한마디 작성 창: 누구나 쓸 수 있고, 읽기는 관리자만
 function CheerSheet({ onClose, onToast }) {
   const [message, setMessage] = useState("");
-  const [name, setName] = useState("");
   const [sending, setSending] = useState(false);
   async function submit(e) {
     e.preventDefault();
     if (!message.trim()) { onToast("응원 내용을 적어 주세요."); return; }
     setSending(true);
     try {
-      const response = await fetch("/api/cheer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ message: message.trim(), name: name.trim() }) });
-      const result = await response.json();
+      const response = await fetch("/api/cheer", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ message: message.trim() }) });
+      const result = await response.json().catch(() => ({}));
       if (!response.ok || !result.ok) throw new Error(result.error || "응원을 보내지 못했습니다. 다시 시도해 주세요.");
       onToast("응원을 보냈어요. 고맙습니다!");
       onClose();
     } catch (error) {
-      onToast(error.message || "응원을 보내지 못했습니다. 다시 시도해 주세요.");
+      onToast(error.message || "응원을 남기지 못했습니다. 다시 시도해 주세요.");
     } finally {
       setSending(false);
     }
@@ -437,10 +436,9 @@ function CheerSheet({ onClose, onToast }) {
     <div className="sheet" role="dialog" aria-modal="true" aria-label="개발자에게 응원 한마디" onClick={(e) => e.target === e.currentTarget && onClose()}>
       <form className="box cheer-form" onSubmit={submit}>
         <b>개발자에게 응원 한마디</b>
-        <p className="note">남긴 글은 개발자만 볼 수 있어요.</p>
+        <p className="note">익명으로 남긴 글은 관리자만 볼 수 있어요.</p>
         <textarea value={message} onChange={(e) => setMessage(e.target.value)} maxLength={500} rows={5} placeholder="예: 1974년 보다가 울컥했어요. 고마워요!" aria-label="응원 내용" autoFocus />
         <div className="cheer-row">
-          <input value={name} onChange={(e) => setName(e.target.value)} maxLength={20} placeholder="이름(선택)" aria-label="이름" />
           <small>{message.length}/500</small>
         </div>
         <button className="primary" type="submit" disabled={sending}>{sending ? "보내는 중…" : "보내기"}</button>
@@ -450,53 +448,64 @@ function CheerSheet({ onClose, onToast }) {
   );
 }
 
-// 관리자 전용: #/admin 에서 키를 넣어야 목록이 보인다(키는 이 탭에만 기억)
+// 관리자 전용: 비밀번호는 현재 화면에만 보관한다.
 function AdminCheers({ onToast }) {
-  const [key, setKey] = useState(() => { try { return sessionStorage.getItem("adminKey") || ""; } catch { return ""; } });
+  const [key, setKey] = useState("");
   const [rows, setRows] = useState(null);
-  function load(k = key) {
+  const [loading, setLoading] = useState(false);
+  const [hasMore, setHasMore] = useState(false);
+  const [cursor, setCursor] = useState(null);
+  async function load(more = false) {
+    setLoading(true);
     try {
-      const saved = JSON.parse(localStorage.getItem("chueok_cheers") || "[]");
-      sessionStorage.setItem("adminKey", k);
-      setRows(saved);
+      const query = more && cursor ? `?${new URLSearchParams({ beforeAt: cursor.at, beforeId: cursor.id })}` : "";
+      const response = await fetch(`/api/cheer${query}`, { headers: { "x-admin-key": key }, cache: "no-store" });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok || !Array.isArray(result.rows)) throw new Error(result.error || "응원 목록을 불러오지 못했습니다.");
+      setRows((current) => more ? [...current, ...result.rows.filter((row) => !current.some((existing) => existing.id === row.id))] : result.rows);
+      setCursor(result.rows.at(-1) || (more ? cursor : null));
+      setHasMore(result.hasMore === true);
     } catch {
-      setRows([]);
+      if (!more) setRows(null);
+      onToast("응원 목록을 불러오지 못했습니다. 비밀번호와 연결을 확인해 주세요.");
+    } finally {
+      setLoading(false);
     }
   }
-  function remove(id) {
+  async function remove(id) {
     if (!confirm("이 응원 글을 지울까요?")) return;
     try {
-      const saved = JSON.parse(localStorage.getItem("chueok_cheers") || "[]");
-      const next = saved.filter((x) => x.id !== id);
-      localStorage.setItem("chueok_cheers", JSON.stringify(next));
-      setRows(next);
+      const response = await fetch(`/api/cheer?id=${encodeURIComponent(id)}`, { method: "DELETE", headers: { "x-admin-key": key } });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) throw new Error();
+      setRows((current) => current.filter((row) => row.id !== id));
       onToast("지웠습니다.");
     } catch {
       onToast("지우지 못했습니다.");
     }
   }
-  useEffect(() => { if (key) load(key); }, []);
   return (
     <section className="admin">
       <h2 className="sec-h">응원 한마디 (관리자)</h2>
       {!rows ? (
         <form className="birth" onSubmit={(e) => { e.preventDefault(); load(); }}>
-          <input type="password" value={key} onChange={(e) => setKey(e.target.value)} placeholder="관리자 키" aria-label="관리자 키" style={{ width: 260 }} />
-          <button className="primary" type="submit">열기</button>
+          <input type="password" value={key} onChange={(e) => setKey(e.target.value)} placeholder="관리자 비밀번호" aria-label="관리자 비밀번호" autoComplete="current-password" style={{ width: 260 }} />
+          <button className="primary" type="submit" disabled={loading || !key}>{loading ? "불러오는 중…" : "열기"}</button>
         </form>
       ) : (
         <>
-          <p className="note">모두 {rows.length}개 · <button className="link" onClick={() => load()}>새로고침</button></p>
+          <p className="note">불러온 {rows.length}개 · <button className="link" onClick={() => load()}>새로고침</button></p>
           {rows.length === 0 && <div className="empty">아직 응원 글이 없습니다.</div>}
           <ul className="result-list">
             {rows.map((r) => (
               <li key={r.id} className="cheer-item">
-                <div><b>{r.name || "익명"}</b> <span className="r-cat">{new Date(r.at).toLocaleString("ko-KR")}</span></div>
+                <div><b>익명</b> <span className="r-cat">{new Date(r.at).toLocaleString("ko-KR")}</span></div>
                 <p>{r.message}</p>
                 <button className="link" onClick={() => remove(r.id)}>삭제</button>
               </li>
             ))}
           </ul>
+          {hasMore && <button className="ghost" type="button" disabled={loading} onClick={() => load(true)}>{loading ? "불러오는 중…" : "더 보기"}</button>}
         </>
       )}
     </section>
