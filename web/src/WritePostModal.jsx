@@ -54,6 +54,13 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
       return;
     }
 
+    // D1 데이터베이스로 백그라운드 전송
+    fetch("/api/posts", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(payload),
+    }).catch(() => {});
+
     onPostCreated?.(payload);
     onToast("소중한 추억 사연을 남겨주셔서 고맙습니다!");
     setSubmitting(false);

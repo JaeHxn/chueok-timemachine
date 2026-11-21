@@ -165,7 +165,7 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
   ab("screenshot", path.join(here, `shot-${vp.w}.png`));
 }
 
-ab("close");
+try { ab("close"); } catch {}
 const pass = results.filter((r) => r.ok).length;
 console.log(`\n결과: ${pass}/${results.length} 통과\n`);
 for (const r of results) console.log(`${r.ok ? "PASS" : "FAIL"} | ${r.name}${r.note ? " | " + r.note : ""}`);

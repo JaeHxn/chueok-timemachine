@@ -53,6 +53,7 @@ export default function App() {
   const [adminView, setAdminView] = useState(location.hash.startsWith("#/admin"));
   const [instaModalItem, setInstaModalItem] = useState(null);
   const [writePostOpen, setWritePostOpen] = useState(false);
+  const [photoOnly, setPhotoOnly] = useState(false);
   const [customPosts, setCustomPosts] = useState([]);
   const [detail, setDetail] = useState(null);
   const detailRef = useRef(null);
@@ -60,14 +61,40 @@ export default function App() {
   const monthBarRef = useRef(null);
   useEffect(() => { if (detail) detailRef.current?.showModal(); }, [detail]);
 
-  // 연도별 사용자 사연 불러오기 (클라이언트 로컬 스토리지)
+  // 연도별 D1 데이터 (사연, 댓글, 반응) 온디맨드 1회 묶음 조회
+  const [yearDataCache, setYearDataCache] = useState({});
+
   useEffect(() => {
     if (!year) { setCustomPosts([]); return; }
+
+    // 1. 로컬 저장소 사연 우선 로드
+    let localPosts = [];
     try {
       const saved = JSON.parse(localStorage.getItem("chueok_user_posts") || "[]");
-      setCustomPosts(saved.filter((p) => Number(p.year) === year));
-    } catch {
-      setCustomPosts([]);
+      localPosts = saved.filter((p) => Number(p.year) === year);
+    } catch {}
+
+    // 2. 해당 연도 데이터 D1 서버에서 '딱 1번' 묶음 호출
+    if (!yearDataCache[year]) {
+      fetch(`/api/year-data?year=${year}`)
+        .then((r) => r.json())
+        .then((d) => {
+          if (d?.ok) {
+            setYearDataCache((prev) => ({ ...prev, [year]: d }));
+            const serverPosts = d.posts || [];
+            const map = new Map();
+            [...localPosts, ...serverPosts].forEach((p) => map.set(p.id, p));
+            setCustomPosts(Array.from(map.values()));
+          } else {
+            setCustomPosts(localPosts);
+          }
+        })
+        .catch(() => setCustomPosts(localPosts));
+    } else {
+      const serverPosts = yearDataCache[year]?.posts || [];
+      const map = new Map();
+      [...localPosts, ...serverPosts].forEach((p) => map.set(p.id, p));
+      setCustomPosts(Array.from(map.values()));
     }
   }, [year]);
 
@@ -274,7 +301,7 @@ export default function App() {
                 월 미확인 {yearItems.filter((i) => !i.month).length + customPosts.filter((p) => !p.month).length}개
               </a>
               <p className="note center">
-                {month ? `${month === "unknown" ? "월 미확인" : `${month}월`} 추억 ${shown.length + shownPosts.length}개` : `${year}년 추억 ${yearItems.length + customPosts.length}개`} · 달을 누르면 그달만 볼 수 있어요
+                {photoOnly ? `사진 있는 추억 ${shown.filter((it) => photoOf(it)).length}개` : month ? `${month === "unknown" ? "월 미확인" : `${month}월`} 추억 ${shown.length + shownPosts.length}개` : `${year}년 추억 ${yearItems.length + customPosts.length}개`} · 달을 누르면 그달만 볼 수 있어요
               </p>
 
               <div className="cats" role="tablist" aria-label="분류">
@@ -291,9 +318,12 @@ export default function App() {
                 })}
               </div>
 
-              <div className="grid" key={`${year}-${month}-${cat}`}>
+              <button type="button" className="photo-filter" aria-pressed={photoOnly} onClick={() => setPhotoOnly((value) => !value)}>
+                사진 있는 추억만 보기
+              </button>
+              <div className="grid" key={`${year}-${month}-${cat}-${photoOnly}`}>
                 {/* 이용자가 직접 남긴 추억 사연 카드 */}
-                {shownPosts.map((p) => (
+                {!photoOnly && shownPosts.map((p) => (
                     <article className="card user-post-card" key={p.id} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null}); }}>
                       <div className="meta">
                         <span className="tag" style={{ background: "rgba(255, 215, 0, 0.2)", color: "#ffd700", fontWeight: 700 }}>
@@ -303,7 +333,7 @@ export default function App() {
                         <span className="tag">{p.category}</span>
                       </div>
                       <h3>{p.title}</h3>
-                      <p style={{ whiteSpace: "pre-wrap" }}>{p.content}</p>
+                      <p className="card-excerpt" style={{ whiteSpace: "pre-wrap" }}>{p.content}</p>
                       <div className="src" style={{ marginTop: "6px" }}>
                         글쓴이: <b>{p.author || "익명의 시간여행자"}</b> · {new Date(p.at).toLocaleDateString("ko-KR")}
                       </div>
@@ -317,29 +347,35 @@ export default function App() {
                         </button>
                         <ShareButtons share={{ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) }} onInstagram={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })} onToast={setToast} />
                       </div>
-                      <CardCommunity item={{ year: p.year, title: p.title }} onToast={setToast} />
+                      <CardCommunity
+                        item={{ year: p.year, title: p.title }}
+                        initialReactions={yearDataCache[p.year]?.reactions?.[`${p.year}_${p.title}`]}
+                        initialComments={yearDataCache[p.year]?.comments?.[`${p.year}_${p.title}`]}
+                        onToast={setToast}
+                      />
                     </article>
                   ))}
 
-                {shown.length === 0 && shownPosts.length === 0 && <div className="empty">이 분류에는 자료가 없습니다.</div>}
-                {shown.map((it) => {
+                {(photoOnly ? !shown.some((it) => photoOf(it)) : shown.length === 0 && shownPosts.length === 0) && <div className="empty">{photoOnly ? "이 조건에 맞는 사진이 아직 없어요." : "이 분류에는 자료가 없습니다."}</div>}
+                {shown.filter((it) => !photoOnly || photoOf(it)).map((it) => {
                   const ok = it.sources.length > 0 && it.confidence !== "low";
                   const ph = photoOf(it);
                   return (
-                    <article className="card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: ph}); }}>
+                    <article className={`card ${ph ? "has-photo" : "no-photo"}`} key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: ph}); }}>
                       {ph && (
                         <figure className="item-photo">
                           <img src={ph.thumb} alt={ph.title} loading="lazy" />
                           <figcaption>사진: {ph.artist} · {ph.license} · <a href={ph.page} target="_blank" rel="noopener">원본</a></figcaption>
                         </figure>
                       )}
+                      {!ph && <div className="memory-placeholder" aria-label="사진 자료 없음"><span className="memory-placeholder-year">{it.year}</span><span className="memory-placeholder-label">사진 자료 없음 · {it.cat}</span></div>}
                       <div className="meta">
                         <span className="tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
                         <span className="tag">{it.cat}</span>
                         {!ok && <span className="tag warn">출처 확인 중</span>}
                       </div>
                       <h3>{it.title}</h3>
-                      <p>{it.summary}</p>
+                      <p className="card-excerpt">{it.summary}</p>
                       {it.sources.length > 0 && (
                         <div className="src">
                           출처 {it.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}
@@ -352,7 +388,12 @@ export default function App() {
                         </button>
                         <ShareButtons share={{ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) }} onInstagram={() => setInstaModalItem({ item: it, photo: ph })} onToast={setToast} />
                       </div>
-                      <CardCommunity item={it} onToast={setToast} />
+                      <CardCommunity
+                        item={it}
+                        initialReactions={yearDataCache[it.year]?.reactions?.[`${it.year}_${it.title}`]}
+                        initialComments={yearDataCache[it.year]?.comments?.[`${it.year}_${it.title}`]}
+                        onToast={setToast}
+                      />
                     </article>
                   );
                 })}

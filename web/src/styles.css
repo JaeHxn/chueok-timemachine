@@ -1,13 +1,13 @@
 /* 추억 타임머신 — Apple 디자인 원칙 기반
    즉시 반응(누르는 순간 피드백) · 반투명 상단 레이어 · 크기별 자간 · 모션 줄이기 대응 */
 :root{
-  --space:#f6f5f2; --space-2:#fff;
-  --ink:#22232a; --ink-2:#50525b; --ink-3:#626570;
+  --space:#f6f1e9; --space-2:#fffdf9;
+  --ink:#302823; --ink-2:#5d5149; --ink-3:#71645a;
   --glass:rgba(255,255,255,.78); --hair:rgba(29,29,31,.08);
   --control:rgba(29,29,31,.045); --control-hover:rgba(29,29,31,.075);
   --accent:#0071e3; --accent-text:#0056b3; --accent-soft:rgba(0,113,227,.12); --on-accent:#fff;
   --accent-solid:#e3f0ff;
-  --glow:#eef1f5; --solid-glass:#fff; --photo-bg:#e8e8ed;
+  --glow:#f3dfc6; --solid-glass:#fffdf9; --photo-bg:#e9dfd0;
   --sheet-glass:rgba(255,255,255,.94); --modal:rgba(20,25,35,.32); --toast-glass:rgba(255,255,255,.92);
   --card-shadow:0 8px 28px rgba(35,37,45,.055);
   --tag-ok:#18753c; --tag-ok-bg:rgba(24,117,60,.1); --tag-warn:#8a5700; --tag-warn-bg:rgba(138,87,0,.1);
@@ -150,11 +150,15 @@ a:hover{text-decoration:underline}
   transition:transform 100ms ease-out,background 150ms,color 150ms}
 .cats button:hover{background:var(--control-hover)}
 .cats button.on{background:var(--accent);color:var(--on-accent);font-weight:600}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));align-items:start;gap:18px}
+.photo-filter{min-height:44px;border:0;border-radius:999px;padding:8px 16px;background:#ead8bf;color:#55402d;font-size:.8125rem;font-weight:600}
+.photo-filter[aria-pressed="true"]{background:#76533a;color:#fff}
+@media (prefers-color-scheme:dark){.photo-filter{background:#504133;color:#f4e5d3}.photo-filter[aria-pressed="true"]{background:#c89b70;color:#24180f}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));align-items:start;gap:24px}
 .card{background:var(--space-2);border-radius:var(--r-l);padding:22px;display:flex;flex-direction:column;gap:10px;
   box-shadow:var(--card-shadow),0 0 0 1px var(--hair)}
-.card h3{margin:0;font-size:1.25rem;line-height:1.35;letter-spacing:-.025em;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
-.card p{margin:0;font-size:1rem;line-height:1.75;color:var(--ink-2);word-break:keep-all;overflow-wrap:anywhere}
+.card h3{margin:2px 0 0;font-size:1.3rem;line-height:1.4;letter-spacing:-.025em;font-weight:700;word-break:keep-all;overflow-wrap:anywhere}
+.card p{margin:0;font-size:.96rem;line-height:1.75;color:var(--ink-2);word-break:keep-all;overflow-wrap:anywhere}
+.card .card-excerpt{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .meta{display:flex;gap:6px;flex-wrap:wrap}
 .tag{font-size:.75rem;color:var(--ink-2);background:var(--control);border-radius:6px;padding:3px 8px}
 .tag.ok{color:var(--tag-ok);background:var(--tag-ok-bg)}
@@ -170,6 +174,10 @@ a:hover{text-decoration:underline}
 .item-photo img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
 .item-photo figcaption{font-size:.8125rem;color:var(--ink-2);padding:10px 22px 0;line-height:1.5}
 .item-photo.none{display:none}
+.memory-placeholder{margin:-22px -22px 4px;min-height:150px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;gap:4px;border-radius:var(--r-l) var(--r-l) 0 0;background:linear-gradient(135deg,#eadbc8,#f5ede1);color:#695341}
+.memory-placeholder-year{font-family:Georgia,serif;font-size:clamp(2.4rem,5vw,3.5rem);font-weight:700;line-height:1;letter-spacing:-.04em;opacity:.8}
+.memory-placeholder-label{font-size:.8rem;font-weight:600;letter-spacing:.02em}
+@media (prefers-color-scheme:dark){.memory-placeholder{background:linear-gradient(135deg,#493d32,#2e2824);color:#eadac7}}
 
 /* ── 공유 시트: 아래에서 올라오고 같은 길로 내려간다 ── */
 .sheet{position:fixed;inset:0;z-index:40;display:flex;align-items:flex-end;justify-content:center;
