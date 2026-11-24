@@ -1,0 +1,33 @@
+# https://chueok-timemachine.pages.dev/robots.txt
+# 추억 타임머신 - 대한민국 연도별 추억 아카이브
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin
+Disallow: /#/admin
+
+# 주요 검색엔진 크롤러 개방
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daumoa
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Kakaotalk-scrap
+Allow: /
+
+# 사이트맵 위치
+Sitemap: https://chueok-timemachine.pages.dev/sitemap.xml
