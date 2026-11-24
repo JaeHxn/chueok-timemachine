@@ -1010,3 +1010,231 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
 @keyframes card-arrive{from{opacity:0;transform:translateY(24px) scale(.88)}to{opacity:1;transform:none}}
 @keyframes detail-expand{from{opacity:0;transform:scale(.82)}to{opacity:1;transform:none}}
 .rm .grid .card:hover,.rm .grid .card:active{transform:none}
+
+/* 👓 시니어 전용 왕 큰 글씨 효도 모드 (Hyodo Mode) */
+.hyodo-toggle-btn {
+  background: var(--control);
+  color: var(--ink-2);
+  border: 1px solid var(--hair);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 150ms ease;
+}
+.hyodo-toggle-btn:hover {
+  background: var(--control-hover);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+.hyodo-toggle-btn.active {
+  background: #ea580c;
+  color: #ffffff;
+  border-color: #ea580c;
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.25);
+}
+
+.app.hyodo {
+  font-size: 19px;
+  line-height: 1.65;
+}
+.app.hyodo .top {
+  padding: 14px 20px;
+}
+.app.hyodo .brand {
+  font-size: 1.35rem;
+}
+.app.hyodo .lead {
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+}
+.app.hyodo .note {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+.app.hyodo .birth input {
+  font-size: 1.25rem;
+  padding: 12px 18px;
+  min-height: 52px;
+}
+.app.hyodo .birth button,
+.app.hyodo .primary,
+.app.hyodo .ghost,
+.app.hyodo .write-post-btn,
+.app.hyodo .hyodo-toggle-btn {
+  min-height: 52px;
+  font-size: 1.05rem;
+  padding: 10px 20px;
+}
+.app.hyodo .chip {
+  font-size: 1.15rem;
+  min-height: 52px;
+  padding: 10px 20px;
+}
+.app.hyodo .yb {
+  font-size: 1.1rem;
+  min-width: 60px;
+  min-height: 56px;
+}
+.app.hyodo .yb-n {
+  font-size: 1.15rem;
+}
+.app.hyodo .polaroid-title,
+.app.hyodo .card h3 {
+  font-size: 1.45rem;
+  line-height: 1.35;
+  font-weight: 800;
+}
+.app.hyodo .card-excerpt {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  -webkit-line-clamp: 3;
+}
+.app.hyodo .tag {
+  font-size: 0.95rem;
+  padding: 4px 10px;
+}
+.app.hyodo .detail-open,
+.app.hyodo .share-btn {
+  min-height: 50px;
+  font-size: 1.05rem;
+}
+.app.hyodo .detail-dialog h2 {
+  font-size: 2rem;
+}
+.app.hyodo .detail-summary {
+  font-size: 1.3rem;
+  line-height: 1.7;
+}
+
+/* 홈 화면 레트로 쇼케이스 (✨ Vintage Showcase) */
+.home-showcase {
+  margin-top: 48px;
+  width: 100%;
+}
+.home-showcase-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.home-showcase-title {
+  font-size: clamp(1.4rem, 3.5vw, 1.85rem);
+  font-weight: 800;
+  color: var(--ink);
+  margin: 8px 0 4px;
+}
+.home-showcase-sub {
+  font-size: 0.95rem;
+  color: var(--ink-3);
+  margin: 0;
+}
+.home-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 22px;
+  margin-top: 18px;
+}
+.showcase-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background: var(--space-1);
+  border: 1px solid var(--hair);
+  border-radius: var(--r-m);
+  padding: 14px 14px 18px;
+  position: relative;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.22s ease;
+}
+.showcase-card:hover {
+  transform: translateY(-5px) rotate(-0.5deg);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+.showcase-card .polaroid-title {
+  margin: 8px 0 4px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.showcase-card .polaroid-caption {
+  font-size: 0.875rem;
+  color: var(--ink-2);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 상세 다이얼로그 레트로 폴리싱 */
+.detail-dialog {
+  position: relative;
+}
+.detail-dialog .polaroid-tape {
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+}
+.detail-header-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+.detail-sources {
+  margin-top: 16px;
+  padding: 12px 14px;
+  background: var(--space-1);
+  border-radius: var(--r-s);
+  border: 1px solid var(--hair);
+}
+.src-label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--ink-2);
+  margin-bottom: 6px;
+}
+.src-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.src-pill {
+  font-size: 0.8125rem;
+  color: var(--accent-text);
+  background: var(--control);
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid var(--hair);
+  transition: background 150ms ease;
+}
+.src-pill:hover {
+  background: var(--control-hover);
+  text-decoration: underline;
+}
+.detail-modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+.modal-share-btn {
+  flex: 1.5;
+  min-height: 48px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+.modal-insta-btn {
+  flex: 1;
+  min-height: 48px;
+  font-size: 0.875rem;
+}
+@media (max-width: 600px) {
+  .detail-modal-actions {
+    flex-direction: column;
+  }
+}
+

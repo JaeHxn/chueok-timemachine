@@ -34,6 +34,22 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     return `바로가기 ${r.chips}개`;
   });
 
+  await test(P + "첫 화면: 레트로 빈티지 쇼케이스 8종 표시", () => {
+    const n = js(`return document.querySelectorAll('.showcase-card').length`);
+    assert(n >= 6, `쇼케이스 카드 부족: ${n}개`);
+    return `쇼케이스 카드 ${n}개`;
+  });
+
+  await test(P + "큰 글씨 효도 모드 토글 확인", async () => {
+    js(`document.querySelector('.hyodo-toggle-btn').click();return 1`); await wait(200);
+    const on = js(`return document.querySelector('.app').classList.contains('hyodo')`);
+    assert(on, "효도 모드 클래스 미적용");
+    js(`document.querySelector('.hyodo-toggle-btn').click();return 1`); await wait(200);
+    const off = js(`return !document.querySelector('.app').classList.contains('hyodo')`);
+    assert(off, "효도 모드 끄기 실패");
+    return "토글 정상 동작";
+  });
+
   await test(P + "바로가기 클릭 → 연도 화면·카드 즉시 표시", async () => {
     js(`document.querySelector('.chip[href="#/1974"]').click();return 1`); await wait(300);
     const r = js(`return {hash:location.hash,h2:document.querySelector('.year-head h2')?.textContent,cards:document.querySelectorAll('.card').length}`);
@@ -96,6 +112,14 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     ab("open", BASE + "#/1953/7"); await wait(500);
     const r = js(`return {h2:document.querySelector('.year-head h2')?.textContent,cur:document.querySelector('.moon.on')?.textContent}`);
     assert(r.h2 === "1953" && r.cur?.startsWith("7월"), JSON.stringify(r));
+  });
+
+  await test(P + "카드 딥링크 직접 접속 → 카드 팝업 자동 오픈", async () => {
+    ab("open", BASE + "#/1974/" + encodeURIComponent("현대 포니, 토리노 모터쇼 공개")); await wait(600);
+    const r = js(`return {open:document.querySelector('.detail-dialog')?.open,title:document.querySelector('#detail-title')?.textContent}`);
+    assert(r.open && r.title?.includes("현대 포니"), JSON.stringify(r));
+    ab("press", "Escape"); await wait(200);
+    return r.title;
   });
 
   await test(P + "자료 상태 점검: 77개 전 연도 자료 100% 확보", async () => {

@@ -25,28 +25,70 @@ const itemsOf = (y) => BY_YEAR[y] ?? [];
 const YEARS_WITH_DATA = YEARS.filter((y) => itemsOf(y).length);
 const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
 
-// 주소(#/1974/3) ↔ 화면 상태. 뒤로가기·공유 링크가 그대로 동작한다.
+// 주소(#/1974/3, #/1974/3/포니 1, #/1974/포니 1) ↔ 화면 상태. 뒤로가기·공유 링크가 그대로 동작한다.
 function parseHash() {
-  const [, y, m] = location.hash.match(/^#\/(\d{4})(?:\/(unknown|\d{1,2}))?/) ?? [];
-  const year = Number(y);
-  if (!YEARS.includes(year)) return { year: null, month: null };
-  const month = Number(m);
-  return { year, month: m === "unknown" ? "unknown" : month >= 1 && month <= 12 ? month : null };
+  const raw = location.hash.replace(/^#\/?/, "");
+  if (!raw) return { year: null, month: null, itemTitle: null };
+  const parts = raw.split("/").map((p) => {
+    try { return decodeURIComponent(p.trim()); } catch { return p.trim(); }
+  });
+  const y = Number(parts[0]);
+  if (!YEARS.includes(y)) return { year: null, month: null, itemTitle: null };
+
+  let month = null;
+  let itemTitle = null;
+
+  if (parts.length === 2) {
+    if (parts[1] === "unknown") {
+      month = "unknown";
+    } else if (/^\d{1,2}$/.test(parts[1]) && Number(parts[1]) >= 1 && Number(parts[1]) <= 12) {
+      month = Number(parts[1]);
+    } else {
+      itemTitle = parts[1];
+    }
+  } else if (parts.length >= 3) {
+    if (parts[1] === "unknown") {
+      month = "unknown";
+    } else if (/^\d{1,2}$/.test(parts[1]) && Number(parts[1]) >= 1 && Number(parts[1]) <= 12) {
+      month = Number(parts[1]);
+    }
+    itemTitle = parts.slice(2).join("/");
+  }
+
+  return { year: y, month, itemTitle };
 }
 const hashOf = (y, m) => (y ? `#/${y}${m ? "/" + m : ""}` : "#/");
 const nearestWithData = (y) =>
   YEARS_WITH_DATA.reduce((best, d) => (Math.abs(d - y) < Math.abs(best - y) ? d : best), YEARS_WITH_DATA[0]);
+
+const SHOWCASE_TITLES = [
+  "현대 포니, 토리노 모터쇼 공개",
+  "새우깡",
+  "포카칩",
+  "무선호출기 (삐삐)",
+  "다마고치",
+  "싸이월드 미니홈피",
+  "아이폰 3GS 국내 출시",
+  "허니버터칩",
+];
+const SHOWCASE_ITEMS = SHOWCASE_TITLES.map((t) => items.find((i) => i.title === t)).filter(Boolean);
 
 const readReduce = () => {
   try { const saved = localStorage.getItem("reduceMotion"); return saved === null ? matchMedia("(prefers-reduced-motion: reduce)").matches : saved === "1"; }
   catch { return false; }
 };
 
+const readHyodo = () => {
+  try { return localStorage.getItem("hyodo") === "1"; }
+  catch { return false; }
+};
+
 export default function App() {
-  const [{ year, month }, setRoute] = useState(parseHash);
+  const [{ year, month, itemTitle }, setRoute] = useState(parseHash);
   const [cat, setCat] = useState("전체");
   const [query, setQuery] = useState("");
   const [reduceMotion, setReduceMotion] = useState(readReduce);
+  const [hyodo, setHyodo] = useState(readHyodo);
   const [share, setShare] = useState(null);
   const [toast, setToast] = useState("");
   const [cheerOpen, setCheerOpen] = useState(false);
@@ -59,7 +101,60 @@ export default function App() {
   const detailRef = useRef(null);
   const barRef = useRef(null);
   const monthBarRef = useRef(null);
-  useEffect(() => { if (detail) detailRef.current?.showModal(); }, [detail]);
+  useEffect(() => {
+    if (detail) {
+      if (!detailRef.current?.open) detailRef.current?.showModal();
+    }
+  }, [detail]);
+
+  useEffect(() => {
+    try { localStorage.setItem("hyodo", hyodo ? "1" : "0"); } catch {}
+  }, [hyodo]);
+
+  // 딥링크 아이템 자동 열기
+  useEffect(() => {
+    if (year && itemTitle) {
+      const list = itemsOf(year);
+      const target = list.find((it) => it.title === itemTitle) ||
+        items.find((it) => it.year === year && it.title.includes(itemTitle));
+      if (target) {
+        setDetail({ item: target, photo: photoOf(target) });
+      }
+    }
+  }, [year, itemTitle]);
+
+  const openDetail = (it, ph) => {
+    setDetail({ item: it, photo: ph });
+    if (it.year) {
+      const m = it.month ? `/${it.month}` : "";
+      const targetHash = `#/${it.year}${m}/${encodeURIComponent(it.title)}`;
+      if (location.hash !== targetHash) {
+        history.pushState(null, "", targetHash);
+      }
+    }
+  };
+
+  const closeDetail = () => {
+    setDetail(null);
+    if (detailRef.current?.open) detailRef.current.close();
+    if (year) {
+      const base = hashOf(year, month);
+      if (location.hash !== base) {
+        history.replaceState(null, "", base);
+      }
+    }
+  };
+
+  useEffect(() => {
+    const onPop = () => {
+      const cur = parseHash();
+      if (!cur.itemTitle && detail) {
+        setDetail(null);
+      }
+    };
+    addEventListener("popstate", onPop);
+    return () => removeEventListener("popstate", onPop);
+  }, [detail]);
 
   // 연도별 D1 데이터 (사연, 댓글, 반응) 온디맨드 1회 묶음 조회
   const [yearDataCache, setYearDataCache] = useState({});
@@ -178,7 +273,10 @@ export default function App() {
     return items.filter((i) => (i.title + " " + i.summary).toLowerCase().includes(q)).slice(0, 30);
   }, [query]);
 
-  const shareUrl = (it) => `${location.origin}${location.pathname}${hashOf(it.year, it.month)}`;
+  const shareUrl = (it) => {
+    const m = it.month ? `/${it.month}` : "";
+    return `${location.origin}${location.pathname}#/${it.year}${m}/${encodeURIComponent(it.title)}`;
+  };
   async function copy(text, msg) {
     try { await navigator.clipboard.writeText(text); setToast(msg); }
     catch { setToast("복사하지 못했습니다. 주소창의 링크를 직접 복사해 주세요."); }
@@ -196,10 +294,21 @@ export default function App() {
   }
 
   return (
-    <div className={`app ${reduceMotion ? "rm" : ""}`}>
+    <div className={`app ${reduceMotion ? "rm" : ""} ${hyodo ? "hyodo" : ""}`}>
       <header className="top">
         <a className="brand" href="#/">🪐 추억 타임머신</a>
         <div className="top-r">
+          <button
+            className={`hyodo-toggle-btn ${hyodo ? "active" : ""}`}
+            onClick={() => {
+              setHyodo((v) => !v);
+              setToast(!hyodo ? "👓 큰 글씨 효도 모드가 켜졌습니다!" : "보통 글씨 모드로 전환되었습니다.");
+            }}
+            aria-pressed={hyodo}
+            title="시니어 및 큰 글씨 모드"
+          >
+            👓 {hyodo ? "보통 글씨" : "큰 글씨 모드"}
+          </button>
           <button className="write-post-btn" onClick={() => setWritePostOpen(true)}>✏️ 내 추억 사연 남기기</button>
           <button className="ghost cheer-btn" onClick={() => setCheerOpen(true)}>💌 응원 한마디</button>
           <input
@@ -276,6 +385,46 @@ export default function App() {
             ))}
           </div>
           <p className="note small">1950년부터 2026년까지 77개년 5,600여 개 추억이 수록되어 있습니다.</p>
+
+          {/* ✨ 그 시절 우리가 사랑했던 순간들 (Vintage Polaroid Showcase) */}
+          <div className="home-showcase" aria-label="그 시절 우리가 사랑했던 순간들">
+            <div className="home-showcase-header">
+              <span className="section-badge photo-badge">✨ VINTAGE SHOWCASE</span>
+              <h3 className="home-showcase-title">그 시절 우리가 사랑했던 순간들</h3>
+              <p className="home-showcase-sub">사진을 누르면 그 시절 타임머신으로 즉시 출발합니다.</p>
+            </div>
+            <div className="home-showcase-grid">
+              {SHOWCASE_ITEMS.map((it) => {
+                const ph = photoOf(it);
+                return (
+                  <a
+                    key={it.year + it.title}
+                    href={`${hashOf(it.year, it.month)}/${encodeURIComponent(it.title)}`}
+                    className="showcase-card polaroid-card"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      go(it.year, it.month);
+                      openDetail(it, ph);
+                    }}
+                  >
+                    <div className="polaroid-tape" aria-hidden="true" />
+                    {ph && (
+                      <figure className="item-photo polaroid-frame">
+                        <img src={ph.thumb} alt={ph.title || it.title} loading="lazy" />
+                      </figure>
+                    )}
+                    <div className="meta">
+                      <span className="tag date-tag">{it.year}년</span>
+                      <span className="tag cat-tag">{it.cat}</span>
+                      <span className="tag photo-tag">📸 대표 사진</span>
+                    </div>
+                    <h4 className="polaroid-title">{it.title}</h4>
+                    <p className="card-excerpt polaroid-caption">{it.summary}</p>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
         </section>
       )}
 
@@ -358,7 +507,7 @@ export default function App() {
                       const ok = it.sources.length > 0 && it.confidence !== "low";
                       const ph = photoOf(it);
                       return (
-                        <article className="card has-photo polaroid-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: ph}); }}>
+                        <article className="card has-photo polaroid-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) openDetail(it, ph); }}>
                           <div className="polaroid-tape" aria-hidden="true" />
                           <figure className="item-photo polaroid-frame">
                             <img src={ph.thumb} alt={ph.title} loading="lazy" />
@@ -378,7 +527,7 @@ export default function App() {
                             </div>
                           )}
                           <div className="card-actions">
-                            <button className="detail-open" onClick={() => setDetail({item: it, photo: ph})}>자세히 보기</button>
+                            <button className="detail-open" onClick={() => openDetail(it, ph)}>자세히 보기</button>
                             <button className="share-btn share-icon" aria-label="공유하기" title="공유하기" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
                               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
                             </button>
@@ -412,7 +561,7 @@ export default function App() {
                     {yearItems.filter((it) => photoOf(it)).slice(0, 3).map((it) => {
                       const ph = photoOf(it);
                       return (
-                        <div key={`rec-${it.title}`} className="recommend-card" onClick={() => setDetail({ item: it, photo: ph })}>
+                        <div key={`rec-${it.title}`} className="recommend-card" onClick={() => openDetail(it, ph)}>
                           <img src={ph.thumb} alt={ph.title} loading="lazy" />
                           <div className="recommend-card-info">
                             <span className="tag">{it.month ? `${it.month}월` : `${it.year}년`}</span>
@@ -439,7 +588,7 @@ export default function App() {
                   </div>
                   <div className="grid stories-grid" key={`stories-${year}-${month}-${cat}`}>
                     {shownPosts.map((p) => (
-                      <article className="card user-post-card diary-card" key={p.id} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null}); }}>
+                      <article className="card user-post-card diary-card" key={p.id} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) openDetail({ ...p, cat: p.category, summary: p.content, sources: [] }, null); }}>
                         <div className="diary-pin" aria-hidden="true">📌</div>
                         <div className="meta">
                           <span className="tag date-tag">{p.month ? `${p.year}년 ${p.month}월` : `${p.year}년`}</span>
@@ -452,7 +601,7 @@ export default function App() {
                           글쓴이: <b>{p.author || "익명의 시간여행자"}</b> · {new Date(p.at).toLocaleDateString("ko-KR")}
                         </div>
                         <div className="card-actions">
-                          <button className="detail-open" onClick={() => setDetail({item: { ...p, cat: p.category, summary: p.content, sources: [] }, photo: null})}>자세히 보기</button>
+                          <button className="detail-open" onClick={() => openDetail({ ...p, cat: p.category, summary: p.content, sources: [] }, null)}>자세히 보기</button>
                           <button
                             className="share-btn share-icon" aria-label="공유하기" title="공유하기"
                             onClick={() => setShare({ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) })}
@@ -488,7 +637,7 @@ export default function App() {
                     {textItems.map((it) => {
                       const ok = it.sources.length > 0 && it.confidence !== "low";
                       return (
-                        <article className="card no-photo archive-ticket-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) setDetail({item: it, photo: null}); }}>
+                        <article className="card no-photo archive-ticket-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) openDetail(it, null); }}>
                           <div className="meta">
                             <span className="tag date-tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
                             <span className="tag cat-tag">{it.cat}</span>
@@ -502,7 +651,7 @@ export default function App() {
                             </div>
                           )}
                           <div className="card-actions">
-                            <button className="detail-open" onClick={() => setDetail({item: it, photo: null})}>자세히 보기</button>
+                            <button className="detail-open" onClick={() => openDetail(it, null)}>자세히 보기</button>
                             <button className="share-btn share-icon" aria-label="공유하기" title="공유하기" onClick={() => setShare({ title: `${it.title} (${it.year}) · 추억 타임머신`, text: it.summary, url: shareUrl(it) })}>
                               <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
                             </button>
@@ -545,7 +694,7 @@ export default function App() {
                           key={`ticker-${it.title}`}
                           type="button"
                           className="ticker-btn"
-                          onClick={() => setDetail({ item: it, photo: photoOf(it) })}
+                          onClick={() => openDetail(it, photoOf(it))}
                         >
                           <span className="ticker-badge">{it.cat}</span>
                           <span>{it.title}</span>
@@ -566,7 +715,7 @@ export default function App() {
                         <div
                           key={`fb-${it.title}`}
                           className="fallback-card"
-                          onClick={() => setDetail({ item: it, photo: ph })}
+                          onClick={() => openDetail(it, ph)}
                         >
                           <div className="meta">
                             <span className="tag">{it.cat}</span>
@@ -585,22 +734,71 @@ export default function App() {
         </section>
       )}
 
-      {detail && <dialog className="detail-dialog" ref={detailRef} aria-labelledby="detail-title" onClose={() => setDetail(null)}>
-        <button className="detail-close" onClick={() => detailRef.current.close()} aria-label="상세 닫기">✕</button>
-        {detail.photo && <figure className="detail-photo"><img src={detail.photo.thumb} alt={detail.photo.title} /><figcaption>사진: {detail.photo.artist} · {detail.photo.license} · <a href={detail.photo.page} target="_blank" rel="noopener">원본</a></figcaption></figure>}
-        <p className="detail-meta">{detail.item.year}년 {detail.item.month ? `${detail.item.month}월` : "· 월 미확인"} · {detail.item.cat}</p>
-        <h2 id="detail-title">{detail.item.title}</h2>
-        <p className="detail-summary">{detail.item.summary}</p>
-        {detail.item.sources?.length > 0 && <p className="src">출처 {detail.item.sources.map((s, k) => <a key={k} href={s.url} target="_blank" rel="noopener">{s.name || "링크"}</a>)}</p>}
-      </dialog>}
+      {detail && (
+        <dialog className="detail-dialog" ref={detailRef} aria-labelledby="detail-title" onClose={closeDetail}>
+          <div className="polaroid-tape" aria-hidden="true" />
+          <button className="detail-close" onClick={closeDetail} aria-label="상세 닫기">✕</button>
+          {detail.photo && (
+            <figure className="detail-photo">
+              <img src={detail.photo.thumb} alt={detail.photo.title || detail.item.title} />
+              <figcaption>사진: {detail.photo.artist} · {detail.photo.license} · <a href={detail.photo.page} target="_blank" rel="noopener">원본 사료</a></figcaption>
+            </figure>
+          )}
+          <div className="detail-header-tags">
+            <span className="tag date-tag">{detail.item.year}년 {detail.item.month ? `${detail.item.month}월` : "· 월 미확인"}</span>
+            <span className="tag cat-tag">{detail.item.cat}</span>
+            {detail.photo && <span className="tag photo-tag">📸 사진 수록</span>}
+            {detail.item.sources?.length > 0 && <span className="tag ok">공식 출처 인증</span>}
+          </div>
+          <h2 id="detail-title">{detail.item.title}</h2>
+          <p className="detail-summary">{detail.item.summary}</p>
+          {detail.item.sources?.length > 0 && (
+            <div className="detail-sources">
+              <span className="src-label">공식 사료 출처:</span>
+              <div className="src-links">
+                {detail.item.sources.map((s, k) => (
+                  <a key={k} href={s.url} target="_blank" rel="noopener" className="src-pill">
+                    🔗 {s.name || "출처 문서"}
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+          <div className="detail-modal-actions">
+            <button
+              className="primary modal-share-btn"
+              onClick={() => {
+                setShare({
+                  title: `${detail.item.title} (${detail.item.year}) · 추억 타임머신`,
+                  text: detail.item.summary,
+                  url: shareUrl(detail.item),
+                  item: detail.item,
+                  photo: detail.photo,
+                });
+              }}
+            >
+              💌 단톡방에 추억 소환하기
+            </button>
+            <button
+              className="ghost modal-insta-btn"
+              onClick={() => {
+                setInstaModalItem({ item: detail.item, photo: detail.photo });
+              }}
+            >
+              📷 인스타 카드뉴스 만들기
+            </button>
+          </div>
+        </dialog>
+      )}
       {share && (
         <div className="sheet" role="dialog" aria-modal="true" aria-label="공유" onClick={(e) => e.target === e.currentTarget && setShare(null)}
           onKeyDown={(e) => e.key === "Escape" && setShare(null)}>
           <div className="box">
             <b>{share.title}</b>
+            <p className="note" style={{ margin: "4px 0 12px", fontSize: "0.875rem" }}>야 너 이거 기억나? ㅋㅋㅋ 단톡방에 그 시절 추억을 전파해보세요!</p>
             {typeof navigator.share === "function" && <button onClick={nativeShare} autoFocus>기기 공유 (카톡·인스타 등)</button>}
             <button onClick={() => copy(share.url, "링크를 복사했어요")}>링크 복사</button>
-            <button onClick={() => copy(`${share.title}\n${share.text}\n${share.url}`, "공유 글을 복사했어요. 인스타·블로그에 붙여 넣으세요")}>공유 글 복사</button>
+            <button onClick={() => copy(`야 너 이거 기억나? ㅋㅋㅋ ${share.title}\n\n${share.text}\n\n👉 지금 바로 보기:\n${share.url}`, "공유 글을 복사했어요. 인스타·블로그에 붙여 넣으세요")}>공유 글 복사</button>
             <button onClick={() => setShare(null)}>닫기</button>
           </div>
         </div>
