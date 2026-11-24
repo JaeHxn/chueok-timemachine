@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎈 5살도 단숨에 이해하는 1,000명 손님 타임머신 탑승 후기 (ELI5)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --primary: #4f46e5;
+      --accent: #f59e0b;
+      --success: #10b981;
+      --danger: #ef4444;
+      --border: #e2e8f0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px 80px;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px 32px;
+      background: linear-gradient(135deg, #e0e7ff 0%, #fef3c7 100%);
+      border-radius: 28px;
+      margin-bottom: 32px;
+      border: 2px solid #cbd5e1;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #4f46e5;
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      margin-bottom: 16px;
+      letter-spacing: -0.2px;
+    }
+    .hero h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #0f172a;
+      line-height: 1.3;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #334155;
+      font-weight: 500;
+    }
+    .section-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 40px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #1e1b4b;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    
+    /* 3단 대왕 요약 박스 */
+    .big-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .stat-box {
+      border-radius: 20px;
+      padding: 24px 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .stat-box.green { background: linear-gradient(135deg, #10b981, #059669); }
+    .stat-box.red { background: linear-gradient(135deg, #f43f5e, #e11d48); }
+    .stat-box.purple { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+    .stat-icon { font-size: 40px; margin-bottom: 8px; }
+    .stat-number { font-size: 42px; font-weight: 900; line-height: 1; margin-bottom: 6px; }
+    .stat-label { font-size: 17px; font-weight: 700; opacity: 0.95; }
+    .stat-desc { font-size: 13px; opacity: 0.85; margin-top: 6px; }
+
+    /* 게이지 바 */
+    .bar-container {
+      margin: 16px 0;
+    }
+    .bar-header {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+    .bar-track {
+      height: 18px;
+      background: #e2e8f0;
+      border-radius: 999px;
+      overflow: hidden;
+      display: flex;
+    }
+    .bar-segment {
+      height: 100%;
+      transition: width 0.6s ease;
+    }
+
+    /* 세대별 카드 그리드 */
+    .age-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .age-card {
+      background: #f1f5f9;
+      border-radius: 16px;
+      padding: 16px 12px;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .age-card.winner {
+      background: #eff6ff;
+      border-color: #3b82f6;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+    }
+    .age-emoji { font-size: 32px; margin-bottom: 6px; }
+    .age-name { font-size: 15px; font-weight: 800; color: #1e293b; }
+    .age-score { font-size: 24px; font-weight: 900; color: #2563eb; margin: 4px 0; }
+    .age-tag { font-size: 12px; font-weight: 600; color: #64748b; }
+
+    /* 삐친 이유 3가지 */
+    .problem-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 16px;
+      border-radius: 16px;
+      background: #fff1f2;
+      border-left: 6px solid #f43f5e;
+      margin-bottom: 12px;
+    }
+    .problem-emoji { font-size: 36px; line-height: 1; flex-shrink: 0; }
+    .problem-content h4 { font-size: 17px; font-weight: 800; color: #9f1239; margin-bottom: 4px; }
+    .problem-content p { font-size: 14px; color: #475569; }
+
+    /* 해결책 카드 */
+    .solution-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 16px;
+      border-radius: 16px;
+      background: #ecfdf5;
+      border-left: 6px solid #10b981;
+      margin-bottom: 12px;
+    }
+    .solution-emoji { font-size: 36px; line-height: 1; flex-shrink: 0; }
+    .solution-content h4 { font-size: 17px; font-weight: 800; color: #065f46; margin-bottom: 4px; }
+    .solution-content p { font-size: 14px; color: #334155; }
+
+    .bottom-cta {
+      background: linear-gradient(135deg, #1e1b4b, #312e81);
+      color: white;
+      border-radius: 24px;
+      padding: 32px 24px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .bottom-cta h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .bottom-cta p { font-size: 15px; color: #c7d2fe; max-width: 600px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- 헤더 -->
+  <div class="hero">
+    <div class="hero-badge">🧸 ELI5 · 5살도 단숨에 이해하는 쉬운 보고서</div>
+    <h1>"타임머신 사이트에 놀러온<br>1,000명의 손님들은 뭐라고 했을까요?"</h1>
+    <p>어려운 통계 용어 대신, 5살 조카에게 들려주듯 쏙쏙 알기 쉽게 정리했어요!</p>
+  </div>
+
+  <!-- 3대 핵심 요약 숫자 박스 -->
+  <div class="big-stats">
+    <div class="stat-box green">
+      <div class="stat-icon">😍</div>
+      <div class="stat-number">96.2%</div>
+      <div class="stat-label">"우와! 타임머신 재밌겠다!"</div>
+      <div class="stat-desc">1,000명 중 962명이 관심 폭발!</div>
+    </div>
+    <div class="stat-box red">
+      <div class="stat-icon">😭</div>
+      <div class="stat-number">5.1%</div>
+      <div class="stat-label">"친구한테 자랑할 링크가 없어요"</div>
+      <div class="stat-desc">공유하고 싶은데 버튼이 없어서 못 보냄</div>
+    </div>
+    <div class="stat-box purple">
+      <div class="stat-icon">👑</div>
+      <div class="stat-number">20대 1등</div>
+      <div class="stat-label">20대 삼촌·이모들이 제일 열광!</div>
+      <div class="stat-desc">Y2K 레트로 감성에 59%가 무조건 탑승!</div>
+    </div>
+  </div>
+
+  <!-- 1. 사람들의 반응은? -->
+  <div class="card">
+    <h2 class="section-title">📊 1. 타임머신 타볼 사람 손 들어보세요!</h2>
+    <p style="color:#64748b; font-size:15px; margin-bottom:20px;">
+      놀이터에 모인 1,000명의 손님들에게 "우리 타임머신 사이트 구경해볼래?"라고 물어봤어요.
+    </p>
+
+    <!-- 게이지 1: 이용 의향 -->
+    <div class="bar-container">
+      <div class="bar-header">
+        <span>🚀 타임머신 타볼래요? (이용 의향)</span>
+        <span style="color:#10b981;">좋아요 32.8% + 구경해볼래 63.4%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-segment" style="width: 32.8%; background: #10b981;" title="무조건 탈래요 (32.8%)"></div>
+        <div class="bar-segment" style="width: 63.4%; background: #fbbf24;" title="일단 구경해볼래요 (63.4%)"></div>
+        <div class="bar-segment" style="width: 3.8%; background: #f43f5e;" title="안 탈래요 (3.8%)"></div>
+      </div>
+      <div style="display:flex; justify-content:space-between; font-size:12px; color:#64748b; margin-top:4px;">
+        <span>🟩 "무조건 탈래요!" (328명)</span>
+        <span>🟨 "일단 좀 둘러보고 결정할래요" (634명)</span>
+        <span>🟥 "싫어요" (단 38명)</span>
+      </div>
+    </div>
+
+    <!-- 게이지 2: 공유 의향 -->
+    <div class="bar-container" style="margin-top:28px;">
+      <div class="bar-header">
+        <span>📢 친구한테 카톡으로 보내줄래요? (공유 의향)</span>
+        <span style="color:#f43f5e;">"안 보낼래요" 50.9%</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-segment" style="width: 5.1%; background: #10b981;" title="자랑할래요 (5.1%)"></div>
+        <div class="bar-segment" style="width: 44.0%; background: #fbbf24;" title="고민 중 (44.0%)"></div>
+        <div class="bar-segment" style="width: 50.9%; background: #f43f5e;" title="안 보낼래요 (50.9%)"></div>
+      </div>
+      <p style="font-size:13px; color:#ef4444; font-weight:700; margin-top:6px;">
+        ⚠️ 빨간불 경고! 구경은 하고 싶은데, 왜 친구한테는 안 보내려고 할까요? (아래 3번 참고!)
+      </p>
+    </div>
+  </div>
+
+  <!-- 2. 누가 제일 좋아했을까? -->
+  <div class="card">
+    <h2 class="section-title">🏆 2. 세대별 인기 순위! 누가 제일 신났을까?</h2>
+    <p style="color:#64748b; font-size:15px;">
+      연령대별로 200명씩 타임머신을 태워봤더니 흥미로운 결과가 나왔어요!
+    </p>
+
+    <div class="age-grid">
+      <div class="age-card winner">
+        <div class="age-emoji">🥇 😎</div>
+        <div class="age-name">20대 청년들</div>
+        <div class="age-score">59% 탑승</div>
+        <div class="age-tag">"Y2K 레트로 꿀잼!"</div>
+      </div>
+
+      <div class="age-card">
+        <div class="age-emoji">🥈 👵👴</div>
+        <div class="age-name">50대 이상 어르신</div>
+        <div class="age-score">36% 탑승</div>
+        <div class="age-tag">"재방문 의향은 1등!"</div>
+      </div>
+
+      <div class="age-card">
+        <div class="age-emoji">🥉 🧑‍💼</div>
+        <div class="age-name">30대 삼촌·이모</div>
+        <div class="age-score">33% 탑승</div>
+        <div class="age-tag">"학창시절 추억 돋네"</div>
+      </div>
+
+      <div class="age-card">
+        <div class="age-emoji">🎒 👧👦</div>
+        <div class="age-name">10대 동생들</div>
+        <div class="age-score">30% 탑승</div>
+        <div class="age-tag">"신기하지만 금방 잊음"</div>
+      </div>
+
+      <div class="age-card">
+        <div class="age-emoji">👔 🧑‍💻</div>
+        <div class="age-name">40대 직장인</div>
+        <div class="age-score">6% 탑승</div>
+        <div class="age-tag">"너무 바빠서 패스..."</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. 손님들이 삐친 3가지 이유 -->
+  <div class="card">
+    <h2 class="section-title">🚨 3. 손님들이 실망해서 발길을 돌릴 뻔한 3가지 이유</h2>
+    <p style="color:#64748b; font-size:15px; margin-bottom:16px;">
+      손님들이 다 좋은데 "이것 때문에 아쉽다!"라고 입을 모은 진짜 이유예요.
+    </p>
+
+    <div class="problem-item">
+      <div class="problem-emoji">🔗</div>
+      <div class="problem-content">
+        <h4>1등 불만: "내가 본 이 재미있는 카드만 쏙 뽑아서 친구한테 못 보내요!"</h4>
+        <p>전체 사이트 주소 말고, 내가 찾은 '2002년 월드컵 카드'만 바로 보여주는 링크 주소가 없어서 친구한테 카톡을 못 보낸대요!</p>
+      </div>
+    </div>
+
+    <div class="problem-item">
+      <div class="problem-emoji">🖼️</div>
+      <div class="problem-content">
+        <h4>2등 불만: "그림책에 글자만 빽빽하고 사진이 너무 없어요!"</h4>
+        <p>5,700개나 되는 추억 이야기 중에 진짜 사진이 붙어있는 건 183개밖에 안 돼요. 사진이 없으니 눈이 피곤해요!</p>
+      </div>
+    </div>
+
+    <div class="problem-item">
+      <div class="problem-emoji">📅</div>
+      <div class="problem-content">
+        <h4>3등 불만: "옛날 날짜가 틀린 게 있어서 믿을 수가 없어요!"</h4>
+        <p>1998년 일인데 다른 해로 적혀 있거나 신문기사 같은 진짜 출처 도장이 없어서 진짜인지 헷갈린대요!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. 앞으로 우리가 할 일 -->
+  <div class="card">
+    <h2 class="section-title">🎯 4. 당장 이것만 고치면 대박 납니다! (처방전)</h2>
+    <p style="color:#64748b; font-size:15px; margin-bottom:16px;">
+      손님들의 불만을 해결할 3가지 마법의 버튼을 만들어줄 거예요!
+    </p>
+
+    <div class="solution-item">
+      <div class="solution-emoji">✨</div>
+      <div class="solution-content">
+        <h4>[P0] 원클릭 '카톡 공유 버튼' 달아주기!</h4>
+        <p>추억 카드마다 예쁜 고유 주소를 만들어줘서, 누구나 버튼 한 번으로 친구에게 단독 카드를 보낼 수 있게 해요.</p>
+      </div>
+    </div>
+
+    <div class="solution-item">
+      <div class="solution-emoji">📸</div>
+      <div class="solution-content">
+        <h4>[P0] 공공누리 안심 사진 1,000장 채워 넣기!</h4>
+        <p>저작권 걱정 없는 대한민국 공공 아카이브 사진들을 대량으로 붙여서 눈이 즐거운 진짜 그림책으로 만들어요.</p>
+      </div>
+    </div>
+
+    <div class="solution-item">
+      <div class="solution-emoji">👓</div>
+      <div class="solution-content">
+        <h4>[P1] 할머니·할아버지를 위한 '왕 큰 글씨 모드' 제공!</h4>
+        <p>재방문율 1등인 50대 이상 어르신들을 위해 돋보기 없이도 시원시원하게 볼 수 있는 큰 글씨 화면을 지원해요.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 결론 박스 -->
+  <div class="bottom-cta">
+    <h3>💡 5살 요약 한 줄 결론!</h3>
+    <p>"사람들은 우리 타임머신을 엄청 좋아해요! 이제 <strong>'예쁜 사진 더 넣고'</strong>, <strong>'카톡 공유 버튼'</strong>만 달아주면 손님들이 줄을 설 거예요!"</p>
+  </div>
+
+</div>
+
+</body>
+</html>
