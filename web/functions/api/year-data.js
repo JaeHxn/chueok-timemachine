@@ -28,7 +28,15 @@ export async function onRequestGet({ request, env }) {
       env.DB.prepare("SELECT target_id, type, count FROM reactions WHERE year = ?").bind(year),
     ]);
 
-    const posts = (postsRes?.results || []).map(({ created_at, ...post }) => ({ ...post, at: created_at }));
+    // 비밀번호 해시는 절대 클라이언트에 노출하지 않으며, 승인된 사연만 노출
+    const posts = (postsRes?.results || [])
+      .filter((post) => !post.status || post.status === "approved")
+      .map(({ created_at, password_hash, ...post }) => ({
+        ...post,
+        at: created_at,
+        hasPassword: !!password_hash,
+        status: post.status || "approved",
+      }));
     
     // 댓글을 target_id별로 그룹화
     const commentsMap = {};
@@ -40,6 +48,7 @@ export async function onRequestGet({ request, env }) {
         author: c.author,
         content: c.content,
         at: c.created_at,
+        hasPassword: !!c.password_hash,
       });
     }
 

@@ -99,6 +99,64 @@ export default function App() {
   const [writePostOpen, setWritePostOpen] = useState(false);
   const [photoOnly, setPhotoOnly] = useState(false);
   const [customPosts, setCustomPosts] = useState([]);
+  const [deletingPostId, setDeletingPostId] = useState(null);
+  const [postDelPassword, setPostDelPassword] = useState("");
+  const [deletingPostBusy, setDeletingPostBusy] = useState(false);
+
+  const handleDeletePost = async (postId) => {
+    if (deletingPostBusy) return;
+    if (!postDelPassword || postDelPassword.length !== 4) {
+      setToast("비밀번호 4자리를 입력해 주세요.");
+      return;
+    }
+    setDeletingPostBusy(true);
+    try {
+      const response = await fetch(`/api/posts?id=${encodeURIComponent(postId)}&password=${encodeURIComponent(postDelPassword)}`, {
+        method: "DELETE",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ id: postId, password: postDelPassword }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error || "비밀번호가 일치하지 않습니다.");
+      }
+
+      setCustomPosts((prev) => prev.filter((p) => p.id !== postId));
+      if (year && yearDataCache[year]) {
+        setYearDataCache((prev) => ({
+          ...prev,
+          [year]: {
+            ...prev[year],
+            posts: (prev[year].posts || []).filter((p) => p.id !== postId),
+          },
+        }));
+      }
+      try {
+        const saved = JSON.parse(localStorage.getItem("chueok_user_posts") || "[]");
+        localStorage.setItem("chueok_user_posts", JSON.stringify(saved.filter((p) => p.id !== postId)));
+      } catch {}
+
+      setDeletingPostId(null);
+      setPostDelPassword("");
+      setToast("추억 사연이 삭제되었습니다.");
+    } catch (err) {
+      setToast(err.message || "사연을 삭제하지 못했어요.");
+    } finally {
+      setDeletingPostBusy(false);
+    }
+  };
+
+  const handleReportPost = async (p) => {
+    try {
+      await fetch("/api/posts", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ action: "report", id: p.id }),
+      });
+    } catch {}
+    setToast("신고가 접수되었습니다. 관리자 검토를 통해 신속히 조치하겠습니다.");
+  };
+
   const [detail, setDetail] = useState(null);
   const detailRef = useRef(null);
   const barRef = useRef(null);
@@ -623,7 +681,75 @@ export default function App() {
                             <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 16V3m-5 5 5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>
                           </button>
                           <ShareButtons share={{ title: `${p.title} (${p.year}) · 추억 사연`, text: p.content, url: shareUrl(p) }} onInstagram={() => setInstaModalItem({ item: { year: p.year, month: p.month, cat: p.category, title: p.title, summary: p.content }, photo: null })} onToast={setToast} />
+                          <button
+                            type="button"
+                            className="post-report-btn"
+                            aria-label="사연 신고"
+                            title="부적절한 사연 신고"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              handleReportPost(p);
+                            }}
+                          >
+                            🚨 신고
+                          </button>
+                          <button
+                            type="button"
+                            className="post-del-btn"
+                            aria-label="사연 삭제"
+                            title="사연 삭제"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (deletingPostId === p.id) {
+                                setDeletingPostId(null);
+                                setPostDelPassword("");
+                              } else {
+                                setDeletingPostId(p.id);
+                                setPostDelPassword("");
+                              }
+                            }}
+                          >
+                            삭제
+                          </button>
                         </div>
+                        {deletingPostId === p.id && (
+                          <form
+                            className="post-del-form"
+                            onClick={(e) => e.stopPropagation()}
+                            onSubmit={(e) => {
+                              e.preventDefault();
+                              handleDeletePost(p.id);
+                            }}
+                          >
+                            <input
+                              type="password"
+                              className="del-pwd-input"
+                              placeholder="비밀번호 4자리"
+                              maxLength={4}
+                              autoFocus
+                              value={postDelPassword}
+                              onChange={(e) => setPostDelPassword(e.target.value.replace(/[^0-9]/g, ""))}
+                              aria-label="사연 삭제용 비밀번호 4자리"
+                            />
+                            <button
+                              type="submit"
+                              className="del-confirm-btn"
+                              disabled={deletingPostBusy}
+                            >
+                              확인
+                            </button>
+                            <button
+                              type="button"
+                              className="del-cancel-btn"
+                              onClick={() => {
+                                setDeletingPostId(null);
+                                setPostDelPassword("");
+                              }}
+                            >
+                              취소
+                            </button>
+                          </form>
+                        )}
                         <CardCommunity
                           item={{ year: p.year, title: p.title }}
                           initialReactions={yearDataCache[p.year]?.reactions?.[`${p.year}_${p.title}`]}

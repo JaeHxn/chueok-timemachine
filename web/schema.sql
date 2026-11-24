@@ -7,7 +7,10 @@ CREATE TABLE IF NOT EXISTS posts (
   title TEXT NOT NULL,
   content TEXT NOT NULL,
   author TEXT NOT NULL,
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  password_hash TEXT,
+  status TEXT DEFAULT 'approved',
+  reports INTEGER DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS comments (
@@ -16,7 +19,8 @@ CREATE TABLE IF NOT EXISTS comments (
   year INTEGER NOT NULL,
   author TEXT NOT NULL,
   content TEXT NOT NULL,
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  password_hash TEXT
 );
 
 CREATE TABLE IF NOT EXISTS reactions (
@@ -41,6 +45,7 @@ CREATE TABLE IF NOT EXISTS cheer_limits (
 );
 
 CREATE INDEX IF NOT EXISTS idx_posts_year ON posts(year);
+CREATE INDEX IF NOT EXISTS idx_posts_status ON posts(status);
 CREATE INDEX IF NOT EXISTS idx_comments_year ON comments(year);
 CREATE INDEX IF NOT EXISTS idx_reactions_year ON reactions(year);
 CREATE INDEX IF NOT EXISTS idx_cheers_created_at ON cheers(created_at DESC);
