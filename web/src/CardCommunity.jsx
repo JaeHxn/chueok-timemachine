@@ -6,16 +6,22 @@ const REACTION_CONFIG = [
   { key: "weep", label: "울컥", emoji: "🥹" },
   { key: "b486", label: "486", emoji: "📟" },
   { key: "b8282", label: "8282", emoji: "🚀" },
+  { key: "agree", label: "인정!", emoji: "👍" },
+  { key: "daebak", label: "대박", emoji: "🔥" },
 ];
 
 export default function CardCommunity({ item, onToast, initialReactions, initialComments, onCommunityUpdate }) {
   const targetId = `${item.year}_${item.title}`;
   const [openComments, setOpenComments] = useState(false);
   const [openReactions, setOpenReactions] = useState(false);
-  const [reactions, setReactions] = useState(() => initialReactions || { ah: 0, kkk: 0, weep: 0, b486: 0, b8282: 0, like: 0 });
+  const [reactions, setReactions] = useState(() => initialReactions || { ah: 0, kkk: 0, weep: 0, b486: 0, b8282: 0, agree: 0, daebak: 0, like: 0 });
   const [userActiveReactions, setUserActiveReactions] = useState(new Set());
   const [comments, setComments] = useState(() => initialComments || []);
   const [newComment, setNewComment] = useState("");
+  const [password, setPassword] = useState("");
+  const [deletingId, setDeletingId] = useState(null);
+  const [delPassword, setDelPassword] = useState("");
+  const [deletingBusy, setDeletingBusy] = useState(false);
   const [author, setAuthor] = useState(() => {
     try {
       return localStorage.getItem("chueok_nickname") || "";
@@ -112,17 +118,54 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
     try {
       const response = await fetch("/api/comments", {
         method: "POST", headers: { "content-type": "application/json" },
-        body: JSON.stringify({ targetId, year: item.year, content, author: finalAuthor }),
+        body: JSON.stringify({ targetId, year: item.year, content, author: finalAuthor, password }),
       });
       const result = await response.json();
-      if (!response.ok || !result.ok || !result.comment?.id) throw new Error();
-      setComments((prev) => [result.comment, ...prev.filter((c) => c.id !== result.comment.id)]);
+      if (!response.ok || !result.ok || !result.comment?.id) throw new Error(result?.error || "등록 실패");
+      setComments((prev) => {
+        const next = [result.comment, ...prev.filter((c) => c.id !== result.comment.id)];
+        try { localStorage.setItem(cmtLocalKey, JSON.stringify(next)); } catch {}
+        return next;
+      });
       onCommunityUpdate?.({ comment: result.comment });
       setNewComment("");
+      setPassword("");
       onToast("추억 이야기를 남겼어요!");
-    } catch {
-      onToast("이야기를 저장하지 못했어요. 다시 시도해 주세요.");
+    } catch (err) {
+      onToast(err.message || "이야기를 저장하지 못했어요. 다시 시도해 주세요.");
     } finally { setSubmitting(false); }
+  };
+
+  // 댓글 삭제 처리
+  const handleDeleteComment = async (commentId) => {
+    if (deletingBusy) return;
+    setDeletingBusy(true);
+
+    try {
+      const response = await fetch(`/api/comments?id=${encodeURIComponent(commentId)}&password=${encodeURIComponent(delPassword)}`, {
+        method: "DELETE",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ id: commentId, password: delPassword }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || !result.ok) {
+        throw new Error(result.error || "비밀번호가 일치하지 않습니다.");
+      }
+
+      setComments((prev) => {
+        const next = prev.filter((c) => c.id !== commentId);
+        try { localStorage.setItem(cmtLocalKey, JSON.stringify(next)); } catch {}
+        return next;
+      });
+      setDeletingId(null);
+      setDelPassword("");
+      onToast("댓글을 삭제했어요.");
+      onCommunityUpdate?.({ deletedCommentId: commentId });
+    } catch (err) {
+      onToast(err.message || "댓글을 삭제하지 못했어요.");
+    } finally {
+      setDeletingBusy(false);
+    }
   };
 
   return (
@@ -179,6 +222,15 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
                 onChange={(e) => setAuthor(e.target.value)}
                 aria-label="작성자 닉네임"
               />
+              <input
+                type="password"
+                className="comment-pwd-input"
+                placeholder="비밀번호(4자리)"
+                maxLength={4}
+                value={password}
+                onChange={(e) => setPassword(e.target.value.replace(/[^0-9]/g, ""))}
+                aria-label="댓글 비밀번호 4자리"
+              />
               <span className="comment-tip">그 시절의 기억을 나눠주세요</span>
             </div>
             <div className="comment-text-row">
@@ -204,10 +256,67 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
               comments.map((c) => (
                 <div key={c.id} className="comment-bubble">
                   <div className="comment-meta">
-                    <span className="comment-author">{c.author || "익명의 시간여행자"}</span>
-                    <span className="comment-time">{new Date(c.at).toLocaleDateString("ko-KR")}</span>
+                    <div className="comment-meta-left">
+                      <span className="comment-author">{c.author || "익명의 시간여행자"}</span>
+                      <span className="comment-time">{new Date(c.at).toLocaleDateString("ko-KR")}</span>
+                    </div>
+                    <button
+                      type="button"
+                      className="comment-del-btn"
+                      onClick={() => {
+                        if (deletingId === c.id) {
+                          setDeletingId(null);
+                          setDelPassword("");
+                        } else {
+                          setDeletingId(c.id);
+                          setDelPassword("");
+                        }
+                      }}
+                      aria-label="댓글 삭제"
+                      title="댓글 삭제"
+                    >
+                      삭제
+                    </button>
                   </div>
                   <p className="comment-content">{c.content}</p>
+
+                  {deletingId === c.id && (
+                    <form
+                      className="comment-del-form"
+                      onSubmit={(e) => {
+                        e.preventDefault();
+                        handleDeleteComment(c.id);
+                      }}
+                    >
+                      <input
+                        type="password"
+                        className="del-pwd-input"
+                        placeholder="비밀번호 4자리"
+                        maxLength={4}
+                        autoFocus
+                        value={delPassword}
+                        onChange={(e) => setDelPassword(e.target.value.replace(/[^0-9]/g, ""))}
+                        aria-label="삭제용 비밀번호 4자리"
+                      />
+                      <button
+                        type="submit"
+                        className="del-confirm-btn"
+                        disabled={deletingBusy}
+                      >
+                        확인
+                      </button>
+                      <button
+                        type="button"
+                        className="del-cancel-btn"
+                        onClick={() => {
+                          setDeletingId(null);
+                          setDelPassword("");
+                        }}
+                      >
+                        취소
+                      </button>
+                    </form>
+                  )}
                 </div>
               ))
             )}

@@ -47,7 +47,7 @@ export async function onRequestGet({ request, env }) {
     const reactionsMap = {};
     for (const r of (reactionsRes?.results || [])) {
       if (!reactionsMap[r.target_id]) {
-        reactionsMap[r.target_id] = { ah: 0, kkk: 0, weep: 0, b486: 0, b8282: 0, like: 0 };
+        reactionsMap[r.target_id] = { ah: 0, kkk: 0, weep: 0, b486: 0, b8282: 0, agree: 0, daebak: 0, like: 0 };
       }
       reactionsMap[r.target_id][r.type] = Number(r.count || 0);
     }

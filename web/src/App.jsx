@@ -5,6 +5,7 @@ import InstagramCardModal from "./InstagramCardModal.jsx";
 import ShareButtons from "./ShareButtons.jsx";
 import WritePostModal from "./WritePostModal.jsx";
 import CardCommunity from "./CardCommunity.jsx";
+import GoldenEraModal from "./GoldenEraModal.jsx";
 
 const YEARS = Array.from({ length: 77 }, (_, i) => 1950 + i); // 1950~2026
 const CATS = ["음악", "TV·영화", "먹거리", "패션", "놀이·문구", "가전·기술", "사건·생활상", "유행어·풍속"];
@@ -93,6 +94,7 @@ export default function App() {
   const [toast, setToast] = useState("");
   const [cheerOpen, setCheerOpen] = useState(false);
   const [adminView, setAdminView] = useState(location.hash.startsWith("#/admin"));
+  const [goldenEraOpen, setGoldenEraOpen] = useState(false);
   const [instaModalItem, setInstaModalItem] = useState(null);
   const [writePostOpen, setWritePostOpen] = useState(false);
   const [photoOnly, setPhotoOnly] = useState(false);
@@ -309,6 +311,9 @@ export default function App() {
           >
             👓 {hyodo ? "보통 글씨" : "큰 글씨 모드"}
           </button>
+          <button className="golden-era-btn" onClick={() => setGoldenEraOpen(true)} title="나의 추억 나이 & 황금기 테스트">
+            ✨ 내 황금기 테스트
+          </button>
           <button className="write-post-btn" onClick={() => setWritePostOpen(true)}>✏️ 내 추억 사연 남기기</button>
           <button className="ghost cheer-btn" onClick={() => setCheerOpen(true)}>💌 응원 한마디</button>
           <input
@@ -379,6 +384,15 @@ export default function App() {
             <input id="birth" ref={birthRef} type="number" inputMode="numeric" placeholder="예: 1965" />
             <button className="primary" type="submit">이동</button>
           </form>
+
+          <button className="home-golden-banner" onClick={() => setGoldenEraOpen(true)}>
+            <span className="banner-icon">🚀</span>
+            <div className="banner-text">
+              <strong>나의 추억 나이 &amp; 황금기 테스트</strong>
+              <span>출생연도만 넣으면 내 인생 3대 황금기와 9:16 인스타 스토리 인증서 즉시 발급!</span>
+            </div>
+            <span className="banner-arrow">👉</span>
+          </button>
           <div className="quick">
             {[1953, 1965, 1974, 1979, 1988, 1997, 2002, 2010, 2020].filter((y) => itemsOf(y).length).map((y) => (
               <a key={y} className="chip" href={hashOf(y)}>{y}<small>{itemsOf(y).length}개</small></a>
@@ -812,6 +826,14 @@ export default function App() {
           photo={instaModalItem.photo}
           onClose={() => setInstaModalItem(null)}
           onToast={setToast}
+        />
+      )}
+
+      {goldenEraOpen && (
+        <GoldenEraModal
+          onClose={() => setGoldenEraOpen(false)}
+          onToast={setToast}
+          onSelectYear={(y) => go(y)}
         />
       )}
 

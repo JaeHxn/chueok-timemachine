@@ -1,6 +1,6 @@
 // 공감 반응 토글 API (Cloudflare Pages Functions + D1)
 import { communityLimit, readCommunityBody } from '../../lib/community-limit.js';
-const VALID_TYPES = new Set(["like", "ah", "kkk", "weep", "b486", "b8282"]);
+const VALID_TYPES = new Set(["like", "ah", "kkk", "weep", "b486", "b8282", "agree", "daebak"]);
 
 const json = (data, status = 200) =>
   new Response(JSON.stringify(data), {

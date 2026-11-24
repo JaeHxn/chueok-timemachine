@@ -50,6 +50,19 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     return "토글 정상 동작";
   });
 
+  await test(P + "황금기 테스트 모달: 오픈 → 연대 퀵 선택 → 리포트 확인 → 닫기", async () => {
+    js(`document.querySelector('.golden-era-btn').click();return 1`); await wait(250);
+    const opened = js(`return !!document.querySelector('.golden-era-box')`);
+    assert(opened, "황금기 모달 안 열림");
+    js(`const chip = [...document.querySelectorAll('.quick-chip')].find(c=>c.textContent.includes('80')); if (chip) chip.click(); return 1`); await wait(200);
+    js(`document.querySelector('.golden-submit-btn').click(); return 1`); await wait(300);
+    const report = js(`return {title:document.querySelector('.report-gen-title')?.textContent, card:!!document.querySelector('.active-stage-card')}`);
+    assert(report.title && report.card, JSON.stringify(report));
+    js(`document.querySelector('.golden-modal-close').click();return 1`); await wait(200);
+    assert(!js(`return !!document.querySelector('.golden-era-box')`), "황금기 모달이 닫히지 않음");
+    return `${report.title} (리포트 정상)`;
+  });
+
   await test(P + "바로가기 클릭 → 연도 화면·카드 즉시 표시", async () => {
     js(`document.querySelector('.chip[href="#/1974"]').click();return 1`); await wait(300);
     const r = js(`return {hash:location.hash,h2:document.querySelector('.year-head h2')?.textContent,cards:document.querySelectorAll('.card').length}`);
