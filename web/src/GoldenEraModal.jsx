@@ -582,7 +582,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
       aria-label="나의 추억 나이 & 황금기 테스트"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className="box golden-era-box">
+      <div className="golden-era-box">
         {/* 모달 닫기 버튼 */}
         <button className="golden-modal-close" onClick={onClose} aria-label="닫기">
           ✕
@@ -832,12 +832,12 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           max-height: 90vh;
           overflow-y: auto;
           font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
-          background: linear-gradient(175deg, #131c2e 0%, #090e1a 100%);
+          background: linear-gradient(175deg, #131c2e 0%, #090e1a 100%) !important;
           border: 1.5px solid rgba(251, 191, 36, 0.45);
           box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(251, 191, 36, 0.2);
           border-radius: 28px;
           padding: clamp(20px, 4vw, 32px);
-          color: #f8fafc;
+          color: #f8fafc !important;
           scrollbar-width: thin;
           scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
         }
