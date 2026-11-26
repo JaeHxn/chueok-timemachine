@@ -6,10 +6,15 @@ export async function onRequest(context) {
 
   const urls = [];
   urls.push(`<url><loc>${BASE_URL}/</loc><lastmod>${TODAY}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>`);
+  urls.push(`<url><loc>${BASE_URL}/llms.txt</loc><lastmod>${TODAY}</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>`);
 
   for (let year = 1950; year <= 2026; year++) {
     const isMilestone = [1970, 1974, 1980, 1982, 1988, 1990, 1993, 1997, 1998, 2000, 2002, 2010, 2020].includes(year);
     urls.push(`<url><loc>${BASE_URL}/#/${year}</loc><lastmod>${TODAY}</lastmod><changefreq>weekly</changefreq><priority>${isMilestone ? '0.8' : '0.7'}</priority></url>`);
+  }
+
+  for (const cat of ['음악', 'TV·영화', '먹거리', '패션', '놀이·문구', '가전·기술', '사건·생활상', '유행어·풍속']) {
+    urls.push(`<url><loc>${BASE_URL}/#/cat/${encodeURIComponent(cat)}</loc><lastmod>${TODAY}</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>`);
   }
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
