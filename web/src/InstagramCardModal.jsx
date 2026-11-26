@@ -8,6 +8,12 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
   const eraColor = "#d4a62a"; // 기본 골드 톤
 
   useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    addEventListener("keydown", onKey);
+    return () => removeEventListener("keydown", onKey);
+  }, [onClose]);
+
+  useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
@@ -172,11 +178,11 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
       });
 
       // 6. 하단 푸터 및 워터마크
-      ctx.fillStyle = "rgba(212, 166, 42, 0.8)";
+      ctx.fillStyle = "rgba(253, 230, 138, 0.92)";
       ctx.font = "bold 20px Pretendard, sans-serif";
       ctx.fillText("🪐 chueok-timemachine.pages.dev", W / 2, 990);
 
-      ctx.fillStyle = "rgba(255, 255, 255, 0.45)";
+      ctx.fillStyle = "rgba(255, 255, 255, 0.72)";
       ctx.font = "18px Pretendard, sans-serif";
       ctx.fillText("같은 시대를 기억하는 사람들의 공감 커뮤니티", W / 2, 1020);
 
@@ -250,7 +256,7 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
           <button className="primary" onClick={downloadImage} disabled={rendering}>
             📥 인스타용 사진 저장 (PNG)
           </button>
-          <button onClick={copyInstaText}>
+          <button className="ghost" onClick={copyInstaText}>
             📋 인스타 캡션 복사
           </button>
           <button className="ghost" onClick={onClose}>

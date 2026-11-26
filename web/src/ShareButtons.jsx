@@ -64,6 +64,7 @@ export default function ShareButtons({ share, onInstagram, onToast }) {
   return (
     <>
       <button
+        type="button"
         className="share-btn share-icon share-icon--kakao"
         onClick={shareToKakao}
         aria-label="카카오톡으로 공유하기"
@@ -88,6 +89,7 @@ export default function ShareButtons({ share, onInstagram, onToast }) {
         </svg>
       </button>
       <button
+        type="button"
         className="insta-badge-btn share-icon share-icon--instagram"
         onClick={onInstagram}
         aria-label="인스타그램으로 공유하기"

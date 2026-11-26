@@ -1,17 +1,17 @@
 /* 추억 타임머신 — Apple 디자인 원칙 기반
    즉시 반응(누르는 순간 피드백) · 반투명 상단 레이어 · 크기별 자간 · 모션 줄이기 대응 */
 :root{
-  --space:#f6f1e9; --space-2:#fffdf9;
-  --ink:#302823; --ink-2:#5d5149; --ink-3:#71645a;
-  --glass:rgba(255,255,255,.78); --hair:rgba(29,29,31,.08);
-  --control:rgba(29,29,31,.045); --control-hover:rgba(29,29,31,.075);
-  --accent:#0071e3; --accent-text:#0056b3; --accent-soft:rgba(0,113,227,.12); --on-accent:#fff;
+  --space:#f6f1e9; --space-1:#faf6ef; --space-2:#fffdf9;
+  --ink:#302823; --ink-2:#544941; --ink-3:#66594f;
+  --glass:rgba(255,255,255,.82); --hair:rgba(29,29,31,.1);
+  --control:rgba(29,29,31,.055); --control-hover:rgba(29,29,31,.095);
+  --accent:#0066cc; --accent-text:#0052a3; --accent-soft:rgba(0,102,204,.12); --on-accent:#fff;
   --accent-solid:#e3f0ff;
   --glow:#f3dfc6; --solid-glass:#fffdf9; --photo-bg:#e9dfd0;
-  --sheet-glass:rgba(255,255,255,.94); --modal:rgba(20,25,35,.32); --toast-glass:rgba(255,255,255,.92);
-  --card-shadow:0 8px 28px rgba(35,37,45,.055);
-  --tag-ok:#18753c; --tag-ok-bg:rgba(24,117,60,.1); --tag-warn:#8a5700; --tag-warn-bg:rgba(138,87,0,.1);
-  --share-bg:rgba(0,113,227,.1); --share-hover:rgba(0,113,227,.16);
+  --sheet-glass:rgba(255,253,249,.96); --modal:rgba(20,25,35,.38); --toast-glass:rgba(255,253,249,.96);
+  --card-shadow:0 8px 28px rgba(35,37,45,.065);
+  --tag-ok:#166534; --tag-ok-bg:rgba(22,101,52,.11); --tag-warn:#854d0e; --tag-warn-bg:rgba(133,77,14,.12);
+  --share-bg:rgba(0,102,204,.11); --share-hover:rgba(0,102,204,.18);
   --r-s:10px; --r-m:18px; --r-l:28px;
   --ease:cubic-bezier(.32,.72,0,1);           /* 감속형(critically damped 근사) */
   font:100%/1.6 Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
@@ -19,24 +19,25 @@
 }
 @media (prefers-color-scheme:dark){
   :root{
-    --space:#05070d; --space-2:#0c1220;
-    --ink:#f5f5f7; --ink-2:#c1c1c7; --ink-3:#a1a1a6;
-    --glass:rgba(22,26,38,.72); --hair:rgba(255,255,255,.1);
-    --control:rgba(255,255,255,.08); --control-hover:rgba(255,255,255,.14);
-    --accent:#2997ff; --accent-text:#65b7ff; --accent-soft:rgba(41,151,255,.2); --on-accent:#071a2e;
+    --space:#05070d; --space-1:#111827; --space-2:#0c1220;
+    --ink:#f5f5f7; --ink-2:#cbcdd4; --ink-3:#a6a8b1;
+    --glass:rgba(22,26,38,.78); --hair:rgba(255,255,255,.12);
+    --control:rgba(255,255,255,.09); --control-hover:rgba(255,255,255,.16);
+    --accent:#2997ff; --accent-text:#70bfff; --accent-soft:rgba(41,151,255,.22); --on-accent:#061729;
     --accent-solid:#173f65;
     --glow:#16213b; --solid-glass:#151a26; --photo-bg:#0a0f1a;
-    --sheet-glass:rgba(30,34,46,.92); --modal:rgba(0,0,0,.45); --toast-glass:rgba(40,44,58,.94);
-    --card-shadow:0 8px 28px rgba(0,0,0,.18);
-    --tag-ok:#30d158; --tag-ok-bg:rgba(48,209,88,.12); --tag-warn:#ffb340; --tag-warn-bg:rgba(255,159,10,.12);
-    --share-bg:rgba(41,151,255,.14); --share-hover:rgba(41,151,255,.24);
+    --sheet-glass:rgba(24,29,42,.95); --modal:rgba(0,0,0,.55); --toast-glass:rgba(36,41,56,.96);
+    --card-shadow:0 8px 28px rgba(0,0,0,.22);
+    --tag-ok:#4ade80; --tag-ok-bg:rgba(74,222,128,.14); --tag-warn:#fbbf24; --tag-warn-bg:rgba(251,191,36,.15);
+    --share-bg:rgba(41,151,255,.16); --share-hover:rgba(41,151,255,.26);
     color-scheme:dark;
   }
 }
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--space);color:var(--ink);-webkit-font-smoothing:antialiased}
 button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
-button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:8px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:8px}
+input::placeholder,textarea::placeholder{color:var(--ink-3);opacity:1}
 a{color:var(--accent-text);text-decoration:none}
 a:hover{text-decoration:underline}
 
@@ -216,9 +217,9 @@ a:hover{text-decoration:underline}
   color: #fff;
   text-transform: uppercase;
 }
-.section-badge.photo-badge { background: #b45309; }
-.section-badge.blue { background: #2563eb; }
-.section-badge.yellow { background: #d97706; }
+.section-badge.photo-badge { background: #9a4a04; }
+.section-badge.blue { background: #1d4ed8; }
+.section-badge.yellow { background: #9a4a04; }
 .section-title {
   font-size: clamp(1.25rem, 3.5vw, 1.55rem);
   font-weight: 800;
@@ -295,10 +296,20 @@ a:hover{text-decoration:underline}
 .card.has-photo:hover .item-photo.polaroid-frame img {
   transform: scale(1.03);
 }
-.photo-tag {
-  background: rgba(245, 158, 11, 0.15) !important;
-  color: #b45309 !important;
+.photo-tag,
+.story-tag {
+  background: rgba(245, 158, 11, 0.16) !important;
+  color: #92400e !important;
   font-weight: 700 !important;
+  border: 1px solid rgba(180, 83, 9, 0.22);
+}
+@media (prefers-color-scheme: dark) {
+  .photo-tag,
+  .story-tag {
+    background: rgba(251, 191, 36, 0.18) !important;
+    color: #fde68a !important;
+    border-color: rgba(251, 191, 36, 0.32);
+  }
 }
 
 /* ── ✍️ 2. 싸이월드 다이어리 / 포스트잇 사연 카드 ── */
@@ -330,48 +341,127 @@ a:hover{text-decoration:underline}
 .write-post-inline-btn {
   font-size: 0.8125rem;
   font-weight: 700;
-  color: #b45309;
-  background: rgba(245, 158, 11, 0.12);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #92400e;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(180, 83, 9, 0.32);
   padding: 6px 14px;
   border-radius: 999px;
-  min-height: 38px;
+  min-height: 44px;
+  transition: background 150ms ease, transform 150ms ease;
+}
+.write-post-inline-btn:hover {
+  background: rgba(245, 158, 11, 0.24);
+  color: #78350f;
+}
+@media (prefers-color-scheme: dark) {
+  .write-post-inline-btn {
+    color: #fde68a;
+    background: rgba(251, 191, 36, 0.16);
+    border-color: rgba(251, 191, 36, 0.35);
+  }
+  .write-post-inline-btn:hover {
+    background: rgba(251, 191, 36, 0.26);
+    color: #fef3c7;
+  }
 }
 
-/* ── 📻 3. 사진 없는 텍스트 아카이브 티켓 카드 ── */
+/* ── 📻 3. 사진 없는 텍스트 아카이브 티켓 카드 (레트로 아카이브 카드 스타일) ── */
 .archive-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 .card.no-photo.archive-ticket-card {
+  --cat-accent: #1d4ed8;
   position: relative;
-  background: var(--space-2);
-  border: 1px solid var(--hair);
-  border-left: 5px solid #2563eb;
-  border-radius: 12px;
-  padding: 14px 16px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  background: linear-gradient(180deg, #fffdf8 0%, #faf5ea 100%);
+  border: 1px solid rgba(140, 115, 85, 0.24);
+  border-top: 4px solid var(--cat-accent);
+  border-left: 1px solid rgba(140, 115, 85, 0.24);
+  border-radius: 14px;
+  padding: 16px 18px 18px;
+  box-shadow: 0 4px 14px rgba(45, 35, 25, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  transition: transform 200ms var(--ease), box-shadow 200ms var(--ease);
+  gap: 8px;
+  transition: transform 220ms var(--ease), box-shadow 220ms var(--ease), border-color 220ms var(--ease);
+}
+.card.no-photo.archive-ticket-card[data-cat="음악"] { --cat-accent: #7c3aed; }
+.card.no-photo.archive-ticket-card[data-cat="TV·영화"] { --cat-accent: #db2777; }
+.card.no-photo.archive-ticket-card[data-cat="먹거리"] { --cat-accent: #d97706; }
+.card.no-photo.archive-ticket-card[data-cat="패션"] { --cat-accent: #0d9488; }
+.card.no-photo.archive-ticket-card[data-cat="놀이·문구"] { --cat-accent: #2563eb; }
+.card.no-photo.archive-ticket-card[data-cat="가전·기술"] { --cat-accent: #0284c7; }
+.card.no-photo.archive-ticket-card[data-cat="사건·생활상"] { --cat-accent: #b45309; }
+.card.no-photo.archive-ticket-card[data-cat="유행어·풍속"] { --cat-accent: #4f46e5; }
+.card.no-photo.archive-ticket-card::after {
+  content: "ARCHIVE";
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 0.625rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--cat-accent);
+  opacity: 0.55;
+  pointer-events: none;
 }
 .card.no-photo.archive-ticket-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  border-left-color: #f59e0b;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(45, 35, 25, 0.1);
+  border-color: rgba(140, 115, 85, 0.42);
+}
+.card.no-photo.archive-ticket-card .meta {
+  padding-right: 54px;
+}
+.card.no-photo.archive-ticket-card .date-tag {
+  background: rgba(124, 74, 39, 0.12);
+  color: #6b3b1a;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.card.no-photo.archive-ticket-card .cat-tag {
+  background: transparent;
+  border: 1px solid rgba(48, 40, 35, 0.22);
+  color: var(--ink-2);
+  font-weight: 600;
 }
 .card.no-photo.archive-ticket-card h3 {
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.38;
   margin: 2px 0 0;
+  color: var(--ink);
 }
 .card.no-photo.archive-ticket-card .card-excerpt {
-  font-size: 0.875rem;
-  line-height: 1.55;
+  font-size: 0.9rem;
+  line-height: 1.6;
   color: var(--ink-2);
+  -webkit-line-clamp: 3;
+}
+@media (prefers-color-scheme: dark) {
+  .card.no-photo.archive-ticket-card {
+    background: linear-gradient(180deg, #131b2e 0%, #0e1424 100%);
+    border-color: rgba(255, 255, 255, 0.12);
+    border-top-color: var(--cat-accent);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  .card.no-photo.archive-ticket-card:hover {
+    border-color: rgba(255, 255, 255, 0.24);
+    border-top-color: var(--cat-accent);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+  }
+  .card.no-photo.archive-ticket-card::after {
+    opacity: 0.72;
+  }
+  .card.no-photo.archive-ticket-card .date-tag {
+    background: rgba(251, 191, 36, 0.16);
+    color: #fde68a;
+  }
+  .card.no-photo.archive-ticket-card .cat-tag {
+    border-color: rgba(255, 255, 255, 0.22);
+    color: var(--ink-2);
+  }
 }
 
 /* ── 월 선택 시 사진 추천 카드 ── */
@@ -460,13 +550,7 @@ a:hover{text-decoration:underline}
 }
 .item-photo.none { display: none; }
 
-/* ── 사진 없는 추억 카드: 콤팩트 레트로 티켓/메모지 스타일 ── */
-.card.no-photo {
-  background: var(--space-2);
-  border-left: 4px solid var(--accent);
-  padding: 16px 18px;
-  border-radius: 14px;
-}
+/* ── 사진 없는 추억 카드 기본 ── */
 .card.no-photo .memory-placeholder {
   display: none; /* 지루했던 거대 회색 박스 완전 제거 */
 }
@@ -531,12 +615,18 @@ a:hover{text-decoration:underline}
   transform: translateY(-2px);
 }
 .ticker-btn .ticker-badge {
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 2px 6px;
+  padding: 2px 7px;
   border-radius: 6px;
-  background: rgba(245, 158, 11, 0.15);
-  color: #b45309;
+  background: rgba(245, 158, 11, 0.16);
+  color: #92400e;
+}
+@media (prefers-color-scheme: dark) {
+  .ticker-btn .ticker-badge {
+    background: rgba(251, 191, 36, 0.18);
+    color: #fde68a;
+  }
 }
 
 /* ── 특정 월 선택 시 연계 대표 추억 섹션 ── */
@@ -915,11 +1005,13 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
 /* 카드 하단 액션 버튼 그룹 */
 .card-actions {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
   margin-top: 10px;
 }
 .insta-badge-btn {
-  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  background: linear-gradient(135deg, #7c2d9e, #d61f4d, #d95d16);
   color: #fff;
   border: 0;
   border-radius: 999px;
@@ -931,11 +1023,12 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   align-items: center;
   gap: 6px;
   min-height: 44px;
-  transition: transform 100ms ease, opacity 150ms;
+  transition: transform 100ms ease, opacity 150ms, box-shadow 150ms;
 }
 .insta-badge-btn:hover {
-  opacity: 0.92;
+  opacity: 0.94;
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(214, 31, 77, 0.28);
 }
 .card-actions .share-icon {
   display: inline-flex;
@@ -958,14 +1051,27 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
 
 /* 인스타 모달 & 사연 작성 모달 */
 .insta-modal-box, .post-form-box {
-  max-width: 480px;
-  width: 90vw;
+  max-width: 500px;
+  width: min(94vw, 500px);
+  max-height: 90vh;
+  overflow-y: auto;
   text-align: center;
+  padding: 22px 20px;
+}
+.insta-modal-header h3, .post-form-box h3 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--ink);
+}
+.insta-modal-header .note, .post-form-box > .note {
+  margin: 0 0 10px;
+  color: var(--ink-2);
 }
 .canvas-wrap {
   display: flex;
   justify-content: center;
-  margin: 16px 0;
+  margin: 14px 0;
 }
 .insta-btn-row, .post-btn-row {
   display: flex;
@@ -973,11 +1079,24 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   gap: 8px;
   margin-top: 14px;
 }
+.insta-btn-row .note {
+  margin: 2px 0 4px;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
 .insta-btn-row button, .post-btn-row button {
   min-height: 44px;
   font-size: 0.9375rem;
   border-radius: 12px;
   text-align: center;
+  font-weight: 600;
+}
+.insta-btn-row button.ghost, .post-btn-row button.ghost {
+  background: var(--control);
+  color: var(--ink);
+}
+.insta-btn-row button.ghost:hover, .post-btn-row button.ghost:hover {
+  background: var(--control-hover);
 }
 .sheet .post-form-box{background:var(--space-2)}
 
@@ -1010,23 +1129,35 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   padding: 8px 12px;
   background: var(--control);
   border: 1px solid var(--hair);
-  color: var(--ink-3);
+  color: var(--ink-2);
   font: inherit;
   font-size: 0.8125rem;
-  font-weight: 500;
+  font-weight: 600;
   border-radius: 999px;
   cursor: pointer;
   transition: all 150ms ease;
 }
 .post-del-btn:hover {
-  color: #e03131;
-  border-color: rgba(224, 49, 49, 0.4);
-  background: rgba(224, 49, 49, 0.08);
+  color: #c92a2a;
+  border-color: rgba(201, 42, 42, 0.45);
+  background: rgba(201, 42, 42, 0.1);
 }
 .post-report-btn:hover {
-  color: #d97706;
-  border-color: rgba(217, 119, 6, 0.4);
-  background: rgba(217, 119, 6, 0.08);
+  color: #92400e;
+  border-color: rgba(180, 83, 9, 0.45);
+  background: rgba(245, 158, 11, 0.14);
+}
+@media (prefers-color-scheme: dark) {
+  .post-del-btn:hover {
+    color: #fca5a5;
+    border-color: rgba(252, 165, 165, 0.45);
+    background: rgba(239, 68, 68, 0.18);
+  }
+  .post-report-btn:hover {
+    color: #fde68a;
+    border-color: rgba(253, 230, 138, 0.45);
+    background: rgba(245, 158, 11, 0.18);
+  }
 }
 
 .post-del-form {
@@ -1048,6 +1179,11 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   gap: 10px;
   text-align: left;
   margin-top: 12px;
+}
+@media (max-width: 520px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .form-group {
   display: flex;
@@ -1161,15 +1297,27 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   transform: translateY(-1px);
 }
 .hyodo-toggle-btn.active {
-  background: #ea580c;
+  background: #c2410c;
   color: #ffffff;
-  border-color: #ea580c;
-  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.25);
+  border-color: #c2410c;
+  box-shadow: 0 0 0 2px rgba(194, 65, 12, 0.25);
 }
 
 .app.hyodo {
+  --ink: #1a1512;
+  --ink-2: #3b322c;
+  --ink-3: #4d423a;
+  --hair: rgba(29, 29, 31, 0.18);
   font-size: 19px;
   line-height: 1.65;
+}
+@media (prefers-color-scheme: dark) {
+  .app.hyodo {
+    --ink: #ffffff;
+    --ink-2: #e4e4e7;
+    --ink-3: #c4c4cc;
+    --hair: rgba(255, 255, 255, 0.22);
+  }
 }
 .app.hyodo .top {
   padding: 14px 20px;
@@ -1400,9 +1548,10 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
 }
 @media (prefers-color-scheme: dark) {
   .golden-era-btn {
-    color: #ffd700;
-    border-color: rgba(255, 215, 0, 0.4);
-    box-shadow: 0 0 14px rgba(255, 215, 0, 0.2);
+    background: linear-gradient(135deg, #2d2110 0%, #1f170b 100%);
+    color: #fde68a;
+    border-color: rgba(251, 191, 36, 0.55);
+    box-shadow: 0 0 14px rgba(251, 191, 36, 0.18);
   }
 }
 .golden-era-btn:hover {

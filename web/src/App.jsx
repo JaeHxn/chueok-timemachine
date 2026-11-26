@@ -665,7 +665,7 @@ export default function App() {
                         <div className="meta">
                           <span className="tag date-tag">{p.month ? `${p.year}년 ${p.month}월` : `${p.year}년`}</span>
                           <span className="tag cat-tag">{p.category}</span>
-                          <span className="tag" style={{ background: "rgba(255, 215, 0, 0.2)", color: "#b45309", fontWeight: 700 }}>✍️ 시민 사연</span>
+                          <span className="tag story-tag">✍️ 시민 사연</span>
                         </div>
                         <h3>{p.title}</h3>
                         <p className="card-excerpt diary-excerpt" style={{ whiteSpace: "pre-wrap" }}>{p.content}</p>
@@ -777,7 +777,7 @@ export default function App() {
                     {textItems.map((it) => {
                       const ok = it.sources.length > 0 && it.confidence !== "low";
                       return (
-                        <article className="card no-photo archive-ticket-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) openDetail(it, null); }}>
+                        <article className="card no-photo archive-ticket-card" data-cat={it.cat} key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) openDetail(it, null); }}>
                           <div className="meta">
                             <span className="tag date-tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
                             <span className="tag cat-tag">{it.cat}</span>

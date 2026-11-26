@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { checkPostSafety, BAD_WORD_MESSAGE } from "./lib/badwords.js";
 
 const CATS = ["사건·생활상", "먹거리", "놀이·문구", "음악", "TV·영화", "가전·기술", "패션", "유행어·풍속"];
@@ -18,6 +18,12 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
     }
   });
   const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === "Escape") onClose(); };
+    addEventListener("keydown", onKey);
+    return () => removeEventListener("keydown", onKey);
+  }, [onClose]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -107,8 +113,9 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
 
         <div className="form-grid">
           <div className="form-group">
-            <label>연도 (1950~2026)</label>
+            <label htmlFor="wp-year">연도 (1950~2026)</label>
             <input
+              id="wp-year"
               type="number"
               min={1950}
               max={2026}
@@ -118,8 +125,8 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
             />
           </div>
           <div className="form-group">
-            <label>월 (선택)</label>
-            <select value={month} onChange={(e) => setMonth(e.target.value)}>
+            <label htmlFor="wp-month">월 (선택)</label>
+            <select id="wp-month" value={month} onChange={(e) => setMonth(e.target.value)}>
               <option value="">연도 전체</option>
               {Array.from({ length: 12 }, (_, i) => i + 1).map((m) => (
                 <option key={m} value={m}>{m}월</option>
@@ -127,16 +134,17 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
             </select>
           </div>
           <div className="form-group">
-            <label>분류</label>
-            <select value={category} onChange={(e) => setCategory(e.target.value)}>
+            <label htmlFor="wp-cat">분류</label>
+            <select id="wp-cat" value={category} onChange={(e) => setCategory(e.target.value)}>
               {CATS.map((c) => (
                 <option key={c} value={c}>{c}</option>
               ))}
             </select>
           </div>
           <div className="form-group">
-            <label>작성자 닉네임</label>
+            <label htmlFor="wp-author">작성자 닉네임</label>
             <input
+              id="wp-author"
               type="text"
               placeholder="예: 90년대키즈"
               maxLength={20}
@@ -145,8 +153,9 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
             />
           </div>
           <div className="form-group full">
-            <label>비밀번호 (수정·삭제용 4자리 숫자)</label>
+            <label htmlFor="wp-pwd">비밀번호 (수정·삭제용 4자리 숫자)</label>
             <input
+              id="wp-pwd"
               type="password"
               inputMode="numeric"
               pattern="[0-9]*"
@@ -160,8 +169,9 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
         </div>
 
         <div className="form-group full" style={{ marginTop: "10px" }}>
-          <label>사연 제목</label>
+          <label htmlFor="wp-title">사연 제목</label>
           <input
+            id="wp-title"
             type="text"
             placeholder="예: 초등학교 앞 문방구에서 뽑기 하던 시절"
             maxLength={60}
@@ -172,8 +182,9 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
         </div>
 
         <div className="form-group full">
-          <label>추억 이야기</label>
+          <label htmlFor="wp-content">추억 이야기</label>
           <textarea
+            id="wp-content"
             rows={5}
             maxLength={1500}
             placeholder="그때 어떤 일이 있었나요? 어떤 노래를 듣고 어떤 음식을 먹었는지 자유롭게 적어주세요."

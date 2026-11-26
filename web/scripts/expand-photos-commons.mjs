@@ -7,9 +7,9 @@ const PHOTOS_PATH = path.resolve('web/src/item-photos.json');
 const items = JSON.parse(fs.readFileSync(ITEMS_PATH, 'utf8'));
 const photos = JSON.parse(fs.readFileSync(PHOTOS_PATH, 'utf8'));
 
-const TARGET_DECADES = new Set([1950, 1960, 1970, 2000, 2010, 2020]);
+const TARGET_DECADES = new Set([1980, 1990, 2000, 2010]);
 const MAX_NEW_PER_DECADE = 15;
-const addedPerDecade = { 1950: 0, 1960: 0, 1970: 0, 2000: 0, 2010: 0, 2020: 0 };
+const addedPerDecade = { 1980: 0, 1990: 0, 2000: 0, 2010: 0 };
 
 const ALLOWED_LICENSE_RE = /^(cc[- ]by|cc0|public domain|pd)/i;
 
@@ -38,11 +38,14 @@ async function searchCommons(query) {
     const meta = info.extmetadata || {};
     const license = (meta.LicenseShortName?.value || '').replace(/<[^>]+>/g, '').trim();
     if (!ALLOWED_LICENSE_RE.test(license)) continue;
+    const thumb = info.thumburl || info.url;
+    const page = info.descriptionurl;
+    if (!thumb || !page) continue;
     const artist = (meta.Artist?.value || 'Wikimedia Commons').replace(/<[^>]+>/g, '').trim().slice(0, 80);
     return {
       title: p.title.replace(/^File:/, ''),
-      thumb: info.thumburl || info.url,
-      page: info.descriptionurl,
+      thumb,
+      page,
       artist: artist || 'Wikimedia Commons',
       license,
       query
@@ -62,6 +65,7 @@ console.log(`Found ${candidates.length} candidate items without photos in target
 
 let totalAdded = 0;
 for (const it of candidates) {
+  if (Object.values(addedPerDecade).every((c) => c >= MAX_NEW_PER_DECADE)) break;
   const dec = Math.floor(it.year / 10) * 10;
   if (addedPerDecade[dec] >= MAX_NEW_PER_DECADE) continue;
 

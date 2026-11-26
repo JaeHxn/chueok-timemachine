@@ -115,7 +115,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           ageDesc: "약 11~12세",
           item: elemItem,
           photo: elemPhoto,
-          themeColor: "#fbbf24",
+          themeColor: "#fcd34d",
         },
         {
           id: "mid",
@@ -125,7 +125,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           ageDesc: "약 16~17세",
           item: midItem,
           photo: midPhoto,
-          themeColor: "#f472b6",
+          themeColor: "#f9a8d4",
         },
         {
           id: "youth",
@@ -135,7 +135,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           ageDesc: "약 21~23세",
           item: youthItem,
           photo: youthPhoto,
-          themeColor: "#60a5fa",
+          themeColor: "#7dd3fc",
         },
       ],
     };
@@ -806,16 +806,16 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
         )}
       </div>
 
-      {/* 컴포넌트 전용 스타일 */}
+      {/* 컴포넌트 전용 스타일 — .sheet button 등 전역 스타일 간섭을 원천 차단하기 위해 .golden-era-sheet .golden-era-box 로 스코핑 */}
       <style>{`
-        .golden-era-sheet {
+        .sheet.golden-era-sheet {
           position: fixed;
           inset: 0;
           z-index: 50;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: rgba(6, 10, 18, 0.82);
+          background: rgba(6, 10, 18, 0.84);
           backdrop-filter: blur(20px);
           -webkit-backdrop-filter: blur(20px);
           animation: goldenFadeIn 250ms ease-out both;
@@ -825,49 +825,56 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           from { opacity: 0; }
           to { opacity: 1; }
         }
-        .golden-era-box {
+        .golden-era-sheet .golden-era-box {
           position: relative;
           width: 100%;
           max-width: 540px;
           max-height: 90vh;
           overflow-y: auto;
+          color-scheme: dark;
           font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
           background: linear-gradient(175deg, #131c2e 0%, #090e1a 100%) !important;
-          border: 1.5px solid rgba(251, 191, 36, 0.45);
-          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(251, 191, 36, 0.2);
+          border: 1.5px solid rgba(251, 191, 36, 0.5);
+          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.78), 0 0 35px rgba(251, 191, 36, 0.22);
           border-radius: 28px;
           padding: clamp(20px, 4vw, 32px);
           color: #f8fafc !important;
           scrollbar-width: thin;
-          scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+          scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
         }
-        .golden-modal-close {
+        .golden-era-sheet .golden-era-box .golden-modal-close {
           position: absolute;
           top: 18px;
           right: 18px;
           width: 38px;
           height: 38px;
+          padding: 0;
           border-radius: 50%;
-          border: 1.5px solid rgba(255, 255, 255, 0.25);
-          background: rgba(255, 255, 255, 0.12);
+          border: 1.5px solid rgba(255, 255, 255, 0.35);
+          background: rgba(255, 255, 255, 0.14);
           color: #ffffff;
           font-size: 1.1rem;
           font-weight: 700;
+          text-align: center;
           display: flex;
           align-items: center;
           justify-content: center;
           cursor: pointer;
           transition: all 180ms ease;
         }
-        .golden-modal-close:hover {
-          background: rgba(255, 255, 255, 0.25);
+        .golden-era-sheet .golden-era-box .golden-modal-close:hover {
+          background: rgba(255, 255, 255, 0.26);
           color: #fde047;
           border-color: #fde047;
           transform: rotate(90deg);
         }
+        .golden-era-sheet .golden-era-box button:focus-visible {
+          outline: 2px solid #fde047;
+          outline-offset: 2px;
+        }
 
         /* 1단계 스타일 */
-        .golden-step1 {
+        .golden-era-sheet .golden-step1 {
           text-align: center;
           animation: goldenSlideUp 300ms ease-out both;
         }
@@ -875,45 +882,46 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           from { transform: translateY(16px); opacity: 0; }
           to { transform: translateY(0); opacity: 1; }
         }
-        .golden-badge {
+        .golden-era-sheet .golden-badge {
           display: inline-block;
           font-size: 0.875rem;
           font-weight: 800;
           color: #fde047;
           background: rgba(251, 191, 36, 0.16);
-          border: 1.5px solid rgba(251, 191, 36, 0.5);
+          border: 1.5px solid rgba(251, 191, 36, 0.55);
           border-radius: 999px;
           padding: 5px 14px;
           margin-bottom: 12px;
           letter-spacing: -0.01em;
         }
-        .golden-title {
+        .golden-era-sheet .golden-title {
           font-size: clamp(1.5rem, 4.2vw, 2rem);
           font-weight: 900;
           letter-spacing: -0.02em;
           line-height: 1.35;
           margin: 0 0 12px;
+          color: #ffffff;
           background: linear-gradient(135deg, #ffffff 35%, #fde047 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
-        .golden-desc {
+        .golden-era-sheet .golden-desc {
           font-size: 1rem;
           line-height: 1.6;
           color: #f1f5f9;
           font-weight: 500;
           margin: 0 0 24px;
         }
-        .golden-form {
+        .golden-era-sheet .golden-form {
           margin-bottom: 24px;
         }
-        .golden-input-wrap {
+        .golden-era-sheet .golden-input-wrap {
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 8px;
-          background: rgba(255, 255, 255, 0.08);
-          border: 2.5px solid rgba(251, 191, 36, 0.55);
+          background: rgba(255, 255, 255, 0.09);
+          border: 2.5px solid rgba(251, 191, 36, 0.6);
           border-radius: 20px;
           padding: 12px 22px;
           margin: 0 auto 16px;
@@ -921,11 +929,11 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
           transition: border-color 200ms ease, box-shadow 200ms ease;
         }
-        .golden-input-wrap:focus-within {
+        .golden-era-sheet .golden-input-wrap:focus-within {
           border-color: #fde047;
           box-shadow: 0 0 26px rgba(251, 191, 36, 0.45);
         }
-        .golden-year-input {
+        .golden-era-sheet .golden-year-input {
           width: 125px;
           background: transparent;
           border: 0;
@@ -937,12 +945,15 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           font-variant-numeric: tabular-nums;
           font-family: inherit;
         }
-        .golden-input-suffix {
+        .golden-era-sheet .golden-year-input::placeholder {
+          color: rgba(226, 232, 240, 0.55);
+        }
+        .golden-era-sheet .golden-input-suffix {
           font-size: 1.35rem;
           font-weight: 800;
           color: #fde047;
         }
-        .golden-quick-chips {
+        .golden-era-sheet .golden-quick-chips {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -950,42 +961,44 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           gap: 7px;
           margin-bottom: 24px;
         }
-        .chips-label {
+        .golden-era-sheet .chips-label {
           font-size: 0.875rem;
           font-weight: 700;
           color: #e2e8f0;
           margin-right: 4px;
         }
-        .quick-chip {
-          border: 1.5px solid rgba(255, 255, 255, 0.25);
-          background: rgba(255, 255, 255, 0.1);
+        .golden-era-sheet .golden-era-box .quick-chip {
+          border: 1.5px solid rgba(255, 255, 255, 0.3);
+          background: rgba(255, 255, 255, 0.12);
           color: #f8fafc;
           border-radius: 999px;
           padding: 6px 14px;
           font-size: 0.875rem;
           font-weight: 700;
+          text-align: center;
           cursor: pointer;
           transition: all 180ms ease;
         }
-        .quick-chip:hover {
-          background: rgba(255, 255, 255, 0.22);
+        .golden-era-sheet .golden-era-box .quick-chip:hover {
+          background: rgba(255, 255, 255, 0.24);
           color: #ffffff;
-          border-color: rgba(255, 255, 255, 0.45);
+          border-color: rgba(255, 255, 255, 0.55);
         }
-        .quick-chip.active {
-          background: rgba(251, 191, 36, 0.28);
+        .golden-era-sheet .golden-era-box .quick-chip.active {
+          background: rgba(251, 191, 36, 0.26);
           border-color: #fde047;
           color: #fde047;
           font-weight: 800;
           box-shadow: 0 0 14px rgba(251, 191, 36, 0.35);
         }
-        .golden-submit-btn {
+        .golden-era-sheet .golden-era-box .golden-submit-btn {
           width: 100%;
           border: 0;
           border-radius: 18px;
           padding: 16px 20px;
           font-size: 1.15rem;
           font-weight: 900;
+          text-align: center;
           background: linear-gradient(135deg, #fde047 0%, #f59e0b 100%);
           color: #090e1a;
           cursor: pointer;
@@ -993,38 +1006,42 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           transition: transform 120ms ease, box-shadow 150ms ease, filter 150ms ease;
           font-family: inherit;
         }
-        .golden-submit-btn:hover {
-          filter: brightness(1.08);
+        .golden-era-sheet .golden-era-box .golden-submit-btn:hover {
+          background: linear-gradient(135deg, #fef08a 0%, #fbbf24 100%);
+          filter: brightness(1.04);
           transform: translateY(-2px);
           box-shadow: 0 12px 30px rgba(245, 158, 11, 0.55);
         }
-        .golden-submit-btn:active {
+        .golden-era-sheet .golden-era-box .golden-submit-btn:active {
           transform: scale(0.98);
         }
-        .golden-feature-points {
+        .golden-era-sheet .golden-feature-points {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 10px;
           padding-top: 20px;
-          border-top: 1px solid rgba(255, 255, 255, 0.18);
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
           text-align: left;
         }
-        .point-item {
+        .golden-era-sheet .point-item {
           display: flex;
           align-items: flex-start;
           gap: 7px;
+          background: rgba(255, 255, 255, 0.04);
+          border-radius: 12px;
+          padding: 10px 8px;
         }
-        .point-icon {
+        .golden-era-sheet .point-icon {
           font-size: 1.25rem;
           line-height: 1.2;
         }
-        .point-item strong {
+        .golden-era-sheet .point-item strong {
           display: block;
           font-size: 0.875rem;
           font-weight: 800;
           color: #ffffff;
         }
-        .point-item p {
+        .golden-era-sheet .point-item p {
           margin: 3px 0 0;
           font-size: 0.8rem;
           font-weight: 500;
@@ -1033,39 +1050,39 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
         }
 
         /* 2단계 리포트 스타일 */
-        .golden-step2 {
+        .golden-era-sheet .golden-step2 {
           animation: goldenSlideUp 300ms ease-out both;
         }
-        .golden-report-header {
+        .golden-era-sheet .golden-report-header {
           text-align: center;
           margin-bottom: 22px;
         }
-        .report-badge-row {
+        .golden-era-sheet .report-badge-row {
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 8px;
           margin-bottom: 10px;
         }
-        .report-gen-tag {
+        .golden-era-sheet .report-gen-tag {
           font-size: 0.875rem;
           font-weight: 800;
           color: #fde047;
-          background: rgba(251, 191, 36, 0.15);
+          background: rgba(251, 191, 36, 0.16);
           border: 1.5px solid;
           border-radius: 999px;
           padding: 4px 12px;
         }
-        .report-badge-pill {
+        .golden-era-sheet .report-badge-pill {
           font-size: 0.8125rem;
           font-weight: 700;
           color: #f8fafc;
           background: rgba(255, 255, 255, 0.14);
-          border: 1px solid rgba(255, 255, 255, 0.25);
+          border: 1px solid rgba(255, 255, 255, 0.3);
           border-radius: 999px;
           padding: 4px 12px;
         }
-        .report-gen-title {
+        .golden-era-sheet .report-gen-title {
           font-size: clamp(1.35rem, 4.2vw, 1.85rem);
           font-weight: 900;
           color: #ffffff;
@@ -1074,7 +1091,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           letter-spacing: -0.01em;
           text-shadow: 0 2px 14px rgba(0,0,0,0.7);
         }
-        .report-sub {
+        .golden-era-sheet .report-sub {
           font-size: 0.95rem;
           font-weight: 500;
           color: #e2e8f0;
@@ -1083,52 +1100,57 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
         }
 
         /* 탭 버튼 */
-        .stage-tab-row {
+        .golden-era-sheet .stage-tab-row {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           gap: 8px;
           margin-bottom: 18px;
         }
-        .stage-tab-btn {
-          border: 1.5px solid rgba(255, 255, 255, 0.2);
+        .golden-era-sheet .golden-era-box .stage-tab-btn {
+          border: 1.5px solid rgba(255, 255, 255, 0.24);
           background: rgba(255, 255, 255, 0.08);
           border-radius: 16px;
           padding: 10px 8px;
           display: flex;
           flex-direction: column;
           align-items: center;
+          text-align: center;
           gap: 3px;
           color: #f1f5f9;
           cursor: pointer;
           transition: all 180ms ease;
           font-family: inherit;
         }
-        .stage-tab-btn .tab-title {
+        .golden-era-sheet .golden-era-box .stage-tab-btn:hover {
+          background: rgba(255, 255, 255, 0.16);
+          border-color: rgba(255, 255, 255, 0.45);
+        }
+        .golden-era-sheet .stage-tab-btn .tab-title {
           font-size: 0.875rem;
           font-weight: 700;
           color: #e2e8f0;
         }
-        .stage-tab-btn .tab-year {
+        .golden-era-sheet .stage-tab-btn .tab-year {
           font-size: 1rem;
           font-weight: 900;
           font-family: 'Space Grotesk', 'Pretendard', sans-serif;
           color: #ffffff;
         }
-        .stage-tab-btn.active {
+        .golden-era-sheet .golden-era-box .stage-tab-btn.active {
           border-color: var(--theme-color, #fde047);
           background: rgba(255, 255, 255, 0.16);
-          box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.18);
         }
-        .stage-tab-btn.active .tab-title {
+        .golden-era-sheet .stage-tab-btn.active .tab-title {
           color: #ffffff;
         }
-        .stage-tab-btn.active .tab-year {
+        .golden-era-sheet .stage-tab-btn.active .tab-year {
           color: var(--theme-color, #fde047);
-          text-shadow: 0 0 10px rgba(253, 224, 71, 0.4);
+          text-shadow: 0 0 10px rgba(253, 224, 71, 0.35);
         }
 
         /* 활성화된 시절 카드 */
-        .active-stage-card {
+        .golden-era-sheet .active-stage-card {
           background: rgba(255, 255, 255, 0.07);
           border: 2px solid;
           border-radius: 22px;
@@ -1136,13 +1158,13 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           margin-bottom: 20px;
           box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
         }
-        .stage-card-head {
+        .golden-era-sheet .stage-card-head {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
           margin-bottom: 16px;
         }
-        .stage-age-pill {
+        .golden-era-sheet .stage-age-pill {
           display: inline-block;
           font-size: 0.775rem;
           font-weight: 800;
@@ -1151,22 +1173,22 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           padding: 3px 10px;
           margin-bottom: 5px;
         }
-        .stage-name {
+        .golden-era-sheet .stage-name {
           font-size: 1.3rem;
           font-weight: 800;
           margin: 4px 0 2px;
           color: #ffffff;
         }
-        .stage-subtitle {
+        .golden-era-sheet .stage-subtitle {
           font-size: 0.875rem;
           font-weight: 500;
           color: #f1f5f9;
           margin: 3px 0 0;
         }
-        .stage-year-emblem {
+        .golden-era-sheet .stage-year-emblem {
           text-align: right;
         }
-        .stage-year-emblem .yr-num {
+        .golden-era-sheet .stage-year-emblem .yr-num {
           display: block;
           font-size: 1.6rem;
           font-weight: 900;
@@ -1175,68 +1197,68 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           line-height: 1;
           text-shadow: 0 0 12px rgba(253, 224, 71, 0.35);
         }
-        .stage-year-emblem .yr-text {
+        .golden-era-sheet .stage-year-emblem .yr-text {
           font-size: 0.8rem;
           font-weight: 700;
           color: #e2e8f0;
         }
 
-        .stage-item-box {
+        .golden-era-sheet .stage-item-box {
           display: flex;
           gap: 14px;
-          background: rgba(0, 0, 0, 0.45);
-          border: 1.5px solid rgba(255, 255, 255, 0.15);
+          background: rgba(8, 12, 22, 0.65);
+          border: 1.5px solid rgba(255, 255, 255, 0.18);
           border-radius: 16px;
           padding: 14px;
           margin-bottom: 14px;
         }
-        .item-thumb-box {
+        .golden-era-sheet .item-thumb-box {
           width: 84px;
           height: 84px;
           border-radius: 12px;
           overflow: hidden;
           flex-shrink: 0;
           background: #000;
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.25);
         }
-        .item-thumb-box img {
+        .golden-era-sheet .item-thumb-box img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
-        .item-thumb-placeholder {
+        .golden-era-sheet .item-thumb-placeholder {
           width: 84px;
           height: 84px;
           border-radius: 12px;
           flex-shrink: 0;
           background: rgba(255, 255, 255, 0.08);
-          border: 1.5px dashed rgba(251, 191, 36, 0.4);
+          border: 1.5px dashed rgba(251, 191, 36, 0.45);
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           font-size: 1.6rem;
         }
-        .item-thumb-placeholder small {
+        .golden-era-sheet .item-thumb-placeholder small {
           font-size: 0.7rem;
           font-weight: 700;
           color: #f1f5f9;
           margin-top: 3px;
         }
-        .item-info {
+        .golden-era-sheet .item-info {
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           min-width: 0;
         }
-        .item-cat-tag {
+        .golden-era-sheet .item-cat-tag {
           font-size: 0.8rem;
           font-weight: 800;
-          color: #38bdf8;
+          color: #7dd3fc;
           margin-bottom: 3px;
         }
-        .item-title {
+        .golden-era-sheet .item-title {
           font-size: 1.125rem;
           font-weight: 900;
           color: #ffffff;
@@ -1245,7 +1267,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           overflow: hidden;
           text-overflow: ellipsis;
         }
-        .item-desc {
+        .golden-era-sheet .item-desc {
           font-size: 0.9rem;
           font-weight: 500;
           color: #f1f5f9;
@@ -1256,15 +1278,16 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           -webkit-box-orient: vertical;
           overflow: hidden;
         }
-        .teleport-btn {
+        .golden-era-sheet .golden-era-box .teleport-btn {
           width: 100%;
-          border: 1.5px solid rgba(255, 255, 255, 0.28);
-          background: rgba(255, 255, 255, 0.1);
+          border: 1.5px solid rgba(255, 255, 255, 0.32);
+          background: rgba(255, 255, 255, 0.12);
           color: #ffffff;
           border-radius: 14px;
           padding: 12px;
           font-size: 0.9375rem;
           font-weight: 800;
+          text-align: center;
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -1273,23 +1296,23 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           transition: all 180ms ease;
           font-family: inherit;
         }
-        .teleport-btn:hover {
+        .golden-era-sheet .golden-era-box .teleport-btn:hover {
           background: rgba(251, 191, 36, 0.22);
-          color: #ffffff;
+          color: #fde047;
           border-color: #fde047;
           box-shadow: 0 4px 18px rgba(251, 191, 36, 0.25);
         }
 
         /* 캔버스 프리뷰 */
-        .canvas-container-preview {
-          background: rgba(0, 0, 0, 0.45);
-          border: 1.5px solid rgba(255, 255, 255, 0.18);
+        .golden-era-sheet .canvas-container-preview {
+          background: rgba(8, 12, 22, 0.65);
+          border: 1.5px solid rgba(255, 255, 255, 0.2);
           border-radius: 20px;
           padding: 14px;
           margin-bottom: 20px;
           text-align: center;
         }
-        .canvas-preview-header {
+        .golden-era-sheet .canvas-preview-header {
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -1299,40 +1322,40 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           margin-bottom: 12px;
           padding: 0 4px;
         }
-        .preview-size {
+        .golden-era-sheet .preview-size {
           font-size: 0.775rem;
           color: #fde047;
           font-weight: 800;
           background: rgba(251, 191, 36, 0.18);
-          border: 1px solid rgba(251, 191, 36, 0.4);
+          border: 1px solid rgba(251, 191, 36, 0.45);
           padding: 3px 8px;
           border-radius: 6px;
         }
-        .canvas-wrapper {
+        .golden-era-sheet .canvas-wrapper {
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
         /* 액션 버튼 그룹 */
-        .golden-action-group {
+        .golden-era-sheet .golden-action-group {
           display: flex;
           flex-direction: column;
           gap: 10px;
         }
-        .action-row-primary {
+        .golden-era-sheet .action-row-primary {
           display: grid;
           grid-template-columns: 1fr 1fr;
           gap: 10px;
         }
-        .action-btn {
+        .golden-era-sheet .golden-era-box .action-btn {
           border: 0;
           border-radius: 16px;
           padding: 14px 16px;
           font-size: 0.9375rem;
           font-weight: 800;
           cursor: pointer;
-          transition: transform 100ms ease, filter 150ms ease, box-shadow 150ms ease;
+          transition: transform 100ms ease, filter 150ms ease, box-shadow 150ms ease, background 150ms ease;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1340,198 +1363,223 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           text-align: center;
           font-family: inherit;
         }
-        .action-btn:active {
+        .golden-era-sheet .golden-era-box .action-btn:active {
           transform: scale(0.97);
         }
-        .action-insta {
-          background: linear-gradient(135deg, #ec4899 0%, #f43f5e 50%, #f59e0b 100%);
+        .golden-era-sheet .golden-era-box .action-btn.action-insta {
+          background: linear-gradient(135deg, #be185d 0%, #be123c 55%, #b45309 100%);
           color: #ffffff;
-          box-shadow: 0 4px 18px rgba(244, 63, 94, 0.35);
+          box-shadow: 0 4px 18px rgba(190, 18, 60, 0.4);
         }
-        .action-kakao {
+        .golden-era-sheet .golden-era-box .action-btn.action-insta:hover {
+          background: linear-gradient(135deg, #db2777 0%, #e11d48 55%, #d97706 100%);
+        }
+        .golden-era-sheet .golden-era-box .action-btn.action-kakao {
           background: #fee500;
           color: #191919;
           box-shadow: 0 4px 18px rgba(254, 229, 0, 0.3);
         }
-        .action-row-secondary {
+        .golden-era-sheet .golden-era-box .action-btn.action-kakao:hover {
+          background: #ffeb3b;
+        }
+        .golden-era-sheet .action-row-secondary {
           display: grid;
           grid-template-columns: 1fr 1.2fr 0.8fr;
           gap: 8px;
         }
-        .action-download {
+        .golden-era-sheet .golden-era-box .action-btn.action-download {
           background: rgba(255, 255, 255, 0.16);
           color: #ffffff;
-          border: 1px solid rgba(255, 255, 255, 0.25);
+          border: 1.5px solid rgba(255, 255, 255, 0.32);
           font-size: 0.875rem;
         }
-        .action-retry {
+        .golden-era-sheet .golden-era-box .action-btn.action-download:hover {
+          background: rgba(255, 255, 255, 0.25);
+        }
+        .golden-era-sheet .golden-era-box .action-btn.action-retry {
           background: rgba(255, 255, 255, 0.12);
           color: #f8fafc;
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1.5px solid rgba(255, 255, 255, 0.25);
           font-size: 0.875rem;
         }
-        .action-close {
-          background: rgba(255, 255, 255, 0.08);
-          color: #e2e8f0;
-          border: 1px solid rgba(255, 255, 255, 0.15);
+        .golden-era-sheet .golden-era-box .action-btn.action-retry:hover {
+          background: rgba(255, 255, 255, 0.22);
+        }
+        .golden-era-sheet .golden-era-box .action-btn.action-close {
+          background: rgba(255, 255, 255, 0.09);
+          color: #f1f5f9;
+          border: 1.5px solid rgba(255, 255, 255, 0.22);
           font-size: 0.875rem;
         }
-        .action-btn:hover {
-          filter: brightness(1.12);
+        .golden-era-sheet .golden-era-box .action-btn.action-close:hover {
+          background: rgba(255, 255, 255, 0.2);
+          color: #ffffff;
         }
-        .action-btn:disabled {
+        .golden-era-sheet .golden-era-box .action-btn:disabled {
           opacity: 0.5;
           cursor: not-allowed;
         }
 
         /* 👓 효도 모드(.app.hyodo) 환경 전용 스타일 보강 */
-        .app.hyodo .golden-era-box {
+        .app.hyodo .golden-era-sheet .golden-era-box {
           max-width: 620px;
           padding: clamp(24px, 5vw, 40px);
           border: 2px solid #fde047;
-          background: linear-gradient(175deg, #101726 0%, #070b14 100%);
+          background: linear-gradient(175deg, #101726 0%, #070b14 100%) !important;
           box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 45px rgba(253, 224, 71, 0.3);
         }
-        .app.hyodo .golden-badge {
+        .app.hyodo .golden-era-sheet .golden-era-box .golden-modal-close {
+          width: 44px;
+          height: 44px;
+          font-size: 1.25rem;
+          border-width: 2px;
+        }
+        .app.hyodo .golden-era-sheet .golden-badge {
           font-size: 1rem;
           padding: 6px 16px;
         }
-        .app.hyodo .golden-title {
+        .app.hyodo .golden-era-sheet .golden-title {
           font-size: clamp(1.75rem, 5.5vw, 2.3rem);
           font-weight: 900;
         }
-        .app.hyodo .golden-desc {
+        .app.hyodo .golden-era-sheet .golden-desc {
           font-size: 1.15rem;
           line-height: 1.7;
           color: #ffffff;
           font-weight: 600;
         }
-        .app.hyodo .golden-input-wrap {
+        .app.hyodo .golden-era-sheet .golden-input-wrap {
           max-width: 340px;
           padding: 14px 24px;
           border: 3px solid #fde047;
         }
-        .app.hyodo .golden-year-input {
+        .app.hyodo .golden-era-sheet .golden-year-input {
           font-size: 2.6rem;
           font-weight: 900;
         }
-        .app.hyodo .golden-input-suffix {
+        .app.hyodo .golden-era-sheet .golden-input-suffix {
           font-size: 1.5rem;
           font-weight: 800;
         }
-        .app.hyodo .chips-label {
+        .app.hyodo .golden-era-sheet .chips-label {
           font-size: 1rem;
           font-weight: 700;
           color: #f1f5f9;
         }
-        .app.hyodo .quick-chip {
+        .app.hyodo .golden-era-sheet .golden-era-box .quick-chip {
           font-size: 1.05rem;
           padding: 8px 16px;
           font-weight: 800;
           border-width: 2px;
         }
-        .app.hyodo .golden-submit-btn {
+        .app.hyodo .golden-era-sheet .golden-era-box .golden-submit-btn {
           font-size: 1.3rem;
           font-weight: 900;
           padding: 18px;
         }
-        .app.hyodo .point-item strong {
+        .app.hyodo .golden-era-sheet .point-item strong {
           font-size: 1.05rem;
           font-weight: 800;
         }
-        .app.hyodo .point-item p {
+        .app.hyodo .golden-era-sheet .point-item p {
           font-size: 0.95rem;
           color: #ffffff;
           font-weight: 600;
           line-height: 1.45;
         }
-        .app.hyodo .report-gen-tag {
+        .app.hyodo .golden-era-sheet .report-gen-tag {
           font-size: 1rem;
           padding: 4px 14px;
         }
-        .app.hyodo .report-badge-pill {
+        .app.hyodo .golden-era-sheet .report-badge-pill {
           font-size: 0.95rem;
           padding: 4px 14px;
         }
-        .app.hyodo .report-gen-title {
+        .app.hyodo .golden-era-sheet .report-gen-title {
           font-size: clamp(1.6rem, 5vw, 2.2rem);
           font-weight: 900;
         }
-        .app.hyodo .report-sub {
+        .app.hyodo .golden-era-sheet .report-sub {
           font-size: 1.15rem;
           color: #ffffff;
           font-weight: 600;
           line-height: 1.6;
         }
-        .app.hyodo .stage-tab-btn {
+        .app.hyodo .golden-era-sheet .golden-era-box .stage-tab-btn {
           padding: 14px 10px;
         }
-        .app.hyodo .stage-tab-btn .tab-title {
+        .app.hyodo .golden-era-sheet .stage-tab-btn .tab-title {
           font-size: 1rem;
           font-weight: 800;
         }
-        .app.hyodo .stage-tab-btn .tab-year {
+        .app.hyodo .golden-era-sheet .stage-tab-btn .tab-year {
           font-size: 1.25rem;
           font-weight: 900;
         }
-        .app.hyodo .stage-age-pill {
+        .app.hyodo .golden-era-sheet .stage-age-pill {
           font-size: 0.875rem;
           padding: 4px 12px;
         }
-        .app.hyodo .stage-name {
+        .app.hyodo .golden-era-sheet .stage-name {
           font-size: 1.5rem;
           font-weight: 900;
         }
-        .app.hyodo .stage-subtitle {
+        .app.hyodo .golden-era-sheet .stage-subtitle {
           font-size: 1.1rem;
           color: #ffffff;
           font-weight: 600;
         }
-        .app.hyodo .stage-year-emblem .yr-num {
+        .app.hyodo .golden-era-sheet .stage-year-emblem .yr-num {
           font-size: 1.85rem;
           font-weight: 900;
         }
-        .app.hyodo .stage-year-emblem .yr-text {
+        .app.hyodo .golden-era-sheet .stage-year-emblem .yr-text {
           font-size: 0.95rem;
           color: #ffffff;
         }
-        .app.hyodo .item-cat-tag {
+        .app.hyodo .golden-era-sheet .item-cat-tag {
           font-size: 0.95rem;
           font-weight: 800;
         }
-        .app.hyodo .item-title {
+        .app.hyodo .golden-era-sheet .item-title {
           font-size: 1.3rem;
           font-weight: 900;
         }
-        .app.hyodo .item-desc {
+        .app.hyodo .golden-era-sheet .item-desc {
           font-size: 1.1rem;
           line-height: 1.65;
           color: #ffffff;
           font-weight: 600;
           -webkit-line-clamp: 4;
         }
-        .app.hyodo .teleport-btn {
+        .app.hyodo .golden-era-sheet .golden-era-box .teleport-btn {
           font-size: 1.15rem;
           font-weight: 800;
           padding: 15px;
         }
-        .app.hyodo .action-btn {
+        .app.hyodo .golden-era-sheet .canvas-preview-header {
+          font-size: 1.05rem;
+        }
+        .app.hyodo .golden-era-sheet .preview-size {
+          font-size: 0.875rem;
+        }
+        .app.hyodo .golden-era-sheet .golden-era-box .action-btn {
           font-size: 1.1rem;
           font-weight: 800;
           padding: 16px;
         }
 
         @media (max-width: 480px) {
-          .golden-era-box {
+          .golden-era-sheet .golden-era-box {
             padding: 18px 14px;
           }
-          .action-row-primary {
+          .golden-era-sheet .action-row-primary {
             grid-template-columns: 1fr;
           }
-          .action-row-secondary {
+          .golden-era-sheet .action-row-secondary {
             grid-template-columns: 1fr 1fr;
           }
-          .action-close {
+          .golden-era-sheet .action-close {
             grid-column: 1 / -1;
           }
         }
