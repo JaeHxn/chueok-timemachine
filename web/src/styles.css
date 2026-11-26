@@ -1384,13 +1384,13 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
 
 /* ── 바이럴 황금기 테스트 트리거 버튼 & 배너 ── */
 .golden-era-btn {
-  background: linear-gradient(135deg, rgba(255, 215, 0, 0.18) 0%, rgba(245, 158, 11, 0.22) 100%);
-  border: 1px solid rgba(212, 166, 42, 0.5);
-  color: #d97706;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border: 1.5px solid #ea580c;
+  color: #9a3412;
   padding: 7px 15px;
   border-radius: 999px;
   font-size: 0.8125rem;
-  font-weight: 700;
+  font-weight: 800;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -1419,14 +1419,14 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
   width: 100%;
   padding: 14px 18px;
   border-radius: var(--r-m);
-  background: linear-gradient(135deg, rgba(254, 243, 199, 0.7) 0%, rgba(253, 230, 138, 0.5) 100%);
-  border: 1.5px solid rgba(245, 158, 11, 0.45);
+  background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+  border: 2px solid #ea580c;
   display: flex;
   align-items: center;
   gap: 14px;
   cursor: pointer;
   text-align: left;
-  box-shadow: 0 4px 16px rgba(245, 158, 11, 0.12);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.14);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 @media (prefers-color-scheme: dark) {
@@ -1453,9 +1453,9 @@ span.moon{opacity:.35;cursor:default;background:var(--control)}
 }
 .home-golden-banner strong {
   display: block;
-  font-size: 0.9375rem;
+  font-size: 0.96875rem;
   font-weight: 800;
-  color: #92400e;
+  color: #1c1917;
   margin-bottom: 2px;
 }
 @media (prefers-color-scheme: dark) {

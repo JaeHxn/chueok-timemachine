@@ -702,7 +702,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
                 <div className="active-stage-card" style={{ borderColor: currentStage.themeColor }}>
                   <div className="stage-card-head">
                     <div>
-                      <span className="stage-age-pill" style={{ background: currentStage.themeColor }}>
+                      <span className="stage-age-pill" style={{ background: currentStage.themeColor, color: "#0f172a", fontWeight: 800 }}>
                         {currentStage.ageDesc}
                       </span>
                       <h3 className="stage-name">{currentStage.title}</h3>
