@@ -45,7 +45,7 @@ for (const year of YEARS) {
   // 대표 연대(1970, 1980, 1990, 2000, 2002 등)는 가중치 0.8, 나머지는 0.7
   const isMilestone = [1970, 1974, 1980, 1982, 1988, 1990, 1993, 1997, 1998, 2000, 2002, 2010, 2020].includes(year);
   urls.push({
-    loc: `${BASE_URL}/#/${year}`,
+    loc: `${BASE_URL}/${year}`,
     lastmod: TODAY,
     changefreq: 'weekly',
     priority: isMilestone ? '0.8' : '0.7'
@@ -55,17 +55,23 @@ for (const year of YEARS) {
 // 3. 8대 카테고리 페이지
 for (const cat of CATEGORIES) {
   urls.push({
-    loc: `${BASE_URL}/#/cat/${encodeURIComponent(cat)}`,
+    loc: `${BASE_URL}/cat/${encodeURIComponent(cat)}`,
     lastmod: TODAY,
     changefreq: 'weekly',
     priority: '0.6'
   });
 }
 
-// 4. 대표 사진 아이템 (상위 183개)
-for (const title of photoItems) {
+// 4. 대표 사진 아이템 (상위 342개, "연도|제목" 키에서 제목 추출)
+const seenTitles = new Set();
+for (const key of photoItems) {
+  const parts = key.split('|');
+  const yearPart = parts.length > 1 ? parts[0] : '';
+  const titlePart = parts.length > 1 ? parts.slice(1).join('|') : key;
+  if (!titlePart || seenTitles.has(key)) continue;
+  seenTitles.add(key);
   urls.push({
-    loc: `${BASE_URL}/#/item/${encodeURIComponent(title)}`,
+    loc: yearPart ? `${BASE_URL}/${yearPart}/${encodeURIComponent(titlePart)}` : `${BASE_URL}/item/${encodeURIComponent(titlePart)}`,
     lastmod: TODAY,
     changefreq: 'monthly',
     priority: '0.5'

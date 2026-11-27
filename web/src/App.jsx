@@ -26,15 +26,43 @@ const itemsOf = (y) => BY_YEAR[y] ?? [];
 const YEARS_WITH_DATA = YEARS.filter((y) => itemsOf(y).length);
 const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
 
-// 주소(#/1974/3, #/1974/3/포니 1, #/1974/포니 1) ↔ 화면 상태. 뒤로가기·공유 링크가 그대로 동작한다.
-function parseHash() {
-  const raw = location.hash.replace(/^#\/?/, "");
-  if (!raw) return { year: null, month: null, itemTitle: null };
+// 주소(#/1974/3, /1974/3, #/cat/음악, /cat/음악, #/item/포니 1, /search?q=라면) ↔ 화면 상태.
+function parseRoute() {
+  const hashRaw = location.hash.replace(/^#\/?/, "");
+  const pathRaw = location.pathname.replace(/^\/+|\/+$/g, "");
+  const raw = hashRaw || pathRaw;
+  const empty = { year: null, month: null, itemTitle: null, routeCat: null, searchQuery: "" };
+
+  // /search?q=... 또는 #/search?q=...
+  if (raw.startsWith("search")) {
+    const qStr = hashRaw.includes("?")
+      ? hashRaw.slice(hashRaw.indexOf("?"))
+      : location.search;
+    const params = new URLSearchParams(qStr);
+    const q = (params.get("q") || "").trim();
+    return { ...empty, searchQuery: q };
+  }
+
+  if (!raw) return empty;
   const parts = raw.split("/").map((p) => {
     try { return decodeURIComponent(p.trim()); } catch { return p.trim(); }
   });
+
+  // /cat/{카테고리} 또는 #/cat/{카테고리}
+  if (parts[0] === "cat" && parts[1]) {
+    const matchedCat = CATS.find((c) => c === parts[1]);
+    if (matchedCat) return { ...empty, routeCat: matchedCat };
+  }
+
+  // /item/{제목} 또는 #/item/{제목}
+  if (parts[0] === "item" && parts[1]) {
+    const title = parts.slice(1).join("/");
+    const found = items.find((i) => i.title === title) || items.find((i) => i.title.includes(title));
+    if (found) return { year: found.year, month: found.month ?? null, itemTitle: found.title, routeCat: null, searchQuery: "" };
+  }
+
   const y = Number(parts[0]);
-  if (!YEARS.includes(y)) return { year: null, month: null, itemTitle: null };
+  if (!YEARS.includes(y)) return empty;
 
   let month = null;
   let itemTitle = null;
@@ -56,7 +84,7 @@ function parseHash() {
     itemTitle = parts.slice(2).join("/");
   }
 
-  return { year: y, month, itemTitle };
+  return { year: y, month, itemTitle, routeCat: null, searchQuery: "" };
 }
 const hashOf = (y, m) => (y ? `#/${y}${m ? "/" + m : ""}` : "#/");
 const nearestWithData = (y) =>
@@ -85,9 +113,10 @@ const readHyodo = () => {
 };
 
 export default function App() {
-  const [{ year, month, itemTitle }, setRoute] = useState(parseHash);
+  const initialRoute = useMemo(() => parseRoute(), []);
+  const [{ year, month, itemTitle, routeCat }, setRoute] = useState(initialRoute);
   const [cat, setCat] = useState("전체");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(initialRoute.searchQuery || "");
   const [reduceMotion, setReduceMotion] = useState(readReduce);
   const [hyodo, setHyodo] = useState(readHyodo);
   const [share, setShare] = useState(null);
@@ -207,7 +236,9 @@ export default function App() {
 
   useEffect(() => {
     const onPop = () => {
-      const cur = parseHash();
+      const cur = parseRoute();
+      setRoute(cur);
+      if (cur.searchQuery) setQuery(cur.searchQuery);
       if (!cur.itemTitle && detail) {
         setDetail(null);
       }
@@ -270,10 +301,29 @@ export default function App() {
 
   // 주소가 바뀌면(뒤로가기 포함) 화면을 따라가게
   useEffect(() => {
-    const onHash = () => { setRoute(parseHash()); setCat("전체"); setAdminView(location.hash.startsWith("#/admin")); };
+    const onHash = () => {
+      const next = parseRoute();
+      setRoute(next);
+      setCat("전체");
+      if (next.searchQuery) setQuery(next.searchQuery);
+      setAdminView(location.hash.startsWith("#/admin") || location.pathname === "/admin");
+    };
     addEventListener("hashchange", onHash);
     return () => removeEventListener("hashchange", onHash);
   }, []);
+
+  // SEO/UX 동적 페이지 타이틀 반영
+  useEffect(() => {
+    if (query.trim()) {
+      document.title = `“${query.trim()}” 검색 결과 — 추억 타임머신`;
+    } else if (routeCat) {
+      document.title = `${routeCat} 추억 모음 — 추억 타임머신`;
+    } else if (year) {
+      document.title = `${year}년${month && month !== "unknown" ? ` ${month}월` : ""} 추억 — 추억 타임머신`;
+    } else {
+      document.title = "추억 타임머신 — 1950~2026 대한민국 연도별 추억 아카이브";
+    }
+  }, [year, month, routeCat, query]);
   const go = (y, m = null) => { location.hash = hashOf(y, m); };
 
   useEffect(() => { try { localStorage.setItem("reduceMotion", reduceMotion ? "1" : "0"); } catch {} }, [reduceMotion]);
@@ -330,8 +380,21 @@ export default function App() {
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     if (q.length < 1) return [];
-    return items.filter((i) => (i.title + " " + i.summary).toLowerCase().includes(q)).slice(0, 30);
+    const tokens = q.split(/\s+/).filter(Boolean);
+    const qCompact = q.replace(/\s+/g, "");
+    return items
+      .filter((i) => {
+        const hay = `${i.year} ${i.cat} ${i.title} ${i.summary}`.toLowerCase();
+        if (tokens.every((t) => hay.includes(t))) return true;
+        return hay.replace(/\s+/g, "").includes(qCompact);
+      })
+      .slice(0, 50);
   }, [query]);
+
+  const routeCatItems = useMemo(() => {
+    if (!routeCat) return [];
+    return items.filter((i) => i.cat === routeCat).slice(0, 60);
+  }, [routeCat]);
 
   const shareUrl = (it) => {
     const m = it.month ? `/${it.month}` : "";
@@ -433,7 +496,24 @@ export default function App() {
         </section>
       )}
 
-      {!adminView && !query.trim() && !year && (
+      {!adminView && !query.trim() && routeCat && !year && (
+        <section className="results" aria-live="polite">
+          <h2 className="sec-h">{routeCat} 추억 모음 ({items.filter((i) => i.cat === routeCat).length}건)</h2>
+          <ul className="result-list">
+            {routeCatItems.map((it) => (
+              <li key={it.year + it.title}>
+                <a href={hashOf(it.year, it.month)}>
+                  <span className="r-year">{it.year}{it.month ? `.${it.month}` : ""}</span>
+                  <span className="r-title">{it.title}</span>
+                  <span className="r-cat">{it.cat}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {!adminView && !query.trim() && !routeCat && !year && (
         <section className="home">
           <p className="lead">그 시절, 우리가 좋아했던 것들.</p>
           <p className="note">연도를 고르면 그해 유행한 노래·먹거리·물건·사건을 볼 수 있어요.</p>

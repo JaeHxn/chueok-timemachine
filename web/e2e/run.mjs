@@ -199,6 +199,36 @@ for (const vp of [{ name: "데스크톱", w: 1280, h: 860 }, { name: "모바일"
     assert(r.length === 0, "작은 대상: " + kinds.slice(0, 6).join(", "));
   });
 
+  await test(P + "클린 URL /1988 직접 접속 → 1988년 아카이브 & 타이틀", async () => {
+    ab("open", new URL("1988", BASE).toString()); await wait(500);
+    const r = js(`return {h2:document.querySelector('.year-head h2')?.textContent, cards:document.querySelectorAll('.card').length, title:document.title}`);
+    assert(r.h2 === "1988" && r.cards > 0 && r.title.includes("1988년"), JSON.stringify(r));
+    return `카드 ${r.cards}개`;
+  });
+
+  await test(P + "클린 URL /cat/음악 직접 접속 → 카테고리 모음", async () => {
+    ab("open", new URL("cat/음악", BASE).toString()); await wait(500);
+    const r = js(`return {h:document.querySelector('.results .sec-h')?.textContent, items:document.querySelectorAll('.result-list li').length}`);
+    assert(r.h && r.h.includes("음악") && r.items > 0, JSON.stringify(r));
+    return `${r.items}건`;
+  });
+
+  await test(P + "클린 URL /search?q=라면 직접 접속 → 검색 결과", async () => {
+    ab("open", new URL("search?q=" + encodeURIComponent("라면"), BASE).toString()); await wait(500);
+    const r = js(`return {h:document.querySelector('.results .sec-h')?.textContent, items:document.querySelectorAll('.result-list li').length, val:document.querySelector('.search')?.value}`);
+    assert(r.h && r.h.includes("라면") && r.items > 0 && r.val === "라면", JSON.stringify(r));
+    return `${r.items}건`;
+  });
+
+  await test(P + "다중 키워드 검색 '1963 라면' → 결과 표시", async () => {
+    ab("open", BASE + "#/"); await wait(400);
+    js(`const i=document.querySelector('.search');const s=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;s.call(i,'1963 라면');i.dispatchEvent(new Event('input',{bubbles:true}));return 1`); await wait(300);
+    const r = js(`return {items:document.querySelectorAll('.result-list li').length}`);
+    assert(r.items >= 2, JSON.stringify(r));
+    js(`const i=document.querySelector('.search');const s=Object.getOwnPropertyDescriptor(HTMLInputElement.prototype,'value').set;s.call(i,'');i.dispatchEvent(new Event('input',{bubbles:true}));return 1`); await wait(200);
+    return `${r.items}건`;
+  });
+
   ab("screenshot", path.join(here, `shot-${vp.w}.png`));
 }
 
