@@ -973,6 +973,7 @@ export default function App() {
             <button
               className="primary modal-share-btn"
               onClick={() => {
+                closeDetail(); // <dialog>는 최상위 층이라 열어 둔 채면 공유 시트가 뒤에 깔린다
                 setShare({
                   title: `${detail.item.title} (${detail.item.year}) · 추억 타임머신`,
                   text: detail.item.summary,
@@ -987,6 +988,7 @@ export default function App() {
             <button
               className="ghost modal-insta-btn"
               onClick={() => {
+                closeDetail();
                 setInstaModalItem({ item: detail.item, photo: detail.photo });
               }}
             >
