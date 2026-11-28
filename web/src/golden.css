@@ -1,0 +1,117 @@
+/* 황금기 테스트 모달 — 종이 바탕, 잉크 글자, 벽돌색 강조 하나 */
+.sheet.golden-era-sheet {
+  position: fixed; inset: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: center;
+  padding: 16px;
+  background: rgba(35, 29, 24, 0.72);
+}
+.golden-era-sheet .golden-era-box {
+  --paper: #f4efe6; --paper-2: #ebe4d6; --ink: #231d18; --muted: #6b6158; --rule: #cfc5b4; --brick: #9a3b26;
+  position: relative; width: 100%; max-width: 540px; max-height: calc(100dvh - 32px); overflow-y: auto;
+  background: var(--paper); color: var(--ink);
+  border: 1px solid var(--ink); border-radius: 4px;
+  padding: 40px 28px 28px;
+  font-family: Pretendard, -apple-system, sans-serif; line-height: 1.6;
+}
+.golden-era-sheet .golden-era-box h2,
+.golden-era-sheet .golden-era-box h3,
+.golden-era-sheet .golden-era-box h4 { font-family: "Noto Serif KR", serif; color: var(--ink); margin: 0; }
+.golden-era-sheet .golden-era-box p { margin: 0; }
+
+.golden-era-sheet .golden-modal-close {
+  position: absolute; top: 8px; right: 8px; width: 44px; height: 44px;
+  background: none; border: 0; color: var(--ink); font-size: 18px; cursor: pointer; padding: 0;
+}
+
+/* 1단계 */
+.golden-era-sheet .golden-badge { display: block; font-size: 13px; color: var(--brick); font-weight: 600; margin-bottom: 8px; }
+.golden-era-sheet .golden-title { font-size: 26px; line-height: 1.3; }
+.golden-era-sheet .golden-desc { margin-top: 12px; color: var(--muted); font-size: 15px; }
+.golden-era-sheet .golden-form { margin-top: 24px; display: grid; gap: 16px; }
+.golden-era-sheet .golden-input-wrap { display: flex; align-items: baseline; gap: 8px; border-bottom: 2px solid var(--ink); }
+.golden-era-sheet .golden-year-input {
+  flex: 1; min-width: 0; background: transparent; border: 0; outline: 0; color: var(--ink);
+  font-family: "Noto Serif KR", serif; font-size: 32px; font-weight: 700; padding: 4px 0;
+}
+.golden-era-sheet .golden-year-input:focus-visible { outline: 2px solid var(--brick); outline-offset: 2px; }
+.golden-era-sheet .golden-input-suffix { font-size: 16px; color: var(--muted); }
+.golden-era-sheet .golden-quick-chips { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.golden-era-sheet .chips-label { font-size: 13px; color: var(--muted); margin-right: 4px; }
+
+/* 칩·탭: 같은 선 스타일 */
+.golden-era-sheet .quick-chip,
+.golden-era-sheet .stage-tab-btn {
+  background: transparent; color: var(--ink); border: 1px solid var(--rule); border-radius: 2px;
+  font: inherit; font-size: 14px; padding: 6px 12px; cursor: pointer; min-height: 36px;
+}
+.golden-era-sheet .quick-chip:hover,
+.golden-era-sheet .stage-tab-btn:hover { border-color: var(--ink); }
+.golden-era-sheet .quick-chip.active,
+.golden-era-sheet .stage-tab-btn.active { border-color: var(--ink); background: var(--ink); color: var(--paper); }
+
+/* 버튼은 한 가지: 잉크 선, 주 동작만 채움 */
+.golden-era-sheet .golden-submit-btn,
+.golden-era-sheet .teleport-btn,
+.golden-era-sheet .action-btn {
+  display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 48px;
+  background: transparent; color: var(--ink); border: 1px solid var(--ink); border-radius: 2px;
+  font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; padding: 10px 16px;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+.golden-era-sheet .golden-submit-btn,
+.golden-era-sheet .action-insta { background: var(--brick); border-color: var(--brick); color: var(--paper); }
+.golden-era-sheet .action-btn:hover,
+.golden-era-sheet .teleport-btn:hover { background: var(--paper-2); }
+.golden-era-sheet .golden-submit-btn:hover,
+.golden-era-sheet .action-insta:hover { background: #7f2f1e; }
+.golden-era-sheet button:focus-visible { outline: 2px solid var(--brick); outline-offset: 2px; }
+.golden-era-sheet .action-btn:disabled { opacity: 0.5; cursor: wait; }
+
+.golden-era-sheet .golden-feature-points { margin-top: 28px; border-top: 1px solid var(--rule); }
+.golden-era-sheet .point-item { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.golden-era-sheet .point-icon { display: none; }
+.golden-era-sheet .point-item strong { display: block; font-size: 15px; }
+.golden-era-sheet .point-item p { font-size: 14px; color: var(--muted); }
+
+/* 2단계 */
+.golden-era-sheet .report-badge-row { display: flex; gap: 8px; align-items: center; font-size: 13px; }
+.golden-era-sheet .report-gen-tag { border: 1px solid var(--ink) !important; padding: 2px 8px; font-weight: 600; }
+.golden-era-sheet .report-badge-pill { color: var(--brick); font-weight: 600; }
+.golden-era-sheet .report-gen-title { margin-top: 12px; font-size: 24px; line-height: 1.35; }
+.golden-era-sheet .report-sub { margin-top: 8px; color: var(--muted); font-size: 14px; }
+.golden-era-sheet .stage-tab-row { margin-top: 20px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.golden-era-sheet .stage-tab-btn { display: flex; flex-direction: column; align-items: flex-start; padding: 8px 10px; }
+.golden-era-sheet .tab-title { font-weight: 600; }
+.golden-era-sheet .tab-year { font-size: 12px; opacity: 0.75; }
+
+.golden-era-sheet .active-stage-card { margin-top: 16px; border: 1px solid var(--ink); border-left-width: 6px; padding: 20px; display: grid; gap: 16px; }
+.golden-era-sheet .stage-card-head { display: flex; justify-content: space-between; gap: 16px; }
+.golden-era-sheet .stage-age-pill { display: inline-block; font-size: 12px; padding: 2px 8px; }
+.golden-era-sheet .stage-name { margin-top: 8px; font-size: 20px; }
+.golden-era-sheet .stage-subtitle { color: var(--muted); font-size: 14px; }
+.golden-era-sheet .stage-year-emblem { text-align: right; }
+.golden-era-sheet .yr-num { display: block; font-family: "Noto Serif KR", serif; font-size: 28px; font-weight: 700; line-height: 1; }
+.golden-era-sheet .yr-text { font-size: 12px; color: var(--muted); }
+.golden-era-sheet .stage-item-box { display: flex; gap: 16px; align-items: flex-start; }
+.golden-era-sheet .item-thumb-box,
+.golden-era-sheet .item-thumb-placeholder { flex: 0 0 96px; width: 96px; height: 96px; border: 1px solid var(--ink); overflow: hidden; background: var(--paper-2); }
+.golden-era-sheet .item-thumb-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.golden-era-sheet .item-thumb-placeholder { display: flex; align-items: center; justify-content: center; text-align: center; font-size: 12px; color: var(--muted); }
+.golden-era-sheet .item-cat-tag { font-size: 13px; color: var(--brick); font-weight: 600; }
+.golden-era-sheet .item-title { font-size: 18px; margin-top: 2px; }
+.golden-era-sheet .item-desc { font-size: 14px; color: var(--muted); margin-top: 4px; }
+
+.golden-era-sheet .canvas-container-preview { margin-top: 24px; border-top: 1px solid var(--rule); padding-top: 16px; }
+.golden-era-sheet .canvas-preview-header { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.golden-era-sheet .canvas-wrapper { display: flex; justify-content: center; }
+
+.golden-era-sheet .golden-action-group { margin-top: 24px; display: grid; gap: 8px; }
+.golden-era-sheet .action-row-primary { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.golden-era-sheet .action-row-secondary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+
+@media (max-width: 480px) {
+  .golden-era-sheet .golden-era-box { padding: 40px 16px 16px; }
+  .golden-era-sheet .action-row-primary { grid-template-columns: 1fr; }
+  .golden-era-sheet .action-row-secondary { grid-template-columns: 1fr 1fr; }
+  .golden-era-sheet .action-close { grid-column: 1 / -1; }
+}

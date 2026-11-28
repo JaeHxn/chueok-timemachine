@@ -21,47 +21,37 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
     const H = 1080;
 
     // 1. 배경 (빈티지 다크 코스믹 그라디언트)
-    const bgGrad = ctx.createRadialGradient(W / 2, H / 2, 50, W / 2, H / 2, W * 0.75);
-    bgGrad.addColorStop(0, "#1a233a");
-    bgGrad.addColorStop(0.6, "#0f172a");
-    bgGrad.addColorStop(1, "#070b14");
-    ctx.fillStyle = bgGrad;
+    ctx.fillStyle = "#f4efe6";
     ctx.fillRect(0, 0, W, H);
 
     // 은은한 외곽 골드 프레임 테두리
-    ctx.strokeStyle = "rgba(212, 166, 42, 0.4)";
-    ctx.lineWidth = 4;
+    ctx.strokeStyle = "#231d18";
+    ctx.lineWidth = 2;
     ctx.strokeRect(36, 36, W - 72, H - 72);
 
-    ctx.strokeStyle = "rgba(255, 255, 255, 0.1)";
-    ctx.lineWidth = 1;
-    ctx.strokeRect(48, 48, W - 96, H - 96);
 
     // 2. 상단 헤더
     ctx.textAlign = "center";
-    ctx.fillStyle = "#ffd700";
-    ctx.font = "bold 32px Pretendard, sans-serif";
-    ctx.fillText("🪐  추 억  타 임 머 신", W / 2, 105);
+    ctx.fillStyle = "#231d18";
+    ctx.font = "bold 34px 'Noto Serif KR', serif";
+    ctx.fillText("추억 타임머신", W / 2, 120);
 
-    ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
-    ctx.font = "20px 'Space Grotesk', sans-serif";
-    ctx.fillText("CHUEOK TIME MACHINE  ·  MEMORY ARCHIVE", W / 2, 140);
 
     // 시대 & 카테고리 태그 칩
     const tagText = `${item.year}년 ${item.month ? item.month + "월" : ""}  ·  ${item.cat}`;
-    ctx.fillStyle = "rgba(212, 166, 42, 0.15)";
-    ctx.strokeStyle = "rgba(212, 166, 42, 0.6)";
+    ctx.fillStyle = "#fbf8f2";
+    ctx.strokeStyle = "#9a3b26";
     ctx.lineWidth = 2;
     const tagWidth = 360;
     const tagHeight = 44;
     const tagX = (W - tagWidth) / 2;
     const tagY = 165;
     ctx.beginPath();
-    ctx.roundRect(tagX, tagY, tagWidth, tagHeight, 22);
+    ctx.roundRect(tagX, tagY, tagWidth, tagHeight, 4);
     ctx.fill();
     ctx.stroke();
 
-    ctx.fillStyle = "#ffffff";
+    ctx.fillStyle = "#9a3b26";
     ctx.font = "bold 22px Pretendard, sans-serif";
     ctx.fillText(tagText, W / 2, tagY + 30);
 
@@ -74,12 +64,11 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
 
       if (img) {
         // 폴라로이드 스타일 프레임
-        ctx.fillStyle = "#ffffff";
-        ctx.shadowColor = "rgba(0,0,0,0.6)";
-        ctx.shadowBlur = 30;
-        ctx.shadowOffsetY = 15;
+        ctx.fillStyle = "#fbf8f2";
         ctx.fillRect(boxX, boxY, boxW, boxH);
-        ctx.shadowColor = "transparent";
+        ctx.strokeStyle = "rgba(35, 29, 24, 0.25)";
+        ctx.lineWidth = 1;
+        ctx.strokeRect(boxX, boxY, boxW, boxH);
 
         // 이미지 그리기 (비율 유지 클리핑)
         const pad = 20;
@@ -111,42 +100,42 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
         ctx.restore();
 
         // 폴라로이드 하단 캡션
-        ctx.fillStyle = "#666666";
+        ctx.fillStyle = "#6e6157";
         ctx.font = "16px Pretendard, sans-serif";
         ctx.textAlign = "right";
         ctx.fillText(`photo: ${photo.artist || "자유 라이선스 사료"}`, boxX + boxW - 24, boxY + boxH - 10);
       } else {
         // 사진이 없을 때: 레트로 엠블럼 박스
-        ctx.fillStyle = "rgba(255, 255, 255, 0.04)";
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.12)";
+        ctx.fillStyle = "#fbf8f2";
+        ctx.strokeStyle = "rgba(35, 29, 24, 0.25)";
         ctx.lineWidth = 2;
         ctx.beginPath();
-        ctx.roundRect(boxX, boxY, boxW, boxH, 24);
+        ctx.roundRect(boxX, boxY, boxW, boxH, 4);
         ctx.fill();
         ctx.stroke();
 
-        ctx.fillStyle = "rgba(255, 215, 0, 0.2)";
-        ctx.font = "bold 140px 'Space Grotesk', sans-serif";
+        ctx.fillStyle = "rgba(154, 59, 38, 0.35)";
+        ctx.font = "bold 140px 'Noto Serif KR', serif";
         ctx.textAlign = "center";
         ctx.fillText(String(item.year), W / 2, boxY + 240);
 
-        ctx.fillStyle = "#f8fafc";
-        ctx.font = "bold 36px Pretendard, sans-serif";
-        ctx.fillText("그 시절 우리가 사랑했던 순간", W / 2, boxY + 310);
+        ctx.fillStyle = "#231d18";
+        ctx.font = "bold 36px 'Noto Serif KR', serif";
+        ctx.fillText(`${item.year}년의 기록`, W / 2, boxY + 310);
 
-        ctx.fillStyle = "rgba(255, 255, 255, 0.6)";
+        ctx.fillStyle = "#6e6157";
         ctx.font = "22px Pretendard, sans-serif";
         ctx.fillText(`“${item.title}”의 기억`, W / 2, boxY + 360);
       }
 
       // 4. 제목 (Title)
       ctx.textAlign = "center";
-      ctx.fillStyle = "#ffffff";
-      ctx.font = "bold 48px Pretendard, sans-serif";
+      ctx.fillStyle = "#231d18";
+      ctx.font = "bold 48px 'Noto Serif KR', serif";
       ctx.fillText(item.title, W / 2, 770);
 
       // 5. 요약 문구 (Summary 워드랩)
-      ctx.fillStyle = "rgba(241, 245, 249, 0.88)";
+      ctx.fillStyle = "#3a312a";
       ctx.font = "26px Pretendard, sans-serif";
       const summaryText = item.summary || `${item.year}년 대한민국을 뜨겁게 달군 그 시절 추억 이야기.`;
 
@@ -178,13 +167,13 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
       });
 
       // 6. 하단 푸터 및 워터마크
-      ctx.fillStyle = "rgba(253, 230, 138, 0.92)";
+      ctx.fillStyle = "#9a3b26";
       ctx.font = "bold 20px Pretendard, sans-serif";
-      ctx.fillText("🪐 chueok-timemachine.pages.dev", W / 2, 990);
+      ctx.fillText("chueok-timemachine.pages.dev", W / 2, 990);
 
-      ctx.fillStyle = "rgba(255, 255, 255, 0.72)";
+      ctx.fillStyle = "#6e6157";
       ctx.font = "18px Pretendard, sans-serif";
-      ctx.fillText("같은 시대를 기억하는 사람들의 공감 커뮤니티", W / 2, 1020);
+      ctx.fillText("그 해의 물건과 유행을 연도별로 모은 기록", W / 2, 1020);
 
       setDataUrl(canvas.toDataURL("image/png"));
       setRendering(false);
@@ -208,7 +197,7 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
     a.href = dataUrl;
     a.download = `추억타임머신_${item.year}_${item.title.replace(/[\s/\\:]/g, "_")}.png`;
     a.click();
-    onToast("인스타용 카드뉴스를 저장했어요!");
+    onToast("카드 이미지를 저장했어요.");
   };
 
   const shareImage = async () => {
@@ -227,12 +216,12 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
   };
 
   const copyInstaText = async () => {
-    const text = `🪐 [추억 타임머신] ${item.year}년 ${item.month ? item.month + "월" : ""}의 기억\n\n📌 ${item.title}\n${item.summary}\n\n당신도 이 시절 기억나시나요? 💬\n함께 이야기 나눠요 👉 https://chueok-timemachine.pages.dev/#/${item.year}${item.month ? "/" + item.month : ""}\n\n#추억타임머신 #${item.year}년 #${item.cat} #그때그시절 #레트로`;
+    const text = `[추억 타임머신] ${item.year}년 ${item.month ? item.month + "월" : ""}의 기억\n\n${item.title}\n${item.summary}\n\n이 시절, 기억나세요?\nhttps://chueok-timemachine.pages.dev/#/${item.year}${item.month ? "/" + item.month : ""}\n\n#추억타임머신 #${item.year}년 #${item.cat} #그때그시절 #레트로`;
     try {
       await navigator.clipboard.writeText(text);
-      onToast("인스타그램용 캡션 글을 복사했어요!");
+      onToast("캡션을 복사했어요.");
     } catch {
-      onToast("복사하지 못했습니다.");
+      onToast("복사하지 못했어요. 다시 시도해 주세요.");
     }
   };
 
@@ -240,24 +229,24 @@ export default function InstagramCardModal({ item, photo, onClose, onToast }) {
     <div className="sheet" role="dialog" aria-modal="true" aria-label="인스타그램 카드뉴스 만들기" onClick={(e) => e.target === e.currentTarget && onClose()}>
       <div className="box insta-modal-box">
         <div className="insta-modal-header">
-          <h3>📸 인스타그램 감성 카드뉴스</h3>
-          <p className="note">1080×1080 정사각형 규격으로 인스타 피드/스토리에 바로 올릴 수 있어요.</p>
+          <h2>인스타그램 카드 만들기</h2>
+          <p className="note">1080×1080 정사각형 이미지예요. 피드와 스토리에 그대로 올릴 수 있어요.</p>
         </div>
 
         <div className="canvas-wrap">
-          <canvas ref={canvasRef} width="1080" height="1080" style={{ width: "100%", maxWidth: "340px", height: "auto", borderRadius: "12px", boxShadow: "0 10px 30px rgba(0,0,0,0.5)" }} />
+          <canvas ref={canvasRef} width="1080" height="1080" className="insta-canvas" />
         </div>
 
         <div className="insta-btn-row">
           <button className="primary" onClick={shareImage} disabled={rendering}>
-            📸 인스타그램에 사진 공유
+            이미지 공유
           </button>
           <p className="note">공유 목록에서 인스타그램을 선택해 주세요. 지원하지 않는 기기는 사진을 저장할 수 있어요.</p>
-          <button className="primary" onClick={downloadImage} disabled={rendering}>
-            📥 인스타용 사진 저장 (PNG)
+          <button className="ghost" onClick={downloadImage} disabled={rendering}>
+            PNG 저장
           </button>
           <button className="ghost" onClick={copyInstaText}>
-            📋 인스타 캡션 복사
+            캡션 복사
           </button>
           <button className="ghost" onClick={onClose}>
             닫기

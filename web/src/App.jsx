@@ -26,7 +26,7 @@ const itemsOf = (y) => BY_YEAR[y] ?? [];
 const YEARS_WITH_DATA = YEARS.filter((y) => itemsOf(y).length);
 const photoOf = (it) => itemPhotos[`${it.year}|${it.title}`] ?? null;
 
-// 주소(#/1974/3, /1974/3, #/cat/음악, /cat/음악, #/item/포니 1, /search?q=라면) ↔ 화면 상태.
+// 주소(#/1974/3, /1974/3, #/cat/음악, /cat/음악, #/item/포니 1, /search?q=라면) 화면 상태.
 function parseRoute() {
   const hashRaw = location.hash.replace(/^#\/?/, "");
   const pathRaw = location.pathname.replace(/^\/+|\/+$/g, "");
@@ -92,6 +92,7 @@ const nearestWithData = (y) =>
 
 const SHOWCASE_TITLES = [
   "현대 포니, 토리노 모터쇼 공개",
+  "삼양라면 출시",
   "새우깡",
   "포카칩",
   "무선호출기 (삐삐)",
@@ -419,24 +420,24 @@ export default function App() {
   return (
     <div className={`app ${reduceMotion ? "rm" : ""} ${hyodo ? "hyodo" : ""}`}>
       <header className="top">
-        <a className="brand" href="#/">🪐 추억 타임머신</a>
+        <a className="brand" href="#/">추억 타임머신</a>
         <div className="top-r">
           <button
-            className={`hyodo-toggle-btn ${hyodo ? "active" : ""}`}
+            className={`ghost hyodo-toggle-btn ${hyodo ? "active" : ""}`}
             onClick={() => {
               setHyodo((v) => !v);
-              setToast(!hyodo ? "👓 큰 글씨 효도 모드가 켜졌습니다!" : "보통 글씨 모드로 전환되었습니다.");
+              setToast(!hyodo ? "큰 글씨로 바꿨습니다." : "보통 글씨로 바꿨습니다.");
             }}
             aria-pressed={hyodo}
             title="시니어 및 큰 글씨 모드"
           >
-            👓 {hyodo ? "보통 글씨" : "큰 글씨 모드"}
+            {hyodo ? "보통 글씨" : "큰 글씨 모드"}
           </button>
-          <button className="golden-era-btn" onClick={() => setGoldenEraOpen(true)} title="나의 추억 나이 & 황금기 테스트">
-            ✨ 내 황금기 테스트
+          <button className="ghost golden-era-btn" onClick={() => setGoldenEraOpen(true)} title="나의 추억 나이 & 황금기 테스트">
+            황금기 테스트
           </button>
-          <button className="write-post-btn" onClick={() => setWritePostOpen(true)}>✏️ 내 추억 사연 남기기</button>
-          <button className="ghost cheer-btn" onClick={() => setCheerOpen(true)}>💌 응원 한마디</button>
+          <button className="write-post-btn" onClick={() => setWritePostOpen(true)}>사연 남기기</button>
+          <button className="ghost cheer-btn" onClick={() => setCheerOpen(true)}>응원 한마디</button>
           <input
             className="search"
             type="search"
@@ -515,36 +516,28 @@ export default function App() {
 
       {!adminView && !query.trim() && !routeCat && !year && (
         <section className="home">
-          <p className="lead">그 시절, 우리가 좋아했던 것들.</p>
-          <p className="note">연도를 고르면 그해 유행한 노래·먹거리·물건·사건을 볼 수 있어요.</p>
-          <form className="birth" onSubmit={goBirth}>
-            <label htmlFor="birth">태어난 해로 가기</label>
-            <input id="birth" ref={birthRef} type="number" inputMode="numeric" placeholder="예: 1965" />
-            <button className="primary" type="submit">이동</button>
-          </form>
-
-          <button className="home-golden-banner" onClick={() => setGoldenEraOpen(true)}>
-            <span className="banner-icon">🚀</span>
-            <div className="banner-text">
-              <strong>나의 추억 나이 &amp; 황금기 테스트</strong>
-              <span>출생연도만 넣으면 내 인생 3대 황금기와 9:16 인스타 스토리 인증서 즉시 발급!</span>
+          <div className="home-hero">
+            <div className="home-copy">
+              <h1 className="lead">1950년부터 2026년까지, 해마다 유행한 노래와 과자와 물건</h1>
+              <p className="note">77개 해에 5,600여 개 항목이 있습니다. 위의 연도 막대에서 한 해를 고르거나, 태어난 해를 넣어 보세요.</p>
+              <form className="birth" onSubmit={goBirth}>
+                <label htmlFor="birth">태어난 해</label>
+                <input id="birth" ref={birthRef} type="number" inputMode="numeric" placeholder="1965" />
+                <button className="primary" type="submit">그해로 가기</button>
+              </form>
+              <div className="quick" aria-label="자주 찾는 해">
+                {[1953, 1965, 1974, 1979, 1988, 1997, 2002, 2010, 2020].filter((y) => itemsOf(y).length).map((y) => (
+                  <a key={y} className="chip" href={hashOf(y)}>{y}<small>{itemsOf(y).length}</small></a>
+                ))}
+              </div>
+              <p className="home-golden">
+                출생연도로 내 인생의 황금기 세 해를 짚어 보는 <button type="button" className="text-link" onClick={() => setGoldenEraOpen(true)}>황금기 테스트</button>도 있습니다.
+              </p>
             </div>
-            <span className="banner-arrow">👉</span>
-          </button>
-          <div className="quick">
-            {[1953, 1965, 1974, 1979, 1988, 1997, 2002, 2010, 2020].filter((y) => itemsOf(y).length).map((y) => (
-              <a key={y} className="chip" href={hashOf(y)}>{y}<small>{itemsOf(y).length}개</small></a>
-            ))}
           </div>
-          <p className="note small">1950년부터 2026년까지 77개년 5,600여 개 추억이 수록되어 있습니다.</p>
 
-          {/* ✨ 그 시절 우리가 사랑했던 순간들 (Vintage Polaroid Showcase) */}
-          <div className="home-showcase" aria-label="그 시절 우리가 사랑했던 순간들">
-            <div className="home-showcase-header">
-              <span className="section-badge photo-badge">✨ VINTAGE SHOWCASE</span>
-              <h3 className="home-showcase-title">그 시절 우리가 사랑했던 순간들</h3>
-              <p className="home-showcase-sub">사진을 누르면 그 시절 타임머신으로 즉시 출발합니다.</p>
-            </div>
+          <div className="home-showcase">
+            <h2 className="home-showcase-title">해마다 한 장씩, 그해의 사진</h2>
             <div className="home-showcase-grid">
               {SHOWCASE_ITEMS.map((it) => {
                 const ph = photoOf(it);
@@ -552,26 +545,20 @@ export default function App() {
                   <a
                     key={it.year + it.title}
                     href={`${hashOf(it.year, it.month)}/${encodeURIComponent(it.title)}`}
-                    className="showcase-card polaroid-card"
+                    className="showcase-card"
                     onClick={(e) => {
                       e.preventDefault();
                       go(it.year, it.month);
                       openDetail(it, ph);
                     }}
                   >
-                    <div className="polaroid-tape" aria-hidden="true" />
                     {ph && (
-                      <figure className="item-photo polaroid-frame">
+                      <figure className="item-photo">
                         <img src={ph.thumb} alt={ph.title || it.title} loading="lazy" />
                       </figure>
                     )}
-                    <div className="meta">
-                      <span className="tag date-tag">{it.year}년</span>
-                      <span className="tag cat-tag">{it.cat}</span>
-                      <span className="tag photo-tag">📸 대표 사진</span>
-                    </div>
-                    <h4 className="polaroid-title">{it.title}</h4>
-                    <p className="card-excerpt polaroid-caption">{it.summary}</p>
+                    <span className="showcase-year">{it.year} · {it.cat}</span>
+                    <h3 className="polaroid-title">{it.title}</h3>
                   </a>
                 );
               })}
@@ -639,20 +626,20 @@ export default function App() {
 
               <div className="section-head-bar">
                 <button type="button" className="photo-filter" aria-pressed={photoOnly} onClick={() => setPhotoOnly((value) => !value)}>
-                  <span>📷 사진 있는 추억만 보기</span>
+                  <span>사진 있는 추억만 보기</span>
                   <span className="photo-filter-count">{yearItems.filter((it) => photoOf(it)).length}</span>
                 </button>
               </div>
 
-              {/* 📸 [구역 1] 그 시절 대표 사진 갤러리 피드 (Polaroid Photo Gallery) */}
+              {/* [구역 1] 그 시절 대표 사진 갤러리 피드 (Polaroid Photo Gallery) */}
               {photoItems.length > 0 && (
                 <section className="gallery-section" aria-label={`${year}년 사진 갤러리`}>
                   <div className="gallery-section-header">
                     <div className="gallery-badge-title">
-                      <span className="section-badge photo-badge">📸 PHOTO GALLERY</span>
-                      <h3 className="section-title">그 시절 대표 사진 추억 <small>({photoItems.length}장)</small></h3>
+                      <span className="section-badge photo-badge">사진첩</span>
+                      <h3 className="section-title">사진으로 남은 것 <small>({photoItems.length}장)</small></h3>
                     </div>
-                    <span className="gallery-sub">인화지 질감의 레트로 폴라로이드 갤러리입니다.</span>
+                    
                   </div>
                   <div className="grid polaroid-grid" key={`photo-${year}-${month}-${cat}`}>
                     {photoItems.map((it) => {
@@ -660,7 +647,6 @@ export default function App() {
                       const ph = photoOf(it);
                       return (
                         <article className="card has-photo polaroid-card" key={it.title} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) openDetail(it, ph); }}>
-                          <div className="polaroid-tape" aria-hidden="true" />
                           <figure className="item-photo polaroid-frame">
                             <img src={ph.thumb} alt={ph.title} loading="lazy" />
                             <figcaption>사진: {ph.artist} · {ph.license} · <a href={ph.page} target="_blank" rel="noopener">원본</a></figcaption>
@@ -668,8 +654,7 @@ export default function App() {
                           <div className="meta">
                             <span className="tag date-tag">{it.month ? `${it.year}년 ${it.month}월` : `${it.year}년`}</span>
                             <span className="tag cat-tag">{it.cat}</span>
-                            <span className="tag photo-tag">📸 대표 사진</span>
-                            {!ok && <span className="tag warn">출처 확인 중</span>}
+                                                        {!ok && <span className="tag warn">출처 확인 중</span>}
                           </div>
                           <h3 className="polaroid-title">{it.title}</h3>
                           <p className="card-excerpt polaroid-caption">{it.summary}</p>
@@ -703,10 +688,10 @@ export default function App() {
               {month && photoItems.length === 0 && (
                 <div className="month-photo-fallback">
                   <div className="fallback-banner">
-                    <span className="fallback-icon">📷</span>
+                    <span className="fallback-icon"></span>
                     <div>
                       <strong>{month === "unknown" ? "월 미확인" : `${month}월`}에는 등록된 사진이 아직 없지만,</strong>
-                      <p>{year}년의 다른 달에 멋진 사진 추억들이 기다리고 있어요!</p>
+                      <p>{year}년 다른 달의 사진을 먼저 보여 드립니다.</p>
                     </div>
                   </div>
                   <div className="recommend-cards-row">
@@ -726,26 +711,26 @@ export default function App() {
                 </div>
               )}
 
-              {/* ✍️ [구역 2] 이용자가 직접 남긴 추억 사연 (싸이월드 다이어리 감성) */}
+              {/* [구역 2] 이용자가 직접 남긴 추억 사연 (싸이월드 다이어리 감성) */}
               {!photoOnly && shownPosts.length > 0 && (
                 <section className="stories-section" aria-label="이용자 추억 사연">
                   <div className="gallery-section-header">
                     <div className="gallery-badge-title">
-                      <span className="section-badge yellow">✍️ DIARY & STORIES</span>
+                      <span className="section-badge yellow">사연 모음</span>
                       <h3 className="section-title">그 시절 우리들의 사연 <small>({shownPosts.length}편)</small></h3>
                     </div>
                     <button className="ghost write-post-inline-btn" onClick={() => setWritePostOpen(true)}>
-                      ✏️ 나도 사연 남기기
+                      나도 사연 남기기
                     </button>
                   </div>
                   <div className="grid stories-grid" key={`stories-${year}-${month}-${cat}`}>
                     {shownPosts.map((p) => (
                       <article className="card user-post-card diary-card" key={p.id} onClick={(e) => { if (!e.target.closest("button, a, input, textarea, select")) openDetail({ ...p, cat: p.category, summary: p.content, sources: [] }, null); }}>
-                        <div className="diary-pin" aria-hidden="true">📌</div>
+                        <div className="diary-pin" aria-hidden="true"></div>
                         <div className="meta">
                           <span className="tag date-tag">{p.month ? `${p.year}년 ${p.month}월` : `${p.year}년`}</span>
                           <span className="tag cat-tag">{p.category}</span>
-                          <span className="tag story-tag">✍️ 시민 사연</span>
+                          <span className="tag story-tag">시민 사연</span>
                         </div>
                         <h3>{p.title}</h3>
                         <p className="card-excerpt diary-excerpt" style={{ whiteSpace: "pre-wrap" }}>{p.content}</p>
@@ -771,7 +756,7 @@ export default function App() {
                               handleReportPost(p);
                             }}
                           >
-                            🚨 신고
+                            신고
                           </button>
                           <button
                             type="button"
@@ -843,12 +828,12 @@ export default function App() {
                 </section>
               )}
 
-              {/* 📻 [구역 3] 그 시절 한 줄 뉴스 & 타임라인 아카이브 (Compact Archive) */}
+              {/* [구역 3] 그 시절 한 줄 뉴스 & 타임라인 아카이브 (Compact Archive) */}
               {!photoOnly && textItems.length > 0 && (
                 <section className="archive-section" aria-label="그 시절 한 줄 아카이브">
                   <div className="gallery-section-header">
                     <div className="gallery-badge-title">
-                      <span className="section-badge blue">📻 RETRO ARCHIVE</span>
+                      <span className="section-badge blue">그해 기록</span>
                       <h3 className="section-title">그 시절 한 줄 뉴스 & 타임라인 <small>({textItems.length}건)</small></h3>
                     </div>
                     <span className="gallery-sub">사진은 없지만 생생히 기록된 그 시절의 사건·노래·문화 이야기입니다.</span>
@@ -898,11 +883,11 @@ export default function App() {
                 </div>
               )}
 
-              {/* 하단 📻 그 시절 한 줄 헤드라인 & 유행어 전광판 티커 바 */}
+              {/* 하단 그 시절 한 줄 헤드라인 & 유행어 전광판 티커 바 */}
               {yearItems.length > 0 && (
                 <section className="retro-ticker-section" aria-label={`${year}년 그 시절 한 줄 뉴스 & 유행어`}>
                   <div className="retro-ticker-head">
-                    <span>📻 {year}년 그 시절 한 줄 헤드라인 & 유행어</span>
+                    <span>{year}년 그 시절 한 줄 헤드라인 & 유행어</span>
                     <small>클릭하면 자세히 볼 수 있어요</small>
                   </div>
                   <div className="retro-ticker-scroll">
@@ -927,7 +912,7 @@ export default function App() {
               {/* 특정 월 선택 시 연계되는 해당 연도 대표 추억 스마트 연계 섹션 */}
               {month && month !== "unknown" && shown.length < 5 && (
                 <section className="month-fallback-section" aria-label={`${year}년 연중 대표 추억`}>
-                  <h3 className="fallback-title">🌟 {year}년 대표 추억도 함께 둘러보세요</h3>
+                  <h3 className="fallback-title">{year}년 대표 추억도 함께 둘러보세요</h3>
                   <div className="fallback-grid">
                     {yearItems.filter((it) => !it.month || it.month !== month).slice(0, 4).map((it) => {
                       const ph = photoOf(it);
@@ -956,7 +941,7 @@ export default function App() {
 
       {detail && (
         <dialog className="detail-dialog" ref={detailRef} aria-labelledby="detail-title" onClose={closeDetail}>
-          <div className="polaroid-tape" aria-hidden="true" />
+          
           <button className="detail-close" onClick={closeDetail} aria-label="상세 닫기">✕</button>
           {detail.photo && (
             <figure className="detail-photo">
@@ -967,7 +952,7 @@ export default function App() {
           <div className="detail-header-tags">
             <span className="tag date-tag">{detail.item.year}년 {detail.item.month ? `${detail.item.month}월` : "· 월 미확인"}</span>
             <span className="tag cat-tag">{detail.item.cat}</span>
-            {detail.photo && <span className="tag photo-tag">📸 사진 수록</span>}
+            {detail.photo && <span className="tag photo-tag">사진 수록</span>}
             {detail.item.sources?.length > 0 && <span className="tag ok">공식 출처 인증</span>}
           </div>
           <h2 id="detail-title">{detail.item.title}</h2>
@@ -978,7 +963,7 @@ export default function App() {
               <div className="src-links">
                 {detail.item.sources.map((s, k) => (
                   <a key={k} href={s.url} target="_blank" rel="noopener" className="src-pill">
-                    🔗 {s.name || "출처 문서"}
+                    {s.name || "출처 문서"}
                   </a>
                 ))}
               </div>
@@ -997,7 +982,7 @@ export default function App() {
                 });
               }}
             >
-              💌 단톡방에 추억 소환하기
+              단톡방에 추억 소환하기
             </button>
             <button
               className="ghost modal-insta-btn"
@@ -1005,7 +990,7 @@ export default function App() {
                 setInstaModalItem({ item: detail.item, photo: detail.photo });
               }}
             >
-              📷 인스타 카드뉴스 만들기
+              인스타 카드뉴스 만들기
             </button>
           </div>
         </dialog>
@@ -1015,10 +1000,10 @@ export default function App() {
           onKeyDown={(e) => e.key === "Escape" && setShare(null)}>
           <div className="box">
             <b>{share.title}</b>
-            <p className="note" style={{ margin: "4px 0 12px", fontSize: "0.875rem" }}>야 너 이거 기억나? ㅋㅋㅋ 단톡방에 그 시절 추억을 전파해보세요!</p>
+            <p className="note" style={{ margin: "4px 0 12px", fontSize: "0.875rem" }}>야 너 이거 기억나? ㅋㅋㅋ 단톡방에 보내 보세요.</p>
             {typeof navigator.share === "function" && <button onClick={nativeShare} autoFocus>기기 공유 (카톡·인스타 등)</button>}
             <button onClick={() => copy(share.url, "링크를 복사했어요")}>링크 복사</button>
-            <button onClick={() => copy(`야 너 이거 기억나? ㅋㅋㅋ ${share.title}\n\n${share.text}\n\n👉 지금 바로 보기:\n${share.url}`, "공유 글을 복사했어요. 인스타·블로그에 붙여 넣으세요")}>공유 글 복사</button>
+            <button onClick={() => copy(`야 너 이거 기억나? ㅋㅋㅋ ${share.title}\n\n${share.text}\n\n지금 바로 보기:\n${share.url}`, "공유 글을 복사했어요. 인스타·블로그에 붙여 넣으세요")}>공유 글 복사</button>
             <button onClick={() => setShare(null)}>닫기</button>
           </div>
         </div>

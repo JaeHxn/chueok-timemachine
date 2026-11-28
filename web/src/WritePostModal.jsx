@@ -91,7 +91,7 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
       } catch {}
 
       onPostCreated?.(result.post);
-      onToast("소중한 추억 사연을 남겨주셔서 고맙습니다!");
+      onToast("사연을 등록했어요. 고맙습니다.");
       onClose();
     } catch (err) {
       onToast(err.message || "사연을 저장하지 못했어요. 잠시 후 다시 시도해 주세요.");
@@ -103,12 +103,12 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
   return (
     <div className="sheet" role="dialog" aria-modal="true" aria-label="추억 사연 남기기" onClick={(e) => e.target === e.currentTarget && onClose()}>
       <form className="box post-form-box" onSubmit={handleSubmit}>
-        <h3>✏️ 나의 추억 사연 남기기</h3>
+        <h2>나의 추억 사연 남기기</h2>
         <p className="note">내가 겪었던 그 시절 물건, 유행, 동네 이야기를 들려주세요.</p>
 
-        {/* 💡 안심 정책 배너 */}
+        {/* 안심 정책 배너 */}
         <div className="post-safety-notice">
-          💡 <strong>안심 정책:</strong> 등록된 사연은 건전한 추억 나눔을 위해 실시간 자동 필터링을 거치며, 부적절한 게시물은 즉시 차단·삭제 조치됩니다.
+          등록한 사연은 금칙어 필터를 거칩니다. 욕설·광고·연락처가 담긴 글은 등록되지 않아요.
         </div>
 
         <div className="form-grid">
@@ -197,7 +197,7 @@ export default function WritePostModal({ defaultYear, onClose, onToast, onPostCr
 
         <div className="post-btn-row">
           <button className="primary" type="submit" disabled={submitting}>
-            {submitting ? "등록 중..." : "추억 이야기 등록하기"}
+            {submitting ? "등록 중..." : "사연 등록"}
           </button>
           <button type="button" className="ghost" onClick={onClose}>
             취소

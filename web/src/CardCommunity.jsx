@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import "./modals.css";
 
 const REACTION_CONFIG = [
-  { key: "ah", label: "아 이거!", emoji: "😲" },
-  { key: "kkk", label: "ㅋㅋㅋ", emoji: "😆" },
-  { key: "weep", label: "울컥", emoji: "🥹" },
-  { key: "b486", label: "486", emoji: "📟" },
-  { key: "b8282", label: "8282", emoji: "🚀" },
-  { key: "agree", label: "인정!", emoji: "👍" },
-  { key: "daebak", label: "대박", emoji: "🔥" },
+  { key: "ah", label: "아 이거" },
+  { key: "kkk", label: "ㅋㅋㅋ" },
+  { key: "weep", label: "울컥" },
+  { key: "b486", label: "486" },
+  { key: "b8282", label: "8282" },
+  { key: "agree", label: "인정" },
+  { key: "daebak", label: "대박" },
 ];
 
 export default function CardCommunity({ item, onToast, initialReactions, initialComments, onCommunityUpdate }) {
@@ -130,7 +131,7 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
       onCommunityUpdate?.({ comment: result.comment });
       setNewComment("");
       setPassword("");
-      onToast("추억 이야기를 남겼어요!");
+      onToast("이야기를 남겼어요.");
     } catch (err) {
       onToast(err.message || "이야기를 저장하지 못했어요. 다시 시도해 주세요.");
     } finally { setSubmitting(false); }
@@ -172,9 +173,9 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
     <div className="card-community" onClick={(e) => e.stopPropagation()}>
       <div className="reaction-bar" aria-label="추억 공감 반응">
         <button type="button" className={`react-chip like-button ${userActiveReactions.has("like") ? "active" : ""}`} onClick={() => toggleReaction("like")} aria-pressed={userActiveReactions.has("like")} aria-label={`좋아요 ${reactions.like || 0}개`}>
-          <span aria-hidden="true">{userActiveReactions.has("like") ? "♥" : "♡"}</span> 좋아요 {reactions.like > 0 && <span className="react-count">{reactions.like}</span>}
+          좋아요 {reactions.like > 0 && <span className="react-count">{reactions.like}</span>}
         </button>
-        {REACTION_CONFIG.filter(({ key }) => reactions[key] > 0 || userActiveReactions.has(key)).map(({ key, label, emoji }) => {
+        {REACTION_CONFIG.filter(({ key }) => reactions[key] > 0 || userActiveReactions.has(key)).map(({ key, label }) => {
           const count = reactions[key] || 0;
           const isActive = userActiveReactions.has(key);
           return (
@@ -186,16 +187,15 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
               title={label}
               aria-pressed={isActive}
             >
-              <span className="react-emoji">{emoji}</span>
-              <span className="sr-only">{label}</span>
+              <span className="react-label">{label}</span>
               {count > 0 && <span className="react-count">{count}</span>}
             </button>
           );
         })}
         <div className="reaction-picker-wrap" onBlur={(e) => { if (!e.currentTarget.contains(e.relatedTarget)) setOpenReactions(false); }} onKeyDown={(e) => { if (e.key === "Escape") { setOpenReactions(false); e.currentTarget.querySelector(".reaction-picker-toggle")?.focus(); e.stopPropagation(); } }}>
-          <button type="button" className="reaction-picker-toggle" aria-label="이모지 반응 추가" aria-expanded={openReactions} onClick={() => setOpenReactions((v) => !v)}>☺<span aria-hidden="true">＋</span></button>
-          {openReactions && <div className="reaction-picker" role="group" aria-label="이모지 반응 선택">
-            {REACTION_CONFIG.map(({ key, label, emoji }) => <button key={key} type="button" className={userActiveReactions.has(key) ? "selected" : ""} aria-label={label} aria-pressed={userActiveReactions.has(key)} title={label} onClick={(e) => { e.currentTarget.closest(".reaction-picker-wrap").querySelector(".reaction-picker-toggle").focus(); toggleReaction(key); setOpenReactions(false); }}>{emoji}</button>)}
+          <button type="button" className="reaction-picker-toggle" aria-label="반응 추가" aria-expanded={openReactions} onClick={() => setOpenReactions((v) => !v)}><span aria-hidden="true">＋</span></button>
+          {openReactions && <div className="reaction-picker" role="group" aria-label="반응 선택">
+            {REACTION_CONFIG.map(({ key, label }) => <button key={key} type="button" className={userActiveReactions.has(key) ? "selected" : ""} aria-pressed={userActiveReactions.has(key)} onClick={(e) => { e.currentTarget.closest(".reaction-picker-wrap").querySelector(".reaction-picker-toggle").focus(); toggleReaction(key); setOpenReactions(false); }}>{label}</button>)}
           </div>}
         </div>
         <button
@@ -204,7 +204,7 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
           onClick={() => setOpenComments((v) => !v)}
           aria-expanded={openComments}
         >
-          💬 이야기 {comments.length > 0 ? `(${comments.length})` : ""}
+          이야기 {comments.length > 0 ? `(${comments.length})` : ""}
         </button>
       </div>
 
@@ -251,7 +251,7 @@ export default function CardCommunity({ item, onToast, initialReactions, initial
 
           <div className="comments-list">
             {comments.length === 0 ? (
-              <div className="comments-empty">아직 남겨진 이야기가 없어요. 첫 번째 추억을 들려주세요! ✍️</div>
+              <div className="comments-empty">아직 남겨진 이야기가 없어요. 이 시절 기억을 처음으로 적어 주세요.</div>
             ) : (
               comments.map((c) => (
                 <div key={c.id} className="comment-bubble">

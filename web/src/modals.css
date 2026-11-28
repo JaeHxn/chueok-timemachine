@@ -1,0 +1,33 @@
+/* modals.css: 공유·사연·카드 모달과 카드 커뮤니티 (styles.css 위에 덮어씀) */
+.insta-modal-box, .post-form-box { background: #fbf8f2; color: #231d18; border: 1px solid rgba(35,29,24,.18); border-radius: 6px; box-shadow: none; backdrop-filter: none; }
+.insta-modal-box h2, .post-form-box h2 { font-family: "Noto Serif KR", serif; font-size: 1.375rem; font-weight: 700; margin: 0 0 8px; color: #231d18; }
+.insta-modal-box .note, .post-form-box .note { color: #6e6157; }
+.insta-canvas { display: block; width: 100%; max-width: 340px; height: auto; margin: 0 auto; border: 1px solid rgba(35,29,24,.18); border-radius: 4px; }
+.post-safety-notice { background: transparent; border: 0; border-left: 2px solid #9a3b26; border-radius: 0; padding: 4px 12px; color: #6e6157; font-size: .875rem; box-shadow: none; }
+
+:is(.insta-modal-box, .post-form-box, .card-community) :is(button.primary, button.ghost) {
+  min-height: 44px; padding: 0 16px; border-radius: 4px; font: 600 .9375rem Pretendard, sans-serif;
+  background: #fbf8f2; color: #231d18; border: 1px solid rgba(35,29,24,.35); box-shadow: none; background-image: none; transform: none;
+}
+:is(.insta-modal-box, .post-form-box, .card-community) button.primary { background: #9a3b26; border-color: #9a3b26; color: #fbf8f2; }
+:is(.insta-modal-box, .post-form-box, .card-community) button:disabled { opacity: .55; cursor: not-allowed; }
+:is(.insta-modal-box, .post-form-box, .card-community, .share-icon) :focus-visible,
+.share-icon:focus-visible { outline: 2px solid #9a3b26; outline-offset: 2px; }
+
+.post-form-box :is(input, textarea, select), .card-community :is(input, textarea) {
+  background: #fff; color: #231d18; border: 1px solid rgba(35,29,24,.25); border-radius: 4px; box-shadow: none;
+}
+.post-form-box :is(input, textarea, select):focus, .card-community :is(input, textarea):focus { border-color: #9a3b26; outline: none; }
+
+.card-community .react-chip, .card-community .reaction-picker-toggle, .card-community .comment-toggle-btn, .card-community .reaction-picker button {
+  min-height: 44px; min-width: 44px; padding: 0 12px; border-radius: 4px; background: transparent; color: #231d18;
+  border: 1px solid rgba(35,29,24,.22); box-shadow: none; font: 500 .875rem Pretendard, sans-serif; gap: 6px;
+}
+.card-community :is(.react-chip.active, .reaction-picker button.selected, .comment-toggle-btn.open) { border-color: #9a3b26; color: #9a3b26; background: rgba(154,59,38,.06); }
+.card-community .react-count { font-variant-numeric: tabular-nums; color: inherit; }
+.card-community .reaction-picker { background: #fbf8f2; border: 1px solid rgba(35,29,24,.22); border-radius: 6px; box-shadow: none; backdrop-filter: none; display: flex; flex-wrap: wrap; gap: 4px; padding: 6px; }
+.card-community .comment-bubble { background: transparent; border: 0; border-top: 1px solid rgba(35,29,24,.15); border-radius: 0; box-shadow: none; padding: 12px 0; }
+.card-community .comment-author { color: #231d18; font-weight: 600; }
+.card-community :is(.comment-time, .comment-tip, .comments-empty) { color: #6e6157; }
+
+.share-icon { border-radius: 4px; box-shadow: none; background-image: none; border: 1px solid rgba(35,29,24,.22); min-width: 44px; min-height: 44px; }

@@ -3,7 +3,7 @@ export default function ShareButtons({ share, onInstagram, onToast }) {
     const it = share.item || {};
     const title = it.title || share.title || "그 시절 추억";
     const yearStr = it.year ? `${it.year}년 ` : "";
-    const hookText = `야 너 이거 기억나? ㅋㅋㅋ ${yearStr}[${title}] 추억 소환!`;
+    const hookText = `${yearStr}${title}, 기억나?`;
     const summary = it.summary || share.text || "";
     const url = share.url;
     const thumb = share.photo?.thumb || `${location.origin}/og-image.jpg`;
@@ -14,19 +14,19 @@ export default function ShareButtons({ share, onInstagram, onToast }) {
         window.Kakao.Share.sendDefault({
           objectType: "feed",
           content: {
-            title: `[추억 소환] 야 너 이거 기억나? ㅋㅋㅋ`,
-            description: `${yearStr}${title}\n${summary}`.slice(0, 100),
+            title: `${yearStr}${title}`,
+            description: summary.slice(0, 100),
             imageUrl: thumb,
             link: { mobileWebUrl: url, webUrl: url },
           },
           buttons: [
             {
-              title: "그 시절 추억 보러가기 👉",
+              title: "기록 보기",
               link: { mobileWebUrl: url, webUrl: url },
             },
           ],
         });
-        onToast("카카오톡으로 추억을 보냈어요!");
+        onToast("카카오톡으로 보냈어요.");
         return;
       } catch (e) {
         console.warn("Kakao.Share.sendDefault error:", e);
@@ -37,7 +37,7 @@ export default function ShareButtons({ share, onInstagram, onToast }) {
     if (typeof navigator.share === "function") {
       try {
         await navigator.share({
-          title: `[추억 소환] ${title}`,
+          title: `${yearStr}${title}`,
           text: `${hookText}\n\n${summary}`,
           url: url,
         });
@@ -53,9 +53,9 @@ export default function ShareButtons({ share, onInstagram, onToast }) {
 
     // 3. 단톡방 맞춤형 클립보드 복사 폴백
     try {
-      const copyPayload = `${hookText}\n\n${summary}\n\n👉 지금 바로 타임머신 타기:\n${url}`;
+      const copyPayload = `${hookText}\n\n${summary}\n\n${url}`;
       await navigator.clipboard.writeText(copyPayload);
-      onToast("단톡방 공유 문구와 링크를 복사했어요! 카톡에 바로 붙여넣어 보세요 💌");
+      onToast("공유 문구와 링크를 복사했어요. 카톡에 붙여 넣으세요.");
     } catch {
       onToast("링크를 복사하지 못했어요. 주소창의 링크를 복사해 주세요.");
     }

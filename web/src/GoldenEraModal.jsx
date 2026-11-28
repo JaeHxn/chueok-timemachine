@@ -1,15 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import items from "./items.json";
 import itemPhotos from "./item-photos.json";
+import "./golden.css";
 
 // 세대별 칭호 및 컬러 테마 매핑
 const GENERATIONS = [
-  { min: 1950, max: 1959, label: "50년대", title: "전후 재건과 통기타 포크 1세대", color: "#fcd34d", badge: "통기타 낭만" },
-  { min: 1960, max: 1969, label: "60년대", title: "88 서울올림픽 & 대학가요제 황금기 세대", color: "#fbbf24", badge: "호돌이 & 응답하라" },
-  { min: 1970, max: 1979, label: "70년대", title: "X세대 신인류 & 세기말 사이버펑크 주역", color: "#f472b6", badge: "X세대 & 삐삐" },
-  { min: 1980, max: 1989, label: "80년대", title: "밀레니엄 붉은악마 & 싸이월드 도토리 부자", color: "#fb923c", badge: "월드컵 & 도토리" },
-  { min: 1990, max: 1999, label: "90년대", title: "스마트폰 혁명 & K-POP 2세대 감성 리더", color: "#38bdf8", badge: "스마트 혁명 & MP3" },
-  { min: 2000, max: 2015, label: "00년대+", title: "알고리즘 숏폼 & 레트로 뉴트로 탐험가", color: "#c084fc", badge: "숏폼 & 뉴트로" },
+  { min: 1950, max: 1959, label: "50년대", title: "전후 재건과 통기타 포크 1세대", color: "#9a3b26", badge: "통기타 낭만" },
+  { min: 1960, max: 1969, label: "60년대", title: "88 서울올림픽 & 대학가요제 황금기 세대", color: "#9a3b26", badge: "호돌이 & 응답하라" },
+  { min: 1970, max: 1979, label: "70년대", title: "X세대 신인류 & 세기말 사이버펑크 주역", color: "#9a3b26", badge: "X세대 & 삐삐" },
+  { min: 1980, max: 1989, label: "80년대", title: "밀레니엄 붉은악마 & 싸이월드 도토리 부자", color: "#9a3b26", badge: "월드컵 & 도토리" },
+  { min: 1990, max: 1999, label: "90년대", title: "스마트폰 혁명 & K-POP 2세대 감성 리더", color: "#9a3b26", badge: "스마트 혁명 & MP3" },
+  { min: 2000, max: 2015, label: "00년대+", title: "알고리즘 숏폼 & 레트로 뉴트로 탐험가", color: "#9a3b26", badge: "숏폼 & 뉴트로" },
 ];
 
 function getGeneration(birthYear) {
@@ -17,7 +18,7 @@ function getGeneration(birthYear) {
   return (
     GENERATIONS.find((g) => y >= g.min && y <= g.max) || {
       title: "시대를 초월한 시간 여행자",
-      color: "#fbbf24",
+      color: "#9a3b26",
       badge: "타임 트래블러",
     }
   );
@@ -109,33 +110,33 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
       stages: [
         {
           id: "elem",
-          title: "🎈 초등학교 시절",
+          title: "초등학교 시절",
           sub: "골목길 놀이 & 문방구 보물",
           targetYear: elemYear,
           ageDesc: "약 11~12세",
           item: elemItem,
           photo: elemPhoto,
-          themeColor: "#fcd34d",
+          themeColor: "#9a3b26",
         },
         {
           id: "mid",
-          title: "📼 중·고등학교 시절",
+          title: "중·고등학교 시절",
           sub: "이어폰 너머 감성 가요 & 드라마",
           targetYear: midYear,
           ageDesc: "약 16~17세",
           item: midItem,
           photo: midPhoto,
-          themeColor: "#f9a8d4",
+          themeColor: "#5f6b3a",
         },
         {
           id: "youth",
-          title: "🚀 청춘 & 20대 시절",
+          title: "청춘 & 20대 시절",
           sub: "세상을 흔든 트렌드 & 열정",
           targetYear: youthYear,
           ageDesc: "약 21~23세",
           item: youthItem,
           photo: youthPhoto,
-          themeColor: "#7dd3fc",
+          themeColor: "#3e5566",
         },
       ],
     };
@@ -151,7 +152,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
     e?.preventDefault();
     const y = parseInt(inputYear, 10);
     if (isNaN(y) || y < 1950 || y > 2015) {
-      onToast("1950년부터 2015년 사이의 출생연도를 입력해 주세요!");
+      onToast("1950년부터 2015년 사이의 출생연도를 입력해 주세요.");
       return;
     }
     setBirthYear(y);
@@ -190,44 +191,27 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
       const stageImgs = [imgElem, imgMid, imgYouth];
 
       // 1. 전체 배경 (빈티지 딥 코스믹 그라디언트)
-      const bgGrad = ctx.createRadialGradient(W / 2, H * 0.35, 100, W / 2, H * 0.5, W * 0.95);
-      bgGrad.addColorStop(0, "#192238");
-      bgGrad.addColorStop(0.5, "#0d1322");
-      bgGrad.addColorStop(1, "#060911");
-      ctx.fillStyle = bgGrad;
+      ctx.fillStyle = "#f4efe6";
       ctx.fillRect(0, 0, W, H);
 
       // 2. 골드 & 네온 장식 테두리 (인스타 스토리 세이프존 가이드 반영)
-      ctx.strokeStyle = "rgba(251, 191, 36, 0.65)";
-      ctx.lineWidth = 4;
+      ctx.strokeStyle = "#231d18";
+      ctx.lineWidth = 3;
       ctx.strokeRect(40, 60, W - 80, H - 120);
 
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.18)";
-      ctx.lineWidth = 1.5;
+      ctx.lineWidth = 1;
       ctx.strokeRect(54, 74, W - 108, H - 148);
 
-      // 코너 장식 아치 포인트
-      const drawCorner = (cx, cy) => {
-        ctx.strokeStyle = "#fde047";
-        ctx.lineWidth = 3.5;
-        ctx.beginPath();
-        ctx.arc(cx, cy, 18, 0, Math.PI * 2);
-        ctx.stroke();
-      };
-      drawCorner(60, 80);
-      drawCorner(W - 60, 80);
-      drawCorner(60, H - 80);
-      drawCorner(W - 60, H - 80);
-
+      
       // 3. 상단 헤더
       ctx.textAlign = "center";
-      ctx.fillStyle = "#fde047";
-      ctx.font = "bold 34px Pretendard, -apple-system, sans-serif";
-      ctx.fillText("🪐  추 억  타 임 머 신  공 식  인 증 서", W / 2, 140);
+      ctx.fillStyle = "#9a3b26";
+      ctx.font = "600 30px 'Noto Serif KR', serif";
+      ctx.fillText("추억 타임머신", W / 2, 140);
 
-      ctx.fillStyle = "#e2e8f0";
-      ctx.font = "bold 20px 'Space Grotesk', Pretendard, sans-serif";
-      ctx.fillText("LIFE GOLDEN ERA CERTIFICATE", W / 2, 175);
+      ctx.fillStyle = "#6b6158";
+      ctx.font = "500 20px Pretendard, sans-serif";
+      ctx.fillText("세 시절 기록", W / 2, 175);
 
       // 출생연도 & 칭호 메인 타이틀 박스
       const titleBoxY = 210;
@@ -235,20 +219,20 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
       const titleBoxH = 150;
       const titleBoxX = (W - titleBoxW) / 2;
 
-      ctx.fillStyle = "rgba(251, 191, 36, 0.12)";
-      ctx.strokeStyle = "rgba(251, 191, 36, 0.65)";
-      ctx.lineWidth = 2.5;
+      ctx.fillStyle = "#ebe4d6";
+      ctx.strokeStyle = "#231d18";
+      ctx.lineWidth = 1.5;
       ctx.beginPath();
-      ctx.roundRect(titleBoxX, titleBoxY, titleBoxW, titleBoxH, 20);
+      ctx.rect(titleBoxX, titleBoxY, titleBoxW, titleBoxH);
       ctx.fill();
       ctx.stroke();
 
-      ctx.fillStyle = "#ffffff";
-      ctx.font = "bold 44px Pretendard, -apple-system, sans-serif";
-      ctx.fillText(`${eraReport.birthYear}년생의 인생 황금기 리포트`, W / 2, titleBoxY + 60);
+      ctx.fillStyle = "#231d18";
+      ctx.font = "700 44px 'Noto Serif KR', serif";
+      ctx.fillText(`${eraReport.birthYear}년생의 세 시절`, W / 2, titleBoxY + 60);
 
-      ctx.fillStyle = eraReport.generation.color || "#fde047";
-      ctx.font = "bold 36px Pretendard, -apple-system, sans-serif";
+      ctx.fillStyle = "#9a3b26";
+      ctx.font = "600 34px 'Noto Serif KR', serif";
       ctx.fillText(`“${eraReport.generation.title}”`, W / 2, titleBoxY + 116);
 
       // 4. 3대 황금기 시절 카드 3개 세로 렌더링
@@ -263,43 +247,39 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
         const img = stageImgs[idx];
 
         // 개별 카드 배경
-        ctx.fillStyle = "rgba(255, 255, 255, 0.07)";
-        ctx.strokeStyle = "rgba(255, 255, 255, 0.22)";
-        ctx.lineWidth = 2;
+        ctx.fillStyle = "#f4efe6";
+        ctx.strokeStyle = "#231d18";
+        ctx.lineWidth = 1;
         ctx.beginPath();
-        ctx.roundRect(cardX, curY, cardWidth, cardHeight, 22);
+        ctx.rect(cardX, curY, cardWidth, cardHeight);
         ctx.fill();
         ctx.stroke();
 
         // 좌측 색상 액센트 바
         ctx.fillStyle = stage.themeColor;
         ctx.beginPath();
-        ctx.roundRect(cardX, curY, 10, cardHeight, [22, 0, 0, 22]);
+        ctx.rect(cardX, curY, 6, cardHeight);
         ctx.fill();
 
         // 상단 스테이지 뱃지 및 연도 정보
         ctx.textAlign = "left";
         ctx.fillStyle = stage.themeColor;
-        ctx.font = "bold 28px Pretendard, -apple-system, sans-serif";
+        ctx.font = "700 28px 'Noto Serif KR', serif";
         ctx.fillText(`${stage.title} (${stage.ageDesc})`, cardX + 34, curY + 50);
 
         // 연도 뱃지
         const yearBadgeText = `${stage.targetYear}년 무렵`;
-        ctx.font = "bold 22px 'Space Grotesk', Pretendard, sans-serif";
+        ctx.font = "600 22px Pretendard, sans-serif";
         const yrW = ctx.measureText(yearBadgeText).width + 32;
         const yrH = 36;
         const yrX = cardX + cardWidth - yrW - 28;
         const yrY = curY + 23;
 
-        ctx.fillStyle = "rgba(251, 191, 36, 0.15)";
-        ctx.strokeStyle = "rgba(251, 191, 36, 0.6)";
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        ctx.roundRect(yrX, yrY, yrW, yrH, 18);
-        ctx.fill();
-        ctx.stroke();
+        ctx.strokeStyle = "#231d18";
+        ctx.lineWidth = 1;
+        ctx.strokeRect(yrX, yrY, yrW, yrH);
 
-        ctx.fillStyle = "#fde047";
+        ctx.fillStyle = "#231d18";
         ctx.textAlign = "center";
         ctx.fillText(yearBadgeText, yrX + yrW / 2, yrY + 26);
 
@@ -313,7 +293,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           // 사진 렌더링 (둥근 사각형 클리핑)
           ctx.save();
           ctx.beginPath();
-          ctx.roundRect(imgBoxX, imgBoxY, imgBoxSize, imgBoxSize, 18);
+          ctx.rect(imgBoxX, imgBoxY, imgBoxSize, imgBoxSize);
           ctx.clip();
 
           const aspect = img.width / img.height;
@@ -334,10 +314,10 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           ctx.restore();
 
           // 사진 테두리
-          ctx.strokeStyle = "rgba(255, 255, 255, 0.35)";
-          ctx.lineWidth = 2.5;
+          ctx.strokeStyle = "#231d18";
+          ctx.lineWidth = 1;
           ctx.beginPath();
-          ctx.roundRect(imgBoxX, imgBoxY, imgBoxSize, imgBoxSize, 18);
+          ctx.rect(imgBoxX, imgBoxY, imgBoxSize, imgBoxSize);
           ctx.stroke();
 
           // 텍스트 영역 (우측)
@@ -346,19 +326,19 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
 
           ctx.textAlign = "left";
           // 카테고리 태그
-          ctx.fillStyle = "#38bdf8";
+          ctx.fillStyle = "#9a3b26";
           ctx.font = "bold 22px Pretendard, -apple-system, sans-serif";
           ctx.fillText(`[${stage.item.cat || "추억"}]`, textLeft, imgBoxY + 36);
 
           // 아이템 제목
-          ctx.fillStyle = "#ffffff";
-          ctx.font = "bold 38px Pretendard, -apple-system, sans-serif";
+          ctx.fillStyle = "#231d18";
+          ctx.font = "700 38px 'Noto Serif KR', serif";
           const title = stage.item.title || "";
           ctx.fillText(title.length > 14 ? title.slice(0, 13) + "…" : title, textLeft, imgBoxY + 82);
 
           // 요약문 (2~3줄 랩핑)
-          ctx.fillStyle = "#f8fafc";
-          ctx.font = "500 24px Pretendard, -apple-system, sans-serif";
+          ctx.fillStyle = "#4a4038";
+          ctx.font = "400 24px Pretendard, -apple-system, sans-serif";
           const summary = stage.item.summary || stage.sub;
           const words = summary.split("");
           let line = "";
@@ -391,39 +371,39 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           const emblemX = cardX + 30;
           const emblemY = contentY + 25;
 
-          ctx.fillStyle = "rgba(255, 255, 255, 0.08)";
-          ctx.strokeStyle = "rgba(251, 191, 36, 0.45)";
-          ctx.lineWidth = 1.5;
+          ctx.fillStyle = "#ebe4d6";
+          ctx.strokeStyle = "#231d18";
+          ctx.lineWidth = 1;
           ctx.beginPath();
-          ctx.roundRect(emblemX, emblemY, emblemW, emblemH, 18);
+          ctx.rect(emblemX, emblemY, emblemW, emblemH);
           ctx.fill();
           ctx.stroke();
 
           ctx.textAlign = "center";
-          ctx.fillStyle = "#fbbf24";
-          ctx.font = "bold 58px 'Space Grotesk', sans-serif";
+          ctx.fillStyle = "#231d18";
+          ctx.font = "700 52px 'Noto Serif KR', serif";
           ctx.fillText(String(stage.targetYear), emblemX + emblemW / 2, emblemY + 95);
 
-          ctx.fillStyle = "#f8fafc";
-          ctx.font = "bold 22px Pretendard, -apple-system, sans-serif";
-          ctx.fillText("MEMORY", emblemX + emblemW / 2, emblemY + 140);
+          ctx.fillStyle = "#6b6158";
+          ctx.font = "500 22px Pretendard, sans-serif";
+          ctx.fillText("그 무렵", emblemX + emblemW / 2, emblemY + 140);
 
           // 텍스트 영역
           const textLeft = emblemX + emblemW + 30;
           const maxTextW = cardWidth - (emblemW + 90);
 
           ctx.textAlign = "left";
-          ctx.fillStyle = "#38bdf8";
+          ctx.fillStyle = "#9a3b26";
           ctx.font = "bold 22px Pretendard, -apple-system, sans-serif";
           ctx.fillText(`[${stage.item.cat || "추억"}]`, textLeft, emblemY + 36);
 
-          ctx.fillStyle = "#ffffff";
-          ctx.font = "bold 40px Pretendard, -apple-system, sans-serif";
+          ctx.fillStyle = "#231d18";
+          ctx.font = "700 40px 'Noto Serif KR', serif";
           const title = stage.item.title || "";
           ctx.fillText(title.length > 15 ? title.slice(0, 14) + "…" : title, textLeft, emblemY + 84);
 
-          ctx.fillStyle = "#f8fafc";
-          ctx.font = "500 25px Pretendard, -apple-system, sans-serif";
+          ctx.fillStyle = "#4a4038";
+          ctx.font = "400 25px Pretendard, -apple-system, sans-serif";
           const summary = stage.item.summary || stage.sub;
           const words = summary.split("");
           let line = "";
@@ -457,24 +437,24 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
       ctx.textAlign = "center";
 
       // 황금 도장 테두리 원
-      ctx.strokeStyle = "rgba(251, 191, 36, 0.85)";
-      ctx.lineWidth = 3.5;
+      ctx.strokeStyle = "#9a3b26";
+      ctx.lineWidth = 3;
       ctx.beginPath();
       ctx.arc(W / 2, sealY, 46, 0, Math.PI * 2);
       ctx.stroke();
 
-      ctx.fillStyle = "#fde047";
-      ctx.font = "bold 28px Pretendard, sans-serif";
-      ctx.fillText("公 認", W / 2, sealY + 10);
+      ctx.fillStyle = "#9a3b26";
+      ctx.font = "700 28px 'Noto Serif KR', serif";
+      ctx.fillText("추억", W / 2, sealY + 10);
 
       // 하단 텍스트
-      ctx.fillStyle = "#fbbf24";
-      ctx.font = "bold 28px 'Space Grotesk', Pretendard, sans-serif";
-      ctx.fillText("🪐  chueok-timemachine.pages.dev", W / 2, H - 130);
+      ctx.fillStyle = "#231d18";
+      ctx.font = "600 26px Pretendard, sans-serif";
+      ctx.fillText("chueok-timemachine.pages.dev", W / 2, H - 130);
 
-      ctx.fillStyle = "#e2e8f0";
-      ctx.font = "bold 22px Pretendard, -apple-system, sans-serif";
-      ctx.fillText("1,000만 국민과 함께 타는 대한민국 추억 타임머신", W / 2, H - 95);
+      ctx.fillStyle = "#6b6158";
+      ctx.font = "400 22px Pretendard, sans-serif";
+      ctx.fillText("연도별로 모아 둔 한국의 생활 기록", W / 2, H - 95);
 
       const url = canvas.toDataURL("image/png");
       setCanvasDataUrl(url);
@@ -489,7 +469,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
     a.href = canvasDataUrl;
     a.download = `추억타임머신_황금기인증서_${birthYear}년생.png`;
     a.click();
-    onToast?.("9:16 인스타 스토리용 인증서를 다운로드했어요! 📸");
+    onToast?.("9:16 인스타 스토리용 인증서를 저장했어요.");
   };
 
   // 인스타 스토리 직접 공유 (Web Share API 지원 기기)
@@ -527,10 +507,10 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
     const textPayload =
       `야 내 인생 황금기 리포트 나왔는데 너도 해봐 ㅋㅋㅋ\n` +
       `[결과: ${birthYear}년생 “${title}”]\n\n` +
-      `🎈 초등 시절(${stages[0].targetYear}년): ${stages[0].item.title}\n` +
-      `📼 중고등 시절(${stages[1].targetYear}년): ${stages[1].item.title}\n` +
-      `🚀 청춘 20대(${stages[2].targetYear}년): ${stages[2].item.title}\n\n` +
-      `👉 너의 황금기도 지금 바로 확인해봐:\n${siteUrl}`;
+      `초등 시절(${stages[0].targetYear}년): ${stages[0].item.title}\n` +
+      `중고등 시절(${stages[1].targetYear}년): ${stages[1].item.title}\n` +
+      `청춘 20대(${stages[2].targetYear}년): ${stages[2].item.title}\n\n` +
+      `너의 황금기도 지금 바로 확인해봐:\n${siteUrl}`;
 
     // 1. Kakao SDK 연동 (있는 경우)
     if (typeof window !== "undefined" && window.Kakao?.isInitialized && window.Kakao.isInitialized()) {
@@ -545,12 +525,12 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
           },
           buttons: [
             {
-              title: "나의 황금기 테스트하기 👉",
+              title: "나의 황금기 테스트하기",
               link: { mobileWebUrl: siteUrl, webUrl: siteUrl },
             },
           ],
         });
-        onToast?.("카카오톡으로 황금기 리포트를 전송했어요! 💌");
+        onToast?.("카카오톡으로 황금기 리포트를 보냈어요.");
         return;
       } catch (err) {
         console.warn("Kakao share failed:", err);
@@ -560,7 +540,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
     // 2. 클립보드 복사
     try {
       await navigator.clipboard.writeText(textPayload);
-      onToast?.("카톡 공유 문구와 링크를 복사했어요! 단톡방에 붙여넣어 보세요 💌");
+      onToast?.("카톡 공유 문구와 링크를 복사했어요. 단톡방에 붙여넣으면 됩니다.");
     } catch {
       onToast?.("공유 링크 복사에 실패했습니다.");
     }
@@ -592,11 +572,11 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
         {step === 1 && (
           <div className="golden-step1">
             <div className="golden-header">
-              <span className="golden-badge">✨ 바이럴 미니 퀴즈</span>
+              <span className="golden-badge">출생연도로 보는 세 시절</span>
               <h2 className="golden-title">나의 추억 나이 &amp; 황금기 테스트</h2>
               <p className="golden-desc">
-                몇 년도에 태어나셨나요? <br />
-                당신의 인생을 뒤흔든 3대 황금기 시절과 그 시절 킬러 아이템을 소환해 드립니다!
+                태어난 해를 적어 주세요. <br />
+                초등학교, 중고등학교, 스무 살 무렵에 유행하던 것을 한 장으로 정리해 드려요.
               </p>
             </div>
 
@@ -636,27 +616,27 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
               </div>
 
               <button type="submit" className="golden-submit-btn">
-                나의 황금기 탐험 시작 🚀
+                내 시절 보기
               </button>
             </form>
 
             <div className="golden-feature-points">
               <div className="point-item">
-                <span className="point-icon">🎈</span>
+                <span className="point-icon"></span>
                 <div>
                   <strong>초등학교 시절</strong>
                   <p>골목길 놀이 &amp; 문방구 과자</p>
                 </div>
               </div>
               <div className="point-item">
-                <span className="point-icon">📼</span>
+                <span className="point-icon"></span>
                 <div>
                   <strong>중고등학교 시절</strong>
                   <p>감성 가요 &amp; 유행 드라마</p>
                 </div>
               </div>
               <div className="point-item">
-                <span className="point-icon">🚀</span>
+                <span className="point-icon"></span>
                 <div>
                   <strong>청춘 20대 시절</strong>
                   <p>사회를 뒤흔든 히트 트렌드</p>
@@ -677,7 +657,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
                 <span className="report-badge-pill">{eraReport.generation.badge}</span>
               </div>
               <h2 className="report-gen-title">“{eraReport.generation.title}”</h2>
-              <p className="report-sub">당신의 가슴을 가장 뜨겁게 만들었던 3대 인생 전환기 리포트입니다.</p>
+              <p className="report-sub">시절을 고르면 그때 유행하던 것이 나옵니다.</p>
             </div>
 
             {/* 3대 시절 선택 탭 버튼 */}
@@ -702,7 +682,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
                 <div className="active-stage-card" style={{ borderColor: currentStage.themeColor }}>
                   <div className="stage-card-head">
                     <div>
-                      <span className="stage-age-pill" style={{ background: currentStage.themeColor, color: "#0f172a", fontWeight: 800 }}>
+                      <span className="stage-age-pill" style={{ background: currentStage.themeColor, color: "#f4efe6", fontWeight: 700 }}>
                         {currentStage.ageDesc}
                       </span>
                       <h3 className="stage-name">{currentStage.title}</h3>
@@ -722,14 +702,13 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
                       </div>
                     ) : (
                       <div className="item-thumb-placeholder">
-                        <span>🪐</span>
                         <small>{currentStage.targetYear} MEMORY</small>
                       </div>
                     )}
                     <div className="item-info">
                       <span className="item-cat-tag">#{currentStage.item.cat || "추억"}</span>
                       <h4 className="item-title">{currentStage.item.title}</h4>
-                      <p className="item-desc">{currentStage.item.summary || "그 시절 대한민국을 사로잡았던 전설적인 추억의 아이템."}</p>
+                      <p className="item-desc">{currentStage.item.summary || "그 시절 많이들 쓰고 보던 것."}</p>
                     </div>
                   </div>
 
@@ -739,7 +718,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
                     onClick={() => handleNavigateYear(currentStage.targetYear)}
                     title={`${currentStage.targetYear}년 전체 추억 아카이브로 이동`}
                   >
-                    <span>🧭</span> {currentStage.targetYear}년 타임머신 탑승하기
+                    {currentStage.targetYear}년 기록 보러 가기
                   </button>
                 </div>
               );
@@ -748,8 +727,8 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
             {/* 숨겨진 1080x1920 캔버스 (인스타 스토리용) */}
             <div className="canvas-container-preview">
               <div className="canvas-preview-header">
-                <span>📸 9:16 인스타그램 스토리 공식 인증서</span>
-                <span className="preview-size">1080 × 1920 HD</span>
+                <span>인스타 스토리용 이미지</span>
+                <span className="preview-size">1080 × 1920</span>
               </div>
               <div className="canvas-wrapper">
                 <canvas
@@ -762,9 +741,7 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
                     maxWidth: "240px",
                     height: "auto",
                     aspectRatio: "9/16",
-                    borderRadius: "14px",
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.5)",
-                    border: "1px solid rgba(255,255,255,0.15)",
+                    border: "1px solid #231d18",
                   }}
                 />
               </div>
@@ -779,23 +756,23 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
                   disabled={isRendering}
                   title="9:16 인스타 스토리 인증서 다운로드 및 공유"
                 >
-                  📸 인스타 스토리 인증서 받기
+                  스토리 이미지 공유
                 </button>
                 <button
                   className="action-btn action-kakao"
                   onClick={handleShareKakao}
                   title="카카오톡 단톡방 친구들에게 테스트 공유"
                 >
-                  💬 카톡 단톡방에 자랑하기
+                  카카오톡 공유
                 </button>
               </div>
 
               <div className="action-row-secondary">
                 <button className="action-btn action-download" onClick={handleDownloadCertificate} disabled={isRendering}>
-                  📥 PNG 저장
+                  PNG 저장
                 </button>
                 <button className="action-btn action-retry" onClick={() => setStep(1)}>
-                  🔄 다시 테스트하기
+                  다른 연도로
                 </button>
                 <button className="action-btn action-close" onClick={onClose}>
                   닫기
@@ -806,784 +783,6 @@ export default function GoldenEraModal({ onClose, onToast, onSelectYear }) {
         )}
       </div>
 
-      {/* 컴포넌트 전용 스타일 — .sheet button 등 전역 스타일 간섭을 원천 차단하기 위해 .golden-era-sheet .golden-era-box 로 스코핑 */}
-      <style>{`
-        .sheet.golden-era-sheet {
-          position: fixed;
-          inset: 0;
-          z-index: 50;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background: rgba(6, 10, 18, 0.84);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          animation: goldenFadeIn 250ms ease-out both;
-          padding: 16px;
-        }
-        @keyframes goldenFadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-        .golden-era-sheet .golden-era-box {
-          position: relative;
-          width: 100%;
-          max-width: 540px;
-          max-height: 90vh;
-          overflow-y: auto;
-          color-scheme: dark;
-          font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
-          background: linear-gradient(175deg, #131c2e 0%, #090e1a 100%) !important;
-          border: 1.5px solid rgba(251, 191, 36, 0.5);
-          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.78), 0 0 35px rgba(251, 191, 36, 0.22);
-          border-radius: 28px;
-          padding: clamp(20px, 4vw, 32px);
-          color: #f8fafc !important;
-          scrollbar-width: thin;
-          scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
-        }
-        .golden-era-sheet .golden-era-box .golden-modal-close {
-          position: absolute;
-          top: 18px;
-          right: 18px;
-          width: 38px;
-          height: 38px;
-          padding: 0;
-          border-radius: 50%;
-          border: 1.5px solid rgba(255, 255, 255, 0.35);
-          background: rgba(255, 255, 255, 0.14);
-          color: #ffffff;
-          font-size: 1.1rem;
-          font-weight: 700;
-          text-align: center;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          transition: all 180ms ease;
-        }
-        .golden-era-sheet .golden-era-box .golden-modal-close:hover {
-          background: rgba(255, 255, 255, 0.26);
-          color: #fde047;
-          border-color: #fde047;
-          transform: rotate(90deg);
-        }
-        .golden-era-sheet .golden-era-box button:focus-visible {
-          outline: 2px solid #fde047;
-          outline-offset: 2px;
-        }
-
-        /* 1단계 스타일 */
-        .golden-era-sheet .golden-step1 {
-          text-align: center;
-          animation: goldenSlideUp 300ms ease-out both;
-        }
-        @keyframes goldenSlideUp {
-          from { transform: translateY(16px); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
-        }
-        .golden-era-sheet .golden-badge {
-          display: inline-block;
-          font-size: 0.875rem;
-          font-weight: 800;
-          color: #fde047;
-          background: rgba(251, 191, 36, 0.16);
-          border: 1.5px solid rgba(251, 191, 36, 0.55);
-          border-radius: 999px;
-          padding: 5px 14px;
-          margin-bottom: 12px;
-          letter-spacing: -0.01em;
-        }
-        .golden-era-sheet .golden-title {
-          font-size: clamp(1.5rem, 4.2vw, 2rem);
-          font-weight: 900;
-          letter-spacing: -0.02em;
-          line-height: 1.35;
-          margin: 0 0 12px;
-          color: #ffffff;
-          background: linear-gradient(135deg, #ffffff 35%, #fde047 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        .golden-era-sheet .golden-desc {
-          font-size: 1rem;
-          line-height: 1.6;
-          color: #f1f5f9;
-          font-weight: 500;
-          margin: 0 0 24px;
-        }
-        .golden-era-sheet .golden-form {
-          margin-bottom: 24px;
-        }
-        .golden-era-sheet .golden-input-wrap {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 8px;
-          background: rgba(255, 255, 255, 0.09);
-          border: 2.5px solid rgba(251, 191, 36, 0.6);
-          border-radius: 20px;
-          padding: 12px 22px;
-          margin: 0 auto 16px;
-          max-width: 290px;
-          box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
-          transition: border-color 200ms ease, box-shadow 200ms ease;
-        }
-        .golden-era-sheet .golden-input-wrap:focus-within {
-          border-color: #fde047;
-          box-shadow: 0 0 26px rgba(251, 191, 36, 0.45);
-        }
-        .golden-era-sheet .golden-year-input {
-          width: 125px;
-          background: transparent;
-          border: 0;
-          font-size: 2.25rem;
-          font-weight: 900;
-          text-align: center;
-          color: #ffffff;
-          outline: none;
-          font-variant-numeric: tabular-nums;
-          font-family: inherit;
-        }
-        .golden-era-sheet .golden-year-input::placeholder {
-          color: rgba(226, 232, 240, 0.55);
-        }
-        .golden-era-sheet .golden-input-suffix {
-          font-size: 1.35rem;
-          font-weight: 800;
-          color: #fde047;
-        }
-        .golden-era-sheet .golden-quick-chips {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-          gap: 7px;
-          margin-bottom: 24px;
-        }
-        .golden-era-sheet .chips-label {
-          font-size: 0.875rem;
-          font-weight: 700;
-          color: #e2e8f0;
-          margin-right: 4px;
-        }
-        .golden-era-sheet .golden-era-box .quick-chip {
-          border: 1.5px solid rgba(255, 255, 255, 0.3);
-          background: rgba(255, 255, 255, 0.12);
-          color: #f8fafc;
-          border-radius: 999px;
-          padding: 6px 14px;
-          font-size: 0.875rem;
-          font-weight: 700;
-          text-align: center;
-          cursor: pointer;
-          transition: all 180ms ease;
-        }
-        .golden-era-sheet .golden-era-box .quick-chip:hover {
-          background: rgba(255, 255, 255, 0.24);
-          color: #ffffff;
-          border-color: rgba(255, 255, 255, 0.55);
-        }
-        .golden-era-sheet .golden-era-box .quick-chip.active {
-          background: rgba(251, 191, 36, 0.26);
-          border-color: #fde047;
-          color: #fde047;
-          font-weight: 800;
-          box-shadow: 0 0 14px rgba(251, 191, 36, 0.35);
-        }
-        .golden-era-sheet .golden-era-box .golden-submit-btn {
-          width: 100%;
-          border: 0;
-          border-radius: 18px;
-          padding: 16px 20px;
-          font-size: 1.15rem;
-          font-weight: 900;
-          text-align: center;
-          background: linear-gradient(135deg, #fde047 0%, #f59e0b 100%);
-          color: #090e1a;
-          cursor: pointer;
-          box-shadow: 0 8px 25px rgba(245, 158, 11, 0.45);
-          transition: transform 120ms ease, box-shadow 150ms ease, filter 150ms ease;
-          font-family: inherit;
-        }
-        .golden-era-sheet .golden-era-box .golden-submit-btn:hover {
-          background: linear-gradient(135deg, #fef08a 0%, #fbbf24 100%);
-          filter: brightness(1.04);
-          transform: translateY(-2px);
-          box-shadow: 0 12px 30px rgba(245, 158, 11, 0.55);
-        }
-        .golden-era-sheet .golden-era-box .golden-submit-btn:active {
-          transform: scale(0.98);
-        }
-        .golden-era-sheet .golden-feature-points {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 10px;
-          padding-top: 20px;
-          border-top: 1px solid rgba(255, 255, 255, 0.2);
-          text-align: left;
-        }
-        .golden-era-sheet .point-item {
-          display: flex;
-          align-items: flex-start;
-          gap: 7px;
-          background: rgba(255, 255, 255, 0.04);
-          border-radius: 12px;
-          padding: 10px 8px;
-        }
-        .golden-era-sheet .point-icon {
-          font-size: 1.25rem;
-          line-height: 1.2;
-        }
-        .golden-era-sheet .point-item strong {
-          display: block;
-          font-size: 0.875rem;
-          font-weight: 800;
-          color: #ffffff;
-        }
-        .golden-era-sheet .point-item p {
-          margin: 3px 0 0;
-          font-size: 0.8rem;
-          font-weight: 500;
-          color: #e2e8f0;
-          line-height: 1.4;
-        }
-
-        /* 2단계 리포트 스타일 */
-        .golden-era-sheet .golden-step2 {
-          animation: goldenSlideUp 300ms ease-out both;
-        }
-        .golden-era-sheet .golden-report-header {
-          text-align: center;
-          margin-bottom: 22px;
-        }
-        .golden-era-sheet .report-badge-row {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 8px;
-          margin-bottom: 10px;
-        }
-        .golden-era-sheet .report-gen-tag {
-          font-size: 0.875rem;
-          font-weight: 800;
-          color: #fde047;
-          background: rgba(251, 191, 36, 0.16);
-          border: 1.5px solid;
-          border-radius: 999px;
-          padding: 4px 12px;
-        }
-        .golden-era-sheet .report-badge-pill {
-          font-size: 0.8125rem;
-          font-weight: 700;
-          color: #f8fafc;
-          background: rgba(255, 255, 255, 0.14);
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          border-radius: 999px;
-          padding: 4px 12px;
-        }
-        .golden-era-sheet .report-gen-title {
-          font-size: clamp(1.35rem, 4.2vw, 1.85rem);
-          font-weight: 900;
-          color: #ffffff;
-          line-height: 1.4;
-          margin: 8px 0;
-          letter-spacing: -0.01em;
-          text-shadow: 0 2px 14px rgba(0,0,0,0.7);
-        }
-        .golden-era-sheet .report-sub {
-          font-size: 0.95rem;
-          font-weight: 500;
-          color: #e2e8f0;
-          line-height: 1.5;
-          margin: 0;
-        }
-
-        /* 탭 버튼 */
-        .golden-era-sheet .stage-tab-row {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 8px;
-          margin-bottom: 18px;
-        }
-        .golden-era-sheet .golden-era-box .stage-tab-btn {
-          border: 1.5px solid rgba(255, 255, 255, 0.24);
-          background: rgba(255, 255, 255, 0.08);
-          border-radius: 16px;
-          padding: 10px 8px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          gap: 3px;
-          color: #f1f5f9;
-          cursor: pointer;
-          transition: all 180ms ease;
-          font-family: inherit;
-        }
-        .golden-era-sheet .golden-era-box .stage-tab-btn:hover {
-          background: rgba(255, 255, 255, 0.16);
-          border-color: rgba(255, 255, 255, 0.45);
-        }
-        .golden-era-sheet .stage-tab-btn .tab-title {
-          font-size: 0.875rem;
-          font-weight: 700;
-          color: #e2e8f0;
-        }
-        .golden-era-sheet .stage-tab-btn .tab-year {
-          font-size: 1rem;
-          font-weight: 900;
-          font-family: 'Space Grotesk', 'Pretendard', sans-serif;
-          color: #ffffff;
-        }
-        .golden-era-sheet .golden-era-box .stage-tab-btn.active {
-          border-color: var(--theme-color, #fde047);
-          background: rgba(255, 255, 255, 0.16);
-          box-shadow: 0 0 20px rgba(255, 255, 255, 0.18);
-        }
-        .golden-era-sheet .stage-tab-btn.active .tab-title {
-          color: #ffffff;
-        }
-        .golden-era-sheet .stage-tab-btn.active .tab-year {
-          color: var(--theme-color, #fde047);
-          text-shadow: 0 0 10px rgba(253, 224, 71, 0.35);
-        }
-
-        /* 활성화된 시절 카드 */
-        .golden-era-sheet .active-stage-card {
-          background: rgba(255, 255, 255, 0.07);
-          border: 2px solid;
-          border-radius: 22px;
-          padding: 18px;
-          margin-bottom: 20px;
-          box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
-        }
-        .golden-era-sheet .stage-card-head {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          margin-bottom: 16px;
-        }
-        .golden-era-sheet .stage-age-pill {
-          display: inline-block;
-          font-size: 0.775rem;
-          font-weight: 800;
-          color: #0a0f1d;
-          border-radius: 999px;
-          padding: 3px 10px;
-          margin-bottom: 5px;
-        }
-        .golden-era-sheet .stage-name {
-          font-size: 1.3rem;
-          font-weight: 800;
-          margin: 4px 0 2px;
-          color: #ffffff;
-        }
-        .golden-era-sheet .stage-subtitle {
-          font-size: 0.875rem;
-          font-weight: 500;
-          color: #f1f5f9;
-          margin: 3px 0 0;
-        }
-        .golden-era-sheet .stage-year-emblem {
-          text-align: right;
-        }
-        .golden-era-sheet .stage-year-emblem .yr-num {
-          display: block;
-          font-size: 1.6rem;
-          font-weight: 900;
-          font-family: 'Space Grotesk', 'Pretendard', sans-serif;
-          color: #fde047;
-          line-height: 1;
-          text-shadow: 0 0 12px rgba(253, 224, 71, 0.35);
-        }
-        .golden-era-sheet .stage-year-emblem .yr-text {
-          font-size: 0.8rem;
-          font-weight: 700;
-          color: #e2e8f0;
-        }
-
-        .golden-era-sheet .stage-item-box {
-          display: flex;
-          gap: 14px;
-          background: rgba(8, 12, 22, 0.65);
-          border: 1.5px solid rgba(255, 255, 255, 0.18);
-          border-radius: 16px;
-          padding: 14px;
-          margin-bottom: 14px;
-        }
-        .golden-era-sheet .item-thumb-box {
-          width: 84px;
-          height: 84px;
-          border-radius: 12px;
-          overflow: hidden;
-          flex-shrink: 0;
-          background: #000;
-          border: 1px solid rgba(255, 255, 255, 0.25);
-        }
-        .golden-era-sheet .item-thumb-box img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-        .golden-era-sheet .item-thumb-placeholder {
-          width: 84px;
-          height: 84px;
-          border-radius: 12px;
-          flex-shrink: 0;
-          background: rgba(255, 255, 255, 0.08);
-          border: 1.5px dashed rgba(251, 191, 36, 0.45);
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          font-size: 1.6rem;
-        }
-        .golden-era-sheet .item-thumb-placeholder small {
-          font-size: 0.7rem;
-          font-weight: 700;
-          color: #f1f5f9;
-          margin-top: 3px;
-        }
-        .golden-era-sheet .item-info {
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          min-width: 0;
-        }
-        .golden-era-sheet .item-cat-tag {
-          font-size: 0.8rem;
-          font-weight: 800;
-          color: #7dd3fc;
-          margin-bottom: 3px;
-        }
-        .golden-era-sheet .item-title {
-          font-size: 1.125rem;
-          font-weight: 900;
-          color: #ffffff;
-          margin: 0 0 6px;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
-        .golden-era-sheet .item-desc {
-          font-size: 0.9rem;
-          font-weight: 500;
-          color: #f1f5f9;
-          margin: 0;
-          line-height: 1.6;
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-        }
-        .golden-era-sheet .golden-era-box .teleport-btn {
-          width: 100%;
-          border: 1.5px solid rgba(255, 255, 255, 0.32);
-          background: rgba(255, 255, 255, 0.12);
-          color: #ffffff;
-          border-radius: 14px;
-          padding: 12px;
-          font-size: 0.9375rem;
-          font-weight: 800;
-          text-align: center;
-          cursor: pointer;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 6px;
-          transition: all 180ms ease;
-          font-family: inherit;
-        }
-        .golden-era-sheet .golden-era-box .teleport-btn:hover {
-          background: rgba(251, 191, 36, 0.22);
-          color: #fde047;
-          border-color: #fde047;
-          box-shadow: 0 4px 18px rgba(251, 191, 36, 0.25);
-        }
-
-        /* 캔버스 프리뷰 */
-        .golden-era-sheet .canvas-container-preview {
-          background: rgba(8, 12, 22, 0.65);
-          border: 1.5px solid rgba(255, 255, 255, 0.2);
-          border-radius: 20px;
-          padding: 14px;
-          margin-bottom: 20px;
-          text-align: center;
-        }
-        .golden-era-sheet .canvas-preview-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          font-size: 0.9rem;
-          font-weight: 800;
-          color: #ffffff;
-          margin-bottom: 12px;
-          padding: 0 4px;
-        }
-        .golden-era-sheet .preview-size {
-          font-size: 0.775rem;
-          color: #fde047;
-          font-weight: 800;
-          background: rgba(251, 191, 36, 0.18);
-          border: 1px solid rgba(251, 191, 36, 0.45);
-          padding: 3px 8px;
-          border-radius: 6px;
-        }
-        .golden-era-sheet .canvas-wrapper {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        /* 액션 버튼 그룹 */
-        .golden-era-sheet .golden-action-group {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-        }
-        .golden-era-sheet .action-row-primary {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 10px;
-        }
-        .golden-era-sheet .golden-era-box .action-btn {
-          border: 0;
-          border-radius: 16px;
-          padding: 14px 16px;
-          font-size: 0.9375rem;
-          font-weight: 800;
-          cursor: pointer;
-          transition: transform 100ms ease, filter 150ms ease, box-shadow 150ms ease, background 150ms ease;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 6px;
-          text-align: center;
-          font-family: inherit;
-        }
-        .golden-era-sheet .golden-era-box .action-btn:active {
-          transform: scale(0.97);
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-insta {
-          background: linear-gradient(135deg, #be185d 0%, #be123c 55%, #b45309 100%);
-          color: #ffffff;
-          box-shadow: 0 4px 18px rgba(190, 18, 60, 0.4);
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-insta:hover {
-          background: linear-gradient(135deg, #db2777 0%, #e11d48 55%, #d97706 100%);
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-kakao {
-          background: #fee500;
-          color: #191919;
-          box-shadow: 0 4px 18px rgba(254, 229, 0, 0.3);
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-kakao:hover {
-          background: #ffeb3b;
-        }
-        .golden-era-sheet .action-row-secondary {
-          display: grid;
-          grid-template-columns: 1fr 1.2fr 0.8fr;
-          gap: 8px;
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-download {
-          background: rgba(255, 255, 255, 0.16);
-          color: #ffffff;
-          border: 1.5px solid rgba(255, 255, 255, 0.32);
-          font-size: 0.875rem;
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-download:hover {
-          background: rgba(255, 255, 255, 0.25);
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-retry {
-          background: rgba(255, 255, 255, 0.12);
-          color: #f8fafc;
-          border: 1.5px solid rgba(255, 255, 255, 0.25);
-          font-size: 0.875rem;
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-retry:hover {
-          background: rgba(255, 255, 255, 0.22);
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-close {
-          background: rgba(255, 255, 255, 0.09);
-          color: #f1f5f9;
-          border: 1.5px solid rgba(255, 255, 255, 0.22);
-          font-size: 0.875rem;
-        }
-        .golden-era-sheet .golden-era-box .action-btn.action-close:hover {
-          background: rgba(255, 255, 255, 0.2);
-          color: #ffffff;
-        }
-        .golden-era-sheet .golden-era-box .action-btn:disabled {
-          opacity: 0.5;
-          cursor: not-allowed;
-        }
-
-        /* 👓 효도 모드(.app.hyodo) 환경 전용 스타일 보강 */
-        .app.hyodo .golden-era-sheet .golden-era-box {
-          max-width: 620px;
-          padding: clamp(24px, 5vw, 40px);
-          border: 2px solid #fde047;
-          background: linear-gradient(175deg, #101726 0%, #070b14 100%) !important;
-          box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 45px rgba(253, 224, 71, 0.3);
-        }
-        .app.hyodo .golden-era-sheet .golden-era-box .golden-modal-close {
-          width: 44px;
-          height: 44px;
-          font-size: 1.25rem;
-          border-width: 2px;
-        }
-        .app.hyodo .golden-era-sheet .golden-badge {
-          font-size: 1rem;
-          padding: 6px 16px;
-        }
-        .app.hyodo .golden-era-sheet .golden-title {
-          font-size: clamp(1.75rem, 5.5vw, 2.3rem);
-          font-weight: 900;
-        }
-        .app.hyodo .golden-era-sheet .golden-desc {
-          font-size: 1.15rem;
-          line-height: 1.7;
-          color: #ffffff;
-          font-weight: 600;
-        }
-        .app.hyodo .golden-era-sheet .golden-input-wrap {
-          max-width: 340px;
-          padding: 14px 24px;
-          border: 3px solid #fde047;
-        }
-        .app.hyodo .golden-era-sheet .golden-year-input {
-          font-size: 2.6rem;
-          font-weight: 900;
-        }
-        .app.hyodo .golden-era-sheet .golden-input-suffix {
-          font-size: 1.5rem;
-          font-weight: 800;
-        }
-        .app.hyodo .golden-era-sheet .chips-label {
-          font-size: 1rem;
-          font-weight: 700;
-          color: #f1f5f9;
-        }
-        .app.hyodo .golden-era-sheet .golden-era-box .quick-chip {
-          font-size: 1.05rem;
-          padding: 8px 16px;
-          font-weight: 800;
-          border-width: 2px;
-        }
-        .app.hyodo .golden-era-sheet .golden-era-box .golden-submit-btn {
-          font-size: 1.3rem;
-          font-weight: 900;
-          padding: 18px;
-        }
-        .app.hyodo .golden-era-sheet .point-item strong {
-          font-size: 1.05rem;
-          font-weight: 800;
-        }
-        .app.hyodo .golden-era-sheet .point-item p {
-          font-size: 0.95rem;
-          color: #ffffff;
-          font-weight: 600;
-          line-height: 1.45;
-        }
-        .app.hyodo .golden-era-sheet .report-gen-tag {
-          font-size: 1rem;
-          padding: 4px 14px;
-        }
-        .app.hyodo .golden-era-sheet .report-badge-pill {
-          font-size: 0.95rem;
-          padding: 4px 14px;
-        }
-        .app.hyodo .golden-era-sheet .report-gen-title {
-          font-size: clamp(1.6rem, 5vw, 2.2rem);
-          font-weight: 900;
-        }
-        .app.hyodo .golden-era-sheet .report-sub {
-          font-size: 1.15rem;
-          color: #ffffff;
-          font-weight: 600;
-          line-height: 1.6;
-        }
-        .app.hyodo .golden-era-sheet .golden-era-box .stage-tab-btn {
-          padding: 14px 10px;
-        }
-        .app.hyodo .golden-era-sheet .stage-tab-btn .tab-title {
-          font-size: 1rem;
-          font-weight: 800;
-        }
-        .app.hyodo .golden-era-sheet .stage-tab-btn .tab-year {
-          font-size: 1.25rem;
-          font-weight: 900;
-        }
-        .app.hyodo .golden-era-sheet .stage-age-pill {
-          font-size: 0.875rem;
-          padding: 4px 12px;
-        }
-        .app.hyodo .golden-era-sheet .stage-name {
-          font-size: 1.5rem;
-          font-weight: 900;
-        }
-        .app.hyodo .golden-era-sheet .stage-subtitle {
-          font-size: 1.1rem;
-          color: #ffffff;
-          font-weight: 600;
-        }
-        .app.hyodo .golden-era-sheet .stage-year-emblem .yr-num {
-          font-size: 1.85rem;
-          font-weight: 900;
-        }
-        .app.hyodo .golden-era-sheet .stage-year-emblem .yr-text {
-          font-size: 0.95rem;
-          color: #ffffff;
-        }
-        .app.hyodo .golden-era-sheet .item-cat-tag {
-          font-size: 0.95rem;
-          font-weight: 800;
-        }
-        .app.hyodo .golden-era-sheet .item-title {
-          font-size: 1.3rem;
-          font-weight: 900;
-        }
-        .app.hyodo .golden-era-sheet .item-desc {
-          font-size: 1.1rem;
-          line-height: 1.65;
-          color: #ffffff;
-          font-weight: 600;
-          -webkit-line-clamp: 4;
-        }
-        .app.hyodo .golden-era-sheet .golden-era-box .teleport-btn {
-          font-size: 1.15rem;
-          font-weight: 800;
-          padding: 15px;
-        }
-        .app.hyodo .golden-era-sheet .canvas-preview-header {
-          font-size: 1.05rem;
-        }
-        .app.hyodo .golden-era-sheet .preview-size {
-          font-size: 0.875rem;
-        }
-        .app.hyodo .golden-era-sheet .golden-era-box .action-btn {
-          font-size: 1.1rem;
-          font-weight: 800;
-          padding: 16px;
-        }
-
-        @media (max-width: 480px) {
-          .golden-era-sheet .golden-era-box {
-            padding: 18px 14px;
-          }
-          .golden-era-sheet .action-row-primary {
-            grid-template-columns: 1fr;
-          }
-          .golden-era-sheet .action-row-secondary {
-            grid-template-columns: 1fr 1fr;
-          }
-          .golden-era-sheet .action-close {
-            grid-column: 1 / -1;
-          }
-        }
-      `}</style>
     </div>
   );
 }
